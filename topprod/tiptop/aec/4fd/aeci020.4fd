@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b6a79653-0000-4000-a70d-a97f5a9ecdca}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sgb" order="" uid="{1a8e22d0-0000-4000-b8b2-6e7579cbb145}" where="">
+    <RecordField colName="sgb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sgb_file.sgb01" sqlTabName="sgb_file" sqlType="VARCHAR" table_alias_name="" uid="{2956809a-0000-4000-bd3d-8d7c20db3d3c}"/>
+    <RecordField colName="sgb05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sgb_file.sgb05" sqlTabName="sgb_file" sqlType="VARCHAR" table_alias_name="" uid="{6de36d27-0000-4000-8f15-1e01532d921c}"/>
+    <RecordField colName="sgb04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sgb_file.sgb04" sqlTabName="sgb_file" sqlType="VARCHAR" table_alias_name="" uid="{eef3ca0b-0000-4000-a2c6-cdf6d5d6e78a}"/>
+    <RecordField colName="" fieldIdRef="4" name="sgf02" sqlTabName="" table_alias_name="" uid="{d6b4ab73-0000-4000-880a-1e81a393d2c8}"/>
+    <RecordField colName="sgb06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sgb_file.sgb06" sqlTabName="sgb_file" sqlType="VARCHAR" table_alias_name="" uid="{9b5352ab-0000-4000-accd-379b78d1129e}"/>
+    <RecordField colName="aag02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="aag_file.aag02" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{a6af3499-0000-4000-972e-3d4047b6d73f}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fe4bf840-0000-4000-af7a-ab92c41221b9}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{6b93753e-0000-4000-b328-2d05dc60d1d2}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="136" name="aeci020" spacing="normal" text="aeci020">
+    <VBox gridHeight="18" gridWidth="133" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="133" lstrcomment="false" name="pc250" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="131" lstrcomment="false" name="s_sgb" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sgb01" columnCount="" comment="No blank Field!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="sgb_file.sgb01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="sgb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Error#" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sgb05" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="sgb_file.sgb05" posX="6" posY="0" rowCount="" sqlTabName="sgb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Error Description" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sgb04" columnCount="" comment="&lt;^P&gt; Query Attribute" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="sgb_file.sgb04" posX="25" posY="0" rowCount="" sqlTabName="sgb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Attribute" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="sgf02" noEntry="true" posX="36" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Description" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sgb06" columnCount="" comment="No blank Field! &lt;^P&gt; Qry Account " fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="sgb_file.sgb06" posX="49" posY="0" rowCount="" sqlTabName="sgb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Account" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag_file.aag02" noEntry="true" posX="73" posY="0" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Account Title" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="133" lstrcomment="false" name="gr1625" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl441" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl442" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

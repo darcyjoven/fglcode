@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a9c47d16-0000-4000-9345-2ffd846cbf5e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5e2b07ec-0000-4000-a4ee-82f75f5b152a}" where="">
+    <RecordField colName="" fieldIdRef="64" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{848acf1f-0000-4000-9c75-5c961cb7e4ac}"/>
+    <RecordField colName="gdy01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gdy_file.gdy01" sqlTabName="gdy_file" sqlType="VARCHAR" table_alias_name="" uid="{23cdf78b-2263-434b-9a27-aa5d1eae3afc}"/>
+    <RecordField colName="gdy02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gdy_file.gdy02" sqlTabName="gdy_file" sqlType="VARCHAR" table_alias_name="" uid="{c459197b-8161-43fb-a80f-eff888b6906c}"/>
+    <RecordField colName="gaz03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{d768c883-5151-4262-b616-5c8f384ed7e6}"/>
+    <RecordField colName="" fieldIdRef="13" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{21c620e4-e116-42e7-8807-60cabcd44aef}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gdy" order="" uid="{d13356c7-13de-4da8-a91d-b4931793d078}" where="">
+    <RecordField colName="gdy03" fieldIdRef="10" fieldType="TABLE_ALIAS" name="gdy_file3.gdy03" sqlTabName="gdy_file" sqlType="VARCHAR" table_alias_name="gdy_file3" uid="{74f05b65-3737-4192-a1a9-8314b79fd994}"/>
+    <RecordField colName="zw02" fieldIdRef="11" fieldType="TABLE_COLUMN" name="zw_file.zw02" sqlTabName="zw_file" sqlType="VARCHAR" table_alias_name="" uid="{99497660-8bb8-43bd-a811-b4274d4c7704}"/>
+    <RecordField colName="gdy05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gdy_file.gdy05" sqlTabName="gdy_file" sqlType="VARCHAR" table_alias_name="" uid="{e1b9ead4-1e7e-4cc0-9ecd-86f744cc52ff}"/>
+    <RecordField colName="gdy04" fieldIdRef="12" fieldType="TABLE_ALIAS" name="gdy_file3.gdy04" sqlTabName="gdy_file" sqlType="VARCHAR" table_alias_name="gdy_file3" uid="{28fa3c42-f617-4f50-a8e1-f8ffa1a7b3cb}"/>
+  </Record>
+  <Form gridHeight="53" gridWidth="194" name="p_gr_history" spacing="normal" text="p_gr_history">
+    <VBox gridHeight="51" gridWidth="183" name="vb3" posX="0" posY="2">
+      <Folder gridHeight="7" gridWidth="183" lstrcomment="false" name="pc712" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Basic Data">
+          <HBox gridHeight="5" gridWidth="131" name="hb3" posX="0" posY="0">
+            <Grid comment="dept" gridHeight="5" gridWidth="127" lstrcomment="false" name="gr3075" posX="2" posY="0">
+              <Label posX="1" posY="1" text="Program Code"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="gdy01" columnCount="" comment="KEYField,No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="gdy_file.gdy01" notNull="true" posX="17" posY="1" required="true" rowCount="" scroll="true" sqlTabName="gdy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz03" noEntry="true" posX="36" posY="1" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Preserved Class"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdy02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="1:全部, 2:權限類別, 3:使用者編號" lstrcomment="false" name="gdy_file.gdy02" posX="17" posY="2" rowCount="" sqlTabName="gdy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="1" text="1:全部"/>
+                <Item lstrtext="false" name="2" text="2:權限類別"/>
+                <Item lstrtext="false" name="3" text="3:使用者編號"/>
+              </ComboBox>
+            </Grid>
+          </HBox>
+        </Page>
+      </Folder>
+      <HBox gridHeight="19" gridWidth="183" name="HBox1" posX="0" posY="8">
+        <Table gridHeight="19" gridWidth="179" lstrcomment="false" name="s_gdy" posX="2" posY="0" totalRows="10">
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdy03" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="10" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="gdy_file3.gdy03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gdy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="gdy_file3" title="User" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zw02" columnCount="" comment="No blank Field!" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="zw_file.zw02" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="zw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="User Name" widget="Edit"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdy05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Default, 00r-09r, 00r-19r, 00r-29r, 00r-39r, 00r-49r" name="gdy_file.gdy05" posX="38" posY="0" rowCount="" sqlTabName="gdy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Copied" widget="ComboBox">
+            <Item lstrtext="false" name="0" text="Default"/>
+            <Item lstrtext="false" name="1" text="00r-09r"/>
+            <Item lstrtext="false" name="2" text="00r-19r"/>
+            <Item lstrtext="false" name="3" text="00r-29r"/>
+            <Item lstrtext="false" name="4" text="00r-39r"/>
+            <Item lstrtext="false" name="5" text="00r-49r"/>
+          </ComboBox>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdy04" columnCount="" fieldId="12" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gdy_file3.gdy04" notNull="true" posX="48" posY="0" required="true" rowCount="" sqlTabName="gdy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="gdy_file3" title="Valid?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Table>
+      </HBox>
+      <Grid gridHeight="23" gridWidth="183" lstrcomment="false" name="gr3077" posX="0" posY="27">
+        <HLine gridWidth="10" name="hl1054" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="64" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="6" lstrcomment="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Edit1" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1055" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADQAZgAwADUAYgA2ADUALQAzADcAMwA3AC0ANAAxADkAMgAtAGEAMQBhADkALQA4ADMAMQA0AGIANwA5AGYAZAA5ADkANAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADEAYgA5AGUAYQBkADQALQAxAGUANwBlAC0ANABjAGMAMAAtADkAZQBjAGQALQA4ADYAZgA3ADQANABjAGMANQAyAGYAZgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADMAYwBkAGYANwA4AGIALQAyADIANgAzAC0ANAAzADQAYgAtADkAYQAyADcALQBhAGEANQBkADEAZQBhAGUAMwBhAGYAYwB9QBQAAAAAAABARwAAAAAAAD+jdLxqfvnfAQAAAEwAewA4ADQAOABhAGMAZgAxAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwA3ADUALQA1AGMAOQA2ADEAYwBiADcAZQA0AGEAYwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADkANAA5ADcANgA2ADAALQA4AGIAYgA4AC0ANAAzAGIAZAAtAGEAOAAxADEALQBiADQAMgA3ADQAZAA0AGMANwA3ADAANAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADEAMwAzADUANgBjADcALQAxADMAZABlAC0ANABkAGEAOAAtAGEAOQAxAGQALQBiADQAOQAzADEANwA5ADMAZAAwADcAOAB9wHQgAAAAAABAYaAAAAAAAD+k/fO2RaHPAQAAAEwAewA1AGUAMgBiADAANwBlAGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANABlAGUALQA4ADIAZgA3ADUAZgA1AGIAMQA1ADIAYQB9wH9AAAAAAABAYcAAAAAAAD+lgQYk3S8fAQAAAEwAewBjADQANQA5ADEAOQA3AGIALQA4ADEANgAxAC0ANAAzAGYAYgAtAGEAOAAwAGYALQBlAGYAZgA4ADgAOABiADYAOQAwADYAYwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADgAZgBhADMAYwA0ADIALQBmADYAMQA3AC0ANABmADUAMAAtAGEAOABlADEALQBmADgAZgBmAGEAMQBhADcAYgAzAGMAYgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADcANgA4AGMAOAA4ADMALQA1ADEANQAxAC0ANAAyADYAMgAtAGIANgAxADYALQA1AGMAOABmADMAOAA0AGUAZAA3AGUANgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADEAYwA2ADIAMABlADQALQBlADEAMQA2AC0ANAAyAGUANwAtADgAOAAwADcALQA2ADAAYwBhAGIAYwBkADQANABhAGUAZgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

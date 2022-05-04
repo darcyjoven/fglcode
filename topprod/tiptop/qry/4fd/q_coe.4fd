@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{46cf23d8-0000-4000-a28e-8097bf1214b3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_coe" order="" uid="{adca1ae1-0000-4000-baca-82921149b9e9}" where="">
+    <RecordField colName="" fieldIdRef="4" name="check" sqlTabName="" table_alias_name="" uid="{29aec5c3-0000-4000-a5d6-9ec5469c0ac9}"/>
+    <RecordField colName="coe02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="coe_file.coe02" sqlTabName="coe_file" sqlType="SMALLINT" table_alias_name="" uid="{c5f12016-0000-4000-8377-0b0050a8bfde}"/>
+    <RecordField colName="coe03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="coe_file.coe03" sqlTabName="coe_file" sqlType="VARCHAR" table_alias_name="" uid="{dd371e3d-0000-4000-8260-d4db0d7b7889}"/>
+    <RecordField colName="" fieldIdRef="7" name="cob02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e08299e7-0000-4000-9a41-b405c8888700}"/>
+    <RecordField colName="coe05" fieldIdRef="8" fieldType="TABLE_COLUMN" name="coe_file.coe05" sqlTabName="coe_file" sqlType="DECIMAL" table_alias_name="" uid="{9fab628f-0000-4000-92a4-2e85b7bc0bdc}"/>
+    <RecordField colName="coe06" fieldIdRef="9" fieldType="TABLE_COLUMN" name="coe_file.coe06" sqlTabName="coe_file" sqlType="VARCHAR" table_alias_name="" uid="{115935fc-0000-4000-ba1b-8a047b75ba1c}"/>
+    <RecordField colName="coe07" fieldIdRef="10" fieldType="TABLE_COLUMN" name="coe_file.coe07" sqlTabName="coe_file" sqlType="DECIMAL" table_alias_name="" uid="{1aedc4c1-0000-4000-af13-ca98a37d49b4}"/>
+    <RecordField colName="coe08" fieldIdRef="2" fieldType="TABLE_COLUMN" name="coe_file.coe08" sqlTabName="coe_file" sqlType="DECIMAL" table_alias_name="" uid="{d89eaebe-0000-4000-9afa-a8892908e98c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{652f7f9d-0000-4000-b11c-a219f3c8cd11}" where="">
+    <RecordField colName="coc04" fieldIdRef="1" fieldType="TABLE_COLUMN" name="coc_file.coc04" sqlTabName="coc_file" sqlType="VARCHAR" table_alias_name="" uid="{a23bb356-0000-4000-b4ce-0b4e53d5aab6}"/>
+    <RecordField colName="coc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="coc_file.coc03" sqlTabName="coc_file" sqlType="VARCHAR" table_alias_name="" uid="{0050beab-0000-4000-b13c-d13687b41b00}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="147" name="q_coe" spacing="normal" text="Bonded Import Material Data Query">
+    <VBox gridHeight="16" gridWidth="144" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="144" lstrcomment="false" name="gr3746" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Bonded No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coc04" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coc_file.coc04" posX="22" posY="0" rowCount="" sqlTabName="coc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="1" text="Guide No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coc03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coc_file.coc03" posX="22" posY="1" rowCount="" sqlTabName="coc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="144" lstrcomment="false" name="s_coe" posX="0" posY="3" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coe02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="coe_file.coe02" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="coe_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Serial No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coe03" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="coe_file.coe03" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="coe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Goods No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="cob02" noEntry="true" posX="32" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Part Name Specification" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coe05" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="coe_file.coe05" noEntry="true" posX="72" posY="0" rowCount="" sqlTabName="coe_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Qty Applied" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coe06" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="coe_file.coe06" noEntry="true" posX="86" posY="0" rowCount="" sqlTabName="coe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Unit" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coe07" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coe_file.coe07" noEntry="true" posX="94" posY="0" rowCount="" sqlTabName="coe_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Unit price" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coe08" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coe_file.coe08" noEntry="true" posX="114" posY="0" rowCount="" sqlTabName="coe_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Amount" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

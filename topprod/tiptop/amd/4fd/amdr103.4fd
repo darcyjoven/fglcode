@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{dc57bd30-0000-4000-90b0-232deb9d4984}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{11ad21eb-0000-4000-a7f0-fcc60b3abc22}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="amd22" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ffa2417d-0000-4000-a54f-9c7d45f8a1af}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="amd171" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6bfac6e6-0000-4000-b017-cf334db12a76}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="byy" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{5ff07dc8-0000-4000-87c0-ff9b10df087f}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="bmm" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{50b56cdb-0000-4000-87fe-576037b3c378}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="emm" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{4705d077-0000-4000-a9ab-024ba809b99f}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{079a050e-0000-4000-81d2-9ded057fef25}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="101" name="amdr103" spacing="normal" text="amdr103">
+    <VBox gridHeight="12" gridWidth="99" name="vb3" posX="1" posY="0" splitter="">
+      <Grid gridHeight="8" gridWidth="99" lstrcomment="false" name="gr3718" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="98" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Declaration Department"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="amd22" posX="24" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="97" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="INPUT">
+          <Label posX="1" posY="1" text="Format"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" items="32, 22, 27" lstrcomment="false" name="amd171" posX="25" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="false" name="32" text="32"/>
+            <Item lstrtext="false" name="22" text="22"/>
+            <Item lstrtext="false" name="27" text="27"/>
+          </ComboBox>
+          <Label posX="1" posY="2" text="Year/Month"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="byy" notNull="true" posX="25" posY="2" required="true" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="36" posY="2" text="/"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bmm" notNull="true" posX="38" posY="2" required="true" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="49" posY="2" text="-"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="emm" notNull="true" posX="51" posY="2" required="true" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="99" lstrcomment="false" name="gr3719" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

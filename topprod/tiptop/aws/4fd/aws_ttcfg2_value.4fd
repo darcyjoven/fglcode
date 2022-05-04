@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8c3d0963-0000-4000-816b-80f259bc7534}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_wst" order="" uid="{a39f2ecb-0000-4000-8246-dd8dd3857600}" where="">
+    <RecordField colName="wst04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="wst_file.wst04" sqlTabName="wst_file" sqlType="VARCHAR" table_alias_name="" uid="{e29ed983-0000-4000-80d1-36ba935c2249}"/>
+    <RecordField colName="" fieldIdRef="3" name="gaq03_t" sqlTabName="" table_alias_name="" uid="{372bed83-0000-4000-b50d-b450518e1e5b}"/>
+    <RecordField colName="wst05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="wst_file.wst05" sqlTabName="wst_file" sqlType="VARCHAR" table_alias_name="" uid="{d709759f-0000-4000-ba30-263e401268a4}"/>
+    <RecordField colName="wst06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="wst_file.wst06" sqlTabName="wst_file" sqlType="VARCHAR" table_alias_name="" uid="{e7bfaa08-0000-4000-bfa2-3a2b908ff59c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{267dfeca-0000-4000-95f3-4c24ed5b79ae}" where="">
+    <RecordField colName="wst03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="wst_file.wst03" sqlTabName="wst_file" sqlType="VARCHAR" table_alias_name="" uid="{102d0a4f-0000-4000-a5e7-4841fe81431c}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt3" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{89909bdb-0000-4000-b676-3ccee6bfa3eb}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt4" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{0749aa0f-0000-4000-abbe-a972c6757b4b}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="87" name="aws_ttcfg2_value" spacing="normal" text="aws_ttcfg2_value">
+    <VBox gridHeight="25" gridWidth="84" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="84" lstrcomment="false" name="gr4" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="83" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="System ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wst03" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="wst_file.wst03" notNull="true" posX="12" posY="1" required="true" rowCount="" sqlTabName="wst_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="17" gridWidth="84" lstrcomment="false" name="tb2" posX="0" posY="5" totalRows="15">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wst04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="wst_file.wst04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="wst_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ERP Column" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gaq03_t" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Column Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wst05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="wst_file.wst05" posX="35" posY="0" rowCount="" sqlTabName="wst_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Column Value" widget="Edit"/>
+        <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wst06" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="wst_file.wst06" posX="55" posY="0" rowCount="" sqlTabName="wst_file" sqlType="VARCHAR" stepX="" stepY="" stretch="NONE" tabIndex="4" table_alias_name="" title="Mapping Value" widget="TextEdit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="84" lstrcomment="false" name="gr5" posX="0" posY="22">
+        <HLine gridWidth="10" name="hl3" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt3" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt4" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

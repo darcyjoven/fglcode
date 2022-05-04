@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9216ebc7-0000-4000-b911-602f734d9d88}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tas" order="" uid="{ba3384e4-0000-4000-ba9b-6fa6b7090edb}" where="">
+    <RecordField colName="tas02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="tas_file.tas02" sqlTabName="tas_file" sqlType="DATE" table_alias_name="" uid="{9cb8d27d-0000-4000-a01e-5c600a48d7de}"/>
+    <RecordField colName="tas09" fieldIdRef="6" fieldType="TABLE_COLUMN" name="tas_file.tas09" sqlTabName="tas_file" sqlType="DECIMAL" table_alias_name="" uid="{7b4db75c-0000-4000-9dc5-bb5c3f53f51a}"/>
+    <RecordField colName="tas10" fieldIdRef="7" fieldType="TABLE_COLUMN" name="tas_file.tas10" sqlTabName="tas_file" sqlType="DECIMAL" table_alias_name="" uid="{526a0bd5-0000-4000-b1b6-7811d7da1373}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{a160924a-0000-4000-a6f4-aab37dfba7af}" where="">
+    <RecordField colName="aag01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aag_file.aag01" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{323903a7-0000-4000-9489-d27e8a4fda85}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="aag02" sqlTabName="" table_alias_name="" uid="{e1aa0be7-0000-4000-9d5c-51fd82d3a09f}"/>
+    <RecordField colName="tas00" fieldIdRef="4" fieldType="TABLE_ALIAS" name="tableAlias1.tas00" sqlTabName="tas_file" sqlType="VARCHAR" table_alias_name="tableAlias1" uid="{e723368d-0000-4000-b253-65d094fac8a3}"/>
+    <RecordField colName="tas08" fieldIdRef="3" fieldType="TABLE_COLUMN" name="tas_file.tas08" sqlTabName="tas_file" sqlType="VARCHAR" table_alias_name="" uid="{9d170f2c-0000-4000-8c30-d2f71fab91bd}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{c8550ddf-0000-4000-b4bf-5b1a283355a5}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="78" name="gglq102" spacing="normal" text="gglq102">
+    <VBox gridHeight="22" gridWidth="75" name="vb4" posX="1" posY="0">
+      <Folder gridHeight="6" gridWidth="75" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="73" lstrcomment="false" name="gr3357" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Account NO."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="aag_file.aag01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Account Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Book No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tas00" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="5" lstrcomment="false" name="tableAlias1.tas00" posX="22" posY="2" rowCount="" sqlTabName="tas_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="tableAlias1" widget="Edit"/>
+            <Label posX="1" posY="3" text="Currency"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tas08" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="tas_file.tas08" posX="22" posY="3" rowCount="" sqlTabName="tas_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="75" lstrcomment="false" name="s_tas" posX="0" posY="7" totalRows="10">
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tas02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="tas_file.tas02" posX="0" posY="0" rowCount="" sqlTabName="tas_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tas09" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tas_file.tas09" noEntry="true" posX="12" posY="0" rowCount="" sqlTabName="tas_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Debit Trans. Amt" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tas10" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tas_file.tas10" noEntry="true" posX="32" posY="0" rowCount="" sqlTabName="tas_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Credit Trans. Amt" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="75" lstrcomment="false" name="gr3358" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl1190" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1191" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

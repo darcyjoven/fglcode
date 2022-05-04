@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{196df7a1-0000-4000-a207-a71ba16e3917}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ico" order="" uid="{128ac71c-0000-4000-99b3-0d4b29b66b56}" where="">
+    <RecordField colName="ico04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ico_file.ico04" sqlTabName="ico_file" sqlType="VARCHAR" table_alias_name="" uid="{982b53dc-0000-4000-908e-6d8b78daba10}"/>
+    <RecordField colName="ico05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ico_file.ico05" sqlTabName="ico_file" sqlType="VARCHAR" table_alias_name="tableAlias1" uid="{cc78fb28-0000-4000-a05c-326b480140e6}"/>
+    <RecordField colName="ico06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ico_file.ico06" sqlTabName="ico_file" sqlType="VARCHAR" table_alias_name="" uid="{8795ceff-0000-4000-9d99-7f5ab38c25d7}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3f4e8ca2-0000-4000-966d-4213ae05096b}" where="">
+    <RecordField colName="ico01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ico_file.ico01" sqlTabName="ico_file" sqlType="VARCHAR" table_alias_name="" uid="{ef1cab08-0000-4000-96af-2381892e6dd9}"/>
+    <RecordField colName="ico02" fieldIdRef="1" fieldType="TABLE_ALIAS" name="tableAlias1.ico02" sqlTabName="ico_file" sqlType="SMALLINT" table_alias_name="tableAlias1" uid="{80584567-0000-4000-a5e6-99a970e97bb1}"/>
+    <RecordField colName="ico03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ico_file.ico03" sqlTabName="ico_file" sqlType="VARCHAR" table_alias_name="" uid="{b1fa29b2-0000-4000-874b-bb13ed5e2882}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{00dddf15-0000-4000-bcca-7f3064d05082}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{8f83907b-0000-4000-bffa-72c295c66038}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="120" name="aici014" spacing="normal" text="aici014">
+    <VBox gridHeight="21" gridWidth="115" name="vb5" posX="4" posY="0">
+      <Folder gridHeight="5" gridWidth="115" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="3" gridWidth="90" lstrcomment="false" name="gr4850" posX="0" posY="0">
+            <Label posX="1" posY="0" text="ico01###"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ico01" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="ico_file.ico01" noEntry="true" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="ico_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="62" posY="0" text="ico02###"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ico02" columnCount="" fieldId="1" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="tableAlias1.ico02" noEntry="true" notNull="true" posX="75" posY="0" rowCount="" sqlTabName="ico_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="tableAlias1" widget="Edit"/>
+            <Label posX="1" posY="1" text="ico03###"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ico03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="ico03_1, ico03_2, ico03_3, ico03_4, ico03_5, ico03_6, ico03_7, ico03_9" lstrcomment="false" name="ico_file.ico03" notNull="true" posX="22" posY="1" rowCount="" sqlTabName="ico_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="ico03_1"/>
+              <Item lstrtext="false" name="2" text="ico03_2"/>
+              <Item lstrtext="false" name="3" text="ico03_3"/>
+              <Item lstrtext="false" name="4" text="ico03_4"/>
+              <Item lstrtext="false" name="5" text="ico03_5"/>
+              <Item lstrtext="false" name="6" text="ico03_6"/>
+              <Item lstrtext="false" name="7" text="ico03_7"/>
+              <Item lstrtext="false" name="9" text="ico03_9"/>
+            </ComboBox>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="115" lstrcomment="false" name="s_ico" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ico04" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ico_file.ico04" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="ico_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ico04" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ico05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ico_file.ico05" notNull="true" posX="10" posY="0" rowCount="" sqlTabName="ico_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="tableAlias1" title="ico05" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ico06" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="ico_file.ico06" notNull="true" posX="20" posY="0" rowCount="" sqlTabName="ico_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="ico06" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="115" lstrcomment="false" name="gr4852" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADEAZgBhADIAOQBiADIALQAwADAAMAAwAC0ANAAwADAAMAAtADgANwA0AGIALQBiAGIAMQAzAGUAZAA1AGUAMgA4ADgAMgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGYAOAAzADkAMAA3AGIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZgBmAGEALQA3ADIAYwAyADkANQBjADYANgAwADMAOAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADgAMgBiADUAMwBkAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMAA4AGUALQA2AGQAOABiADcAOABkAGEAYgBhADEAMAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADAANQA4ADQANQA2ADcALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQBlADYALQA5ADkAYQA5ADcAMABlADkANwBiAGIAMQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGYANABlADgAYwBhADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgA2AGQALQA0ADIAMQAzAGEAZQAwADUAMAA5ADYAYgB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGYAMQBjAGEAYgAwADgALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBhAGYALQAyADMAOAAxADgAOQAyAGUANgBkAGQAOQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADIAOABhAGMANwAxAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOQBiADMALQAwAGQANABiADIAOQBiADYANgBiADUANgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGMANwA4AGYAYgAyADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMAA1AGMALQAzADIANgBiADQAOAAwADEANAAwAGUANgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADcAOQA1AGMAZQBmAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZAA5ADkALQA3AGYANQBhAGIAMwA4AGMAMgA1AGQANwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADAAZABkAGQAZgAxADUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYwBjAGEALQA3AGYAMwAwADYANABkADAANQAwADgAMgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

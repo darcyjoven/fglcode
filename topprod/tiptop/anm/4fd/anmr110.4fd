@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{98db5848-0000-4000-904f-112fb1866fcc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{54e54824-0000-4000-9a1f-cc1ff596410f}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="nmd03" sqlTabName="" table_alias_name="" uid="{d0d507e1-0000-4000-9847-97a258213bc8}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="nmd07" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{31145e55-0000-4000-88de-9ed5d9d7d9c2}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="nmd06" sqlTabName="" table_alias_name="" uid="{1ce81861-0000-4000-b6ff-cc15a5d9b42f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="nmd08" sqlTabName="" table_alias_name="" uid="{0659ed71-0000-4000-b89e-a34693bbf62b}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{72128bff-0000-4000-b2ac-a69aa9809749}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{bfb37a10-0000-4000-940e-f65a959a3617}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="type" sqlTabName="" table_alias_name="" uid="{f17149b5-0000-4000-9788-57af35ea4428}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{f45d6d8b-0000-4000-83e2-90e610c01e9d}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="73" name="anmr110" spacing="normal" text="anmr110">
+    <VBox gridHeight="21" gridWidth="72" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="4" gridWidth="72" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="1" text="QBE1">
+        <Grid gridHeight="2" gridWidth="43" lstrcomment="false" name="Grid1" posX="1" posY="1">
+          <Label posX="1" posY="0" text="Drawing Bank"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd03" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="5" gridWidth="72" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="5" text="QBE1">
+        <Grid gridHeight="3" gridWidth="43" lstrcomment="false" name="Grid2" posX="1" posY="1">
+          <Label posX="1" posY="0" text="Note Drawing Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd07" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="1" text="Notes type 1"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd06" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Vender No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd08" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="8" gridWidth="72" lstrcomment="false" lstrtext="false" name="group03" posX="0" posY="10" text="INPUT">
+        <Grid gridHeight="6" gridWidth="70" lstrcomment="false" name="Grid3" posX="1" posY="1">
+          <Label posX="2" posY="0" text="Date Range"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bdate" posX="23" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+          <Label posX="36" posY="0" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="edate" posX="38" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+          <Group gridHeight="3" gridWidth="69" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="2" text="Transaction QBE">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" items="Void, Withdraw, Note Returned, All " lstrcomment="false" lstrtitle="false" name="type" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="RadioGroup">
+              <Item name="1" text="Void"/>
+              <Item name="2" text="Withdraw"/>
+              <Item name="3" text="Note Returned"/>
+              <Item name="4" text="All "/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="72" lstrcomment="false" name="Grid4" posX="0" posY="18">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

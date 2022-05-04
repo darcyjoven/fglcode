@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="ManagedForm" uid="{e9702440-b994-403c-9bb2-c56043a979a7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b18674a8-533d-4e49-a6c2-afedbce3e5d4}" where="">
+    <RecordField colName="" fieldIdRef="31" name="ibd03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1fe6697a-969d-4e5f-8a96-cca6666fb8a1}"/>
+    <RecordField colName="" fieldIdRef="32" name="ibd04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0a6a7313-ae7a-40a3-8765-ac84da5ed292}"/>
+    <RecordField colName="" fieldIdRef="1" name="ibd02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2a9a1e7b-5ffd-4806-b7e8-43c5665cfee7}"/>
+    <RecordField colName="" fieldIdRef="2" name="ibd05" sqlTabName="" table_alias_name="" uid="{4e02cecf-fa9c-4174-88f1-549a4bdf2463}"/>
+    <RecordField colName="" fieldIdRef="3" name="ibd06" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{cb423976-dc8b-43f3-8f44-fa2e5a0eee8e}"/>
+    <RecordField colName="" fieldIdRef="4" name="ibd07" sqlTabName="" table_alias_name="" uid="{19b61613-8a8b-414c-b999-dd281006de7b}"/>
+    <RecordField colName="" fieldIdRef="5" name="ibd08" sqlTabName="" table_alias_name="" uid="{7b9c0fc6-b629-429a-a303-061a8da8a28a}"/>
+    <RecordField colName="" fieldIdRef="7" name="ibd09" sqlTabName="" table_alias_name="" uid="{11a2a1b3-9fa9-4ef0-b43b-a6791ace9b83}"/>
+    <RecordField colName="" fieldIdRef="6" name="ibd10" sqlTabName="" table_alias_name="" uid="{6b5ccbff-5f6f-4779-b6e8-f462c6e9ab39}"/>
+  </Record>
+  <Form gridHeight="32" gridWidth="174" name="abas010" text="abas010">
+    <Folder gridHeight="25" gridWidth="72" name="Folder1" posX="6" posY="3">
+      <Page name="Page1" text="Page1">
+        <Grid gridHeight="15" gridWidth="66" name="Grid1" posX="4" posY="1">
+          <Group gridHeight="5" gridWidth="30" name="Group4" posX="2" posY="1" text="Ware">
+            <Label posX="3" posY="1" text="ibd03"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="31" gridHeight="1" gridWidth="10" image="zoom" name="ibd03" posX="14" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit31" widget="ButtonEdit"/>
+            <Label posX="3" posY="2" text="ibd04"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="32" gridHeight="1" gridWidth="10" image="zoom" name="ibd04" posX="14" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Edit32" widget="ButtonEdit"/>
+          </Group>
+          <Group gridHeight="5" gridWidth="30" name="Group1" posX="34" posY="1" text="rep">
+            <Label posX="3" posY="1" text="ibd07"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="15" items="1, 2, 3" name="ibd07" notNull="true" posX="10" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="1"/>
+              <Item lstrtext="false" name="2" text="2"/>
+              <Item lstrtext="false" name="3" text="3"/>
+            </ComboBox>
+          </Group>
+          <Group gridHeight="6" gridWidth="30" name="Group6" posX="2" posY="8" text="Work">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="10" name="ibd02" notNull="true" posX="3" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="ibd02" title="Edit1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="10" name="ibd05" notNull="true" posX="3" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="ibd05" title="Edit1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label posX="3" posY="3" text="ibd06"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="10" image="zoom" name="ibd06" posX="11" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Edit31" widget="ButtonEdit"/>
+          </Group>
+          <Group gridHeight="6" gridWidth="29" name="Group2" posX="34" posY="8" text="Barcode">
+            <Label posX="3" posY="1" text="ibd08"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" items="Doc. Line No., Source Doc. No." name="ibd08" notNull="true" posX="10" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="7" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Doc. Line No."/>
+              <Item lstrtext="false" name="2" text="Source Doc. No."/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="10" name="ibd09" notNull="true" posX="2" posY="2" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="9" table_alias_name="" text="ibd09" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="10" name="ibd10" notNull="true" posX="2" posY="3" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="8" table_alias_name="" text="ibd10" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0AGUAMAAyAGMAZQBjAGYALQBmAGEAOQBjAC0ANAAxADcANAAtADgAOABmADEALQA1ADQAOQBhADQAYgBkAGYAMgA0ADYAMwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGIAOQBjADAAZgBjADYALQBiADYAMgA5AC0ANAAyADkAYQAtAGEAMwAwADMALQAwADYAMQBhADgAZABhADgAYQAyADgAYQB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADEAYQAyAGEAMQBiADMALQA5AGYAYQA5AC0ANABlAGYAMAAtAGIANAAzAGIALQBhADYANwA5ADEAYQBjAGUAOQBiADgAMwB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGIANAAyADMAOQA3ADYALQBkAGMAOABiAC0ANAAzAGYAMwAtADgAZgA0ADQALQBmAGEAMgBlADUAYQAwAGUAZQBlADgAZQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAxADkAYgA2ADEANgAxADMALQA4AGEAOABiAC0ANAAxADQAYwAtAGIAOQA5ADkALQBkAGQAMgA4ADEAMAAwADYAZABlADcAYgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGEAOQBhADEAZQA3AGIALQA1AGYAZgBkAC0ANAA4ADAANgAtAGIANwBlADgALQA0ADMAYwA1ADYANgA1AGMAZgBlAGUANwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGEANgBhADcAMwAxADMALQBhAGUANwBhAC0ANAAwAGEAMwAtADgANwA2ADUALQBhAGMAOAA0AGQAYQA1AGUAZAAyADkAMgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGYAZQA2ADYAOQA3AGEALQA5ADYAOQBkAC0ANABlADUAZgAtADgAYQA5ADYALQBjAGMAYQA2ADYANgA2AGYAYgA4AGEAMQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADEAOAA2ADcANABhADgALQA1ADMAMwBkAC0ANABlADQAOQAtAGEANgBjADIALQBhAGYAZQBkAGIAYwBlADMAZQA1AGQANAB9AAAAAAAAAAAAAAAAAAAAAD90euFHrhR7AQAAAEwAewA2AGIANQBjAGMAYgBmAGYALQA1AGYANgBmAC0ANAA3ADcAOQAtAGIANgBlADgALQBmADQANgAyAGMANgBlADkAYQBiADMAOQB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

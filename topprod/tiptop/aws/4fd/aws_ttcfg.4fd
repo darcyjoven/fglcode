@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b4aa16c5-0000-4000-bf61-4e8485345a75}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_wsn" order="" uid="{bf91b582-0000-4000-b64f-3671c78102de}" where="">
+    <RecordField colName="wsn03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="wsn_file.wsn03" sqlTabName="wsn_file" sqlType="VARCHAR" table_alias_name="" uid="{d66dfb42-0000-4000-99b1-2c31e4a3fd50}"/>
+    <RecordField colName="" fieldIdRef="4" name="gaq03" sqlTabName="" table_alias_name="" uid="{2fa65bc4-0000-4000-ab2c-d24d1b770fef}"/>
+    <RecordField colName="wsn04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="wsn_file.wsn04" sqlTabName="wsn_file" sqlType="VARCHAR" table_alias_name="" uid="{f97184a5-0000-4000-8b97-8d94299cdfaa}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{81e757de-0000-4000-b2f1-6d3ec45adbb0}" where="">
+    <RecordField colName="wsm01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="wsm_file.wsm01" sqlTabName="wsm_file" sqlType="VARCHAR" table_alias_name="" uid="{dea2da44-0000-4000-b876-3c1820a837cf}"/>
+    <RecordField colName="wsm02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="wsm_file.wsm02" sqlTabName="wsm_file" sqlType="VARCHAR" table_alias_name="" uid="{95245206-0000-4000-8f81-9eaa6e35e35d}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="gat03" sqlTabName="" table_alias_name="" uid="{c2b32132-0000-4000-86b2-f7e158527826}"/>
+    <RecordField colName="wsmuser" fieldIdRef="10" fieldType="TABLE_COLUMN" name="wsm_file.wsmuser" sqlTabName="wsm_file" sqlType="VARCHAR" table_alias_name="" uid="{444fe831-0000-4000-88c0-5b36860b6fcc}"/>
+    <RecordField colName="wsmmodu" fieldIdRef="11" fieldType="TABLE_COLUMN" name="wsm_file.wsmmodu" sqlTabName="wsm_file" sqlType="VARCHAR" table_alias_name="" uid="{5e967846-0000-4000-9aad-a0531c11efb4}"/>
+    <RecordField colName="wsmacti" fieldIdRef="12" fieldType="TABLE_COLUMN" name="wsm_file.wsmacti" sqlTabName="wsm_file" sqlType="VARCHAR" table_alias_name="" uid="{e60fca13-0000-4000-a195-60c13ad9c16e}"/>
+    <RecordField colName="wsmgrup" fieldIdRef="13" fieldType="TABLE_COLUMN" name="wsm_file.wsmgrup" sqlTabName="wsm_file" sqlType="VARCHAR" table_alias_name="" uid="{66f40414-0000-4000-99d1-0b0b7b72c41a}"/>
+    <RecordField colName="wsmdate" fieldIdRef="14" fieldType="TABLE_COLUMN" name="wsm_file.wsmdate" sqlTabName="wsm_file" sqlType="DATE" table_alias_name="" uid="{4d4c8d22-0000-4000-9fe1-9a6776aa39d3}"/>
+    <RecordField colName="wsmoriu" fieldIdRef="15" fieldType="TABLE_COLUMN" name="wsm_file.wsmoriu" sqlTabName="wsm_file" sqlType="VARCHAR" table_alias_name="" uid="{0cb5eef2-0000-4000-a97e-f06140f46b14}"/>
+    <RecordField colName="wsmorig" fieldIdRef="2" fieldType="TABLE_COLUMN" name="wsm_file.wsmorig" sqlTabName="wsm_file" sqlType="VARCHAR" table_alias_name="" uid="{48c1e093-0000-4000-888b-bb80e8822fa4}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{fca954f4-0000-4000-ad1a-49eef923247a}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{235e695b-0000-4000-a171-a6a0fc61c727}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="96" name="aws_ttcfg" spacing="normal" text="aws_ttcfg">
+    <VBox gridHeight="28" gridWidth="93" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="93" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="5" gridWidth="84" lstrcomment="false" name="gr6" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="83" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Service ID"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsm01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="wsm_file.wsm01" notNull="true" posX="13" posY="1" required="true" rowCount="" sqlTabName="wsm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Table ID"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsm02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="wsm_file.wsm02" notNull="true" posX="13" posY="2" required="true" rowCount="" sqlTabName="wsm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="35" lstrcomment="false" lstrtitle="false" name="gat03" noEntry="true" posX="35" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+        <Page lstrtext="false" name="info" text="Info">
+          <Grid gridHeight="4" gridWidth="91" lstrcomment="false" name="gr7" posX="0" posY="0">
+            <Label posX="3" posY="0" text="Record Owner"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsmuser" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wsm_file.wsmuser" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="wsm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Label posX="29" posY="0" text="Last Modified by"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsmmodu" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wsm_file.wsmmodu" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="wsm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="62" posY="0" text="Data Valid Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="wsmacti" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wsm_file.wsmacti" noEntry="true" posX="80" posY="0" rowCount="" sqlTabName="wsm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="3" posY="1" text="Department"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsmgrup" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wsm_file.wsmgrup" noEntry="true" posX="17" posY="1" rowCount="" sqlTabName="wsm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            <Label posX="29" posY="1" text="Create/Modify Date"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsmdate" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wsm_file.wsmdate" noEntry="true" posX="50" posY="1" rowCount="" sqlTabName="wsm_file" sqlType="DATE" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            <Label posX="3" posY="2" text="Record Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsmoriu" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wsm_file.wsmoriu" noEntry="true" posX="17" posY="2" rowCount="" sqlTabName="wsm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="501" table_alias_name="" widget="Edit"/>
+            <Label posX="3" posY="3" text="Dept Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsmorig" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wsm_file.wsmorig" noEntry="true" posX="17" posY="3" rowCount="" sqlTabName="wsm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="502" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="17" gridWidth="93" lstrcomment="false" name="tb3" posX="0" posY="8" totalRows="15">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsn03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wsn_file.wsn03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="wsn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Column ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="gaq03" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Column Desc" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsn04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="wsn_file.wsn04" posX="35" posY="0" rowCount="" sqlTabName="wsn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Default" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="93" lstrcomment="false" name="gr8" posX="0" posY="25">
+        <HLine gridWidth="10" name="hl5" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl6" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

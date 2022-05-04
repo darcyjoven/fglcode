@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7e6255ac-0000-4000-81fb-f7da2bbb5ad3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{eb9db7c8-0000-4000-aa33-65a102fdb7aa}" where="">
+    <RecordField colName="pmk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmk_file.pmk01" sqlTabName="pmk_file" sqlType="VARCHAR" table_alias_name="" uid="{2239947e-0000-4000-97c3-62f08bf1c04d}"/>
+    <RecordField colName="pmk09" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmk_file.pmk09" sqlTabName="pmk_file" sqlType="VARCHAR" table_alias_name="" uid="{68a1708e-0000-4000-8c4b-9561067a7d6d}"/>
+    <RecordField colName="pmk04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmk_file.pmk04" sqlTabName="pmk_file" sqlType="DATE" table_alias_name="" uid="{fd4ffa96-0000-4000-a5a0-47d23034798c}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="y" sqlTabName="" table_alias_name="" uid="{bdf1098d-0000-4000-9fca-ac8bc0681567}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{d073ab49-0000-4000-8ffb-716ae80dab5b}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="66" name="apmp454" spacing="normal" text="apmp454">
+    <VBox gridHeight="16" gridWidth="63" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="12" gridWidth="63" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="1">
+        <Grid gridHeight="10" gridWidth="54" lstrcomment="false" name="gr4892" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="51" lstrcomment="false" lstrtext="false" name="dummy01" posX="2" posY="0" text="* Confirm P/R been Backed up before running this task"/>
+          <Group gridHeight="4" gridWidth="53" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="1" text="QBE">
+            <Label posX="1" posY="1" text="P/R No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmk01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pmk_file.pmk01" posX="22" posY="1" rowCount="" sqlTabName="pmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Vender No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmk09" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pmk_file.pmk09" posX="22" posY="2" rowCount="" sqlTabName="pmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Group>
+          <Group gridHeight="4" gridWidth="53" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5">
+            <Label posX="1" posY="1" text="Ending P/R Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmk04" columnCount="" comment="Closed/Canceled P/O before this Date will be deleted " fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pmk_file.pmk04" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="pmk_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="45" lstrcomment="false" lstrtext="false" lstrtitle="false" name="y" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Re-confirm bef delete P/R ?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="63" lstrcomment="false" name="gr4893" posX="0" posY="13">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

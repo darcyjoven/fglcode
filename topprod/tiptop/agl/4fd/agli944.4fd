@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{78317828-cb41-4b87-9762-5d8cc4335134}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_giy" order="" uid="{54c5b26a-7a99-4dd7-9014-a47482ad76b5}" where="">
+    <RecordField colName="giy01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="giy_file.giy01" sqlTabName="giy_file" sqlType="SMALLINT" table_alias_name="" uid="{cda831fd-faf5-4317-9faa-cb6065e10f9f}"/>
+    <RecordField colName="giy02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="giy_file.giy02" sqlTabName="giy_file" sqlType="VARCHAR" table_alias_name="" uid="{a64c8124-90bf-47a7-bab8-cf64ce86449a}"/>
+    <RecordField colName="giy03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="giy_file.giy03" sqlTabName="giy_file" sqlType="VARCHAR" table_alias_name="" uid="{5a25ea04-0937-426b-8326-a40c327b35a9}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{328f9eaf-770e-495e-99fc-5a1fa53d808f}" where="">
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="giy04" sqlTabName="" table_alias_name="" uid="{e5b05ea8-3b0e-4f1a-917d-3db8d8afe1de}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="giy05" sqlTabName="" table_alias_name="" uid="{64c257e2-a22a-42a4-a470-a07f77c44d84}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{0c053c61-37dd-4423-b393-b9fec77dad1d}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{afb2dfa4-39f5-4476-9064-7371577b4422}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="112" name="agli944" spacing="normal" text="agli944">
+    <VBox gridHeight="17" gridWidth="93" name="vb5" posX="2" posY="1">
+      <Folder gridHeight="5" gridWidth="93" lstrcomment="false" name="pc475" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="3" gridWidth="89" lstrcomment="false" name="gr8" posX="1" posY="0">
+            <Label gridHeight="1" gridWidth="4" posX="3" posY="1" text="year"/>
+            <Edit colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="giy04" notNull="true" posX="11" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="6" posX="25" posY="1" text="period"/>
+            <Edit colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="giy05" notNull="true" posX="34" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="8" gridWidth="93" lstrcomment="false" name="s_gim" posX="0" posY="6" totalRows="6">
+        <Edit colName="giy01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="giy_file.giy01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="giy_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Seq." widget="Edit"/>
+        <Edit colName="giy02" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="55" lstrcomment="false" lstrtitle="false" name="giy_file.giy02" posX="5" posY="0" rowCount="" sqlTabName="giy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Description" widget="Edit"/>
+        <Edit colName="giy03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="giy_file.giy03" posX="60" posY="0" rowCount="" sqlTabName="giy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Amount" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="93" lstrcomment="false" name="gr2464" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl789" posX="2" posY="1"/>
+        <Label gridHeight="1" gridWidth="4" posX="13" posY="1" text="Rows"/>
+        <Edit colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="1" posX="27" posY="1" text="/"/>
+        <Edit colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl790" posX="38" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADUAYgAwADUAZQBhADgALQAzAGIAMABlAC0ANABmADEAYQAtADkAMQA3AGQALQAzAGQAYgA4AGQAOABhAGYAZQAxAGQAZQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADQAYwA1AGIAMgA2AGEALQA3AGEAOQA5AC0ANABkAGQANwAtADkAMAAxADQALQBhADQANwA0ADgAMgBhAGQANwA2AGIANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGQAYQA4ADMAMQBmAGQALQBmAGEAZgA1AC0ANAAzADEANwAtADkAZgBhAGEALQBjAGIANgAwADYANQBlADEAMABmADkAZgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGMAMAA1ADMAYwA2ADEALQAzADcAZABkAC0ANAA0ADIAMwAtAGIAMwA5ADMALQBiADkAZgBlAGMANwA3AGQAYQBkADEAZAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGEAMgA1AGUAYQAwADQALQAwADkAMwA3AC0ANAAyADYAYgAtADgAMwAyADYALQBhADQAMABjADMAMgA3AGIAMwA1AGEAOQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGYAYgAyAGQAZgBhADQALQAzADkAZgA1AC0ANAA0ADcANgAtADkAMAA2ADQALQA3ADMANwAxADUANwA3AGIANAA0ADIAMgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADYANABjADgAMQAyADQALQA5ADAAYgBmAC0ANAA3AGEANwAtAGIAYQBiADgALQBjAGYANgA0AGMAZQA4ADYANAA0ADkAYQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADIAOABmADkAZQBhAGYALQA3ADcAMABlAC0ANAA5ADUAZQAtADkAOQBmAGMALQA1AGEAMQBmAGEANQAzAGQAOAAwADgAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADQAYwAyADUANwBlADIALQBhADIAMgBhAC0ANAAyAGEANAAtAGEANAA3ADAALQBhADAANwBmADcANwBjADQANABkADgANAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

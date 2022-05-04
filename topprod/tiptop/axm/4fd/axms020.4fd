@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{efc90f3c-0000-4000-8cb8-db6a34db5cf9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9c7767b4-0000-4000-b176-e012e72bc372}" where="">
+    <RecordField colName="oaz11" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oaz_file.oaz11" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{efd58134-0000-4000-a23a-f024f5d8abe9}"/>
+    <RecordField colName="oaz121" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oaz_file.oaz121" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{8235bbc2-0000-4000-805c-a431d9baf23d}"/>
+    <RecordField colName="oaz141" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oaz_file.oaz141" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{806fcf95-0000-4000-9bb0-b6ba5b8043f6}"/>
+    <RecordField colName="oaz122" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oaz_file.oaz122" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{342af18a-0000-4000-ab69-6b3a0ce70308}"/>
+    <RecordField colName="oaz142" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oaz_file.oaz142" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{8bf7c7b0-0000-4000-9734-cb2bcd834d1f}"/>
+    <RecordField colName="oaz131" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oaz_file.oaz131" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{22fa5dbd-0000-4000-b12c-ad9248e7f7e6}"/>
+    <RecordField colName="oaz211" fieldIdRef="7" fieldType="TABLE_COLUMN" name="oaz_file.oaz211" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{c9143996-0000-4000-b8dd-90037692b2d0}"/>
+    <RecordField colName="oaz132" fieldIdRef="8" fieldType="TABLE_COLUMN" name="oaz_file.oaz132" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{8b0e53cb-0000-4000-953e-f8ab18f3fedc}"/>
+    <RecordField colName="oaz212" fieldIdRef="9" fieldType="TABLE_COLUMN" name="oaz_file.oaz212" sqlTabName="oaz_file" sqlType="VARCHAR" table_alias_name="" uid="{ba530018-0000-4000-9fb8-c1d93d60ba62}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="85" name="axms020" spacing="normal" text="axms020">
+    <Folder gridHeight="19" gridWidth="83" lstrcomment="false" name="Folder1" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <Grid gridHeight="17" gridWidth="82" lstrcomment="false" name="Grid1" posX="0" posY="0">
+          <Group gridHeight="3" gridWidth="81" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Credit Over Limit On-Hold Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz11" columnCount="" comment="&lt;^P&gt; Qry Hold Code" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz11" posX="33" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          </Group>
+          <Group gridHeight="3" gridWidth="43" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="When Prt Order,Credit Over-Lmt Handl.Mtd">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz121" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" items="NO Checking, Warn" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz121" posX="1" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+              <Item name="0" text="NO Checking"/>
+              <Item name="1" text="Warn"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="38" lstrcomment="false" lstrtext="false" name="group03" posX="44" posY="3" text="Prt Deli.Note,Hand Mth if Over-Lmt">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz141" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="NO Checking, Warn" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz141" posX="1" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+              <Item name="0" text="NO Checking"/>
+              <Item name="1" text="Warn"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="43" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="6" text="Confirm Order,Handling Method if Over-Lmt">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz122" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" items="NO Checking, Warn and Hold, Reject" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz122" posX="1" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+              <Item name="0" text="NO Checking"/>
+              <Item name="1" text="Warn and Hold"/>
+              <Item name="2" text="Reject"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="38" lstrcomment="false" lstrtext="false" name="group05" posX="44" posY="6" text="Conf Deli.Note,Handl.Mtd if Over-Lmt">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz142" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="NO Checking, Warn, Reject" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz142" posX="1" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="RadioGroup">
+              <Item name="0" text="NO Checking"/>
+              <Item name="1" text="Warn"/>
+              <Item name="2" text="Reject"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="43" lstrcomment="false" lstrtext="false" name="group06" posX="1" posY="9" text="Prt Del.Advice, Credit Ov-Lmt Handl.Mtd">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz131" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" items="NO Checking, Warn" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz131" posX="1" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+              <Item name="0" text="NO Checking"/>
+              <Item name="1" text="Warn"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="38" lstrcomment="false" lstrtext="false" name="group07" posX="44" posY="9" text="Creidt Line Exhange Rate Bas">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz211" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="By A/R Exchange Rt, Current Exhange Rate" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz211" posX="1" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="RadioGroup">
+              <Item name="1" text="By A/R Exchange Rt"/>
+              <Item name="2" text="Current Exhange Rate"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="4" gridWidth="43" lstrcomment="false" lstrtext="false" name="group08" posX="1" posY="12" text="When Conf Del.Adv, Cred Ov-Lmt Handl.Mtd">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz132" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" items="NO Checking, Warn, Reject" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz132" posX="1" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="RadioGroup">
+              <Item name="0" text="NO Checking"/>
+              <Item name="1" text="Warn"/>
+              <Item name="2" text="Reject"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="4" gridWidth="38" lstrcomment="false" lstrtext="false" name="group09" posX="44" posY="12" text="Creidt Line Curr Exhange Rate Base">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaz212" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="Bank Buying, Bank Selling, Bank Average ExRt, Customs Buy, Customs Sell, Customs 10" lstrcomment="false" lstrtitle="false" name="oaz_file.oaz212" posX="1" posY="1" rowCount="" sqlTabName="oaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="RadioGroup">
+              <Item name="B" text="Bank Buying"/>
+              <Item name="S" text="Bank Selling"/>
+              <Item name="M" text="Bank Average ExRt"/>
+              <Item name="C" text="Customs Buy"/>
+              <Item name="D" text="Customs Sell"/>
+              <Item name="P" text="Customs 10"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

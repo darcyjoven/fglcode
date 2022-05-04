@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{76514051-0000-4000-9691-b02bbb3bae56}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{27953e71-0000-4000-8813-e129491b3013}" where="">
+    <RecordField colName="oeb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oeb_file.oeb01" sqlTabName="oeb_file" sqlType="VARCHAR" table_alias_name="" uid="{519abb05-0000-4000-9e97-a65509ea86ca}"/>
+    <RecordField colName="oeb03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oeb_file.oeb03" sqlTabName="oeb_file" sqlType="SMALLINT" table_alias_name="" uid="{1f42f122-0000-4000-846c-8c8ea4ea2bd1}"/>
+    <RecordField colName="oea03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oea_file.oea03" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{186e9c87-0000-4000-954c-d8ec8d4a722a}"/>
+    <RecordField colName="oea14" fieldIdRef="7" fieldType="TABLE_COLUMN" name="oea_file.oea14" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{2947de21-0000-4000-9764-a4498126b150}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="sudate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{ab2c4487-0000-4000-bd4c-c9460d8bad7c}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ec06d87f-0000-4000-a40c-d856087df46d}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="b" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{369a0977-0000-4000-9625-144515e60433}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="c" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{da39ba0d-0000-4000-897d-ad3d22a50971}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="d" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{33253888-0000-4000-a171-4ad5ec8ac32b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="e" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b2514f5c-0000-4000-aac8-91917952e38d}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="f" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e56229aa-0000-4000-9fc0-f4f09cadd3b0}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="g" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{fef573bd-0000-4000-a703-59727439a364}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="Form3" text="apmp500_a">
+    <VBox gridHeight="16" gridWidth="75" name="vb2" posX="1" posY="0">
+      <Grid gridHeight="5" gridWidth="75" lstrcomment="false" name="gr4" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="72" lstrcomment="false" lstrtext="false" name="gb3" posX="1" posY="0" text="QBE">
+          <Label posX="2" posY="1" text="S/O No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oeb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" justify="" name="oeb_file.oeb01" notNull="true" posX="16" posY="1" required="true" rowCount="" sizePolicy="" sqlTabName="oeb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="38" posY="1" text="S/O No. Line"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oeb03" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" name="oeb_file.oeb03" notNull="true" posX="53" posY="1" required="true" rowCount="" sqlTabName="oeb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="2" posY="3" text="Custmor No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea03" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" justify="" name="oea_file.oea03" posX="16" posY="3" rowCount="" sizePolicy="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="38" posY="3" text="Salesman"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea14" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" justify="" name="oea_file.oea14" posX="53" posY="3" rowCount="" sizePolicy="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="7" gridWidth="75" lstrcomment="false" name="gr5" posX="0" posY="6">
+        <Label posX="1" posY="0" text="Supply Ending Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" century="" colName="" colorCondition="black" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" justify="" name="sudate" posX="24" posY="0" rowCount="" sizePolicy="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+        <Group gridHeight="5" gridWidth="72" lstrcomment="false" lstrtext="false" name="gb4" posX="1" posY="1" text="Print Data">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="3" posY="1" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Available Qty" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtext="false" lstrtitle="false" name="b" notNull="true" posX="37" posY="1" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="QC Qty" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="c" notNull="true" posX="3" posY="2" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="P/R Qty" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtext="false" lstrtitle="false" name="d" notNull="true" posX="37" posY="2" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Purchase Qty" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="e" notNull="true" posX="3" posY="3" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="WIP Qty" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtext="false" lstrtitle="false" name="f" notNull="true" posX="37" posY="3" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" text="Allotted Qty" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="75" lstrcomment="false" name="gr6" posX="0" posY="13">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="59" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g" notNull="true" posX="1" posY="0" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" text="Suggested amount include safety stock?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

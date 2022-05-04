@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d28099d4-0000-4000-80d8-7a6cec3a11e8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_fbi" order="" uid="{e8468ea1-0000-4000-9563-e6285909a498}" where="">
+    <RecordField colName="fbi01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="fbi_file.fbi01" sqlTabName="fbi_file" sqlType="VARCHAR" table_alias_name="" uid="{a0c2e3db-0000-4000-b0af-1334bd444ae0}"/>
+    <RecordField colName="" fieldIdRef="2" name="gem02" sqlTabName="" table_alias_name="" uid="{7d9f6511-0000-4000-9b16-2526a96e3e79}"/>
+    <RecordField colName="fbi03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="fbi_file.fbi03" sqlTabName="fbi_file" sqlType="VARCHAR" table_alias_name="" uid="{f8f04e3d-0000-4000-8958-22ac3afd9788}"/>
+    <RecordField colName="fbi02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="fbi_file.fbi02" sqlTabName="fbi_file" sqlType="VARCHAR" table_alias_name="" uid="{8e1e4846-0000-4000-9bac-a28f9a5715e6}"/>
+    <RecordField colName="" fieldIdRef="5" name="aag02" sqlTabName="" table_alias_name="" uid="{40b0717c-0000-4000-9cb2-263f7dd245e4}"/>
+    <RecordField colName="fbiacti" fieldIdRef="6" fieldType="TABLE_COLUMN" name="fbi_file.fbiacti" sqlTabName="fbi_file" sqlType="VARCHAR" table_alias_name="" uid="{a576521f-0000-4000-857a-e2d5a5b44318}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6981e0d8-0000-4000-ba87-c7a35e3b4ea2}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{5b218f3e-0000-4000-8bcc-8e350287e374}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="138" name="afai080t" spacing="normal" text="afai080t">
+    <VBox gridHeight="18" gridWidth="135" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="135" lstrcomment="false" name="pc326" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="133" lstrcomment="false" name="s_fbi" posX="0" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fbi01" columnCount="" comment="&lt;^P&gt;Query Department &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="fbi_file.fbi01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="fbi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Dept No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gem02" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Dept Name" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fbi03" columnCount="" comment="&lt;^P&gt;Qry Main Category &lt;^O&gt;Copy Previous Record!" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="fbi_file.fbi03" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="fbi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Main Category" widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fbi02" columnCount="" comment="&lt;^P&gt;Qry Account  " fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="fbi_file.fbi02" posX="39" posY="0" rowCount="" sqlTabName="fbi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Depreciation Account Number" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="69" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Account Title" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fbiacti" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="fbi_file.fbiacti" notNull="true" posX="119" posY="0" required="true" rowCount="" sqlTabName="fbi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="135" lstrcomment="false" name="gr1810" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl577" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl578" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

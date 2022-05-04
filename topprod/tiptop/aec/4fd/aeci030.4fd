@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f5e5914c-0000-4000-9a9c-3b1ad32c5848}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sgg" order="" uid="{1c5edb04-0000-4000-ab40-bcf11290b53a}" where="">
+    <RecordField colName="sgg01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sgg_file.sgg01" sqlTabName="sgg_file" sqlType="VARCHAR" table_alias_name="" uid="{0e1f514a-0000-4000-aa92-77027e0b4675}"/>
+    <RecordField colName="sgg02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sgg_file.sgg02" sqlTabName="sgg_file" sqlType="VARCHAR" table_alias_name="" uid="{0efaf7a5-0000-4000-be28-8cc1ac2e5977}"/>
+    <RecordField colName="sggacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sgg_file.sggacti" sqlTabName="sgg_file" sqlType="VARCHAR" table_alias_name="" uid="{3e89e7b7-0000-4000-aed9-838bef57df55}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{404a77c0-0000-4000-9a9b-f54cd382bba3}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{6323311b-0000-4000-bd96-17aaa35e5559}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="54" name="aeci030" spacing="normal" text="aeci030">
+    <VBox gridHeight="18" gridWidth="51" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="51" lstrcomment="false" name="pc252" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="49" lstrcomment="false" name="s_sgg" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sgg01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="sgg_file.sgg01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="sgg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="On-Hold Reason Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sgg02" columnCount="" comment="No blank Field!" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="sgg_file.sgg02" posX="19" posY="0" rowCount="" sqlTabName="sgg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="On-Hold Reason" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sggacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sgg_file.sggacti" notNull="true" posX="39" posY="0" required="true" rowCount="" sqlTabName="sgg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="51" lstrcomment="false" name="gr1627" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl445" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl446" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{c65b3316-3732-4759-bce9-62a29b035be1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6c85c887-862d-4652-9c0b-52b2755a5565}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="becard" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{579cfe3d-6783-4f61-aab0-4585f1e65345}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="encard" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f220ff9c-f54a-439a-b082-5b3a321d6bc3}"/>
+    <RecordField colName="" fieldIdRef="2" name="passwd1" sqlTabName="" table_alias_name="" uid="{16f55e78-8cd2-4b50-b5f9-1d0e7d711841}"/>
+    <RecordField colName="" fieldIdRef="3" name="passwd2" sqlTabName="" table_alias_name="" uid="{2c6c24ff-fcc2-4ad3-98c7-14431756cff4}"/>
+    <RecordField colName="" fieldIdRef="4" name="passwd3" sqlTabName="" table_alias_name="" uid="{92ed3428-eed8-4034-b65f-560ee5edb9dd}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{facf5a18-286b-4cb4-8537-51a99dd0876f}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="139" name="Form" text="Form">
+    <VBox gridHeight="12" gridWidth="81" name="VBox1" posX="1" posY="0">
+      <Folder gridHeight="8" gridWidth="81" name="f01" posX="0" posY="1">
+        <Page name="p01" text="Page1">
+          <Grid gridHeight="5" gridWidth="74" name="gr01" posX="2" posY="1">
+            <Label gridHeight="1" gridWidth="10" name="Label1" posX="2" posY="0" text="Card No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" image="zoom.png" name="becard" notNull="true" posX="16" posY="0" rowCount="" scroll="true" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ryi01" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="3" name="Label5" posX="43" posY="0" text="~"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" image="zoom.png" name="encard" notNull="true" posX="48" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Edit5" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label2" posX="2" posY="1" text="Passwd1"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="25" invisible="true" name="passwd1" notNull="true" posX="16" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit2" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label3" posX="2" posY="2" text="Passwd2"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="25" invisible="true" name="passwd2" notNull="true" posX="16" posY="2" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Edit3" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label4" posX="2" posY="3" text="Passwd3"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="none" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="25" invisible="true" name="passwd3" notNull="true" posX="16" posY="3" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Edit4" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="81" lstrcomment="false" name="gr03" posX="0" posY="9">
+        <HLine gridWidth="10" name="hl01" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl02" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA5ADIAZQBkADMANAAyADgALQBlAGUAZAA4AC0ANAAwADMANAAtAGIANgA1AGYALQA1ADYAMABlAGUANQBlAGQAYgA5AGQAZAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGMANgBjADIANABmAGYALQBmAGMAYwAyAC0ANABhAGQAMwAtADkAOABjADcALQAxADQANAAzADEANwA1ADYAYwBmAGYANAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADYAZgA1ADUAZQA3ADgALQA4AGMAZAAyAC0ANABiADUAMAAtAGIANQBmADkALQAxAGQAMABlADcAZAA3ADEAMQA4ADQAMQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGMAOAA1AGMAOAA4ADcALQA4ADYAMgBkAC0ANAA2ADUAMgAtADkAYwAwAGIALQA1ADIAYgAyADcANQA1AGEANQA1ADYANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGEAYwBmADUAYQAxADgALQAyADgANgBiAC0ANABjAGIANAAtADgANQAzADcALQA1ADEAYQA5ADkAZABkADAAOAA3ADYAZgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADcAOQBjAGYAZQAzAGQALQA2ADcAOAAzAC0ANABmADYAMQAtAGEAYQBiADAALQA0ADUAOAA1AGYAMQBlADYANQAzADQANQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADIAMgAwAGYAZgA5AGMALQBmADUANABhAC0ANAAzADkAYQAtAGIAMAA4ADIALQA1AGIAMwBhADMAMgAxAGQANgBiAGMAMwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

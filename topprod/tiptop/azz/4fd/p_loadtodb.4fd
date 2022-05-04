@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{c9fc1d5a-0000-4000-ad79-298c769994d2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_field" order="" uid="{7eefbe01-0000-4000-91ba-692910225f96}" where="">
+    <RecordField colName="" fieldIdRef="7" name="field_no" sqlTabName="" table_alias_name="" uid="{ef6f681a-0000-4000-b135-33f0283589ec}"/>
+    <RecordField colName="" fieldIdRef="8" name="type" sqlTabName="" table_alias_name="" uid="{46326e4c-0000-4000-b45f-7fd241114ab0}"/>
+    <RecordField colName="" fieldIdRef="9" name="desc" sqlTabName="" table_alias_name="" uid="{fdcd4696-0000-4000-9bd7-cbddd9a27aa6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8853a0d5-0000-4000-8576-8ce3ef76e7e5}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="doc_path" sqlTabName="" table_alias_name="" uid="{f7ea5d42-0000-4000-ad3e-cda077ddd23e}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="db_name" sqlTabName="" table_alias_name="" uid="{261982f2-0000-4000-aa65-6466e7cb86a3}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="tab_name" sqlTabName="" table_alias_name="" uid="{5c7e5254-0000-4000-af50-f440afefe68f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="tab_usedto" sqlTabName="" table_alias_name="" uid="{7c4d33b7-0000-4000-8991-dd20b8948271}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="up_file" sqlTabName="" table_alias_name="" uid="{a663c5c1-0000-4000-a3f3-2002ecd7e60f}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="down_file" sqlTabName="" table_alias_name="" uid="{63aad7f9-0000-4000-8560-b114ae5d3074}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="89" name="p_loadtodb" spacing="normal" text="p_loadtodb">
+    <VBox gridHeight="25" gridWidth="87" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="9" gridWidth="87" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="1" text="Table">
+        <Grid gridHeight="7" gridWidth="59" lstrcomment="false" name="gr3227" posX="1" posY="1">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="doc_path" notNull="true" posX="1" posY="0" required="true" rowCount="" scroll="true" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Button gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="open_file" posX="34" posY="0" tabIndex="" text="Open File"/>
+          <Label posX="1" posY="1" text="database"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Database Name" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="db_name" notNull="true" posX="18" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Table Name"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Table Name" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="tab_name" notNull="true" posX="18" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Table Used To"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="tab_usedto" posX="18" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Upstream File"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="up_file" posX="18" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="5" text="Downstream File"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="down_file" posX="18" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Button gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="file_analyze" posX="1" posY="6" tabIndex="" text="File Analyze"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="14" gridWidth="87" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="10" text="Import Datas">
+        <Table gridHeight="12" gridWidth="85" lstrcomment="false" name="s_field" posX="1" posY="1" totalRows="10">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="field_no" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Field No." widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="type" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Type" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="51" lstrcomment="false" lstrtitle="false" name="desc" noEntry="true" posX="29" posY="0" rowCount="" scroll="true" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Description" widget="Edit"/>
+        </Table>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{115b0e5d-0000-4000-8a26-6d9e48ad1991}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1a34c1b9-0000-4000-b33b-81fd8f311343}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bno" sqlTabName="" table_alias_name="" uid="{efac720a-0000-4000-b20f-72b1c6e65259}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="eno" sqlTabName="" table_alias_name="" uid="{1ce2740c-0000-4000-a9a7-988efbcaad0e}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="sw_1" sqlTabName="" table_alias_name="" uid="{591f4f9c-0000-4000-942d-1da1f8978d83}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="sw_2" sqlTabName="" table_alias_name="" uid="{af15b230-0000-4000-8cff-08d5c1a152a6}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{a5748559-0000-4000-86a4-181e19fdf51a}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="mm" sqlTabName="" table_alias_name="" uid="{e698d948-0000-4000-91e3-cd1ffe715b23}"/>
+    <RecordField colName="sma53" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sma_file.sma53" sqlTabName="sma_file" sqlType="DATE" table_alias_name="" uid="{e89ffb46-0000-4000-9b9e-4155286af306}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{9549583a-0000-4000-adf6-a5b98d071dfb}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="76" name="axcp401" spacing="normal" text="axcp401">
+    <VBox gridHeight="16" gridWidth="73" name="vb2" posX="3" posY="0">
+      <Grid gridHeight="8" gridWidth="73" lstrcomment="false" name="gr1515" posX="0" posY="1">
+        <Group gridHeight="8" gridWidth="71" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="W/O No. QBE"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="bno" posX="24" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="41" posY="1" text="-"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="eno" posX="43" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="58" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sw_1" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Completed W/O(Esitmated Production Qty=Stored-in Qty)W/O" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="58" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sw_2" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Auto Set Closed W/O Closing Date" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label posX="1" posY="4" text="Current Year/Period"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" name="yy" posX="27" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" name="mm" posX="42" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="5" text="Cost Accounting Locking Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma53" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" name="sma_file.sma53" posX="39" posY="5" rowCount="" sqlTabName="sma_file" sqlType="DATE" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="4" gridWidth="73" lstrcomment="false" name="gr1516" posX="0" posY="9">
+        <Label gridHeight="1" gridWidth="70" lstrcomment="false" lstrtext="false" name="dummy01" posX="2" posY="0" text="Note: "/>
+        <Label gridHeight="1" gridWidth="70" lstrcomment="false" lstrtext="false" name="dummy02" posX="2" posY="1" text="1.Before Run Cost Accouting, better to Close Closed W/O"/>
+        <Label gridHeight="1" gridWidth="70" lstrcomment="false" lstrtext="false" name="dummy03" posX="2" posY="2" text="  to avoid Nx.MM Withdrawal/Return Cost being Input"/>
+        <Label gridHeight="1" gridWidth="69" lstrcomment="false" lstrtext="false" name="dummy04" posX="2" posY="3" text="2.It&apos;ll Update sfb38(Cost Accounting Closing Date) for Closed W/O"/>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="73" lstrcomment="false" name="gr1517" posX="0" posY="13">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

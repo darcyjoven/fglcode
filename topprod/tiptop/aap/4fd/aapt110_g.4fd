@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{14d2b241-0000-4000-929b-118933e89e8c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{a7ac1dd9-0000-4000-81a1-3cb13b7bc677}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="apa46" sqlTabName="" table_alias_name="" uid="{32f0f5bf-0000-4000-b66c-62bd645d9309}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="apa08" sqlTabName="" table_alias_name="" uid="{67af6cca-0000-4000-a9d4-7f1f137545e6}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="apa09" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{3251e5eb-0000-4000-aee8-4411695905a8}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="apa18" sqlTabName="" table_alias_name="" uid="{6350f6b3-0000-4000-b6e4-463cc5407646}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="apa171" sqlTabName="" table_alias_name="" uid="{d6b565cb-0000-4000-8e35-a2613f27387f}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="apa17" sqlTabName="" table_alias_name="" uid="{9c6a217a-0000-4000-9e74-6c022ea1993d}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="apa172" sqlTabName="" table_alias_name="" uid="{1fee5623-0000-4000-ab73-4687a3059a82}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="apa173" sqlTabName="" table_alias_name="" uid="{d0a754c5-0000-4000-952b-ae68ed54fb4c}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="apa174" sqlTabName="" table_alias_name="" uid="{c9b2a179-0000-4000-9aca-e0d613435481}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="86" name="aapt110_g" spacing="normal" text="aapt110_g">
+    <Grid gridHeight="14" gridWidth="85" lstrcomment="false" name="gr357" posX="0" posY="0">
+      <Group gridHeight="5" gridWidth="32" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+        <Label posX="1" posY="1" text="Invoice ID"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="apa46" posX="15" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Invoice #"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="apa08" noEntry="true" posX="15" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="3" text="Invoice Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="apa09" posX="15" posY="3" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+      </Group>
+      <Group gridHeight="5" gridWidth="51" lstrcomment="false" lstrtext="false" name="group02" posX="34" posY="0">
+        <Label posX="1" posY="2" text="Uniform#"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="apa18" posX="11" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="3" text="Format"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Purchase-Triplicate Calculator, Other Voucher with tax, Triplicate,Return Allowance, Duplicate, Cash Register, Purchase-Triplicate,Caculator which the amount of tax is under 500, Purchase-Duplicate,Electronic Receipt with tax Invoice no. which ammount of tax is under 500, The purchase business tax prepaid by customs receipt, No Declartion" lstrcomment="false" lstrtitle="false" name="apa171" notNull="true" posX="11" posY="3" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="" name="21" text="Purchase-Triplicate Calculator"/>
+          <Item lstrtext="" name="22" text="Other Voucher with tax"/>
+          <Item lstrtext="" name="23" text="Triplicate,Return Allowance"/>
+          <Item lstrtext="" name="24" text="Duplicate"/>
+          <Item lstrtext="" name="25" text="Cash Register"/>
+          <Item lstrtext="" name="26" text="Purchase-Triplicate,Caculator which the amount of tax is under 500"/>
+          <Item lstrtext="" name="27" text="Purchase-Duplicate,Electronic Receipt with tax Invoice no. which ammount of tax is under 500"/>
+          <Item lstrtext="" name="28" text="The purchase business tax prepaid by customs receipt"/>
+          <Item lstrtext="" name="XX" text="No Declartion"/>
+        </ComboBox>
+      </Group>
+      <Group gridHeight="3" gridWidth="84" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="5">
+        <Label posX="1" posY="1" text="Deduct/Offset"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" items="Deductible Cost and Expense, Creditable Fixed Asset, No deductible Cost and Expense, No Creditable Fixed Asset" lstrcomment="false" lstrtitle="false" name="apa17" posX="16" posY="1" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="" name="1" text="Deductible Cost and Expense"/>
+          <Item lstrtext="" name="2" text="Creditable Fixed Asset"/>
+          <Item lstrtext="" name="3" text="No deductible Cost and Expense"/>
+          <Item lstrtext="" name="4" text="No Creditable Fixed Asset"/>
+        </ComboBox>
+      </Group>
+      <Group gridHeight="5" gridWidth="32" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="8" text="Tax Type">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" items="Taxable, Zero Tax Rate, Tax-Free" lstrcomment="false" lstrtitle="false" name="apa172" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="RadioGroup">
+          <Item lstrtext="" name="1" text="Taxable"/>
+          <Item lstrtext="" name="2" text="Zero Tax Rate"/>
+          <Item lstrtext="" name="3" text="Tax-Free"/>
+        </RadioGroup>
+      </Group>
+      <Group gridHeight="5" gridWidth="51" lstrcomment="false" lstrtext="false" name="group05" posX="34" posY="8">
+        <Label posX="1" posY="1" text="Declaring Year (Century)"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="apa173" noEntry="true" posX="27" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Declaring Month"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="apa174" noEntry="true" posX="27" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

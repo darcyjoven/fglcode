@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{fd9cb436-0000-4000-90c8-88663bb7d0e4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{87d9a83b-0000-4000-b934-862fb198d65a}" where="">
+    <RecordField colName="vmz01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vmz_file.vmz01" sqlTabName="vmz_file" sqlType="VARCHAR" table_alias_name="" uid="{c57c8e1a-0000-4000-a758-0859096d9f48}"/>
+    <RecordField colName="vmz12" defaultValue="0" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vmz_file.vmz12" sqlTabName="vmz_file" sqlType="INTEGER" table_alias_name="" uid="{a6a8e624-0000-4000-a09a-38855bab14b9}"/>
+    <RecordField colName="vmz16" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vmz_file.vmz16" sqlTabName="vmz_file" sqlType="VARCHAR" table_alias_name="" uid="{e54bccab-0000-4000-a604-398c5e0c5a0b}"/>
+    <RecordField colName="vmz25" defaultValue="0" fieldIdRef="4" fieldType="TABLE_COLUMN" name="vmz_file.vmz25" sqlTabName="vmz_file" sqlType="VARCHAR" table_alias_name="" uid="{ed1e2479-0000-4000-b65f-c6e3e674df99}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{43667556-0000-4000-8a12-7a8761fcf2e2}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="58" name="apsi317" spacing="normal" text="apsi317">
+    <VBox gridHeight="14" gridWidth="52" name="vb26" posX="0" posY="0">
+      <Folder gridHeight="10" gridWidth="52" lstrcomment="false" name="pc4" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="7" gridWidth="51" lstrcomment="false" name="gr7" posX="1" posY="1">
+            <Group gridHeight="6" gridWidth="50" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="PO No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmz01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="vmz_file.vmz01" noEntry="true" notNull="true" posX="28" posY="1" required="true" rowCount="" sqlTabName="vmz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Reserve"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmz12" columnCount="" comment="Enter  0/1" defaultValue="0" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="False, True" lstrcomment="false" lstrtitle="false" name="vmz_file.vmz12" notNull="true" posX="28" posY="2" queryEditable="true" rowCount="" sqlTabName="vmz_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="False"/>
+                <Item lstrtext="false" name="1" text="True"/>
+              </ComboBox>
+              <Label posX="1" posY="3" text="Supply Rule Code"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmz16" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="vmz_file.vmz16" notNull="true" posX="28" posY="3" required="true" rowCount="" sqlTabName="vmz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="4" text="vmz25"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmz25" columnCount="" comment="Enter  0/1" defaultValue="0" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="N, Y" lstrcomment="false" lstrtitle="false" name="vmz_file.vmz25" notNull="true" posX="28" posY="4" queryEditable="true" required="true" rowCount="" sqlTabName="vmz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="N"/>
+                <Item lstrtext="false" name="1" text="Y"/>
+              </ComboBox>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="52" lstrcomment="false" name="gr8" posX="0" posY="11">
+        <HLine gridWidth="10" name="hl7" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

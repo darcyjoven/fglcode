@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{83750622-0000-4000-9ac6-b2bb3ef0bdfa}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aag" order="" uid="{67a793e6-0000-4000-9f7e-c29324d76652}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{8626f913-0000-4000-a093-5ace5d0fa7a8}"/>
+    <RecordField colName="aag01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aag_file.aag01" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{5d111310-0000-4000-a0d9-3742c6e75953}"/>
+    <RecordField colName="aag03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aag_file.aag03" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{bf891771-0000-4000-8da6-e776849d2a0f}"/>
+    <RecordField colName="aag02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aag_file.aag02" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{5d11bc77-0000-4000-81ab-d1ac8c646e47}"/>
+    <RecordField colName="aag04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="aag_file.aag04" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{ca372d8d-0000-4000-8215-02e51c584ede}"/>
+    <RecordField colName="aag07" fieldIdRef="6" fieldType="TABLE_COLUMN" name="aag_file.aag07" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{0818f3cc-0000-4000-8281-3369408ba174}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="119" name="q_aag" spacing="normal" text="Query Account">
+    <Grid gridHeight="13" gridWidth="117" lstrcomment="false" name="gr3716" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="116" lstrcomment="false" name="s_aag" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aag_file.aag01" noEntry="true" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Account" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Account, Carry forward" lstrcomment="false" lstrtitle="false" name="aag_file.aag03" noEntry="true" posX="26" posY="0" queryEditable="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Property" widget="ComboBox">
+          <Item name="2" text="Account"/>
+          <Item name="4" text="Carry forward"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag_file.aag02" noEntry="true" posX="37" posY="0" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Account Title" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" items="Balance Sheet, Income Statement" lstrcomment="false" lstrtitle="false" name="aag_file.aag04" noEntry="true" posX="87" posY="0" queryEditable="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="BSIS" widget="ComboBox">
+          <Item name="1" text="Balance Sheet"/>
+          <Item name="2" text="Income Statement"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag07" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="Control Account, Detail Account, Independent Account" lstrcomment="false" lstrtitle="false" name="aag_file.aag07" noEntry="true" posX="94" posY="0" queryEditable="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Control/Detail" widget="ComboBox">
+          <Item name="1" text="Control Account"/>
+          <Item name="2" text="Detail Account"/>
+          <Item name="3" text="Independent Account"/>
+        </ComboBox>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form CHECKSUM="-1" database_name="ds" fourSTFile="" gstVersion="11401" height="25" lstrtext="false" lstrtoallcomment="false" lstrtoallitem="false" lstrtoalltext="false" lstrtoalltitle="false" name="apsi320" posX="0" posY="0" spacing="normal" text="apsi320" width="80">
+  <VBox hidden="--------" name="vb2_" posX="2" posY="1" style="" tag="">
+    <PageControl fontPitch="default" height="14" hidden="--------" lstrcomment="false" name="pc1" posX="2" posY="1" width="52">
+      <Page flag_text_changed="FALSE" name="Page1" text="Main">
+        <Grid fontPitch="default" height="12" hidden="--------" lstrcomment="false" name="gr1" posX="1" posY="0" width="49">
+          <Group flag_text_changed="TRUE" fontPitch="default" gridChildrenInParent="--------" height="10" hidden="--------" lstrcomment="false" lstrtext="false" name="gb1" posX="1" posY="1" text="" width="46">
+            <Text height="1" name="text1" posX="1" posY="3" text="Resource No." width="12"/>
+            <Text height="1" name="text2" posX="1" posY="5" text="Date" width="4"/>
+            <FormField colName="vnc02" fieldtype="TABLE_COLUMN" name="vnc02" sqlDBName="ds" sqlTabName="vnc_file">
+              <DateEdit century="R" color="black" colorCondition="black" data_type="VARCHAR" fontPitch="default" formfieldname="formfield1" height="1" hidden="--------" justify="none" lstrcomment="false" name="vnc02" noEntry="--------" notNull="true" posX="17" posY="5" required="true" sizePolicy="initial" tabIndex="2" width="15"/>
+            </FormField>
+            <Text height="1" name="text3" posX="1" posY="6" text="Start(HH:MM:SS)" width="15"/>
+            <Text height="1" name="text4" posX="1" posY="7" text="End(HH:MM:SS)" width="13"/>
+            <Text height="1" name="text5" posX="1" posY="8" text="Scheduling" width="10"/>
+            <FormField colName="vnc05" fieldtype="TABLE_COLUMN" name="vnc05" sqlDBName="ds" sqlTabName="vnc_file">
+              <ComboBox case="NONE" color="black" colorCondition="black" data_type="VARCHAR" fontPitch="default" formfieldname="formfield6" height="1" hidden="--------" lstrcomment="false" name="vnc05" noEntry="true" notNull="true" posX="17" posY="8" queryEditable="--------" required="true" scroll="--------" sizePolicy="initial" sortItem="yes" tabIndex="4" width="18">
+                <Item lstrtext="false" name="1" text="Scheduled, the limit considered"/>
+                <Item lstrtext="false" name="0" text="Unscheduled, the limit not considered"/>
+              </ComboBox>
+            </FormField>
+            <FormField colName="vnc04" fieldtype="TABLE_COLUMN" name="vnc04" sqlDBName="ds" sqlTabName="vnc_file">
+              <Edit autoNext="--------" case="NONE" century="R" color="black" colorCondition="black" data_type="DECIMAL" fontPitch="default" formfieldname="formfield1" height="1" hidden="--------" invisible="--------" justify="none" length="9" lstrcomment="false" name="vnc04" noEntry="true" notNull="--------" posX="31" posY="7" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="3" verify="--------" width="8"/>
+            </FormField>
+            <FormField colName="vnc03" fieldtype="TABLE_COLUMN" name="vnc03" sqlDBName="ds" sqlTabName="vnc_file">
+              <Edit autoNext="--------" case="NONE" century="R" color="black" colorCondition="black" data_type="DECIMAL" fontPitch="default" formfieldname="formfield1" height="1" hidden="--------" invisible="--------" justify="none" length="9" lstrcomment="false" name="vnc03" noEntry="true" notNull="--------" posX="31" posY="6" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="2" verify="--------" width="8"/>
+            </FormField>
+            <FormField colName="vnc01" fieldId="3" fieldtype="TABLE_COLUMN" name="vnc01" sqlDBName="ds" sqlTabName="vnc_file">
+              <ButtonEdit action="controlp" autoNext="--------" case="NONE" century="R" color="black" comment=" &lt;^P&gt;Qry Work Center &lt;^Y&gt;Create Work Center" data_type="VARCHAR" fontPitch="default" formfieldname="formfield3" gridWidth="10" height="1" hidden="--------" image="zoom" imagetype="Select File" invisible="--------" length="10" lstrcomment="false" lstrtitle="false" name="vnc01" noEntry="--------" notNull="true" posX="17" posY="3" required="true" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="1" verify="--------" width="18" zeroFill="--------"/>
+            </FormField>
+            <FormField colName="vnc041" fieldtype="TABLE_COLUMN" name="vnc041" sqlDBName="ds" sqlTabName="vnc_file">
+              <Edit autoNext="--------" case="NONE" century="R" color="black" colorCondition="black" data_type="VARCHAR" fontPitch="default" format="XX:XX:XX" formfieldname="formfield1" height="1" hidden="--------" invisible="--------" justify="none" lstrcomment="false" name="vnc041" noEntry="true" notNull="--------" posX="17" posY="7" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="5" verify="--------" width="11"/>
+            </FormField>
+            <FormField colName="vnc031" fieldtype="TABLE_COLUMN" name="vnc031" sqlDBName="ds" sqlTabName="vnc_file">
+              <Edit autoNext="--------" case="NONE" century="R" color="black" colorCondition="black" data_type="VARCHAR" fontPitch="default" format="XX:XX:XX" formfieldname="formfield1" height="1" hidden="--------" invisible="--------" justify="none" lstrcomment="false" name="vnc031" noEntry="true" notNull="--------" posX="17" posY="6" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="6" verify="--------" width="11"/>
+            </FormField>
+            <Text height="1" name="text5_1" posX="1" posY="4" text="overtime Type" width="13"/>
+            <FormField colName="vnc08" fieldtype="TABLE_COLUMN" name="vnc08" sqlDBName="ds" sqlTabName="vnc_file">
+              <ComboBox case="NONE" color="black" colorCondition="black" data_type="VARCHAR" fontPitch="default" formfieldname="formfield6" height="1" hidden="--------" length="" lstrcomment="false" name="vnc08" noEntry="--------" notNull="true" posX="17" posY="4" queryEditable="--------" required="true" scroll="--------" sizePolicy="initial" sortItem="yes" tabIndex="7" width="18">
+                <Item lstrtext="false" name="0" text="Overtime"/>
+                <Item lstrtext="false" name="1" text="Repair"/>
+              </ComboBox>
+            </FormField>
+            <Text height="1" name="text5_2" posX="1" posY="2" text="Resource Type" width="13"/>
+            <FormField colName="vnc07" fieldtype="TABLE_COLUMN" name="vnc07" sqlDBName="ds" sqlTabName="vnc_file">
+              <ComboBox case="NONE" color="black" colorCondition="black" data_type="VARCHAR" defaultValue="0" fontPitch="default" formfieldname="formfield6" height="1" hidden="--------" length="" lstrcomment="false" name="vnc07" noEntry="--------" notNull="true" posX="17" posY="2" queryEditable="--------" required="true" scroll="--------" sizePolicy="initial" tabIndex="8" width="18">
+                <Item lstrtext="false" name="0" text="Product Line"/>
+                <Item lstrtext="false" name="1" text="Machine"/>
+                <Item lstrtext="false" name="2" text="Outsource Factory"/>
+              </ComboBox>
+            </FormField>
+            <Text height="1" name="text5_3" posX="1" posY="1" text="Is Outsource" width="12"/>
+            <FormField colName="vnc06" fieldtype="TABLE_COLUMN" name="vnc06" sqlDBName="ds" sqlTabName="vnc_file">
+              <ComboBox case="NONE" color="black" colorCondition="black" data_type="VARCHAR" defaultValue="0" fontPitch="default" formfieldname="formfield6" height="1" hidden="--------" length="" lstrcomment="false" name="vnc06" noEntry="--------" notNull="true" posX="17" posY="1" queryEditable="--------" required="true" scroll="--------" sizePolicy="initial" sortItem="yes" tabIndex="9" width="18">
+                <Item lstrtext="false" name="0" text="Not Outsource"/>
+                <Item lstrtext="false" name="1" text="Outsource"/>
+              </ComboBox>
+            </FormField>
+          </Group>
+        </Grid>
+      </Page>
+    </PageControl>
+    <Grid fontPitch="default" height="2" hidden="--------" lstrcomment="false" name="gr4" posX="2" posY="15" width="52">
+      <HLine gridWidth="10" height="1" name="hl1729" posX="3" posY="0" width="10"/>
+      <Text gridWidth="4" height="1" lstrtext="false" name="text18274" posX="13" posY="0" sizePolicy="initial" text="Rows" width="4"/>
+      <FormField colName="cnt" fieldId="9" fieldtype="FORM_ONLY" name="formonly.cnt" sqlTabName="formonly">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" data_type="SMALLINT" fontPitch="default" formfieldname="formfield9" gridWidth="6" height="1" hidden="--------" invisible="--------" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" notNull="--------" posX="19" posY="0" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="3" verify="--------" width="6" zeroFill="--------"/>
+      </FormField>
+      <HLine gridWidth="10" height="1" name="hl1730" posX="27" posY="0" width="10"/>
+    </Grid>
+  </VBox>
+</Form>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8f3f9aa0-0000-4000-b8f5-9e6758a96f19}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rti" order="" uid="{4df61922-0000-4000-822f-fcb68279c2c1}" where="">
+    <RecordField colName="" fieldIdRef="1" name="status" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{150ee5b6-0000-4000-a74c-345388e42c14}"/>
+    <RecordField colName="rti01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rti_file.rti01" sqlTabName="rti_file" sqlType="VARCHAR" table_alias_name="" uid="{d341b614-0000-4000-bfaf-35ccb148ccc2}"/>
+    <RecordField colName="rti02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rti_file.rti02" sqlTabName="rti_file" sqlType="VARCHAR" table_alias_name="" uid="{7352680e-0000-4000-bedf-b1b900b9a635}"/>
+    <RecordField colName="rti03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="rti_file.rti03" sqlTabName="rti_file" sqlType="DATE" table_alias_name="" uid="{03731c13-0000-4000-b596-3f63b0f79cf2}"/>
+    <RecordField colName="rtiplant" fieldIdRef="5" fieldType="TABLE_COLUMN" name="rti_file.rtiplant" sqlTabName="rti_file" sqlType="VARCHAR" table_alias_name="" uid="{5dd613ae-0000-4000-90c9-ec67bc6c2c85}"/>
+    <RecordField colName="azp02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="azp_file.azp02" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{504fb804-0000-4000-9993-d0665a44a1e6}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="94" lstrtext="false" name="artp101_1" spacing="normal" text="artp101_1">
+    <Table gridHeight="7" gridWidth="91" name="s_rti" posX="2" posY="1" totalRows="5">
+      <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="status" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="status" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rti01" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="rti_file.rti01" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="rti_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="rti01" widget="Edit"/>
+      <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rti02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="at once, date" lstrcomment="false" lstrtitle="false" name="rti_file.rti02" noEntry="true" posX="24" posY="0" rowCount="" sqlTabName="rti_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="rti02" widget="ComboBox">
+        <Item lstrtext="false" name="1" text="at once"/>
+        <Item lstrtext="false" name="2" text="date"/>
+      </ComboBox>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rti03" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="rti_file.rti03" noEntry="true" posX="36" posY="0" rowCount="" sqlTabName="rti_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="rti03" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtiplant" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="rti_file.rtiplant" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="rti_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="rtiplant" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp02" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="azp_file.azp02" noEntry="true" posX="68" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="azp02" widget="Edit"/>
+    </Table>
+  </Form>
+</ManagedForm>

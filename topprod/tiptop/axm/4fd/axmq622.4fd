@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{862f5241-0000-4000-9660-95f2246e91d3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{092ccded-0000-4000-bdec-b3519af897c0}" where="">
+    <RecordField colName="xsg01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="xsg_file.xsg01" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{785e77bd-0000-4000-ba4d-ee82df5b2e90}"/>
+    <RecordField colName="xsg03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="xsg_file.xsg03" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{c024ba33-0000-4000-9bb3-12d2f31afbe2}"/>
+    <RecordField colName="xsg02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="xsg_file.xsg02" sqlTabName="xsg_file" sqlType="DATE" table_alias_name="" uid="{239bf920-0000-4000-b944-1e5e40335772}"/>
+    <RecordField colName="xsg09" fieldIdRef="7" fieldType="TABLE_COLUMN" name="xsg_file.xsg09" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{04a6821d-0000-4000-b91d-67601a0d4818}"/>
+    <RecordField colName="xsg04" fieldIdRef="8" fieldType="TABLE_COLUMN" name="xsg_file.xsg04" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{abf69113-0000-4000-8c3e-46f54688a957}"/>
+    <RecordField colName="xsg05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="xsg_file.xsg05" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{10d858b4-0000-4000-b0a0-b16371ec07e4}"/>
+    <RecordField colName="xsg06" fieldIdRef="11" fieldType="TABLE_COLUMN" name="xsg_file.xsg06" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{217bf300-0000-4000-ac2f-66e5b4f5a929}"/>
+    <RecordField colName="xsg07" fieldIdRef="10" fieldType="TABLE_COLUMN" name="xsg_file.xsg07" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{0aaf71c1-0000-4000-97b5-016f17c9ba55}"/>
+    <RecordField colName="xsg08" fieldIdRef="12" fieldType="TABLE_COLUMN" name="xsg_file.xsg08" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{0028d30e-0000-4000-9201-ad770a09f45d}"/>
+    <RecordField colName="xsg10" fieldIdRef="2" fieldType="TABLE_COLUMN" name="xsg_file.xsg10" sqlTabName="xsg_file" sqlType="VARCHAR" table_alias_name="" uid="{843005cc-0000-4000-89cb-65c1edb90709}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3018e628-0000-4000-b7b2-08a18a5a1af6}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{fb9d421f-0000-4000-9f55-fb4596cc6c25}"/>
+  </Record>
+  <Form gridHeight="36" gridWidth="129" name="Form5" text="wagt018">
+    <Folder gridHeight="32" gridWidth="123" lstrcomment="false" name="pc4" posX="1" posY="0">
+      <Page name="Page6" text="Report Processing">
+        <VBox gridHeight="28" gridWidth="115" name="vb2" posX="4" posY="1">
+          <Grid gridHeight="5" gridWidth="115" lstrcomment="false" name="gr5" posX="0" posY="1">
+            <Label posX="1" posY="1" text="Report No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" name="xsg_file.xsg01" noEntry="true" posX="15" posY="1" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="37" posY="1" text="Report Org"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg03" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" name="xsg_file.xsg03" noEntry="true" posX="51" posY="1" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Report Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg02" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" name="xsg_file.xsg02" noEntry="true" posX="15" posY="3" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+            <Label posX="37" posY="3" text="status"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg09" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" items="Open, Report, Closed" lstrcomment="false" name="xsg_file.xsg09" noEntry="true" posX="51" posY="3" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Open"/>
+              <Item lstrtext="" name="1" text="Report"/>
+              <Item lstrtext="false" name="2" text="Closed"/>
+            </ComboBox>
+          </Grid>
+          <Grid gridHeight="5" gridWidth="115" lstrcomment="false" name="gr6" posX="0" posY="6">
+            <Label posX="1" posY="1" text="FALSIFYING purpose of the org"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg04" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" name="xsg_file.xsg04" noEntry="true" posX="33" posY="1" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="67" posY="1" text="Location"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg05" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" name="xsg_file.xsg05" noEntry="true" posX="79" posY="1" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="FALSIFYING Source Org"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg06" colorCondition="black" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" name="xsg_file.xsg06" noEntry="true" posX="33" posY="3" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            <Label posX="67" posY="3" text="Location"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg07" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" name="xsg_file.xsg07" noEntry="true" posX="79" posY="3" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          </Grid>
+          <Grid gridHeight="7" gridWidth="115" lstrcomment="false" name="gr8" posX="0" posY="11">
+            <Label posX="1" posY="1" text="Detail:"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg08" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="4" gridWidth="104" lstrcomment="false" name="xsg_file.xsg08" noEntry="true" posX="1" posY="2" repeat="false" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="TextEdit"/>
+          </Grid>
+          <Grid gridHeight="7" gridWidth="115" lstrcomment="false" name="gr12" posX="0" posY="18">
+            <Label posX="1" posY="1" text="Comments:"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xsg10" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="4" gridWidth="104" lstrcomment="false" name="xsg_file.xsg10" notNull="true" posX="1" posY="2" repeat="false" required="true" rowCount="" sqlTabName="xsg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="TextEdit"/>
+          </Grid>
+          <Grid gridHeight="2" gridWidth="115" lstrcomment="false" name="gr6_" posX="0" posY="25">
+            <HLine gridWidth="10" name="hl1" posX="3" posY="0"/>
+            <Label posX="14" posY="0" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="idx" noEntry="true" posX="20" posY="0" repeat="false" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+            <Label posX="27" posY="0" text="/"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="29" posY="0" repeat="false" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+            <HLine gridWidth="10" name="hl2" posX="37" posY="0"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

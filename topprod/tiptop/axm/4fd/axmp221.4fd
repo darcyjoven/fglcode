@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4e4891b1-0000-4000-b429-1d067150609a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_occ" order="" uid="{ba49f659-0000-4000-97ce-a9ee579dcd2b}" where="">
+    <RecordField colName="" fieldIdRef="10" name="sel" sqlTabName="" table_alias_name="" uid="{d59336ab-0000-4000-a6d3-fc20dd4082b9}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="occ01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9cb5dd65-0000-4000-9949-3ca04378ea00}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="occ02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a4f5ebb2-0000-4000-93bb-6ba45783f7c9}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="occ03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2473bda8-0000-4000-a611-3622f27c692f}"/>
+    <RecordField colName="" fieldIdRef="14" fieldType="NON_DATABASE" name="occ04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{fa063ac8-0000-4000-8db0-0753798bd9e6}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="occ05" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3534a681-0000-4000-b070-183d5da56308}"/>
+    <RecordField colName="" fieldIdRef="16" fieldType="NON_DATABASE" name="occ06" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1e40bcad-0000-4000-a391-45bb9bc920d7}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="occ22" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{be60ae12-0000-4000-a7c7-6b853ce0d088}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="occ21" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{675908e2-0000-4000-a72d-d137d6ba048e}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="occ20" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3ba6e53b-0000-4000-bd5e-cf5b0a21e859}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="occ11" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b6b9b5a8-0000-4000-ab5b-3def04cd7b2a}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="occ1004" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{349d639f-0000-4000-a28f-c96cff638f50}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="occacti" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7a044c01-0000-4000-bee6-f3d3be769bf7}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bca13b9d-0000-4000-88af-f7301392eb6d}" where="">
+    <RecordField colName="gev04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gev_file.gev04" sqlTabName="gev_file" sqlType="VARCHAR" table_alias_name="" uid="{2ac16bad-0000-4000-b3aa-a5245c2b68ec}"/>
+    <RecordField colName="geu02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="geu_file.geu02" sqlTabName="geu_file" sqlType="VARCHAR" table_alias_name="" uid="{73768257-0000-4000-a00a-deec01a5f05e}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ce809f2d-0000-4000-9a76-eaebf75e052c}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="200" name="axmp221" spacing="normal" text="axmp221">
+    <VBox gridHeight="14" gridWidth="197" name="vb8" posX="3" posY="0">
+      <Folder gridHeight="3" gridWidth="197" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="86" lstrcomment="false" name="gr574" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Data Center"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gev04" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" name="gev_file.gev04" posX="14" posY="0" rowCount="" sqlTabName="gev_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geu02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="geu_file.geu02" posX="30" posY="0" rowCount="" sqlTabName="geu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="197" name="s_occ" posX="0" posY="4" totalRows="5">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="sel" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="16" table_alias_name="" title="sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" image="zoom.png" lstrcomment="false" lstrtitle="false" name="occ01" noEntry="true" posX="5" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Customer #" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="occ02" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Cust Abbr." widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" image="zoom.png" lstrcomment="false" lstrtitle="false" name="occ03" noEntry="true" posX="43" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Cust Cate" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" image="zoom.png" lstrcomment="false" lstrtitle="false" name="occ04" noEntry="true" posX="56" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Salesman" widget="ButtonEdit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" items="Permanent, Temporary" lstrcomment="false" lstrtitle="false" name="occ05" noEntry="true" posX="65" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Tran. Status" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Permanent"/>
+          <Item lstrtext="false" name="2" text="Temporary"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" items="Buyer, Ship.Customer, Accounting Customer, Drawer" lstrcomment="false" lstrtitle="false" name="occ06" noEntry="true" posX="78" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Property" widget="ComboBox">
+          <Item lstrtext="" name="1" text="Buyer"/>
+          <Item lstrtext="" name="2" text="Ship.Customer"/>
+          <Item lstrtext="" name="3" text="Accounting Customer"/>
+          <Item lstrtext="" name="4" text="Drawer"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" image="zoom.png" lstrcomment="false" lstrtitle="false" name="occ22" noEntry="true" posX="89" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Local" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" image="zoom.png" lstrcomment="false" lstrtitle="false" name="occ21" noEntry="true" posX="95" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Country" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" image="zoom.png" lstrcomment="false" lstrtitle="false" name="occ20" noEntry="true" posX="101" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Area" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="occ11" noEntry="true" posX="107" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Uniform#" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" items="Issue, Confirm, Hung, Stop" lstrcomment="false" lstrtitle="false" name="occ1004" noEntry="true" posX="117" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Current Status" widget="ComboBox">
+          <Item lstrtext="" name="0" text="Issue"/>
+          <Item lstrtext="" name="1" text="Confirm"/>
+          <Item lstrtext="" name="2" text="Hung"/>
+          <Item lstrtext="" name="3" text="Stop"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="occacti" noEntry="true" posX="125" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" title="Data Valid Code" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="197" lstrcomment="false" name="gr1292" posX="0" posY="11">
+        <HLine gridWidth="10" name="hl393" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl394" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

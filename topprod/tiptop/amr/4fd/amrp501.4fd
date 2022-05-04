@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{9ec2ca65-0000-4000-9782-331d15374653}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{21c4a0e1-0000-4000-b74d-42f00e1f6ef7}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ver_no" sqlTabName="" table_alias_name="" uid="{8251ad04-0000-4000-b471-4092ea57f02c}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="lot_type" sqlTabName="" table_alias_name="" uid="{6a8feb52-0000-4000-acf8-d9913de08caf}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="lot_bm" sqlTabName="" table_alias_name="" uid="{00fccafb-0000-4000-aa5c-3dd66daf6509}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="lot_no1" sqlTabName="" table_alias_name="" uid="{7127325b-0000-4000-a389-75272796d85b}"/>
+    <RecordField colName="" fieldIdRef="14" fieldType="NON_DATABASE" name="lot_no2" sqlTabName="" table_alias_name="" uid="{f349737a-0000-4000-badb-83b6e86ea926}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{5443508d-0000-4000-bc14-da2476f28b90}"/>
+    <RecordField colName="" fieldIdRef="16" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{fdd3fc73-0000-4000-a57a-c48c64d0cdae}"/>
+    <RecordField colName="" fieldIdRef="17" fieldType="NON_DATABASE" name="buk_type" sqlTabName="" table_alias_name="" uid="{7e641b39-0000-4000-9ab1-638991ab90cd}"/>
+    <RecordField colName="" fieldIdRef="18" fieldType="NON_DATABASE" name="buk_code" sqlTabName="" table_alias_name="" uid="{112fbe96-0000-4000-add0-963ea906d437}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="po_days" sqlTabName="" table_alias_name="" uid="{26106670-0000-4000-9c69-d5e0a3682fff}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="wo_days" sqlTabName="" table_alias_name="" uid="{69d70555-0000-4000-9276-79bd4145ec43}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="incl_id" sqlTabName="" table_alias_name="" uid="{4de60103-0000-4000-a45d-994294ed2ffd}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="incl_so" sqlTabName="" table_alias_name="" uid="{107b2ae1-0000-4000-95fb-018775bcf5c0}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="msb_expl" sqlTabName="" table_alias_name="" uid="{4469c483-0000-4000-9399-40520debd80b}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="mss_expl" sqlTabName="" table_alias_name="" uid="{5984802a-0000-4000-b7f3-cca44da52e89}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="sub_flag" sqlTabName="" table_alias_name="" uid="{24378141-0000-4000-8932-733f770a10db}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="qvl_flag" sqlTabName="" table_alias_name="" uid="{65a258e1-0000-4000-baf3-4d2c932d84e2}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="g_msp01" sqlTabName="" table_alias_name="" uid="{53d20e4e-0000-4000-a93e-c0c5fb0d0a87}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="85" name="amrp501" spacing="normal" text="amrp501">
+    <Group gridHeight="23" gridWidth="84" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="0">
+      <VBox gridHeight="21" gridWidth="82" name="VBox1" posX="1" posY="1">
+        <Grid gridHeight="2" gridWidth="82" lstrcomment="false" name="gr3887" posX="0" posY="1">
+          <Label posX="1" posY="0" text="Version Number"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ver_no" posX="25" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Grid>
+        <Grid gridHeight="17" gridWidth="82" lstrcomment="false" name="gr3888" posX="0" posY="3">
+          <Group gridHeight="16" gridWidth="81" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Simulation Item No. Source"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" items="MPSPlan, Actual Work Order, Customer Order, Item#, NetChange" lstrcomment="false" lstrtitle="false" name="lot_type" notNull="true" posX="34" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="MPSPlan"/>
+              <Item lstrtext="" name="2" text="Actual Work Order"/>
+              <Item lstrtext="" name="3" text="Customer Order"/>
+              <Item lstrtext="" name="4" text="Item#"/>
+              <Item lstrtext="" name="5" text="NetChange"/>
+            </ComboBox>
+            <Label posX="1" posY="2" text="BOM Explosion Levels"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="0:No Exploding 1:Explode one Level 2:Explode two Levels ..." fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lot_bm" posX="34" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Source Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Use &apos;*&apos; or &apos;?&apos;  For any character matched!" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="lot_no1" posX="34" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Use &apos;*&apos; or &apos;?&apos;  For any character matched!" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="lot_no2" posX="52" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="Demand/Supply Date QBE"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bdate" posX="34" posY="4" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="edate" posX="46" posY="4" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="5" text="Time Bucket Method"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="17" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="By Time Bucket No., Day, Week, 10-Day, Month" lstrcomment="false" lstrtitle="false" name="buk_type" notNull="true" posX="34" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="By Time Bucket No."/>
+              <Item lstrtext="" name="2" text="Day"/>
+              <Item lstrtext="" name="3" text="Week"/>
+              <Item lstrtext="" name="4" text="10-Day"/>
+              <Item lstrtext="" name="5" text="Month"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="18" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="buk_code" posX="46" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="6" text="PR/PO Delivery in advance allowed (Reschedule) Adjust Days"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="0:No Advance Delivery Date -1:Advance days by Item Master" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="po_days" posX="61" posY="6" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="7" text="W/O"/>
+            <Label posX="7" posY="7" text="Delivery in advance allowed (Reschedule) Adjust Days"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="0:No Advance Delivery Date -1:Advance days by Item Master" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="wo_days" posX="61" posY="7" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="incl_id" notNull="true" posX="1" posY="8" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" text="Add to Independent Requirment Table" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="incl_so" notNull="true" posX="1" posY="9" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" text="Add to Actual Order Table" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="msb_expl" notNull="true" posX="1" posY="10" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" text="Add to MPS(Unfilled W/O) D/L Material Demand" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="mss_expl" notNull="true" posX="1" posY="11" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" text="Parts Required For PLM Parts" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sub_flag" notNull="true" posX="1" posY="12" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="16" table_alias_name="" text="Handing REP/SUB Item" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="qvl_flag" notNull="true" posX="1" posY="13" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="17" table_alias_name="" text="Process Assigned Brand" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label posX="1" posY="14" text="Please Enter MRP Warehouse Version"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="g_msp01" posX="37" posY="14" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="18" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </VBox>
+    </Group>
+  </Form>
+</ManagedForm>

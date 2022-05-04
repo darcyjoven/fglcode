@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="ManagedForm" uid="{31af9bd0-64be-474c-90c6-e4d71e02560a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="rp_tree" order="" uid="{e8b6fe4f-b199-49bd-8bc8-635f0fa3699f}" where="">
+    <RecordField colName="" fieldIdRef="3" name="id" sqlTabName="" table_alias_name="" uid="{688355a0-06d2-42b6-aa2b-04ec530590c4}"/>
+    <RecordField colName="" fieldIdRef="4" name="parentid" sqlTabName="" table_alias_name="" uid="{76329b2f-f7b6-4545-8b27-3817bc62926f}"/>
+    <RecordField colName="" fieldIdRef="1" name="node_type" sqlTabName="" table_alias_name="" uid="{e312fbf2-d825-43c6-b7e7-8d83957b22b3}"/>
+    <RecordField colName="" fieldIdRef="2" name="node_name" sqlTabName="" table_alias_name="" uid="{15af3527-10b0-4f48-9685-502506f640e4}"/>
+    <RecordField colName="" fieldIdRef="9" name="is_expand" sqlTabName="" sqlType="BOOLEAN" table_alias_name="" uid="{43c31cf1-52cc-44f8-af1d-e18400bfed9d}"/>
+    <RecordField colName="" fieldIdRef="11" name="diff" sqlTabName="" table_alias_name="" uid="{ea0d2b4b-8be1-44d5-a498-4574376c7e5c}"/>
+    <RecordField colName="" fieldIdRef="17" name="node_id" sqlTabName="" table_alias_name="" uid="{611346ec-f860-401d-9b5b-6c5c9e781dfd}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="rp_tree_new" order="" uid="{cfb92dab-6ab0-4f63-8450-ab8cb1e3efbf}" where="">
+    <RecordField colName="" fieldIdRef="7" name="id_new" sqlTabName="" table_alias_name="" uid="{ab18c013-df7b-4c2e-9089-bee4bc3e1a83}"/>
+    <RecordField colName="" fieldIdRef="8" name="parentid_new" sqlTabName="" table_alias_name="" uid="{24433b7b-c2ca-424e-8f71-1a7089412d41}"/>
+    <RecordField colName="" fieldIdRef="6" name="node_type_new" sqlTabName="" table_alias_name="" uid="{860859e0-c810-456b-98da-1e6d60644ea9}"/>
+    <RecordField colName="" fieldIdRef="5" name="node_name_new" sqlTabName="" table_alias_name="" uid="{c515a631-cfd1-49cf-946b-b2f3a94b0f62}"/>
+    <RecordField colName="" fieldIdRef="10" name="is_expand_new" sqlTabName="" sqlType="BOOLEAN" table_alias_name="" uid="{874e71a9-482a-4993-a0aa-60d280987608}"/>
+    <RecordField colName="" fieldIdRef="12" name="diff_new" sqlTabName="" table_alias_name="" uid="{10356608-6907-4052-8e78-285381b932dd}"/>
+    <RecordField colName="" fieldIdRef="18" name="node_id_new" sqlTabName="" table_alias_name="" uid="{1b12ade2-396f-454d-a632-9d212c027266}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="old_attrs" order="" uid="{988ebf15-0caa-4b04-b692-1b3789fb3e01}" where="">
+    <RecordField colName="" fieldIdRef="13" name="attr_name" sqlTabName="" table_alias_name="" uid="{41e49289-d247-4ad7-b4e5-fdbdb1211eaf}"/>
+    <RecordField colName="" fieldIdRef="14" name="attr_value" sqlTabName="" table_alias_name="" uid="{ad1c350e-73a1-4f4c-b443-8909ba8bee20}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="new_attrs" order="" uid="{84fa796f-8519-4a8d-b5c6-4de72a29f8a6}" where="">
+    <RecordField colName="" fieldIdRef="15" name="attr_name_new" sqlTabName="" table_alias_name="" uid="{5ae08a04-f387-4592-94fe-2fd4c2545fa1}"/>
+    <RecordField colName="" fieldIdRef="16" name="attr_value_new" sqlTabName="" table_alias_name="" uid="{9282b162-8e10-441c-887e-891ef198bc4a}"/>
+  </Record>
+  <Form gridHeight="36" gridWidth="119" name="Form" text="Form">
+    <VBox gridHeight="34" gridWidth="118" name="VBox1" posX="1" posY="1">
+      <HBox gridHeight="24" gridWidth="118" name="HBox1" posX="0" posY="1">
+        <Group gridHeight="24" gridWidth="53" name="group1" posX="2" posY="0" text="Original Report">
+          <Tree expandedColumn="is_expand" gridHeight="21" gridWidth="51" idColumn="id" name="rp_tree" parentIdColumn="parentid" posX="1" posY="1" totalRows="20">
+            <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="22" name="node_name" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" title="Name" unsortable="true" widget="FFLabel"/>
+            <Phantom colName="" fieldId="3" name="id" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="4" name="parentid" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="8" name="node_type" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" title="Type" unsortable="true" widget="FFLabel"/>
+            <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="7" name="diff" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" title="Compare" unhidable="true" unmovable="true" unsizable="false" unsortable="true" widget="FFLabel"/>
+            <Phantom colName="" fieldId="9" name="is_expand" sqlTabName="" sqlType="BOOLEAN" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="17" name="node_id" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          </Tree>
+        </Group>
+        <Grid gridHeight="24" gridWidth="12" name="Grid1" posX="55" posY="0">
+          <Button gridHeight="1" gridWidth="10" name="next_diff" posX="1" posY="0" tabIndex="8" text="Find Next"/>
+          <Button gridHeight="1" gridWidth="10" name="merge_node" posX="1" posY="1" tabIndex="7" text="Merge All"/>
+          <Button gridHeight="1" gridWidth="10" name="del" posX="1" posY="2" tabIndex="5" text="Delete Selected"/>
+          <Button gridHeight="1" gridWidth="10" name="addtoright" posX="1" posY="3" tabIndex="6" text="&gt;&gt;"/>
+        </Grid>
+        <Group gridHeight="24" gridWidth="49" name="group2" posX="67" posY="0" text="Upload Report">
+          <Tree expandedColumn="is_expand_new" gridHeight="21" gridWidth="47" idColumn="id_new" name="rp_tree_new" parentIdColumn="parentid_new" posX="1" posY="1" totalRows="20">
+            <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="22" name="node_name_new" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" title="Name" unsortable="true" widget="FFLabel"/>
+            <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="8" name="node_type_new" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" title="Type" unsortable="true" widget="FFLabel"/>
+            <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="7" name="diff_new" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" title="Compare" unhidable="true" unmovable="true" unsizable="false" unsortable="true" widget="FFLabel"/>
+            <Phantom colName="" fieldId="7" name="id_new" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="8" name="parentid_new" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="10" name="is_expand_new" sqlTabName="" sqlType="BOOLEAN" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="18" name="node_id_new" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          </Tree>
+        </Group>
+      </HBox>
+      <HBox gridHeight="8" gridWidth="118" name="HBox2" posX="0" posY="25">
+        <Group gridHeight="8" gridWidth="58" name="group3" posX="2" posY="0" text="Attributes">
+          <Table gridHeight="6" gridWidth="19" name="old_attrs" posX="3" posY="1" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="8" name="attr_name" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="8" name="attr_value" posX="8" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Value" widget="Edit"/>
+          </Table>
+        </Group>
+        <Group gridHeight="8" gridWidth="56" name="Group4" posX="60" posY="0" text="Attributes">
+          <Table gridHeight="6" gridWidth="19" name="new_attrs" posX="2" posY="1" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" gridHeight="1" gridWidth="8" name="attr_name_new" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" gridHeight="1" gridWidth="8" name="attr_value_new" posX="8" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Value" widget="Edit"/>
+          </Table>
+        </Group>
+      </HBox>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxAGIAMQAyAGEAZABlADIALQAzADkANgBmAC0ANAA1ADQAZAAtAGEANgAzADIALQA5AGQAMgAxADIAYwAwADIANwAyADYANgB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewBlADgAYgA2AGYAZQA0AGYALQBiADEAOQA5AC0ANAA5AGIAZAAtADgAYgBjADgALQA2ADMANQBmADAAZgBhADMANgA5ADkAZgB9wGWgAAAAAABATgAAAAAAAD+MrAgxJul8AQAAAEwAewBlAGEAMABkADIAYgA0AGIALQA4AGIAZQAxAC0ANAA0AGQANQAtAGEANAA5ADgALQA0ADUANwA0ADMANwA2AGMANwBlADUAYwB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADUAYQBmADMANQAyADcALQAxADAAYgAwAC0ANABmADQAOAAtADkANgA4ADUALQA1ADAAMgA1ADAANgBmADYANAAwAGUANAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGQAMQBjADMANQAwAGUALQA3ADMAYQAxAC0ANABmADQAYwAtAGIANAA0ADMALQA4ADkAMAA5AGIAYQA4AGIAZQBlADIAMAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYAYgA5ADIAZABhAGIALQA2AGEAYgAwAC0ANABmADYAMwAtADgANAA1ADAALQBhAGIAOABjAGIAMQBlADMAZQBmAGIAZgB9QGeAAAAAAABAYMAAAAAAAD+ZmZmZmZmeAQAAAEwAewA0ADEAZQA0ADkAMgA4ADkALQBkADIANAA3AC0ANABhAGQANwAtAGIANABlADUALQBmAGQAYgBkAGIAMQAyADEAMQBlAGEAZgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADYAMwAyADkAYgAyAGYALQBmADcAYgA2AC0ANAA1ADQANQAtADgAYgAyADcALQAzADgAMQA3AGIAYwA2ADIAOQAyADYAZgB9QBQAAAAAAABARwAAAAAAAD9gYk3S8an8AQAAAEwAewA0ADMAYwAzADEAYwBmADEALQA1ADIAYwBjAC0ANAA0AGYAOAAtAGEAZgAxAGQALQBlADEAOAA0ADAAMABiAGYAZQBkADkAZAB9QBQAAAAAAABAXAAAAAAAAD+XjU/fO2ReAQAAAEwAewA2ADEAMQAzADQANgBlAGMALQBmADgANgAwAC0ANAAwADEAZAAtADkAYgA1AGIALQA2AGMANQBjADkAZQA3ADgAMQBkAGYAZAB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewBjADUAMQA1AGEANgAzADEALQBjAGYAZAAxAC0ANAA5AGMAZgAtADkANAA2AGIALQBiADIAZgAzAGEAOQA0AGIAMABmADYAMgB9QBQAAAAAAABAVoAAAAAAAD+RaHKwIMSeAQAAAEwAewA1AGEAZQAwADgAYQAwADQALQBmADMAOAA3AC0ANAA1ADkAMgAtADkANABmAGUALQAyAGYAZAA0AGMAMgA1ADQANQBmAGEAMQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADQANAAzADMAYgA3AGIALQBjADIAYwBhAC0ANAAyADQAZQAtADgAZgA3ADEALQAxAGEANwAwADgAOQA0ADEAMgBkADQAMQB9QBQAAAAAAABARwAAAAAAAD+UeuFHrhR+AQAAAEwAewA4ADQAZgBhADcAOQA2AGYALQA4ADUAMQA5AC0ANABhADgAZAAtAGIANQBjADYALQA0AGQAZQA3ADIAYQAyADkAZgA4AGEANgB9wBAAAAAAAABAYOAAAAAAAD+an752yLQ+AQAAAEwAewA5ADgAOABlAGIAZgAxADUALQAwAGMAYQBhAC0ANABiADAANAAtAGIANgA5ADIALQAxAGIAMwA3ADgAOQBmAGIAMwBlADAAMQB9QGjgAAAAAADAJgAAAAAAAD+bpeNT987eAQAAAEwAewA4ADYAMAA4ADUAOQBlADAALQBjADgAMQAwAC0ANAA1ADYAYgAtADkAOABkAGEALQAxAGUANgBkADYAMAA2ADQANABlAGEAOQB9QBQAAAAAAABAUQAAAAAAAD+SbpeNT98+AQAAAEwAewAxADAAMwA1ADYANgAwADgALQA2ADkAMAA3AC0ANAAwADUAMgAtADgAZQA3ADgALQAyADgANQAzADgAMQBiADkAMwAyAGQAZAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGIAMQA4AGMAMAAxADMALQBkAGYANwBiAC0ANABjADIAZQAtADkAMAA4ADkALQBiAGUAZQA0AGIAYwAzAGUAMQBhADgAMwB9QBQAAAAAAABAOAAAAAAAAD+TdLxqfvneAQAAAEwAewA2ADgAOAAzADUANQBhADAALQAwADYAZAAyAC0ANAAyAGIANgAtAGEAYQAyAGIALQAwADQAZQBjADUAMwAwADUAOQAwAGMANAB9QBQAAAAAAABAOAAAAAAAAD+Yk3S8an7+AQAAAEwAewBlADMAMQAyAGYAYgBmADIALQBkADgAMgA1AC0ANAAzAGMANgAtAGIANwBlADcALQA4AGQAOAAzADkANQA3AGIAMgAyAGIAMwB9QBQAAAAAAABAUQAAAAAAAD+CbpeNT988AQAAAEwAewA4ADcANABlADcAMQBhADkALQA0ADgAMgBhAC0ANAA5ADkAMwAtAGEAMABhAGEALQA2ADAAZAAyADgAMAA5ADgANwA2ADAAOAB9QBQAAAAAAABAXAAAAAAAAD+WhysCDEm+AQAAAEwAewA5ADIAOAAyAGIAMQA2ADIALQA4AGUAMQAwAC0ANAA0ADEAYwAtADgAOAA3AGUALQA4ADkAMQBlAGYAMQA5ADgAYgBjADQAYQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e2821722-0000-4000-b959-7a3ccaf5f04b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oak" order="" uid="{d382b94f-0000-4000-935b-2d04b5b90934}" where="">
+    <RecordField colName="oak01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oak_file.oak01" sqlTabName="oak_file" sqlType="VARCHAR" table_alias_name="" uid="{e16adbb5-0000-4000-a4cd-c5a86798e8cc}"/>
+    <RecordField colName="oak02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oak_file.oak02" sqlTabName="oak_file" sqlType="VARCHAR" table_alias_name="" uid="{0c016b9a-0000-4000-9652-451b3631e871}"/>
+    <RecordField colName="oak03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oak_file.oak03" sqlTabName="oak_file" sqlType="VARCHAR" table_alias_name="" uid="{af019061-0000-4000-adb3-583433d2f313}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{29cca208-0000-4000-89e9-895cac7a0922}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{075c23aa-0000-4000-a72c-f2b3aae17bf0}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="55" name="axmi080" spacing="normal" text="axmi080">
+    <VBox gridHeight="18" gridWidth="52" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="52" lstrcomment="false" name="pc446" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="50" lstrcomment="false" name="s_oak" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oak01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="oak_file.oak01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="On-Hold Reason Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oak02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="oak_file.oak02" posX="21" posY="0" rowCount="" sqlTabName="oak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oak03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="On-Hold Code" lstrcomment="false" lstrtitle="false" name="oak_file.oak03" notNull="true" posX="37" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="oak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Code" widget="ComboBox">
+              <Item name="1" text="On-Hold Code"/>
+            </ComboBox>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="52" lstrcomment="false" name="gr2001" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl731" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl732" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

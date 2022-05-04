@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{eba4c87d-0000-4000-abd8-9c842090c95b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_plant" order="" uid="{ab8304a9-0000-4000-988b-f3a3cef63cd4}" where="">
+    <RecordField colName="" fieldIdRef="1" name="p_plant" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{318729db-0000-4000-8b47-aad8afcc2f73}"/>
+    <RecordField colName="" fieldIdRef="2" name="gl_dbs" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bd515bb4-0000-4000-8ad7-529f146a9a6d}"/>
+    <RecordField colName="" fieldIdRef="3" name="p_bookno" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9237ee74-0000-4000-b33b-6c048bc457f6}"/>
+    <RecordField colName="" fieldIdRef="4" name="gl_no" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9f396974-0000-4000-8697-344c5d91e725}"/>
+    <RecordField colName="" fieldIdRef="5" name="p_bookno1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a75e7dad-0000-4000-9850-ab1a113490e2}"/>
+    <RecordField colName="" fieldIdRef="6" name="gl_no1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e91c142f-0000-4000-a1f4-721be6b86048}"/>
+    <RecordField colName="" fieldIdRef="7" name="gl_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{c6e53caa-0000-4000-af38-13aa5de33291}"/>
+    <RecordField colName="" fieldIdRef="8" name="yy" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{eebd3fe9-0000-4000-b00c-dbf9ad1c8dfc}"/>
+    <RecordField colName="" fieldIdRef="9" name="mm" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{02898e52-0000-4000-ac91-a23d4c9294b7}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="209" name="anmp930_a" spacing="normal" text="Qry Document Property">
+    <Grid gridHeight="13" gridWidth="207" lstrcomment="false" name="gr4133" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="206" lstrcomment="false" name="s_plant" posX="1" posY="0" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="27" lstrcomment="false" lstrtitle="false" name="p_plant" noEntry="true" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="General Ledger Plant No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="gl_dbs" noEntry="true" notNull="true" posX="27" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="dbs name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Qry bookno" fieldId="3" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="p_bookno" notNull="true" posX="36" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="General Ledger No." widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Qry Documents" fieldId="4" gridHeight="1" gridWidth="29" image="zoom" lstrcomment="false" lstrtitle="false" name="gl_no" notNull="true" posX="59" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="General Ledger Voucher Type" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Qry bookno" fieldId="5" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="p_bookno1" notNull="true" posX="88" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="General Ledger No.2" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Qry Documents" fieldId="6" gridHeight="1" gridWidth="29" image="zoom" lstrcomment="false" lstrtitle="false" name="gl_no1" notNull="true" posX="111" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="General Ledger Voucher Type2" widget="ButtonEdit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtitle="false" name="gl_date" notNull="true" posX="140" posY="0" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" title="General Ledger Voucher Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="yy" noEntry="true" notNull="true" posX="169" posY="0" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="YEAR" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="mm" noEntry="true" notNull="true" posX="175" posY="0" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" title="MONTH" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

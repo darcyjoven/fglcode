@@ -1,0 +1,44 @@
+<Form width="59" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" spacing="normal" CHECKSUM="3763" posX="0" percommentheader="" height="11" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" fourSTFile="" name="apsi206" defaultspacing="true" text="apsi206" lstrtoalltext="false" percommentlayout="GRID
+PAGE
+FOLDER
+GRID
+VBOX
+LAYOUT
+" gstVersion="11401" >
+ <VBox posX="0" posY="0" hidden="--------" name="vb2" >
+  <PageControl width="56" posX="0" height="8" posY="0" lstrcomment="false" name="pc1049" >
+   <Page lstrtext="false" imagetype="Image as URL" hidden="--------" name="page01" fontPitch="default" text="Page01" >
+    <Grid width="54" posX="0" height="6" posY="0" lstrcomment="false" hidden="--------" name="gr5432" fontPitch="default" scroll="false" >
+     <Group width="54" lstrtext="false" gridWidth="54" posX="0" height="5" posY="0" lstrcomment="false" hidden="--------" name="group01" fontPitch="default" gridHeight="5" gridChildrenInParent="--------" >
+      <Text width="13" lstrtext="false" gridWidth="13" posX="1" height="1" posY="1" sizePolicy="initial" name="text18280" text="Warehouse No." />
+      <FormField colName="wh_id" sqlTabName="formonly" fieldId="0" name="formonly.wh_id" fieldtype="FORM_ONLY" >
+       <Edit width="32" case="NONE" gridWidth="32" invisible="--------" notNull="--------" posX="20" height="1" posY="1" formfieldname="formfield0" lstrcomment="false" autoNext="--------" hidden="--------" verify="--------" tabIndex="1" sizePolicy="initial" zeroFill="--------" name="wh_id" lstrtitle="false" reverse="--------" fontPitch="default" color="black" century="R" noEntry="true" required="--------" scroll="--------" />
+      </FormField>
+      <Text width="6" lstrtext="false" gridWidth="6" posX="1" height="1" posY="2" sizePolicy="initial" name="text18281" text="Immove" />
+      <Text width="7" lstrtext="false" gridWidth="7" posX="1" height="1" posY="3" sizePolicy="initial" name="text18282" text="Is_main" />
+      <FormField sqlDBName="ds" colName="is_main" sqlTabName="aps_imd" fieldId="2" name="is_main" fieldtype="TABLE_COLUMN" >
+       <ComboBox width="10" case="NONE" notNull="--------" posX="20" posY="3" height="1" formfieldname="formfield2" lstrcomment="false" colorCondition="black" hidden="--------" tabIndex="3" sizePolicy="initial" name="is_main" data_type="DECIMAL" fontPitch="default" color="black" required="--------" noEntry="--------" queryEditable="--------" scroll="--------" >
+        <Item lstrtext="false" name="0" text="False" />
+        <Item lstrtext="false" name="1" text="True" />
+       </ComboBox>
+      </FormField>
+      <FormField sqlDBName="ds" colName="immove" fieldId="1" sqlTabName="aps_imd" name="immove" fieldtype="TABLE_COLUMN" >
+       <ComboBox width="10" case="NONE" notNull="--------" posX="20" formfieldname="formfield1" height="1" posY="2" lstrcomment="false" colorCondition="black" hidden="--------" sizePolicy="initial" tabIndex="2" data_type="DECIMAL" name="immove" color="black" fontPitch="default" scroll="--------" queryEditable="--------" noEntry="--------" required="--------" >
+        <Item lstrtext="false" name="0" text="False" />
+        <Item lstrtext="false" name="1" text="True" />
+       </ComboBox>
+      </FormField>
+     </Group>
+    </Grid>
+   </Page>
+  </PageControl>
+  <Grid width="56" posX="0" height="1" posY="8" lstrcomment="false" hidden="--------" name="gr5433" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" height="1" posY="0" name="hl1733" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" height="1" posY="0" sizePolicy="initial" name="text18283" text="Rows" />
+   <FormField colName="cnt" sqlTabName="formonly" fieldId="3" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" gridWidth="6" invisible="--------" notNull="--------" posX="17" height="1" posY="0" formfieldname="formfield3" lstrcomment="false" autoNext="--------" hidden="--------" verify="--------" tabIndex="4" sizePolicy="initial" zeroFill="--------" name="cnt" data_type="SMALLINT" lstrtitle="false" reverse="--------" fontPitch="default" color="black" century="R" noEntry="true" required="--------" scroll="--------" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="25" height="1" posY="0" name="hl1734" />
+  </Grid>
+ </VBox>
+</Form>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3964c395-0000-4000-b668-3d4746da8fb7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_cme" order="" uid="{1327ea2a-0000-4000-8453-6ac912db088e}" where="">
+    <RecordField colName="cme03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="cme_file.cme03" sqlTabName="cme_file" sqlType="VARCHAR" table_alias_name="" uid="{5d11278c-0000-4000-87fa-d06b2437888a}"/>
+    <RecordField colName="cme031" fieldIdRef="5" fieldType="TABLE_COLUMN" name="cme_file.cme031" sqlTabName="cme_file" sqlType="VARCHAR" table_alias_name="" uid="{1df2c220-0000-4000-a7d5-55bcc21a3804}"/>
+    <RecordField colName="cme04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="cme_file.cme04" sqlTabName="cme_file" sqlType="DECIMAL" table_alias_name="" uid="{2c3c3fa6-0000-4000-a689-81e42a78043c}"/>
+    <RecordField colName="cme05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="cme_file.cme05" sqlTabName="cme_file" sqlType="DECIMAL" table_alias_name="" uid="{561c43bc-0000-4000-a1ed-c2d118eaac44}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8982ae5a-0000-4000-9501-21dd43b676ea}" where="">
+    <RecordField colName="cme01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cme_file.cme01" sqlTabName="cme_file" sqlType="SMALLINT" table_alias_name="" uid="{7c528e53-0000-4000-98fc-8cf3e0cfae1b}"/>
+    <RecordField colName="cme02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cme_file.cme02" sqlTabName="cme_file" sqlType="SMALLINT" table_alias_name="" uid="{53e41bdb-0000-4000-9b44-743d1ee21bd0}"/>
+    <RecordField colName="cme06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="cme_file.cme06" sqlTabName="cme_file" sqlType="VARCHAR" table_alias_name="" uid="{4d76c6fb-0000-4000-af6f-5247a94a6071}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e6132a1e-0000-4000-bd3f-432928082cc3}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{026d1088-0000-4000-8ca3-14afbedc6eca}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="80" name="axci310" spacing="normal" text="axci310">
+    <VBox gridHeight="19" gridWidth="60" name="vb4" posX="2" posY="0">
+      <Folder gridHeight="5" gridWidth="60" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="59" lstrcomment="false" name="gr1462" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cme01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cme_file.cme01" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="cme_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Month"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cme02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cme_file.cme02" notNull="true" posX="11" posY="1" required="true" rowCount="" sqlTabName="cme_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Item Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cme06" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" items="1.Main Group Code, 2.Group Code 1, 3.Group Code 2, 4.Group Code 3, 5.Costing Group, 6.Product Classification" lstrcomment="false" name="cme_file.cme06" notNull="true" posX="11" posY="2" required="true" rowCount="" sqlTabName="cme_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="1.Main Group Code"/>
+              <Item lstrtext="false" name="2" text="2.Group Code 1"/>
+              <Item lstrtext="false" name="3" text="3.Group Code 2"/>
+              <Item lstrtext="false" name="4" text="4.Group Code 3"/>
+              <Item lstrtext="false" name="5" text="5.Costing Group"/>
+              <Item lstrtext="false" name="6" text="6.Product Classification"/>
+            </ComboBox>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="9" gridWidth="60" lstrcomment="false" name="s_cme" posX="0" posY="6" totalRows="8">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cme03" columnCount="" comment="Key Field, No Blank/Repeated!     &lt;^P&gt; Qry Group Code" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" lstrcomment="false" lstrtitle="false" name="cme_file.cme03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="cme_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Group Code" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cme031" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" lstrcomment="false" lstrtitle="false" name="cme_file.cme031" posX="13" posY="0" rowCount="" sqlTabName="cme_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Product Classification" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cme04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="cme_file.cme04" notNull="true" posX="26" posY="0" required="true" rowCount="" sqlTabName="cme_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Expense Ratio" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cme05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="cme_file.cme05" notNull="true" posX="41" posY="0" required="true" rowCount="" sqlTabName="cme_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Gross Margin" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="60" lstrcomment="false" name="gr1464" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl532" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl533" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

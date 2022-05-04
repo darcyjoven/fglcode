@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{9579c086-0000-4000-b436-c53bd527d968}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nmh" order="" uid="{35e0d218-0000-4000-9d08-db2b9dab4357}" where="">
+    <RecordField colName="" fieldIdRef="1" name="nmh24" sqlTabName="" table_alias_name="" uid="{96bdaf86-0000-4000-be5a-8f4ae75c6c81}"/>
+    <RecordField colName="" fieldIdRef="5" name="nmh38" sqlTabName="" table_alias_name="" uid="{31027c95-0000-4000-98e1-aabfbc1eff0c}"/>
+    <RecordField colName="" fieldIdRef="6" name="nmh04" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{c6bfde76-0000-4000-96be-8f97b2c1785a}"/>
+    <RecordField colName="" fieldIdRef="7" name="nmh05" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{ea4edc4a-0000-4000-917d-73cb691431cd}"/>
+    <RecordField colName="" fieldIdRef="8" name="nmh02" sqlTabName="" table_alias_name="" uid="{871aef98-0000-4000-8d2f-69490fc82413}"/>
+    <RecordField colName="" fieldIdRef="9" name="nmh31" sqlTabName="" table_alias_name="" uid="{e92c00d9-0000-4000-ba37-fbfbdd881f6d}"/>
+    <RecordField colName="" fieldIdRef="10" name="nmh30" sqlTabName="" table_alias_name="" uid="{c5506fed-0000-4000-b47c-95d298ea8576}"/>
+    <RecordField colName="" fieldIdRef="11" name="nmh21" sqlTabName="" table_alias_name="" uid="{c136fca2-0000-4000-8459-9f491171afed}"/>
+    <RecordField colName="" fieldIdRef="12" name="nmh01" sqlTabName="" table_alias_name="" uid="{fb08f334-0000-4000-9c8a-c5f1a69480fb}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{11f3e8c8-0000-4000-9f3c-f4f8bebaf47b}" where="">
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{adc40bf0-0000-4000-971f-7131513e6845}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cnt3" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{871dd92a-0000-4000-bc3a-959a5d5c12f1}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ef285361-0000-4000-b412-376872541f23}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="157" name="anmq201" spacing="normal" text="anmq201">
+    <VBox gridHeight="21" gridWidth="155" name="vb6" posX="0" posY="0">
+      <Folder gridHeight="17" gridWidth="155" lstrcomment="false" name="pc772" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="16" gridWidth="155" name="vb5" posX="0" posY="0">
+            <Table gridHeight="12" gridWidth="155" lstrcomment="false" name="s_nmh" posX="0" posY="1" totalRows="10">
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="14" items="Untransaction, Collection Discount, Pledge, Note discount, Transfer, Withdraw, Note Returned, Cash" lstrcomment="false" lstrtitle="false" name="nmh24" noEntry="true" notNull="true" posX="0" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Note Status" widget="ComboBox">
+                <Item name="1" text="Untransaction"/>
+                <Item name="2" text="Collection Discount"/>
+                <Item name="3" text="Pledge"/>
+                <Item name="4" text="Note discount"/>
+                <Item name="5" text="Transfer"/>
+                <Item name="6" text="Withdraw"/>
+                <Item name="7" text="Note Returned"/>
+                <Item name="8" text="Cash"/>
+              </ComboBox>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" items="Confirmed, Uconfirmed, Void" lstrcomment="false" lstrtitle="false" name="nmh38" posX="14" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Confirmation" widget="ComboBox">
+                <Item lstrtext="false" name="Y" text="Confirmed"/>
+                <Item lstrtext="false" name="N" text="Uconfirmed"/>
+                <Item lstrtext="false" name="X" text="Void"/>
+              </ComboBox>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="nmh04" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Note Received Date" widget="DateEdit"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="nmh05" posX="43" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Due Date" widget="DateEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmh02" posX="58" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Face Value" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="nmh31" posX="78" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Check Number" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="nmh30" noEntry="true" posX="91" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Customer Abbreviation" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="nmh21" posX="113" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Remitting Bank" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="nmh01" posX="128" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Note Receipt#" widget="Edit"/>
+            </Table>
+            <Grid gridHeight="2" gridWidth="155" lstrcomment="false" name="gr4149" posX="0" posY="13">
+              <Label posX="2" posY="0" text="                              "/>
+              <Label posX="36" posY="0" text="Number of Checks"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnt2" noEntry="true" posX="57" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+              <Label posX="80" posY="0" text="                         "/>
+              <Label posX="109" posY="0" text="Check Amount"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnt3" noEntry="true" posX="130" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="155" lstrcomment="false" name="gr4150" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1312" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1313" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

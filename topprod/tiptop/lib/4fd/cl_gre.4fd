@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b702d265-53c9-4551-8cca-e4fef02d1fd5}">
+  <AGSettings/>
+  <Record active="false" additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bb0e5619-95ac-409f-b4dd-c04ef72866ad}" where="">
+    <RecordField colName="" defaultValue="N" fieldIdRef="11" name="sampledata" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2d3808c2-bb8c-4cb2-9c31-0e4a11a1979e}"/>
+    <RecordField colName="" fieldIdRef="3" name="outputformat" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{857f8c3f-1563-4eea-b679-dc53190ac271}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gdw" order="" uid="{2ace179b-947b-4f16-bb69-bc452efddc09}" where="">
+    <RecordField colName="" defaultValue="N" fieldIdRef="12" name="pick" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5afc6530-ffd1-4918-8169-50698d069377}"/>
+    <RecordField colName="gsf03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gsf_file.gsf03" sqlTabName="gsf_file" sqlType="VARCHAR" table_alias_name="" uid="{5faa40bc-0997-4fd0-bb0a-789120c81c74}"/>
+    <RecordField colName="gdw03" defaultValue="N" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gdw_file.gdw03" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{2c4e57df-3d6a-41aa-84e0-45013c25a03f}"/>
+    <RecordField colName="gdw09" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gdw_file.gdw09" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{948dfc4b-288d-4101-bd5f-f4167c2ae9d0}"/>
+    <RecordField colName="gdw11" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gdw_file.gdw11" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{d13164c7-a968-4941-ab0d-e563fc50964d}"/>
+    <RecordField colName="gdw12" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gdw_file.gdw12" sqlTabName="gdw_file" sqlType="SMALLINT" table_alias_name="" uid="{7a1b1a57-761b-4799-ab8d-fe7a8eb31fa0}"/>
+    <RecordField colName="gdw13" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gdw_file.gdw13" sqlTabName="gdw_file" sqlType="SMALLINT" table_alias_name="" uid="{bbd94d96-1e34-42cb-a66c-13af99b30846}"/>
+    <RecordField colName="gdw14" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gdw_file.gdw14" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{2787f3b0-95f1-4cd4-a94c-006b1fc009ed}"/>
+    <RecordField colName="gdw15" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gdw_file.gdw15" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{96c85d93-be6e-4610-838a-d47fe79479d8}"/>
+    <RecordField colName="gdw02" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gdw_file.gdw02" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{bbf7cf95-9282-4505-87c6-b711318f9c88}"/>
+    <RecordField colName="gdw08" fieldIdRef="13" fieldType="TABLE_COLUMN" name="gdw_file.gdw08" sqlTabName="gdw_file" sqlType="INTEGER" table_alias_name="" uid="{b4269824-2092-4662-b9b8-c925924ff6f1}"/>
+    <RecordField colName="gdw05" fieldIdRef="14" fieldType="TABLE_COLUMN" name="gdw_file.gdw05" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{c1134b9f-a5ab-4bd9-bad1-eee1f87d2b07}"/>
+    <RecordField colName="gdw04" fieldIdRef="15" fieldType="TABLE_COLUMN" name="gdw_file.gdw04" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{404a46f4-f998-4806-8065-0cb1c47f698a}"/>
+    <RecordField colName="gdw17" fieldIdRef="16" fieldType="TABLE_COLUMN" name="gdw_file.gdw17" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{410f5277-9f36-417c-985f-1d7a975e9672}"/>
+    <RecordField colName="gdw06" fieldIdRef="17" fieldType="TABLE_COLUMN" name="gdw_file.gdw06" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{05296996-05f1-4205-aec4-3b93c2c0a631}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="68" lstrtext="false" minHeight="10" minWidth="70" name="cl_gre" spacing="normal" text="cl_gre">
+    <VBox gridHeight="13" gridWidth="68" name="VBox1" posX="0" posY="0">
+      <Table gridHeight="8" gridWidth="68" name="s_gdw" posX="0" posY="1" totalRows="7">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="12" gridHeight="1" gridWidth="4" lstrtext="false" name="pick" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Select" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gsf03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="gsf_file.gsf03" noEntry="true" posX="4" posY="0" rowCount="" sqlTabName="gsf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Report Template Description" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdw03" columnCount="" defaultValue="N" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="gdw_file.gdw03" posX="34" posY="0" rowCount="" sqlTabName="gdw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" text="" title="custom" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdw09" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" name="gdw_file.gdw09" noEntry="true" posX="40" posY="0" rowCount="" sqlTabName="gdw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="FileList" widget="Edit"/>
+        <Phantom colName="gdw11" fieldId="5" fieldType="TABLE_COLUMN" name="gdw_file.gdw11" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw12" fieldId="6" fieldType="TABLE_COLUMN" name="gdw_file.gdw12" sqlTabName="gdw_file" sqlType="SMALLINT" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw13" fieldId="7" fieldType="TABLE_COLUMN" name="gdw_file.gdw13" sqlTabName="gdw_file" sqlType="SMALLINT" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw14" fieldId="8" fieldType="TABLE_COLUMN" name="gdw_file.gdw14" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw15" fieldId="9" fieldType="TABLE_COLUMN" name="gdw_file.gdw15" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw02" fieldId="10" fieldType="TABLE_COLUMN" name="gdw_file.gdw02" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw08" fieldId="13" fieldType="TABLE_COLUMN" name="gdw_file.gdw08" sqlTabName="gdw_file" sqlType="INTEGER" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw05" fieldId="14" fieldType="TABLE_COLUMN" name="gdw_file.gdw05" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw04" fieldId="15" fieldType="TABLE_COLUMN" name="gdw_file.gdw04" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw17" fieldId="16" fieldType="TABLE_COLUMN" name="gdw_file.gdw17" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="gdw06" fieldId="17" fieldType="TABLE_COLUMN" name="gdw_file.gdw06" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="68" name="Grid1" posX="0" posY="9">
+        <Label gridHeight="1" gridWidth="13" name="Label1" posX="1" posY="0" text="Report Format"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="30" items="SVG, PDF, XLS, XLS (sheet), XLSX, XLSX (sheet), RTF, HTML, Mail" name="outputformat" notNull="true" posX="16" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ComboBox1" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="SVG"/>
+          <Item lstrtext="false" name="2" text="PDF"/>
+          <Item lstrtext="false" name="3" text="XLS"/>
+          <Item lstrtext="false" name="4" text="XLS (sheet)"/>
+          <Item lstrtext="false" name="5" text="XLSX"/>
+          <Item lstrtext="false" name="6" text="XLSX (sheet)"/>
+          <Item lstrtext="false" name="7" text="RTF"/>
+          <Item lstrtext="false" name="8" text="HTML"/>
+          <Item lstrtext="false" name="9" text="Mail"/>
+        </ComboBox>
+        <Button gridHeight="1" gridWidth="9" image="GReditor-16.png" lstrtext="false" name="layout_edit" posX="47" posY="0" tabIndex="5" text=""/>
+        <Button gridHeight="1" gridWidth="9" lstrtext="false" name="set_default" posX="57" posY="0" tabIndex="6" text=""/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="11" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="sampledata" notNull="true" posX="16" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" text="Sampledata" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADcAOAA3AGYAMwBiADAALQA5ADUAZgAxAC0ANABjAGQANAAtAGEAOQA0AGMALQAwADAANgBiADEAZgBjADAAMAA5AGUAZAB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADAANABhADQANgBmADQALQBmADkAOQA4AC0ANAA4ADAANgAtADgAMAA2ADUALQAwAGMAYgAxAGMANAA3AGYANgA5ADgAYQB9QCQAAAAAAABActAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGMANABlADUANwBkAGYALQAzAGQANgBhAC0ANAAxAGEAYQAtADgANABlADAALQA0ADUAMAAxADMAYwAyADUAYQAwADMAZgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGEAZgBjADYANQAzADAALQBmAGYAZAAxAC0ANAA5ADEAOAAtADgAMQA2ADkALQA1ADAANgA5ADgAZAAwADYAOQAzADcANwB9QCQAAAAAAABAQoAAAAAAAD+UeuFHrhR+AQAAAEwAewBiAGIAMABlADUANgAxADkALQA5ADUAYQBjAC0ANAAwADkAZgAtAGIANABkAGQALQBjADAANABlAGYANwAyADgANgA2AGEAZAB9wHxwAAu4AAFAYp///4AAAD+OuFHrhR68AQAAAEwAewA4ADUANwBmADgAYwAzAGYALQAxADUANgAzAC0ANABlAGUAYQAtAGIANgA3ADkALQBkAGMANQAzADEAOQAwAGEAYwAyADcAMQB9QCQAAAAAAABATYAAAAAAAD+SbpeNT98+AQAAAEwAewA1AGYAYQBhADQAMABiAGMALQAwADkAOQA3AC0ANABmAGQAMAAtAGIAYgAwAGEALQA3ADgAOQAxADIAMABjADgAMQBjADcANAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGIAZgA3AGMAZgA5ADUALQA5ADIAOAAyAC0ANAA1ADAANQAtADgANwBjADYALQBiADcAMQAxADMAMQA4AGYAOQBjADgAOAB9QCQAAAAAAABAbWAAAAAAAD+RaHKwIMSeAQAAAEwAewBkADEAMwAxADYANABjADcALQBhADkANgA4AC0ANAA5ADQAMQAtAGEAYgAwAGQALQBlADUANgAzAGYAYwA1ADAAOQA2ADQAZAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGIAZAA5ADQAZAA5ADYALQAxAGUAMwA0AC0ANAAyAGMAYgAtAGEANgA2AGMALQAxADMAYQBmADkAOQBiADMAMAA4ADQANgB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADQAMgA2ADkAOAAyADQALQAyADAAOQAyAC0ANAA2ADYAMgAtAGIAOQBiADgALQBjADkAMgA1ADkAMgA0AGYAZgA2AGYAMQB9QCQAAAAAAABAcBAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGEAMQBiADEAYQA1ADcALQA3ADYAMQBiAC0ANAA3ADkAOQAtAGEAYgA4AGQALQBmAGUANwBhADgAZQBiADMAMQBmAGEAMAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADEAMQAzADQAYgA5AGYALQBhADUAYQBiAC0ANABiAGQAOQAtAGIAYQBkADEALQBlAGUAZQAxAGYAOAA3AGQAMgBiADAANwB9QCQAAAAAAABAcXAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGEAYwBlADEANwA5AGIALQA5ADQANwBiAC0ANABmADEANgAtAGIAYgA2ADkALQBiAGMANAA1ADIAZQBmAGQAZABjADAAOQB9wHAAAAAAAABAUkAAAAAAAD+QYk3S8an+AQAAAEwAewAwADUAMgA5ADYAOQA5ADYALQAwADUAZgAxAC0ANAAyADAANQAtAGEAZQBjADQALQAzAGIAOQAzAGMAMgBjADAAYQA2ADMAMQB9QCQAAAAAAABAdZAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADEAMABmADUAMgA3ADcALQA5AGYAMwA2AC0ANAAxADcAYwAtADkAOAA1AGYALQAxAGQANwBhADkANwA1AGUAOQA2ADcAMgB9QCQAAAAAAABAdDAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADYAYwA4ADUAZAA5ADMALQBiAGUANgBlAC0ANAA2ADEAMAAtADgAMwA4AGEALQBkADQANwBmAGUANwA5ADQANwA5AGQAOAB9QCQAAAAAAABAaqAAAAAAAD+Ik3S8an78AQAAAEwAewA5ADQAOABkAGYAYwA0AGIALQAyADgAOABkAC0ANAAxADAAMQAtAGIAZAA1AGYALQBmADQAMQA2ADcAYwAyAGEAZQA5AGQAMAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGQAMwA4ADAAOABjADIALQBiAGIAOABjAC0ANABjAGIAMgAtADkAYwAzADEALQAwAGUANABhADEAMQBhADEAOQA3ADkAZQB9QCQAAAAAAABAQoAAAAAAAD+TdLxqfvneAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

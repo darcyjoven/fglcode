@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b4507d79-0000-4000-8690-012f5daa730a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gae" order="" uid="{18d1d8ff-0000-4000-bc9f-5346e16cf88b}" where="">
+    <RecordField colName="gae02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gae_file.gae02" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{55a795c2-0000-4000-a8be-a7b5a411bdf8}"/>
+    <RecordField colName="gae03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gae_file.gae03" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{69504f3d-0000-4000-b675-ecf5a8364106}"/>
+    <RecordField colName="gae04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gae_file.gae04" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{8c5043e7-0000-4000-91f4-84a58bb20aae}"/>
+    <RecordField colName="gae10" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gae_file.gae10" sqlTabName="gae_file" sqlType="DATE" table_alias_name="" uid="{98c373b5-0000-4000-9e1a-dbf0088bf7d4}"/>
+    <RecordField colName="gbs06" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gbs_file.gbs06" sqlTabName="gbs_file" sqlType="VARCHAR" table_alias_name="" uid="{f2af8695-0000-4000-be74-d1f975ef1f74}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{efa5d2f5-0000-4000-9048-65c04647d8bf}" where="">
+    <RecordField colName="gae01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gae_file.gae01" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{bf055c3a-0000-4000-ad8a-f0098924b350}"/>
+    <RecordField colName="gaz03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{521ce94a-0000-4000-aacf-eb496852b3ca}"/>
+    <RecordField colName="gae12" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gae_file.gae12" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{43bcd702-0000-4000-996c-3009abbfcd05}"/>
+    <RecordField colName="gae11" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gae_file.gae11" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{c09942c0-0000-4000-8968-aa4e338d7b35}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ef0bf0db-0000-4000-816c-da867f181c91}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d7465f26-0000-4000-89dc-07ec2be6c6fb}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="123" name="p_perlang" spacing="normal" text="p_perlang">
+    <VBox gridHeight="24" gridWidth="120" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="120" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="6" gridWidth="59" lstrcomment="false" name="gr3257" posX="0" posY="0">
+            <Group gridHeight="6" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Program">
+              <Label posX="1" posY="1" text="Form ID"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae01" columnCount="" comment="Enter Program ID" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gae_file.gae01" notNull="true" posX="15" posY="1" required="true" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Window Title"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="33" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz03" noEntry="true" posX="15" posY="2" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Button gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" name="modify_program_name" posX="50" posY="2" tabIndex="" text="Update"/>
+              <Label posX="1" posY="3" text="Industry"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae12" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" items="" lstrcomment="false" name="gae_file.gae12" notNull="true" posX="15" posY="3" required="true" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ComboBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae11" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gae_file.gae11" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Editing a Customized PER-File Data" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="120" lstrcomment="false" name="s_gae" posX="0" posY="9" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae02" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="gae_file.gae02" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Field" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae03" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="" lstrcomment="false" lstrtitle="false" name="gae_file.gae03" notNull="true" posX="7" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Language" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae04" columnCount="" comment="IF Field Name is &apos;wintitle&apos;, Then This Field is &apos;NO Entry&apos;! Using &apos;Update&apos; Function!" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="gae_file.gae04" posX="18" posY="0" rowCount="" scroll="true" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Description" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae10" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="gae_file.gae10" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="gae_file" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Modi date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbs06" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtitle="false" name="gbs_file.gbs06" posX="82" posY="0" rowCount="" scroll="true" sqlTabName="gbs_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Comments" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="120" lstrcomment="false" name="gr3258" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl1150" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1151" posX="37" posY="0"/>
+        <Label gridHeight="1" gridWidth="70" lstrcomment="false" lstrtext="false" name="dummy01" posX="48" posY="0" text="Warning : IF Field Name is &apos;wintitle&apos;, Then This Field is &apos;NO Entry&apos;! Using &apos;Update&apos; Function!"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

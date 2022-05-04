@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{74b42b35-0000-4000-8aa1-97a643046544}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{297c6d2f-0000-4000-a8ee-a927cef321a8}" where="">
+    <RecordField colName="" defaultValue="1" fieldIdRef="1" fieldType="NON_DATABASE" name="b" sqlTabName="" table_alias_name="" uid="{c570396f-0000-4000-990d-12e3f69d7164}"/>
+    <RecordField colName="" defaultValue="1" fieldIdRef="2" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{8ce40f8a-0000-4000-a462-1a0f18937638}"/>
+    <RecordField colName="ima01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ima_file.ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{0da60f0f-0000-4000-89f4-c5172a810d37}"/>
+    <RecordField colName="ima901" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ima_file.ima901" sqlTabName="ima_file" sqlType="DATE" table_alias_name="tableAlias1" uid="{07601609-0000-4000-8693-e2863e4ebf6e}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="azi01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5399ab81-0000-4000-969c-faeb020ff391}"/>
+    <RecordField colName="bma01" fieldIdRef="6" fieldType="TABLE_COLUMN" name="bma_file.bma01" sqlTabName="bma_file" sqlType="VARCHAR" table_alias_name="" uid="{4d5a05fa-0000-4000-ad43-67c44209c01e}"/>
+    <RecordField colName="bma06" fieldIdRef="7" fieldType="TABLE_COLUMN" name="bma_file.bma06" sqlTabName="bma_file" sqlType="VARCHAR" table_alias_name="" uid="{398a15f2-0000-4000-bd48-126365b20f07}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="ver" sqlTabName="" table_alias_name="" uid="{2ef66868-0000-4000-b33a-e8d8eca95f58}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="150" lstrtext="false" name="acop760" spacing="normal" text="acop760">
+    <VBox gridHeight="24" gridWidth="65" name="vb4" posX="1" posY="1">
+      <Grid gridHeight="3" gridWidth="65" lstrcomment="false" name="gr8" posX="0" posY="1">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="1" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="43" items="Import Item Master, Import BOM Data" lstrcomment="false" lstrtitle="false" name="b" notNull="true" orientation="horizontal" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+          <Item lstrtext="false" name="1" text="Import Item Master"/>
+          <Item lstrtext="false" name="2" text="Import BOM Data"/>
+        </RadioGroup>
+      </Grid>
+      <Group gridHeight="10" gridWidth="65" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="4" text="group01">
+        <Grid gridHeight="8" gridWidth="52" lstrcomment="false" name="gr1" posX="3" posY="1">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="1" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" items="Production, Material" lstrcomment="false" lstrtitle="false" name="a" notNull="true" orientation="horizontal" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="Production"/>
+            <Item lstrtext="false" name="2" text="Material"/>
+          </RadioGroup>
+          <Label posX="2" posY="3" text="Number"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" name="ima_file.ima01" notNull="true" posX="22" posY="3" required="true" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="2" posY="4" text="Create Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima901" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" name="ima_file.ima901" posX="22" posY="4" rowCount="" sqlTabName="ima_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="tableAlias1" widget="DateEdit"/>
+          <Label posX="2" posY="5" text="Currency bef Merge"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" name="azi01" posX="22" posY="5" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="9" gridWidth="65" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="14" text="group02">
+        <Grid gridHeight="5" gridWidth="52" lstrcomment="false" name="gr2_1" posX="3" posY="1">
+          <Label posX="2" posY="1" text="Number"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bma01" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom" lstrcomment="false" name="bma_file.bma01" posX="19" posY="1" required="true" rowCount="" sqlTabName="bma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="2" posY="2" text="BOM Code"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bma06" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom" lstrcomment="false" name="bma_file.bma06" posX="18" posY="2" rowCount="" sqlTabName="bma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="2" posY="3" text="Verson"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="ver" posX="18" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

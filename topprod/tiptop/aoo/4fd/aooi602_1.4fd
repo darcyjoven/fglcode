@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3b326922-0000-4000-8dc4-3643be76d4d2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_cond" order="" uid="{5f4283ee-0000-4000-9b78-6c1ddf9edae3}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="field_no" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a8afaa7b-0000-4000-8085-fef8035017c6}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="field_name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3877876f-0000-4000-a4af-ddd1109717c1}"/>
+    <RecordField colName="" fieldIdRef="5" name="condition" sqlTabName="" table_alias_name="" uid="{9752de51-0000-4000-90e7-0c586c2808de}"/>
+    <RecordField colName="" fieldIdRef="6" name="value" sqlTabName="" table_alias_name="" uid="{ddc7ae00-0000-4000-a554-1397756eb7cf}"/>
+    <RecordField colName="" fieldIdRef="7" name="data_type" sqlTabName="" table_alias_name="" uid="{5c0b2739-0000-4000-a34f-6e9e087ce75a}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c2139f15-0000-4000-a450-03a9fb26e03d}" where="">
+    <RecordField colName="gew04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gew_file.gew04" sqlTabName="gew_file" sqlType="VARCHAR" table_alias_name="" uid="{479aa989-0000-4000-9e1a-c245a2da0019}"/>
+    <RecordField colName="azp02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="azp_file.azp02" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{d42effe4-0000-4000-a58c-56ff4dc21256}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="133" name="aooi602_1" spacing="normal" text="aooi602_1">
+    <VBox gridHeight="24" gridWidth="106" name="vb3" posX="7" posY="0">
+      <Folder gridHeight="3" gridWidth="106" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Carry Conditions">
+          <Grid gridHeight="2" gridWidth="86" lstrcomment="false" name="gr574" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Logestic"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gew04" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="gew_file.gew04" posX="14" posY="0" rowCount="" sqlTabName="gew_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="azp_file.azp02" posX="26" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="106" lstrcomment="false" name="s_cond" posX="0" posY="4" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" image="zoom.png" lstrcomment="false" lstrtitle="false" name="field_no" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Field Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="field_name" noEntry="true" posX="14" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Field Name" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" gridHeight="1" gridWidth="22" items="Not Equal, Bigger Than, Bigger Or Equal, Smaller Than, Small Or Equal, Begin With, Not Begin With, End With, Not End With, Include, Not Include" lstrcomment="false" lstrtitle="false" name="condition" posX="44" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Conditions" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Not Equal"/>
+          <Item lstrtext="false" name="2" text="Bigger Than"/>
+          <Item lstrtext="false" name="3" text="Bigger Or Equal"/>
+          <Item lstrtext="false" name="4" text="Smaller Than"/>
+          <Item lstrtext="false" name="5" text="Small Or Equal"/>
+          <Item lstrtext="false" name="6" text="Begin With"/>
+          <Item lstrtext="false" name="7" text="Not Begin With"/>
+          <Item lstrtext="false" name="8" text="End With"/>
+          <Item lstrtext="false" name="9" text="Not End With"/>
+          <Item lstrtext="false" name="10" text="Include"/>
+          <Item lstrtext="false" name="11" text="Not Include"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="value" posX="66" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Value" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" gridHeight="1" gridWidth="12" items="VARCHAR, NUMBER, DATE" lstrcomment="false" name="data_type" posX="86" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Data Type" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="VARCHAR"/>
+          <Item lstrtext="false" name="2" text="NUMBER"/>
+          <Item lstrtext="false" name="3" text="DATE"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="7" gridWidth="106" lstrcomment="false" name="gr22" posX="0" posY="16">
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy07" posX="1" posY="0" text=" "/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="Error Characters:&apos; &quot; ) + &gt; &lt; ="/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02" posX="1" posY="2" text="Sample"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy03" posX="1" posY="3" text="Field Code:ima01    Conditions:6.Begin With     Value:0;1"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy04" posX="1" posY="4" text="Result:ima01 LIKE &apos;0%&apos; OR ima01 LIKE &apos;1%&apos;"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy05" posX="1" posY="5" text=" "/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy06" posX="1" posY="6" text="Notice:Line Conditions Will be combined with &apos;AND&apos;"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e43c1b30-0000-4000-86e1-1bf59c7ce0e0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gal" order="" uid="{3b7bb2a2-0000-4000-894e-7263a9257b88}" where="">
+    <RecordField colName="gal02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gal_file.gal02" sqlTabName="gal_file" sqlType="VARCHAR" table_alias_name="" uid="{e5f4d0fb-0000-4000-aa2b-2452ee75a0da}"/>
+    <RecordField colName="gal03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gal_file.gal03" sqlTabName="gal_file" sqlType="VARCHAR" table_alias_name="" uid="{206946fe-0000-4000-b177-0d650f299ef4}"/>
+    <RecordField colName="" fieldIdRef="4" name="path" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{375808cd-0000-4000-bf4b-9e1baba8431d}"/>
+    <RecordField colName="gal04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gal_file.gal04" sqlTabName="gal_file" sqlType="VARCHAR" table_alias_name="" uid="{aeef4c64-0000-4000-9402-4df9df0a34ad}"/>
+    <RecordField colName="" fieldIdRef="6" name="ver" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6b2e681c-0000-4000-8922-282dc11cf876}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d7c7f129-0000-4000-9658-08bae650902e}" where="">
+    <RecordField colName="gak01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gak_file.gak01" sqlTabName="gak_file" sqlType="VARCHAR" table_alias_name="" uid="{10439a1d-0000-4000-8e91-a21eddd516d2}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="zz02" sqlTabName="" table_alias_name="" uid="{07d05563-0000-4000-9ee0-39fdb1801111}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="zz011" sqlTabName="" table_alias_name="" uid="{31763bc4-0000-4000-9284-e1c36adbf3b4}"/>
+    <RecordField colName="gakuser" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gak_file.gakuser" sqlTabName="gak_file" sqlType="VARCHAR" table_alias_name="" uid="{27e89ae5-0000-4000-90fb-8e548c1bf188}"/>
+    <RecordField colName="gakmodu" fieldIdRef="12" fieldType="TABLE_COLUMN" name="gak_file.gakmodu" sqlTabName="gak_file" sqlType="VARCHAR" table_alias_name="" uid="{d587efc7-0000-4000-9bd9-bbac9728ee41}"/>
+    <RecordField colName="gakgrup" fieldIdRef="13" fieldType="TABLE_COLUMN" name="gak_file.gakgrup" sqlTabName="gak_file" sqlType="VARCHAR" table_alias_name="" uid="{1cb3e546-0000-4000-9105-c80d86a283e6}"/>
+    <RecordField colName="gakdate" fieldIdRef="14" fieldType="TABLE_COLUMN" name="gak_file.gakdate" sqlTabName="gak_file" sqlType="DATE" table_alias_name="" uid="{ff5d5a9b-0000-4000-ad79-eb2450c84fb7}"/>
+    <RecordField colName="gakoriu" fieldIdRef="15" fieldType="TABLE_COLUMN" name="gak_file.gakoriu" sqlTabName="gak_file" sqlType="VARCHAR" table_alias_name="" uid="{47285dda-0000-4000-8668-d8326a9e2896}"/>
+    <RecordField colName="gakorig" fieldIdRef="16" fieldType="TABLE_COLUMN" name="gak_file.gakorig" sqlTabName="gak_file" sqlType="VARCHAR" table_alias_name="" uid="{adae2675-0000-4000-8e43-4d3443c14d6f}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{041f23b7-0000-4000-9490-8689c78f2aa0}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{db54ef49-0000-4000-8218-b11edc1148e0}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="143" name="p_link" spacing="normal" text="p_link">
+    <VBox gridHeight="23" gridWidth="140" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="140" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="page01">
+          <Grid gridHeight="5" gridWidth="64" lstrcomment="false" name="gr567" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="63" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Program">
+              <Label posX="1" posY="1" text="Link File"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gak01" columnCount="" comment="&lt;^P&gt;Qry Program ID" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="gak_file.gak01" notNull="true" posX="12" posY="1" required="true" rowCount="" sqlTabName="gak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="zz02" noEntry="true" posX="24" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Module ID"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="zz011" noEntry="true" posX="12" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+        <Page lstrtext="false" name="info" text="Info">
+          <Grid gridHeight="5" gridWidth="66" lstrcomment="false" name="gr568" posX="0" posY="0">
+            <Label posX="1" posY="1" text="Record Owner"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gakuser" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gak_file.gakuser" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="gak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Label posX="34" posY="1" text="Last Modified by"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gakmodu" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gak_file.gakmodu" noEntry="true" posX="55" posY="1" rowCount="" sqlTabName="gak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Department"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gakgrup" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gak_file.gakgrup" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="gak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="34" posY="2" text="Create/Modify Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gakdate" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gak_file.gakdate" noEntry="true" posX="55" posY="2" rowCount="" sqlTabName="gak_file" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="3" text="Record Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gakoriu" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gak_file.gakoriu" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="gak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="501" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="Dept Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gakorig" columnCount="" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gak_file.gakorig" noEntry="true" posX="22" posY="4" rowCount="" sqlTabName="gak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="502" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="140" lstrcomment="false" name="s_gal" posX="0" posY="8" totalRows="10">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gal02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" items="" lstrcomment="false" lstrtitle="false" name="gal_file.gal02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gal_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Module" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gal03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="gal_file.gal03" notNull="true" posX="7" posY="0" required="true" rowCount="" sqlTabName="gal_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Program ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="path" noEntry="true" posX="47" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Full Path" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gal04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Y, N" lstrcomment="false" lstrtitle="false" name="gal_file.gal04" notNull="true" posX="107" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="gal_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Linked?" widget="ComboBox">
+          <Item name="Y" text="Y"/>
+          <Item name="N" text="N"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="ver" noEntry="true" posX="117" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Version" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="140" lstrcomment="false" name="gr569" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl130" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl131" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

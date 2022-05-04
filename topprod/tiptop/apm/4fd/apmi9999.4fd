@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ec45ab46-0000-4000-b7d6-76c38cf0546f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="tb2" order="" uid="{892b3426-0000-4000-a29e-ed3e3ed2804d}" where="">
+    <RecordField colName="pmx02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pmx_file.pmx02" sqlTabName="pmx_file" sqlType="SMALLINT" table_alias_name="" uid="{f14958c2-0000-4000-a32f-425c25a4edba}"/>
+    <RecordField colName="pmx12" fieldIdRef="8" fieldType="TABLE_COLUMN" name="pmx_file.pmx12" sqlTabName="pmx_file" sqlType="VARCHAR" table_alias_name="" uid="{b81aac5f-0000-4000-a964-dd5831eb3bda}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{93ecba4e-0000-4000-af11-6e507e7fed52}" where="">
+    <RecordField colName="ima01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ima_file.ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{25c9f66c-0000-4000-bcf2-a285d4b01fd9}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ed1" sqlTabName="" table_alias_name="" uid="{4153c1a3-0000-4000-a4b5-e4a9274bc535}"/>
+    <RecordField colName="pmw06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmw_file.pmw06" sqlTabName="pmw_file" sqlType="DATE" table_alias_name="" uid="{353c7667-0000-4000-85fb-5f25197bb04e}"/>
+    <RecordField colName="gec07" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gec_file.gec07" sqlTabName="gec_file" sqlType="VARCHAR" table_alias_name="" uid="{92915d39-0000-4000-8a4c-dfde73e23cae}"/>
+    <RecordField colName="pmwuser" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pmw_file.pmwuser" sqlTabName="pmw_file" sqlType="VARCHAR" table_alias_name="" uid="{f584ad28-0000-4000-ab2d-f503b094998b}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{4cb7884b-0000-4000-ab0b-36d1721bb352}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cn" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{21b40848-0000-4000-9941-a2590b5b5d2c}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ed5" sqlTabName="" table_alias_name="" uid="{60c732d0-0000-4000-9025-20cff5c2dd05}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="175" lstrtext="false" name="apmi999" spacing="normal" text="apmi999">
+    <VBox gridHeight="23" gridWidth="141" name="vb1" posX="4" posY="0">
+      <Folder gridHeight="10" gridWidth="141" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Grid gridHeight="7" gridWidth="137" lstrcomment="false" name="gr1" posX="2" posY="1">
+            <Label posX="2" posY="1" text="inquery"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" lstrcomment="false" name="ima_file.ima01" notNull="true" posX="14" posY="1" required="true" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="23" lstrcomment="false" name="ed1" noEntry="true" posX="36" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="3" posY="3" text="date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmw06" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" name="pmw_file.pmw06" notNull="true" posX="14" posY="3" required="true" rowCount="" sqlTabName="pmw_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gec07" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtext="false" name="gec_file.gec07" noEntry="true" posX="41" posY="3" rowCount="" sqlTabName="gec_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="aaaaaaaaaaaaa" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </Page>
+        <Page name="Page2" text="Info&#10;">
+          <Grid gridHeight="6" gridWidth="102" lstrcomment="false" name="gr2" posX="3" posY="0">
+            <Label posX="2" posY="1" text="datauser"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmwuser" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" name="pmw_file.pmwuser" noEntry="true" notNull="true" posX="14" posY="1" rowCount="" sqlTabName="pmw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="141" name="tb2" posX="0" posY="11" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmx02" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" name="pmx_file.pmx02" posX="0" posY="0" rowCount="" sqlTabName="pmx_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmx12" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" name="pmx_file.pmx12" posX="11" posY="0" rowCount="" sqlTabName="pmx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="pmx12" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="141" lstrcomment="false" name="gr3" posX="0" posY="18">
+        <HLine gridWidth="6" name="hl1" posX="2" posY="1"/>
+        <Label posX="9" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" name="cn2" noEntry="true" posX="16" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="cn" noEntry="true" posX="31" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="5" name="hl2" posX="46" posY="1"/>
+        <Label posX="51" posY="1" text="www"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="ed5" posX="57" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

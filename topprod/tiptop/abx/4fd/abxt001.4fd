@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b47b6c1e-79d0-4ecd-b853-18fa753a519c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9f47e210-730d-4173-9069-cd93327cb273}" where="">
+    <RecordField colName="bwe011" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bwe_file.bwe011" sqlTabName="bwe_file" sqlType="SMALLINT" table_alias_name="" uid="{e5eabf62-a75e-435f-9770-bb2b03e4cb6c}"/>
+    <RecordField colName="bwe00" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bwe_file.bwe00" sqlTabName="bwe_file" sqlType="VARCHAR" table_alias_name="" uid="{12a14dd3-79f5-41e8-a247-61c52a1b0f9e}"/>
+    <RecordField colName="bwe01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bwe_file.bwe01" sqlTabName="bwe_file" sqlType="VARCHAR" table_alias_name="" uid="{9c64ac27-fc0d-465b-b037-ebc5f7901b76}"/>
+    <RecordField colName="bwe03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bwe_file.bwe03" sqlTabName="bwe_file" sqlType="VARCHAR" table_alias_name="" uid="{7aa2686f-070d-4f33-ad86-1b0e049d6cea}"/>
+    <RecordField colName="ima15" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ima_file.ima15" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{d509528d-6195-49cc-9619-f0a2c0d31510}"/>
+    <RecordField colName="ima02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ima_file.ima02" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{7422a52b-8b0e-42aa-a0f9-31b2af8ec4a9}"/>
+    <RecordField colName="ima021" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ima_file.ima021" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{643e8e3e-0d1e-40fb-9cc0-b5737383daff}"/>
+    <RecordField colName="ima1916" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ima_file.ima1916" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{ea387518-8901-40f5-9ca3-e4cd535269d7}"/>
+    <RecordField colName="bxe02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="bxe_file.bxe02" sqlTabName="bxe_file" sqlType="VARCHAR" table_alias_name="" uid="{3773909f-e75e-457d-9a59-90480f831cfd}"/>
+    <RecordField colName="bxe03" fieldIdRef="10" fieldType="TABLE_COLUMN" name="bxe_file.bxe03" sqlTabName="bxe_file" sqlType="VARCHAR" table_alias_name="" uid="{f6934052-2882-4698-ac0c-86898fe9daab}"/>
+    <RecordField colName="bwe04" fieldIdRef="11" fieldType="TABLE_COLUMN" name="bwe_file.bwe04" sqlTabName="bwe_file" sqlType="DECIMAL" table_alias_name="" uid="{2b7af1ff-5504-411c-8909-74d8bdb341ea}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d9be3bfc-2173-4e5f-a3ab-0bb17fbcbbbe}"/>
+    <RecordField colName="bwe031" fieldIdRef="13" fieldType="TABLE_COLUMN" name="bwe_file.bwe031" precisionDecimal="20" scaleDecimal="8" sqlTabName="bwe_file" sqlType="DECIMAL" table_alias_name="" uid="{6d479b7b-e28f-4a02-b14f-a0da60425b8a}"/>
+    <RecordField colName="bwg02" fieldIdRef="14" fieldType="TABLE_COLUMN" name="bwg_file.bwg02" sqlTabName="bwg_file" sqlType="DATE" table_alias_name="" uid="{aac80783-1904-4e5f-a304-f5a4160dae8f}"/>
+    <RecordField colName="bwg041" fieldIdRef="15" fieldType="TABLE_COLUMN" name="bwg_file.bwg041" sqlTabName="bwg_file" sqlType="DECIMAL" table_alias_name="" uid="{8a6ad9f4-9844-4962-8f73-ab23360f3532}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="81" name="abxt001" spacing="normal" text="abxt001">
+    <VBox gridHeight="20" gridWidth="78" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="16" gridWidth="78" lstrcomment="false" name="pc176" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="15" gridWidth="76" lstrcomment="false" name="gr1225" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwe011" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="bwe_file.bwe011" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="bwe_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwe00" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="Stock Taking, WIP Inventory Taking, SUB W/O" lstrcomment="false" lstrtitle="false" name="bwe_file.bwe00" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="bwe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="S" text="Stock Taking"/>
+              <Item lstrtext="" name="W" text="WIP Inventory Taking"/>
+              <Item lstrtext="" name="P" text="SUB W/O"/>
+            </ComboBox>
+            <Label posX="1" posY="2" text="Label No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwe01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bwe_file.bwe01" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="bwe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Item No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwe03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="bwe_file.bwe03" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="bwe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima15" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" lstrtitle="false" name="ima_file.ima15" noEntry="true" notNull="true" posX="55" posY="3" required="true" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Bonded" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label posX="1" posY="4" text="Desc"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima_file.ima02" noEntry="true" posX="22" posY="4" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="5" text="Spec"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima021" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima_file.ima021" noEntry="true" posX="22" posY="5" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="6" text="Bond GP Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima1916" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="ima_file.ima1916" noEntry="true" posX="22" posY="6" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="7" text="Bond GP Desc"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bxe02" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="bxe_file.bxe02" noEntry="true" posX="22" posY="7" rowCount="" sqlTabName="bxe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="8" text="Bond GP Spec"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bxe03" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="bxe_file.bxe03" noEntry="true" posX="22" posY="8" rowCount="" sqlTabName="bxe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="9" text="Effective Date"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwg02" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" name="bwg_file.bwg02" noEntry="true" posX="22" posY="9" rowCount="" sqlTabName="bwg_file" sqlType="DATE" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Edit1" widget="Edit"/>
+            <Label posX="1" posY="10" text="QPA"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwg041" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" name="bwg_file.bwg041" noEntry="true" posX="22" posY="10" rowCount="" sqlTabName="bwg_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="15" table_alias_name="" title="Edit1" widget="Edit"/>
+            <Label posX="1" posY="11" text="Unit Qty"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwe031" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="bwe_file.bwe031" posX="22" posY="11" precisionDecimal="20" rowCount="" scaleDecimal="8" sqlTabName="bwe_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="12" text="Equivelant Qty"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwe04" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="bwe_file.bwe04" posX="22" posY="12" rowCount="" sqlTabName="bwe_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="78" lstrcomment="false" name="gr1226" posX="0" posY="17">
+        <HLine gridWidth="10" name="hl323" posX="2" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl324" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{33e0189d-0000-4000-a851-0126edd09ff7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3a206d14-0000-4000-9e00-1b1be52f9eae}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="p_plant" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d46a45ce-0000-4000-965c-5052a7f0f20d}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="p_acc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e17acfe5-0000-4000-96d6-31f8d8ab9671}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="g_existno" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5ad81bfe-0000-4000-acc9-cb0fc63c2972}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="p_acc1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1cbb2eca-0000-4000-b286-e0baee192ced}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_existno1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2e3a0586-0000-4000-9149-32827909cc8c}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{0901827b-0000-4000-bb45-2d1dba4dfbcf}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="76" name="axrp591" spacing="normal" text="axrp591">
+    <VBox gridHeight="12" gridWidth="74" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="74" lstrcomment="false" name="gr2921" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="73" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+          <Label posX="1" posY="1" text="Enter General Ledger Plant No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="p_plant" notNull="true" posX="51" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Enter General Ledger No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="p_acc" notNull="true" posX="51" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Enter Original General Ledger Voucher No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="g_existno" notNull="true" posX="51" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="4" text="Enter Second General Ledger No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="p_acc1" noEntry="true" notNull="true" posX="51" posY="4" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="5" text="Enter Second Original General Ledger Voucher No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="g_existno1" noEntry="true" notNull="true" posX="51" posY="5" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="74" lstrcomment="false" name="gr2922" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxAGMAYgBiADIAZQBjAGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgA4ADYALQBlADAAYgBhAGUAZQAxADkAMgBjAGUAZAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGEAMgAwADYAZAAxADQALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZQAwADAALQAxAGIAMQBiAGUANQAyAGYAOQBlAGEAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADkAMAAxADgAMgA3AGIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYgA0ADUALQAyAGQAMQBkAGIAYQA0AGQAZgBiAGMAZgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADQANgBhADQANQBjAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgA1AGMALQA1ADAANQAyAGEANwBmADAAZgAyADAAZAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGEAZAA4ADEAYgBmAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYwBjADkALQBjAGIAMABmAGMANgAzAGMAMgA5ADcAMgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADEANwBhAGMAZgBlADUALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBkADYALQAzADEAZgA4AGQAOABhAGIAOQA2ADcAMQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGUAMwBhADAANQA4ADYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMQA0ADkALQAzADIAOAAyADcAOQAwADkAYwBjADgAYwB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

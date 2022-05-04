@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ec9b8469-0000-4000-b884-957407388d89}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_obv" order="" uid="{2915bd96-0000-4000-8343-94a1c98c0113}" where="">
+    <RecordField colName="obv02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="obv_file.obv02" sqlTabName="obv_file" sqlType="SMALLINT" table_alias_name="" uid="{1feb265b-0000-4000-b56c-f4cca2eb42ac}"/>
+    <RecordField colName="obv03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="obv_file.obv03" sqlTabName="obv_file" sqlType="VARCHAR" table_alias_name="" uid="{d62b32d6-0000-4000-93c6-69dd9a9e7bcd}"/>
+    <RecordField colName="obu02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="obu_file.obu02" sqlTabName="obu_file" sqlType="VARCHAR" table_alias_name="" uid="{837c482f-0000-4000-b2fb-3128e6738b83}"/>
+    <RecordField colName="obvacti" fieldIdRef="9" fieldType="TABLE_COLUMN" name="obv_file.obvacti" sqlTabName="obv_file" sqlType="VARCHAR" table_alias_name="" uid="{5a75c11c-0000-4000-b1a4-9e39659211f8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d059e65d-0000-4000-ba54-6f1c24a2b6f9}" where="">
+    <RecordField colName="obv01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="obv_file.obv01" sqlTabName="obv_file" sqlType="VARCHAR" table_alias_name="" uid="{e52fe740-0000-4000-848f-4b22dbb89683}"/>
+    <RecordField colName="obv012" fieldIdRef="3" fieldType="TABLE_COLUMN" name="obv_file.obv012" sqlTabName="obv_file" sqlType="VARCHAR" table_alias_name="" uid="{6b9dee1e-0000-4000-94bb-8cab6d528bc5}"/>
+    <RecordField colName="obv04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="obv_file.obv04" sqlTabName="obv_file" sqlType="INTEGER" table_alias_name="" uid="{513310db-0000-4000-b73b-686f6b69652c}"/>
+    <RecordField colName="obv05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="obv_file.obv05" sqlTabName="obv_file" sqlType="SMALLINT" table_alias_name="" uid="{e641556a-0000-4000-8a5c-c9c3925b87e9}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{25c7b647-0000-4000-b25d-2be549f61e7b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{fd8c16fc-0000-4000-a469-133f24832fb4}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="73" name="atmi178" spacing="normal" text="atmi178">
+    <VBox gridHeight="21" gridWidth="70" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="70" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="3" gridWidth="65" lstrcomment="false" name="gr1374" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Maintainment Group"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obv01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="obv_file.obv01" notNull="true" posX="32" posY="0" required="true" rowCount="" sqlTabName="obv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obv012" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="obv_file.obv012" posX="44" posY="0" rowCount="" sqlTabName="obv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Mileages that drived(km)"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obv04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="obv_file.obv04" posX="32" posY="1" rowCount="" sqlTabName="obv_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Years that drived"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obv05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="obv_file.obv05" posX="32" posY="2" rowCount="" sqlTabName="obv_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="70" lstrcomment="false" name="s_obv" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obv02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="obv_file.obv02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="obv_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Line No" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obv03" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^P&gt;Qry Detail &lt;^O&gt;Copy Previous Record! " fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="obv_file.obv03" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="obv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Maintainment Item" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obu02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="obu_file.obu02" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="obu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Description" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obvacti" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="obv_file.obvacti" notNull="true" posX="59" posY="0" required="true" rowCount="" sqlTabName="obv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="70" lstrcomment="false" name="gr1375" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl458" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="24" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="26" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl459" posX="34" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

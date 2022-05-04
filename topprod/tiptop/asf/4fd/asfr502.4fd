@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{952c092f-0000-4000-b8e2-8c0e8499e070}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b4d19551-0000-4000-baf5-966e1c5232ce}" where="">
+    <RecordField colName="sfp01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sfp_file.sfp01" sqlTabName="sfp_file" sqlType="VARCHAR" table_alias_name="" uid="{2dbf1718-0000-4000-b225-b9368ebf3a4a}"/>
+    <RecordField colName="sfp02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sfp_file.sfp02" sqlTabName="sfp_file" sqlType="DATE" table_alias_name="" uid="{5758fd3c-0000-4000-ac4b-a76eea9d4f98}"/>
+    <RecordField colName="sfp03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sfp_file.sfp03" sqlTabName="sfp_file" sqlType="DATE" table_alias_name="" uid="{76f266b4-0000-4000-afef-a2b71cddad43}"/>
+    <RecordField colName="sfp06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sfp_file.sfp06" sqlTabName="sfp_file" sqlType="VARCHAR" table_alias_name="" uid="{27af2531-0000-4000-be48-0db56e9f6b57}"/>
+    <RecordField colName="sfp07" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sfp_file.sfp07" sqlTabName="sfp_file" sqlType="VARCHAR" table_alias_name="" uid="{c245bba1-0000-4000-9a44-a97304202a06}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="q" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c53154ae-0000-4000-be78-3dd25eed67d2}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="p" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3cd3d93c-0000-4000-a22c-06e9d9af6236}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="c" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2b37d6ee-0000-4000-ba5a-67722f3819cc}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{f0128aa1-0000-4000-b4a8-1eb2f2a54d75}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="80" name="asfr502" spacing="normal" text="asfr502">
+    <VBox gridHeight="17" gridWidth="68" name="vb3" posX="1" posY="0">
+      <Grid gridHeight="8" gridWidth="68" lstrcomment="false" name="gr1" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="67" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Return No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfp01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="sfp_file.sfp01" posX="22" posY="1" rowCount="" sqlTabName="sfp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Entry Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfp02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="sfp_file.sfp02" posX="22" posY="2" rowCount="" sqlTabName="sfp_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Return Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfp03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="sfp_file.sfp03" posX="22" posY="3" rowCount="" sqlTabName="sfp_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="4" text="Return Cate"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfp06" columnCount="" comment="1.Set Returns 2.Over-Withdraw/Return 3.Shortage/Return 4.Withdraw" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Set Returns, Over-Withdraw/Return, Shortage/Return, Withdraw/Retrun" lstrcomment="false" lstrtitle="false" name="sfp_file.sfp06" posX="22" posY="4" rowCount="" sqlTabName="sfp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="false" name="6" text="Set Returns"/>
+            <Item lstrtext="false" name="7" text="Over-Withdraw/Return"/>
+            <Item lstrtext="false" name="8" text="Shortage/Return"/>
+            <Item lstrtext="false" name="9" text="Withdraw/Retrun"/>
+          </ComboBox>
+          <Label posX="1" posY="5" text="Department No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfp07" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="sfp_file.sfp07" posX="22" posY="5" rowCount="" sqlTabName="sfp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="5" gridWidth="68" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="9" text="INPUT">
+        <Grid gridHeight="3" gridWidth="47" lstrcomment="false" name="gr2" posX="1" posY="1">
+          <Label posX="1" posY="0" text="Issuing Order By"/>
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="28" items="Item + W/O, W/O + Item" lstrcomment="false" lstrtitle="false" name="q" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="" name="1" text="Item + W/O"/>
+            <Item lstrtext="" name="2" text="W/O + Item"/>
+          </RadioGroup>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="p" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Next Page by W/H Keeper?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" lstrtitle="false" name="c" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Print Lot/Serial No. Detail" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="68" lstrcomment="false" name="gr3" posX="0" posY="14">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADcAYQBmADIANQAzADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZQA0ADgALQAwAGQAYgA1ADYAZQA5AGYANgBiADUANwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADIANAA1AGIAYgBhADEALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYQA0ADQALQBhADkANwAzADAANAAyADAAMgBhADAANgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGIAMwA3AGQANgBlAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYQA1AGEALQA2ADcANwAyADIAZgAzADgAMQA5AGMAYwB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADcANQA4AGYAZAAzAGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYwA0AGIALQBhADcANgBlAGUAYQA5AGQANABmADkAOAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADUAMwAxADUANABhAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZQA3ADgALQAzAGQAZAAyADUAZQBlAGQANgA3AGQAMgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADAAMQAyADgAYQBhADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANABhADgALQAxAGUAYgAyAGYAMgBhADUANABkADcANQB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGMAZAAzAGQAOQAzAGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMgAyAGMALQAwADYAZQA5AGQAOQBhAGYANgAyADMANgB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADYAZgAyADYANgBiADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZgBlAGYALQBhADIAYgA3ADEAYwBkAGQAYQBkADQAMwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGQAYgBmADEANwAxADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgAyADUALQBiADkAMwA2ADgAZQBiAGYAMwBhADQAYQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADQAZAAxADkANQA1ADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYQBmADUALQA5ADYANgBlADEAYwA1ADIAMwAyAGMAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

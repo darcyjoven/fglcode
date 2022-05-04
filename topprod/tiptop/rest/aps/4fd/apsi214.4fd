@@ -1,0 +1,41 @@
+<Form width="58" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" spacing="normal" CHECKSUM="29116" posX="0" percommentheader="" height="10" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" fourSTFile="" name="apsi214" defaultspacing="true" text="apsi204" browserStatus="true" lstrtoalltext="false" percommentlayout="GRID
+PAGE
+FOLDER
+GRID
+VBOX
+LAYOUT
+" gstVersion="11401" >
+ <VBox posX="0" posY="0" hidden="--------" name="vb2" >
+  <PageControl width="52" posX="0" height="8" posY="0" lstrcomment="false" name="pc4" browserStatus="false" >
+   <Page lstrtext="false" imagetype="Image as URL" hidden="--------" name="page01" fontPitch="default" text="Page01" browserStatus="true" >
+    <Grid width="51" posX="0" height="6" posY="0" lstrcomment="false" hidden="--------" name="gr7" fontPitch="default" scroll="false" >
+     <Group width="50" lstrtext="false" gridWidth="52" posX="0" height="5" posY="0" hrecindex="-1" lstrcomment="false" hidden="--------" name="group01" fontPitch="default" gridHeight="17" gridChildrenInParent="--------" browserStatus="true" >
+      <Text width="16" lstrtext="false" gridWidth="8" posX="1" height="1" posY="1" hrecindex="-1" sizePolicy="initial" name="text1" text="Purchas Order Id" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="po_id" sqlTabName="aps_spm" fieldId="0" name="po_id" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" gridWidth="20" invisible="--------" notNull="true" posX="25" formfieldname="formfield0" height="1" posY="1" lstrcomment="false" autoNext="--------" length="32" hidden="--------" verify="--------" tabIndex="1" sizePolicy="initial" zeroFill="--------" name="po_id" lstrtitle="false" reverse="--------" data_type="VARCHAR" fontPitch="default" color="black" century="R" noEntry="true" required="true" scroll="--------" />
+      </FormField>
+      <Text width="7" lstrtext="false" gridWidth="12" posX="1" height="1" posY="2" hrecindex="-1" sizePolicy="initial" name="text6" text="Is Hold" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="is_hold" sqlTabName="aps_spm" fieldId="5" name="is_hold" fieldtype="TABLE_COLUMN" >
+       <ComboBox width="20" comment="Enter  0/1" case="NONE" gridWidth="20" notNull="--------" posX="25" formfieldname="formfield5" height="1" posY="2" lstrcomment="false" length="4" hidden="--------" tabIndex="2" sizePolicy="initial" name="is_hold" lstrtitle="false" data_type="DECIMAL" fontPitch="default" color="black" century="R" queryEditable="true" required="--------" noEntry="--------" >
+        <Item lstrtext="false" name="0" text="False" />
+        <Item lstrtext="false" name="1" text="True" />
+       </ComboBox>
+      </FormField>
+      <Text width="14" lstrtext="false" gridWidth="12" posX="1" height="1" posY="3" hrecindex="-1" sizePolicy="initial" name="text26" text="Supply Rule Id" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="sply_rid" fieldId="5" sqlTabName="aps_spm" name="sply_rid" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" justify="none" invisible="--------" notNull="--------" posX="25" formfieldname="formfield5" height="1" posY="3" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="4" data_type="VARCHAR" reverse="--------" name="sply_rid" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+     </Group>
+    </Grid>
+   </Page>
+  </PageControl>
+  <Grid width="52" posX="0" height="1" posY="8" lstrcomment="false" hidden="--------" name="gr8" fontPitch="default" scroll="false" browserStatus="false" >
+   <HLine width="10" gridWidth="10" posX="1" height="1" posY="0" name="hl7" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" height="1" posY="0" sizePolicy="initial" name="text66" text="Rows" />
+   <FormField colName="cnt" sqlTabName="formonly" fieldId="15" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" gridWidth="6" invisible="--------" notNull="--------" posX="17" formfieldname="formfield15" height="1" posY="0" lstrcomment="false" autoNext="--------" hidden="--------" verify="--------" tabIndex="3" sizePolicy="initial" zeroFill="--------" name="cnt" lstrtitle="false" reverse="--------" fontPitch="default" color="black" century="R" noEntry="true" required="--------" scroll="--------" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="25" height="1" posY="0" name="hl8" />
+  </Grid>
+ </VBox>
+</Form>

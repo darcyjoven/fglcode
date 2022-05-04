@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1478c5ae-0000-4000-865f-c9d6ac2a456f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ooe" order="" uid="{9ac53e56-0000-4000-a5fc-bd457cd3fda7}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ooe01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{791ba4f1-0000-4000-9b1d-a1afabfa0de8}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ooe02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{eca527f3-0000-4000-ae52-0a2ea497b872}"/>
+    <RecordField colName="" fieldIdRef="3" name="ooe02_desc" sqlTabName="" table_alias_name="" uid="{889b888e-0000-4000-a1c9-f0db31bce90a}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9d9b552f-0000-4000-b572-6d3ef6be689b}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{2235b802-0000-4000-a5e4-fc2bf311aa5e}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="143" lstrtext="false" name="arti105" spacing="normal" text="arti105">
+    <VBox gridHeight="13" gridWidth="44" name="vb6" posX="3" posY="1">
+      <Folder gridHeight="8" gridWidth="44" lstrcomment="false" name="page0" posX="0" posY="1">
+        <Page name="Page13" text="Page0">
+          <Table gridHeight="7" gridWidth="38" name="s_ooe" posX="1" posY="0" totalRows="5">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Cash, UnionPay Card, Check, Certificate, Certificate, Stored-value Card, Chong Advance, Handwork Virement" lstrcomment="false" lstrtitle="false" name="ooe01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ooe01" widget="ComboBox">
+              <Item lstrtext="false" name="01" text="Cash"/>
+              <Item lstrtext="false" name="02" text="UnionPay Card"/>
+              <Item lstrtext="false" name="03" text="Check"/>
+              <Item lstrtext="false" name="04" text="Certificate"/>
+              <Item lstrtext="false" name="05" text="Certificate"/>
+              <Item lstrtext="false" name="06" text="Stored-value Card"/>
+              <Item lstrtext="false" name="07" text="Chong Advance"/>
+              <Item lstrtext="false" name="08" text="Handwork Virement"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="ooe02" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ooe02" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="ooe02_desc" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ooe02_desc" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="44" lstrcomment="false" name="gr17" posX="0" posY="9">
+        <HLine gridWidth="10" name="hl25" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl26" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADIAMwA1AGIAOAAwADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQBlADQALQBmAGMAMgBiAGYAMwAxADEAYQBhADUAZQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGEAYwA1ADMAZQA1ADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQBmAGMALQBiAGQANAA1ADcAYwBkADMAZgBkAGEANwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADkAMQBiAGEANABmADEALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYgAxAGQALQBhADEAYQBmAGEAYgBmAGEAMABkAGUAOAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGMAYQA1ADIANwBmADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZQA1ADIALQAwAGEAMgBlAGEANAA5ADcAYgA4ADcAMgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGQAOQBiADUANQAyAGYALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANQA3ADIALQA2AGQAMwBlAGYANgBiAGUANgA4ADkAYgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADgAOQBiADgAOAA4AGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMQBjADkALQBmADAAZABiADMAMQBiAGMAZQA5ADAAYQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{de4d9b28-0000-4000-a604-f049a7ca96d7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nml" order="" uid="{218c984e-0000-4000-af2d-6bdd4303d3c6}" where="">
+    <RecordField colName="nml01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nml_file.nml01" sqlTabName="nml_file" sqlType="VARCHAR" table_alias_name="" uid="{b640b8ad-0000-4000-a410-20ed4c2422f8}"/>
+    <RecordField colName="nml02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nml_file.nml02" sqlTabName="nml_file" sqlType="VARCHAR" table_alias_name="" uid="{61d364d2-0000-4000-9641-940dee8b209d}"/>
+    <RecordField colName="nml03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nml_file.nml03" sqlTabName="nml_file" sqlType="VARCHAR" table_alias_name="" uid="{29173fa5-0000-4000-ae89-dd5e503948c1}"/>
+    <RecordField colName="nml05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nml_file.nml05" sqlTabName="nml_file" sqlType="SMALLINT" table_alias_name="" uid="{78da08eb-0000-4000-b4d8-b33415efa2b1}"/>
+    <RecordField colName="nmlacti" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nml_file.nmlacti" sqlTabName="nml_file" sqlType="VARCHAR" table_alias_name="" uid="{cd96c7c5-0000-4000-8954-d33edf093c65}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5b779d2f-0000-4000-ac56-9e30c7ae92e4}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{b677f681-0000-4000-b85b-0fe9e69d4b32}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="61" name="anmi060" spacing="normal" text="anmi060">
+    <VBox gridHeight="18" gridWidth="58" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="58" lstrcomment="false" name="pc746" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="56" lstrcomment="false" name="s_nml" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nml01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="nml_file.nml01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nml_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Cash Var. Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nml02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="nml_file.nml02" posX="15" posY="0" rowCount="" sqlTabName="nml_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Desc" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nml03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Business Activity, Investment, Financial Activity" lstrcomment="false" lstrtitle="false" name="nml_file.nml03" notNull="true" posX="27" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="nml_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Var. Class" widget="ComboBox">
+              <Item name="1" text="Business Activity"/>
+              <Item name="2" text="Investment"/>
+              <Item name="3" text="Financial Activity"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nml05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="nml_file.nml05" posX="38" posY="0" rowCount="" sqlTabName="nml_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Line" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmlacti" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="nml_file.nmlacti" notNull="true" posX="43" posY="0" required="true" rowCount="" sqlTabName="nml_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="58" lstrcomment="false" name="gr4028" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1267" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1268" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

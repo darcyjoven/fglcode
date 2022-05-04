@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{55855f60-0000-4000-af63-528bea98b143}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rvv" order="" uid="{ede5423c-0000-4000-a6ec-0c9ea18ba0f6}" where="">
+    <RecordField colName="" fieldIdRef="6" name="rvu03" sqlTabName="" table_alias_name="" uid="{17eba8e2-0000-4000-925d-16bbfb61c56a}"/>
+    <RecordField colName="" fieldIdRef="7" name="rvu00" sqlTabName="" table_alias_name="" uid="{35eba302-0000-4000-8475-06be75dbd9d9}"/>
+    <RecordField colName="" fieldIdRef="8" name="desc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{76087165-0000-4000-aa19-0c5a49655483}"/>
+    <RecordField colName="" fieldIdRef="9" name="rvu01" sqlTabName="" table_alias_name="" uid="{fa179072-0000-4000-8a6f-1fc2ed28aa14}"/>
+    <RecordField colName="" fieldIdRef="10" name="rvu02" sqlTabName="" table_alias_name="" uid="{7fb29eab-0000-4000-8ab5-e35092f2c090}"/>
+    <RecordField colName="" fieldIdRef="11" name="rvv36" sqlTabName="" table_alias_name="" uid="{08397730-0000-4000-ab7b-0931a53f8138}"/>
+    <RecordField colName="" fieldIdRef="12" name="rvv31" sqlTabName="" table_alias_name="" uid="{80c4143c-0000-4000-8958-a00451416872}"/>
+    <RecordField colName="" fieldIdRef="2" name="rvv031" sqlTabName="" table_alias_name="" uid="{ea34b5a3-0000-4000-9d3f-b90dfbdeb9b2}"/>
+    <RecordField colName="" fieldIdRef="3" name="rvv17" sqlTabName="" table_alias_name="" uid="{0109b75a-0000-4000-bb2b-f855c5a072e3}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{65bfb3ef-0000-4000-945c-e6560cce89cc}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="pmc01" sqlTabName="" table_alias_name="" uid="{c453670c-0000-4000-b64b-b421e95353fb}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="pmc03" sqlTabName="" table_alias_name="" uid="{7cb3cff9-0000-4000-8783-7b07b4cf41ab}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{4a640817-0000-4000-8ddb-b0407c9558ad}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="127" name="apmq232" spacing="normal" text="apmq232">
+    <VBox gridHeight="19" gridWidth="124" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="3" gridWidth="124" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="46" lstrcomment="false" name="gr4976" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Vender No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pmc01" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmc03" noEntry="true" posX="35" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="124" lstrcomment="false" name="s_rvv" posX="0" posY="4" totalRows="10">
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="rvu03" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Trans.Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="1.Store-in 2.QC/Return 3.Warehouse Return" fieldId="7" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="rvu00" posX="11" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Type" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="desc" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Note" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rvu01" posX="26" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rvu02" posX="36" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Receipt#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rvv36" posX="46" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="P/O No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="rvv31" posX="56" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="rvv031" posX="75" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Part Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rvv17" posX="105" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Qty" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="124" lstrcomment="false" name="gr4977" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl1626" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1627" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

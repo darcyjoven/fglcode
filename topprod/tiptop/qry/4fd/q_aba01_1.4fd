@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ec9f7430-0000-4000-a37a-adcd9bf13e53}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aba" order="" uid="{a95d6ed8-0000-4000-8ffb-d591cae967a5}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{1b642b04-0000-4000-80f4-054343be5846}"/>
+    <RecordField colName="aba01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aba_file.aba01" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{9d506abc-0000-4000-88fb-782fe7d3e37a}"/>
+    <RecordField colName="aba00" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aba_file.aba00" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{7888ded2-0000-4000-8278-279085e7abf8}"/>
+    <RecordField colName="aba02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aba_file.aba02" sqlTabName="aba_file" sqlType="DATE" table_alias_name="" uid="{2d282365-0000-4000-99de-c0d0573eee6d}"/>
+    <RecordField colName="aba06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="aba_file.aba06" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{ba16c061-0000-4000-827a-0558837ebc09}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="107" name="q_apa4" spacing="normal" text="Query A/P">
+    <Grid gridHeight="13" gridWidth="105" lstrcomment="false" name="gr3728" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="104" lstrcomment="false" name="s_aba" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="aba_file.aba01" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="aba01" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba00" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="aba_file.aba00" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="aba00" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="aba_file.aba02" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="aba_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="aba02" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba06" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aba_file.aba06" noEntry="true" posX="58" posY="0" rowCount="" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="aba06" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxAGIANgA0ADIAYgAwADQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMABmADQALQAwADUANAAzADQAMwBiAGUANQA4ADQANgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGEAMQA2AGMAMAA2ADEALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMgA3AGEALQAwADUANQA4ADgAMwA3AGUAYgBjADAAOQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGQAMgA4ADIAMwA2ADUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOQBkAGUALQBjADAAZAAwADUANwAzAGUAZQBlADYAZAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGQANQAwADYAYQBiAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOABmAGIALQA3ADgAMgBmAGUANwBkADMAZQAzADcAYQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADgAOAA4AGQAZQBkADIALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMgA3ADgALQAyADcAOQAwADgANQBlADcAYQBiAGYAOAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADkANQBkADYAZQBkADgALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZgBmAGIALQBkADUAOQAxAGMAYQBlADkANgA3AGEANQB9AAAAAAAAAAAAAAAAAAAAAD9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

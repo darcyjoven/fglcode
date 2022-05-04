@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1017a89f-c010-4e3f-8c64-cea96ec5b72d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{a8e3aad7-db6e-4ecb-ac37-5b2f4c51a630}" where="">
+    <RecordField colName="apb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="apb_file.apb01" sqlTabName="apb_file" sqlType="VARCHAR" table_alias_name="" uid="{68330606-a6da-4a41-b9fa-82a2d45e68db}"/>
+    <RecordField colName="apa02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="apa_file.apa02" sqlTabName="apa_file" sqlType="DATE" table_alias_name="" uid="{c6ba2c58-ebb2-4bcd-94e6-2ca6f53a57b2}"/>
+    <RecordField colName="apa36" fieldIdRef="3" fieldType="TABLE_COLUMN" name="apa_file.apa36" sqlTabName="apa_file" sqlType="VARCHAR" table_alias_name="" uid="{72ec6544-124c-414d-b4e1-1fa499c6cf2d}"/>
+    <RecordField colName="apa51" fieldIdRef="4" fieldType="TABLE_COLUMN" name="apa_file.apa51" sqlTabName="apa_file" sqlType="VARCHAR" table_alias_name="" uid="{fa21401a-cf58-4bdb-8b92-ec495e8e053e}"/>
+    <RecordField colName="apa511" fieldIdRef="5" fieldType="TABLE_COLUMN" name="apa_file.apa511" sqlTabName="apa_file" sqlType="VARCHAR" table_alias_name="" uid="{d5e50b32-38ba-42a8-84b1-27d3da7908db}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="lot" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d9425658-e481-43ad-a571-d08d616fdd99}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{9f7f44f0-61a4-40df-99ee-593fa2f4a1ae}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="89" name="afap100" spacing="normal" text="afap100">
+    <Folder gridHeight="21" gridWidth="82" lstrcomment="false" name="pc348" posX="1" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="15" gridWidth="59" name="vb9" posX="5" posY="0">
+          <Grid gridHeight="10" gridWidth="59" lstrcomment="false" name="gr1897" posX="0" posY="1">
+            <Group gridHeight="7" gridWidth="57" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Enter Accounts Condition to Batch Generate">
+              <Label posX="1" posY="1" text="Accounts No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="apb_file.apb01" posX="22" posY="1" rowCount="" sqlTabName="apb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Account Date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apa02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="apa_file.apa02" posX="22" posY="2" rowCount="" sqlTabName="apa_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+              <Label posX="1" posY="3" text="Accounts Category"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apa36" columnCount="" comment="&lt;^P&gt;Qry Account Cate" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="apa_file.apa36" posX="22" posY="3" rowCount="" sqlTabName="apa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="4" text="Debit Account"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apa51" columnCount="" comment="Debit,Blnk:Body Ac,MISC:Mul-Dr&lt;^Y&gt;Mntn Mul-Dr,UNAP:Cn T.E,STOCK:item&lt;^P&gt;Query" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="apa_file.apa51" posX="22" posY="4" rowCount="" sqlTabName="apa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="5" text="Debit Account 2"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apa511" columnCount="" comment="Debit,Blnk:Body Ac,MISC:Mul-Dr&lt;^Y&gt;Mntn Mul-Dr,UNAP:Cn T.E,STOCK:item&lt;^P&gt;Query" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="apa_file.apa511" posX="22" posY="5" rowCount="" sqlTabName="apa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+            </Group>
+            <Group gridHeight="3" gridWidth="56" lstrcomment="false" lstrtext="false" name="gb10" posX="1" posY="7">
+              <Label posX="2" posY="1" text="Enter Gene. Lot No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="lot" posX="26" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+          <Grid gridHeight="3" gridWidth="59" lstrcomment="false" name="gr1898" posX="0" posY="11">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="54" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkADkANAAyADUANgA1ADgALQBlADQAOAAxAC0ANAAzAGEAZAAtAGEANQA3ADEALQBkADAAOABkADYAMQA2AGYAZABkADkAOQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADgAZQAzAGEAYQBkADcALQBkAGIANgBlAC0ANABlAGMAYgAtAGEAYwAzADcALQA1AGIAMgBmADQAYwA1ADEAYQA2ADMAMAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGYANwBmADQANABmADAALQA2ADEAYQA0AC0ANAAwAGQAZgAtADkAOQBlAGUALQA1ADkAMwBmAGEAMgBmADQAYQAxAGEAZQB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADgAMwAzADAANgAwADYALQBhADYAZABhAC0ANABhADQAMQAtAGIAOQBmAGEALQA4ADIAYQAyAGQANAA1AGUANgA4AGQAYgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGEAMgAxADQAMAAxAGEALQBjAGYANQA4AC0ANABiAGQAYgAtADgAYgA5ADIALQBlAGMANAA5ADUAZQA4AGUAMAA1ADMAZQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADYAYgBhADIAYwA1ADgALQBlAGIAYgAyAC0ANABiAGMAZAAtADkANABlADYALQAyAGMAYQA2AGYANQAzAGEANQA3AGIAMgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADIAZQBjADYANQA0ADQALQAxADIANABjAC0ANAAxADQAZAAtAGIANABlADEALQAxAGYAYQA0ADkAOQBjADYAYwBmADIAZAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADUAZQA1ADAAYgAzADIALQAzADgAYgBhAC0ANAAyAGEAOAAtADgANABiADEALQAyADcAZAAzAGQAYQA3ADkAMAA4AGQAYgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

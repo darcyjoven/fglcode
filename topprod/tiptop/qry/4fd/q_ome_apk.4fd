@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{28c9d85a-0000-4000-9ae3-06c09650b663}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ome" order="" uid="{9bdfb870-0000-4000-9cb6-16ac147e90e2}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{0969f140-0000-4000-a143-ecec01852f3b}"/>
+    <RecordField colName="" fieldIdRef="5" name="a" sqlTabName="" table_alias_name="" uid="{fbbb0193-945c-45b2-bdda-9b044aeca44b}"/>
+    <RecordField colName="ome01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ome_file.ome01" sqlTabName="ome_file" sqlType="VARCHAR" table_alias_name="" uid="{395ffc31-0000-4000-a516-0d0fd3e10817}"/>
+    <RecordField colName="ome02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ome_file.ome02" sqlTabName="ome_file" sqlType="DATE" table_alias_name="" uid="{b060d152-0000-4000-952c-d137cd0194ae}"/>
+    <RecordField colName="ome04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ome_file.ome04" sqlTabName="ome_file" sqlType="VARCHAR" table_alias_name="" uid="{8e93a868-6b85-465f-8b3a-3cf0575db8d2}"/>
+    <RecordField colName="ome043" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ome_file.ome043" sqlTabName="ome_file" sqlType="VARCHAR" table_alias_name="" uid="{923fb13d-6b97-4b67-beea-bdc8949459a6}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="93" name="q_ome_apk" spacing="normal" text="q_gem_pmc">
+    <Grid gridHeight="12" gridWidth="92" lstrcomment="false" name="gr3793" posX="0" posY="1">
+      <Table gridHeight="11" gridWidth="90" lstrcomment="false" name="s_ome" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="8" items="Sales, Purchase, ALL" name="a" posX="7" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" title="a" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Sales"/>
+          <Item lstrtext="false" name="2" text="Purchase"/>
+          <Item lstrtext="false" name="3" text="ALL"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="ome_file.ome01" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="ome_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Invoice No." widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ome_file.ome02" noEntry="true" posX="28" posY="0" rowCount="" sqlTabName="ome_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Invoice Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="ome_file.ome04" posX="38" posY="0" rowCount="" sqlTabName="ome_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Customer #/Vendor No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome043" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="ome_file.ome043" posX="53" posY="0" rowCount="" sqlTabName="ome_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Company Name/Vendor Full Name" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmAGIAYgBiADAAMQA5ADMALQA5ADQANQBjAC0ANAA1AGIAMgAtAGIAZABkAGEALQA5AGIAMAA0ADQAYQBlAGMAYQA0ADQAYgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADIAMwBmAGIAMQAzAGQALQA2AGIAOQA3AC0ANABiADYANwAtAGIAZQBlAGEALQBiAGQAYwA4ADkANAA5ADQANQA5AGEANgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADkANgA5AGYAMQA0ADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMQA0ADMALQBlAGMAZQBjADAAMQA4ADUAMgBmADMAYgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADkANQBmAGYAYwAzADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQAxADYALQAwAGQAMABmAGQAMwBlADEAMAA4ADEANwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGIAZABmAGIAOAA3ADAALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwBiADYALQAxADYAYQBjADEANAA3AGUAOQAwAGUAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADAANgAwAGQAMQA1ADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkANQAyAGMALQBkADEAMwA3AGMAZAAwADEAOQA0AGEAZQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGUAOQAzAGEAOAA2ADgALQA2AGIAOAA1AC0ANAA2ADUAZgAtADgAYgAzAGEALQAzAGMAZgAwADUANwA1AGQAYgA4AGQAMgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

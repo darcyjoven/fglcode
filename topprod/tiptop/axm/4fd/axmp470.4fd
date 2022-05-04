@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{54ad6b12-0000-4000-8433-a52b2d8960ff}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oga" order="" uid="{5a189dbe-0000-4000-a7d7-d6b456bf4370}" where="">
+    <RecordField colName="" fieldIdRef="7" name="b" sqlTabName="" table_alias_name="" uid="{92c0cf57-0000-4000-9ccf-26fc8ff97b11}"/>
+    <RecordField colName="" fieldIdRef="8" name="c" sqlTabName="" table_alias_name="" uid="{b6fce514-0000-4000-9589-3e18d2eabb2f}"/>
+    <RecordField colName="" fieldIdRef="9" name="oga03b" sqlTabName="" table_alias_name="" uid="{675a3f97-0000-4000-adee-88a4a4219ff2}"/>
+    <RecordField colName="" fieldIdRef="10" name="oga032b" sqlTabName="" table_alias_name="" uid="{3586a76d-0000-4000-ac48-3c49972464a4}"/>
+    <RecordField colName="" fieldIdRef="11" name="oga01b" sqlTabName="" table_alias_name="" uid="{2bda5592-0000-4000-8663-5443c67206fa}"/>
+    <RecordField colName="" fieldIdRef="12" name="oga02b" sqlTabName="" table_alias_name="" uid="{5551f7ea-0000-4000-9c6a-7c6c5c6848db}"/>
+    <RecordField colName="" fieldIdRef="13" name="oga16" sqlTabName="" table_alias_name="" uid="{45d8a1c9-0000-4000-ba03-29430d63bd2a}"/>
+    <RecordField colName="" fieldIdRef="14" name="oga011" sqlTabName="" table_alias_name="" uid="{a1f1e46c-0000-4000-973c-82f29ba6830d}"/>
+    <RecordField colName="" fieldIdRef="15" name="oga04" sqlTabName="" table_alias_name="" uid="{26f3bf7d-0000-4000-98a3-9dda5365be33}"/>
+    <RecordField colName="" fieldIdRef="16" name="occ02" sqlTabName="" table_alias_name="" uid="{32e08d93-0000-4000-8e1d-f8178dc81fa0}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ccb134b0-0000-4000-b314-108c30ed2270}" where="">
+    <RecordField colName="oga02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oga_file.oga02" sqlTabName="oga_file" sqlType="DATE" table_alias_name="" uid="{2bdf02c2-0000-4000-b158-4f652bd02524}"/>
+    <RecordField colName="oga03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oga_file.oga03" sqlTabName="oga_file" sqlType="VARCHAR" table_alias_name="" uid="{c0ada622-0000-4000-9b2d-5526fd7213e7}"/>
+    <RecordField colName="oga72" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oga_file.oga72" sqlTabName="oga_file" sqlType="DATE" table_alias_name="" uid="{bc455218-0000-4000-b145-102f2eacbdd6}"/>
+    <RecordField colName="oga01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oga_file.oga01" sqlTabName="oga_file" sqlType="VARCHAR" table_alias_name="" uid="{186c9b54-0000-4000-a0c2-d843d463874b}"/>
+    <RecordField colName="oga032" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oga_file.oga032" sqlTabName="oga_file" sqlType="VARCHAR" table_alias_name="" uid="{9fb29077-0000-4000-8034-ea150f50ce20}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{f588ae88-0000-4000-95a5-2dcb8d35857c}"/>
+    <RecordField colName="" fieldIdRef="17" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9ddcd97f-0000-4000-8f83-538607b08d17}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="161" name="axmp470" spacing="normal" text="axmp470">
+    <VBox gridHeight="18" gridWidth="158" name="vb3" posX="1" posY="0">
+      <Grid gridHeight="3" gridWidth="158" lstrcomment="false" name="grid01" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Delivery Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="oga_file.oga02" posX="22" posY="0" rowCount="" sqlTabName="oga_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+        <Label posX="43" posY="0" text="Client"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga03" columnCount="" comment="&lt;^P&gt;Qry Client No." fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="oga_file.oga03" posX="64" posY="0" rowCount="" sqlTabName="oga_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="80" posY="0" text="Estimated Receipt Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga72" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" name="oga_file.oga72" posX="106" posY="0" rowCount="" sqlTabName="oga_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="1" text="Delivery No"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga01" columnCount="" comment="&lt;^P&gt;Qry Delivery No." fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="oga_file.oga01" posX="22" posY="1" rowCount="" sqlTabName="oga_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="43" posY="1" text="Client Name"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga032" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="oga_file.oga032" posX="64" posY="1" rowCount="" sqlTabName="oga_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="80" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Checked" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+      <Table gridHeight="11" gridWidth="158" lstrcomment="false" name="s_oga" posX="0" posY="4" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" lstrtitle="false" name="b" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Checked" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="c" posX="8" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Check No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="oga03b" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Client" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="oga032b" posX="35" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Client Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="oga01b" posX="58" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Delivery No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="oga02b" posX="74" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Delivery Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="oga16" posX="89" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Order No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="oga011" posX="104" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Advice No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="oga04" posX="119" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" title="Shipping Cust" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="occ02" posX="133" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="16" table_alias_name="" title="Cust Name" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="158" lstrcomment="false" name="gr2184" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl843" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="17" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="17" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl844" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

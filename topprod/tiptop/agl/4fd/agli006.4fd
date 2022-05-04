@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="ManagedForm" uid="{2c22b171-fb79-403d-9f97-e24adbd6b9e5}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ayd" order="" uid="{e5480738-9134-4c4c-9efa-b1695b1b0d79}" where="">
+    <RecordField colName="ayd06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ayd_file.ayd06" sqlTabName="ayd_file" sqlType="VARCHAR" table_alias_name="" uid="{908b6e73-9470-4c9f-87a0-ba3610c29ba8}"/>
+    <RecordField colName="aya02" fieldIdRef="7" name="aya02" sqlTabName="formonly" table_alias_name="" uid="{d6ead029-5a52-40a3-a3ea-68ca30aaa896}"/>
+    <RecordField colName="ayd07" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ayd_file.ayd07" sqlTabName="ayd_file" sqlType="VARCHAR" table_alias_name="" uid="{0e560dba-d612-41c1-874a-35f25f3713c2}"/>
+    <RecordField colName="axl02" fieldIdRef="9" name="axl02" sqlTabName="formonly" table_alias_name="" uid="{756e5e50-bbba-4218-9c70-ddf32a92d7c0}"/>
+    <RecordField colName="ayd08" fieldIdRef="10" name="ayd08" sqlTabName="formonly" sqlType="DECIMAL" table_alias_name="" uid="{21892868-8651-4903-9b0f-c33749f3e7af}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{07607c1c-da08-4692-a739-91bb5f768369}" where="">
+    <RecordField colName="ayd01" fieldIdRef="0" fieldType="TABLE_COLUMN" name="ayd_file.ayd01" sqlTabName="ayd_file" sqlType="VARCHAR" table_alias_name="" uid="{f0cbee6f-6559-43da-9b10-1ee09451b3b5}"/>
+    <RecordField colName="ayd02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ayd_file.ayd02" sqlTabName="ayd_file" sqlType="VARCHAR" table_alias_name="" uid="{3ee05064-ec6f-49c1-aa16-92adc1eced7e}"/>
+    <RecordField colName="ayd00" fieldIdRef="2" name="ayd00" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{011d73d9-aa78-48a9-815d-8ea8f3d65b68}"/>
+    <RecordField colName="ayd03" fieldIdRef="3" name="ayd03" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{e8a1c316-d79c-43e8-a636-97bfcbeeefbf}"/>
+    <RecordField colName="ayd04" fieldIdRef="4" name="ayd04" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{667331bb-27c0-48f1-8b7e-c3650cad53ec}"/>
+    <RecordField colName="ayd05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ayd_file.ayd05" sqlTabName="ayd_file" sqlType="VARCHAR" table_alias_name="" uid="{877a1ea7-ed00-48fb-adca-2162283efdeb}"/>
+    <RecordField colName="cnt" fieldIdRef="11" name="cnt" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{19cb62dd-b222-43e2-b579-74d2f51be5ef}"/>
+    <RecordField colName="cn2" fieldIdRef="12" name="cn2" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{7a77701e-9241-4eb3-bc92-31dfd9921f68}"/>
+    <RecordField colName="sum_ayd08" fieldIdRef="13" name="sum_ayd08" sqlTabName="formonly" table_alias_name="" uid="{91b098e4-9998-43d8-b277-cdec609e9e6f}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="85" name="agli006" text="agli006">
+    <VBox gridHeight="24" gridWidth="85" name="vb3" posX="0" posY="0">
+      <Folder gridHeight="9" gridWidth="85" name="folder01" posX="0" posY="1">
+        <Page name="page01" text="Main">
+          <Grid gridHeight="8" gridWidth="37" name="gr2403" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="10" posX="1" posY="0" text="Group Code"/>
+            <ButtonEdit action="controlp" colName="ayd01" columnCount="" fieldId="0" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" name="ayd_file.ayd01" notNull="true" posX="21" posY="0" required="true" rowCount="" sqlTabName="ayd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="14" posX="1" posY="1" text="Parent Company"/>
+            <ButtonEdit action="controlp" colName="ayd02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" name="ayd_file.ayd02" notNull="true" posX="21" posY="1" required="true" rowCount="" sqlTabName="ayd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="8" posX="1" posY="2" text="Book No."/>
+            <Edit colName="ayd00" columnCount="" fieldId="2" gridHeight="1" gridWidth="15" name="ayd00" notNull="true" posX="21" posY="2" required="true" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="4" posX="1" posY="3" text="Year"/>
+            <Edit colName="ayd03" columnCount="" fieldId="3" gridHeight="1" gridWidth="15" name="ayd03" notNull="true" posX="21" posY="3" required="true" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="5" posX="1" posY="4" text="Month"/>
+            <Edit colName="ayd04" columnCount="" fieldId="4" gridHeight="1" gridWidth="15" name="ayd04" noEntry="true" notNull="true" posX="21" posY="4" required="true" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="8" posX="1" posY="5" text="Currency"/>
+            <Edit colName="ayd05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="ayd_file.ayd05" noEntry="true" notNull="true" posX="21" posY="5" required="true" rowCount="" sqlTabName="ayd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="85" name="s_axn" posX="0" posY="10" totalRows="10">
+        <ButtonEdit action="controlp" colName="ayd06" columnCount="" comment="&lt;^P&gt;Flow Category Code" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" name="ayd_file.ayd06" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="ayd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Flow Category Code" widget="ButtonEdit"/>
+        <Edit colName="aya02" columnCount="" fieldId="7" gridHeight="1" gridWidth="20" name="aya02" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Descriptiom" widget="Edit"/>
+        <ButtonEdit action="controlp" colName="ayd07" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom.png" name="ayd_file.ayd07" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="ayd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="axn19" widget="ButtonEdit"/>
+        <Edit colName="axl02" columnCount="" fieldId="9" gridHeight="1" gridWidth="17" name="axl02" noEntry="true" posX="46" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="11" table_alias_name="" title="axl02" widget="Edit"/>
+        <Edit colName="ayd08" columnCount="" fieldId="10" gridHeight="1" gridWidth="16" name="ayd08" notNull="true" posX="63" posY="0" required="true" rowCount="" sqlTabName="formonly" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Balance" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="85" name="gr2404" posX="0" posY="21">
+        <HLine gridWidth="3" name="HLine1" posX="1" posY="0"/>
+        <Label gridHeight="1" gridWidth="5" posX="5" posY="0" text="Rows"/>
+        <Edit colName="cnt" columnCount="" fieldId="11" gridHeight="1" gridWidth="6" name="cnt" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="2" posX="19" posY="0" text="/"/>
+        <Edit colName="cn2" columnCount="" fieldId="12" gridHeight="1" gridWidth="6" name="cn2" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="5" name="HLine2" posX="30" posY="0"/>
+        <Label gridHeight="1" gridWidth="4" posX="35" posY="0" text="Sum"/>
+        <Edit colName="sum_ayd08" columnCount="" fieldId="13" gridHeight="1" gridWidth="9" name="sum_ayd08" noEntry="true" posX="40" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="5" name="HLine3" posX="50" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

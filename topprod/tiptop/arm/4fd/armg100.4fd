@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{efff0953-0000-4000-9ba5-5dee112ffe8a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2679ceaf-0000-4000-b15f-5012957e210f}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="rme01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1a06a12d-0000-4000-a5f8-5cdbc4e8de9f}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="rme02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{f9e44a2e-0000-4000-8389-27ae49917735}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="rme03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c02679a0-0000-4000-a10f-7c767c093035}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="rme08" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{798fde7d-0000-4000-a46c-b8eee3540af9}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{0d7c0b48-0000-4000-b991-e6e7ade5bfd7}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="59" name="armr100" spacing="normal" text="armr100">
+    <VBox gridHeight="11" gridWidth="57" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="6" gridWidth="57" lstrcomment="false" name="gr349" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="56" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="RMA Re-Delivery No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rme01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Document Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rme02" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Customer No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="rme03" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="4" text="RMA INVOICE No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rme08" posX="22" posY="4" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="57" lstrcomment="false" name="gr350" posX="0" posY="7">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

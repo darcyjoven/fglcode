@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{ad971b04-0000-4000-b072-0694af19dd7c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ee2dea71-0000-4000-9f72-224758bbf105}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="fbo01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c5c826d5-0000-4000-a9d0-d2df2d406152}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="fbo02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{6eb04dc1-0000-4000-8962-d33d888c926d}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="fbo03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{8e1ddd52-0000-4000-86da-efe773f4a76f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="fbo04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{fb9f34b2-0000-4000-b4ee-6d532138a985}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="fbo05" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{89c3b095-0000-4000-b13a-772c738c2df9}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{4dc597bd-0000-4000-a853-e39d7493a538}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="b" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e7c41b76-0000-4000-91ab-6199dd5865df}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{4a6d641a-0000-4000-afbb-539f92664ebd}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="106" name="afag112" spacing="normal" text="afar112">
+    <VBox gridHeight="19" gridWidth="104" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="104" lstrcomment="false" name="gr1995" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="103" lstrcomment="false" lstrtext="false" name="grpqbe" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Transaction Note"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fbo01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Transaction Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fbo02" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Applicant"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fbo03" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Applying Dept"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fbo04" posX="22" posY="4" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="5" text="Applying Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fbo05" posX="22" posY="5" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="7" gridWidth="104" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="9" text="INPUT">
+        <Grid gridHeight="5" gridWidth="102" lstrcomment="false" name="gr1996" posX="1" posY="1">
+          <Group gridHeight="4" gridWidth="50" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0" text="Data Option">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="46" items="Confirmed, UnConfirmed, All" lstrcomment="false" lstrtitle="false" name="a" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Confirmed"/>
+              <Item lstrtext="" name="2" text="UnConfirmed"/>
+              <Item lstrtext="" name="3" text="All"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="4" gridWidth="50" lstrcomment="false" lstrtext="false" name="group03" posX="52" posY="0" text="Data Option">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="46" items="Confirmed, UnConfirmed, All" lstrcomment="false" lstrtitle="false" name="b" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Confirmed"/>
+              <Item lstrtext="" name="2" text="UnConfirmed"/>
+              <Item lstrtext="" name="3" text="All"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="104" lstrcomment="false" name="gr1997" posX="0" posY="16">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="45" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADcAYwA0ADEAYgA3ADYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMQBhAGIALQA2ADEAOQA5AGQAZAA1ADgANgA1AGQAZgB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGUAYgAwADQAZABjADEALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOQA2ADIALQBkADMAMwBkADgAOAA4AGMAOQAyADYAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGIAOQBmADMANABiADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANABlAGUALQA2AGQANQAzADIAMQAzADgAYQA5ADgANQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGUAMgBkAGUAYQA3ADEALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZgA3ADIALQAyADIANAA3ADUAOABiAGIAZgAxADAANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGUAMQBkAGQAZAA1ADIALQAwADAAMAAwAC0ANAAwADAAMAAtADgANgBkAGEALQBlAGYAZQA3ADcAMwBmADQAYQA3ADYAZgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGQAYwA1ADkANwBiAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAOAA1ADMALQBlADMAOQBkADcANAA5ADMAYQA1ADMAOAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADkAYwAzAGIAMAA5ADUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMQAzAGEALQA3ADcAMgBjADcAMwA4AGMAMgBkAGYAOQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGEANgBkADYANAAxAGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZgBiAGIALQA1ADMAOQBmADkAMgA2ADYANABlAGIAZAB9QBQAAAAAAABAZkAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADUAYwA4ADIANgBkADUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAOQBkADAALQBkADIAZABmADIAZAA0ADAANgAxADUAMgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

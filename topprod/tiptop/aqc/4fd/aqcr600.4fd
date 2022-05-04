@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e6918eb0-0000-4000-a148-84b9498694cd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{637106cf-0000-4000-af5d-2ab1449e3f2b}" where="">
+    <RecordField colName="qdb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="qdb_file.qdb01" sqlTabName="qdb_file" sqlType="VARCHAR" table_alias_name="" uid="{284ec5b8-0000-4000-83c2-c15228d2ab1a}"/>
+    <RecordField colName="qdb02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="qdb_file.qdb02" sqlTabName="qdb_file" sqlType="VARCHAR" table_alias_name="" uid="{eb31c71e-0000-4000-8350-afe67029fafc}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{6c2ab2b1-0000-4000-91a5-f02a32d905c7}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="ch" sqlTabName="" table_alias_name="" uid="{5cc5de9d-0000-4000-8bf7-5d3ba24666a9}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{c88d5609-0000-4000-8938-7cf98efd7038}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="73" name="aqcr600" spacing="normal" text="aqcr600">
+    <VBox gridHeight="12" gridWidth="71" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="71" lstrcomment="false" name="gr171" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="70" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="QC Document No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qdb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="qdb_file.qdb01" posX="22" posY="1" rowCount="" sqlTabName="qdb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Item No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qdb02" columnCount="" comment="&lt;P&gt;" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="qdb_file.qdb02" posX="22" posY="2" rowCount="" sqlTabName="qdb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="32" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="4" text="INPUT">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" items="IQC, FQC, PQC" lstrcomment="false" lstrtitle="false" name="a" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="" name="1" text="IQC"/>
+            <Item lstrtext="" name="2" text="FQC"/>
+            <Item lstrtext="" name="3" text="PQC"/>
+          </RadioGroup>
+        </Group>
+        <Group gridHeight="3" gridWidth="38" lstrcomment="false" lstrtext="false" name="group03" posX="33" posY="4" text="INPUT">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" items="Detail, Control Chart" lstrcomment="false" lstrtitle="false" name="ch" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="" name="1" text="Detail"/>
+            <Item lstrtext="" name="2" text="Control Chart"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="71" lstrcomment="false" name="gr172" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

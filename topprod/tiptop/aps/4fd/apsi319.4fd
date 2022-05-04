@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6b350339-0000-4000-b32e-8ba9dfe36f31}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{51c6acb3-0000-4000-8799-4d77f22eba23}" where="">
+    <RecordField colName="vnb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vnb_file.vnb01" sqlTabName="vnb_file" sqlType="VARCHAR" table_alias_name="" uid="{8530772c-0000-4000-8499-be60ceb27b2e}"/>
+    <RecordField colName="vnb02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vnb_file.vnb02" sqlTabName="vnb_file" sqlType="DECIMAL" table_alias_name="" uid="{f6437240-0000-4000-b624-b770969032a9}"/>
+    <RecordField colName="vnb03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="vnb_file.vnb03" sqlTabName="vnb_file" sqlType="VARCHAR" table_alias_name="" uid="{8f566886-0000-4000-a8fb-d417082643ef}"/>
+    <RecordField colName="vnb04" defaultValue="0" fieldIdRef="5" fieldType="TABLE_COLUMN" name="vnb_file.vnb04" sqlTabName="vnb_file" sqlType="INTEGER" table_alias_name="" uid="{9c97d613-0000-4000-9e6e-4c14ffefc987}"/>
+    <RecordField colName="vnb05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="vnb_file.vnb05" sqlTabName="vnb_file" sqlType="DECIMAL" table_alias_name="" uid="{b3efe2f6-0000-4000-9c97-2a5af1a49dcd}"/>
+    <RecordField colName="vnb06" defaultValue="0" fieldIdRef="7" fieldType="TABLE_COLUMN" name="vnb_file.vnb06" sqlTabName="vnb_file" sqlType="INTEGER" table_alias_name="" uid="{1cf261bb-0000-4000-9d33-377b722b5197}"/>
+    <RecordField colName="vnb07" fieldIdRef="8" fieldType="TABLE_COLUMN" name="vnb_file.vnb07" sqlTabName="vnb_file" sqlType="DECIMAL" table_alias_name="" uid="{b930e1e9-0000-4000-9db0-060fb090455f}"/>
+    <RecordField colName="vnb08" fieldIdRef="9" fieldType="TABLE_COLUMN" name="vnb_file.vnb08" sqlTabName="vnb_file" sqlType="INTEGER" table_alias_name="" uid="{ebcc9a83-0000-4000-9039-dc9af522aceb}"/>
+    <RecordField colName="vnb09" fieldIdRef="10" fieldType="TABLE_COLUMN" name="vnb_file.vnb09" sqlTabName="vnb_file" sqlType="VARCHAR" table_alias_name="" uid="{0198708a-0000-4000-a895-cb79294c2876}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{995b0179-0000-4000-9345-8b444dbc71d4}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="77" name="apsi319" spacing="normal" text="apsi319">
+    <VBox gridHeight="22" gridWidth="71" name="vb3" posX="1" posY="0">
+      <Folder gridHeight="18" gridWidth="71" lstrcomment="false" name="pc4" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="12" gridWidth="68" lstrcomment="false" name="gr7" posX="1" posY="0">
+            <Group gridHeight="11" gridWidth="66" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Remaining of Source Supply Doc."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="vnb_file.vnb01" notNull="true" posX="38" posY="1" required="true" rowCount="" sqlTabName="vnb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Source Demand Qty"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="vnb_file.vnb02" posX="38" posY="2" rowCount="" sqlTabName="vnb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Source Doc. No"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb03" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="vnb_file.vnb03" notNull="true" posX="38" posY="3" required="true" rowCount="" sqlTabName="vnb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="4" text="Demand Order"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb04" colorCondition="black" columnCount="" defaultValue="0" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="False, True" lstrcomment="false" name="vnb_file.vnb04" notNull="true" posX="38" posY="4" required="true" rowCount="" sqlTabName="vnb_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="False"/>
+                <Item lstrtext="false" name="1" text="True"/>
+              </ComboBox>
+              <Label posX="1" posY="5" text="Estimated Supplies"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb05" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="vnb_file.vnb05" notNull="true" posX="38" posY="5" required="true" rowCount="" sqlTabName="vnb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="6" text="PO or MO"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb06" colorCondition="black" columnCount="" defaultValue="0" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="W/O, P/O" lstrcomment="false" name="vnb_file.vnb06" notNull="true" posX="38" posY="6" required="true" rowCount="" sqlTabName="vnb_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="W/O"/>
+                <Item lstrtext="false" name="1" text="P/O"/>
+              </ComboBox>
+              <Label posX="1" posY="7" text="Max. Supply"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb07" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="vnb_file.vnb07" posX="38" posY="7" rowCount="" sqlTabName="vnb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="8" text="Lock"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb08" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="False, True" lstrcomment="false" name="vnb_file.vnb08" notNull="true" posX="38" posY="8" required="true" rowCount="" sqlTabName="vnb_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="False"/>
+                <Item lstrtext="false" name="1" text="True"/>
+              </ComboBox>
+              <Label posX="1" posY="9" text="Item No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnb09" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="vnb_file.vnb09" notNull="true" posX="38" posY="9" required="true" rowCount="" sqlTabName="vnb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="71" lstrcomment="false" name="gr8" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl7" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8344de33-0000-4000-b529-02b8257f494e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{847ef583-0000-4000-82cc-acbbc344f30c}" where="">
+    <RecordField colName="azp01" fieldIdRef="9" fieldType="TABLE_COLUMN" name="azp_file.azp01" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{d50c7d87-0000-4000-96a7-2b370b7bc7dd}"/>
+    <RecordField colName="ima131" fieldIdRef="10" fieldType="TABLE_COLUMN" name="ima_file.ima131" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{a88983e8-0000-4000-8a9b-15344aac0d3d}"/>
+    <RecordField colName="ogb04" fieldIdRef="11" fieldType="TABLE_COLUMN" name="ogb_file.ogb04" sqlTabName="ogb_file" sqlType="VARCHAR" table_alias_name="" uid="{73f1b9c8-0000-4000-b652-c069eca7cd32}"/>
+    <RecordField colName="oga03" fieldIdRef="12" fieldType="TABLE_COLUMN" name="oga_file.oga03" sqlTabName="oga_file" sqlType="VARCHAR" table_alias_name="" uid="{56628e48-0000-4000-a919-22a5f754f17a}"/>
+    <RecordField colName="lpk01" fieldIdRef="13" fieldType="TABLE_COLUMN" name="lpk_file.lpk01" sqlTabName="lpk_file" sqlType="VARCHAR" table_alias_name="" uid="{806d1503-0000-4000-b2f4-13318de0262d}"/>
+    <RecordField colName="oga02" fieldIdRef="14" fieldType="TABLE_COLUMN" name="oga_file.oga02" sqlTabName="oga_file" sqlType="DATE" table_alias_name="" uid="{1c681891-0000-4000-9b96-23be6ea0a264}"/>
+    <RecordField colName="" fieldIdRef="15" name="a" sqlTabName="" table_alias_name="" uid="{36821105-0000-4000-a954-854a74159168}"/>
+    <RecordField colName="" fieldIdRef="16" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{24d32a6f-0000-4000-9d4b-568a16fad853}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="58" name="Form" text="Form">
+    <VBox gridHeight="19" gridWidth="49" name="VBox1" posX="3" posY="0">
+      <Grid gridHeight="15" gridWidth="49" name="Grid2" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="47" name="Group2" posX="1" posY="0" text="QBE1">
+          <Label posX="2" posY="1" text="Logistics Code"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp01" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" image="zoom" name="azp_file.azp01" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.DateEdit1" widget="ButtonEdit"/>
+          <Label colorCondition="black" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtext="false" name="dummy1" posX="19" posY="2" text="LRDMDS,QY&apos;|&apos;H&apos;;&apos;GK"/>
+        </Group>
+        <Group gridHeight="7" gridWidth="47" name="Group3" posX="1" posY="4" text="QBE2">
+          <Label posX="2" posY="1" text="Product Class"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima131" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" image="zoom" name="ima_file.ima131" posX="19" posY="1" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+          <Label posX="2" posY="2" text="Item No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ogb04" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" image="zoom" name="ogb_file.ogb04" posX="19" posY="2" rowCount="" sqlTabName="ogb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+          <Label posX="2" posY="3" text="Customer No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga03" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" image="zoom" name="oga_file.oga03" posX="19" posY="3" rowCount="" sqlTabName="oga_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.DateEdit1" widget="ButtonEdit"/>
+          <Label posX="2" posY="4" text="Member No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lpk01" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" image="zoom" name="lpk_file.lpk01" posX="19" posY="4" rowCount="" sqlTabName="lpk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+          <Label posX="2" posY="5" text="Selling Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga02" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" name="oga_file.oga02" posX="19" posY="5" rowCount="" sqlTabName="oga_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.DateEdit1" widget="DateEdit"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="47" name="Group5" posX="1" posY="11" text="Print Option">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" gridHeight="2" gridWidth="39" items="Product, Product+Operations Center" name="a" posX="4" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.RadioGroup1" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="Product"/>
+            <Item lstrtext="false" name="2" text="Product+Operations Center"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="49" lstrcomment="false" name="gr1" posX="0" posY="16">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADQAZAAzADIAYQA2AGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZAA0AGIALQA1ADYAOABhADEANgBmAGEAZAA4ADUAMwB9QBQAAAAAAABAZkAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADgAOAA5ADgAMwBlADgALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYQA5AGIALQAxADUAMwA0ADQAYQBhAGMAMABkADMAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADQANwBlAGYANQA4ADMALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMgBjAGMALQBhAGMAYgBiAGMAMwA0ADQAZgAzADAAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADMAZgAxAGIAOQBjADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANgA1ADIALQBjADAANgA5AGUAYwBhADcAYwBkADMAMgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADAANgBkADEANQAwADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgBmADQALQAxADMAMwAxADgAZABlADAAMgA2ADIAZAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADUAMABjADcAZAA4ADcALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBhADcALQAyAGIAMwA3ADAAYgA3AGIAYwA3AGQAZAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGMANgA4ADEAOAA5ADEALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYgA5ADYALQAyADMAYgBlADYAZQBhADAAYQAyADYANAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADYAOAAyADEAMQAwADUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAOQA1ADQALQA4ADUANABhADcANAAxADUAOQAxADYAOAB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADYANgAyADgAZQA0ADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAOQAxADkALQAyADIAYQA1AGYANwA1ADQAZgAxADcAYQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0e9f3ac4-0000-4000-b885-e045d0122852}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_save" order="" uid="{11ddf69e-585b-4cdd-b50f-724720da8aed}" where="">
+    <RecordField colName="zaw01" fieldIdRef="1" fieldType="NON_DATABASE" name="s_name" sqlTabName="zaw_file" sqlType="VARCHAR" table_alias_name="" uid="{25ba0470-bdab-4be3-99b0-2168bffbea6b}"/>
+    <RecordField colName="gdw05" fieldIdRef="2" fieldType="COLUMN_LIKE" name="s_desc" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{418e3e93-b40f-48fa-9f2f-cd9f61b1d149}"/>
+    <RecordField colName="zaw03" defaultValue="Y" fieldIdRef="3" fieldType="NON_DATABASE" name="s_multi" sqlTabName="zaw_file" sqlType="VARCHAR" table_alias_name="" uid="{d839a424-40af-4186-9cea-0f4c9764c91e}"/>
+    <RecordField colName="zaw12" defaultValue="N" fieldIdRef="4" fieldType="NON_DATABASE" name="s_overwrite" sqlTabName="zaw_file" sqlType="VARCHAR" table_alias_name="" uid="{802e917d-a096-40a1-ae2d-852fe95cefb3}"/>
+  </Record>
+  <Form gridHeight="47" gridWidth="285" name="cl_gr_save" spacing="normal" text="儲存樣板">
+    <VBox gridHeight="9" gridWidth="60" name="VBox1" posX="2" posY="0">
+      <Grid gridHeight="7" gridWidth="60" lstrcomment="false" name="gr_savetmp" posX="0" posY="1">
+        <Label gridHeight="1" gridWidth="16" name="Label1" posX="2" posY="1" text="New template name"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="zaw01" columnCount="" comment="KEYField,No Blank/Repeated!" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="s_name" notNull="true" posX="19" posY="1" required="true" rowCount="" scroll="true" sqlTabName="zaw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="16" name="Label2" posX="2" posY="2" text="Template description"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="gdw05" columnCount="" comment="KEYField,No Blank/Repeated!" fieldId="2" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="s_desc" notNull="true" posX="19" posY="2" required="true" rowCount="" scroll="true" sqlTabName="gdw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaw03" columnCount="" defaultValue="Y" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtext="false" lstrtitle="false" name="s_multi" notNull="true" posX="2" posY="3" required="true" rowCount="" sqlTabName="zaw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Save multilingual template" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaw12" colorCondition="black" columnCount="" defaultValue="N" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="22" hidden="true" lstrcomment="false" lstrtext="false" name="s_overwrite" notNull="true" posX="26" posY="3" rowCount="" sqlTabName="zaw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Overwrite exists template" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Label gridHeight="1" gridWidth="56" name="dummy02" posX="2" posY="4" text="Save multilingual template:use current template overwrite each mulitilingual template."/>
+        <Label gridHeight="1" gridWidth="56" name="dummy01" posX="2" posY="5" text="Overwrite exists template:use current template overwrite original template."/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0ADEAOABlADMAZQA5ADMALQBiADQAMABmAC0ANAA4AGYAYQAtADkAZgAyAGYALQBjAGQAOQBmADYAMQBiADEAZAAxADQAOQB9QCQAAAAAAABATYAAAAAAAD+UeuFHrhR+AQAAAEwAewAyADUAYgBhADAANAA3ADAALQBiAGQAYQBiAC0ANABiAGUAMwAtADkAOQBiADAALQAyADEANgA4AGIAZgBmAGIAZQBhADYAYgB9QCQAAAAAAABAQoAAAAAAAD+SbpeNT98+AQAAAEwAewAxADEAZABkAGYANgA5AGUALQA1ADgANQBiAC0ANABjAGQAZAAtAGIANQAwAGYALQA3ADIANAA3ADIAMABkAGEAOABhAGUAZAB9wHBwAAAAAABASAAAAAAAAD+haHKwIMSfAQAAAEwAewA4ADAAMgBlADkAMQA3AGQALQBhADAAOQA2AC0ANAAwAGEAMQAtAGEAZQAyAGQALQA4ADUAMgBmAGUAOQA1AGMAZQBmAGIAMwB9QCQAAAAAAABAWcAAAAAAAD+bpeNT987eAQAAAEwAewBkADgAMwA5AGEANAAyADQALQA0ADAAYQBmAC0ANAAxADgANgAtADkAYwBlAGEALQAwAGYANABjADkANwA2ADQAYwA5ADEAZQB9QCQAAAAAAABAVEAAAAAAAD+Yk3S8an7+AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

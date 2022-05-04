@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2b02bb74-0000-4000-9be3-35c27b5bf583}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ecbeeeed-0000-4000-86d8-d4d78db979fa}" where="">
+    <RecordField colName="stn03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="stn_file.stn03" sqlTabName="stn_file" sqlType="VARCHAR" table_alias_name="" uid="{a918e24c-0000-4000-9fbf-43b9c8367cf4}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="yea" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{620ad92d-0000-4000-89a6-f0bf81311aec}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="type" sqlTabName="" table_alias_name="" uid="{803f1d75-0000-4000-b79b-3ca87c8f1704}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{1b09d7d8-0000-4000-a58e-055965961810}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="91" name="asdr350" spacing="normal" text="asdr350">
+    <VBox gridHeight="17" gridWidth="89" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="89" lstrcomment="false" name="gr429" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="88" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Product Class"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="stn03" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="stn_file.stn03" posX="22" posY="1" rowCount="" sqlTabName="stn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="9" gridWidth="89" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="5" text="INPUT">
+        <Grid gridHeight="7" gridWidth="87" lstrcomment="false" name="gr430" posX="1" posY="1">
+          <Group gridHeight="3" gridWidth="86" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Print Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="yea" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Group>
+          <Group gridHeight="3" gridWidth="86" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="3" text="Print">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" items="Including Re-Work, Omit Re-Work" lstrcomment="false" lstrtitle="false" name="type" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Including Re-Work"/>
+              <Item lstrtext="" name="2" text="Omit Re-Work"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="89" lstrcomment="false" name="gr431" posX="0" posY="14">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="51" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e35ea97d-0000-4000-82ad-8fcae043e638}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_boe" order="" uid="{13ac1083-0000-4000-8cff-d3e7712a5032}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="a2" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{ca5d20dd-0000-4000-89d6-ebe4bd85eb4b}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="boe78a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c837392c-0000-4000-9610-4a7d48e61bcd}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="a3" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{bef01bff-0000-4000-b909-0d79a2d42720}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d8c80050-0000-4000-a87b-2835eac9029a}" where="">
+    <RecordField colName="" defaultValue="1" fieldIdRef="1" fieldType="NON_DATABASE" name="a1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{40d39e05-0000-4000-839d-5fab492897c2}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="boi01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2ad60670-0000-4000-950f-0ffa724f401c}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{db7ac0cf-0000-4000-97e4-766c2979646c}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{300fd2cd-0000-4000-aca2-8482b9e5ee02}"/>
+  </Record>
+  <Form gridHeight="36" gridWidth="155" lstrtext="false" name="abmi614_2" spacing="normal" text="abmi614_1">
+    <VBox gridHeight="23" gridWidth="84" name="vb2" posX="4" posY="1">
+      <Folder gridHeight="7" gridWidth="84" lstrcomment="false" name="pc3" posX="0" posY="1">
+        <Page name="Page4" text="Main">
+          <Grid gridHeight="5" gridWidth="81" lstrcomment="false" name="gr9" posX="1" posY="0">
+            <Label posX="2" posY="0" text="Parameter"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" defaultValue="1" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" items="Constant, Variable:Host , Variable:Part " lstrcomment="false" name="a1" posX="14" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Constant"/>
+              <Item lstrtext="false" name="2" text="Variable:Host "/>
+              <Item lstrtext="false" name="3" text="Variable:Part "/>
+            </ComboBox>
+            <Label posX="38" posY="0" text="Parameter No."/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" items="" lstrcomment="false" name="boi01" notNull="true" posX="55" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="84" name="s_boe" posX="0" posY="8" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="a2" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Formula Order " widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="boe78a" noEntry="true" notNull="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Formula" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="a3" notNull="true" posX="33" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Input test value " widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="84" lstrcomment="false" name="gr12" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl7" posX="0" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

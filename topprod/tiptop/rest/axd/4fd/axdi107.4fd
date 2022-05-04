@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="54" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="10425" spacing="normal" posX="0" percommentheader="" height="17" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdi107" defaultspacing="true" text="axdi107" gstVersion="11401" percommentlayout="TABLE
+PAGE
+FOLDER
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="51" posX="0" posY="0" height="14" lstrcomment="false" name="pc1553" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" >
+    <Table width="49" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="0" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_obr" fontPitch="default" tabName="s_obr" unsortableColumns="--------" tabName1="s_obr" >
+     <TableColumn width="8" lstrtext="false" sqlDBName="ds" height="1" colName="obr01" unsortable="--------" fieldId="0" sqlTabName="obr_file" tabIndex="1" unsizable="--------" unhidable="--------" unmovable="--------" name="obr01" fieldtype="TABLE_COLUMN" text="Level" >
+      <Edit width="8" case="NONE" comment="KEY Field, No Blank/Repeated! &lt;^O>Copy Previous Record! " invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+     </TableColumn>
+     <TableColumn width="30" lstrtext="false" sqlDBName="ds" height="1" colName="obr02" unsortable="--------" fieldId="1" sqlTabName="obr_file" tabIndex="2" unsizable="--------" unhidable="--------" unmovable="--------" name="obr02" fieldtype="TABLE_COLUMN" text="Description" >
+      <Edit width="30" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </TableColumn>
+     <TableColumn width="6" lstrtext="false" sqlDBName="ds" height="1" colName="obracti" unsortable="--------" fieldId="2" sqlTabName="obr_file" tabIndex="3" unsizable="--------" unhidable="--------" unmovable="--------" name="obracti" fieldtype="TABLE_COLUMN" text="Valid?" >
+      <CheckBox width="6" lstrtext="false" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="" valueChecked="Y" />
+     </TableColumn>
+    </Table>
+   </Page>
+  </PageControl>
+  <Grid width="51" posX="0" posY="14" height="1" lstrcomment="false" hidden="--------" name="gr7742" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl2523" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" posY="0" height="1" sizePolicy="initial" name="text26352" text="Rows" />
+   <FormField colName="cn2" fieldId="3" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="17" formfieldname="formfield0" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="4" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="25" posY="0" height="1" name="hl2524" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_obr" fromTable="true" tableKey="tb1112" >
+  <Link colName="obr_file.obr01" fromTable="true" colKey="Col11073" />
+  <Link colName="obr_file.obr02" fromTable="true" colKey="Col11074" />
+  <Link colName="obr_file.obracti" fromTable="true" colKey="Col11075" />
+ </RecordView>
+</Form>
+

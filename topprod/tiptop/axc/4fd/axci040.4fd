@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{29ca3c77-0000-4000-94ad-14bf3ec113d5}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_caa" order="" uid="{61079a9a-0000-4000-a8fd-3e9d9bfa6112}" where="">
+    <RecordField colName="caa01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="caa_file.caa01" sqlTabName="caa_file" sqlType="VARCHAR" table_alias_name="" uid="{3ca35e7f-0000-4000-b08b-d0769764f14c}"/>
+    <RecordField colName="caa02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="caa_file.caa02" sqlTabName="caa_file" sqlType="VARCHAR" table_alias_name="" uid="{9f372b71-0000-4000-9200-0bfb519ffc84}"/>
+    <RecordField colName="" fieldIdRef="6" name="cab02" sqlTabName="" table_alias_name="" uid="{17d01269-0000-4000-a07c-9ee1b23a4c39}"/>
+    <RecordField colName="caa04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="caa_file.caa04" sqlTabName="caa_file" sqlType="VARCHAR" table_alias_name="" uid="{6a88968b-0000-4000-9989-23f3f4b280af}"/>
+    <RecordField colName="caa05" fieldIdRef="13" fieldType="TABLE_COLUMN" name="caa_file.caa05" sqlTabName="caa_file" sqlType="VARCHAR" table_alias_name="" uid="{adf7ee2b-0b20-4756-8250-c1ad8fab9a19}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="aag02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{97e2ada6-0000-4000-a623-f59018752cbc}"/>
+    <RecordField colName="caa06" fieldIdRef="9" fieldType="TABLE_COLUMN" name="caa_file.caa06" sqlTabName="caa_file" sqlType="VARCHAR" table_alias_name="" uid="{6571b4b8-0000-4000-9ea8-2a3d6ee72d8a}"/>
+    <RecordField colName="caa07" fieldIdRef="10" fieldType="TABLE_COLUMN" name="caa_file.caa07" sqlTabName="caa_file" sqlType="VARCHAR" table_alias_name="" uid="{65548469-0000-4000-8203-72a2115279e3}"/>
+    <RecordField colName="caa08" fieldIdRef="11" fieldType="TABLE_COLUMN" name="caa_file.caa08" precisionDecimal="15" scaleDecimal="3" sqlTabName="caa_file" sqlType="DECIMAL" table_alias_name="" uid="{7e9f5d8b-0000-4000-8171-991c69f3c278}"/>
+    <RecordField colName="caa09" fieldIdRef="12" fieldType="TABLE_COLUMN" name="caa_file.caa09" sqlTabName="caa_file" sqlType="VARCHAR" table_alias_name="" uid="{74c5f1a0-0000-4000-b5b6-b93fa7f878a9}"/>
+    <RecordField colName="caa10" fieldIdRef="2" fieldType="TABLE_COLUMN" name="caa_file.caa10" sqlTabName="caa_file" sqlType="VARCHAR" table_alias_name="" uid="{70756354-0000-4000-a4f5-0f614c869dcb}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="gem02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{06ce42fe-0000-4000-81d3-371ea3a020f4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c1ae9324-0000-4000-a84e-f5e54254aa3e}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{27dbc8f4-0000-4000-a5e9-9eff8e868495}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="171" name="axci040" spacing="normal" text="axci040">
+    <VBox gridHeight="18" gridWidth="167" name="vb3" posX="1" posY="0" splitter="">
+      <Folder gridHeight="14" gridWidth="167" lstrcomment="false" name="pc345" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="165" lstrcomment="false" name="s_caa" posX="0" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa01" columnCount="" comment="&lt;^P&gt;Qry Dept No.  &lt;^O&gt;Copy Prev." fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="caa_file.caa01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="caa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Cost Cnt" widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa02" columnCount="" comment="&lt;^P&gt;Qry Cost Items" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="caa_file.caa02" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="caa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Cost Itm" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="cab02" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Cost Item Desc" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa04" columnCount="" comment="1.Labor Cost  2.Overhead" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Labor Cost, Overhead1, Overhead2, Overhead3, Overhead4, Overhead5" lstrcomment="false" lstrtitle="false" name="caa_file.caa04" notNull="true" posX="38" posY="0" required="true" rowCount="" sqlTabName="caa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Cost Type" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Labor Cost"/>
+              <Item lstrtext="false" name="2" text="Overhead1"/>
+              <Item lstrtext="false" name="3" text="Overhead2"/>
+              <Item lstrtext="false" name="4" text="Overhead3"/>
+              <Item lstrtext="false" name="5" text="Overhead4"/>
+              <Item lstrtext="false" name="6" text="Overhead5"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa05" columnCount="" comment="&lt;^P&gt;Qry Account " fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="caa_file.caa05" notNull="true" posX="49" posY="0" required="true" rowCount="" sqlTabName="caa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Account" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" notNull="false" posX="61" posY="0" required="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Acct Title" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa06" columnCount="" comment="1.Act.Hour  2.Std.LbHr  3.Output Qty*Apportion.Ratio" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Act.Hour, Std.LbHr, Standard Machine Hours, Output Qty * Distribution Ratio, Actual Machine Hours" lstrcomment="false" lstrtitle="false" name="caa_file.caa06" notNull="true" posX="73" posY="0" required="true" rowCount="" sqlTabName="caa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Appo.Mtd" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Act.Hour"/>
+              <Item lstrtext="false" name="2" text="Std.LbHr"/>
+              <Item lstrtext="false" name="3" text="Standard Machine Hours"/>
+              <Item lstrtext="false" name="4" text="Output Qty * Distribution Ratio"/>
+              <Item lstrtext="false" name="5" text="Actual Machine Hours"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa07" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="Fixed, Vraiable" lstrcomment="false" lstrtitle="false" name="caa_file.caa07" posX="83" posY="0" rowCount="" sqlTabName="caa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Overhead Type" widget="ComboBox">
+              <Item name="1" text="Fixed"/>
+              <Item name="2" text="Vraiable"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa08" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="caa_file.caa08" posX="95" posY="0" precisionDecimal="15" rowCount="" scaleDecimal="3" sqlTabName="caa_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Standard Capacity" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa09" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="One Departement, Multi. Department" lstrcomment="false" lstrtitle="false" name="caa_file.caa09" notNull="true" posX="107" posY="0" required="true" rowCount="" sqlTabName="caa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Category" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="One Departement"/>
+              <Item lstrtext="false" name="2" text="Multi. Department"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="caa10" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="caa_file.caa10" posX="117" posY="0" rowCount="" sqlTabName="caa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Dept" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gem02" noEntry="true" posX="127" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Dept name" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="167" lstrcomment="false" name="gr1449" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

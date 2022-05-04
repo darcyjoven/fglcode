@@ -1,0 +1,315 @@
+<Form width="114" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="33939" spacing="normal" posX="0" percommentheader="" height="29" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" fourSTFile="" name="apss200" defaultspacing="true" text="apss200" browserStatus="true" gstVersion="11401" percommentlayout="GRID
+PAGE
+GRID
+PAGE
+GRID
+PAGE
+GRID
+GRID
+VBOX
+GROUP
+PAGE
+GRID
+PAGE
+GRID
+PAGE
+GRID
+PAGE
+GRID
+PAGE
+FOLDER
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <PageControl width="112" posX="1" posY="0" height="29" lstrcomment="false" hrecindex="-1" name="pc873" browserStatus="true" >
+  <Page lstrtext="false" keyName="Page1" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Basic Setting" browserStatus="true" >
+   <Grid width="110" posX="0" height="28" posY="0" lstrcomment="false" hidden="--------" name="gr10" fontPitch="default" >
+    <Group width="105" lstrtext="false" gridWidth="30" posX="2" posY="1" height="3" lstrcomment="false" hrecindex="-1" hidden="--------" name="group02" fontPitch="default" text="" gridHeight="4" browserStatus="false" gridChildrenInParent="--------" >
+     <Text width="9" lstrtext="false" gridWidth="12" posX="60" posY="1" height="1" hrecindex="-1" sizePolicy="initial" name="text21" text="Starttime" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="starttm" fieldId="53" sqlTabName="aps_cim" name="starttm" fieldtype="TABLE_COLUMN" >
+      <DateEdit width="29" justify="none" notNull="--------" posX="72" formfieldname="formfield45" height="1" posY="1" lstrcomment="false" colorCondition="black" hidden="--------" sizePolicy="initial" tabIndex="1" data_type="DATE" name="starttm" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="8" lstrtext="false" gridWidth="12" posX="1" posY="1" height="1" hrecindex="-1" sizePolicy="initial" name="text45" text="CaseCode" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="casecode" fieldId="53" sqlTabName="aps_cim" name="casecode" fieldtype="TABLE_COLUMN" >
+      <Edit width="29" case="NONE" justify="none" invisible="--------" notNull="--------" posX="13" formfieldname="formfield45" height="1" posY="1" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="44" data_type="VARCHAR" reverse="--------" name="casecode" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+    </Group>
+    <Group width="55" lstrtext="false" posX="2" height="15" posY="4" lstrcomment="false" hidden="--------" name="gb41" fontPitch="default" flag_text_changed="TRUE" text="" browserStatus="false" gridChildrenInParent="--------" >
+     <Text width="14" lstrtext="false" gridWidth="22" posX="2" posY="8" height="1" hrecindex="-1" sizePolicy="initial" name="text30" text="Mrp Model Flag" />
+     <Text width="12" lstrtext="false" gridWidth="22" posX="2" posY="7" height="1" hrecindex="-1" sizePolicy="initial" name="text29" text="Op Item Flag" />
+     <Text width="13" lstrtext="false" gridWidth="22" posX="2" posY="6" height="1" hrecindex="-1" sizePolicy="initial" name="text28" text="Fix Lead Time" />
+     <Text width="7" lstrtext="false" gridWidth="22" posX="2" posY="5" height="1" hrecindex="-1" sizePolicy="initial" name="text27" text="Lot Pst" />
+     <Text width="13" lstrtext="false" gridWidth="22" posX="2" posY="4" height="1" hrecindex="-1" sizePolicy="initial" name="text26" text="Critical Part" />
+     <Text width="15" lstrtext="false" gridWidth="22" posX="2" posY="3" height="1" hrecindex="-1" sizePolicy="initial" name="text25" text="Inv Assign Lock" />
+     <Text width="8" lstrtext="false" gridWidth="22" posX="2" posY="2" height="1" hrecindex="-1" sizePolicy="initial" name="text24" text="Peg Lock" />
+     <Text width="8" lstrtext="false" gridWidth="22" posX="2" posY="1" height="1" hrecindex="-1" sizePolicy="initial" name="text23" text="Pur rule" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="purrule" fieldId="58" sqlTabName="aps_cim" name="purrule" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="1" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="2" lstrtitle="false" data_type="DECIMAL" name="purrule" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text=" Item Master" />
+       <Item lstrtext="false" name="1" text="Supplier" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="peglock" fieldId="58" sqlTabName="aps_cim" name="peglock" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="2" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="3" lstrtitle="false" data_type="DECIMAL" name="peglock" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="All Lock" />
+       <Item lstrtext="false" name="1" text="All Unlock" />
+       <Item lstrtext="false" name="2" text="By Set" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="invlock" fieldId="58" sqlTabName="aps_cim" name="invlock" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="3" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="4" lstrtitle="false" data_type="DECIMAL" name="invlock" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="All Lock" />
+       <Item lstrtext="false" name="1" text="All Unlock" />
+       <Item lstrtext="false" name="2" text="By Set" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="cripart" fieldId="58" sqlTabName="aps_cim" name="cripart" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="4" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="5" lstrtitle="false" data_type="DECIMAL" name="cripart" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="All Critical" />
+       <Item lstrtext="false" name="1" text="All Not" />
+       <Item lstrtext="false" name="2" text="By Set" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="lotpst" fieldId="58" sqlTabName="aps_cim" name="lotpst" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="5" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="6" lstrtitle="false" data_type="DECIMAL" name="lotpst" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="EPST" />
+       <Item lstrtext="false" name="1" text="LPST" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="fixtime" fieldId="58" sqlTabName="aps_cim" name="fixtime" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="6" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="7" lstrtitle="false" data_type="DECIMAL" name="fixtime" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="Fixed Lead Time" />
+       <Item lstrtext="false" name="1" text="Ideal Cycle Time" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="opitmfl" fieldId="58" sqlTabName="aps_cim" name="opitmfl" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="7" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="8" lstrtitle="false" data_type="DECIMAL" name="opitmfl" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrpmode" fieldId="58" sqlTabName="aps_cim" name="mrpmode" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="8" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="9" lstrtitle="false" data_type="DECIMAL" name="mrpmode" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="13" lstrtext="false" gridWidth="22" posX="2" posY="9" height="1" hrecindex="-1" sizePolicy="initial" name="text31" text="Priority Flag" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="priflag" fieldId="58" sqlTabName="aps_cim" name="priflag" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="9" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="10" lstrtitle="false" data_type="DECIMAL" name="priflag" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="11" lstrtext="false" gridWidth="22" posX="2" posY="10" height="1" hrecindex="-1" sizePolicy="initial" name="text32" text="Del Wo Flag" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="dewoflg" fieldId="58" sqlTabName="aps_cim" name="dewoflg" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="10" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="11" lstrtitle="false" data_type="DECIMAL" name="dewoflg" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="17" lstrtext="false" gridWidth="22" posX="2" posY="11" height="1" hrecindex="-1" sizePolicy="initial" name="text33" text="Safety Stock Flag" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="sastock" fieldId="58" sqlTabName="aps_cim" name="sastock" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="11" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="12" lstrtitle="false" data_type="DECIMAL" name="sastock" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="17" lstrtext="false" gridWidth="22" posX="2" posY="13" height="1" sizePolicy="initial" name="text47" text="Load Altpart Flag" />
+     <FormField sqlDBName="ds" colName="loaltpt" fieldId="58" sqlTabName="aps_cim" name="loaltpt" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="13" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="14" lstrtitle="false" data_type="DECIMAL" name="loaltpt" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mulalc" fieldId="58" sqlTabName="aps_cim" name="mulalc" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="12" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="13" lstrtitle="false" data_type="DECIMAL" name="mulalc" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="14" lstrtext="false" gridWidth="22" posX="2" posY="12" height="1" hrecindex="-1" sizePolicy="initial" name="text34" text="Multi Alc Flag" />
+    </Group>
+    <Group width="50" lstrtext="false" posX="57" height="15" posY="4" lstrcomment="false" hidden="--------" name="gb40" fontPitch="default" flag_text_changed="TRUE" text="" gridChildrenInParent="--------" >
+     <Text width="13" lstrtext="false" gridWidth="22" posX="2" posY="1" height="1" sizePolicy="initial" name="text48" text="Ini Time Flag" />
+     <Text width="18" lstrtext="false" gridWidth="22" posX="2" posY="2" height="1" sizePolicy="initial" name="text49" text="Supplier Unit Flag" />
+     <Text width="13" lstrtext="false" gridWidth="22" posX="2" posY="3" height="1" sizePolicy="initial" name="text50" text="Chk Item Flag" />
+     <Text width="12" lstrtext="false" gridWidth="22" posX="2" posY="4" height="1" sizePolicy="initial" name="text51" text="Save Vo Flag" />
+     <Text width="16" lstrtext="false" gridWidth="22" posX="2" posY="5" height="1" sizePolicy="initial" name="text52" text="Combine Lot Flag" />
+     <Text width="12" lstrtext="false" gridWidth="22" posX="2" posY="6" height="1" sizePolicy="initial" name="text53" text="Combine Rate" />
+     <FormField sqlDBName="ds" colName="initime" fieldId="58" sqlTabName="aps_cim" name="initime" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="1" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="15" lstrtitle="false" data_type="DECIMAL" name="initime" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" colName="supunit" fieldId="58" sqlTabName="aps_cim" name="supunit" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="2" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="16" lstrtitle="false" data_type="DECIMAL" name="supunit" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" colName="chkitem" fieldId="58" sqlTabName="aps_cim" name="chkitem" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="3" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="17" lstrtitle="false" data_type="DECIMAL" name="chkitem" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" colName="savevo" fieldId="58" sqlTabName="aps_cim" name="savevo" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="4" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="18" lstrtitle="false" data_type="DECIMAL" name="savevo" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" colName="comblot" fieldId="58" sqlTabName="aps_cim" name="comblot" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="5" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="19" lstrtitle="false" data_type="DECIMAL" name="comblot" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <FormField sqlDBName="ds" colName="combrat" fieldId="58" sqlTabName="aps_cim" name="combrat" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="27" formfieldname="formfield37" height="1" posY="6" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="20" data_type="DECIMAL" reverse="--------" name="combrat" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="11" lstrtext="false" gridWidth="22" posX="2" posY="7" height="1" sizePolicy="initial" name="text74" text="Del Po Flag" />
+     <FormField sqlDBName="ds" colName="depoflg" fieldId="58" sqlTabName="aps_cim" name="depoflg" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="7" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="21" lstrtitle="false" data_type="DECIMAL" name="depoflg" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="13" lstrtext="false" gridWidth="22" posX="2" posY="8" height="1" sizePolicy="initial" name="text75" text="Planning Days" />
+     <FormField sqlDBName="ds" colName="mrpdays" fieldId="58" sqlTabName="aps_cim" name="mrpdays" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="27" formfieldname="formfield37" height="1" posY="8" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="22" data_type="DECIMAL" reverse="--------" name="mrpdays" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="15" lstrtext="false" gridWidth="22" posX="2" posY="9" height="1" sizePolicy="initial" name="text76" text="Inventory First" />
+     <FormField sqlDBName="ds" colName="invfrst" fieldId="58" sqlTabName="aps_cim" name="invfrst" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="9" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="23" lstrtitle="false" data_type="DECIMAL" name="invfrst" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="14" lstrtext="false" gridWidth="22" posX="2" posY="10" height="1" sizePolicy="initial" name="text77" text="Bom Loop Check" />
+     <FormField sqlDBName="ds" colName="bomlchk" fieldId="58" sqlTabName="aps_cim" name="bomlchk" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="10" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="24" lstrtitle="false" data_type="DECIMAL" name="bomlchk" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="23" lstrtext="false" gridWidth="22" posX="2" posY="11" height="1" sizePolicy="initial" name="text78" text="Po Supply Seq By Status" />
+     <FormField sqlDBName="ds" colName="pospseq" fieldId="58" sqlTabName="aps_cim" name="pospseq" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="11" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="25" lstrtitle="false" data_type="DECIMAL" name="pospseq" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="15" lstrtext="false" gridWidth="22" posX="2" posY="12" height="1" sizePolicy="initial" name="text79" text="Old Po Excption" />
+     <FormField sqlDBName="ds" colName="poexcpt" fieldId="58" sqlTabName="aps_cim" name="poexcpt" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="27" formfieldname="formfield37" height="1" posY="12" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="26" data_type="VARCHAR" reverse="--------" name="poexcpt" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="23" lstrtext="false" gridWidth="22" posX="2" posY="13" height="1" sizePolicy="initial" name="text80" text="Alt Part Input Qty Rule" />
+     <FormField sqlDBName="ds" colName="altprul" fieldId="58" sqlTabName="aps_cim" name="altprul" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="27" formfieldname="formfield37" posY="13" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="27" lstrtitle="false" data_type="DECIMAL" name="altprul" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="Up Level Item" />
+       <Item lstrtext="false" name="1" text="Master Item " />
+      </ComboBox>
+     </FormField>
+    </Group>
+   </Grid>
+  </Page>
+  <Page name="Consume" flag_text_changed="FALSE" text="Consume" browserStatus="true" >
+   <Grid width="55" posX="0" height="10" posY="0" lstrcomment="false" hidden="--------" name="gr20" fontPitch="default" >
+    <Group width="52" lstrtext="false" posX="0" height="9" posY="0" lstrcomment="false" hidden="--------" name="gb43" fontPitch="default" flag_text_changed="TRUE" text="" gridChildrenInParent="--------" >
+     <FormField sqlDBName="ds" hrecindex="-1" colName="ordcons" fieldId="58" sqlTabName="aps_cim" name="ordcons" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="1" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="28" lstrtitle="false" data_type="DECIMAL" name="ordcons" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="Requirement" />
+       <Item lstrtext="false" name="1" text="Forecast " />
+       <Item lstrtext="false" name="2" text="Item Setting" />
+      </ComboBox>
+     </FormField>
+     <Text width="13" lstrtext="false" gridWidth="22" posX="2" posY="1" height="1" hrecindex="-1" sizePolicy="initial" name="text82" text="Order Consume" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="relfcst" fieldId="58" sqlTabName="aps_cim" name="relfcst" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="2" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="29" lstrtitle="false" data_type="DECIMAL" name="relfcst" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="False" />
+       <Item lstrtext="false" name="1" text="True" />
+      </ComboBox>
+     </FormField>
+     <Text width="16" lstrtext="false" gridWidth="22" posX="2" posY="2" height="1" hrecindex="-1" sizePolicy="initial" name="text83" text="Rel remfcst Flag" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="consper" fieldId="58" sqlTabName="aps_cim" name="consper" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="3" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="30" lstrtitle="false" data_type="DECIMAL" name="consper" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="Mrp " />
+       <Item lstrtext="false" name="1" text="Month" />
+       <Item lstrtext="false" name="2" text="Week" />
+      </ComboBox>
+     </FormField>
+     <Text width="11" lstrtext="false" gridWidth="22" posX="2" posY="3" height="1" hrecindex="-1" sizePolicy="initial" name="text84" text="Cons Period" />
+     <Text width="18" lstrtext="false" gridWidth="22" posX="2" posY="4" height="1" hrecindex="-1" sizePolicy="initial" name="text85" text="Cons Period Repeat" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="conrept" fieldId="58" sqlTabName="aps_cim" name="conrept" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="31" data_type="DECIMAL" reverse="--------" name="conrept" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="21" lstrtext="false" gridWidth="22" posX="2" posY="5" height="1" hrecindex="-1" sizePolicy="initial" name="text86" text="Cons Period Rept Date" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="conrepd" fieldId="58" sqlTabName="aps_cim" name="conrepd" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="5" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="32" data_type="DECIMAL" reverse="--------" name="conrepd" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="conrptw" fieldId="58" sqlTabName="aps_cim" name="conrptw" fieldtype="TABLE_COLUMN" >
+      <ComboBox width="19" case="NONE" gridWidth="19" notNull="true" posX="29" formfieldname="formfield37" posY="6" height="1" length="4" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="33" lstrtitle="false" data_type="DECIMAL" name="conrptw" sortItem="" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item lstrtext="false" name="0" text="SUN" />
+       <Item lstrtext="false" name="1" text="MON" />
+       <Item lstrtext="false" name="2" text="TUE" />
+       <Item lstrtext="false" name="3" text="WED" />
+       <Item lstrtext="false" name="4" text="THU" />
+       <Item lstrtext="false" name="5" text="FRI" />
+       <Item lstrtext="false" name="6" text="SAT" />
+      </ComboBox>
+     </FormField>
+     <Text width="21" lstrtext="false" gridWidth="22" posX="2" posY="6" height="1" hrecindex="-1" sizePolicy="initial" name="text87" text="Cons Period Rept Week" />
+     <Text width="25" lstrtext="false" gridWidth="22" posX="2" posY="7" height="1" hrecindex="-1" sizePolicy="initial" name="text88" text="Forecast Horizontolerance" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="fcsttor" fieldId="58" sqlTabName="aps_cim" name="fcsttor" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="7" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="34" data_type="DECIMAL" reverse="--------" name="fcsttor" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+    </Group>
+   </Grid>
+  </Page>
+  <Page name="Page24" flag_text_changed="TRUE" text="MRP" >
+   <Grid width="57" posX="0" height="13" posY="0" lstrcomment="false" hidden="--------" name="gr22" fontPitch="default" >
+    <Group width="52" lstrtext="false" posX="0" height="11" posY="0" lstrcomment="false" hidden="--------" name="gb44" fontPitch="default" flag_text_changed="TRUE" text="" gridChildrenInParent="--------" >
+     <Text width="22" lstrtext="false" gridWidth="22" posX="2" posY="1" height="1" hrecindex="-1" sizePolicy="initial" name="text89" text="Plan Horizon Startdate" />
+     <Text width="11" lstrtext="false" gridWidth="22" posX="2" posY="2" height="1" hrecindex="-1" sizePolicy="initial" name="text90" text="MRP Period1" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="phsdate" fieldId="58" sqlTabName="aps_cim" name="phsdate" fieldtype="TABLE_COLUMN" >
+      <DateEdit width="19" justify="none" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="1" lstrcomment="false" colorCondition="black" hidden="--------" sizePolicy="initial" tabIndex="35" data_type="DATE" name="phsdate" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" />
+     </FormField>
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrppr1" fieldId="58" sqlTabName="aps_cim" name="mrppr1" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="2" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="36" data_type="DECIMAL" reverse="--------" name="mrppr1" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="11" lstrtext="false" gridWidth="22" posX="2" posY="3" height="1" hrecindex="-1" sizePolicy="initial" name="text96" text="MRP Period2" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrpper2" fieldId="58" sqlTabName="aps_cim" name="mrpper2" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="3" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="37" data_type="DECIMAL" reverse="--------" name="mrpper2" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="11" lstrtext="false" gridWidth="22" posX="2" posY="4" height="1" hrecindex="-1" sizePolicy="initial" name="text97" text="MRP Period3" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrpper3" fieldId="58" sqlTabName="aps_cim" name="mrpper3" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="4" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="38" data_type="DECIMAL" reverse="--------" name="mrpper3" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="11" lstrtext="false" gridWidth="22" posX="2" posY="5" height="1" hrecindex="-1" sizePolicy="initial" name="text98" text="MRP Period4" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrpper4" fieldId="58" sqlTabName="aps_cim" name="mrpper4" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="5" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="39" data_type="DECIMAL" reverse="--------" name="mrpper4" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="18" lstrtext="false" gridWidth="22" posX="2" posY="6" height="1" hrecindex="-1" sizePolicy="initial" name="text99" text="MRP Period Repeat1" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrpprr1" fieldId="58" sqlTabName="aps_cim" name="mrpprr1" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="6" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="40" data_type="DECIMAL" reverse="--------" name="mrpprr1" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="18" lstrtext="false" gridWidth="22" posX="2" posY="7" height="1" hrecindex="-1" sizePolicy="initial" name="text100" text="MRP Period Repeat2" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrpprr2" fieldId="58" sqlTabName="aps_cim" name="mrpprr2" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="7" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="41" data_type="DECIMAL" reverse="--------" name="mrpprr2" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="18" lstrtext="false" gridWidth="22" posX="2" posY="8" height="1" hrecindex="-1" sizePolicy="initial" name="text101" text="MRP Period Repeat3" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrpprr3" fieldId="58" sqlTabName="aps_cim" name="mrpprr3" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="8" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="42" data_type="DECIMAL" reverse="--------" name="mrpprr3" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+     <Text width="18" lstrtext="false" gridWidth="22" posX="2" posY="9" height="1" hrecindex="-1" sizePolicy="initial" name="text102" text="MRP Period Repeat4" />
+     <FormField sqlDBName="ds" hrecindex="-1" colName="mrpprr4" fieldId="58" sqlTabName="aps_cim" name="mrpprr4" fieldtype="TABLE_COLUMN" >
+      <Edit width="19" case="NONE" justify="none" invisible="--------" notNull="--------" posX="29" formfieldname="formfield37" height="1" posY="9" length="4" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="43" data_type="DECIMAL" reverse="--------" name="mrpprr4" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </FormField>
+    </Group>
+   </Grid>
+  </Page>
+ </PageControl>
+</Form>

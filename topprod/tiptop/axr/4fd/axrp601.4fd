@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{f7b6f4d1-9b5c-4fb8-96f3-3fa76d8abd96}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="azp_file" name="Record1" order="" uid="{4854dc09-d57c-4820-853d-d92d5571f934}" where="">
+    <RecordField colName="azp01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="azp_file.azp01" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{4e3e86e2-6165-460a-869a-1bd68ef28194}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="lua_file" name="Record2" order="" uid="{a0396a73-94c9-43a6-8e1a-0a2a643873cd}" where="">
+    <RecordField colName="lua01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lua_file.lua01" sqlTabName="lua_file" sqlType="VARCHAR" table_alias_name="" uid="{a137be20-792b-4de2-a6d7-20b820baa80d}" uniqueQueryKey="false"/>
+    <RecordField colName="lua06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lua_file.lua06" sqlTabName="lua_file" sqlType="VARCHAR" table_alias_name="" uid="{de15ce1a-0e0f-433a-a300-065382e0b14d}" uniqueQueryKey="false"/>
+    <RecordField colName="lua09" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lua_file.lua09" sqlTabName="lua_file" sqlType="DATE" table_alias_name="" uid="{3ef46156-8c78-4552-8514-852c5e710ff6}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="lub_file" name="Record3" order="" uid="{d8c6cfdd-e9f9-4b0a-a17c-30e0d665dd55}" where="">
+    <RecordField colName="lub09" fieldIdRef="5" fieldType="TABLE_COLUMN" name="lub_file.lub09" sqlTabName="lub_file" sqlType="VARCHAR" table_alias_name="" uid="{1b34a4e1-c83c-49b8-a7b4-91593f8dbfe1}" uniqueQueryKey="false"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="ar_slip" sqlTabName="" table_alias_name="" uid="{03d5147c-a322-4555-859c-1a6e0dcd30d0}" uniqueQueryKey="false"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{96111bdb-0b23-4349-a679-5ba1e5f56ae1}" uniqueQueryKey="false"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="mm" sqlTabName="" table_alias_name="" uid="{c98cb71b-83af-4d40-ac1b-3a40ab377613}" uniqueQueryKey="false"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="91" name="Form" text="Form">
+    <VBox gridHeight="24" gridWidth="48" name="VBox1" posX="18" posY="0">
+      <Group gridHeight="4" gridWidth="48" name="QBE1" posX="0" posY="1" text="QBE">
+        <Grid gridHeight="2" gridWidth="36" name="ds1" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="7" name="Label1" posX="1" posY="0" text="azp01"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" name="azp_file.azp01" notNull="true" posX="9" posY="0" rowCount="" scroll="true" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="azp01" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="10" gridWidth="48" name="QBE2" posX="0" posY="5" text="QBE">
+        <Grid gridHeight="8" gridWidth="36" name="ds2" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="7" name="Label2" posX="1" posY="1" text="lua01"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lua01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" name="lua_file.lua01" notNull="false" posX="9" posY="1" rowCount="" scroll="true" sqlTabName="lua_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="lua01" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="7" name="Label3" posX="1" posY="2" text="lua06"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lua06" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" name="lua_file.lua06" posX="9" posY="2" rowCount="" scroll="true" sqlTabName="lua_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="lua06" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="7" name="Label4" posX="1" posY="3" text="lua09"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lua09" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="lua_file.lua09" posX="9" posY="3" rowCount="" sqlTabName="lua_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="lua09" widget="DateEdit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="8" gridWidth="48" name="Group1" posX="0" posY="15" text="Group1">
+        <Grid gridHeight="6" gridWidth="36" name="ds3" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="7" name="Label5" posX="1" posY="1" text="lub09"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lub09" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="1, 2" name="lub_file.lub09" posX="9" posY="1" rowCount="" scroll="true" sqlTabName="lub_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="lub09" widget="ComboBox">
+            <Item lstrtext="false" name="01" text="1"/>
+            <Item lstrtext="false" name="02" text="2"/>
+          </ComboBox>
+          <Label gridHeight="1" gridWidth="7" name="Label6" posX="1" posY="2" text="ar_slip"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" name="ar_slip" notNull="false" posX="9" posY="2" rowCount="" scroll="true" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="ar_slip" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="7" name="yy" posX="1" posY="3" text="yy"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" name="yy" notNull="false" posX="9" posY="3" rowCount="" scroll="true" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="yy" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="7" name="mm" posX="1" posY="4" text="mm"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" name="mm" notNull="false" posX="9" posY="4" rowCount="" scroll="true" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="mm" widget="Edit"/>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkADgAYwA2AGMAZgBkAGQALQBlADkAZgA5AC0ANABiADAAYQAtAGEAMQA3AGMALQAzADAAZQAwAGQANgA2ADUAZABkADUANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADkAOABjAGIANwAxAGIALQA4ADMAYQBmAC0ANABkADQAMAAtAGEAYwAxAGIALQAzAGEANAAwAGEAYgAzADcANwA2ADEAMwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADgANQA0AGQAYwAwADkALQBkADUANwBjAC0ANAA4ADIAMAAtADgANQAzAGQALQBkADkAMgBkADUANQA3ADEAZgA5ADMANAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADYAMQAxADEAYgBkAGIALQAwAGIAMgAzAC0ANAAzADQAOQAtAGEANgA3ADkALQA1AGIAYQAxAGUANQBmADUANgBhAGUAMQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADEAMwA3AGIAZQAyADAALQA3ADkAMgBiAC0ANABkAGUAMgAtAGEANgBkADcALQAyADAAYgA4ADIAMABiAGEAYQA4ADAAZAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGUAMwBlADgANgBlADIALQA2ADEANgA1AC0ANAA2ADAAYQAtADgANgA5AGEALQAxAGIAZAA2ADgAZQBmADIAOAAxADkANAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGUAZgA0ADYAMQA1ADYALQA4AGMANwA4AC0ANAA1ADUAMgAtADgANQAxADQALQA4ADUAMgBjADUAZQA3ADEAMABmAGYANgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADAAMwA5ADYAYQA3ADMALQA5ADQAYwA5AC0ANAAzAGEANgAtADgAZQAxAGEALQAwAGEAMgBhADYANAAzADgANwAzAGMAZAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADMAZAA1ADEANAA3AGMALQBhADMAMgAyAC0ANAA1ADUANQAtADgANQA5AGMALQAxAGEANgBlADAAZABjAGQAMwAwAGQAMAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGUAMQA1AGMAZQAxAGEALQAwAGUAMABmAC0ANAAzADMAYQAtAGEAMwAwADAALQAwADYANQAzADgAMgBlADAAYgAxADQAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGIAMwA0AGEANABlADEALQBjADgAMwBjAC0ANAA5AGIAOAAtAGEANwBiADQALQA5ADEANQA5ADMAZgA4AGQAYgBmAGUAMQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4f27f382-0000-4000-bb1d-34e6cc9b7207}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sfb" order="" uid="{c70d57a0-0000-4000-b516-5c21bb49d9c5}" where="">
+    <RecordField colName="sfb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sfb_file.sfb01" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{e14f2a58-0000-4000-8df1-21d84f49bc29}"/>
+    <RecordField colName="sfb02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sfb_file.sfb02" sqlTabName="sfb_file" sqlType="SMALLINT" table_alias_name="" uid="{44f1f686-0000-4000-82d9-f986534fb143}"/>
+    <RecordField colName="sfb81" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sfb_file.sfb81" sqlTabName="sfb_file" sqlType="DATE" table_alias_name="" uid="{6cf46c9f-0000-4000-ac2e-9909cdb61472}"/>
+    <RecordField colName="sfb05" fieldIdRef="8" fieldType="TABLE_COLUMN" name="sfb_file.sfb05" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{4fd17536-0000-4000-bf7b-e8437c8fdbc8}"/>
+    <RecordField colName="ima02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ima_file.ima02" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{87f21f7b-0000-4000-8c78-55c9609cd5f9}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="tree" order="" uid="{7b6fb3b6-0000-4000-8015-150532528f3c}" where="">
+    <RecordField colName="" fieldIdRef="3" name="name" sqlTabName="" table_alias_name="" uid="{8415a1d0-0000-4000-a470-25e2e8c943b6}"/>
+    <RecordField colName="" fieldIdRef="4" name="pid" sqlTabName="" table_alias_name="" uid="{979393cb-0000-4000-9bd9-3f7333d71ee2}"/>
+    <RecordField colName="" fieldIdRef="5" name="id" sqlTabName="" table_alias_name="" uid="{ef4f5845-0000-4000-a7c1-da9a00fbce78}"/>
+    <RecordField colName="" fieldIdRef="6" name="has_children" sqlTabName="" table_alias_name="" uid="{3026f8f9-0000-4000-a3de-2bb3fa61d7d8}"/>
+    <RecordField colName="" fieldIdRef="10" name="expanded" sqlTabName="" table_alias_name="" uid="{1322a93e-0000-4000-8a0b-3ab606f7816e}"/>
+    <RecordField colName="" fieldIdRef="11" name="level" sqlTabName="" table_alias_name="" uid="{0ce6cc85-0000-4000-af51-bf65c53d019c}"/>
+    <RecordField colName="" fieldIdRef="12" name="path" sqlTabName="" table_alias_name="" uid="{75b5f8df-0000-4000-84ec-2a73167df220}"/>
+    <RecordField colName="" fieldIdRef="13" name="treekey1" sqlTabName="" table_alias_name="" uid="{31a2f175-0000-4000-9352-b3a792a50f03}"/>
+    <RecordField colName="" fieldIdRef="14" name="treekey2" sqlTabName="" table_alias_name="" uid="{d8a2ad0f-0000-4000-8814-780c0e5851f5}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5e4e488e-0000-4000-a505-f4911ce41041}" where="">
+    <RecordField colName="" fieldIdRef="15" name="cn2" sqlTabName="" table_alias_name="" uid="{39d52171-0000-4000-8b1e-dfb88b4a0aad}"/>
+  </Record>
+  <Form gridHeight="34" gridWidth="156" name="Form" text="Form">
+    <VBox gridHeight="16" gridWidth="128" name="VBox1" posX="7" posY="3">
+      <HBox gridHeight="11" gridWidth="128" name="HBox1" posX="0" posY="1" splitter="true">
+        <Table gridHeight="11" gridWidth="62" name="s_sfb" posX="2" posY="0" totalRows="10">
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" name="sfb_file.sfb01" posX="0" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit2" widget="ButtonEdit"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="一般工號, 再加工工單, 委外工單, 重工委外工單, 拆件式工單, 預測工單, 試產工單" name="sfb_file.sfb02" posX="13" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit1" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="一般工號"/>
+            <Item lstrtext="false" name="5" text="再加工工單"/>
+            <Item lstrtext="false" name="7" text="委外工單"/>
+            <Item lstrtext="false" name="8" text="重工委外工單"/>
+            <Item lstrtext="false" name="11" text="拆件式工單"/>
+            <Item lstrtext="false" name="13" text="預測工單"/>
+            <Item lstrtext="false" name="15" text="試產工單"/>
+          </ComboBox>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb81" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="sfb_file.sfb81" posX="25" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit1" widget="DateEdit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb05" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom" name="sfb_file.sfb05" posX="35" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit1" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima02" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="ima_file.ima02" posX="43" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit1" widget="Edit"/>
+        </Table>
+        <Grid gridHeight="11" gridWidth="62" name="Grid1" posX="64" posY="0">
+          <Tree expandedColumn="expanded" gridHeight="10" gridWidth="55" idColumn="id" imageCollapsed="folder" imageExpanded="open" imageLeaf="file" isNodeColumn="has_children" name="tree" parentIdColumn="pid" posX="1" posY="0" totalRows="5">
+            <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="26" name="name" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" unsortable="true" widget="FFLabel"/>
+            <Phantom colName="" fieldId="4" name="pid" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="5" name="id" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="6" name="has_children" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="10" name="expanded" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="11" name="level" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="12" name="path" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="13" name="treekey1" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            <Phantom colName="" fieldId="14" name="treekey2" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          </Tree>
+        </Grid>
+      </HBox>
+      <Grid gridHeight="3" gridWidth="128" name="Grid2" posX="0" posY="12">
+        <HLine gridWidth="7" name="HLine1" posX="1" posY="1"/>
+        <Label posX="9" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" gridHeight="1" gridWidth="7" name="cn2" posX="14" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="formonly.Edit1" widget="Edit"/>
+        <HLine gridWidth="7" name="HLine2" posX="22" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

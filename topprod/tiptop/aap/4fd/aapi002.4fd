@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{3d997684-ede0-4424-8c53-859b76fc2c5b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9d3e6cd2-d3ec-48bd-b984-ce1298d5c3e9}" where="">
+    <RecordField colName="aly01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aly_file.aly01" sqlTabName="aly_file" sqlType="VARCHAR" table_alias_name="" uid="{85af10db-0b96-4553-8d16-7e79b6fce65f}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{02e7f8c0-2203-4d62-8b83-3386d8eb63cf}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="aly_file1" name="s_aly" order="" uid="{c72f2857-046c-48fa-8185-03c3ca7d4818}" where="">
+    <RecordField colName="aly02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aly_file.aly02" sqlTabName="aly_file" sqlType="SMALLINT" table_alias_name="" uid="{28da6e9f-8ee1-4bb9-b5c5-954c0cc82a14}" uniqueQueryKey="false"/>
+    <RecordField colName="aly03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aly_file.aly03" sqlTabName="aly_file" sqlType="SMALLINT" table_alias_name="" uid="{553209ee-ca23-4af9-9a13-e5ce4563d93e}" uniqueQueryKey="false"/>
+    <RecordField colName="aly04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="aly_file.aly04" sqlTabName="aly_file" sqlType="SMALLINT" table_alias_name="" uid="{acbf2431-ce36-42f6-9c53-596ea25c1f88}" uniqueQueryKey="false"/>
+    <RecordField colName="aly05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="aly_file.aly05" sqlTabName="aly_file" sqlType="DECIMAL" table_alias_name="" uid="{a23a2227-f81f-4406-aba8-2879349cd54d}" uniqueQueryKey="false"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="299" name="aapi002" text="aapi002">
+    <VBox gridHeight="18" gridWidth="83" name="VBox1" posX="1" posY="1">
+      <Folder gridHeight="6" gridWidth="83" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Grid gridHeight="2" gridWidth="34" name="Grid1" posX="1" posY="1">
+            <Label gridHeight="1" gridWidth="9" name="Label1" posX="2" posY="0" text="Type"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aly01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="aly_file.aly01" notNull="true" posX="13" posY="0" rowCount="" scroll="true" sqlTabName="aly_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="aly01" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="83" name="s_aly" posX="0" posY="7" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aly02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrtitle="true" name="aly_file.aly02" notNull="true" posX="0" posY="0" rowCount="" scroll="true" sqlTabName="aly_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aly03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrtitle="true" name="aly_file.aly03" notNull="true" posX="8" posY="0" rowCount="" scroll="true" sqlTabName="aly_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Begin Day" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aly04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrtitle="true" name="aly_file.aly04" notNull="true" posX="18" posY="0" rowCount="" scroll="true" sqlTabName="aly_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Finish Day" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aly05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrtitle="true" name="aly_file.aly05" posX="30" posY="0" precisionDecimal="9" rowCount="" scaleDecimal="4" scroll="true" sqlTabName="aly_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="The Ratio of Bad Debts" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="83" lstrcomment="false" name="gr4835" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl1563" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1565" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjADcAMgBmADIAOAA1ADcALQAwADQANgBjAC0ANAA4AGYAYQAtADgAMQA4ADUALQAwADMAYwAzAGMAYQA3AGQANAA4ADEAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGMAYgBmADIANAAzADEALQBjAGUAMwA2AC0ANAAyAGYANgAtADkAYwA1ADMALQA1ADkANgBlAGEAMgA1AGMAMQBmADgAOAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGQAMwBlADYAYwBkADIALQBkADMAZQBjAC0ANAA4AGIAZAAtAGIAOQA4ADQALQBjAGUAMQAyADkAOABkADUAYwAzAGUAOQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADgAZABhADYAZQA5AGYALQA4AGUAZQAxAC0ANABiAGIAOQAtAGIANQBjADUALQA5ADUANABjADAAYwBjADgAMgBhADEANAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADIAZQA3AGYAOABjADAALQAyADIAMAAzAC0ANABkADYAMgAtADgAYgA4ADMALQAzADMAOAA2AGQAOABlAGIANgAzAGMAZgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADUAYQBmADEAMABkAGIALQAwAGIAOQA2AC0ANAA1ADUAMwAtADgAZAAxADYALQA3AGUANwA5AGIANgBmAGMAZQA2ADUAZgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADUAMwAyADAAOQBlAGUALQBjAGEAMgAzAC0ANABhAGYAOQAtADkAYQAxADMALQBlADUAYwBlADQANQA2ADMAZAA5ADMAZQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADIAMwBhADIAMgAyADcALQBmADgAMQBmAC0ANAA0ADAANgAtAGEAYgBhADgALQAyADgANwA5ADMANAA5AGMAZAA1ADQAZAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

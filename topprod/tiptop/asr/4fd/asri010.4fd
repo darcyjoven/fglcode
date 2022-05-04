@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{bc0642cc-0000-4000-9123-ddffaa9d4490}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_eci" order="" uid="{b2d6cf6b-0000-4000-9dd4-f8295995d160}" where="">
+    <RecordField colName="eci01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="eci_file.eci01" sqlTabName="eci_file" sqlType="VARCHAR" table_alias_name="" uid="{6c5825c5-0000-4000-8dc8-9a912ef68669}"/>
+    <RecordField colName="eci06" fieldIdRef="2" fieldType="TABLE_COLUMN" name="eci_file.eci06" sqlTabName="eci_file" sqlType="VARCHAR" table_alias_name="" uid="{c12d63f7-0000-4000-af00-8ea9cae7042a}"/>
+    <RecordField colName="eci03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="eci_file.eci03" sqlTabName="eci_file" sqlType="VARCHAR" table_alias_name="" uid="{83cf4b17-0000-4000-8c2a-42ca6db691a5}"/>
+    <RecordField colName="" fieldIdRef="4" name="eca02" sqlTabName="" table_alias_name="" uid="{685e55ba-0000-4000-aba8-2d9a71e95b0b}"/>
+    <RecordField colName="" fieldIdRef="5" name="eca06" sqlTabName="" table_alias_name="" uid="{eca4b26e-0000-4000-8c88-2ff5cc3d1c5e}"/>
+    <RecordField colName="eci05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="eci_file.eci05" sqlTabName="eci_file" sqlType="INTEGER" table_alias_name="" uid="{40883641-0000-4000-ad8d-21d5918c871c}"/>
+    <RecordField colName="eci09" fieldIdRef="7" fieldType="TABLE_COLUMN" name="eci_file.eci09" sqlTabName="eci_file" sqlType="INTEGER" table_alias_name="" uid="{ad5c6738-0000-4000-8824-9ab970f100e9}"/>
+    <RecordField colName="eciacti" fieldIdRef="8" fieldType="TABLE_COLUMN" name="eci_file.eciacti" sqlTabName="eci_file" sqlType="VARCHAR" table_alias_name="" uid="{fe247ed8-0000-4000-9276-de0f32b18b31}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{680564a1-0000-4000-be4b-e41a3e380d58}" where="">
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f187b48e-0000-4000-b926-945b16352fda}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="107" name="asri010" spacing="normal" text="asri010">
+    <VBox gridHeight="18" gridWidth="104" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="104" lstrcomment="false" name="pc228" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="102" lstrcomment="false" name="s_eci" posX="0" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="eci01" columnCount="" comment="Key Field, No Blank/Repeated!    &lt;^Y&gt;Enter Item Detail" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="eci_file.eci01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="eci_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Mac No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="eci06" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="eci_file.eci06" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="eci_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Machine Description" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="eci03" columnCount="" comment=" &lt;^P&gt;Qry Work Center  &lt;^Y&gt;Create Work Center" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="eci_file.eci03" notNull="true" posX="30" posY="0" required="true" rowCount="" sqlTabName="eci_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="WkCNo." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="eca02" noEntry="true" posX="41" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Description" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="9" items="Machine Capacity, Labor Capacity" lstrcomment="false" lstrtitle="false" name="eca06" noEntry="true" posX="59" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Cap Type" widget="ComboBox">
+              <Item name="1" text="Machine Capacity"/>
+              <Item name="2" text="Labor Capacity"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="eci05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="eci_file.eci05" notNull="true" posX="68" posY="0" required="true" rowCount="" sqlTabName="eci_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Mac Cap" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="eci09" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="eci_file.eci09" notNull="true" posX="76" posY="0" required="true" rowCount="" sqlTabName="eci_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Lab Cap" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="eciacti" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" lstrtitle="false" name="eci_file.eciacti" notNull="true" posX="84" posY="0" required="true" rowCount="" sqlTabName="eci_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="104" lstrcomment="false" name="gr1001" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl317" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl318" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0366c3b2-0000-4000-99f7-0fd2960e8394}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{643a419f-0000-4000-a9a2-d768bd3a781a}" where="">
+    <RecordField colName="mmf01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="mmf_file.mmf01" sqlTabName="mmf_file" sqlType="VARCHAR" table_alias_name="" uid="{02796612-0000-4000-ac4a-a18fcfb35a19}"/>
+    <RecordField colName="mmf02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="mmf_file.mmf02" sqlTabName="mmf_file" sqlType="SMALLINT" table_alias_name="" uid="{52113ecb-0000-4000-b564-ab92a6d1174d}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{64e988c9-0000-4000-9421-be07f72a7079}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{5276bac4-0000-4000-9451-8d36d27b0912}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="57" name="ammp210" spacing="normal" text="ammp210">
+    <VBox gridHeight="12" gridWidth="55" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="55" lstrcomment="false" name="gr3749" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="54" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="ProcessingAdvice #"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mmf01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="mmf_file.mmf01" posX="22" posY="1" rowCount="" sqlTabName="mmf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Line No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mmf02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="mmf_file.mmf02" posX="22" posY="2" rowCount="" sqlTabName="mmf_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="54" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="4" text="INPUT">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="51" items="Void, UnVoid" lstrcomment="false" lstrtitle="false" name="a" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="" name="1" text="Void"/>
+            <Item lstrtext="" name="2" text="UnVoid"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="55" lstrcomment="false" name="gr3750" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

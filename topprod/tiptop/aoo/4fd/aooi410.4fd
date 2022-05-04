@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d06eb4d3-0000-4000-8606-c899eb79a499}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rye" order="" uid="{72a8f82e-0000-4000-b962-b35ee275b00b}" where="">
+    <RecordField colName="rye01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rye_file.rye01" sqlTabName="rye_file" sqlType="VARCHAR" table_alias_name="" uid="{ffbde024-0000-4000-881a-3e3e7b330346}"/>
+    <RecordField colName="rye02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rye_file.rye02" sqlTabName="rye_file" sqlType="VARCHAR" table_alias_name="" uid="{622e2fbe-0000-4000-86ba-67169704831d}"/>
+    <RecordField colName="rye03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rye_file.rye03" sqlTabName="rye_file" sqlType="VARCHAR" table_alias_name="" uid="{f3648cce-0000-4000-8fba-5c3006c3a6d7}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="rye03_desc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c39f9c74-0000-4000-8c78-c087009dcf32}"/>
+    <RecordField colName="rye04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="rye_file.rye04" sqlTabName="rye_file" sqlType="VARCHAR" table_alias_name="" uid="{e18bef9a-0000-4000-b256-3713ac41036e}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="rye04_desc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a2edff77-0000-4000-8492-f00b9dcd1551}"/>
+    <RecordField colName="rye05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="rye_file.rye05" sqlTabName="rye_file" sqlType="VARCHAR" table_alias_name="" uid="{c0ead7d5-e924-4dc6-b059-0b40504e4791}"/>
+    <RecordField colName="ryeacti" defaultValue="Y" fieldIdRef="7" fieldType="TABLE_COLUMN" name="rye_file.ryeacti" sqlTabName="rye_file" sqlType="VARCHAR" table_alias_name="" uid="{ec1c3610-0000-4000-8d63-f0b550c7a334}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7848fab2-0000-4000-a6f1-0928af27fc09}" where="">
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{214c9a7a-0000-4000-b65b-a913915e2a63}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="140" image="zoom.png" lstrtext="false" name="arti099" spacing="normal" text="arti030">
+    <VBox gridHeight="14" gridWidth="98" name="vb3" posX="6" posY="1">
+      <Folder gridHeight="9" gridWidth="98" lstrcomment="false" name="pc4" posX="0" posY="1">
+        <Page name="Page7" text="MAIN">
+          <Table gridHeight="7" gridWidth="96" name="s_rye" posX="2" posY="1" totalRows="5">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rye01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="ALM Module, ABM(BOM Module), AIM-INV Module, APM Module, ASF Module, AEM Module, ASR Module, AQC Module, ART Module, AXM Module, ATM Module" lstrcomment="false" lstrtitle="false" name="rye_file.rye01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="rye_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="System Type" widget="ComboBox">
+              <Item lstrtext="false" name="alm" text="ALM Module"/>
+              <Item lstrtext="false" name="abm" text="ABM(BOM Module)"/>
+              <Item lstrtext="false" name="aim" text="AIM-INV Module"/>
+              <Item lstrtext="false" name="apm" text="APM Module"/>
+              <Item lstrtext="false" name="asf" text="ASF Module"/>
+              <Item lstrtext="false" name="aem" text="AEM Module"/>
+              <Item lstrtext="false" name="asr" text="ASR Module"/>
+              <Item lstrtext="false" name="aqc" text="AQC Module"/>
+              <Item lstrtext="false" name="art" text="ART Module"/>
+              <Item lstrtext="false" name="axm" text="AXM Module"/>
+              <Item lstrtext="false" name="atm" text="ATM Module"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rye02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rye_file.rye02" notNull="true" posX="10" posY="0" rowCount="" sqlTabName="rye_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Kind Of Bill Of Document" widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rye03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rye_file.rye03" notNull="true" posX="20" posY="0" rowCount="" sqlTabName="rye_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Default Bill" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="rye03_desc" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Bill Name" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rye04" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rye_file.rye04" posX="45" posY="0" rowCount="" sqlTabName="rye_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="POS Default Bill" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="rye04_desc" noEntry="true" posX="53" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="POS Bill Name" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rye05" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" name="rye_file.rye05" posX="70" posY="0" rowCount="" sqlTabName="rye_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Operating Org." widget="ButtonEdit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryeacti" columnCount="" defaultValue="Y" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="rye_file.ryeacti" notNull="true" posX="82" posY="0" required="true" rowCount="" sqlTabName="rye_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Acti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="98" lstrcomment="false" name="gr13" posX="0" posY="10">
+        <HLine gridWidth="10" name="hl9" posX="2" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl10" posX="24" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA2ADIAMgBlADIAZgBiAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADgANgBiAGEALQA2ADcAMQA2ADkANwAwADQAOAAzADEAZAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGYAYgBkAGUAMAAyADQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOAAxAGEALQAzAGUAMwBlADcAYgAzADMAMAAzADQANgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGMAMQBjADMANgAxADAALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZAA2ADMALQBmADAAYgA1ADUAMABjADcAYQAzADMANAB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewBlADEAOABiAGUAZgA5AGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgA1ADYALQAzADcAMQAzAGEAYwA0ADEAMAAzADYAZQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADIAYQA4AGYAOAAyAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOQA2ADIALQBiADMANQBlAGUAMgA3ADUAYgAwADAAYgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADgANAA4AGYAYQBiADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANgBmADEALQAwADkAMgA4AGEAZgAyADcAZgBjADAAOQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADIAZQBkAGYAZgA3ADcALQAwADAAMAAwAC0ANAAwADAAMAAtADgANAA5ADIALQBmADAAMABiADkAZABjAGQAMQA1ADUAMQB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADAAZQBhAGQANwBkADUALQBlADkAMgA0AC0ANABkAGMANgAtAGIAMAA1ADkALQAwAGIANAAwADUAMAA0AGUANAA3ADkAMQB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADMANgA0ADgAYwBjAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZgBiAGEALQA1AGMAMwAwADAANgBjADMAYQA2AGQANwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADMAOQBmADkAYwA3ADQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYwA3ADgALQBjADAAOAA3ADAAMAA5AGQAYwBmADMAMgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADEANABjADkAYQA3AGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANgA1AGIALQBhADkAMQAzADkAMQA1AGUAMgBhADYAMwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

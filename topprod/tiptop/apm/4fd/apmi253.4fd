@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a3aa04f4-0000-4000-a38b-2e9e25a0bfcc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmq" order="" uid="{9d8c656d-0000-4000-aa71-90baff39a1ad}" where="">
+    <RecordField colName="pmq04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pmq_file.pmq04" sqlTabName="pmq_file" sqlType="SMALLINT" table_alias_name="" uid="{4dd73aed-0000-4000-ae62-1a95db2d8463}"/>
+    <RecordField colName="pmq05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pmq_file.pmq05" sqlTabName="pmq_file" sqlType="VARCHAR" table_alias_name="" uid="{a290e909-0000-4000-bd4f-8d5a12aa0e01}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b2964ec4-0000-4000-958c-3bfc89c0bfb3}" where="">
+    <RecordField colName="pmq01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmq_file.pmq01" sqlTabName="pmq_file" sqlType="VARCHAR" table_alias_name="" uid="{4584b30c-0000-4000-9d00-53b8307bd98b}"/>
+    <RecordField colName="pmq03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmq_file.pmq03" sqlTabName="pmq_file" sqlType="VARCHAR" table_alias_name="" uid="{5b93d53a-0000-4000-a9e1-f6a187cc6a44}"/>
+    <RecordField colName="pmq02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmq_file.pmq02" sqlTabName="pmq_file" sqlType="VARCHAR" table_alias_name="" uid="{b5ffdd96-0000-4000-bae6-b9a8149c298b}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="pmc03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{de6365d1-0000-4000-bb33-f8a0eecaac48}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="pmh03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{af71798a-0000-4000-8550-114c350c06e8}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{dc8f92c9-0000-4000-9c4c-d2df98257c1f}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{799f9a87-0000-4000-b096-0f0fcebb9437}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="73" name="apmi253" spacing="normal" text="apmi253">
+    <VBox gridHeight="22" gridWidth="70" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="70" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="53" lstrcomment="false" name="gr4836" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Item No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmq01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="pmq_file.pmq01" posX="22" posY="0" rowCount="" sqlTabName="pmq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Vender Item#"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmq03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="pmq_file.pmq03" posX="22" posY="1" rowCount="" sqlTabName="pmq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Supplier#"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmq02" columnCount="" comment="&lt;^P&gt;Qry Vender   " fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pmq_file.pmq02" posX="22" posY="2" rowCount="" sqlTabName="pmq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="pmc03" posX="34" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="33" lstrcomment="false" lstrtext="false" lstrtitle="false" name="pmh03" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Main Supplier" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="70" lstrcomment="false" name="s_pmq" posX="0" posY="7" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmq04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="pmq_file.pmq04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="pmq_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Line#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmq05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="pmq_file.pmq05" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="pmq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Vender Item No. P/N Spec. Extra Desc" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="70" lstrcomment="false" name="gr4837" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl1566" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1567" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{39228baf-0000-4000-99ba-205cd922211d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ahk" order="" uid="{4130f674-0000-4000-941e-5ef73969a726}" where="">
+    <RecordField colName="ahk02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ahk_file.ahk02" sqlTabName="ahk_file" sqlType="VARCHAR" table_alias_name="" uid="{241062ed-0000-4000-8666-10a8133bec76}"/>
+    <RecordField colName="" fieldIdRef="5" name="gaz03" sqlTabName="" table_alias_name="" uid="{d404beff-0000-4000-9d4b-7120c49f6dc4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9e91b071-0000-4000-aa69-ba55c07b4475}" where="">
+    <RecordField colName="ahk00" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ahk_file.ahk00" sqlTabName="ahk_file" sqlType="VARCHAR" table_alias_name="" uid="{2fc5d614-0000-4000-b7c5-78f4e3378a21}"/>
+    <RecordField colName="ahk01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ahk_file.ahk01" sqlTabName="ahk_file" sqlType="VARCHAR" table_alias_name="" uid="{0b0a00d4-0000-4000-94f4-45ae8f0dd16c}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="aag02" sqlTabName="" table_alias_name="" uid="{e4a1da0f-0000-4000-ac63-fa623c3d8719}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{6f6eeaf1-0000-4000-b362-0f6d5170afea}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{a50aacf0-0000-4000-ab3a-c969a1c10aac}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="140" name="agli121" spacing="normal" text="agli121">
+    <VBox gridHeight="18" gridWidth="77" name="VBox1" posX="5" posY="1">
+      <Folder gridHeight="4" gridWidth="77" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="3" gridWidth="62" lstrcomment="false" name="gr2399" posX="1" posY="0">
+            <Label posX="1" posY="0" text="Book.No"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ahk00" columnCount="" comment="&lt;^P&gt;Qry Account" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="ahk_file.ahk00" notNull="true" posX="12" posY="0" required="true" rowCount="" sqlTabName="ahk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="1" text="Account"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ahk01" columnCount="" comment="&lt;^P&gt;Qry Account" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="ahk_file.ahk01" notNull="true" posX="12" posY="1" required="true" rowCount="" sqlTabName="ahk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="30" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="10" gridWidth="77" lstrcomment="false" name="s_ahh" posX="0" posY="5" totalRows="9">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ahk02" columnCount="" comment="&lt;^P&gt;Qry Transaction" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="ahk_file.ahk02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="ahk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Transaction" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="12" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Transaction Maintain Name" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="77" lstrcomment="false" name="gr2400" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl743" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="6" name="hl744" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADQAMQAwADYAMgBlAGQALQAwADAAMAAwAC0ANAAwADAAMAAtADgANgA2ADYALQAxADAAYQA4ADEAMwAzAGIAZQBjADcANgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGUAOQAxAGIAMAA3ADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYQA2ADkALQBiAGEANQA1AGMAMAA3AGIANAA0ADcANQB9wHHwAAAAAABAAAAAAAAAAD9QYk3S8an8AQAAAEwAewAwAGIAMABhADAAMABkADQALQAwADAAMAAwAC0ANAAwADAAMAAtADkANABmADQALQA0ADUAYQBlADgAZgAwAGQAZAAxADYAYwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGYAYwA1AGQANgAxADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwBjADUALQA3ADgAZgA0AGUAMwAzADcAOABhADIAMQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADUAMABhAGEAYwBmADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYgAzAGEALQBjADkANgA5AGEAMQBjADEAMABhAGEAYwB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBkADQAMAA0AGIAZQBmAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZAA0AGIALQA3ADEAMgAwAGMANAA5AGYANgBkAGMANAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADEAMwAwAGYANgA3ADQALQAwADAAMAAwAC0ANAAwADAAMAAtADkANAAxAGUALQA1AGUAZgA3ADMAOQA2ADkAYQA3ADIANgB9AAAAAAAAAAAAAAAAAAAAAD9wYk3S8an8AQAAAEwAewBlADQAYQAxAGQAYQAwAGYALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYwA2ADMALQBmAGEANgAyADMAYwAzAGQAOAA3ADEAOQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGYANgBlAGUAYQBmADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMwA2ADIALQAwAGYANgBkADUAMQA3ADAAYQBmAGUAYQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

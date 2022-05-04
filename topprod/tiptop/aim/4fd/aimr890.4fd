@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e0b48bd3-0000-4000-932d-e63e1de75f9d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5ba9ffd1-0000-4000-a5fb-f488ff05d837}" where="">
+    <RecordField colName="azp01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="azp_file.azp01" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{1fc58f1f-0000-4000-9d8a-80feb483333a}"/>
+    <RecordField colName="ima01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ima_file.ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{b22d3176-0000-4000-958d-d6d9e5820de3}"/>
+    <RecordField colName="ima131" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ima_file.ima131" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{2ba1282e-0000-4000-87de-d5f478e877fe}"/>
+    <RecordField colName="" fieldIdRef="5" name="a" sqlTabName="" table_alias_name="" uid="{e0ddd4ba-0000-4000-8889-50f10f46ad4e}"/>
+    <RecordField colName="" fieldIdRef="1" name="more" sqlTabName="" table_alias_name="" uid="{8a2dc727-0000-4000-88ce-bd6088dc5273}"/>
+  </Record>
+  <Form gridHeight="45" gridWidth="117" name="Form" text="Form">
+    <VBox gridHeight="24" gridWidth="94" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="14" gridWidth="94" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="74" name="Group1" posX="3" posY="1" text="QBE">
+          <Label gridHeight="1" gridWidth="16" name="Label1" posX="3" posY="1" text="Logistics Code"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" name="azp_file.azp01" posX="30" posY="1" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+          <Label colorCondition="black" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" name="dummy1" posX="30" posY="2" text="LRDMDS,QY&apos;|&apos;H&apos;;&apos;GK"/>
+        </Group>
+        <Group gridHeight="5" gridWidth="74" name="group3" posX="3" posY="5" text="QBE2">
+          <Label gridHeight="1" gridWidth="16" name="Label2" posX="3" posY="1" text="Product No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" name="ima_file.ima01" posX="30" posY="1" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="formonly.ButtonEdit2" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="24" name="Label4" posX="3" posY="3" text="Product Classification"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima131" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" name="ima_file.ima131" posX="30" posY="3" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.ButtonEdit3" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="74" name="Group2" posX="3" posY="10" text="Print Option">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="2" gridWidth="46" items="Logistics + Product No., Logistics + Product Classification" name="a" posX="3" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="formonly.RadioGroup1" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="Logistics + Product No."/>
+            <Item lstrtext="false" name="2" text="Logistics + Product Classification"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Grid gridHeight="8" gridWidth="94" name="Grid2" posX="0" posY="15">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtext="false" name="more" notNull="true" posX="4" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" text="Other codition to print" title="formonly.CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

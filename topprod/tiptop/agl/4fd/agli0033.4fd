@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{ba2fa3a3-9ef5-4bff-a0fd-997aa607392c}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_axu" order="" uid="{39437858-6d39-4304-bd7f-51653dbdc6c3}" where="">
+    <RecordField colName="axu04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="axu_file.axu04" sqlTabName="axu_file" sqlType="VARCHAR" table_alias_name="" uid="{ca8a7030-fa10-44ca-adb8-ab92ffb66658}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="aag02" sqlTabName="" table_alias_name="" uid="{184b2de8-a855-4649-a268-9d22efd02287}"/>
+    <RecordField colName="axu05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="axu_file.axu05" sqlTabName="axu_file" sqlType="VARCHAR" table_alias_name="" uid="{ff70519e-362d-4b20-b997-475df7147091}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{18d10076-c8d4-4a22-a4e7-d4da7f90f44f}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="axf02" sqlTabName="" table_alias_name="" uid="{2e33b4f3-a574-49c5-abf8-d862bd3ee721}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="axt03" sqlTabName="" table_alias_name="" uid="{a351e5dd-bad9-4431-812c-655123300db6}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{288bfc41-8164-4526-8293-d78407a3d044}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{db567c6d-a65c-4ccb-93d3-09f2b86e3eba}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="72" name="agli0033" spacing="normal" text="agli0033">
+    <VBox gridHeight="21" gridWidth="70" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="4" gridWidth="70" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="QBE">
+          <Grid gridHeight="2" gridWidth="44" lstrcomment="false" name="gr989" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="16" posX="2" posY="0" text="Opposite Account"/>
+            <ButtonEdit action="controlp" colName="" columnCount="" comment="&lt;^P&gt; Query Account No." fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="axf02" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="15" posX="2" posY="1" text="Formula Account"/>
+            <ButtonEdit action="controlp" colName="" columnCount="" comment="&lt;^P&gt; Query Account No." fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="axt03" noEntry="true" posX="19" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Group gridHeight="13" gridWidth="70" lstrcomment="false" lstrtext="false" name="gb1884" posX="0" posY="5">
+        <ScrollGrid gridHeight="11" gridWidth="68" lstrcomment="false" name="gr2621" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="24" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="Opposite Acc."/>
+          <Label gridHeight="1" gridWidth="24" lstrcomment="false" lstrtext="false" name="dummy02" posX="27" posY="1" text="Acc. Descript"/>
+          <Label gridHeight="1" gridWidth="14" lstrcomment="false" lstrtext="false" name="dummy03" posX="53" posY="1" text="Operation Sign"/>
+          <ButtonEdit action="controlp" colName="axu04" columnCount="1" comment="&lt;^P&gt; Query Account No." fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="axu_file.axu04" notNull="true" posX="1" posY="2" repeat="true" required="true" rowCount="8" sqlTabName="axu_file" sqlType="VARCHAR" stepX="43" stepY="0" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Edit colName="" columnCount="1" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="27" posY="2" repeat="true" rowCount="8" sqlTabName="" stepX="43" stepY="0" tabIndex="7" table_alias_name="" widget="Edit"/>
+          <ComboBox colName="axu05" columnCount="1" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="Increase, Decrease" lstrcomment="false" lstrtitle="false" name="axu_file.axu05" notNull="true" posX="53" posY="2" repeat="true" required="true" rowCount="8" sqlTabName="axu_file" sqlType="VARCHAR" stepX="53" stepY="0" tabIndex="4" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="" name="+" text="Increase"/>
+            <Item lstrtext="" name="-" text="Decrease"/>
+          </ComboBox>
+        </ScrollGrid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="70" lstrcomment="false" name="gr2404" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl3" posX="1" posY="0"/>
+        <Label gridHeight="1" gridWidth="4" posX="12" posY="0" text="Rows"/>
+        <Edit colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="1" posX="26" posY="0" text="/"/>
+        <Edit colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADMANQAxAGUANQBkAGQALQBiAGEAZAA5AC0ANAA0ADMAMQAtADgAMQAyAGMALQA2ADUANQAxADIAMwAzADAAMABkAGIANgB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewAxADgANABiADIAZABlADgALQBhADgANQA1AC0ANAA2ADQAOQAtAGEAMgA2ADgALQA5AGQAMgAyAGUAZgBkADAAMgAyADgANwB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGIANQA2ADcAYwA2AGQALQBhADYANQBjAC0ANABjAGMAYgAtADkAMwBkADMALQAwADkAZgAyAGIAOAA2AGUAMwBlAGIAYQB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGYANwAwADUAMQA5AGUALQAzADYAMgBkAC0ANABiADIAMAAtAGIAOQA5ADcALQA0ADcANQBkAGYANwAxADQANwAwADkAMQB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADgAOABiAGYAYwA0ADEALQA4ADEANgA0AC0ANAA1ADIANgAtADgAMgA5ADMALQBkADcAOAA0ADAANwBhADMAZAAwADQANAB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADgAZAAxADAAMAA3ADYALQBjADgAZAA0AC0ANABhADIAMgAtAGEANABlADcALQBkADQAZABhADcAZgA5ADAAZgA0ADQAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADkANAAzADcAOAA1ADgALQA2AGQAMwA5AC0ANAAzADAANAAtAGIAZAA3AGYALQA1ADEANgA1ADMAZABiAGQAYwA2AGMAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGEAOABhADcAMAAzADAALQBmAGEAMQAwAC0ANAA0AGMAYQAtAGEAZABiADgALQBhAGIAOQAyAGYAZgBiADYANgA2ADUAOAB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGUAMwAzAGIANABmADMALQBhADUANwA0AC0ANAA5AGMANQAtAGEAYgBmADgALQBkADgANgAyAGIAZAAzAGUAZQA3ADIAMQB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

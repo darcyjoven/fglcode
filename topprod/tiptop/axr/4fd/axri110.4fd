@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{98d9f5e0-137a-4b34-9c9d-c60eac445fe0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{39c7045b-2401-4883-88a3-db9915a6b397}" where="">
+    <RecordField colName="" fieldIdRef="5" name="cnt" sqlTabName="" table_alias_name="" uid="{4ccdc0d4-368c-40cf-8f32-043da1af4386}"/>
+    <RecordField colName="" fieldIdRef="8" name="cn2" sqlTabName="" table_alias_name="" uid="{b8676a7d-ce9e-438b-81b6-5983f21ea9da}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="ooh_file" name="s_ooh" order="" uid="{602fd2ea-269e-4e12-b553-61fc35af7f19}" where="">
+    <RecordField colName="ooh01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ooh_file.ooh01" sqlTabName="ooh_file" sqlType="VARCHAR" table_alias_name="" uid="{af9acadd-fd2a-46d7-9a93-942d360caca7}" uniqueQueryKey="false"/>
+    <RecordField colName="ooh02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ooh_file.ooh02" sqlTabName="ooh_file" sqlType="VARCHAR" table_alias_name="" uid="{cf438c14-2df8-43d1-ab32-830083da6b03}" uniqueQueryKey="false"/>
+    <RecordField colName="oohacti" defaultValue="Y" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ooh_file.oohacti" sqlTabName="ooh_file" sqlType="VARCHAR" table_alias_name="" uid="{0d887840-bd63-443f-aeef-5fc0eb44c36e}" uniqueQueryKey="false"/>
+    <RecordField colName="oohpos" defaultValue="1" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ooh_file.oohpos" sqlTabName="ooh_file" sqlType="VARCHAR" table_alias_name="" uid="{ab378861-f47d-49dc-b73c-45236329cfb5}" uniqueQueryKey="false"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="71" name="Form" text="Form">
+    <VBox gridHeight="14" gridWidth="68" name="VBox1" posX="1" posY="1">
+      <Table gridHeight="10" gridWidth="68" name="ds1" posX="0" posY="1" totalRows="9">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ooh01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="ooh_file.ooh01" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="ooh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ooh01" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ooh02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="ooh_file.ooh02" notNull="true" posX="10" posY="0" required="true" rowCount="" scroll="true" sqlTabName="ooh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ooh02" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oohacti" columnCount="" defaultValue="Y" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="ooh_file.oohacti" notNull="true" posX="40" posY="0" required="true" rowCount="" sqlTabName="ooh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="" title="oohacti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oohpos" columnCount="" defaultValue="1" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Add-No passed, Modify-No passed, Passed" name="ooh_file.oohpos" noEntry="true" notNull="true" posX="48" posY="0" required="true" rowCount="" scroll="true" sqlTabName="ooh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="oohpos" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Add-No passed"/>
+          <Item lstrtext="false" name="2" text="Modify-No passed"/>
+          <Item lstrtext="false" name="3" text="Passed"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="2" gridWidth="68" name="Grid1" posX="0" posY="11">
+        <HLine gridWidth="6" name="HLine1" posX="1" posY="1"/>
+        <Label posX="8" posY="1" text="rowcnt"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" name="cnt" noEntry="true" posX="17" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Edit1" widget="Edit"/>
+        <Label posX="29" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="10" name="cn2" noEntry="true" posX="31" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Edit1" widget="Edit"/>
+        <HLine gridWidth="6" name="HLine2" posX="42" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA2ADAAMgBmAGQAMgBlAGEALQAyADYAOQBlAC0ANABlADEAMgAtAGIANQA1ADMALQA2ADEAZgBjADMANQBhAGYANwBmADEAOQB9QGUAAAAAAADARwAAAAAAAD9gYk3S8an8AQAAAEwAewAzADkAYwA3ADAANAA1AGIALQAyADQAMAAxAC0ANAA4ADgAMwAtADgAOABhADMALQBkAGIAOQA5ADEANQBhADYAYgAzADkANwB9QHZwAAAAAADAR4AAAAAAAD9QYk3S8an8AQAAAEwAewA0AGMAYwBkAGMAMABkADQALQAzADYAOABjAC0ANAAwAGMAZgAtADgAZgAzADIALQAwADQAMwBkAGEAMQBhAGYANAAzADgANgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGYAOQBhAGMAYQBkAGQALQBmAGQAMgBhAC0ANAA2AGQANwAtADkAYQA5ADMALQA5ADQAMgBkADMANgAwAGMAYQBjAGEANwB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGIAMwA3ADgAOAA2ADEALQBmADQANwBkAC0ANAA5AGQAYwAtAGIANwAzAGMALQA0ADUAMgAzADYAMwAyADkAYwBmAGIANQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADgANgA3ADYAYQA3AGQALQBjAGUAOQBlAC0ANAAzADgAYgAtADgAMQBiADYALQA1ADkAOAAzAGYAMgAxAGUAYQA5AGQAYQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYANAAzADgAYwAxADQALQAyAGQAZgA4AC0ANAAzAGQAMQAtAGEAYgAzADIALQA4ADMAMAAwADgAMwBkAGEANgBiADAAMwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGQAOAA4ADcAOAA0ADAALQBiAGQANgAzAC0ANAA0ADMAZgAtAGEAZQBlAGYALQA1AGYAYwAwAGUAYgA0ADQAYwAzADYAZQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

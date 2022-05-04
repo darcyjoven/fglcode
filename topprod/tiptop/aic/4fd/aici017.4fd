@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{15dfe350-0000-4000-a0d0-039756ba5c19}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_icr" order="" uid="{d35f4dba-0000-4000-bc1a-e209a259425e}" where="">
+    <RecordField colName="icr03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="icr_file.icr03" sqlTabName="icr_file" sqlType="SMALLINT" table_alias_name="" uid="{30854d54-0000-4000-b42a-0fb827501606}"/>
+    <RecordField colName="icr04" fieldIdRef="8" fieldType="TABLE_COLUMN" name="icr_file.icr04" sqlTabName="icr_file" sqlType="VARCHAR" table_alias_name="" uid="{3199c685-0000-4000-804d-adb1c249ccc2}"/>
+    <RecordField colName="icr05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="icr_file.icr05" sqlTabName="icr_file" sqlType="VARCHAR" table_alias_name="" uid="{50ad466d-0000-4000-9378-06a9aa228966}"/>
+    <RecordField colName="icr06" fieldIdRef="10" fieldType="TABLE_COLUMN" name="icr_file.icr06" sqlTabName="icr_file" sqlType="VARCHAR" table_alias_name="" uid="{657b116a-0000-4000-9d55-1e5af4e1e40a}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="icr06_desc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0d8b1196-0000-4000-893f-647212cc7cb9}"/>
+    <RecordField colName="icr061" fieldIdRef="12" fieldType="TABLE_COLUMN" name="icr_file.icr061" sqlTabName="icr_file" sqlType="VARCHAR" table_alias_name="" uid="{9433e946-0000-4000-8037-75794f497513}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="icr061_desc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5a9ced8d-0000-4000-a5fe-7d3855f8cb79}"/>
+    <RecordField colName="icr07" fieldIdRef="2" fieldType="TABLE_COLUMN" name="icr_file.icr07" sqlTabName="icr_file" sqlType="VARCHAR" table_alias_name="" uid="{bf5018b8-0000-4000-97f6-3ca2a7a449b5}"/>
+    <RecordField colName="icr08" fieldIdRef="3" fieldType="TABLE_COLUMN" name="icr_file.icr08" sqlTabName="icr_file" sqlType="DATE" table_alias_name="tableAlias1" uid="{870c20d0-0000-4000-b33e-74bb2749449e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{43f6661b-0000-4000-8e97-9b02921611c5}" where="">
+    <RecordField colName="icr01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="icr_file.icr01" sqlTabName="icr_file" sqlType="VARCHAR" table_alias_name="" uid="{3e3cf59a-0000-4000-bf7e-b2d7ff61b699}"/>
+    <RecordField colName="icr02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="icr_file.icr02" sqlTabName="icr_file" sqlType="VARCHAR" table_alias_name="" uid="{db888f8c-0000-4000-9319-d26463c3cd93}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{076ea5ea-0000-4000-9746-9f0510e8e55a}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9b435ae9-0000-4000-9289-6c2f31c9246e}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="153" name="aici017" spacing="normal" text="aici017">
+    <VBox gridHeight="23" gridWidth="143" name="vb2" posX="8" posY="0">
+      <Folder gridHeight="6" gridWidth="143" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="4" gridWidth="91" lstrcomment="false" name="gr3257" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="87" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Program">
+              <Label posX="1" posY="1" text="HOW ID"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="icr_file.icr01" notNull="true" posX="17" posY="1" rowCount="" sqlTabName="icr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Make ID"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr02" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="BODY MASK, Layer Mask, Code Mask, Wafer ID, DateCode" lstrcomment="false" name="icr_file.icr02" posX="17" posY="2" rowCount="" sqlTabName="icr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="1" text="BODY MASK"/>
+                <Item lstrtext="false" name="2" text="Layer Mask"/>
+                <Item lstrtext="false" name="3" text="Code Mask"/>
+                <Item lstrtext="false" name="4" text="Wafer ID"/>
+                <Item lstrtext="false" name="5" text="DateCode"/>
+              </ComboBox>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="13" gridWidth="143" lstrcomment="false" name="s_icr" posX="0" posY="7" totalRows="11">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="icr_file.icr03" notNull="true" posX="0" posY="0" rowCount="" scroll="true" sqlTabName="icr_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Order" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr04" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Fixup, Define, Glide" lstrcomment="false" lstrtitle="false" name="icr_file.icr04" posX="7" posY="0" rowCount="" sqlTabName="icr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Code Form" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Fixup"/>
+          <Item lstrtext="false" name="2" text="Define"/>
+          <Item lstrtext="false" name="3" text="Glide"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr05" columnCount="" comment="IF Field Name is &apos;wintitle&apos;, Then This Field is &apos;NO Entry&apos;! Using &apos;Update&apos; Function!" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="icr_file.icr05" posX="18" posY="0" rowCount="" scroll="true" sqlTabName="icr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Fixup" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr06" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom.png" lstrcomment="false" lstrtitle="false" name="icr_file.icr06" posX="36" posY="0" rowCount="" sqlTabName="icr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Table Name" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="icr06_desc" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Table Name_desc" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr061" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom.png" lstrcomment="false" lstrtitle="false" name="icr_file.icr061" posX="68" posY="0" rowCount="" sqlTabName="icr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Field Name" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="icr061_desc" noEntry="true" posX="82" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Field Name_desc" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr07" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="icr_file.icr07" notNull="true" posX="100" posY="0" rowCount="" sqlTabName="icr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="MaShu" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icr08" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="YearWeek, YearMonthWeek, YearMonthDay" lstrcomment="false" lstrtitle="false" name="icr_file.icr08" posX="114" posY="0" rowCount="" sqlTabName="icr_file" sqlType="DATE" stepX="" stepY="" tabIndex="13" table_alias_name="tableAlias1" title="Date Kind" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="YearWeek"/>
+          <Item lstrtext="false" name="2" text="YearMonthWeek"/>
+          <Item lstrtext="false" name="3" text="YearMonthDay"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="2" gridWidth="143" lstrcomment="false" name="gr3258" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl1150" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1151" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

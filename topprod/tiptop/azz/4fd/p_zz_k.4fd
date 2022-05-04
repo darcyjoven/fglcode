@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{101e9161-0000-4000-8c28-1d4477948f82}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zy" order="" uid="{3fd9aa99-0000-4000-90c5-25c308e515ba}" where="">
+    <RecordField colName="zy01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zy_file.zy01" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{e09aa728-0000-4000-a581-9cd51872e98a}"/>
+    <RecordField colName="zw02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="zw_file.zw02" sqlTabName="zw_file" sqlType="VARCHAR" table_alias_name="" uid="{277b7334-8967-4531-b32d-bdec998a207a}"/>
+    <RecordField colName="zy03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zy_file.zy03" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{dde6ab00-0000-4000-8859-7076957aa7fc}"/>
+    <RecordField colName="zy04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="zy_file.zy04" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{99c6dd60-0000-4000-8231-8793d8c187cf}"/>
+    <RecordField colName="zy05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="zy_file.zy05" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{b5224d54-0000-4000-a9de-4755296cb684}"/>
+    <RecordField colName="zy07" fieldIdRef="5" fieldType="TABLE_COLUMN" name="zy_file.zy07" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{d797f632-0000-4000-9e27-04e7391bfe65}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="139" name="p_zz_k" spacing="normal" text="p_zz_k">
+    <Grid gridHeight="13" gridWidth="139" lstrcomment="false" name="gr3035" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="138" lstrcomment="false" name="s_zy" posX="1" posY="0" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy01" columnCount="" comment="&lt;^Y&gt;Gen All Authorization" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom" lstrcomment="false" lstrtitle="false" name="zy_file.zy01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Authoriza Category" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zw02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="zw_file.zw02" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="zw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Authoriza Category Statement" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="zy_file.zy03" noEntry="true" posX="27" posY="0" rowCount="" scroll="true" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Available Functions" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy04" columnCount="" comment="Set User&apos;s Authorization to Access Other Owner&apos;s Data" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="31" items="Can Qry,Modify,Delete, Can Qry,Modify,But Delete, Can Qry,But Modify,Can Delete, Can Qry,But Modify,nor Delete, Can&apos;t Qry,nor Modify,nor Delete" lstrcomment="false" lstrtitle="false" name="zy_file.zy04" notNull="true" posX="48" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Non-self&apos;s Data Dealing Method" widget="ComboBox">
+          <Item name="0" text="Can Qry,Modify,Delete"/>
+          <Item name="1" text="Can Qry,Modify,But Delete"/>
+          <Item name="2" text="Can Qry,But Modify,Can Delete"/>
+          <Item name="3" text="Can Qry,But Modify,nor Delete"/>
+          <Item name="4" text="Can&apos;t Qry,nor Modify,nor Delete"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy05" columnCount="" comment="Set User&apos;s Authorization to Access Other Dept&apos;s Data(0/1/2/3/4/5/6/7)" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="37" items="Different Dept., Can Query,Modify,Delete, Different Dept., Can Query,Modify,But Delete, Different Dept., Can Query,But Modify,Can Delete, Different Dept., Can Query,But Modify,nor Delete, In Relative Dept, Can Query,Modify,Delete, In Relative Dept, Can Query,Modify,But Delete, In Relative Dept, Can Query,But Modify,Can Delete, In Relative Dept, Can Query,But Modify,nor Delete, Different Dept., Can&apos;t Query,nor Modify,nor Delete" lstrcomment="false" lstrtitle="false" name="zy_file.zy05" notNull="true" posX="79" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Non-Same Dept.&apos;s Data Dealing Method" widget="ComboBox">
+          <Item name="0" text="Different Dept., Can Query,Modify,Delete"/>
+          <Item name="1" text="Different Dept., Can Query,Modify,But Delete"/>
+          <Item name="2" text="Different Dept., Can Query,But Modify,Can Delete"/>
+          <Item name="3" text="Different Dept., Can Query,But Modify,nor Delete"/>
+          <Item name="8" text="In Relative Dept, Can Query,Modify,Delete"/>
+          <Item name="5" text="In Relative Dept, Can Query,Modify,But Delete"/>
+          <Item name="6" text="In Relative Dept, Can Query,But Modify,Can Delete"/>
+          <Item name="7" text="In Relative Dept, Can Query,But Modify,nor Delete"/>
+          <Item name="4" text="Different Dept., Can&apos;t Query,nor Modify,nor Delete"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy07" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Can Insert, Delete, Can Insert,But Delete, Cannot Insert,Can Delete, Cannot Insert,nor Delete" lstrcomment="false" lstrtitle="false" name="zy_file.zy07" noEntry="true" notNull="true" posX="116" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Detail Auth" widget="ComboBox">
+          <Item name="0" text="Can Insert, Delete"/>
+          <Item name="1" text="Can Insert,But Delete"/>
+          <Item name="2" text="Cannot Insert,Can Delete"/>
+          <Item name="3" text="Cannot Insert,nor Delete"/>
+        </ComboBox>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkAGQAZQA2AGEAYgAwADAALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOAA1ADkALQA3ADAANwA2ADkANQA3AGEAYQA3AGYAYwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADUAMgAyADQAZAA1ADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAOQBkAGUALQA0ADcANQA1ADIAOQA2AGMAYgA2ADgANAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADAAOQBhAGEANwAyADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQA4ADEALQA5AGMAZAA1ADEAOAA3ADIAZQA5ADgAYQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADcAOQA3AGYANgAzADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZQAyADcALQAwADQAZQA3ADMAOQAxAGIAZgBlADYANQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADcANwBiADcAMwAzADQALQA4ADkANgA3AC0ANAA1ADMAMQAtAGIAMwAyAGQALQBiAGQAZQBjADkAOQA4AGEAMgAwADcAYQB9QBQAAAAAAABARwAAAAAAAD9QYk3S8an8AQAAAEwAewAzAGYAZAA5AGEAYQA5ADkALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMABjADUALQAyADUAYwAzADAAOABlADUAMQA1AGIAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADkAYwA2AGQAZAA2ADAALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMgAzADEALQA4ADcAOQAzAGQAOABjADEAOAA3AGMAZgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{9668eb31-0000-4000-8fba-68557f596e52}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8670cb16-0000-4000-a0f5-ccd7b6d587e7}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="fieldname" sqlTabName="" table_alias_name="" uid="{0b0c2512-0000-4000-9bc2-60ef07d79e96}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="description1" sqlTabName="" table_alias_name="" uid="{dd3d62f2-0000-4000-91b9-9264dfb230e5}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="operator" sqlTabName="" table_alias_name="" uid="{f60020de-0000-4000-ab9c-610ba573d8b2}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="description2" sqlTabName="" table_alias_name="" uid="{b62b2bdb-0000-4000-b062-be6b3dcb80a0}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="values" sqlTabName="" table_alias_name="" uid="{0e228049-0000-4000-8329-2e69872556f9}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="logicope" sqlTabName="" table_alias_name="" uid="{26294866-0000-4000-a24f-1c6bde9ed819}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="conditions" sqlTabName="" table_alias_name="" uid="{0633eac9-0000-4000-a84c-9c0499fe7d58}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="68" name="cl_where" spacing="normal" text="cl_where">
+    <VBox gridHeight="19" gridWidth="66" name="VBox1" posX="0" posY="0">
+      <VBox gridHeight="17" gridWidth="66" name="VBox2" posX="0" posY="1">
+        <Group gridHeight="9" gridWidth="66" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="1" text="Please input the conditions:">
+          <Grid gridHeight="7" gridWidth="63" lstrcomment="false" name="gr1" posX="1" posY="1">
+            <Label posX="1" posY="0" text="fieldname"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Choose the field" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" items="" lstrcomment="false" lstrtitle="false" name="fieldname" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="2" gridWidth="38" lstrcomment="false" lstrtitle="false" name="description1" noEntry="true" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="NONE" tabIndex="2" table_alias_name="" wantNoReturns="true" widget="TextEdit"/>
+            <Label posX="1" posY="2" text="operator"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Choose the operator" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" items="=, &lt;&gt;, &lt;, &gt;, &lt;=, &gt;=, BETWEEN, IN, LIKE, IS NULL, IS NOT NULL" lstrcomment="false" lstrtitle="false" name="operator" notNull="true" posX="11" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="=" text="="/>
+              <Item lstrtext="" name="&lt;&gt;" text="&lt;&gt;"/>
+              <Item lstrtext="" name="&lt;" text="&lt;"/>
+              <Item lstrtext="" name="&gt;" text="&gt;"/>
+              <Item lstrtext="" name="&lt;=" text="&lt;="/>
+              <Item lstrtext="" name="&gt;=" text="&gt;="/>
+              <Item lstrtext="" name="BETWEEN" text="BETWEEN"/>
+              <Item lstrtext="" name="IN" text="IN"/>
+              <Item lstrtext="" name="LIKE" text="LIKE"/>
+              <Item lstrtext="" name="IS NULL" text="IS NULL"/>
+              <Item lstrtext="" name="IS NOT NULL" text="IS NOT NULL"/>
+            </ComboBox>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="2" gridWidth="38" lstrcomment="false" lstrtitle="false" name="description2" noEntry="true" posX="24" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="NONE" tabIndex="4" table_alias_name="" wantNoReturns="true" widget="TextEdit"/>
+            <Label posX="1" posY="4" text="values"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="2" gridWidth="51" lstrcomment="false" lstrtitle="false" name="values" notNull="true" posX="11" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="NONE" tabIndex="5" table_alias_name="" widget="TextEdit"/>
+            <Label posX="1" posY="6" text="logicope"/>
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Choose the logic operator" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" items="AND, OR" lstrcomment="false" lstrtitle="false" name="logicope" notNull="true" orientation="horizontal" posX="11" posY="6" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="AND" text="AND"/>
+              <Item lstrtext="" name="OR" text="OR"/>
+            </RadioGroup>
+            <Button gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="makecond" posX="52" posY="6" tabIndex="" text="Make the conditions"/>
+          </Grid>
+        </Group>
+        <Group gridHeight="6" gridWidth="66" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="10" text="Where Conditions">
+          <Grid gridHeight="4" gridWidth="64" lstrcomment="false" name="gr2" posX="1" posY="1">
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="4" gridWidth="61" lstrcomment="false" lstrtitle="false" name="conditions" posX="2" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="NONE" tabIndex="7" table_alias_name="" wantNoReturns="true" widget="TextEdit"/>
+          </Grid>
+        </Group>
+      </VBox>
+    </VBox>
+  </Form>
+</ManagedForm>

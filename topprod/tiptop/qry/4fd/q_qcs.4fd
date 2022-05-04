@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9f200d05-0000-4000-921e-47ab82c0c114}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qcs" order="" uid="{f584e24d-0000-4000-8987-bb1b09dc53d4}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{4205b510-0000-4000-b2a7-31e166cdf050}"/>
+    <RecordField colName="ina01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ina_file.ina01" sqlTabName="ina_file" sqlType="VARCHAR" table_alias_name="" uid="{a28e1e41-0000-4000-baa5-26a4ec723867}"/>
+    <RecordField colName="ina03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ina_file.ina03" sqlTabName="ina_file" sqlType="DATE" table_alias_name="" uid="{85822cbc-0000-4000-b817-abf9ff844576}"/>
+    <RecordField colName="inb03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="inb_file.inb03" sqlTabName="inb_file" sqlType="SMALLINT" table_alias_name="" uid="{326859cd-0000-4000-b2fa-dc6b8ac63728}"/>
+    <RecordField colName="inb16" fieldIdRef="5" fieldType="TABLE_COLUMN" name="inb_file.inb16" precisionDecimal="15" scaleDecimal="3" sqlTabName="inb_file" sqlType="DECIMAL" table_alias_name="" uid="{d12389aa-0000-4000-96be-410187d9bdb9}"/>
+    <RecordField colName="qcs22" fieldIdRef="6" fieldType="TABLE_COLUMN" name="qcs_file.qcs22" precisionDecimal="15" scaleDecimal="3" sqlTabName="qcs_file" sqlType="DECIMAL" table_alias_name="" uid="{7496141e-16a0-40af-897c-44d6e5b027ec}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="87" name="q_qcs" spacing="normal" text="Qry Workstation">
+    <Grid gridHeight="13" gridWidth="72" lstrcomment="false" name="gr3753" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="67" lstrcomment="false" name="s_qcs" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ina01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="ina_file.ina01" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="ina_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Doc No." widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ina03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ina_file.ina03" posX="22" posY="0" rowCount="" sqlTabName="ina_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Entry Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="inb03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="inb_file.inb03" noEntry="true" posX="32" posY="0" rowCount="" sqlTabName="inb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Dept No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="inb16" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="inb_file.inb16" posX="42" posY="0" precisionDecimal="15" rowCount="" scaleDecimal="3" sqlTabName="inb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Project No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcs22" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="qcs_file.qcs22" posX="52" posY="0" rowCount="" sqlTabName="qcs_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="qty" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADIAOABlADEAZQA0ADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYQBhADUALQAyADYAYQA0AGUAYwA3ADIAMwA4ADYANwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADUAOAAyADIAYwBiAGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOAAxADcALQBhAGIAZgA5AGYAZgA4ADQANAA1ADcANgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADIANgA4ADUAOQBjAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgBmAGEALQBkAGMANgBiADgAYQBjADYAMwA3ADIAOAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADUAOAA0AGUAMgA0AGQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOQA4ADcALQBiAGIAMQBiADAAOQBkAGMANQAzAGQANAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADEAMgAzADgAOQBhAGEALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBiAGUALQA0ADEAMAAxADgANwBkADkAYgBkAGIAOQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADIAMAA1AGIANQAxADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgBhADcALQAzADEAZQAxADYANgBjAGQAZgAwADUAMAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADQAOQA2ADEANAAxAGUALQAxADYAYQAwAC0ANAAwAGEAZgAtADgAOQA3AGMALQA0ADQAZAA2AGUANQBiADAAMgA3AGUAYwB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

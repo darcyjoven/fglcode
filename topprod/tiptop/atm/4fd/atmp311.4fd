@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{12519c76-0000-4000-bae3-9716700f9bf1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{70f3c7b6-0000-4000-b544-81e730899366}" where="">
+    <RecordField colName="tus03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="tus_file.tus03" sqlTabName="tus_file" sqlType="VARCHAR" table_alias_name="" uid="{cabc4beb-0000-4000-a153-e1f50fc0e56e}"/>
+    <RecordField colName="tus09" fieldIdRef="4" fieldType="TABLE_COLUMN" name="tus_file.tus09" sqlTabName="tus_file" sqlType="VARCHAR" table_alias_name="" uid="{4ae05d0a-0000-4000-bbf5-b67cfbf60ed2}"/>
+    <RecordField colName="tus02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="tus_file.tus02" sqlTabName="tus_file" sqlType="DATE" table_alias_name="" uid="{13b91e51-0000-4000-8c14-c8a94ee96690}"/>
+    <RecordField colName="oga01" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oga_file.oga01" sqlTabName="oga_file" sqlType="VARCHAR" table_alias_name="" uid="{060d96cc-0000-4000-aa93-7b654ec3f96a}"/>
+    <RecordField colName="oga02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="oga_file.oga02" sqlTabName="oga_file" sqlType="DATE" table_alias_name="" uid="{897ccdd2-0000-4000-b627-239bad1aa26b}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="start_no1" sqlTabName="" table_alias_name="" uid="{5467ab85-0000-4000-9c8c-c50009fff26c}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="end_no1" sqlTabName="" table_alias_name="" uid="{b3fb0d55-0000-4000-9673-285f6de64122}"/>
+    <RecordField colName="oha01" fieldIdRef="10" fieldType="TABLE_COLUMN" name="oha_file.oha01" sqlTabName="oha_file" sqlType="VARCHAR" table_alias_name="" uid="{5409ca7d-0000-4000-a961-ca59cebd909f}"/>
+    <RecordField colName="oha02" fieldIdRef="11" fieldType="TABLE_COLUMN" name="oha_file.oha02" sqlTabName="oha_file" sqlType="DATE" table_alias_name="" uid="{07469485-0000-4000-a6e9-dc368fe1c761}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="start_no2" sqlTabName="" table_alias_name="" uid="{0f0e27bf-0000-4000-ab82-7e27fe196056}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="end_no2" sqlTabName="" table_alias_name="" uid="{637117ca-0000-4000-a088-548fd5a3cc63}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="49" name="atmp311" spacing="normal" text="atmp311">
+    <VBox gridHeight="25" gridWidth="47" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="47" lstrcomment="false" name="gr1280" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="46" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Customer"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tus03" columnCount="" comment="&lt;^P&gt;Qry Detail" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="tus_file.tus03" notNull="true" posX="24" posY="1" required="true" rowCount="" sqlTabName="tus_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Delivery Customer"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tus09" columnCount="" comment="&lt;^P&gt;Qry Detail" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="tus_file.tus09" notNull="true" posX="24" posY="2" required="true" rowCount="" sqlTabName="tus_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Adjustment Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tus02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="tus_file.tus02" notNull="true" posX="24" posY="3" required="true" rowCount="" sqlTabName="tus_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="16" gridWidth="47" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="8" text="INPUT">
+        <Grid gridHeight="14" gridWidth="45" lstrcomment="false" name="gr1281" posX="1" posY="1">
+          <Group gridChildrenInParent="true" gridHeight="6" gridWidth="44" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Shipment No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga01" columnCount="" comment="&lt;^P&gt; Qry Documents" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="oga_file.oga01" notNull="true" posX="24" posY="1" required="true" rowCount="" sqlTabName="oga_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Delivery Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga02" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="oga_file.oga02" notNull="true" posX="24" posY="2" required="true" rowCount="" sqlTabName="oga_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="3" text="Start No"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="start_no1" noEntry="true" posX="24" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="End No"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="end_no1" noEntry="true" posX="24" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          </Group>
+          <Group gridChildrenInParent="true" gridHeight="7" gridWidth="44" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="6">
+            <Label posX="1" posY="1" text="Sales/Return Note No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oha01" columnCount="" comment="&lt;^P&gt; Qry Documents" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="oha_file.oha01" notNull="true" posX="24" posY="1" required="true" rowCount="" sqlTabName="oha_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Sales/Return Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oha02" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="oha_file.oha02" notNull="true" posX="24" posY="2" required="true" rowCount="" sqlTabName="oha_file" sqlType="DATE" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="3" text="Start No"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="start_no2" noEntry="true" posX="24" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="End No"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="end_no2" noEntry="true" posX="24" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

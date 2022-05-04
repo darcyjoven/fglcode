@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8db4a261-0000-4000-9bd3-e6b4fd7cab36}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{65c85b45-0000-4000-a0dd-1514d89d02da}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ima01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b107d8be-0000-4000-9af8-4b1716bc2571}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="doc1" sqlTabName="" table_alias_name="" uid="{956beb08-0000-4000-974f-72a8ac73deb3}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="doc2" sqlTabName="" table_alias_name="" uid="{be69f41f-0000-4000-a4ae-4de3e96d7b09}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="doc3" sqlTabName="" table_alias_name="" uid="{c5461e37-0000-4000-88a1-207dfba352b1}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="rdate" sqlTabName="" table_alias_name="" uid="{19153243-0000-4000-8769-3dad6b2d63ea}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="109" lstrtext="false" name="aicp019" spacing="normal" text="aicp019">
+    <Grid gridHeight="16" gridWidth="70" lstrcomment="false" name="gr1" posX="3" posY="2">
+      <Group gridHeight="3" gridWidth="67" lstrcomment="false" lstrtext="false" name="QBE" posX="1" posY="1" text="QBE">
+        <Label posX="2" posY="1" text="Item No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" image="zoom.png" lstrcomment="false" name="ima01" notNull="true" posX="16" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+      </Group>
+      <Group gridHeight="7" gridWidth="67" lstrcomment="false" lstrtext="false" name="INPUT" posX="1" posY="5" text="INPUT">
+        <Label posX="1" posY="1" text="Accounts Document 1"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" image="zoom.png" lstrcomment="false" name="doc1" notNull="true" posX="26" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label colorCondition="black" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtext="false" name="dummy1" posX="47" posY="1" text="1.Pre-receivables"/>
+        <Label posX="1" posY="3" text="Accounts Document 2"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" image="zoom.png" lstrcomment="false" name="doc2" notNull="true" posX="26" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        <Label colorCondition="black" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtext="false" name="dummy2" posX="47" posY="3" text="2.Reached Sum"/>
+        <Label posX="1" posY="5" text="Accounts Document 3"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" image="zoom.png" lstrcomment="false" name="doc3" notNull="true" posX="26" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        <Label colorCondition="black" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtext="false" name="dummy3" posX="47" posY="5" text="3.Unreached Sum"/>
+      </Group>
+      <Group gridHeight="3" gridWidth="67" lstrcomment="false" lstrtext="false" name="gb3" posX="1" posY="12">
+        <Label posX="1" posY="1" text="Accounts Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" name="rdate" notNull="true" posX="21" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

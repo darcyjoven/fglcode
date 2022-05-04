@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4c6d7d4a-0000-4000-9ae3-b896e3584359}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ogb" order="" uid="{a3755b25-0000-4000-9096-fdea1c01d91c}" where="">
+    <RecordField colName="" fieldIdRef="2" name="check" sqlTabName="" table_alias_name="" uid="{94d128b2-0000-4000-9234-ff222f59416a}"/>
+    <RecordField colName="oga01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oga_file.oga01" sqlTabName="oga_file" sqlType="VARCHAR" table_alias_name="" uid="{b5d84fed-0000-4000-b725-d9906db89e3c}"/>
+    <RecordField colName="oga02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oga_file.oga02" sqlTabName="oga_file" sqlType="DATE" table_alias_name="" uid="{e8bd967f-0000-4000-8047-6d2fef73c9ad}"/>
+    <RecordField colName="ogb03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ogb_file.ogb03" sqlTabName="ogb_file" sqlType="SMALLINT" table_alias_name="" uid="{6459463b-0000-4000-9de3-3daa1ec7693e}"/>
+    <RecordField colName="ogb1007" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ogb_file.ogb1007" sqlTabName="ogb_file" sqlType="VARCHAR" table_alias_name="" uid="{bc8311a1-0000-4000-a6af-87e52cdce19d}"/>
+    <RecordField colName="ogb14" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ogb_file.ogb14" sqlTabName="ogb_file" sqlType="DECIMAL" table_alias_name="" uid="{69ac1c5e-0000-4000-a3d9-8b0698d867f2}"/>
+    <RecordField colName="ogb14t" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ogb_file.ogb14t" sqlTabName="ogb_file" sqlType="DECIMAL" table_alias_name="" uid="{50e8f7ca-0000-4000-84fd-f97aaec9bfa0}"/>
+    <RecordField colName="ogb1013" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ogb_file.ogb1013" sqlTabName="ogb_file" sqlType="DECIMAL" table_alias_name="" uid="{cc4b9f68-0000-4000-a921-6a0105ad9514}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b26d8d6a-0000-4000-9bc6-36b1ff704708}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="oga03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{dec9a72b-0000-4000-91d1-66024cf10ecd}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="113" name="q_ogb3" spacing="normal" text="Qry Delivery Note">
+    <VBox gridHeight="16" gridWidth="110" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="110" lstrcomment="false" name="gr3816" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Accounts Customer"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="oga03" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="110" lstrcomment="false" name="s_ogb" posX="0" posY="3" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="oga_file.oga01" noEntry="true" posX="5" posY="0" rowCount="" sqlTabName="oga_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Delivery Note No." widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oga02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="oga_file.oga02" noEntry="true" posX="23" posY="0" rowCount="" sqlTabName="oga_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ogb03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="ogb_file.ogb03" noEntry="true" posX="31" posY="0" rowCount="" sqlTabName="ogb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Line#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ogb1007" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="ogb_file.ogb1007" posX="37" posY="0" rowCount="" sqlTabName="ogb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Discount No" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ogb14" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="ogb_file.ogb14" notNull="true" posX="50" posY="0" required="true" rowCount="" sqlTabName="ogb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Before-Tax Amount" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ogb14t" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="ogb_file.ogb14t" notNull="true" posX="68" posY="0" required="true" rowCount="" sqlTabName="ogb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="With-Tax Amt" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ogb1013" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="ogb_file.ogb1013" posX="81" posY="0" rowCount="" sqlTabName="ogb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Before-Tax Invoiced" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

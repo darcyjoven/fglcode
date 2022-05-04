@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{bcbf25d9-0000-4000-b38e-39eb331bb060}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_luf" order="" uid="{96cfff0d-0000-4000-b7fa-b39674f58e52}" where="">
+    <RecordField colName="luf03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="luf_file.luf03" sqlTabName="luf_file" sqlType="VARCHAR" table_alias_name="" uid="{e56c1784-0000-4000-9d25-baa8766dcef3}"/>
+    <RecordField colName="" fieldIdRef="2" name="tqa02" sqlTabName="" table_alias_name="" uid="{a45d6a44-0000-4000-8ca4-30ce4e2ab43b}"/>
+    <RecordField colName="luf04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="luf_file.luf04" sqlTabName="luf_file" sqlType="VARCHAR" table_alias_name="" uid="{2b521c6f-0000-4000-8b4e-f79bce757637}"/>
+    <RecordField colName="" fieldIdRef="4" name="geo02" sqlTabName="" table_alias_name="" uid="{55ae83c5-0000-4000-b915-6b360557be71}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2a7f1920-0000-4000-942c-c879ba78095b}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{848aa2f7-0000-4000-b3f2-0b22f53fbc31}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="113" lstrtext="false" name="almt3101" spacing="normal" text="almt3101">
+    <VBox gridHeight="14" gridWidth="56" name="vb3" posX="14" posY="2">
+      <Folder gridHeight="8" gridWidth="56" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Table gridHeight="7" gridWidth="53" name="s_luf" posX="1" posY="0" totalRows="5">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="luf03" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom.png" lstrcomment="false" lstrtitle="false" name="luf_file.luf03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="luf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Brand Doc.No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="tqa02" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Brand Name" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="luf04" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom.png" lstrcomment="false" lstrtitle="false" name="luf_file.luf04" notNull="true" posX="24" posY="0" required="true" rowCount="" sqlTabName="luf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Pla.O.DocNo." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="geo02" noEntry="true" posX="37" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Pla.O.Name" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="4" gridWidth="56" lstrcomment="false" name="gr1" posX="0" posY="9">
+        <HLine gridWidth="5" name="hl1" posX="1" posY="1"/>
+        <Label posX="7" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="idx" noEntry="true" posX="13" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="8" name="hl2" posX="21" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

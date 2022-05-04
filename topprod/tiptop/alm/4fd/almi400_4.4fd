@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f17612e1-0000-4000-bdbe-c4a3767da9fd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_lny" order="" uid="{d707b5ce-0000-4000-a7e4-7b1e4a03bf53}" where="">
+    <RecordField colName="lny03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lny_file.lny03" sqlTabName="lny_file" sqlType="SMALLINT" table_alias_name="" uid="{008f470c-0000-4000-887c-140ec9c7250f}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="tqa02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{150dd4a3-0000-4000-abc3-aa543c50520d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{631fb978-0000-4000-b62f-0dc865dd78ad}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{896e6fcc-0000-4000-ab63-ded9054e8fb8}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="240" lstrtext="false" name="almi400_4" spacing="normal" text="almi400_4">
+    <VBox gridHeight="14" gridWidth="61" name="vb5" posX="3" posY="0">
+      <Folder gridHeight="9" gridWidth="61" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Main" text="Other Brand">
+          <Table gridHeight="7" gridWidth="53" name="s_lny" posX="1" posY="1" totalRows="5">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lny03" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom.png" lstrcomment="false" lstrtitle="false" name="lny_file.lny03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="lny_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Brand No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtitle="false" name="tqa02" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Brand Name" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="61" lstrcomment="false" name="gr1" posX="0" posY="10">
+        <HLine gridWidth="4" name="hl1" posX="2" posY="0"/>
+        <Label posX="7" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="cnt" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="6" name="hl2" posX="21" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

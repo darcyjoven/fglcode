@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{140da68c-0000-4000-837b-affa3d92075a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_geu" order="" uid="{a7028063-0000-4000-8369-ab15f91a51fb}" where="">
+    <RecordField colName="geu00" fieldIdRef="1" fieldType="TABLE_COLUMN" name="geu_file.geu00" sqlTabName="geu_file" sqlType="VARCHAR" table_alias_name="" uid="{e71f83d3-0000-4000-8dec-6255031db0ff}"/>
+    <RecordField colName="geu01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="geu_file.geu01" sqlTabName="geu_file" sqlType="VARCHAR" table_alias_name="" uid="{61bee38c-0000-4000-946c-854a0a4e2d07}"/>
+    <RecordField colName="geu02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="geu_file.geu02" sqlTabName="geu_file" sqlType="VARCHAR" table_alias_name="" uid="{3c120a1a-0000-4000-a77d-506939023d23}"/>
+    <RecordField colName="geuacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="geu_file.geuacti" sqlTabName="geu_file" sqlType="VARCHAR" table_alias_name="" uid="{5b339c67-0000-4000-b1e6-e131b83e613f}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8bd96436-0000-4000-b893-29d82cbceb88}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{2a5662a9-0000-4000-9eac-9b6b32ed8f56}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="73" name="aooi600" spacing="normal" text="aooi600">
+    <VBox gridHeight="18" gridWidth="70" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="70" lstrcomment="false" name="pc859" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Common Data">
+          <Table gridHeight="12" gridWidth="68" lstrcomment="false" name="s_geu" posX="0" posY="0" totalRows="10">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geu00" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" items="Data Center, Forecast Center, Order Center, Purchase Center, Credit Controller Center, Account Center, Funds Center, Deliver Center" lstrcomment="false" lstrtitle="false" name="geu_file.geu00" notNull="true" posX="0" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="geu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="AXD Category" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Data Center"/>
+              <Item lstrtext="false" name="2" text="Forecast Center"/>
+              <Item lstrtext="false" name="3" text="Order Center"/>
+              <Item lstrtext="false" name="4" text="Purchase Center"/>
+              <Item lstrtext="false" name="5" text="Credit Controller Center"/>
+              <Item lstrtext="false" name="6" text="Account Center"/>
+              <Item lstrtext="false" name="7" text="Funds Center"/>
+              <Item lstrtext="false" name="8" text="Deliver Center"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geu01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="geu_file.geu01" notNull="true" posX="25" posY="0" required="true" rowCount="" sqlTabName="geu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="AXD Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geu02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="geu_file.geu02" posX="35" posY="0" rowCount="" sqlTabName="geu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="AXD Name" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geuacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="geu_file.geuacti" notNull="true" posX="55" posY="0" required="true" rowCount="" sqlTabName="geu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="70" lstrcomment="false" name="gr4671" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1468" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1469" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

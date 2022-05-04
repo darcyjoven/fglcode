@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{1f17464d-0000-4000-b7dd-1608e6ae42c9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{49ff435e-0000-4000-b311-00f29d4e8d93}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bge02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d099576f-0000-4000-a6c2-2fc65fcc98f9}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="bge01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3ad6ba4e-0000-4000-8761-175e64428b3e}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="bge03" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{637792d4-0000-4000-9868-3a22122d685a}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{4004fb66-0000-4000-aa37-a8d17883da01}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{28daf275-0000-4000-960c-56cad19f5eae}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="66" name="abgr050" spacing="normal" text="abgr050">
+    <VBox gridHeight="13" gridWidth="64" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="9" gridWidth="64" lstrcomment="false" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="62" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Department No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bge02" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="5" gridWidth="62" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="INPUT">
+          <Label posX="1" posY="1" text="Version"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bge01" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bge03" posX="17" posY="2" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Print"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" items="Direct, Indirect, Direct/Indirect Tot" lstrcomment="false" lstrtitle="false" name="a" notNull="true" posX="17" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+            <Item name="1" text="Direct"/>
+            <Item name="2" text="Indirect"/>
+            <Item name="3" text="Direct/Indirect Tot"/>
+          </ComboBox>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="64" lstrcomment="false" name="Grid2" posX="0" posY="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Ohter conditionto print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{69f31809-0000-4000-bb01-640296414721}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ske" order="" uid="{a49df4fd-0000-4000-99d1-94d89e479685}" where="">
+    <RecordField colName="ske02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ske_file.ske02" sqlTabName="ske_file" sqlType="SMALLINT" table_alias_name="" uid="{60522501-0000-4000-ab25-705bbbb89dc3}"/>
+    <RecordField colName="ske03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ske_file.ske03" sqlTabName="ske_file" sqlType="SMALLINT" table_alias_name="" uid="{35755cf0-0000-4000-8634-0736ea985a6e}"/>
+    <RecordField colName="ske04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ske_file.ske04" sqlTabName="ske_file" sqlType="VARCHAR" table_alias_name="" uid="{fd21ce90-0000-4000-a9b9-fa6f35c5700b}"/>
+    <RecordField colName="ske05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ske_file.ske05" sqlTabName="ske_file" sqlType="VARCHAR" table_alias_name="" uid="{d9300d14-0000-4000-81d2-b4753118955b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bc112598-0000-4000-a510-83a07d5ae721}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f13897a9-0000-4000-9b7e-40be493f7c6c}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="139" name="aski001_5" spacing="normal" text="aski001_5">
+    <VBox gridHeight="18" gridWidth="134" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="134" lstrcomment="false" name="pc1599" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="130" lstrcomment="false" name="s_ske" posX="0" posY="0" totalRows="10">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ske02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="" lstrcomment="false" lstrtitle="false" name="ske_file.ske02" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="ske_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Explain Type" widget="ComboBox"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ske03" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="27" lstrcomment="false" lstrtitle="false" name="ske_file.ske03" notNull="true" posX="15" posY="0" rowCount="" sqlTabName="ske_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Explain No." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ske04" columnCount="" comment="No blank Field!" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="ske_file.ske04" posX="42" posY="0" rowCount="" sqlTabName="ske_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Explain Content" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ske05" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Not Report, Befor Report, After Report" lstrcomment="false" lstrtitle="false" name="ske_file.ske05" notNull="true" posX="102" posY="0" rowCount="" sqlTabName="ske_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Mimeograph" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Not Report"/>
+              <Item lstrtext="false" name="1" text="Befor Report"/>
+              <Item lstrtext="false" name="2" text="After Report"/>
+            </ComboBox>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="134" lstrcomment="false" name="gr7902" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl2619" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2620" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

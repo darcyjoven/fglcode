@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{afa40b54-0000-4000-af09-1730c047dd53}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pjw" order="" uid="{66aba5a2-0000-4000-8bda-40a1516c2483}" where="">
+    <RecordField colName="pjw01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pjw_file.pjw01" sqlTabName="pjw_file" sqlType="VARCHAR" table_alias_name="" uid="{6e56618b-0000-4000-8672-d1407292d4c2}"/>
+    <RecordField colName="pjw02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pjw_file.pjw02" sqlTabName="pjw_file" sqlType="VARCHAR" table_alias_name="" uid="{5b2ceda9-0000-4000-b210-ad75dfa5c541}"/>
+    <RecordField colName="pjw03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pjw_file.pjw03" sqlTabName="pjw_file" sqlType="VARCHAR" table_alias_name="" uid="{820c7582-0000-4000-916f-7783618fc6a1}"/>
+    <RecordField colName="pjw04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pjw_file.pjw04" sqlTabName="pjw_file" sqlType="INTEGER" table_alias_name="" uid="{80e09a09-0000-4000-8fa6-cd924e29673f}"/>
+    <RecordField colName="pjw05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pjw_file.pjw05" sqlTabName="pjw_file" sqlType="INTEGER" table_alias_name="" uid="{464d5e1a-0000-4000-834c-b0380634d2f9}"/>
+    <RecordField colName="pjwacti" defaultValue="Y" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pjw_file.pjwacti" sqlTabName="pjw_file" sqlType="VARCHAR" table_alias_name="" uid="{19794301-0000-4000-b364-3d7f776e27fb}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{22972cf4-0000-4000-8d64-0a6d9a7a0580}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{72707b94-0000-4000-af28-9e0df4e903a0}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="119" lstrtext="false" name="apji600" spacing="normal" text="apji600">
+    <VBox gridHeight="22" gridWidth="94" name="vb1" posX="5" posY="2">
+      <Folder gridHeight="17" gridWidth="94" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page name="Page3" text="Info">
+          <Table gridHeight="14" gridWidth="89" name="tb2" posX="2" posY="1" totalRows="12">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjw01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pjw_file.pjw01" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="pjw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Type No." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjw02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="pjw_file.pjw02" notNull="true" posX="10" posY="0" rowCount="" sqlTabName="pjw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Credit Name" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjw03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" items="Start-End Rule, Estimate Rule, Development Degree Rule, Time Rate Rule" lstrcomment="false" lstrtitle="false" name="pjw_file.pjw03" notNull="true" posX="50" posY="0" rowCount="" sqlTabName="pjw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Category" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Start-End Rule"/>
+              <Item lstrtext="false" name="1" text="Estimate Rule"/>
+              <Item lstrtext="false" name="2" text="Development Degree Rule"/>
+              <Item lstrtext="false" name="3" text="Time Rate Rule"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjw04" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="pjw_file.pjw04" notNull="true" posX="74" posY="0" rowCount="" sqlTabName="pjw_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Start-End Value" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjw05" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="pjw_file.pjw05" notNull="true" posX="77" posY="0" rowCount="" sqlTabName="pjw_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="5" table_alias_name="" title="UCl Value" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjwacti" columnCount="" defaultValue="Y" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="1" lstrcomment="false" lstrtitle="false" name="pjw_file.pjwacti" notNull="true" posX="80" posY="0" rowCount="" sqlTabName="pjw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Valid Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="94" lstrcomment="false" name="gr1" posX="0" posY="18">
+        <HLine gridWidth="6" name="hl1" posX="1" posY="1"/>
+        <Label posX="8" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="cnt" posX="13" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="7" name="hl2" posX="21" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

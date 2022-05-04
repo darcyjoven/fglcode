@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{ff1d1cca-0000-4000-9b50-c0923ccaae7b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{84e8b918-0000-4000-96ce-e7557c6e1247}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="fieldname1" sqlTabName="" table_alias_name="" uid="{8d4a9ad1-0000-4000-b121-7e9783c4a8b9}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="fieldname2" sqlTabName="" table_alias_name="" uid="{de77230b-0000-4000-bc3f-22dc28ec25fe}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="logicope" sqlTabName="" table_alias_name="" uid="{67293247-0000-4000-b385-54edd10407da}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="conditions" sqlTabName="" table_alias_name="" uid="{c6fc14f5-0000-4000-bec9-4061ef0dac75}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="58" name="q_hisd04" spacing="normal" text="q_hisd04">
+    <VBox gridHeight="14" gridWidth="55" name="VBox1" posX="0" posY="0">
+      <VBox gridHeight="12" gridWidth="55" name="VBox2" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="55" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="1" text="Please input the conditions:">
+          <Grid gridHeight="2" gridWidth="47" lstrcomment="false" name="gr5" posX="1" posY="1">
+            <Label posX="1" posY="0" text="Table1"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Choose the field" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" items="" lstrcomment="false" lstrtitle="false" name="fieldname1" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox"/>
+            <Label posX="24" posY="0" text="= Table2"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Choose the field" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" items="" lstrcomment="false" lstrtitle="false" name="fieldname2" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox"/>
+            <Label posX="1" posY="1" text="logicope"/>
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Choose the logic operator" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" items="AND, OR" lstrcomment="false" lstrtitle="false" name="logicope" notNull="true" orientation="horizontal" posX="10" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="AND" text="AND"/>
+              <Item lstrtext="" name="OR" text="OR"/>
+            </RadioGroup>
+            <Button gridHeight="1" gridWidth="11" lstrcomment="false" lstrtext="false" name="makecond" posX="35" posY="1" tabIndex="" text="Make the conditions"/>
+          </Grid>
+        </Group>
+        <Group gridHeight="6" gridWidth="55" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="5" text="Relateing Conditions">
+          <Grid gridHeight="4" gridWidth="53" lstrcomment="false" name="gr6" posX="1" posY="1">
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="4" gridWidth="50" lstrcomment="false" lstrtitle="false" name="conditions" posX="2" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="NONE" tabIndex="4" table_alias_name="" wantNoReturns="true" widget="TextEdit"/>
+          </Grid>
+        </Group>
+      </VBox>
+    </VBox>
+  </Form>
+</ManagedForm>

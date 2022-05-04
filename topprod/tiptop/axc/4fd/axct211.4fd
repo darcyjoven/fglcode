@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{70526e8e-0000-4000-b8ce-304bea2376df}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_cmi" order="" uid="{bb10608f-0000-4000-adb8-73cb217916d6}" where="">
+    <RecordField colName="cmi05" fieldIdRef="11" fieldType="TABLE_COLUMN" name="cmi_file.cmi05" sqlTabName="cmi_file" sqlType="VARCHAR" table_alias_name="" uid="{a5f013ec-0000-4000-849a-e0b39147851d}"/>
+    <RecordField colName="cmi06" fieldIdRef="12" fieldType="TABLE_COLUMN" name="cmi_file.cmi06" sqlTabName="cmi_file" sqlType="VARCHAR" table_alias_name="" uid="{a1eccab7-0000-4000-a121-c85de122e4a6}"/>
+    <RecordField colName="cmi07" fieldIdRef="13" fieldType="TABLE_COLUMN" name="cmi_file.cmi07" sqlTabName="cmi_file" sqlType="VARCHAR" table_alias_name="" uid="{9dc48c3d-0000-4000-a4c0-fc4b95dbdfca}"/>
+    <RecordField colName="cmi08" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cmi_file.cmi08" sqlTabName="cmi_file" sqlType="DECIMAL" table_alias_name="" uid="{ee2a0b89-0000-4000-a78f-14939069e2f1}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b536a1e1-0000-4000-844e-9bc18c06353c}" where="">
+    <RecordField colName="cmi04" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cmi_file.cmi04" sqlTabName="cmi_file" sqlType="VARCHAR" table_alias_name="" uid="{4b1c6545-0000-4000-8c78-a4c7a4fcd1a9}"/>
+    <RecordField colName="cmi00" fieldIdRef="6" fieldType="TABLE_COLUMN" name="cmi_file.cmi00" sqlTabName="cmi_file" sqlType="VARCHAR" table_alias_name="" uid="{258816f3-0000-4000-913a-2ddfcae87642}"/>
+    <RecordField colName="cmi01" fieldIdRef="7" fieldType="TABLE_COLUMN" name="cmi_file.cmi01" sqlTabName="cmi_file" sqlType="SMALLINT" table_alias_name="" uid="{401321e5-0000-4000-9d6a-cef3517d963d}"/>
+    <RecordField colName="cmi02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="cmi_file.cmi02" sqlTabName="cmi_file" sqlType="SMALLINT" table_alias_name="" uid="{8415a950-0000-4000-b891-fe0a65ac6aaa}"/>
+    <RecordField colName="cmi03" fieldIdRef="9" fieldType="TABLE_COLUMN" name="cmi_file.cmi03" sqlTabName="cmi_file" sqlType="VARCHAR" table_alias_name="" uid="{30788327-0000-4000-a6e9-d32b8d92e617}"/>
+    <RecordField colName="cmi12" fieldIdRef="10" fieldType="TABLE_COLUMN" name="cmi_file.cmi12" sqlTabName="cmi_file" sqlType="VARCHAR" table_alias_name="" uid="{42172697-0000-4000-a758-56c73075c83c}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{db81ca88-0000-4000-b67b-11a00dd59b9f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{acff4822-0000-4000-8a8c-96b2c2607b3e}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cmi08_tot" sqlTabName="" table_alias_name="" uid="{dc8f3d46-0000-4000-9899-ee1c46f782b7}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="86" name="axct211" spacing="normal" text="axct211">
+    <VBox gridHeight="27" gridWidth="85" name="vb6" posX="1" posY="0">
+      <Folder gridHeight="6" gridWidth="85" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <HBox gridHeight="4" gridWidth="84" name="hb4" posX="1" posY="0">
+            <Grid gridHeight="4" gridWidth="40" lstrcomment="false" name="gr1782" posX="2" posY="0">
+              <Label posX="1" posY="0" text="Cate"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi04" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Labor, Overhead 1, Overhead 2, Overhead 3, Overhead 4, Overhead 5" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi04" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="cmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="1" text="Labor"/>
+                <Item lstrtext="false" name="2" text="Overhead 1"/>
+                <Item lstrtext="false" name="3" text="Overhead 2"/>
+                <Item lstrtext="false" name="4" text="Overhead 3"/>
+                <Item lstrtext="false" name="5" text="Overhead 4"/>
+                <Item lstrtext="false" name="6" text="Overhead 5"/>
+              </ComboBox>
+              <Label posX="1" posY="1" text="Book No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi00" columnCount="" comment="&lt;^P&gt;Qry Department" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi00" notNull="true" posX="22" posY="1" repeat="false" required="true" rowCount="" sqlTabName="cmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+            </Grid>
+            <Grid gridHeight="4" gridWidth="40" lstrcomment="false" name="gr1781" posX="42" posY="0">
+              <Label posX="1" posY="0" text="Year"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi01" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="cmi_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="27" posY="0" text="/"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi02" notNull="true" posX="29" posY="0" required="true" rowCount="" sqlTabName="cmi_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="1" text="Wrk.Cntr"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi03" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi03" posX="22" posY="1" rowCount="" sqlTabName="cmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Allocation Method"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi12" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Actual Labor Hours, Standard Labor Hours, Standard Machine Hours, Output Qty * Distribution Ratio, Actual Machine Hours" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi12" notNull="true" posX="22" posY="2" repeat="false" required="true" rowCount="" sqlTabName="cmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="1" text="Actual Labor Hours"/>
+                <Item lstrtext="false" name="2" text="Standard Labor Hours"/>
+                <Item lstrtext="false" name="3" text="Standard Machine Hours"/>
+                <Item lstrtext="false" name="4" text="Output Qty * Distribution Ratio"/>
+                <Item lstrtext="false" name="5" text="Actual Machine Hours"/>
+              </ComboBox>
+            </Grid>
+          </HBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="85" lstrcomment="false" name="s_cmi" posX="0" posY="7" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi05" columnCount="" comment="&lt;^P&gt;Qry Account  MISC Represent Others  EXP Represent Curr Overhead Cost" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi05" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="cmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Acct No." widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi06" columnCount="" comment="&lt;^P&gt;Qry Department Account" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" image="zoom" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi06" posX="10" posY="0" rowCount="" sqlTabName="cmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Dept" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi07" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi07" posX="16" posY="0" rowCount="" sqlTabName="cmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Name/Desc" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmi08" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="cmi_file.cmi08" posX="44" posY="0" rowCount="" sqlTabName="cmi_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Curr Transaction Amt" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="7" gridWidth="85" lstrcomment="false" name="gr1783" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl588" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl589" posX="38" posY="0"/>
+        <Label posX="50" posY="0" text="Total"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cmi08_tot" noEntry="true" posX="63" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <Group gridHeight="3" gridWidth="67" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="2">
+          <Label gridHeight="1" gridWidth="57" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="NOTE: The Processing pay in the W/O must be deduct"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{09fc1f8c-0000-4000-93f1-d1c9ada5ded1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8795fcd0-0000-4000-98bb-a7af2273ed19}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="rme01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f3ccb699-0000-4000-a795-4c14b7cc501d}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="rme02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{2f9799f7-0000-4000-a33b-bdc0155d36bd}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="rme03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{19d0a93a-0000-4000-ad12-f827bfeb2642}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="footer" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f706926a-0000-4000-a13b-bf4e986fa884}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="rdare" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d97eb1cd-0000-4000-9572-5ab35a19f014}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="rme021" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{89372064-0000-4000-9d3b-f9351f4a14e3}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="spec" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6c089e6e-0000-4000-89ba-9480db85ae66}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="misc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ed7891e4-0000-4000-a5c4-d1eee08d4dc7}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{66cb24fb-0000-4000-b8e7-22f6594f1784}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="59" name="armr160" spacing="normal" text="armr160">
+    <VBox gridHeight="18" gridWidth="57" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="14" gridWidth="57" lstrcomment="false" name="gr332" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="56" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="RMA Re-Delivery No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rme01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Document Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rme02" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Customer No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="rme03" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="56" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="INPUT">
+          <Label posX="1" posY="1" text="Print Memo"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="footer" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="5" gridWidth="56" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="8">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtext="false" lstrtitle="false" name="rdare" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Update Re-delivery Date" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="rme021" posX="33" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtext="false" lstrtitle="false" name="spec" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Print Part Name Spec" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtext="false" lstrtitle="false" name="misc" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Print MISC Item" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="57" lstrcomment="false" name="gr333" posX="0" posY="15">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

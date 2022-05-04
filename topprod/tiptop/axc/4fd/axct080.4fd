@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ff9d91db-0000-4000-b2aa-eea5b3d3b1d4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_srm" order="" uid="{8685e119-0000-4000-aa8e-c274143199d5}" where="">
+    <RecordField colName="srm03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="srm_file.srm03" sqlTabName="srm_file" sqlType="VARCHAR" table_alias_name="" uid="{79755daa-0000-4000-9252-d475b01ca191}"/>
+    <RecordField colName="" fieldIdRef="6" name="ima02" sqlTabName="" table_alias_name="" uid="{a1623054-0000-4000-abaa-b0a08e76a97e}"/>
+    <RecordField colName="" fieldIdRef="7" name="ima021" sqlTabName="" table_alias_name="" uid="{1020f749-0000-4000-a0b6-fd51451423cd}"/>
+    <RecordField colName="" fieldIdRef="8" name="ima55" sqlTabName="" table_alias_name="" uid="{a84eb2a8-0000-4000-8b0a-c55276c159b0}"/>
+    <RecordField colName="srm04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="srm_file.srm04" sqlTabName="srm_file" sqlType="DECIMAL" table_alias_name="" uid="{a52ae4fa-0000-4000-aea7-fde04d303e26}"/>
+    <RecordField colName="srm05" fieldIdRef="10" fieldType="TABLE_COLUMN" name="srm_file.srm05" sqlTabName="srm_file" sqlType="DECIMAL" table_alias_name="" uid="{a2c17bb5-0000-4000-ba00-56b7040a90bf}"/>
+    <RecordField colName="srm06" fieldIdRef="11" fieldType="TABLE_COLUMN" name="srm_file.srm06" sqlTabName="srm_file" sqlType="DECIMAL" table_alias_name="" uid="{2604c7bc-0000-4000-8bfd-5d1561e3f767}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{a47799dd-0000-4000-aae8-2047334191ad}" where="">
+    <RecordField colName="srm01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="srm_file.srm01" sqlTabName="srm_file" sqlType="SMALLINT" table_alias_name="" uid="{0c672b52-0000-4000-8a8b-bfadd89c6489}"/>
+    <RecordField colName="srm02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="srm_file.srm02" sqlTabName="srm_file" sqlType="SMALLINT" table_alias_name="" uid="{ccf52641-0000-4000-8c0f-aa46ba5c4127}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ddd1aa3d-0000-4000-bb1c-8a34ced4a72d}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{c7a534c2-0000-4000-90cb-7c461453d305}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="133" name="axct080" spacing="normal" text="axct080">
+    <VBox gridHeight="20" gridWidth="130" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="4" gridWidth="130" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="11" lstrcomment="false" name="gr1760" posX="0" posY="0">
+            <Label posX="1" posY="0" text="YY"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srm01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="srm_file.srm01" posX="6" posY="0" rowCount="" sqlTabName="srm_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="MM"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srm02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="srm_file.srm02" posX="6" posY="1" rowCount="" sqlTabName="srm_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="130" lstrcomment="false" name="s_srm" posX="0" posY="5" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srm03" columnCount="" comment="Assign Add/Query Item#" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="srm_file.srm03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="srm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Product No" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="P/N" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima021" noEntry="true" posX="40" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Spec" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="ima55" noEntry="true" posX="60" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Unit" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srm04" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="srm_file.srm04" posX="65" posY="0" rowCount="" sqlTabName="srm_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Qty" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srm05" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="srm_file.srm05" posX="82" posY="0" rowCount="" sqlTabName="srm_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Labor Completion%" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srm06" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="srm_file.srm06" posX="100" posY="0" rowCount="" sqlTabName="srm_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Overhead Completion%" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="130" lstrcomment="false" name="gr1761" posX="0" posY="17">
+        <HLine gridWidth="10" name="hl576" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl577" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

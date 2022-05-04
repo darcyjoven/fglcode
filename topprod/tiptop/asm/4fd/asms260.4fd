@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{91f94b9a-0000-4000-aa65-1e1a3462618a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{101fbc3e-0000-4000-9e7a-7097674e55f5}" where="">
+    <RecordField colName="sma21" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sma_file.sma21" sqlTabName="sma_file" sqlType="DATE" table_alias_name="" uid="{5ea3fe70-0000-4000-b888-027fda3fa0b6}"/>
+    <RecordField colName="sma22" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sma_file.sma22" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{28339e6c-0000-4000-a716-923550d7d84f}"/>
+    <RecordField colName="sma56" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sma_file.sma56" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{5131e76b-0000-4000-9451-a1c527ee6b86}"/>
+    <RecordField colName="sma57" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sma_file.sma57" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{dfd9ce1e-0000-4000-a61d-89c7db844e8b}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="sma1301" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{64000336-0000-4000-bd05-4b4980d56f23}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="sma1302" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{df54d9df-0000-4000-b852-a3364b425bcf}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="83" name="asms260" spacing="normal" text="asms260">
+    <Folder gridHeight="26" gridWidth="67" lstrcomment="false" name="pc204" posX="2" posY="1">
+      <Page lstrtext="false" name="page01" text="Main">
+        <Grid gridHeight="25" gridWidth="67" lstrcomment="false" name="gr922" posX="0" posY="0">
+          <Group gridHeight="3" gridWidth="64" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Last date Simulating MRP"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma21" columnCount="" comment="This Para will be Auto set by MRP Simulation Task (No Amendment)" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sma_file.sma21" noEntry="true" posX="28" posY="1" rowCount="" sqlTabName="sma_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Group>
+          <Group gridHeight="7" gridWidth="64" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="Planned Order &amp; W/O Time Bucket">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma22" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="43" items="No Time Bucket (By Row), Time Bucket by Day(Daily Summary), Time Bucket by Week(Weekly Summary), Time Bucket by 10-Day (10-Day Summary), Time Bucket by Month(Daily Summary)" lstrcomment="false" lstrtitle="false" name="sma_file.sma22" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="No Time Bucket (By Row)"/>
+              <Item lstrtext="" name="2" text="Time Bucket by Day(Daily Summary)"/>
+              <Item lstrtext="" name="3" text="Time Bucket by Week(Weekly Summary)"/>
+              <Item lstrtext="" name="4" text="Time Bucket by 10-Day (10-Day Summary)"/>
+              <Item lstrtext="" name="5" text="Time Bucket by Month(Daily Summary)"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="5" gridWidth="64" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="10" text="Consider P/R Qty to MRP Simulation">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma56" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="43" items="All As Supply Qty, Approved as Supply Qty, All Not As Supply Qty" lstrcomment="false" lstrtitle="false" name="sma_file.sma56" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="All As Supply Qty"/>
+              <Item lstrtext="" name="2" text="Approved as Supply Qty"/>
+              <Item lstrtext="" name="3" text="All Not As Supply Qty"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="4" gridWidth="64" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="15" text="Consider P/O Qty to MRP Simulation">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma57" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="43" items="All As Supply Qty, Approved as Supply Qty " lstrcomment="false" lstrtitle="false" name="sma_file.sma57" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="All As Supply Qty"/>
+              <Item lstrtext="" name="2" text="Approved as Supply Qty "/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="6" gridWidth="64" lstrcomment="false" lstrtext="false" name="gb5" posX="1" posY="19" text="MRP">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="2" gridWidth="20" items="No Amortization, Amortization" lstrcomment="false" name="sma1301" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="false" name="0" text="No Amortization"/>
+              <Item lstrtext="false" name="1" text="Amortization"/>
+            </RadioGroup>
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="2" gridWidth="43" items="Amortization For From/To Date, Amortization For From/To Date(Integer)" lstrcomment="false" name="sma1302" posX="4" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="false" name="1" text="Amortization For From/To Date"/>
+              <Item lstrtext="false" name="2" text="Amortization For From/To Date(Integer)"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

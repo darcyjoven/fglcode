@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{40449495-0000-4000-b453-89071d369986}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gaj" order="" uid="{5f1f3055-0000-4000-8078-a375a8705839}" where="">
+    <RecordField colName="gaj12" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gaj_file.gaj12" sqlTabName="gaj_file" sqlType="VARCHAR" table_alias_name="" uid="{6f18ba25-0000-4000-b526-3a065b401aaa}"/>
+    <RecordField colName="gaj02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gaj_file.gaj02" sqlTabName="gaj_file" sqlType="VARCHAR" table_alias_name="" uid="{00022fdb-0000-4000-b320-714c6a41abca}"/>
+    <RecordField colName="gaj03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gaj_file.gaj03" sqlTabName="gaj_file" sqlType="VARCHAR" table_alias_name="" uid="{702e741b-0000-4000-a81f-71a6f27da0dd}"/>
+    <RecordField colName="gaj04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gaj_file.gaj04" sqlTabName="gaj_file" sqlType="VARCHAR" table_alias_name="" uid="{b4bc76d4-0000-4000-8dc5-f1847d6e61fe}"/>
+    <RecordField colName="gaj05" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gaj_file.gaj05" sqlTabName="gaj_file" sqlType="VARCHAR" table_alias_name="" uid="{a180fdc0-0000-4000-a6aa-63b38202e228}"/>
+    <RecordField colName="gaj06" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gaj_file.gaj06" sqlTabName="gaj_file" sqlType="VARCHAR" table_alias_name="" uid="{3130c4e8-0000-4000-865b-1a20e38cfcc1}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{cd3a831f-0000-4000-8941-16246ddc4b1f}" where="">
+    <RecordField colName="gaj01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gaj_file.gaj01" sqlTabName="gaj_file" sqlType="VARCHAR" table_alias_name="" uid="{15a0d282-0000-4000-99d3-0e4b5c2c058f}"/>
+    <RecordField colName="gaz03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{29643cff-0000-4000-a959-8c1bd4246260}"/>
+    <RecordField colName="gaj11" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gaj_file.gaj11" sqlTabName="gaj_file" sqlType="VARCHAR" table_alias_name="" uid="{ee0d48cb-0000-4000-bd21-c2de69e72a6b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{58065ce9-0000-4000-a062-c86898f3df17}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cnt2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3265e1aa-0000-4000-ac3e-56e04c4bc4e7}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="115" name="p_perright" spacing="normal" text="p_perright">
+    <VBox gridHeight="22" gridWidth="113" name="vb3" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="113" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="6" gridWidth="50" lstrcomment="false" name="gr3260" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="49" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Program">
+              <Label posX="1" posY="1" text="Form ID"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaj01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gaj_file.gaj01" posX="15" posY="1" required="true" rowCount="" sqlTabName="gaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Window Title"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="33" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz03" noEntry="true" posX="15" posY="2" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Industry"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaj11" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="" lstrcomment="false" name="gaj_file.gaj11" notNull="true" posX="15" posY="3" rowCount="" sqlTabName="gaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="ComboBox"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="113" lstrcomment="false" name="s_gaj" posX="0" posY="8" totalRows="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaj12" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="gaj_file.gaj12" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="HideData" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaj02" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" lstrcomment="false" lstrtitle="false" name="gaj_file.gaj02" notNull="true" posX="13" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Field Name" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaj03" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gaj_file.gaj03" posX="26" posY="0" rowCount="" scroll="true" sqlTabName="gaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Visible Group" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaj04" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gaj_file.gaj04" posX="46" posY="0" rowCount="" scroll="true" sqlTabName="gaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Hide Group" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaj05" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gaj_file.gaj05" posX="66" posY="0" rowCount="" scroll="true" sqlTabName="gaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Visible User" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaj06" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gaj_file.gaj06" posX="86" posY="0" rowCount="" scroll="true" sqlTabName="gaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Hide User" widget="ButtonEdit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="113" lstrcomment="false" name="gr3261" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl1152" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1153" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

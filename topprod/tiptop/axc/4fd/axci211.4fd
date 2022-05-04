@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{58740fba-0000-4000-a622-bb3f88032d44}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_cmc" order="" uid="{e64557fc-0000-4000-a1d6-f81fd2691637}" where="">
+    <RecordField colName="cmc03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="cmc_file.cmc03" sqlTabName="cmc_file" sqlType="DATE" table_alias_name="" uid="{22fde00d-0000-4000-8633-f99b1bc03c09}"/>
+    <RecordField colName="cmc04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="cmc_file.cmc04" sqlTabName="cmc_file" sqlType="DECIMAL" table_alias_name="" uid="{30ea7e04-0000-4000-9fd9-4fdca35ffa0d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{144f9d76-0000-4000-b03a-37d7c4b871c4}" where="">
+    <RecordField colName="cmc021" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cmc_file.cmc021" sqlTabName="cmc_file" sqlType="SMALLINT" table_alias_name="" uid="{9afb69f2-0000-4000-bd5a-d2b875957f7f}"/>
+    <RecordField colName="cmc022" fieldIdRef="3" fieldType="TABLE_COLUMN" name="cmc_file.cmc022" sqlTabName="cmc_file" sqlType="SMALLINT" table_alias_name="" uid="{44a7bd84-0000-4000-8100-ef4ac8d39c0d}"/>
+    <RecordField colName="cmc01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="cmc_file.cmc01" sqlTabName="cmc_file" sqlType="VARCHAR" table_alias_name="" uid="{aacc1f32-0000-4000-b79a-f7dc6b7c30e1}"/>
+    <RecordField colName="cmc02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="cmc_file.cmc02" sqlTabName="cmc_file" sqlType="DATE" table_alias_name="" uid="{686fc582-0000-4000-954b-452c2ae571b8}"/>
+    <RecordField colName="cmc07" fieldIdRef="6" fieldType="TABLE_COLUMN" name="cmc_file.cmc07" sqlTabName="cmc_file" sqlType="VARCHAR" table_alias_name="" uid="{829ba0f2-0000-4000-8ce0-e14b6c773a45}"/>
+    <RecordField colName="cmc08" fieldIdRef="7" fieldType="TABLE_COLUMN" name="cmc_file.cmc08" sqlTabName="cmc_file" sqlType="VARCHAR" table_alias_name="" uid="{cfec427e-0000-4000-8ad8-a90cb2daf7d4}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{60d3f21d-0000-4000-b86c-1ee51be72d79}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{e77cad45-0000-4000-bd76-6759e29bd8ae}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="87" name="axci211" spacing="normal" text="axci211">
+    <VBox gridHeight="22" gridWidth="78" name="vb8" posX="3" posY="0">
+      <Folder gridHeight="9" gridWidth="78" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="7" gridWidth="77" lstrcomment="false" name="gr1462" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmc021" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cmc_file.cmc021" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="cmc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Month"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmc022" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cmc_file.cmc022" notNull="true" posX="11" posY="1" required="true" rowCount="" sqlTabName="cmc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Item No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmc01" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" lstrcomment="false" name="cmc_file.cmc01" notNull="true" posX="11" posY="2" required="true" rowCount="" sqlTabName="cmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="34" posY="2" text="Calculation Base Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmc02" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" name="cmc_file.cmc02" posX="57" posY="2" rowCount="" sqlTabName="cmc_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="3" text="Method"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmc07" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Monthly Weighted Unit Cost, FIFO Cost, Identify Manually Batch Cost, Identify Manually Item Cost, Identify Manually Store Profit Center" lstrcomment="false" lstrtitle="false" name="cmc_file.cmc07" notNull="true" posX="11" posY="3" repeat="false" required="true" rowCount="" sqlTabName="cmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Monthly Weighted Unit Cost"/>
+              <Item lstrtext="false" name="2" text="FIFO Cost"/>
+              <Item lstrtext="false" name="3" text="Identify Manually Batch Cost"/>
+              <Item lstrtext="false" name="4" text="Identify Manually Item Cost"/>
+              <Item lstrtext="false" name="5" text="Identify Manually Store Profit Center"/>
+            </ComboBox>
+            <Label posX="1" posY="4" text="Category"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmc08" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" image="zoom.png" lstrcomment="false" lstrtitle="false" name="cmc_file.cmc08" notNull="true" posX="11" posY="4" repeat="false" required="true" rowCount="" sqlTabName="cmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="9" gridWidth="78" lstrcomment="false" name="s_cmc" posX="0" posY="10" totalRows="7">
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmc03" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="cmc_file.cmc03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="cmc_file" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Transaction Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cmc04" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="cmc_file.cmc04" posX="13" posY="0" rowCount="" sqlTabName="cmc_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Quantity" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="78" lstrcomment="false" name="gr1464" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl532" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl533" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

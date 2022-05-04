@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{27581b3e-0000-4000-8bd4-b30cb7257110}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8bd7a577-0000-4000-8f05-01f213f787a7}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="only_one" sqlTabName="" table_alias_name="" uid="{666df251-0000-4000-932f-23bafd3e2497}"/>
+    <RecordField colName="npl01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="npl_file.npl01" sqlTabName="npl_file" sqlType="VARCHAR" table_alias_name="" uid="{a4cdb689-0000-4000-a87f-fd16ea81f99e}"/>
+    <RecordField colName="npl02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="npl_file.npl02" sqlTabName="npl_file" sqlType="DATE" table_alias_name="" uid="{ba866499-0000-4000-98cd-2eecac7d90ae}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="48" name="anmt1509" spacing="normal" text="Generate Entry">
+    <VBox gridHeight="11" gridWidth="46" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="9" gridWidth="46" lstrcomment="false" name="gr4460" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="45" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Condition">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" items="Generate this Accounts only, Generate by QBE Condition" lstrcomment="false" lstrtitle="false" name="only_one" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="" name="1" text="Generate this Accounts only"/>
+            <Item lstrtext="" name="2" text="Generate by QBE Condition"/>
+          </RadioGroup>
+        </Group>
+        <Group gridHeight="5" gridWidth="45" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="QBE">
+          <Label gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" name="dummy" posX="1" posY="1" text="Enter Accounts Condition to generate entry sheet:"/>
+          <Label posX="1" posY="2" text="Document No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npl01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npl_file.npl01" posX="23" posY="2" rowCount="" sqlTabName="npl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Document date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npl02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npl_file.npl02" posX="23" posY="3" rowCount="" sqlTabName="npl_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{90256332-887e-421d-af57-905b09310266}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{042a4dcb-0503-4d43-b5d4-e86b20f8b895}" where="">
+    <RecordField colName="" fieldIdRef="5" name="yy" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{e79f08a8-f6ee-4a40-abb0-78a683793f48}"/>
+    <RecordField colName="" fieldIdRef="6" name="bm" sqlTabName="" table_alias_name="" uid="{aeef6ae5-78f9-4b41-9924-c45fda106d41}"/>
+    <RecordField colName="" fieldIdRef="7" name="em" sqlTabName="" table_alias_name="" uid="{2b88ce53-9c04-4e7f-b38c-4f3ded692c47}"/>
+    <RecordField colName="axf16" fieldIdRef="2" fieldType="TABLE_COLUMN" name="axf_file.axf16" sqlTabName="axf_file" sqlType="VARCHAR" table_alias_name="" uid="{9a5d1c6b-95ff-4de3-abca-44b03ed77edc}"/>
+    <RecordField colName="axf09" fieldIdRef="3" fieldType="TABLE_COLUMN" name="axf_file.axf09" sqlTabName="axf_file" sqlType="VARCHAR" table_alias_name="" uid="{341585b8-f996-470e-9f43-4e70b29e90bc}"/>
+    <RecordField colName="axf10" fieldIdRef="4" fieldType="TABLE_COLUMN" name="axf_file.axf10" sqlTabName="axf_file" sqlType="VARCHAR" table_alias_name="" uid="{4fd565f9-6818-4fd6-b8ae-8c1b83ed2d71}"/>
+    <RecordField colName="" defaultValue="c" fieldIdRef="9" name="g_chr" sqlTabName="" sqlType="CHAR" table_alias_name="" uid="{e9219913-745e-4cb6-a7cd-b89bebdd742a}"/>
+    <RecordField colName="axf13" fieldIdRef="1" fieldType="TABLE_COLUMN" name="axf_file.axf13" sqlTabName="axf_file" sqlType="VARCHAR" table_alias_name="" uid="{45953855-104f-4191-bd25-02a301a2db54}"/>
+    <RecordField colName="" fieldIdRef="8" name="more" sqlTabName="" sqlType="CHAR" table_alias_name="" uid="{4ab84566-db8f-4ff4-89dc-25f8c96952d3}"/>
+    <RecordField colName="axb04" fieldIdRef="10" fieldType="TABLE_COLUMN" name="axb_file.axb04" sqlTabName="axb_file" sqlType="VARCHAR" table_alias_name="" uid="{9b558cc6-0d83-4d08-9aa1-08bfd2832832}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="Form" text="Form">
+    <Grid gridHeight="19" gridWidth="57" name="Grid1" posX="6" posY="2">
+      <Group gridHeight="5" gridWidth="53" name="Group3" posX="1" posY="1" text="Report Item">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="c" fieldId="9" gridHeight="3" gridWidth="41" items="Transaction Details for Affiliates in Consolidate Reports, Offset A/C Transaction Code, Locking Date" name="g_chr" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="RadioGroup1" widget="RadioGroup">
+          <Item lstrtext="false" name="1" text="Transaction Details for Affiliates in Consolidate Reports"/>
+          <Item lstrtext="false" name="2" text="Offset A/C Transaction Code"/>
+          <Item lstrtext="false" name="3" text="Locking Date"/>
+        </RadioGroup>
+      </Group>
+      <Group gridHeight="5" gridWidth="53" name="Group1" posX="1" posY="6" text="INPUT">
+        <Label gridHeight="1" gridWidth="12" name="Label1" posX="3" posY="1" text="Group No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axf13" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="axf_file.axf13" posX="19" posY="1" rowCount="" sqlTabName="axf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+        <Label gridHeight="1" gridWidth="12" name="Label5" posX="3" posY="2" text="Fiscal Year"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="12" name="yy" noEntry="false" notNull="true" posX="19" posY="2" required="true" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="12" name="Label6" posX="3" posY="3" text="Period (Start-End)"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="12" name="bm" notNull="true" posX="19" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="Label7" posX="32" posY="3" text="-"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="12" name="em" notNull="true" posX="36" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit1" widget="Edit"/>
+      </Group>
+      <Group gridHeight="7" gridWidth="53" name="Group2" posX="1" posY="11" text="QBE">
+        <Label gridHeight="1" gridWidth="12" name="Label8" posX="3" posY="1" text="Comp. No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axb04" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="axb_file.axb04" posX="19" posY="1" rowCount="" sqlTabName="axb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+        <Label gridHeight="1" gridWidth="12" name="Label2" posX="3" posY="2" text="no1"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axf16" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="axf_file.axf16" posX="19" posY="2" rowCount="" sqlTabName="axf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+        <Label gridHeight="1" gridWidth="15" name="Label3" posX="3" posY="3" text="Source Company No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axf09" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="axf_file.axf09" posX="19" posY="3" rowCount="" sqlTabName="axf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+        <Label gridHeight="1" gridWidth="12" name="Label4" posX="3" posY="4" text="no2"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axf10" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="axf_file.axf10" posX="19" posY="4" rowCount="" sqlTabName="axf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="19" name="more" posX="3" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Other Printing Conditions" title="CheckBox1" widget="CheckBox"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAwADQAMgBhADQAZABjAGIALQAwADUAMAAzAC0ANABkADQAMwAtAGIANQBkADQALQBlADgANgBiADIAMABmADgAYgA4ADkANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADUAOQA1ADMAOAA1ADUALQAxADAANABmAC0ANAAxADkAMQAtAGIAZAAyADUALQAwADIAYQAzADAAMQBhADIAZABiADUANAB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewBlADcAOQBmADAAOABhADgALQBmADYAZQBlAC0ANABhADQAMAAtAGEAYgBiADAALQA3ADgAYQA2ADgAMwA3ADkAMwBmADQAOAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGEAYgA4ADQANQA2ADYALQBkAGIAOABmAC0ANABmAGYANAAtADgAOQBkAGMALQAyADUAZgA4AGMAOQA2ADkANQAyAGQAMwB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGEANQBkADEAYwA2AGIALQA5ADUAZgBmAC0ANABkAGUAMwAtAGEAYgBjAGEALQA0ADQAYgAwADMAZQBkADcANwBlAGQAYwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADkAMgAxADkAOQAxADMALQA3ADQANQBlAC0ANABjAGIANgAtAGEANwBjAGQALQBiADgAOQBiAGUAYgBkAGQANwA0ADIAYQB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGIAOAA4AGMAZQA1ADMALQA5AGMAMAA0AC0ANABlADcAZgAtAGIAMwA4AGMALQA0AGYAMwBkAGUAZAA2ADkAMgBjADQANwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGYAZAA1ADYANQBmADkALQA2ADgAMQA4AC0ANABmAGQANgAtAGIAOABhAGUALQA4AGMAMQBiADgAMwBlAGQAMgBkADcAMQB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADQAMQA1ADgANQBiADgALQBmADkAOQA2AC0ANAA3ADAAZQAtADkAZgA0ADMALQA0AGUANwAwAGIAMgA5AGUAOQAwAGIAYwB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGIANQA1ADgAYwBjADYALQAwAGQAOAAzAC0ANABkADAAOAAtADkAYQBhADEALQAwADgAYgBmAGQAMgA4ADMAMgA4ADMAMgB9QCQAAAAAAABAbWAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGUAZQBmADYAYQBlADUALQA3ADgAZgA5AC0ANABiADQAMQAtADkAOQAyADQALQBjADQANQBmAGQAYQAxADAANgBkADQAMQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

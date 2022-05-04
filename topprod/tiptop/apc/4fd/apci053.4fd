@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{266aaa7d-7b57-4962-8937-194c3683fda5}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="rzh_file" name="s_rzh" order="" uid="{5e91f460-cc4c-4bd6-9375-2c7fb40d4631}" where="">
+    <RecordField colName="rzh01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rzh_file.rzh01" sqlTabName="rzh_file" sqlType="VARCHAR" table_alias_name="" uid="{4df5d08f-bbb1-4bb4-8ab7-4e9c584776fc}" uniqueQueryKey="false"/>
+    <RecordField colName="rzh02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rzh_file.rzh02" sqlTabName="rzh_file" sqlType="VARCHAR" table_alias_name="" uid="{cacfa3e2-4ec3-42a6-8e97-84bce410053d}" uniqueQueryKey="false"/>
+    <RecordField colName="rzh03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rzh_file.rzh03" sqlTabName="rzh_file" sqlType="SMALLINT" table_alias_name="" uid="{f43c18bf-b701-42c4-8dfd-50b81d4ed29f}" uniqueQueryKey="false"/>
+    <RecordField colName="rzh04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="rzh_file.rzh04" sqlTabName="rzh_file" sqlType="VARCHAR" table_alias_name="" uid="{b52937be-97bb-4cc0-b047-b07af245449b}" uniqueQueryKey="false"/>
+    <RecordField colName="" fieldIdRef="9" name="rzh04_desc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{387947fc-c344-4c3b-92b3-3773beb10cc1}"/>
+    <RecordField colName="rzh05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="rzh_file.rzh05" sqlTabName="rzh_file" sqlType="SMALLINT" table_alias_name="" uid="{a8762cfb-5a23-4a95-9674-765e8ee62361}" uniqueQueryKey="false"/>
+    <RecordField colName="rzh06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="rzh_file.rzh06" sqlTabName="rzh_file" sqlType="VARCHAR" table_alias_name="" uid="{4c3d428d-e41b-44c0-a557-e35211a774f1}" uniqueQueryKey="false"/>
+    <RecordField colName="rzhacti" defaultValue="Y" fieldIdRef="7" fieldType="TABLE_COLUMN" name="rzh_file.rzhacti" sqlTabName="rzh_file" sqlType="VARCHAR" table_alias_name="" uid="{31b43fac-510a-4c99-8fd7-3455a075dc89}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c7a4f1d0-b5c0-4001-9555-1bd7ab25578e}" where="">
+    <RecordField colName="" fieldIdRef="8" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{7931628d-ef93-4d4e-acc6-7dc69c339188}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="115" name="apci053" text="apci053">
+    <VBox gridHeight="14" gridWidth="98" name="VBox1" posX="9" posY="0">
+      <Folder gridHeight="9" gridWidth="98" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Table gridHeight="7" gridWidth="98" name="s_rzh" posX="0" posY="0" totalRows="5">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzh01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" name="rzh_file.rzh01" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="rzh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Touch screen classification" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzh02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" name="rzh_file.rzh02" posX="11" posY="0" rowCount="" scroll="true" sqlTabName="rzh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Category Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzh03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="rzh_file.rzh03" posX="28" posY="0" rowCount="" scroll="true" sqlTabName="rzh_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Level" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzh04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" name="rzh_file.rzh04" posX="35" posY="0" rowCount="" scroll="true" sqlTabName="rzh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Sub-headings" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="14" name="rzh04_desc" noEntry="true" posX="47" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="rzh04_desc" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzh05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="rzh_file.rzh05" noEntry="true" posX="61" posY="0" rowCount="" scroll="true" sqlTabName="rzh_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="The number of lower classification" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzh06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" name="rzh_file.rzh06" noEntry="true" posX="68" posY="0" rowCount="" scroll="true" sqlTabName="rzh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Belongs to a classification" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzhacti" columnCount="" defaultValue="Y" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="rzh_file.rzhacti" notNull="true" posX="82" posY="0" required="true" rowCount="" sqlTabName="rzh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Effective whether" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="98" name="Grid1" posX="0" posY="10">
+        <HLine gridWidth="7" name="HLine1" posX="2" posY="1"/>
+        <Label posX="10" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="10" name="cn2" noEntry="true" posX="15" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Edit1" widget="Edit"/>
+        <HLine gridWidth="8" name="HLine2" posX="26" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjADcAYQA0AGYAMQBkADAALQBiADUAYwAwAC0ANAAwADAAMQAtADkANQA1ADUALQAxAGIAZAA3AGEAYgAyADUANQA3ADgAZQB9QDQAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADgANwA2ADIAYwBmAGIALQA1AGEAMgAzAC0ANABhADkANQAtADkANgA3ADQALQA3ADYANQBlADgAZQBlADYAMgAzADYAMQB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGEAYwBmAGEAMwBlADIALQA0AGUAYwAzAC0ANAAyAGEANgAtADgAZQA5ADcALQA4ADQAYgBjAGUANAAxADAAMAA1ADMAZAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGUAOQAxAGYANAA2ADAALQBjAGMANABjAC0ANABiAGQANgAtADkAMwA3ADUALQAyAGMANwBmAGIANAAwAGQANAA2ADMAMQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGMAMwBkADQAMgA4AGQALQBlADQAMQBiAC0ANAA0AGMAMAAtAGEANQA1ADcALQBlADMANQAyADEAMQBhADcANwA0AGYAMQB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADUAMgA5ADMANwBiAGUALQA5ADcAYgBiAC0ANABjAGMAMAAtAGIAMAA0ADcALQBiADAANwBhAGYAMgA0ADUANAA0ADkAYgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADgANwA5ADQANwBmAGMALQBjADMANAA0AC0ANABjADMAYgAtADkAMgBiADMALQAzADcANwAzAGIAZQBiADEAMABjAGMAMQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAzADEAYgA0ADMAZgBhAGMALQA1ADEAMABhAC0ANABjADkAOQAtADgAZgBkADcALQAzADQANQA1AGEAMAA3ADUAZABjADgAOQB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADkAMwAxADYAMgA4AGQALQBlAGYAOQAzAC0ANABkADQAZQAtAGEAYwBjADYALQA3AGQAYwA2ADkAYwAzADMAOQAxADgAOAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGQAZgA1AGQAMAA4AGYALQBiAGIAYgAxAC0ANABiAGIANAAtADgAYQBiADcALQA0AGUAOQBjADUAOAA0ADcANwA2AGYAYwB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADQAMwBjADEAOABiAGYALQBiADcAMAAxAC0ANAAyAGMANAAtADgAZABmAGQALQA1ADAAYgA4ADEAZAA0AGUAZAAyADkAZgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

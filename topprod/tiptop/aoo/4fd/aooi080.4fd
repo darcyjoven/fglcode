@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{79455c7a-0000-4000-ab74-1302b2b28d28}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_azf" order="" uid="{c7e5c7d2-0000-4000-9973-a61e73cfd8c2}" where="">
+    <RecordField colName="azf01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="azf_file.azf01" sqlTabName="azf_file" sqlType="VARCHAR" table_alias_name="" uid="{b095c854-0000-4000-b2fe-3a2615c5185f}"/>
+    <RecordField colName="azf02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="azf_file.azf02" sqlTabName="azf_file" sqlType="VARCHAR" table_alias_name="" uid="{33f763cf-0000-4000-9f16-0c7a9908b051}"/>
+    <RecordField colName="azf03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="azf_file.azf03" sqlTabName="azf_file" sqlType="VARCHAR" table_alias_name="" uid="{978deb41-0000-4000-b71e-319c4ff8bc45}"/>
+    <RecordField colName="azfacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="azf_file.azfacti" sqlTabName="azf_file" sqlType="VARCHAR" table_alias_name="" uid="{ed683b52-0000-4000-bbf7-873752e40305}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9caa90d4-0000-4000-9ae4-aea70a0759c0}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e8d8a549-0000-4000-aeab-ce80a88d0a57}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="71" name="aooi080" spacing="normal" text="aooi080">
+    <VBox gridHeight="18" gridWidth="68" name="vb1" posX="0" posY="0" splitter="">
+      <Folder gridHeight="13" gridWidth="68" lstrcomment="false" name="pc836" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="66" lstrcomment="false" name="s_azf" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azf01" columnCount="" comment="No Blank  " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="azf_file.azf01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="azf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Code" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azf02" columnCount="" comment="No Blank  , Enter 2 3 4 5 6 8 A D E F G S R Z" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Reason Code, Deduction No., QC Code, Mat.Cate, Wtdw Bnd.Mat, Othr Group Code 1, Othr Group Code 2, Othr Group Code 3, Cost Group, Payment Result, Payment Required Status, Product No., Bank Cart Trans.Type" lstrcomment="false" lstrtitle="false" name="azf_file.azf02" notNull="true" posX="5" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="azf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Cate" widget="ComboBox">
+              <Item lstrtext="false" name="2" text="Reason Code"/>
+              <Item lstrtext="false" name="5" text="Deduction No."/>
+              <Item lstrtext="false" name="6" text="QC Code"/>
+              <Item lstrtext="false" name="8" text="Mat.Cate"/>
+              <Item lstrtext="false" name="A" text="Wtdw Bnd.Mat"/>
+              <Item lstrtext="false" name="D" text="Othr Group Code 1"/>
+              <Item lstrtext="false" name="E" text="Othr Group Code 2"/>
+              <Item lstrtext="false" name="F" text="Othr Group Code 3"/>
+              <Item lstrtext="false" name="G" text="Cost Group"/>
+              <Item lstrtext="false" name="S" text="Payment Result"/>
+              <Item lstrtext="false" name="R" text="Payment Required Status"/>
+              <Item lstrtext="false" name="Z" text="Product No."/>
+              <Item lstrtext="false" name="T" text="Bank Cart Trans.Type"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azf03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="azf_file.azf03" posX="25" posY="0" rowCount="" sqlTabName="azf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Desc" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azfacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="azf_file.azfacti" notNull="true" posX="55" posY="0" required="true" rowCount="" sqlTabName="azf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="68" lstrcomment="false" name="gr4625" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl1430" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1431" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADgAZAA4AGEANQA0ADkALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZQBhAGIALQBjAGUAOAAwAGEAOAA4AGQAMABhADUANwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADMAZgA3ADYAMwBjAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZgAxADYALQAwAGMANwBhADkAOQAwADgAYgAwADUAMQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADAAOQA1AGMAOAA1ADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgBmAGUALQAzAGEAMgA2ADEANQBjADUAMQA4ADUAZgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADcAOABkAGUAYgA0ADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwAxAGUALQAzADEAOQBjADQAZgBmADgAYgBjADQANQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGQANgA4ADMAYgA1ADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYgBmADcALQA4ADcAMwA3ADUAMgBlADQAMAAzADAANQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADcAZQA1AGMANwBkADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOQA3ADMALQBhADYAMQBlADcAMwBjAGYAZAA4AGMAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGMAYQBhADkAMABkADQALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYQBlADQALQBhAGUAYQA3ADAAYQAwADcANQA5AGMAMAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

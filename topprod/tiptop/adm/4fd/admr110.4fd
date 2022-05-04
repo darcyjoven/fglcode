@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{01a77fa6-0000-4000-9950-ef1d838f14b6}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c209c71f-0000-4000-9b9e-0ea181ff91fd}" where="">
+    <RecordField colName="occ01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="occ_file.occ01" sqlTabName="occ_file" sqlType="VARCHAR" table_alias_name="" uid="{d3ee2170-0000-4000-aa8a-4b6e791125d9}"/>
+    <RecordField colName="occ03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="occ_file.occ03" sqlTabName="occ_file" sqlType="VARCHAR" table_alias_name="" uid="{e635fab8-0000-4000-9a6b-d0e272c19b14}"/>
+    <RecordField colName="occ61" fieldIdRef="3" fieldType="TABLE_COLUMN" name="occ_file.occ61" sqlTabName="occ_file" sqlType="VARCHAR" table_alias_name="" uid="{b9966793-0000-4000-b739-6ad98f2988d7}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="d" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{887a2f99-0000-4000-8caf-9a928ea442cd}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{ef03cfdd-0000-4000-9e20-9a9c4ab80bcd}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="91" name="admr110" spacing="normal" text="admr110">
+    <VBox gridHeight="12" gridWidth="51" name="vb2" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="51" lstrcomment="false" name="gr1593" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="50" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Customer #"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="occ01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="occ_file.occ01" posX="22" posY="1" rowCount="" sqlTabName="occ_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Customer Class"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="occ03" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="occ_file.occ03" posX="22" posY="2" rowCount="" sqlTabName="occ_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Credit Rating"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="occ61" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="occ_file.occ61" posX="22" posY="3" rowCount="" sqlTabName="occ_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="50" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="INPUT">
+          <Label posX="1" posY="1" text="Usable Amount percentage"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="d" posX="28" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="33" posY="1" text="%"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="51" lstrcomment="false" name="gr1594" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="48" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

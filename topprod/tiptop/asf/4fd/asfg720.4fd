@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{60084355-0000-4000-aa59-2588f65096b7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7b6b88f6-0000-4000-999f-d4cb7f0465dd}" where="">
+    <RecordField colName="shh01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="shh_file.shh01" sqlTabName="shh_file" sqlType="VARCHAR" table_alias_name="" uid="{9fbf74d3-0000-4000-9202-c6140cbbf783}"/>
+    <RecordField colName="shh02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="shh_file.shh02" sqlTabName="shh_file" sqlType="DATE" table_alias_name="" uid="{1745b44a-0000-4000-b15a-7b8c1907f9d9}"/>
+    <RecordField colName="shh03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="shh_file.shh03" sqlTabName="shh_file" sqlType="VARCHAR" table_alias_name="" uid="{cc112512-0000-4000-b3b0-dec71e36c947}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{6fd7cfc1-0000-4000-ae32-d4ef0f3b80d7}"/>
+  </Record>
+  <Form gridHeight="10" gridWidth="50" name="asfr720" spacing="normal" text="asfr720">
+    <VBox gridHeight="10" gridWidth="48" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="48" lstrcomment="false" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="47" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Register No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="shh01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="shh_file.shh01" posX="22" posY="1" rowCount="" sqlTabName="shh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Register Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="shh02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="shh_file.shh02" posX="22" posY="2" rowCount="" sqlTabName="shh_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Work/Order No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="shh03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="shh_file.shh03" posX="22" posY="3" rowCount="" sqlTabName="shh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="48" lstrcomment="false" name="Grid2" posX="0" posY="6">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0642d577-0000-4000-a43b-48cf430f17f7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gea" order="" uid="{bc361871-0000-4000-baf4-8dece80e62e2}" where="">
+    <RecordField colName="gea01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gea_file.gea01" sqlTabName="gea_file" sqlType="VARCHAR" table_alias_name="" uid="{5a283813-0000-4000-97ae-89f36539c539}"/>
+    <RecordField colName="gea02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gea_file.gea02" sqlTabName="gea_file" sqlType="VARCHAR" table_alias_name="" uid="{8638ce3f-0000-4000-ad56-5402b16d4c9b}"/>
+    <RecordField colName="geaacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gea_file.geaacti" sqlTabName="gea_file" sqlType="VARCHAR" table_alias_name="" uid="{c4220c12-0000-4000-ab9a-f0c0a2b1966c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5d8af065-0000-4000-bfcc-fcc867443883}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{c9991650-0000-4000-8efd-e40d0f996ccc}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="40" name="aooi100" spacing="normal" text="aooi100">
+    <VBox gridHeight="18" gridWidth="37" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="37" lstrcomment="false" name="pc838" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="35" lstrcomment="false" name="s_gea" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gea01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="gea_file.gea01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Area" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gea02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gea_file.gea02" posX="5" posY="0" rowCount="" sqlTabName="gea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geaacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gea_file.geaacti" notNull="true" posX="25" posY="0" required="true" rowCount="" sqlTabName="gea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="37" lstrcomment="false" name="gr4627" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1434" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1435" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

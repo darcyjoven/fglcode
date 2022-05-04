@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{aa4a461e-0000-4000-b29f-af5ea975adcc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ima" order="" uid="{d29a1ce4-0000-4000-932d-82c1cc1123af}" where="">
+    <RecordField colName="" fieldIdRef="1" name="ima01" sqlTabName="" table_alias_name="" uid="{ce0dc8dc-0000-4000-88ba-114325a6676d}"/>
+    <RecordField colName="" fieldIdRef="2" name="ima02" sqlTabName="" table_alias_name="" uid="{f4eafede-0000-4000-a686-5fceaf1e485a}"/>
+    <RecordField colName="" fieldIdRef="3" name="ima021" sqlTabName="" table_alias_name="" uid="{604be8b1-0000-4000-ac45-fc2a7568a8bb}"/>
+    <RecordField colName="" fieldIdRef="4" name="ima08" sqlTabName="" table_alias_name="" uid="{f1f92587-0000-4000-871f-62850b5aed11}"/>
+    <RecordField colName="" fieldIdRef="5" name="ima100" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5c93ba7f-0000-4000-8e98-eef613b476e0}"/>
+    <RecordField colName="" fieldIdRef="6" name="ima101" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ab6f2722-0000-4000-87c3-5c0dba352975}"/>
+    <RecordField colName="" fieldIdRef="7" name="ima102" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ca7b51e7-0000-4000-a005-6f53387de8b0}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{0ebe98af-0000-4000-b744-99585328114f}" where="">
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{3d9fc54a-0000-4000-93de-1a39ddb802ae}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="130" name="aqci130_t" spacing="normal" text="aqci130_t">
+    <Folder gridHeight="14" gridWidth="128" lstrcomment="false" name="pc6" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Page01">
+        <Table gridHeight="12" gridWidth="126" lstrcomment="false" name="s_ima" posX="0" posY="0" totalRows="10">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Item No." widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Part Name" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima021" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Specification" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="ima08" noEntry="true" posX="80" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Source Code" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" comment="N.Normal QC T.Strict QC R.Reduced-Qty QC" fieldId="5" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ima100" posX="92" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="QC Degree" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" comment="1.General     2.Special" fieldId="6" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="ima101" posX="102" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="QC Class" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" comment="General:1/2/3   Special:1/2/3/4" fieldId="7" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="ima102" posX="111" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Level" widget="Edit"/>
+        </Table>
+      </Page>
+      <Page lstrtext="false" name="info" text="Info">
+        <Grid gridHeight="4" gridWidth="35" lstrcomment="false" name="gr13" posX="0" posY="0">
+          <Group gridHeight="3" gridWidth="34" lstrcomment="false" lstrtext="false" name="grpinfo" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Detail Counts"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

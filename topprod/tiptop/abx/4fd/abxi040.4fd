@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4eeaebbe-0000-4000-9d16-73dc67a1eacd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bnh" order="" uid="{819d02ea-0000-4000-80a8-20981994bdc5}" where="">
+    <RecordField colName="bnh01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bnh_file.bnh01" sqlTabName="bnh_file" sqlType="VARCHAR" table_alias_name="" uid="{81f26473-0000-4000-9704-92ee9a768419}"/>
+    <RecordField colName="bnh02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bnh_file.bnh02" sqlTabName="bnh_file" sqlType="DATE" table_alias_name="" uid="{e701e7cb-0000-4000-a562-0b3ff6563070}"/>
+    <RecordField colName="bnh03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bnh_file.bnh03" sqlTabName="bnh_file" sqlType="VARCHAR" table_alias_name="" uid="{058505a0-0000-4000-a9a0-42520f889d18}"/>
+    <RecordField colName="" fieldIdRef="4" name="ima02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d819f65b-0000-4000-9f67-11c3268815b1}"/>
+    <RecordField colName="bnh04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="bnh_file.bnh04" sqlTabName="bnh_file" sqlType="INTEGER" table_alias_name="" uid="{66f594a2-0000-4000-bff1-d6655907f14f}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{302573d7-0000-4000-bc3c-bab020da29ab}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{0f81ce97-0000-4000-86f2-9b23cf0f7d40}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="90" name="abxi040" spacing="normal" text="abxi040">
+    <VBox gridHeight="18" gridWidth="87" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="87" lstrcomment="false" name="pc151" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="85" lstrcomment="false" name="s_bnh" posX="0" posY="0" totalRows="10">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bnh01" columnCount="" comment="Sale Type: 1.Local Sales" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="Local Sales" lstrcomment="false" lstrtitle="false" name="bnh_file.bnh01" noEntry="true" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="bnh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sale Type" widget="ComboBox">
+              <Item name="1" text="Local Sales"/>
+            </ComboBox>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bnh02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="bnh_file.bnh02" notNull="true" posX="12" posY="0" required="true" rowCount="" sqlTabName="bnh_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Sales Date" widget="DateEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bnh03" columnCount="" comment=" &lt;^P&gt; Qry Item No." fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom" lstrcomment="false" lstrtitle="false" name="bnh_file.bnh03" notNull="true" posX="25" posY="0" required="true" rowCount="" sqlTabName="bnh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Item No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="39" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Part Name Specification" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bnh04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="bnh_file.bnh04" notNull="true" posX="69" posY="0" required="true" rowCount="" sqlTabName="bnh_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Qty" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="87" lstrcomment="false" name="gr1008" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl283" posX="2" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl284" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

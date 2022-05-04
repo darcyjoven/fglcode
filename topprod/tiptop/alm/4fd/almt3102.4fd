@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a8f4d2cf-0000-4000-8be7-e4abc3067ad9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_lug" order="" uid="{8631638f-0000-4000-8467-68905cb25597}" where="">
+    <RecordField colName="lug03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lug_file.lug03" sqlTabName="lug_file" sqlType="VARCHAR" table_alias_name="" uid="{643b7b84-0000-4000-8aaa-9df6f479ee8b}"/>
+    <RecordField colName="lug04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lug_file.lug04" sqlTabName="lug_file" sqlType="VARCHAR" table_alias_name="" uid="{7cd9b35f-0000-4000-88d3-cce2a139a7cf}"/>
+    <RecordField colName="lug05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lug_file.lug05" sqlTabName="lug_file" sqlType="VARCHAR" table_alias_name="" uid="{5a9b15c0-0000-4000-9771-414683b7ed7d}"/>
+    <RecordField colName="lug06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lug_file.lug06" sqlTabName="lug_file" sqlType="DATE" table_alias_name="" uid="{e0c11bb1-0000-4000-ba8c-f40648a494fc}"/>
+    <RecordField colName="lug07" fieldIdRef="5" fieldType="TABLE_COLUMN" name="lug_file.lug07" sqlTabName="lug_file" sqlType="DATE" table_alias_name="" uid="{5389b127-0000-4000-a394-9687a9af7d44}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{dfa93585-0000-4000-ad68-992feb6823a9}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{a2b46c19-0000-4000-a062-1af35e5bc320}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="98" lstrtext="false" name="almt3102" spacing="normal" text="almt3102">
+    <VBox gridHeight="14" gridWidth="66" name="vb4" posX="11" posY="2">
+      <Folder gridHeight="9" gridWidth="66" lstrcomment="false" name="pc3" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Table gridHeight="7" gridWidth="63" name="s_lug" posX="1" posY="0" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lug03" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lug_file.lug03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="lug_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Cert.Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lug04" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lug_file.lug04" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="lug_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Cert.num." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lug05" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lug_file.lug05" posX="20" posY="0" rowCount="" sqlTabName="lug_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Operator" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lug06" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="lug_file.lug06" posX="30" posY="0" rowCount="" sqlTabName="lug_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Val.date from" widget="DateEdit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lug07" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="lug_file.lug07" posX="44" posY="0" rowCount="" sqlTabName="lug_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Val.date to" widget="DateEdit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="66" lstrcomment="false" name="gr3" posX="0" posY="10">
+        <HLine gridWidth="7" name="hl5" posX="1" posY="1"/>
+        <Label posX="9" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="idx" noEntry="true" posX="15" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="7" name="hl6" posX="23" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

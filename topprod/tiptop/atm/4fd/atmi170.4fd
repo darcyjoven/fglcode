@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{df22c75b-0000-4000-ba75-4460059ba5ad}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_obm" order="" uid="{60f5cf4d-0000-4000-8535-e799cad3a6e2}" where="">
+    <RecordField colName="obm01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="obm_file.obm01" sqlTabName="obm_file" sqlType="VARCHAR" table_alias_name="" uid="{21492219-0000-4000-9d51-43c616c8525b}"/>
+    <RecordField colName="obm02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="obm_file.obm02" sqlTabName="obm_file" sqlType="VARCHAR" table_alias_name="" uid="{60819e57-0000-4000-82ec-7f5fac376a9f}"/>
+    <RecordField colName="obmacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="obm_file.obmacti" sqlTabName="obm_file" sqlType="VARCHAR" table_alias_name="" uid="{61ff04a6-0000-4000-be15-629e753b471b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{33a61033-0000-4000-a9c6-c6420c623728}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{764a6b39-0000-4000-a5ec-dc5a33b41514}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="44" name="atmi170" spacing="normal" text="atmi170">
+    <VBox gridHeight="18" gridWidth="41" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="41" lstrcomment="false" name="pc335" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="39" lstrcomment="false" name="s_obm" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obm01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record! " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="obm_file.obm01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="obm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obm02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="obm_file.obm02" posX="8" posY="0" rowCount="" sqlTabName="obm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obmacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="obm_file.obmacti" notNull="true" posX="28" posY="0" required="true" rowCount="" sqlTabName="obm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="41" lstrcomment="false" name="gr1406" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl489" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl490" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

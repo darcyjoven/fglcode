@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{28c9d85a-0000-4000-9ae3-06c09650b663}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_occ" order="" uid="{9bdfb870-0000-4000-9cb6-16ac147e90e2}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{0969f140-0000-4000-a143-ecec01852f3b}"/>
+    <RecordField colName="" fieldIdRef="5" name="a" sqlTabName="" table_alias_name="" uid="{fbbb0193-945c-45b2-bdda-9b044aeca44b}"/>
+    <RecordField colName="occ01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="occ_file.occ01" sqlTabName="occ_file" sqlType="VARCHAR" table_alias_name="" uid="{395ffc31-0000-4000-a516-0d0fd3e10817}"/>
+    <RecordField colName="occ02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="occ_file.occ02" sqlTabName="occ_file" sqlType="VARCHAR" table_alias_name="" uid="{b060d152-0000-4000-952c-d137cd0194ae}"/>
+    <RecordField colName="" fieldIdRef="4" name="occ18" sqlTabName="" table_alias_name="" uid="{d59c1478-c854-4ad1-b783-0c6d64b9405d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{18c8327c-9b37-473a-a7f1-453f4a832c5b}" where=""/>
+  <Form gridHeight="12" gridWidth="104" name="q_occ_pmc" spacing="normal" text="q_occ_pmc">
+    <VBox gridHeight="12" gridWidth="102" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="10" gridWidth="102" lstrcomment="false" name="gr3793" posX="0" posY="1">
+        <Table gridHeight="8" gridWidth="96" lstrcomment="false" name="s_occ" posX="1" posY="0" totalRows="6">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="8" items="Customer, Vender, ALL" name="a" posX="7" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" title="a" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="Customer"/>
+            <Item lstrtext="false" name="2" text="Vender"/>
+            <Item lstrtext="false" name="3" text="ALL"/>
+          </ComboBox>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="occ01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="occ_file.occ01" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="occ_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Customer No." widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="occ02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="occ_file.occ02" noEntry="true" posX="28" posY="0" rowCount="" sqlTabName="occ_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Customer Abbreviation" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="28" name="occ18" posX="50" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Customer full_name" widget="Edit"/>
+        </Table>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkADUAOQBjADEANAA3ADgALQBjADgANQA0AC0ANABhAGQAMQAtAGIANwA4ADMALQAwAGMANgBkADYANABiADkANAAwADUAZAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGIAYgBiADAAMQA5ADMALQA5ADQANQBjAC0ANAA1AGIAMgAtAGIAZABkAGEALQA5AGIAMAA0ADQAYQBlAGMAYQA0ADQAYgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADgAYwA4ADMAMgA3AGMALQA5AGIAMwA3AC0ANAA3ADMAYQAtAGEANwBmADEALQA0ADUAMwBmADQAYQA4ADMAMgBjADUAYgB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADkANgA5AGYAMQA0ADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMQA0ADMALQBlAGMAZQBjADAAMQA4ADUAMgBmADMAYgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADkANQBmAGYAYwAzADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQAxADYALQAwAGQAMABmAGQAMwBlADEAMAA4ADEANwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGIAZABmAGIAOAA3ADAALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwBiADYALQAxADYAYQBjADEANAA3AGUAOQAwAGUAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADAANgAwAGQAMQA1ADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkANQAyAGMALQBkADEAMwA3AGMAZAAwADEAOQA0AGEAZQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

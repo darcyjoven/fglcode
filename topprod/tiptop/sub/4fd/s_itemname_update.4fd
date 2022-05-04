@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e0b89460-0000-4000-9449-e161c2951206}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="sub_gbc" order="" uid="{c8a4c22f-0000-4000-8609-947e38428a16}" where="">
+    <RecordField colName="gbc04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gbc_file.gbc04" sqlTabName="gbc_file" sqlType="VARCHAR" table_alias_name="" uid="{716bc342-0000-4000-ba3c-b8124aa9d574}"/>
+    <RecordField colName="gbc05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gbc_file.gbc05" sqlTabName="gbc_file" sqlType="VARCHAR" table_alias_name="" uid="{94232432-0000-4000-a186-3ea084dde139}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5eddfbc3-0000-4000-99e7-9ff9bcdd4385}" where="">
+    <RecordField colName="gbc01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gbc_file.gbc01" sqlTabName="gbc_file" sqlType="VARCHAR" table_alias_name="" uid="{fc36a765-0000-4000-addc-274a969572c5}"/>
+    <RecordField colName="gbc02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gbc_file.gbc02" sqlTabName="gbc_file" sqlType="VARCHAR" table_alias_name="" uid="{9bb913b4-0000-4000-9252-1e1e01e2807f}"/>
+    <RecordField colName="gbc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gbc_file.gbc03" sqlTabName="gbc_file" sqlType="VARCHAR" table_alias_name="" uid="{797c90f9-0000-4000-aba1-116ab8955717}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="49" name="s_itemname_update" spacing="normal" text="s_itemname_update">
+    <VBox gridHeight="15" gridWidth="47" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="6" gridWidth="47" lstrcomment="false" name="gr1491" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="46" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Table ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbc01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gbc_file.gbc01" noEntry="true" posX="17" posY="1" rowCount="" sqlTabName="gbc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Field ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbc02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gbc_file.gbc02" noEntry="true" posX="17" posY="2" rowCount="" sqlTabName="gbc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="KEY Series"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbc03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gbc_file.gbc03" noEntry="true" posX="17" posY="3" rowCount="" sqlTabName="gbc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="7" gridWidth="47" lstrcomment="false" name="sub_gbc" posX="0" posY="7" totalRows="5">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbc04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="" lstrcomment="false" lstrtitle="false" name="gbc_file.gbc04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gbc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Language" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbc05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="34" lstrcomment="false" lstrtitle="false" name="gbc_file.gbc05" posX="9" posY="0" rowCount="" scroll="true" sqlTabName="gbc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Item Name" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1896eed2-0000-4000-bd28-ea562a9d82dc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6778ab2c-0000-4000-aa63-aeebd9e6cf56}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="g_yy" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{dfe2e583-0000-4000-bcfe-4c4e68e4c5f4}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="g_mm" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{15e419fc-0000-4000-b088-62970e2b394c}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="g_bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{5a124367-0000-4000-b002-5e78d0148081}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="g_edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{41f4bfc0-0000-4000-93c8-1ac3fb0cbd8f}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{2fbe5cb0-0000-4000-9ac6-8a72ac60c890}"/>
+  </Record>
+  <Form gridHeight="9" gridWidth="55" name="abxp820" spacing="normal" text="abxp820">
+    <VBox gridHeight="9" gridWidth="53" name="vb3" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="53" lstrcomment="false" name="gr1083" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="52" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+          <Label posX="1" posY="1" text="Calculating Year/Month"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="g_yy" posX="26" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="31" posY="1" text="/"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="2" lstrcomment="false" lstrtitle="false" name="g_mm" posX="33" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Calculating Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="g_bdate" posX="26" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Label posX="37" posY="2" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="g_edate" posX="39" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="53" lstrcomment="false" name="gr1084" posX="0" posY="5">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

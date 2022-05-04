@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6c5efdcd-0000-4000-b680-72cb299f5447}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{92879942-0000-4000-807f-88ee76bb382e}" where="">
+    <RecordField colName="rva09" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rva_file.rva09" sqlTabName="rva_file" sqlType="VARCHAR" table_alias_name="" uid="{5dc1d90c-0000-4000-8ce2-cdcfc0ee8b48}"/>
+    <RecordField colName="rva06" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rva_file.rva06" sqlTabName="rva_file" sqlType="DATE" table_alias_name="" uid="{266337ff-0000-4000-9f10-8ef9a0c269c9}"/>
+    <RecordField colName="rva05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rva_file.rva05" sqlTabName="rva_file" sqlType="VARCHAR" table_alias_name="" uid="{0e3ad8e9-0000-4000-ba1e-cdab4feac737}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{68e39916-0000-4000-9cc4-69c41d492816}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="60" name="acop772" spacing="normal" text="acop772">
+    <Folder gridHeight="12" gridWidth="57" lstrcomment="false" name="pc203" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="11" gridWidth="56" name="vb4" posX="0" posY="0">
+          <Grid gridHeight="7" gridWidth="56" lstrcomment="false" name="gr1309" posX="0" posY="1">
+            <Group gridHeight="6" gridWidth="53" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+              <Label posX="2" posY="1" text="Invoice No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rva09" columnCount="" comment="&lt;^P&gt;Qry Details" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="rva_file.rva09" posX="20" posY="1" rowCount="" sqlTabName="rva_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="2" posY="2" text="Delivery Date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rva06" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rva_file.rva06" notNull="true" posX="20" posY="2" required="true" rowCount="" sqlTabName="rva_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+              <Label posX="2" posY="3" text="Vendor No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rva05" columnCount="" comment="&lt;^P&gt;Qry Details" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="rva_file.rva05" posX="20" posY="3" rowCount="" sqlTabName="rva_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+            </Group>
+          </Grid>
+          <Grid gridHeight="2" gridWidth="56" lstrcomment="false" name="gr1310" posX="0" posY="8">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Background job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

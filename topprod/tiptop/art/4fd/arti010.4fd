@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7adda6d4-0000-4000-b909-3ea40f9ef19d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oay" order="" uid="{459107c7-0000-4000-9b95-49ff4cf1a5fc}" where="">
+    <RecordField colName="oayslip" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oay_file.oayslip" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{7c0b3c3a-0000-4000-bb27-25bf86de3199}"/>
+    <RecordField colName="oaydesc" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oay_file.oaydesc" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{8408713a-0000-4000-9ac6-f1a73415a09e}"/>
+    <RecordField colName="oayauno" defaultValue="Y" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oay_file.oayauno" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{75507a54-0000-4000-b53b-8b9be87867b3}"/>
+    <RecordField colName="oayconf" defaultValue="N" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oay_file.oayconf" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{8148e40f-0000-4000-85f7-4901d123fda1}"/>
+    <RecordField colName="oayprnt" defaultValue="N" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oay_file.oayprnt" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{db06e66f-0000-4000-8210-85ae3a556600}"/>
+    <RecordField colName="oaytype" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oay_file.oaytype" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{1f816773-0000-4000-9b6a-644e08807ad8}"/>
+    <RecordField colName="oayapr" defaultValue="N" fieldIdRef="7" fieldType="TABLE_COLUMN" name="oay_file.oayapr" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{3d72fd97-0000-4000-bf71-92c94051e5cf}"/>
+    <RecordField colName="oayacti" defaultValue="Y" fieldIdRef="8" fieldType="TABLE_COLUMN" name="oay_file.oayacti" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{dd3bf654-0000-4000-9861-be2e7e9af8cf}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{48e4489b-0000-4000-8a1b-0e1a7f58de2d}" where="">
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{548d9f5e-0000-4000-b92a-809d98c94ad2}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="151" name="Form2" text="Form2">
+    <VBox gridHeight="19" gridWidth="113" name="vb5" posX="9" posY="1">
+      <Folder gridHeight="15" gridWidth="113" lstrcomment="false" name="pc3" posX="0" posY="1">
+        <Page name="Page3" text="Page0">
+          <VBox gridHeight="14" gridWidth="110" name="vb4" posX="0" posY="0">
+            <Table gridHeight="8" gridWidth="110" name="s_oay" posX="0" posY="1" totalRows="7">
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayslip" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="oay_file.oayslip" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Doc" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaydesc" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="oay_file.oaydesc" notNull="true" posX="7" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="DocName" widget="Edit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayauno" colorCondition="black" columnCount="" defaultValue="Y" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="oay_file.oayauno" notNull="true" posX="47" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="NumAuto" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayconf" colorCondition="black" columnCount="" defaultValue="N" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="oay_file.oayconf" notNull="true" posX="53" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="AutCnf" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayprnt" colorCondition="black" columnCount="" defaultValue="N" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="oay_file.oayprnt" notNull="true" posX="59" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="PrtNow" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaytype" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="" lstrcomment="false" lstrtitle="false" name="oay_file.oaytype" notNull="true" posX="64" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="DocPty" widget="ComboBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayapr" colorCondition="black" columnCount="" defaultValue="N" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="oay_file.oayapr" notNull="true" posX="76" posY="0" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Approve" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayacti" colorCondition="black" columnCount="" defaultValue="Y" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="oay_file.oayacti" posX="84" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="oayacti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Table>
+            <Grid gridHeight="4" gridWidth="110" lstrcomment="false" name="gr4" posX="0" posY="9">
+              <Group gridHeight="3" gridWidth="96" lstrcomment="false" lstrtext="false" name="gb1" posX="1" posY="1">
+                <Label posX="1" posY="1" text="PS."/>
+                <Label colorCondition="black" gridHeight="1" gridWidth="71" lstrcomment="false" lstrtext="false" name="dummy01" posX="5" posY="1" text="Invo Amt&apos;Used In China and Doc Pty for 50.DM &amp; 60.SR,Will Be Enter"/>
+              </Group>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="113" lstrcomment="false" name="gr5" posX="0" posY="16">
+        <HLine gridWidth="9" name="hl7" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" lstrcomment="false" name="cn2" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="9" name="hl8" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

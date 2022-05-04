@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4ac55af5-0000-4000-b289-ba8ccd2ad6fa}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oao" order="" uid="{07a999e8-0000-4000-959e-eff6ffddfa2a}" where="">
+    <RecordField colName="oao03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oao_file.oao03" sqlTabName="oao_file" sqlType="SMALLINT" table_alias_name="" uid="{f3d65d99-0000-4000-a6ae-3a0e15246704}"/>
+    <RecordField colName="oao05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oao_file.oao05" sqlTabName="oao_file" sqlType="VARCHAR" table_alias_name="" uid="{4b2be2a4-0000-4000-936f-9432640ee0e4}"/>
+    <RecordField colName="oao04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oao_file.oao04" sqlTabName="oao_file" sqlType="SMALLINT" table_alias_name="" uid="{8f171765-0000-4000-8a29-91359cdbef99}"/>
+    <RecordField colName="oao06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oao_file.oao06" sqlTabName="oao_file" sqlType="VARCHAR" table_alias_name="" uid="{6f139a70-0000-4000-b0f5-c24249f2c708}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="75" name="s_axm_memo" spacing="normal" text="s_axm_memo">
+    <Folder gridHeight="14" gridWidth="73" lstrcomment="false" name="pc849" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Page01">
+        <Table gridHeight="12" gridWidth="71" lstrcomment="false" name="s_oao" posX="0" posY="0" totalRows="10">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oao03" columnCount="" comment="0 Memo of whole page,123...Body memo " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="oao_file.oao03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oao_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Ln#" widget="Edit"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oao05" columnCount="" comment="1.Print before Line # 2.Print after Line # 0.Internal Reference for Qry Only" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Print Before Line#, Print After Line#, Internal Reference For Qry Only" lstrcomment="false" lstrtitle="false" name="oao_file.oao05" notNull="true" posX="5" posY="0" required="true" rowCount="" sqlTabName="oao_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Print Code" widget="ComboBox">
+            <Item name="1" text="Print Before Line#"/>
+            <Item name="2" text="Print After Line#"/>
+            <Item name="0" text="Internal Reference For Qry Only"/>
+          </ComboBox>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oao04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="oao_file.oao04" posX="16" posY="0" rowCount="" sqlTabName="oao_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Sequence No." widget="Edit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oao06" columnCount="" comment="&lt;^P&gt; QRY Freq Special Desc,Prt Body Memo aft Ln#, Limit char(30)" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="36" image="zoom" lstrcomment="false" lstrtitle="false" name="oao_file.oao06" posX="29" posY="0" rowCount="" scroll="true" sqlTabName="oao_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Memo" widget="ButtonEdit"/>
+        </Table>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

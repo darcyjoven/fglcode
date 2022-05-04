@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8f6dd88a-0000-4000-8338-0c7b9f10ffb3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ima" order="" uid="{0433a4f3-0000-4000-8a91-5564eedef1bf}" where="">
+    <RecordField colName="" fieldIdRef="4" name="choice" sqlTabName="" table_alias_name="" uid="{6b83af2d-0000-4000-90bf-14937f0f5d78}"/>
+    <RecordField colName="ima01" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ima_file.ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{ee99313a-0000-4000-bd4a-32069d49aa3f}"/>
+    <RecordField colName="ima02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ima_file.ima02" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{c17473a7-0000-4000-8bb3-3e8341a206a5}"/>
+    <RecordField colName="ima021" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ima_file.ima021" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{6ae48e0d-0000-4000-bb65-8cde8f987cec}"/>
+    <RecordField colName="" fieldIdRef="8" name="bma05" sqlTabName="" table_alias_name="" uid="{0c519f90-0000-4000-9dc5-49c357229e96}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{aa26a763-0000-4000-8c1e-6bfb9598ee68}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{733ba142-0000-4000-b0ad-7437f1db8cf5}"/>
+    <RecordField colName="bmy05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="bmy_file.bmy05" sqlTabName="bmy_file" sqlType="VARCHAR" table_alias_name="" uid="{896f75f6-0000-4000-bba5-d4d63f218da3}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="ima02n1" sqlTabName="" table_alias_name="" uid="{c911f7d5-0000-4000-ac22-cdaf00267336}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="ima021n1" sqlTabName="" table_alias_name="" uid="{91adeb3f-0000-4000-8e30-0ed7e004ec56}"/>
+    <RecordField colName="bmy06" fieldIdRef="12" fieldType="TABLE_COLUMN" name="bmy_file.bmy06" sqlTabName="bmy_file" sqlType="DECIMAL" table_alias_name="" uid="{8d130f22-0000-4000-bad0-4fe83752f899}"/>
+    <RecordField colName="bmy07" fieldIdRef="13" fieldType="TABLE_COLUMN" name="bmy_file.bmy07" sqlTabName="bmy_file" sqlType="DECIMAL" table_alias_name="" uid="{781ffd77-0000-4000-91f7-ebcd88149689}"/>
+    <RecordField colName="" fieldIdRef="14" fieldType="NON_DATABASE" name="c" sqlTabName="" table_alias_name="" uid="{6a3c5bc3-0000-4000-8374-080904bd8aac}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="bmy27" sqlTabName="" table_alias_name="" uid="{1db2a397-0000-4000-8b20-91f908283d8e}"/>
+    <RecordField colName="" fieldIdRef="16" fieldType="NON_DATABASE" name="ima02n2" sqlTabName="" table_alias_name="" uid="{379a5310-0000-4000-b0bc-21a69bb1cf46}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ima021n2" sqlTabName="" table_alias_name="" uid="{0f91c958-0000-4000-85f3-2f84f1153a83}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ima01a" sqlTabName="" table_alias_name="" uid="{78486723-0000-4000-aa5e-a5bfeb89430d}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="105" name="abmi720g" spacing="normal" text="abmi720g">
+    <VBox gridHeight="24" gridWidth="104" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="10" gridWidth="104" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="1" text="Basic">
+        <HBox gridHeight="8" gridWidth="102" name="HBox1" posX="1" posY="1">
+          <Grid gridHeight="8" gridWidth="49" lstrcomment="false" name="gr821" posX="2" posY="0">
+            <Label posX="1" posY="0" text="Chg.Tp"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" items="Old Void, Mdf O.Comp, REP" lstrcomment="false" lstrtitle="false" name="a" notNull="true" posX="16" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="Old Void"/>
+              <Item lstrtext="" name="3" text="Mdf O.Comp"/>
+              <Item lstrtext="" name="4" text="REP"/>
+            </ComboBox>
+            <Label posX="1" posY="1" text="Var.Item"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmy05" columnCount="" comment="&lt;^P&gt; Query Item" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" image="zoom" lstrcomment="false" lstrtitle="false" name="bmy_file.bmy05" posX="16" posY="1" rowCount="" sqlTabName="bmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Part Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="ima02n1" noEntry="true" posX="16" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Specification"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="ima021n1" noEntry="true" posX="16" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Label posX="2" posY="4"/>
+            <Label posX="1" posY="5" text="QPA"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmy06" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bmy_file.bmy06" posX="16" posY="5" rowCount="" sqlTabName="bmy_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="6" text="Denm"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmy07" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bmy_file.bmy07" posX="16" posY="6" rowCount="" sqlTabName="bmy_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="7" text="REP/SUB"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" items="No REP/SUB, OK REPd, OK SUBd, SUB wth SET" lstrcomment="false" lstrtitle="false" name="c" notNull="true" posX="16" posY="7" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="0" text="No REP/SUB"/>
+              <Item lstrtext="" name="1" text="OK REPd"/>
+              <Item lstrtext="" name="2" text="OK SUBd"/>
+              <Item lstrtext="" name="5" text="SUB wth SET"/>
+            </ComboBox>
+          </Grid>
+          <Grid gridHeight="8" gridWidth="49" lstrcomment="false" name="gr822" posX="51" posY="0">
+            <Label posX="2" posY="0"/>
+            <Label posX="1" posY="1" text="New Item"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Query Item" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" image="zoom" lstrcomment="false" lstrtitle="false" name="bmy27" posX="16" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Part Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="ima02n2" noEntry="true" posX="16" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Specification"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="ima021n2" noEntry="true" posX="16" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </HBox>
+      </Group>
+      <Group gridHeight="4" gridWidth="104" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="11" text="QBE">
+        <Grid gridHeight="2" gridWidth="49" lstrcomment="false" name="gr823" posX="1" posY="1">
+          <Label posX="1" posY="0" text="Item Rang"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="ima01a" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+      <Table gridHeight="8" gridWidth="104" lstrcomment="false" name="s_ima" posX="0" posY="15" totalRows="6">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^Y&gt;All &lt;^U&gt;All Not " fieldId="4" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="choice" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Choose" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="ima_file.ima01" noEntry="true" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="M.Item #" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="ima_file.ima02" noEntry="true" posX="32" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" title="P/N Spec" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima021" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima_file.ima021" noEntry="true" posX="57" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" title="Spec" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="bma05" noEntry="true" posX="87" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="16" table_alias_name="" title="Pay Date" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

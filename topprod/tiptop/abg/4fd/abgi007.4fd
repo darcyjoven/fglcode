@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e0562add-0000-4000-9b05-fe912a41f320}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bgs" order="" uid="{96a51bdd-0000-4000-9715-bdfa331c68c2}" where="">
+    <RecordField colName="bgs01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bgs_file.bgs01" sqlTabName="bgs_file" sqlType="VARCHAR" table_alias_name="" uid="{15adcda7-0000-4000-927d-d687622507e1}"/>
+    <RecordField colName="bgs02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bgs_file.bgs02" sqlTabName="bgs_file" sqlType="VARCHAR" table_alias_name="" uid="{e354a952-0000-4000-9e2f-097e91849467}"/>
+    <RecordField colName="bgs03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bgs_file.bgs03" sqlTabName="bgs_file" sqlType="VARCHAR" table_alias_name="" uid="{2ea48f5f-0000-4000-b689-d5e6234d8ddb}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d6f8c43d-0000-4000-8263-57188a8e3125}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f4c704c6-0000-4000-97fb-8f3dc3308ed7}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="38" name="abgi007" spacing="normal" text="abgi007">
+    <VBox gridHeight="18" gridWidth="35" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="35" lstrcomment="false" name="pc76" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="33" lstrcomment="false" name="s_bgs" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgs01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="bgs_file.bgs01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="bgs_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Expense No." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgs02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="bgs_file.bgs02" posX="14" posY="0" rowCount="" sqlTabName="bgs_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Name" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgs03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="bgs_file.bgs03" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="bgs_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Adjust" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="35" lstrcomment="false" name="gr585" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl148" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl149" posX="24" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

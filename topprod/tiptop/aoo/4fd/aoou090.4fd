@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8b0c0e97-0000-4000-a58c-1a1751b9bda4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bmr" order="" uid="{37fe7cbf-0000-4000-a3ca-7f284a6da9e4}" where="">
+    <RecordField colName="" fieldIdRef="1" name="choice" sqlTabName="" table_alias_name="" uid="{10423986-0000-4000-9d6a-d28b97e1159e}"/>
+    <RecordField colName="bmr01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bmr_file.bmr01" sqlTabName="bmr_file" sqlType="VARCHAR" table_alias_name="" uid="{52efd8d5-0000-4000-88c4-b2e75ebc14c0}"/>
+    <RecordField colName="bmr02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bmr_file.bmr02" sqlTabName="bmr_file" sqlType="DATE" table_alias_name="" uid="{0577d6e3-0000-4000-a61c-5ca5311d7642}"/>
+    <RecordField colName="" fieldIdRef="5" name="gen02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bc5c9cb4-0000-4000-84b0-ce388f8dd2ad}"/>
+    <RecordField colName="" fieldIdRef="6" name="gem02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{62ac9097-0000-4000-baa3-c96861057523}"/>
+    <RecordField colName="bmrsign" fieldIdRef="7" fieldType="TABLE_COLUMN" name="bmr_file.bmrsign" sqlTabName="bmr_file" sqlType="VARCHAR" table_alias_name="" uid="{825c02a8-0000-4000-af05-c5967df37465}"/>
+    <RecordField colName="bmrdays" fieldIdRef="8" fieldType="TABLE_COLUMN" name="bmr_file.bmrdays" sqlTabName="bmr_file" sqlType="SMALLINT" table_alias_name="" uid="{8bff254c-0000-4000-92e1-2b07262e905e}"/>
+    <RecordField colName="bmrprit" fieldIdRef="9" fieldType="TABLE_COLUMN" name="bmr_file.bmrprit" sqlTabName="bmr_file" sqlType="SMALLINT" table_alias_name="" uid="{9ef431b8-0000-4000-a232-c6288b0375aa}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{516d406a-0000-4000-a7d9-725d442a7c9d}" where="">
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cmt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f83a65ad-0000-4000-b7ad-c141d8d1824c}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{6f039a1a-0000-4000-b276-ed74398f9495}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="104" name="aoou090" spacing="normal" text="aoou090">
+    <VBox gridHeight="18" gridWidth="101" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="101" lstrcomment="false" name="pc889" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="99" lstrcomment="false" name="s_bmr" posX="0" posY="0" totalRows="10">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="choice" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="choice" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmr01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="bmr_file.bmr01" noEntry="true" posX="7" posY="0" rowCount="" sqlTabName="bmr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ECR No." widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmr02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bmr_file.bmr02" noEntry="true" posX="23" posY="0" rowCount="" sqlTabName="bmr_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Form Date" widget="DateEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gen02" noEntry="true" posX="35" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Applicant" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="gem02" noEntry="true" posX="45" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Department" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmrsign" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="bmr_file.bmrsign" posX="56" posY="0" rowCount="" sqlTabName="bmr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Approval" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmrdays" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bmr_file.bmrdays" posX="65" posY="0" rowCount="" sqlTabName="bmr_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Rest Days" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmrprit" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="bmr_file.bmrprit" posX="75" posY="0" rowCount="" sqlTabName="bmr_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Priority Level" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="101" lstrcomment="false" name="gr4720" posX="0" posY="15">
+        <Button comment="Select All" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtext="false" name="select_all" posX="1" posY="0" tabIndex=""/>
+        <Button comment="Cancel All" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="cancel_all" posX="18" posY="0" tabIndex=""/>
+        <Label posX="32" posY="0" text="Select Counts"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="cmt" noEntry="true" posX="53" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="68" posY="0" text=" "/>
+        <HLine gridWidth="10" name="hl1500" posX="1" posY="1"/>
+        <Label posX="11" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1501" posX="25" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

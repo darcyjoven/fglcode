@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{42e1db2e-e97f-44f6-92c6-96d5e5419b6c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e4f5cccf-eb11-4683-a9db-506c1edfe28c}" where="">
+    <RecordField colName="ryz02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ryz_file.ryz02" sqlTabName="ryz_file" sqlType="VARCHAR" table_alias_name="" uid="{4f86b0bb-6ea1-411e-ab23-b0e3b839dad4}"/>
+    <RecordField colName="ryz07" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ryz_file.ryz07" sqlTabName="ryz_file" sqlType="VARCHAR" table_alias_name="" uid="{9490c39f-7f7f-4c02-b697-4098efdc4d19}"/>
+    <RecordField colName="ryz03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ryz_file.ryz03" sqlTabName="ryz_file" sqlType="SMALLINT" table_alias_name="" uid="{5e25b6fe-cdf4-4808-950f-15bfe0023551}"/>
+    <RecordField colName="ryz04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ryz_file.ryz04" sqlTabName="ryz_file" sqlType="VARCHAR" table_alias_name="" uid="{b81dbe51-bf7b-4c8a-abbe-6001c42c293a}"/>
+    <RecordField colName="ryz05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ryz_file.ryz05" sqlTabName="ryz_file" sqlType="VARCHAR" table_alias_name="" uid="{78b517a3-294d-4862-8da5-69882eb75c01}"/>
+    <RecordField colName="ryz06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ryz_file.ryz06" sqlTabName="ryz_file" sqlType="VARCHAR" table_alias_name="" uid="{1fa24429-f18a-420a-afba-70595d4509d2}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="result1" sqlTabName="" table_alias_name="" uid="{48ab1853-3f0e-46fb-a1a3-1f85c97bade8}"/>
+    <RecordField colName="ryz08" defaultValue="N" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ryz_file.ryz08" sqlTabName="ryz_file" sqlType="VARCHAR" table_alias_name="" uid="{d81d2c95-146a-4201-af47-9d9407d819d6}"/>
+    <RecordField colName="ryz09" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ryz_file.ryz09" sqlTabName="ryz_file" sqlType="VARCHAR" table_alias_name="" uid="{1cd58501-cb61-4103-b45c-5f6f7c977ecb}"/>
+    <RecordField colName="ryz10" fieldIdRef="10" fieldType="TABLE_COLUMN" name="ryz_file.ryz10" sqlTabName="ryz_file" sqlType="VARCHAR" table_alias_name="" uid="{3effe6d9-ee82-475d-8d61-1a84ce3aefdb}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="ryz_file" name="Record1" order="" uid="{da9e5f06-b7ed-4c14-a5cd-969e04469cd2}" where="">
+    <RecordField colName="ryz11" fieldIdRef="11" fieldType="TABLE_COLUMN" name="ryz_file.ryz11" sqlTabName="ryz_file" sqlType="INTEGER" table_alias_name="" uid="{e6e964db-de4c-433a-a6fc-69c8bdc5190f}" uniqueQueryKey="false"/>
+  </Record>
+  <Form gridHeight="40" gridWidth="151" name="Form1" text="apcs010">
+    <Folder gridHeight="28" gridWidth="144" lstrcomment="false" name="pc1" posX="1" posY="0">
+      <Page name="Page1" text="Basic Setting">
+        <Grid gridHeight="18" gridWidth="79" lstrcomment="false" name="gr29" posX="1" posY="1">
+          <Group fontPitch="variable" gridChildrenInParent="false" gridHeight="6" gridWidth="72" lstrcomment="false" lstrtext="false" name="gb1" posX="2" posY="1">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" blink="false" colName="ryz08" columnCount="" defaultValue="N" fieldId="8" fieldType="TABLE_COLUMN" fontPitch="variable" gridHeight="1" gridWidth="24" justify="left" left="false" lstrtext="true" name="ryz_file.ryz08" notNull="true" posX="2" posY="1" reverse="false" rowCount="" sizePolicy="initial" sqlTabName="ryz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Upload Members Infor" title="CheckBox1" underline="false" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label posX="2" posY="2" text="ryz02"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Total, Detail" lstrcomment="false" name="ryz_file.ryz02" notNull="true" posX="15" posY="2" required="true" rowCount="" sqlTabName="ryz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="Total"/>
+              <Item lstrtext="false" name="2" text="Detail"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz09" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="47" name="ryz_file.ryz09" notNull="true" posX="2" posY="3" rowCount="" sqlTabName="ryz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Upload Order Auto Generate Request Y/N?&#10; " title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label gridHeight="1" gridWidth="8" name="Label1" posX="2" posY="4" text="ryz11"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz11" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" name="ryz_file.ryz11" posX="11" posY="4" rowCount="" scroll="true" sqlTabName="ryz_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="11" table_alias_name="" title="ryz11" widget="Edit"/>
+          </Group>
+          <Group gridHeight="4" gridWidth="72" lstrcomment="false" lstrtext="false" name="gb2" posX="2" posY="7" text="Document No. Setting">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz10" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" name="ryz_file.ryz10" notNull="true" posX="2" posY="1" rowCount="" sqlTabName="ryz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="Separate Up" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz07" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" name="ryz_file.ryz07" posX="2" posY="2" rowCount="" sqlTabName="ryz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Add Plant Code ?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label posX="47" posY="2" text="Code Length"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz03" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" name="ryz_file.ryz03" posX="60" posY="2" rowCount="" sqlTabName="ryz_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Group>
+          <Group gridHeight="6" gridWidth="72" lstrcomment="false" lstrtext="false" name="gb27" posX="2" posY="11" text="System Code Rule">
+            <Label posX="2" posY="1" text="Document No."/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz04" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="34" items="3, 4, 5" lstrcomment="false" name="ryz_file.ryz04" notNull="true" posX="18" posY="1" required="true" rowCount="" sqlTabName="ryz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="3"/>
+              <Item lstrtext="false" name="2" text="4"/>
+              <Item lstrtext="false" name="3" text="5"/>
+            </ComboBox>
+            <Label posX="2" posY="2" text="Serial No."/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz05" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="34" items="8, 9, 10" lstrcomment="false" name="ryz_file.ryz05" notNull="true" posX="18" posY="2" required="true" rowCount="" sqlTabName="ryz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="8"/>
+              <Item lstrtext="false" name="2" text="9"/>
+              <Item lstrtext="false" name="3" text="10"/>
+            </ComboBox>
+            <Label posX="2" posY="3" text="Encode Method"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryz06" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="34" items="By SN, By Month, By Week, By Day, By Time" lstrcomment="false" name="ryz_file.ryz06" notNull="true" posX="18" posY="3" required="true" rowCount="" sqlTabName="ryz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="By SN"/>
+              <Item lstrtext="false" name="2" text="By Month"/>
+              <Item lstrtext="false" name="3" text="By Week"/>
+              <Item lstrtext="false" name="4" text="By Day"/>
+              <Item lstrtext="false" name="5" text="By Time"/>
+            </ComboBox>
+            <Label posX="2" posY="4" text="Encode Result"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="34" lstrcomment="false" name="result1" noEntry="true" posX="18" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0AGYAOAA2AGIAMABiAGIALQA2AGUAYQAxAC0ANAAxADEAZQAtAGEAYgAyADMALQBiADAAZQAzAGIAOAAzADkAZABhAGQANAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADQAOQAwAGMAMwA5AGYALQA3AGYANwBmAC0ANABjADAAMgAtAGIANgA5ADcALQA0ADAAOQA4AGUAZgBkAGMANABkADEAOQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGMAZAA1ADgANQAwADEALQBjAGIANgAxAC0ANAAxADAAMwAtAGIANAA1AGMALQA1AGYANgBmADcAYwA5ADcANwBlAGMAYgB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADgAMQBkAGIAZQA1ADEALQBiAGYANwBiAC0ANABjADgAYQAtAGEAYgBiAGUALQA2ADAAMAAxAGMANAAyAGMAMgA5ADMAYQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADgAYgA1ADEANwBhADMALQAyADkANABkAC0ANAA4ADYAMgAtADgAZABhADUALQA2ADkAOAA4ADIAZQBiADcANQBjADAAMQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBkADgAMQBkADIAYwA5ADUALQAxADQANgBhAC0ANAAyADAAMQAtAGEAZgA0ADcALQA5AGQAOQA0ADAANwBkADgAMQA5AGQANgB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGUAMgA1AGIANgBmAGUALQBjAGQAZgA0AC0ANAA4ADAAOAAtADkANQAwAGYALQAxADUAYgBmAGUAMAAwADIAMwA1ADUAMQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADgAYQBiADEAOAA1ADMALQAzAGYAMABlAC0ANAA2AGYAYgAtAGEAMQBhADMALQAxAGYAOAA1AGMAOQA3AGIAYQBkAGUAOAB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGEAOQBlADUAZgAwADYALQBiADcAZQBkAC0ANABjADEANAAtAGEANQBjAGQALQA5ADYAOQBlADAANAA0ADYAOQBjAGQAMgB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGYAYQAyADQANAAyADkALQBmADEAOABhAC0ANAAyADAAYQAtAGEAZgBiAGEALQA3ADAANQA5ADUAZAA0ADUAMAA5AGQAMgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGUAZgBmAGUANgBkADkALQBlAGUAOAAyAC0ANAA3ADUAZAAtADgAZAA2ADEALQAxAGEAOAA0AGMAZQAzAGEAZQBmAGQAYgB9QCQAAAAAAABAbWAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADQAZgA1AGMAYwBjAGYALQBlAGIAMQAxAC0ANAA2ADgAMwAtAGEAOQBkAGIALQA1ADAANgBjADEAZQBkAGYAZQAyADgAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADYAZQA5ADYANABkAGIALQBkAGUANABjAC0ANAAzADMAYQAtAGEANgBmAGMALQA2ADkAYwA4AGIAZABjADUAMQA5ADAAZgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

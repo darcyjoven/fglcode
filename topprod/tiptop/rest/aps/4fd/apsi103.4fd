@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="61" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="35189" spacing="normal" posX="0" percommentheader="" height="16" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="apsi103" defaultspacing="true" text="apsi103" gstVersion="11401" percommentlayout="TABLE
+PAGE
+GRID
+PAGE
+FOLDER
+LAYOUT
+" lstrtoalltext="false" >
+ <PageControl width="59" posX="0" posY="0" height="14" lstrcomment="false" name="pc1014" >
+  <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" >
+   <Table width="57" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="0" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_aps" fontPitch="default" tabName="s_aps" unsortableColumns="--------" tabName1="s_aps" >
+    <TableColumn width="20" lstrtext="false" sqlDBName="ds" height="1" colName="dcaln_id" unsortable="--------" fieldId="0" sqlTabName="aps_sad" tabIndex="1" unsizable="--------" unhidable="--------" unmovable="--------" name="dcaln_id" fieldtype="TABLE_COLUMN" text="Day Calendar NO." >
+     <Edit width="20" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+    </TableColumn>
+    <TableColumn width="12" lstrtext="false" sqlDBName="ds" height="1" colName="d_date" unsortable="--------" fieldId="1" sqlTabName="aps_sad" tabIndex="2" unsizable="--------" unhidable="--------" unmovable="--------" name="d_date" fieldtype="TABLE_COLUMN" text="Date" >
+     <DateEdit width="12" notNull="true" height="1" autoNext="--------" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="DATE" century="R" color="black" fontPitch="default" noEntry="--------" required="true" />
+    </TableColumn>
+    <TableColumn width="20" lstrtext="false" sqlDBName="ds" height="1" colName="wm_id" unsortable="--------" fieldId="2" sqlTabName="aps_sad" tabIndex="3" unsizable="--------" unhidable="--------" unmovable="--------" name="wm_id" fieldtype="TABLE_COLUMN" text="Work Model" >
+     <Edit width="20" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+    </TableColumn>
+   </Table>
+  </Page>
+  <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="info" fontPitch="default" text="Info" >
+   <Grid width="32" posX="0" posY="0" height="4" lstrcomment="false" hidden="--------" name="gr5347" fontPitch="default" scroll="false" >
+    <Group width="32" lstrtext="false" gridWidth="32" posX="0" posY="0" height="3" lstrcomment="false" hidden="--------" name="grpinfo" fontPitch="default" gridHeight="3" gridChildrenInParent="--------" >
+     <Text width="13" lstrtext="false" gridWidth="13" posX="1" posY="1" height="1" sizePolicy="initial" name="text17955" text="Detail Counts" />
+     <FormField colName="cn2" fieldId="3" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+      <Edit width="10" case="NONE" invisible="--------" gridWidth="10" notNull="--------" posX="21" formfieldname="formfield0" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="4" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+     </FormField>
+    </Group>
+   </Grid>
+  </Page>
+ </PageControl>
+ <RecordView SRType="default" name="s_aps" fromTable="true" tableKey="tb712" >
+  <Link colName="aps_sad.dcaln_id" fromTable="true" colKey="Col7173" />
+  <Link colName="aps_sad.d_date" fromTable="true" colKey="Col7174" />
+  <Link colName="aps_sad.wm_id" fromTable="true" colKey="Col7175" />
+ </RecordView>
+</Form>
+

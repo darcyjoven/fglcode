@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9f31ce79-0000-4000-8d04-1ee7b13d1c38}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_fun" order="" uid="{3c0a1dec-0000-4000-a40c-01c94e86c334}" where="">
+    <RecordField colName="" fieldIdRef="3" name="gav01_2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7cafe570-0000-4000-bab8-292bada84814}"/>
+    <RecordField colName="" fieldIdRef="4" name="gav08_2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{061e07f6-0000-4000-87ae-5b2e57200f22}"/>
+    <RecordField colName="" fieldIdRef="5" name="gav11_2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5c554a37-0000-4000-9285-f3cdc3db168a}"/>
+    <RecordField colName="" fieldIdRef="6" name="gav02_2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a9f6773c-0000-4000-aac1-5028d22836e1}"/>
+    <RecordField colName="" fieldIdRef="7" name="check" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{086c2cd7-0000-4000-aeda-7fc653e1132d}"/>
+    <RecordField colName="" fieldIdRef="8" name="fun_cont" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c7b51828-0000-4000-863b-14e4813be1eb}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{36edc619-0000-4000-a82d-b2b780dac31c}" where="">
+    <RecordField colName="gav01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gav_file.gav01" sqlTabName="gav_file" sqlType="VARCHAR" table_alias_name="" uid="{eb7ab3e1-0000-4000-9406-a93ae3e29fc7}"/>
+    <RecordField colName="gav02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gav_file.gav02" sqlTabName="gav_file" sqlType="VARCHAR" table_alias_name="" uid="{09d24785-0000-4000-98f5-dc7029d7d184}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="fun_cont_desc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0d36e452-0000-4000-8d22-11313cb0d885}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="76" lstrtext="false" name="p_per_sel_function" spacing="normal" text="p_per_sel_function">
+    <VBox gridHeight="25" gridWidth="71" name="vb46" posX="1" posY="1">
+      <Grid gridHeight="3" gridWidth="71" lstrcomment="false" name="gr13" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Form ID"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gav01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="" lstrcomment="false" name="gav_file.gav01" posX="11" posY="0" rowCount="" sqlTabName="gav_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox"/>
+        <Button gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="search" posX="34" posY="0" tabIndex="" text="Query"/>
+        <Button gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="send" posX="46" posY="0" tabIndex="" text="Send"/>
+        <Label posX="1" posY="1" text="Field ID"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gav02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="" lstrcomment="false" name="gav_file.gav02" posX="11" posY="1" rowCount="" sqlTabName="gav_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox"/>
+        <Button gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="quit" posX="46" posY="1" tabIndex="" text="Cancel"/>
+      </Grid>
+      <Table gridHeight="10" gridWidth="71" name="tb1" posX="0" posY="4" totalRows="8">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="gav01_2" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Form ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="gav08_2" noEntry="true" posX="7" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Cust" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" gridHeight="1" gridWidth="7" items="" lstrcomment="false" lstrtitle="false" name="gav11_2" posX="14" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Industry" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="gav02_2" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Field ID" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" gridHeight="1" gridWidth="7" items="Data Check, Repeat Check, Reference Value" lstrcomment="false" lstrtitle="false" name="check" notNull="true" posX="28" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Check" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Data Check"/>
+          <Item lstrtext="false" name="2" text="Repeat Check"/>
+          <Item lstrtext="false" name="3" text="Reference Value"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" gridHeight="1" gridWidth="11" hidden="true" lstrcomment="false" lstrtitle="false" name="fun_cont" noEntry="true" posX="35" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Function Content" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="10" gridWidth="71" lstrcomment="false" name="gr108" posX="0" posY="14">
+        <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="9" gridWidth="56" lstrcomment="false" name="fun_cont_desc" noEntry="true" posX="2" posY="0" rowCount="" scrollBars="both" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="TextEdit"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

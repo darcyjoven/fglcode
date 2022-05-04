@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="60" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="8700" spacing="normal" posX="0" percommentheader="" height="21" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="apsi100" defaultspacing="true" text="apsi100" gstVersion="11401" percommentlayout="GRID
+PAGE
+FOLDER
+TABLE
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="57" posX="0" posY="0" height="6" lstrcomment="false" name="folder01" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" >
+    <Grid width="55" posX="0" posY="0" height="4" lstrcomment="false" hidden="--------" name="gr5345" fontPitch="default" scroll="false" >
+     <Group width="55" lstrtext="false" gridWidth="55" posX="0" posY="0" height="3" lstrcomment="false" hidden="--------" name="group01" fontPitch="default" gridHeight="3" gridChildrenInParent="--------" >
+      <Text width="20" lstrtext="false" gridWidth="20" posX="1" posY="1" height="1" sizePolicy="initial" name="text17952" text="Equipment Group Code" />
+      <FormField sqlDBName="ds" colName="eqg_id" fieldId="0" sqlTabName="aps_saa" name="eqg_id" fieldtype="TABLE_COLUMN" >
+       <Edit width="31" case="NONE" invisible="--------" gridWidth="31" notNull="--------" posX="23" formfieldname="formfield0" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="1" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="eqg_id" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+     </Group>
+    </Grid>
+   </Page>
+  </PageControl>
+  <Table width="57" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="6" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_aps" fontPitch="default" tabName="s_aps" unsortableColumns="--------" tabName1="s_aps" >
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="eq_id" unsortable="--------" fieldId="1" sqlTabName="aps_saa" tabIndex="2" unsizable="--------" unhidable="--------" unmovable="--------" name="eq_id" fieldtype="TABLE_COLUMN" text="Equipment No." >
+    <ButtonEdit width="14" case="NONE" comment="&lt;^P>Query Equipment No." invisible="--------" notNull="true" image="zoom" height="1" action="controlp" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="16" lstrtext="false" height="1" colName="eci06" unsortable="--------" fieldId="2" sqlTabName="formonly" tabIndex="3" unsizable="--------" unhidable="--------" unmovable="--------" name="eci06" text="Name" >
+    <Edit width="16" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+  </Table>
+  <Grid width="57" posX="0" posY="18" height="1" lstrcomment="false" hidden="--------" name="gr5346" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl1676" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="12" posY="0" height="1" sizePolicy="initial" name="text17953" text="Rows" />
+   <FormField colName="cnt" fieldId="3" sqlTabName="formonly" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="18" formfieldname="formfield1" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="4" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cnt" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <Text width="1" lstrtext="false" gridWidth="1" posX="26" posY="0" height="1" sizePolicy="initial" name="text17954" text="/" />
+   <FormField colName="cn2" fieldId="4" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="29" formfieldname="formfield2" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="5" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="37" posY="0" height="1" name="hl1677" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_aps" fromTable="true" tableKey="tb711" >
+  <Link colName="aps_saa.eq_id" fromTable="true" colKey="Col7171" />
+  <Link colName="formonly.eci06" fromTable="true" colKey="Col7172" />
+ </RecordView>
+</Form>
+

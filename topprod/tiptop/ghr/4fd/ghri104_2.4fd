@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="ManagedForm" uid="{69f34f44-b7fa-4e38-95dc-bf1c9f685cf8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bf340928-5f43-4d36-bdde-2124f7e252e8}" where="">
+    <RecordField colName="" fieldIdRef="1" name="hrag01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a1325638-f538-40ab-beb6-6666dbfacea0}"/>
+    <RecordField colName="" fieldIdRef="2" name="hrag03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d92ff810-1d1e-4dd2-a985-3aa41538d48b}"/>
+    <RecordField colName="" fieldIdRef="3" name="hrag02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0bcb32c4-1f13-48e8-8950-a3b43e63bf0c}"/>
+    <RecordField colName="" fieldIdRef="4" name="hrag04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a5166d93-308d-4f9a-9524-fbd20ad6e772}"/>
+    <RecordField colName="" fieldIdRef="11" name="cnt" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{11578a33-e44c-4734-b95c-e9c6d3e5458b}"/>
+    <RecordField colName="" fieldIdRef="12" name="cn2" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{8cf464db-de38-4cbe-8496-17eaef26fa90}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Record1" order="" uid="{4b3eef3b-a819-4770-99b6-a983d8cbcaf3}" where="">
+    <RecordField colName="" fieldIdRef="5" name="hrag05" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{4ae3734f-3548-4690-b4f5-ef42a16cf1a0}"/>
+    <RecordField colName="" fieldIdRef="6" name="hrag06" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bd808580-386b-454b-8e44-cb60a5671497}"/>
+    <RecordField colName="" fieldIdRef="7" name="hrag07" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{288113c2-1ae1-4d39-b16c-6af068a357f1}"/>
+    <RecordField colName="" fieldIdRef="8" name="hrag08" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{34ce6fbb-621a-4704-b9ea-3b7369288164}"/>
+    <RecordField colName="" fieldIdRef="9" name="hrag09" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6d20b553-7188-4270-b87a-43132a2f7893}"/>
+    <RecordField colName="" fieldIdRef="10" name="hragacti" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f5d20927-3f71-4a71-828c-b1f7ac221884}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Record2" order="" uid="{72532980-6b0a-4361-b0b7-902fdbc14179}" where="">
+    <RecordField colName="" fieldIdRef="13" name="name" sqlTabName="" table_alias_name="" uid="{7b023fba-36d6-4e9a-9ed8-f929dfc4df6c}"/>
+    <RecordField colName="" fieldIdRef="14" name="pid" sqlTabName="" table_alias_name="" uid="{2da2effd-a370-4cf0-92b2-a1da174657a2}"/>
+    <RecordField colName="" fieldIdRef="15" name="id" sqlTabName="" table_alias_name="" uid="{39ce7c01-6b22-43f7-b1cf-3d54f052b1a9}"/>
+    <RecordField colName="" fieldIdRef="16" name="has_children" sqlTabName="" table_alias_name="" uid="{53a1447f-ec75-41cb-aab1-858abd49b908}"/>
+    <RecordField colName="" fieldIdRef="17" name="expanded" sqlTabName="" table_alias_name="" uid="{182cd1d8-6200-4020-b351-8d178058d69c}"/>
+    <RecordField colName="" fieldIdRef="18" name="level" sqlTabName="" table_alias_name="" uid="{681b8f52-2932-4435-9660-26e9dc47e392}"/>
+    <RecordField colName="" fieldIdRef="19" name="treekey1" sqlTabName="" table_alias_name="" uid="{077a6426-c03b-4865-9c77-6c7b5e2c8827}"/>
+    <RecordField colName="" fieldIdRef="20" name="treekey2" sqlTabName="" table_alias_name="" uid="{cd0bd3c6-2ae3-4354-8294-4638b85f8631}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="150" name="Form" text="Form">
+    <HBox gridHeight="21" gridWidth="133" name="HBox1" posX="4" posY="0">
+      <Tree expandedColumn="expanded" gridHeight="21" gridWidth="28" idColumn="id" imageCollapsed="folder" imageExpanded="open" imageLeaf="file" isNodeColumn="has_children" name="tree" parentIdColumn="pid" posX="2" posY="0" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="17" name="name" posX="0" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="13" table_alias_name="" title="name" widget="Edit"/>
+        <Phantom colName="" fieldId="14" name="pid" sqlTabName="" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="" fieldId="15" name="id" sqlTabName="" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="" fieldId="16" name="has_children" sqlTabName="" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="" fieldId="17" name="expanded" sqlTabName="" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="" fieldId="18" name="level" sqlTabName="" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="" fieldId="19" name="treekey1" sqlTabName="" table_alias_name="" widget="Phantom"/>
+        <Phantom colName="" fieldId="20" name="treekey2" sqlTabName="" table_alias_name="" widget="Phantom"/>
+      </Tree>
+      <VBox gridHeight="21" gridWidth="101" name="VBox1" posX="30" posY="0">
+        <Folder gridHeight="7" gridWidth="101" name="Folder1" posX="0" posY="1">
+          <Page name="Page1" text="Page1">
+            <Grid gridHeight="4" gridWidth="91" name="Grid1" posX="1" posY="0">
+              <Label posX="1" posY="1" text="hrag01"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="17" image="zoom" name="hrag01" noEntry="true" posX="9" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+              <Label posX="28" posY="1" text="hrag03"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="18" items="01, 02, 03, 04, 05, 06, 07, 08, 09, 10" name="hrag03" noEntry="true" posX="36" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ComboBox1" widget="ComboBox">
+                <Item lstrtext="false" name="01" text="01"/>
+                <Item lstrtext="false" name="02" text="02"/>
+                <Item lstrtext="false" name="03" text="03"/>
+                <Item lstrtext="false" name="04" text="04"/>
+                <Item lstrtext="false" name="05" text="05"/>
+                <Item lstrtext="false" name="06" text="06"/>
+                <Item lstrtext="false" name="07" text="07"/>
+                <Item lstrtext="false" name="08" text="08"/>
+                <Item lstrtext="false" name="09" text="09"/>
+                <Item lstrtext="false" name="10" text="10"/>
+              </ComboBox>
+              <Label posX="1" posY="2" text="hrag02"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="17" name="hrag02" noEntry="true" posX="9" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit1" widget="Edit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="13" name="hrag04" noEntry="true" posX="28" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="hrag04" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Grid>
+          </Page>
+        </Folder>
+        <Table gridHeight="8" gridWidth="101" name="Table1" posX="0" posY="8" totalRows="5">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" name="hrag05" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="5" table_alias_name="" title="hrag05" widget="Edit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="16" image="zoom" name="hrag06" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="hrag06" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="17" name="hrag07" posX="26" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="hrag07" widget="Edit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="9" name="hrag08" noEntry="true" posX="43" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="" title="hrag08" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="15" name="hrag09" posX="52" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="hrag09" widget="Edit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="11" name="hragacti" notNull="true" posX="67" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="Edit1" title="hragacti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Table>
+        <Grid gridHeight="4" gridWidth="101" name="Grid2" posX="0" posY="16">
+          <HLine gridWidth="11" name="HLine1" posX="2" posY="1"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="5" name="cnt" noEntry="true" posX="14" posY="1" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Edit3" widget="Edit"/>
+          <Label posX="20" posY="1" text="/"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="4" name="cn2" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Edit3" widget="Edit"/>
+          <HLine gridWidth="12" name="HLine2" posX="27" posY="1"/>
+        </Grid>
+      </VBox>
+    </HBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADgAOAAxADEAMwBjADIALQAxAGEAZQAxAC0ANABkADMAOQAtAGIAMQA2AGMALQA2AGEAZgAwADYAOABhADMANQA3AGYAMQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGIAMwBlAGUAZgAzAGIALQBhADgAMQA5AC0ANAA3ADcAMAAtADkAOQBiADYALQBhADkAOAAzAGQAOABjAGIAYwBhAGYAMwB9QBAAAAAAAABAaAAAAAAAAD9ok3S8an76AQAAAEwAewA1ADMAYQAxADQANAA3AGYALQBlAGMANwA1AC0ANAAxAGMAYgAtAGEAYQBiADEALQA4ADUAOABhAGIAZAA0ADkAYgA5ADAAOAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADkAMgBmAGYAOAAxADAALQAxAGQAMQBlAC0ANABkAGQAMgAtAGEAOQA4ADUALQAzAGEAYQA0ADEANQAzADgAZAA0ADgAYgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGIAYwBiADMAMgBjADQALQAxAGYAMQAzAC0ANAA4AGUAOAAtADgAOQA1ADAALQBhADMAYgA0ADMAZQA2ADMAYgBmADAAYwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADEANQA3ADgAYQAzADMALQBlADQANABjAC0ANAA3ADMANAAtAGIAOQA1AGMALQBlADkAYwA2AGQAMwBlADUANAA1ADgAYgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAzADQAYwBlADYAZgBiAGIALQA2ADIAMQBhAC0ANAA3ADAANAAtAGIAOQBlAGEALQAzAGIANwAzADYAOQAyADgAOAAxADYANAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADkAYwBlADcAYwAwADEALQA2AGIAMgAyAC0ANAAzAGYANwAtAGIAMQBjAGYALQAzAGQANQA0AGYAMAA1ADIAYgAxAGEAOQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGQAYQAyAGUAZgBmAGQALQBhADMANwAwAC0ANABjAGYAMAAtADkAMgBiADIALQBhADEAZABhADEANwA0ADYANQA3AGEAMgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADEAMwAyADUANgAzADgALQBmADUAMwA4AC0ANAAwAGEAYgAtAGIAZQBiADYALQA2ADYANgA2AGQAYgBmAGEAYwBlAGEAMAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADgAMgBjAGQAMQBkADgALQA2ADIAMAAwAC0ANAAwADIAMAAtAGIAMwA1ADEALQA4AGQAMQA3ADgAMAA1ADgAZAA2ADkAYwB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBhADUAMQA2ADYAZAA5ADMALQAzADAAOABkAC0ANABmADkAYQAtADkANQAyADQALQBmAGIAZAAyADAAYQBkADYAZQA3ADcAMgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADcANwBhADYANAAyADYALQBjADAAMwBiAC0ANAA4ADYANQAtADkAYwA3ADcALQA2AGMANwBiADUAZQAyAGMAOAA4ADIANwB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADIANQAzADIAOQA4ADAALQA2AGIAMABhAC0ANAAzADYAMQAtAGIAMABiADcALQA5ADAAMgBmAGQAYgBjADEANAAxADcAOQB9QGpAAAAAAABAV4AAAAAAAD9QYk3S8an8AQAAAEwAewBmADUAZAAyADAAOQAyADcALQAzAGYANwAxAC0ANABhADcAMQAtADgAMgA4AGMALQBiADEAZgA3AGEAYwAyADIAMQA4ADgANAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGIAMAAyADMAZgBiAGEALQAzADYAZAA2AC0ANABlADkAYQAtADkAZQBkADgALQBmADkAMgA5AGQAZgBjADQAZABmADYAYwB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGEAZQAzADcAMwA0AGYALQAzADUANAA4AC0ANAA2ADkAMAAtAGIANABmADUALQBlAGYANAAyAGEAMQA2AGMAZgAxAGEAMAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGQAMABiAGQAMwBjADYALQAyAGEAZQAzAC0ANAAzADUANAAtADgAMgA5ADQALQA0ADYAMwA4AGIAOAA1AGYAOAA2ADMAMQB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGYAMwA0ADAAOQAyADgALQA1AGYANAAzAC0ANABkADMANgAtAGIAZABkAGUALQAyADEAMgA0AGYANwBlADIANQAyAGUAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGQAMgAwAGIANQA1ADMALQA3ADEAOAA4AC0ANAAyADcAMAAtAGIAOAA3AGEALQA0ADMAMQAzADIAYQAyAGYANwA4ADkAMwB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADgAMQBiADgAZgA1ADIALQAyADkAMwAyAC0ANAA0ADMANQAtADkANgA2ADAALQAyADYAZQA5AGQAYwA0ADcAZQAzADkAMgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGQAOAAwADgANQA4ADAALQAzADgANgBiAC0ANAA1ADQAYgAtADgAZQA0ADQALQBjAGIANgAwAGEANQA2ADcAMQA0ADkANwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGMAZgA0ADYANABkAGIALQBkAGUAMwA4AC0ANABjAGIAZQAtADgANAA5ADYALQAxADcAZQBhAGUAZgAyADYAZgBhADkAMAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

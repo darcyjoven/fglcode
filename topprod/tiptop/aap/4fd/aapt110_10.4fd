@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{20431c56-0000-4000-8317-0fad8d408274}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{46dfcadf-0000-4000-86a2-a79e4ecf001a}" where="">
+    <RecordField colName="apa53" fieldIdRef="2" fieldType="TABLE_COLUMN" name="apa_file.apa53" sqlTabName="apa_file" sqlType="VARCHAR" table_alias_name="" uid="{3dfafa39-6061-490a-b073-bcd1877ee13b}"/>
+    <RecordField colName="aag02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aag_file.aag02" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{7c1a3909-b7c6-49e2-99f8-aab7d369636c}"/>
+    <RecordField colName="apa531" fieldIdRef="4" fieldType="TABLE_COLUMN" name="apa_file.apa531" sqlTabName="apa_file" sqlType="VARCHAR" table_alias_name="" uid="{9ec2bc9b-5e22-43a7-b9d3-24cb7bc31e4c}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="aag02" sqlTabName="" sqlType="CHAR" table_alias_name="" uid="{ec7858e4-28a8-40a7-821b-20fe7cc9729d}"/>
+    <RecordField colName="apa56" fieldIdRef="1" fieldType="TABLE_COLUMN" name="apa_file.apa56" sqlTabName="apa_file" sqlType="VARCHAR" table_alias_name="" uid="{4fc68013-ef35-4426-88fd-8e6f08962304}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="127" name="aapt110_10" spacing="normal" text="Variation Process">
+    <Group gridHeight="22" gridWidth="74" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="0" text="Body Stock-in Amt not equal to Head Invoice Amt">
+      <Grid gridHeight="20" gridWidth="66" name="Grid1" posX="1" posY="1">
+        <Group gridHeight="12" gridWidth="61" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="1" text="Assign Variation Process Method">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apa56" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="7" gridWidth="49" items="Enter Body Data ,Until equal, Retain, Variation Counted to Purchase Difference, Apportion Head Amount to Body Detail, Variation Counted to UNAP Difference, Apportion Head Amount to Body Detail By User" lstrcomment="false" lstrtitle="false" name="apa_file.apa56" posX="1" posY="1" rowCount="" sqlTabName="apa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="0" text="Enter Body Data ,Until equal"/>
+            <Item lstrtext="false" name="1" text="Retain"/>
+            <Item lstrtext="false" name="2" text="Variation Counted to Purchase Difference"/>
+            <Item lstrtext="false" name="4" text="Apportion Head Amount to Body Detail"/>
+            <Item lstrtext="false" name="5" text="Variation Counted to UNAP Difference"/>
+            <Item lstrtext="false" name="6" text="Apportion Head Amount to Body Detail By User"/>
+          </RadioGroup>
+        </Group>
+        <Group gridHeight="6" gridWidth="58" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="13">
+          <Label posX="1" posY="1" text="Assign Account of Variation"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apa53" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="apa_file.apa53" posX="30" posY="1" rowCount="" sqlTabName="apa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="aag_file.aag02" posX="30" posY="2" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Assign Account of Variation"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apa531" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="apa_file.apa531" posX="30" posY="3" rowCount="" sqlTabName="apa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="aag02" posX="30" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+    </Group>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0AGYAYwA2ADgAMAAxADMALQBlAGYAMwA1AC0ANAA0ADIANgAtADgAOABmAGQALQA4AGUANgBmADAAOAA5ADYAMgAzADAANAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADYAZABmAGMAYQBkAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADgANgBhADIALQBhADcAOQBlADQAZQBjAGYAMAAwADEAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGMANwA4ADUAOABlADQALQAyADgAYQA4AC0ANAAwAGEANwAtADgAMgAxAGIALQAyADAAZgBlADcAYwBjADkANwAyADkAZAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGMAMQBhADMAOQAwADkALQBiADcAYwA2AC0ANAA5AGUAMgAtADkAOQBmADgALQBhAGEAYgA3AGQAMwA2ADkANgAzADYAYwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGQAZgBhAGYAYQAzADkALQA2ADAANgAxAC0ANAA5ADAAYQAtAGIAMAA3ADMALQBiAGMAZAAxADgANwA3AGUAZQAxADMAYgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGUAYwAyAGIAYwA5AGIALQA1AGUAMgAyAC0ANAAzAGEANwAtAGIAOQBkADMALQAyADQAYwBiADcAYgBjADMAMQBlADQAYwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

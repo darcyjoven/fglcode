@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{ad0c4ea3-05e9-46cc-ab50-002f3383af6f}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{43ebb2ba-3382-4775-94f2-63e6e9d80ba5}" where="">
+    <RecordField colName="axa01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="axa_file.axa01" sqlTabName="axa_file" sqlType="VARCHAR" table_alias_name="" uid="{492b5a28-0ac5-46c3-bfda-c9c3835897a9}"/>
+    <RecordField colName="axa02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="axa_file.axa02" sqlTabName="axa_file" sqlType="VARCHAR" table_alias_name="" uid="{615ad0c3-7738-459e-8265-a4593ae89697}"/>
+    <RecordField colName="axa03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="axa_file.axa03" sqlTabName="axa_file" sqlType="VARCHAR" table_alias_name="" uid="{8469dd3e-6890-49d2-b893-d9bec29a74ee}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{85a55a98-505d-4dd4-801e-ef4f47019490}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="axa06" sqlTabName="" table_alias_name="" uid="{c7ca494c-e4a9-4c81-b6c0-2a25571f0dae}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="em" sqlTabName="" table_alias_name="" uid="{20d17711-4845-46b1-9642-813d51e35603}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="q1" sqlTabName="" table_alias_name="" uid="{3965e5df-e545-4aa3-9ea0-aeaf570ab6ad}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="h1" sqlTabName="" table_alias_name="" uid="{bfbd4540-9ceb-4eae-8a79-9767ad64648a}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="gl" sqlTabName="" table_alias_name="" uid="{2c46a211-8b4e-4ca5-bbed-4d5c00a1d70d}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="ver" sqlTabName="" table_alias_name="" uid="{f73e997b-e1c7-4755-b2d8-976ca61f5969}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="hisyy" sqlTabName="" table_alias_name="" uid="{e0964ce1-4bed-4e49-899b-cf3c8fc39c8c}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="hismm" sqlTabName="" table_alias_name="" uid="{51a0664b-9c9b-469e-999a-84b83beb3bd9}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{266102b1-da65-4593-a16d-2b95322925f2}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="59" name="aglp001" spacing="normal" text="aglp001">
+    <VBox gridHeight="20" gridWidth="45" name="vb8" posX="0" posY="1">
+      <Grid gridHeight="14" gridWidth="45" lstrcomment="false" name="gr2472" posX="0" posY="1">
+        <Group gridHeight="14" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label gridHeight="1" gridWidth="9" posX="1" posY="1" text="Group No."/>
+          <ButtonEdit action="controlp" colName="axa01" columnCount="" comment="&lt;^P&gt;Query Group Data" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="axa_file.axa01" notNull="true" posX="23" posY="1" required="true" rowCount="" sqlTabName="axa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="14" posX="1" posY="2" text="Parent Company"/>
+          <ButtonEdit action="controlp" colName="axa02" columnCount="" comment="&lt;^P&gt;Query " fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="axa_file.axa02" notNull="true" posX="23" posY="2" required="true" rowCount="" sqlTabName="axa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="8" posX="1" posY="3" text="Book No."/>
+          <Edit colName="axa03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="axa_file.axa03" noEntry="true" notNull="true" posX="23" posY="3" required="true" rowCount="" sqlTabName="axa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="19" posX="1" posY="4" text="Inward Finscal Year"/>
+          <Edit colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="yy" notNull="true" posX="23" posY="4" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="5" posX="1" posY="5" text="axa05"/>
+          <ComboBox colName="" colorCondition="black" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Month, Quarter, Half a Year, Year" lstrcomment="false" name="axa06" notNull="true" posX="23" posY="5" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ComboBox">
+            <Item name="1" text="Month"/>
+            <Item lstrtext="false" name="2" text="Quarter"/>
+            <Item lstrtext="false" name="3" text="Half a Year"/>
+            <Item lstrtext="false" name="4" text="Year"/>
+          </ComboBox>
+          <Label gridHeight="1" gridWidth="13" posX="1" posY="6" text="Ending Period"/>
+          <Edit colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="em" notNull="true" posX="23" posY="6" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="7" posX="1" posY="7" text="Quarter"/>
+          <ComboBox colName="" colorCondition="black" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Quarter 1, Quarter 2, Quarter 3, Quarter 4" lstrcomment="false" name="q1" notNull="true" posX="23" posY="7" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="Quarter 1"/>
+            <Item lstrtext="false" name="2" text="Quarter 2"/>
+            <Item lstrtext="false" name="3" text="Quarter 3"/>
+            <Item lstrtext="false" name="4" text="Quarter 4"/>
+          </ComboBox>
+          <Label gridHeight="1" gridWidth="11" posX="1" posY="8" text="Half a Year"/>
+          <ComboBox colName="" colorCondition="black" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="First Half Year, Second Half Year" lstrcomment="false" name="h1" notNull="true" posX="23" posY="8" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="First Half Year"/>
+            <Item lstrtext="false" name="2" text="Second Half Year"/>
+          </ComboBox>
+          <Label gridHeight="1" gridWidth="20" posX="1" posY="9" text="Adjustment Note Type"/>
+          <ButtonEdit action="controlp" colName="" color="yellow" columnCount="" comment="&lt;^P&gt;Qry Documents" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="gl" notNull="true" posX="23" posY="9" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="7" posX="1" posY="10" text="Vserion"/>
+          <Edit colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="ver" posX="23" posY="10" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="17" posX="1" posY="11" text="History Rate Year"/>
+          <Edit colName="" colorCondition="black" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="hisyy" posX="23" posY="11" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="19" posX="1" posY="12" text="History Rate Period"/>
+          <Edit colName="" colorCondition="black" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="hismm" posX="23" posY="12" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="4" gridWidth="45" lstrcomment="false" name="grid" posX="0" posY="15">
+        <CheckBox colName="" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="27" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzADkANgA1AGUANQBkAGYALQBlADUANAA1AC0ANABhAGEAMwAtADkAZQBhADAALQBhAGUAYQBmADUANwAwAGEAYgA2AGEAZAB9QBQAAAAAAABAZoAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADYANgAxADAAMgBiADEALQBkAGEANgA1AC0ANAA1ADkAMwAtAGEAMQA2AGQALQAyAGIAOQA1ADMAMgAyADkAMgA1AGYAMgB9QBQAAAAAAABAdKAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADQANgA5AGQAZAAzAGUALQA2ADgAOQAwAC0ANAA5AGQAMgAtAGIAOAA5ADMALQBkADkAYgBlAGMAMgA5AGEANwA0AGUAZQB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADAAOQA2ADQAYwBlADEALQA0AGIAZQBkAC0ANABlADQAOQAtADgAOQA5AGIALQBjAGYAMwBjADgAZgBjADMAOQBjADgAYwB9QBQAAAAAAABAcYAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGMANAA2AGEAMgAxADEALQA4AGIANABlAC0ANABjAGEANQAtAGIAYgBlAGQALQA0AGQANQBjADAAMABhADEAZAA3ADAAZAB9QBQAAAAAAABAbMAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADcAYwBhADQAOQA0AGMALQBlADQAYQA5AC0ANABjADgAMQAtAGIANgBjADAALQAyAGEAMgA1ADUANwAxAGYAMABkAGEAZQB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADEANQBhAGQAMABjADMALQA3ADcAMwA4AC0ANAA1ADkAZQAtADgAMgA2ADUALQBhADQANQA5ADMAYQBlADgAOQA2ADkANwB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGYAYgBkADQANQA0ADAALQA5AGMAZQBiAC0ANABlAGEAZQAtADgAYQA3ADkALQA5ADcANgA3AGEAZAA2ADQANgA0ADgAYQB9QBQAAAAAAABAaaAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADMAZQBiAGIAMgBiAGEALQAzADMAOAAyAC0ANAA3ADcANQAtADkANABmADIALQA2ADMAZQA2AGUAOQBkADgAMABiAGEANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADcAMwBlADkAOQA3AGIALQBlADEAYwA3AC0ANAA3ADUANQAtAGIAMgBkADgALQA5ADcANgBjAGEANgAxAGYANQA5ADYAOQB9QBQAAAAAAABAb+AAAAAAAAAAAAAAAAAAAQAAAEwAewAyADAAZAAxADcANwAxADEALQA0ADgANAA1AC0ANAA2AGIAMQAtADkANgA0ADIALQA4ADEAMwBkADUAMQBlADMANQA2ADAAMwB9QBQAAAAAAABAY2AAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADEAYQAwADYANgA0AGIALQA5AGMAOQBiAC0ANAA2ADkAZQAtADkAOQA5AGEALQA4ADQAYgA4ADMAYgBlAGIAMwBiAGQAOQB9QBQAAAAAAABAcxAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADkAMgBiADUAYQAyADgALQAwAGEAYwA1AC0ANAA2AGMAMwAtAGIAZgBkAGEALQBjADkAYwAzADgAMwA1ADgAOQA3AGEAOQB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADUAYQA1ADUAYQA5ADgALQA1ADAANQBkAC0ANABkAGQANAAtADgAMAAxAGUALQBlAGYANABmADQANwAwADEAOQA0ADkAMAB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

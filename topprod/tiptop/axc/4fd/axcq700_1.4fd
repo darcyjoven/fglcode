@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{b431d028-e736-4465-83f9-4720aa6c1731}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="undefined" order="" uid="{c2acb35b-6895-4a8d-a7da-20bfcdfdf73a}" where="">
+    <RecordField colName="cnt" fieldIdRef="9" name="cnt" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{5716233e-c6e5-42ea-8131-1948d7517e30}"/>
+    <RecordField colName="tot" fieldIdRef="10" name="tot" sqlTabName="formonly" table_alias_name="" uid="{288ba24f-81ac-4513-9ffe-fe52abd8f9f6}"/>
+    <RecordField colName="tot" fieldIdRef="14" name="num" sqlTabName="formonly" table_alias_name="" uid="{aebc0df8-1083-4749-9c4f-c506465e3de3}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tlf" order="" uid="{bee0006b-3f1f-43fe-b481-bcffb0420343}" where="">
+    <RecordField colName="tlf031" fieldIdRef="0" name="tlf031" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{83a9b661-0710-4c9c-a543-9591b6f79c16}"/>
+    <RecordField colName="tlf905" fieldIdRef="1" name="tlf905" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{72bb491e-cc7c-497c-9f70-9c740d5e2a96}"/>
+    <RecordField colName="tlf06" fieldIdRef="2" name="tlf06" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{a67db978-7699-4011-ab17-e39b90fc8b1e}"/>
+    <RecordField colName="tlf19" fieldIdRef="3" name="tlf19" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{d9caba6c-b6de-47c6-88d6-d8ccee3c21d4}"/>
+    <RecordField colName="wpmc03" fieldIdRef="4" name="wpmc03" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{70198c39-aac1-4c9e-8741-a56a421def37}"/>
+    <RecordField colName="tlf01" fieldIdRef="5" name="tlf01" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{e3fbb37f-0bae-4f04-923f-81377bb18e96}"/>
+    <RecordField colName="ima02" fieldIdRef="6" name="ima02" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{c3c97010-de71-4325-8046-3671a519c097}"/>
+    <RecordField colName="tlf10" fieldIdRef="7" name="tlf10" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{f2bb4b87-432a-48f3-8f29-e57a91bd39fa}"/>
+    <RecordField colName="tlf221" fieldIdRef="8" name="tlf221" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{463ed0ba-64a0-4b5b-a139-84a9e731c45a}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="main" order="" uid="{c9844b04-e8e2-4c4a-bdd3-67cf30866676}" where="">
+    <RecordField colName="bdate" fieldIdRef="11" name="bdate" sqlTabName="formonly" sqlType="DATE" table_alias_name="" uid="{e0247720-086b-400f-b401-4e167642c8be}"/>
+    <RecordField colName="edate" fieldIdRef="12" name="edate" sqlTabName="formonly" sqlType="DATE" table_alias_name="" uid="{a7e53e9d-f3e6-4c31-acf5-d44b880448ea}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="type" sqlTabName="" table_alias_name="" uid="{433a74b4-53f6-4061-8ca4-b46c72ec9e5b}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="142" lstrtext="true" name="axcq700_1" spacing="normal" text="axcq761_1">
+    <VBox gridHeight="18" gridWidth="142" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="3" gridWidth="142" name="Grid1" posX="0" posY="1">
+        <Label posX="3" posY="1" text="Date Range"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bdate" columnCount="" fieldId="11" gridHeight="1" gridWidth="16" name="bdate" notNull="false" posX="14" posY="1" required="false" rowCount="" sqlTabName="formonly" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="edate" columnCount="" fieldId="12" gridHeight="1" gridWidth="15" name="edate" notNull="false" posX="32" posY="1" required="false" rowCount="" sqlTabName="formonly" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+        <Label posX="51" posY="1" text="Cost Method"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="44" items="Monthly Weighted Unit Cost, FIFO Cost, Identify Manually��蝧餌�蝪∠高atch Cost, Identify Manually��蝧餌�蝪∠�tem Cost, Identify Manually��蝧餌�蝟抒�tore Profit Center" lstrcomment="false" name="type" notNull="false" posX="63" posY="1" required="false" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Monthly Weighted Unit Cost"/>
+          <Item lstrtext="false" name="2" text="FIFO Cost"/>
+          <Item lstrtext="false" name="3" text="Identify Manually��蝧餌�蝪∠高atch Cost"/>
+          <Item lstrtext="false" name="4" text="Identify Manually��蝧餌�蝪∠�tem Cost"/>
+          <Item lstrtext="false" name="5" text="Identify Manually��蝧餌�蝟抒�tore Profit Center"/>
+        </ComboBox>
+      </Grid>
+      <Table gridHeight="11" gridWidth="142" name="s_tlf" posX="0" posY="4" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tlf031" columnCount="" fieldId="0" gridHeight="1" gridWidth="12" name="tlf031" posX="0" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="tlf031" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tlf905" columnCount="" fieldId="1" gridHeight="1" gridWidth="12" name="tlf905" posX="12" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="tlf905" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tlf06" columnCount="" fieldId="2" gridHeight="1" gridWidth="12" name="tlf06" posX="24" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="tlf06" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tlf19" columnCount="" fieldId="3" gridHeight="1" gridWidth="12" name="tlf19" posX="36" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="tlf19" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpmc03" columnCount="" fieldId="4" gridHeight="1" gridWidth="20" name="wpmc03" posX="48" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="wpmc03" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tlf01" columnCount="" fieldId="5" gridHeight="1" gridWidth="12" name="tlf01" posX="68" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="tlf01" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima02" columnCount="" fieldId="6" gridHeight="1" gridWidth="25" name="ima02" posX="80" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="ima02" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tlf10" columnCount="" fieldId="7" gridHeight="1" gridWidth="12" name="tlf10" posX="105" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="tlf10" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tlf221" columnCount="" fieldId="8" gridHeight="1" gridWidth="15" name="tlf221" posX="117" posY="0" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="tlf221" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="142" name="gr5449" posX="0" posY="15">
+        <HLine gridWidth="11" name="HLine1" posX="1" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cnt" columnCount="" fieldId="9" gridHeight="1" gridWidth="6" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="4" name="HLine2" posX="27" posY="0"/>
+        <Label posX="34" posY="0" text="tlf10_sum"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tot" columnCount="" fieldId="14" gridHeight="1" gridWidth="18" name="num" posX="45" posY="0" rowCount="" sqlTabName="formonly" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <Label posX="65" posY="0" text="tlf221_sum"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tot" columnCount="" fieldId="10" gridHeight="1" gridWidth="18" name="tot" posX="76" posY="0" rowCount="" sqlTabName="formonly" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="6" name="HLine3" posX="95" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADAAMgA0ADcANwAyADAALQAwADgANgBiAC0ANAAwADAAZgAtAGIANAAwADEALQA0AGUAMQA2ADcANgA0ADIAYwA4AGIAZQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADcAZQA1ADMAZQA5AGQALQBmADMAZQA2AC0ANABjADMAMQAtAGEAYwBmADUALQBkADQANABiADgAOAAwADQANAA4AGUAYQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADMAYwA5ADcAMAAxADAALQBkAGUANwAxAC0ANAAzADIANQAtADgAMAA0ADYALQAzADYANwAxAGEANQAxADkAYwAwADkANwB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADcAMQA2ADIAMwAzAGUALQBjADYAZQA1AC0ANAAyAGUAYQAtADgAMQAzADEALQAxADkANAA4AGQANwA1ADEANwBlADMAMAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGUAYgBjADAAZABmADgALQAxADAAOAAzAC0ANAA3ADQAOQAtADkAYwA0AGYALQBjADUAMAA2ADQANgA1AGUAMwBkAGUAMwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADMAMwBhADcANABiADQALQA1ADMAZgA2AC0ANAAwADYAMQAtADgAYwBhADQALQBiADQANgBjADcAMgBlAGMAOQBlADUAYgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADYAMwBlAGQAMABiAGEALQA2ADQAYQAwAC0ANABiADUAYgAtAGEAMQAzADkALQA4ADQAYQA5AGUANwAzADEAYwA0ADUAYQB9QBQAAAAAAABAaQAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADIAYgBiADQAOQAxAGUALQBjAGMANwBjAC0ANAA5ADcAYwAtADkAZgA3ADAALQA5AGMANwA0ADAAZAA1AGUAMgBhADkANgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADkAOAA0ADQAYgAwADQALQBlADgAZQAyAC0ANABjADQAYQAtAGIAZABkADMALQA2ADcAYwBmADMAMAA4ADYANgA2ADcANgB9QGjgAAAAAABAAAAAAAAAAD9gYk3S8an8AQAAAEwAewBkADkAYwBhAGIAYQA2AGMALQBiADYAZABlAC0ANAA3AGMANgAtADgAOABkADYALQBkADgAYwBjAGUAZQAzAGMAMgAxAGQANAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADIAYgBiADQAYgA4ADcALQA0ADMAMgBhAC0ANAA4AGYAMwAtADgAZgAyADkALQBlADUANwBhADkAMQBiAGQAMwA5AGYAYQB9QBQAAAAAAABAZkAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADYANwBkAGIAOQA3ADgALQA3ADYAOQA5AC0ANAAwADEAMQAtAGEAYgAxADcALQBlADMAOQBiADkAMABmAGMAOABiADEAZQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADIAYQBjAGIAMwA1AGIALQA2ADgAOQA1AC0ANABhADgAZAAtAGEANwBkAGEALQAyADAAYgBmAGMAZABmAGQAZgA3ADMAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADMAYQA5AGIANgA2ADEALQAwADcAMQAwAC0ANABjADkAYwAtAGEANQA0ADMALQA5ADUAOQAxAGIANgBmADcAOQBjADEANgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADAAMQA5ADgAYwAzADkALQBhAGEAYwAxAC0ANABjADkAZQAtADgANwA0ADEALQBhADUANgBhADQAMgAxAGQAZQBmADMANwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADMAZgBiAGIAMwA3AGYALQAwAGIAYQBlAC0ANABmADAANAAtADkAMgAzAGYALQA4ADEAMwA3ADcAYgBiADEAOABlADkANgB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADgAOABiAGEAMgA0AGYALQA4ADEAYQBjAC0ANAA1ADEAMwAtADkAZgBmAGUALQBmAGUANQAyAGEAYgBkADgAZgA5AGYANgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGUAZQAwADAAMAA2AGIALQAzAGYAMQBmAC0ANAAzAGYAZQAtAGIANAA4ADEALQBiAGMAZgBmAGIAMAA0ADIAMAAzADQAMwB9wGfgAAAAAADAUoAAAAAAAD9ok3S8an76AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

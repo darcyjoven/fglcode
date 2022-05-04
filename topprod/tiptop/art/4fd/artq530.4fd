@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d672abf9-0000-4000-be43-a1e413a09605}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmn" order="" uid="{5da31416-0000-4000-92a1-55e661f5c47e}" where="">
+    <RecordField colName="" fieldIdRef="12" name="pmn01" sqlTabName="" table_alias_name="" uid="{dde74253-0000-4000-a1b8-89a7beefacfe}"/>
+    <RecordField colName="" fieldIdRef="13" name="pmn04" sqlTabName="" table_alias_name="" uid="{d59393b4-0000-4000-834c-d4d2a7ae7a21}"/>
+    <RecordField colName="" fieldIdRef="14" name="pmn33" sqlTabName="" table_alias_name="" uid="{78a515fd-0000-4000-8bd8-3374f59d2be3}"/>
+    <RecordField colName="" fieldIdRef="15" name="pmn20" sqlTabName="" table_alias_name="" uid="{98e38e29-0000-4000-897d-c0615d407047}"/>
+    <RecordField colName="" fieldIdRef="16" name="pmn83" sqlTabName="" table_alias_name="" uid="{8de36ef4-0000-4000-881c-0ea3ef59ee81}"/>
+    <RecordField colName="" fieldIdRef="2" name="pmn85" sqlTabName="" table_alias_name="" uid="{9ce7cf52-0000-4000-913a-6ed997d6b21d}"/>
+    <RecordField colName="" fieldIdRef="3" name="pmn80" sqlTabName="" table_alias_name="" uid="{e0f484f5-0000-4000-a70e-32a89fc8c325}"/>
+    <RecordField colName="" fieldIdRef="4" name="pmn82" sqlTabName="" table_alias_name="" uid="{32f012cb-0000-4000-8980-2c1c2b8be24c}"/>
+    <RecordField colName="" fieldIdRef="5" name="rest" sqlTabName="" table_alias_name="" uid="{1145a77d-0000-4000-b32e-1414bb8c8d95}"/>
+    <RecordField colName="" fieldIdRef="6" name="pmn07" sqlTabName="" table_alias_name="" uid="{884723f2-0000-4000-9d59-45a8ac81e279}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9a0f15ca-0000-4000-bafe-0313b84a0094}" where="">
+    <RecordField colName="pmm09" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmm_file.pmm09" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{2642bde3-0000-4000-bac7-1d9871eb9845}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="pmc03" sqlTabName="" table_alias_name="" uid="{529412d7-0000-4000-890a-4cedcaa00360}"/>
+    <RecordField colName="pmmplant" fieldIdRef="11" fieldType="TABLE_COLUMN" name="pmm_file.pmmplant" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{7233af7c-0000-4000-8ece-e5a18edf9e4c}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="choice" sqlTabName="" table_alias_name="" uid="{6e42e563-0000-4000-adce-3187e73a52b4}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{ad75b759-0000-4000-8573-0818d986e0a7}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{7c54cfe9-0000-4000-b3d2-15e1c4bad947}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="130" name="artq530" spacing="normal" text="artq530">
+    <VBox gridHeight="21" gridWidth="127" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="127" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="3" gridWidth="92" lstrcomment="false" name="gr4951" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Supplier"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm09" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm09" posX="22" posY="0" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmc03" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="48" posY="0" text="Org#"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmmplant" colorCondition="black" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" name="pmm_file.pmmplant" posX="55" posY="0" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="16" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="1" text="Sequence"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items=" Document No., Item#, Delivery Date" lstrcomment="false" lstrtitle="false" name="choice" posX="22" posY="1" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text=" Document No."/>
+              <Item lstrtext="" name="2" text="Item#"/>
+              <Item lstrtext="" name="3" text="Delivery Date"/>
+            </ComboBox>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="127" lstrcomment="false" name="s_pmn" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmn01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="P/O No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pmn04" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Item No." widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="pmn33" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Del.Dt" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmn20" noEntry="true" posX="38" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Qty" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="pmn83" noEntry="true" posX="48" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Par/Ref Unit" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="pmn85" noEntry="true" posX="62" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Par/Ref Qty" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="pmn80" noEntry="true" posX="75" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Chi/P/O Unit" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="pmn82" noEntry="true" posX="89" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Chi/P/O Qty" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="rest" noEntry="true" posX="102" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Qty-Out" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="pmn07" noEntry="true" posX="111" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Unit" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="127" lstrcomment="false" name="gr4952" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1606" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1607" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

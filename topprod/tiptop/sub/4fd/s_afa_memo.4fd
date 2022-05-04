@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8d499ccf-0000-4000-ad50-e198e844301d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_fam" order="" uid="{345c0894-0000-4000-8968-ab5dfe7dae3f}" where="">
+    <RecordField colName="fam02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="fam_file.fam02" sqlTabName="fam_file" sqlType="SMALLINT" table_alias_name="" uid="{468e6d01-0000-4000-b8ae-1b01056d5564}"/>
+    <RecordField colName="fam04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="fam_file.fam04" sqlTabName="fam_file" sqlType="VARCHAR" table_alias_name="" uid="{183ca77d-0000-4000-b35e-8863d8be8c0d}"/>
+    <RecordField colName="fam05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="fam_file.fam05" sqlTabName="fam_file" sqlType="VARCHAR" table_alias_name="" uid="{735b4628-0000-4000-ad78-4f07b14c3ddd}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="65" name="s_afa_memo" spacing="normal" text="s_afa_memo">
+    <Grid gridHeight="13" gridWidth="63" lstrcomment="false" name="gr3865" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="62" lstrcomment="false" name="s_fam" posX="1" posY="0" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fam02" columnCount="" comment="0 Memo of whole page,123...Body memo   " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="fam_file.fam02" posX="0" posY="0" rowCount="" sqlTabName="fam_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Line No." widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fam04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Print before Line #, Print after Line #, Internal Reference for Qry Only" lstrcomment="false" lstrtitle="false" name="fam_file.fam04" notNull="true" posX="11" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="fam_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Before/After" widget="ComboBox">
+          <Item name="1" text="Print before Line #"/>
+          <Item name="2" text="Print after Line #"/>
+          <Item name="0" text="Internal Reference for Qry Only"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fam05" columnCount="" comment="Prt Body Memo aft Ln#, Limit char(30)" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtitle="false" name="fam_file.fam05" posX="26" posY="0" rowCount="" scroll="true" sqlTabName="fam_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Memo" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

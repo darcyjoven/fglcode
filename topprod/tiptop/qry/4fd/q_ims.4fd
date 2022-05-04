@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f1d072a7-0000-4000-8003-da351a591703}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ims" order="" uid="{da62c6e1-0000-4000-ad17-99b4ea696c53}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{81d856b5-0000-4000-80d7-6b1b64305120}"/>
+    <RecordField colName="ims01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ims_file.ims01" sqlTabName="ims_file" sqlType="VARCHAR" table_alias_name="" uid="{3b37c088-0000-4000-9b73-170c2f11b259}"/>
+    <RecordField colName="ims02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ims_file.ims02" sqlTabName="ims_file" sqlType="SMALLINT" table_alias_name="" uid="{e2562c2e-0000-4000-8a91-0acd8366ece9}"/>
+    <RecordField colName="ims03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ims_file.ims03" sqlTabName="ims_file" sqlType="VARCHAR" table_alias_name="" uid="{63d12364-0000-4000-8446-67519f7048fe}"/>
+    <RecordField colName="ims04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ims_file.ims04" sqlTabName="ims_file" sqlType="SMALLINT" table_alias_name="" uid="{c4f89655-0000-4000-af0f-3d41516ed3ce}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="75" name="q_ims" spacing="normal" text="Qry Inter-Plant Transfer-out Note">
+    <Grid gridHeight="13" gridWidth="73" lstrcomment="false" name="gr3772" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="72" lstrcomment="false" name="s_ims" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ims01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="ims_file.ims01" noEntry="true" posX="5" posY="0" rowCount="" sqlTabName="ims_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Transfer-out Note#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ims02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="ims_file.ims02" noEntry="true" posX="24" posY="0" rowCount="" sqlTabName="ims_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ims03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="ims_file.ims03" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="ims_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Transfer Note#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ims04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="ims_file.ims04" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="ims_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Transfer Line #" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

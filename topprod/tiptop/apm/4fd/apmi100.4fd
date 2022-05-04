@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{99a36a25-0000-4000-8fe2-f24ec8f2828c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pma" order="" uid="{ab185fe4-0000-4000-a453-aa02e9fff627}" where="">
+    <RecordField colName="pma01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pma_file.pma01" sqlTabName="pma_file" sqlType="VARCHAR" table_alias_name="" uid="{7d6296ce-0000-4000-bab9-84a55a10027d}"/>
+    <RecordField colName="pma11" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pma_file.pma11" sqlTabName="pma_file" sqlType="VARCHAR" table_alias_name="" uid="{3dca191e-0000-4000-adbf-f119435931b2}"/>
+    <RecordField colName="pma02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pma_file.pma02" sqlTabName="pma_file" sqlType="VARCHAR" table_alias_name="" uid="{acf11eab-0000-4000-b645-d2e10abad8fb}"/>
+    <RecordField colName="pma03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pma_file.pma03" sqlTabName="pma_file" sqlType="VARCHAR" table_alias_name="" uid="{c7a60367-0000-4000-a954-ea46d0c2e483}"/>
+    <RecordField colName="pma09" fieldIdRef="8" fieldType="TABLE_COLUMN" name="pma_file.pma09" sqlTabName="pma_file" sqlType="SMALLINT" table_alias_name="" uid="{6e2561e1-0000-4000-b72c-a382f4ae4cd2}"/>
+    <RecordField colName="pma08" fieldIdRef="9" fieldType="TABLE_COLUMN" name="pma_file.pma08" sqlTabName="pma_file" sqlType="SMALLINT" table_alias_name="" uid="{0c9bfdc3-0000-4000-ad39-5d668f776434}"/>
+    <RecordField colName="pma12" fieldIdRef="10" fieldType="TABLE_COLUMN" name="pma_file.pma12" sqlTabName="pma_file" sqlType="VARCHAR" table_alias_name="" uid="{42b8ca54-0000-4000-b41b-d202f7b9aea5}"/>
+    <RecordField colName="pma13" fieldIdRef="11" fieldType="TABLE_COLUMN" name="pma_file.pma13" sqlTabName="pma_file" sqlType="SMALLINT" table_alias_name="" uid="{8c4ee8f8-0000-4000-8f91-f6503cc20e37}"/>
+    <RecordField colName="pma10" fieldIdRef="12" fieldType="TABLE_COLUMN" name="pma_file.pma10" sqlTabName="pma_file" sqlType="SMALLINT" table_alias_name="" uid="{6887b3ab-0000-4000-a0a6-2cd9ad955a77}"/>
+    <RecordField colName="pma04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pma_file.pma04" sqlTabName="pma_file" sqlType="DECIMAL" table_alias_name="" uid="{82a4af8a-0000-4000-a380-955b54e51cdb}"/>
+    <RecordField colName="pmaacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pma_file.pmaacti" sqlTabName="pma_file" sqlType="VARCHAR" table_alias_name="" uid="{d9618b4a-0000-4000-b17d-6378760c97a4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{67762dbe-0000-4000-be2e-2c571427d3cb}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{4b18ac56-0000-4000-9b45-6a4f6de4b5e6}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="165" name="apmi100" spacing="normal" text="apmi100">
+    <VBox gridHeight="18" gridWidth="162" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="162" lstrcomment="false" name="pc913" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="160" lstrcomment="false" name="s_pma" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma01" columnCount="" comment="Key Field, No Blank/Repeated!    " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="pma_file.pma01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="pma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Payment Method" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma11" columnCount="" comment="1.Check  2.Transfer(TT)  3.LC  4.OA  6.DA  7.DP  8.LLC " fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="Check, Transfer(TT), LC, OA, DA, DP, LLC, TT" lstrcomment="false" lstrtitle="false" name="pma_file.pma11" notNull="true" posX="16" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="pma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Category" widget="ComboBox">
+              <Item name="1" text="Check"/>
+              <Item name="2" text="Transfer(TT)"/>
+              <Item name="3" text="LC"/>
+              <Item name="4" text="OA"/>
+              <Item name="6" text="DA"/>
+              <Item name="7" text="DP"/>
+              <Item name="8" text="LLC"/>
+              <Item name="C" text="TT"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pma_file.pma02" posX="25" posY="0" rowCount="" sqlTabName="pma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Description" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma03" columnCount="" comment="2.Invoice Date 3.Account Date 5.Beginning of Next Month of Invoice Date 6.Beginning of Next Month of Account Date" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" items="Invoice Date, Account Date, Beginning of Next Month of Invoice Date, Beginning of Next Month of Account Date" lstrcomment="false" lstrtitle="false" name="pma_file.pma03" notNull="true" posX="45" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="pma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="A/P Date Initail Base" widget="ComboBox">
+              <Item name="2" text="Invoice Date"/>
+              <Item name="3" text="Account Date"/>
+              <Item name="5" text="Beginning of Next Month of Invoice Date"/>
+              <Item name="6" text="Beginning of Next Month of Account Date"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma09" columnCount="" comment="Months Plus from Initial Date" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="pma_file.pma09" posX="68" posY="0" rowCount="" sqlTabName="pma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="+ Months" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma08" columnCount="" comment="Days Plus from Initial Date" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="pma_file.pma08" posX="77" posY="0" rowCount="" sqlTabName="pma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="+ Days" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma12" columnCount="" comment="2.Invoice Date 3.Account Date 5.Beginning of Next Month of Invoice Date 6.Beginning of Next Month of Account Date 7.Accounts Payable Date 8.Beginning of Next Month of A/P Date" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" items="Invoice Date, Account Date, Beginning of Next Month of Invoice Date, Beginning of Next Month of Account Date, Accounts Payable Date, Beginning of Next Month of A/P Date" lstrcomment="false" lstrtitle="false" name="pma_file.pma12" notNull="true" posX="84" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="pma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="N/P Date Initial Base" widget="ComboBox">
+              <Item name="2" text="Invoice Date"/>
+              <Item name="3" text="Account Date"/>
+              <Item name="5" text="Beginning of Next Month of Invoice Date"/>
+              <Item name="6" text="Beginning of Next Month of Account Date"/>
+              <Item name="7" text="Accounts Payable Date"/>
+              <Item name="8" text="Beginning of Next Month of A/P Date"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma13" columnCount="" comment="Month Plus From N/R Date Base" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="pma_file.pma13" posX="106" posY="0" rowCount="" sqlTabName="pma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="+ Months" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma10" columnCount="" comment="Days Plus From N/R Date Base" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="pma_file.pma10" posX="115" posY="0" rowCount="" sqlTabName="pma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" title="+ Days" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pma04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="pma_file.pma04" posX="122" posY="0" rowCount="" sqlTabName="pma_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Cash Discount" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmaacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtext="false" lstrtitle="false" name="pma_file.pmaacti" notNull="true" posX="136" posY="0" required="true" rowCount="" sqlTabName="pma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Valid Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="162" lstrcomment="false" name="gr4816" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1545" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1546" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

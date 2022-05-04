@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{b9bb3341-01e9-4af0-b14c-e7ef0888246e}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_axs" order="" uid="{625c2b4f-9f08-4f80-8e82-7c29a0076f5c}" where="">
+    <RecordField colName="axs03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="axs_file.axs03" sqlTabName="axs_file" sqlType="VARCHAR" table_alias_name="" uid="{ed3b8ac8-19a9-4d18-9a7a-340a89d3feb8}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="aag02" sqlTabName="" table_alias_name="" uid="{30a549d3-01bd-4000-9a9d-34aae7000061}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fde6b086-2ab9-4742-9721-e8152e3ba1ab}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="axf01" sqlTabName="" table_alias_name="" uid="{431e89d7-2a18-48c9-9de2-f0d93deef1c8}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{56ad6a3e-c972-4a00-bba9-fe8679364162}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{c78082ae-1daf-46af-9d0b-2b0c459fbca6}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="57" name="agli0031" spacing="normal" text="agli0031">
+    <VBox gridHeight="21" gridWidth="55" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="4" gridWidth="55" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="QBE">
+          <Grid gridHeight="2" gridWidth="42" lstrcomment="false" name="gr989" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="14" posX="2" posY="0" text="Source Account"/>
+            <ButtonEdit action="controlp" colName="" columnCount="" comment="&lt;^P&gt; Query Account No." fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="axf01" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Group gridHeight="13" gridWidth="55" lstrcomment="false" lstrtext="false" name="gb1884" posX="0" posY="5">
+        <ScrollGrid gridHeight="11" gridWidth="53" lstrcomment="false" name="gr2621" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="24" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="Source Acc."/>
+          <Label gridHeight="1" gridWidth="24" lstrcomment="false" lstrtext="false" name="dummy02" posX="28" posY="1" text="Acc. Descript"/>
+          <ButtonEdit action="controlp" colName="axs03" columnCount="1" comment="&lt;^P&gt; Query Account No." fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="axs_file.axs03" posX="1" posY="2" repeat="true" rowCount="8" sqlTabName="axs_file" sqlType="VARCHAR" stepX="28" stepY="0" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Edit colName="" columnCount="1" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="28" posY="2" repeat="true" rowCount="8" sqlTabName="" stepX="28" stepY="0" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </ScrollGrid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="55" lstrcomment="false" name="gr2404" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1" posX="1" posY="0"/>
+        <Label gridHeight="1" gridWidth="4" posX="12" posY="0" text="Rows"/>
+        <Edit colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="1" posX="26" posY="0" text="/"/>
+        <Edit colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmAGQAZQA2AGIAMAA4ADYALQAyAGEAYgA5AC0ANAA3ADQAMgAtADkANwAyADEALQBlADgAMQA1ADIAZQAzAGIAYQAxAGEAYgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADcAOAAwADgAMgBhAGUALQAxAGQAYQBmAC0ANAA2AGEAZgAtADkAZAAwAGIALQAyAGIAMABjADQANQA5AGYAYgBjAGEANgB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADYAYQBkADYAYQAzAGUALQBjADkANwAyAC0ANABhADAAMAAtAGIAYgBhADkALQBmAGUAOAA2ADcAOQAzADYANAAxADYAMgB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADIANQBjADIAYgA0AGYALQA5AGYAMAA4AC0ANABmADgAMAAtADgAZQA4ADIALQA3AGMAMgA5AGEAMAAwADcANgBmADUAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGQAMwBiADgAYQBjADgALQAxADkAYQA5AC0ANABkADEAOAAtADkAYQA3AGEALQAzADQAMABhADgAOQBkADMAZgBlAGIAOAB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADAAYQA1ADQAOQBkADMALQAwADEAYgBkAC0ANAAwADAAMAAtADkAYQA5AGQALQAzADQAYQBhAGUANwAwADAAMAAwADYAMQB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADMAMQBlADgAOQBkADcALQAyAGEAMQA4AC0ANAA4AGMAOQAtADkAZABlADIALQBmADAAZAA5ADMAZABlAGUAZgAxAGMAOAB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

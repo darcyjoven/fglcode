@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{c1004c91-f445-4284-9af5-49d649427415}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="occ_file" name="Record1" order="" uid="{0d0771c5-a99a-4a83-8532-5fc61e5f6a00}" where="">
+    <RecordField colName="occ01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="occ_file.occ01" sqlTabName="occ_file" sqlType="VARCHAR" table_alias_name="" uid="{af243b34-cb84-4687-be66-02225dd0e16b}" uniqueQueryKey="false"/>
+    <RecordField colName="ima01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ima_file.ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{6176d137-1601-4d4f-b2cd-0cfa571d73b5}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{91796c9d-06f7-4602-9ee9-1e90546f3eed}" where="">
+    <RecordField colName="" fieldIdRef="3" name="yy" sqlTabName="" table_alias_name="" uid="{afe5653b-e9e0-4229-9391-c1da1f80886a}"/>
+    <RecordField colName="" fieldIdRef="4" name="mm" sqlTabName="" table_alias_name="" uid="{dd4db986-65b8-4c76-ac90-191c7ba46db5}"/>
+    <RecordField colName="ccc07" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ccc_file.ccc07" sqlTabName="ccc_file" sqlType="VARCHAR" table_alias_name="" uid="{ac5320e0-57bc-48fa-80f9-39d5c62fa198}"/>
+    <RecordField colName="ccc08" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ccc_file.ccc08" sqlTabName="ccc_file" sqlType="VARCHAR" table_alias_name="" uid="{6221e6ca-6278-4692-9e16-b7d7a07395cc}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="7" name="cb1" sqlTabName="" table_alias_name="" uid="{c39ac4c1-e6b9-4d89-a910-d66d950b2861}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="8" name="more" sqlTabName="" table_alias_name="" uid="{29830253-c0af-4d5e-be77-adf815dfc016}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="46" name="Form" text="Form">
+    <Folder gridHeight="15" gridWidth="43" name="Folder1" posX="1" posY="0">
+      <Page name="Page1" text="Page1">
+        <VBox gridHeight="14" gridWidth="42" name="VBox1" posX="0" posY="0">
+          <Group gridHeight="4" gridWidth="42" name="Group01" posX="0" posY="1" text="QBE">
+            <Grid gridHeight="2" gridWidth="39" name="ds1" posX="1" posY="1">
+              <Label posX="1" posY="0" text="occ01"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="occ01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom.png" name="occ_file.occ01" posX="8" posY="0" rowCount="" scroll="true" sqlTabName="occ_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="occ01" widget="ButtonEdit"/>
+              <Label posX="1" posY="1" text="ima01"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom.png" name="ima_file.ima01" posX="8" posY="1" rowCount="" scroll="true" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ima01" widget="ButtonEdit"/>
+            </Grid>
+          </Group>
+          <Group gridHeight="6" gridWidth="42" name="Group02" posX="0" posY="5" text="INPUT">
+            <Grid gridHeight="4" gridWidth="38" name="Grid1" posX="1" posY="1">
+              <Label posX="1" posY="0" text="yy"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="19" name="yy" notNull="true" posX="9" posY="0" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit1" widget="Edit"/>
+              <Label posX="1" posY="1" text="mm"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="19" name="mm" notNull="true" posX="9" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Edit2" widget="Edit"/>
+              <Label posX="1" posY="2" text="ccc07"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ccc07" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" items="Text, Text, Text, Text" name="ccc_file.ccc07" notNull="true" posX="9" posY="2" required="true" rowCount="" sqlTabName="ccc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ComboBox1" widget="ComboBox">
+                <Item lstrtext="false" name="1" text="Text"/>
+                <Item lstrtext="false" name="2" text="Text"/>
+                <Item lstrtext="false" name="3" text="Text"/>
+                <Item lstrtext="false" name="4" text="Text"/>
+              </ComboBox>
+              <Label posX="1" posY="3" text="ccc08"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ccc08" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom.png" name="ccc_file.ccc08" notNull="true" posX="9" posY="3" required="true" rowCount="" sqlTabName="ccc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            </Grid>
+          </Group>
+          <Grid gridHeight="2" gridWidth="42" name="Grid2" posX="0" posY="11">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="7" gridHeight="1" gridWidth="36" name="cb1" notNull="true" posX="1" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="7" table_alias_name="" text="CheckBox1" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="8" gridHeight="1" gridWidth="36" name="more" notNull="true" posX="1" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="8" table_alias_name="" text="CheckBox2" title="CheckBox2" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADkAOAAzADAAMgA1ADMALQBjADAAYQBmAC0ANABkADUAZQAtAGIAZQA3ADcALQBhAGQAZgA4ADEANQBkAGYAYwAwADEANgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGMANQAzADIAMABlADAALQA1ADcAYgBjAC0ANAA4AGYAYQAtADgAMABmADkALQAzADkAZAA1AGMANgAyAGYAYQAxADkAOAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADMAOQBhAGMANABjADEALQBlADYAYgA5AC0ANABkADgAOQAtAGEAOQAxADAALQBkADYANgBkADkANQAwAGIAMgA4ADYAMQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGQANABkAGIAOQA4ADYALQA2ADUAYgA4AC0ANABjADcANgAtAGEAYwA5ADAALQAxADkAMQBjADcAYgBhADQANgBkAGIANQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGQAMAA3ADcAMQBjADUALQBhADkAOQBhAC0ANABhADgAMwAtADgANQAzADIALQA1AGYAYwA2ADEAZQA1AGYANgBhADAAMAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGYAZQA1ADYANQAzAGIALQBlADkAZQAwAC0ANAAyADIAOQAtADkAMwA5ADEALQBjADEAZABhADEAZgA4ADAAOAA4ADYAYQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGYAMgA0ADMAYgAzADQALQBjAGIAOAA0AC0ANAA2ADgANwAtAGIAZQA2ADYALQAwADIAMgAyADUAZABkADAAZQAxADYAYgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADEANwA2AGQAMQAzADcALQAxADYAMAAxAC0ANABkADQAZgAtAGIAMgBjAGQALQAwAGMAZgBhADUANwAxAGQANwAzAGIANQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADEANwA5ADYAYwA5AGQALQAwADYAZgA3AC0ANAA2ADAAMgAtADkAZQBlADkALQAxAGUAOQAwADUANAA2AGYAMwBlAGUAZAB9QDQAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADIAMgAxAGUANgBjAGEALQA2ADIANwA4AC0ANAA2ADkAMgAtADkAZQAxADYALQBiADcAZAA3AGEAMAA3ADMAOQA1AGMAYwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

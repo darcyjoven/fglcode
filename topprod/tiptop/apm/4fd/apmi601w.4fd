@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6aeea09e-0000-4000-9da7-2310cb30adb8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_wpa" order="" uid="{eaa58ea0-0000-4000-97dd-91eb025b0ff9}" where="">
+    <RecordField colName="wpa01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="wpa_file.wpa01" sqlTabName="wpa_file" sqlType="VARCHAR" table_alias_name="" uid="{79ec95b6-0000-4000-ab67-b6b66957d7ad}"/>
+    <RecordField colName="pmc03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmc_file.pmc03" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{59d308f2-0000-4000-bdf8-c51aa8c20a18}"/>
+    <RecordField colName="wpa02" defaultValue="N" fieldIdRef="3" fieldType="TABLE_COLUMN" name="wpa_file.wpa02" sqlTabName="wpa_file" sqlType="VARCHAR" table_alias_name="" uid="{493ae0a2-0000-4000-adfd-a66a446e5a60}"/>
+    <RecordField colName="wpa06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="wpa_file.wpa06" sqlTabName="wpa_file" sqlType="VARCHAR" table_alias_name="" uid="{6c7ad8d0-0000-4000-9692-f30a1e4f343f}"/>
+    <RecordField colName="wpa07" fieldIdRef="5" fieldType="TABLE_COLUMN" name="wpa_file.wpa07" sqlTabName="wpa_file" sqlType="VARCHAR" table_alias_name="" uid="{36004bc0-0000-4000-8f78-3bdaf19bd5a4}"/>
+    <RecordField colName="wpa08" fieldIdRef="6" fieldType="TABLE_COLUMN" name="wpa_file.wpa08" sqlTabName="wpa_file" sqlType="VARCHAR" table_alias_name="" uid="{4dd14475-0000-4000-ad33-7698d8a74ce1}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="138" name="Form1" text="wepi001">
+    <Folder gridHeight="10" gridWidth="128" lstrcomment="false" name="pc1" posX="1" posY="2">
+      <Page name="Page1" text="supplier">
+        <Grid gridHeight="8" gridWidth="125" lstrcomment="false" name="gr1" posX="1" posY="0">
+          <Table gridHeight="8" gridWidth="108" name="s_wpa" posX="1" posY="0" totalRows="6">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpa01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom.png" lstrcomment="false" lstrtitle="false" name="wpa_file.wpa01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="wpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Factory No" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc03" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc03" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="shortName" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpa02" colorCondition="black" columnCount="" defaultValue="N" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="wpa_file.wpa02" posX="22" posY="0" rowCount="" sqlTabName="wpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Yes or No E-procurement Suppliers " valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpa06" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom.png" lstrcomment="false" lstrtitle="false" name="wpa_file.wpa06" notNull="true" posX="36" posY="0" required="true" rowCount="" sqlTabName="wpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="price_checking Categories" widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpa07" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom.png" lstrcomment="false" lstrtitle="false" name="wpa_file.wpa07" notNull="true" posX="50" posY="0" required="true" rowCount="" sqlTabName="wpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Procurement Categories&#13;&#13;&#13;&#13;&#13;&#13;&#13;&#10;" widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpa08" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom.png" lstrcomment="false" lstrtitle="false" name="wpa_file.wpa08" notNull="true" posX="67" posY="0" required="true" rowCount="" sqlTabName="wpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Receiving Categories" widget="ButtonEdit"/>
+          </Table>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

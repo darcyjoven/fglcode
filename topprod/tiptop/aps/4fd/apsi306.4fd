@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{730fe2a9-0000-4000-a4a1-f62d0065a29d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{4b5850c9-0000-4000-974f-e976f454c864}" where="">
+    <RecordField colName="vmg01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vmg_file.vmg01" sqlTabName="vmg_file" sqlType="VARCHAR" table_alias_name="" uid="{def101e4-0000-4000-bf89-ae237c936793}"/>
+    <RecordField colName="vmg02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vmg_file.vmg02" sqlTabName="vmg_file" sqlType="VARCHAR" table_alias_name="" uid="{47b51fdb-0000-4000-948e-8e7e2dc7f96e}"/>
+    <RecordField colName="vmg05" defaultValue="0" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vmg_file.vmg05" sqlTabName="vmg_file" sqlType="INTEGER" table_alias_name="" uid="{c3e949ba-0000-4000-be01-96d2e5959cf3}"/>
+    <RecordField colName="vmg06" defaultValue="0" fieldIdRef="4" fieldType="TABLE_COLUMN" name="vmg_file.vmg06" sqlTabName="vmg_file" sqlType="VARCHAR" table_alias_name="" uid="{bed59838-0000-4000-8d00-a07350891b9c}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{587f923a-0000-4000-811b-40c664273a2a}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="59" name="apsi306" spacing="normal" text="apsi306">
+    <VBox gridHeight="12" gridWidth="56" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="56" lstrcomment="false" name="pc1050" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="6" gridWidth="55" lstrcomment="false" name="gr5434" posX="0" posY="0">
+            <Group gridHeight="6" gridWidth="54" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Warehouse No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmg01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="vmg_file.vmg01" noEntry="true" posX="20" posY="1" rowCount="" sqlTabName="vmg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Stk_Location"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmg02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="vmg_file.vmg02" noEntry="true" posX="20" posY="2" rowCount="" sqlTabName="vmg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Is_cnsn"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmg05" colorCondition="black" columnCount="" defaultValue="0" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="False, True" lstrcomment="false" name="vmg_file.vmg05" notNull="true" posX="20" posY="3" queryEditable="true" required="true" rowCount="" sqlTabName="vmg_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="False"/>
+                <Item lstrtext="false" name="1" text="True"/>
+              </ComboBox>
+              <Label posX="1" posY="4" text="vmg06"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmg06" colorCondition="black" columnCount="" defaultValue="0" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="N, Y" lstrcomment="false" name="vmg_file.vmg06" notNull="true" posX="20" posY="4" queryEditable="true" required="true" rowCount="" sqlTabName="vmg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="N"/>
+                <Item lstrtext="false" name="1" text="Y"/>
+              </ComboBox>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="56" lstrcomment="false" name="gr5435" posX="0" posY="9">
+        <HLine gridWidth="10" name="hl1735" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1736" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{464375ec-c763-44a7-a3bd-a5a7923a6836}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="nai_file" name="Record1" order="" uid="{46ee63b6-d508-429b-b31d-80b7e2fe1115}" where="">
+    <RecordField colName="nai03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nai_file.nai03" sqlTabName="nai_file" sqlType="SMALLINT" table_alias_name="" uid="{02da9ee9-52e4-4a90-9e85-8fb49c7d0820}" uniqueQueryKey="false"/>
+    <RecordField colName="nai04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nai_file.nai04" sqlTabName="nai_file" sqlType="SMALLINT" table_alias_name="" uid="{13578494-f0e4-4091-a32c-b5c371ad867d}" uniqueQueryKey="false"/>
+    <RecordField colName="nai06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="nai_file.nai06" sqlTabName="nai_file" sqlType="DECIMAL" table_alias_name="" uid="{6104f0ef-90ec-4715-b817-f9e19f31a8bc}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f4c08664-0e0d-4b74-a771-8bd47251718a}" where="">
+    <RecordField colName="nai01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nai_file.nai01" sqlTabName="nai_file" sqlType="VARCHAR" table_alias_name="" uid="{c0fd6539-60de-4923-b4a2-bb7c591905eb}"/>
+    <RecordField colName="nai02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nai_file.nai02" sqlTabName="nai_file" sqlType="VARCHAR" table_alias_name="" uid="{0bbc16a5-1cb5-468c-975a-5e29fa7dac0e}"/>
+    <RecordField colName="nai05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nai_file.nai05" sqlTabName="nai_file" sqlType="VARCHAR" table_alias_name="" uid="{b7e30f3b-69c2-4364-be86-8afb84d1d159}"/>
+    <RecordField colName="nai07" fieldIdRef="7" fieldType="TABLE_COLUMN" name="nai_file.nai07" sqlTabName="nai_file" sqlType="VARCHAR" table_alias_name="" uid="{b0f2e459-69c4-44f8-8f79-f0f2851ecf65}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{de22e8f7-13c0-4fb3-b15b-1b4a1f90a7f9}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{47016f45-23cf-42a9-888a-10d8b1426197}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="70" name="Form" text="Form">
+    <VBox gridHeight="19" gridWidth="65" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="65" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Grid gridHeight="12" gridWidth="53" name="Grid1" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="10" name="nai01" posX="1" posY="1" text="Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nai01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Comp, Bank" name="nai_file.nai01" posX="14" posY="1" rowCount="" sqlTabName="nai_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Comp"/>
+              <Item lstrtext="false" name="2" text="Bank"/>
+            </ComboBox>
+            <Label gridHeight="1" gridWidth="10" name="nai02" posX="1" posY="2" text="Bank Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nai02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="nai_file.nai02" posX="14" posY="2" rowCount="" sqlTabName="nai_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label3" posX="1" posY="3" text="Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nai03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="nai_file.nai03" notNull="true" posX="14" posY="3" rowCount="" scroll="true" sqlTabName="nai_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="nai03" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label4" posX="1" posY="4" text="Month"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nai04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="nai_file.nai04" notNull="true" posX="14" posY="4" rowCount="" scroll="true" sqlTabName="nai_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="nai04" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label5" posX="1" posY="5" text="Dr/Cr"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nai05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Dr, Cr" name="nai_file.nai05" posX="14" posY="5" rowCount="" sqlTabName="nai_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Dr"/>
+              <Item lstrtext="false" name="2" text="Cr"/>
+            </ComboBox>
+            <Label gridHeight="1" gridWidth="10" name="Label6" posX="1" posY="6" text="Money"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nai06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="nai_file.nai06" notNull="true" posX="14" posY="6" precisionDecimal="20" rowCount="" scaleDecimal="6" scroll="true" sqlTabName="nai_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="nai06" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label7" posX="1" posY="7" text="Memo"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nai07" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="4" gridWidth="34" name="nai_file.nai07" posX="14" posY="7" rowCount="" sqlTabName="nai_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="TextEdit1" widget="TextEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="65" lstrcomment="false" name="Grid3" posX="0" posY="15">
+        <HLine gridWidth="10" name="HLine1" posX="1" posY="1"/>
+        <Label posX="12" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="idx" noEntry="true" posX="18" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="25" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="27" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine2" posX="35" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADcAZQAzADAAZgAzAGIALQA2ADkAYwAyAC0ANAAzADYANAAtAGIAZQA4ADYALQA4AGEAZgBiADgANABkADEAZAAxADUAOQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGIAYgBjADEANgBhADUALQAxAGMAYgA1AC0ANAA2ADgAYwAtADkANwA1AGEALQA1AGUAMgA5AGYAYQA3AGQAYQBjADAAZQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADcAMAAxADYAZgA0ADUALQAyADMAYwBmAC0ANAAyAGEAOQAtADgAOAA4AGEALQAxADAAZAA4AGIAMQA0ADIANgAxADkANwB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADAAZgAyAGUANAA1ADkALQA2ADkAYwA0AC0ANAA0AGYAOAAtADgAZgA3ADkALQBmADAAZgAyADgANQAxAGUAYwBmADYANQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGUAMgAyAGUAOABmADcALQAxADMAYwAwAC0ANABmAGIAMwAtAGIAMQA1AGIALQAxAGIANABhADEAZgA5ADAAYQA3AGYAOQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADYAZQBlADYAMwBiADYALQBkADUAMAA4AC0ANAAyADkAYgAtAGIAMwAxAGQALQA4ADAAYgA3AGUAMgBmAGUAMQAxADEANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADEAMAA0AGYAMABlAGYALQA5ADAAZQBjAC0ANAA3ADEANQAtAGIAOAAxADcALQBmADkAZQAxADkAZgAzADEAYQA4AGIAYwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADAAZgBkADYANQAzADkALQA2ADAAZABlAC0ANAA5ADIAMwAtAGIANABhADIALQBiAGIANwBjADUAOQAxADkAMAA1AGUAYgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADMANQA3ADgANAA5ADQALQBmADAAZQA0AC0ANAAwADkAMQAtAGEAMwAyAGMALQBiADUAYwAzADcAMQBhAGQAOAA2ADcAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADIAZABhADkAZQBlADkALQA1ADIAZQA0AC0ANABhADkAMAAtADkAZQA4ADUALQA4AGYAYgA0ADkAYwA3AGQAMAA4ADIAMAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADQAYwAwADgANgA2ADQALQAwAGUAMABkAC0ANABiADcANAAtAGEANwA3ADEALQA4AGIAZAA0ADcAMgA1ADEANwAxADgAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

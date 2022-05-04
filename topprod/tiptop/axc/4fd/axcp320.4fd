@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3483f388-0000-4000-8f7f-a9240859cdfc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2e517fa3-0000-4000-96eb-b02addf0aa84}" where="">
+    <RecordField colName="ccg06" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ccg_file.ccg06" sqlTabName="ccg_file" sqlType="VARCHAR" table_alias_name="" uid="{a89605f1-0000-4000-b314-7e79e2bccf04}"/>
+    <RecordField colName="ccg02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ccg_file.ccg02" sqlTabName="ccg_file" sqlType="SMALLINT" table_alias_name="" uid="{2eb1e332-0000-4000-8805-7a6525bff0b7}"/>
+    <RecordField colName="ccg03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ccg_file.ccg03" sqlTabName="ccg_file" sqlType="SMALLINT" table_alias_name="" uid="{77cd9340-0000-4000-91e6-ec7a6f9db7be}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="b" sqlTabName="" table_alias_name="" uid="{8eabcf91-0000-4000-a70c-b025c6c35407}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="Form1" text="axcp320">
+    <Grid gridHeight="11" gridWidth="63" lstrcomment="false" name="gr1" posX="3" posY="1">
+      <Label posX="6" posY="2" text="Cost Calculate Category"/>
+      <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ccg06" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Monthly Weighted Unit Cost, FIFO Cost, Identify Manually-Batch Cost, Identify Manually-Item Cost, Identify Manually-Store Profit Center" lstrcomment="false" name="ccg_file.ccg06" posX="32" posY="2" rowCount="" sqlTabName="ccg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+        <Item lstrtext="" name="1" text="Monthly Weighted Unit Cost"/>
+        <Item lstrtext="false" name="2" text="FIFO Cost"/>
+        <Item lstrtext="false" name="3" text="Identify Manually-Batch Cost"/>
+        <Item lstrtext="false" name="4" text="Identify Manually-Item Cost"/>
+        <Item lstrtext="false" name="5" text="Identify Manually-Store Profit Center"/>
+      </ComboBox>
+      <Label posX="6" posY="3" text="YEAR"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ccg02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" name="ccg_file.ccg02" posX="32" posY="3" rowCount="" sqlTabName="ccg_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+      <Label posX="6" posY="4" text="MONTH"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ccg03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" name="ccg_file.ccg03" posX="32" posY="4" rowCount="" sqlTabName="ccg_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+      <Label posX="6" posY="5" text="Book No."/>
+      <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" image="zoom" justify="" name="b" posX="32" posY="5" rowCount="" sizePolicy="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+    </Grid>
+  </Form>
+</ManagedForm>

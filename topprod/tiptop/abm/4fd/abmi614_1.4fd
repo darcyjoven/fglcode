@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{cf999b23-0000-4000-8f44-8a449083d9cb}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_boe" order="" uid="{824ac620-0000-4000-aeeb-50843aabb63e}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="a2" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{95a4a11d-0000-4000-bc57-33df03a2685b}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="boe78a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7892009e-0000-4000-b7ed-b19e508b9c67}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="a3" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{caae350f-0000-4000-8782-e8d89262620b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e42ef34b-0000-4000-be55-c878c727f799}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="a1" sqlTabName="" table_alias_name="" uid="{de2e6518-0000-4000-9f1f-02c6f7b7ee58}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="a4" sqlTabName="" table_alias_name="" uid="{1a7529a9-0000-4000-93fc-1f6db7f1ddc8}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="a6" sqlTabName="" table_alias_name="" uid="{4bb4461b-0000-4000-b583-3f87a995f46c}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="a5" sqlTabName="" table_alias_name="" uid="{fd2f39f8-0000-4000-87b1-3b22f95e5793}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="129" lstrtext="false" name="abmi614_1" spacing="normal" text="abmi614_1">
+    <Folder gridHeight="25" gridWidth="125" lstrcomment="false" name="pc3" posX="2" posY="1">
+      <Page name="Page4" text="Main">
+        <VBox gridHeight="24" gridWidth="123" name="vb2" posX="0" posY="0">
+          <Grid gridHeight="10" gridWidth="123" lstrcomment="false" name="gr9" posX="0" posY="1">
+            <Label posX="1" posY="1" text="Expressions"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="6" gridWidth="102" lstrcomment="false" name="a1" noEntry="true" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="TextEdit"/>
+            <Label posX="17" posY="7" text="select PT"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" items="const, varible:host, varible:part" lstrcomment="false" name="a4" posX="30" posY="7" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="const"/>
+              <Item lstrtext="false" name="2" text="varible:host"/>
+              <Item lstrtext="false" name="3" text="varible:part"/>
+            </ComboBox>
+            <Label posX="57" posY="7" text="select Pr"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="23" items="" lstrcomment="false" name="a6" posX="74" posY="7" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox"/>
+            <Label posX="17" posY="8" text="select F"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" items="+, -, *, /, (, )" lstrcomment="false" name="a5" posX="30" posY="8" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="+"/>
+              <Item lstrtext="false" name="2" text="-"/>
+              <Item lstrtext="false" name="3" text="*"/>
+              <Item lstrtext="false" name="4" text="/"/>
+              <Item lstrtext="false" name="5" text="("/>
+              <Item lstrtext="false" name="6" text=")"/>
+            </ComboBox>
+            <Button gridHeight="1" gridWidth="23" lstrcomment="false" lstrtext="false" name="act03" posX="74" posY="8" tabIndex="" text="Back"/>
+          </Grid>
+          <Table gridHeight="12" gridWidth="123" name="s_boe" posX="0" posY="11" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="a2" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Formula Order " widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="boe78a" noEntry="true" notNull="true" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Formula" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="a3" posX="38" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Input test value " widget="Edit"/>
+          </Table>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

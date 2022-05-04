@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b2523dc5-0000-4000-bf30-cb5022b9d43d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8584dfb2-0000-4000-8f96-44218aa460c8}" where="">
+    <RecordField colName="gfk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gfk_file.gfk01" sqlTabName="gfk_file" sqlType="VARCHAR" table_alias_name="" uid="{4ddd3d5f-0000-4000-a64d-47879b1ea23b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="gat03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{820d0d01-0000-4000-9cb4-eb1a1c82d011}"/>
+    <RecordField colName="gfk02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gfk_file.gfk02" sqlTabName="gfk_file" sqlType="VARCHAR" table_alias_name="" uid="{14b234eb-0000-4000-a562-bdfb8de22bfb}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="gfk02_name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1c58ce0c-0000-4000-9206-4df9adfe3ec5}"/>
+    <RecordField colName="gfk03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gfk_file.gfk03" sqlTabName="gfk_file" sqlType="VARCHAR" table_alias_name="" uid="{7aed126f-0000-4000-9095-c23af446b143}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="gfk03_name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{864d7fba-0000-4000-a724-4f6719d8c837}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{b01cb1af-0000-4000-bc0a-5f4d8d899c38}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{adb380ae-0000-4000-90be-ab8bfedfe59a}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="84" name="p_auth_filter" spacing="normal" text="p_data_belong">
+    <VBox gridHeight="12" gridWidth="80" name="vb3" posX="1" posY="0">
+      <Folder gridHeight="8" gridWidth="80" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Basic Data">
+          <Grid gridHeight="6" gridWidth="78" lstrcomment="false" name="gr4675" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="76" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Maintain Table"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="gfk01" columnCount="" comment="KEY Field, No Blank/Repeated!, &lt;^P&gt;Qry Program Name" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="gfk_file.gfk01" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="gfk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="gat03" noEntry="true" posX="36" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Data Owner Filed"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfk02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" name="gfk_file.gfk02" posX="19" posY="2" rowCount="" sqlTabName="gfk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="gfk02_name" noEntry="true" posX="36" posY="2" repeat="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Data Group Filed"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfk03" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" name="gfk_file.gfk03" posX="19" posY="3" repeat="false" rowCount="" sqlTabName="gfk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="gfk03_name" noEntry="true" posX="36" posY="3" repeat="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="80" lstrcomment="false" name="gr5" posX="0" posY="9">
+        <HLine gridWidth="10" name="hl4" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="idx" noEntry="true" posX="18" posY="0" repeat="false" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="25" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="27" posY="0" repeat="false" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl5" posX="35" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

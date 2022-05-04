@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2aef3196-d408-464b-b29d-7c78f5b58706}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rxw" order="" uid="{1442aae3-7487-4b1b-a98f-5c396f19e736}" where="">
+    <RecordField colName="rxw01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rxw_file.rxw01" sqlTabName="rxw_file" sqlType="VARCHAR" table_alias_name="" uid="{c77e5854-a734-4772-a0cb-8ffc82eccf2f}"/>
+    <RecordField colName="rxw02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rxw_file.rxw02" sqlTabName="rxw_file" sqlType="VARCHAR" table_alias_name="" uid="{10e0adab-8877-4901-8ac7-1a6ef7274f89}"/>
+    <RecordField colName="rxw03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rxw_file.rxw03" sqlTabName="rxw_file" sqlType="DECIMAL" table_alias_name="" uid="{c6f9f121-614c-48ad-83cb-8bf8ab66ce18}"/>
+    <RecordField colName="rxw06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="rxw_file.rxw06" sqlTabName="rxw_file" sqlType="VARCHAR" table_alias_name="" uid="{c984114f-a9c1-4f99-9ed5-ac1d236bbd95}"/>
+    <RecordField colName="rxwacti" defaultValue="Y" fieldIdRef="5" fieldType="TABLE_COLUMN" name="rxw_file.rxwacti" sqlTabName="rxw_file" sqlType="VARCHAR" table_alias_name="" uid="{03a102d0-a8d1-49cd-8e9c-39a3fe8f78f6}"/>
+    <RecordField colName="rxwpos" defaultValue="N" fieldIdRef="6" fieldType="TABLE_COLUMN" name="rxw_file.rxwpos" sqlTabName="rxw_file" sqlType="VARCHAR" table_alias_name="" uid="{e1678784-8579-4122-a08e-261c5ae9bb4b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d3dd00b1-272b-4bdd-9e04-cad37c43029d}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9f318848-cfa7-4cb3-860f-6f40e3f26731}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="139" lstrtext="false" name="arti108" spacing="normal" text="arti108">
+    <VBox gridHeight="14" gridWidth="121" name="vb2" posX="4" posY="1">
+      <Folder gridHeight="9" gridWidth="121" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page name="Page2" text="Main">
+          <Table gridHeight="7" gridWidth="70" name="s_rxw" posX="2" posY="1" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxw01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rxw_file.rxw01" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="rxw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="rxw01" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxw02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="rxw_file.rxw02" posX="10" posY="0" rowCount="" sqlTabName="rxw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="rxw02" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxw03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rxw_file.rxw03" notNull="true" posX="25" posY="0" rowCount="" sqlTabName="rxw_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="rxw03" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxw06" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="rxw_file.rxw06" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="rxw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="rxw06" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxwacti" columnCount="" defaultValue="Y" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rxw_file.rxwacti" notNull="true" posX="40" posY="0" required="true" rowCount="" sqlTabName="rxw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="rxwacti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxwpos" colorCondition="black" columnCount="" defaultValue="N" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Add-No passed, Modify-No passed, Passed, Modifying-No passed" lstrcomment="false" name="rxw_file.rxwpos" noEntry="true" notNull="true" posX="48" posY="0" rowCount="" sqlTabName="rxw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="POS?" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Add-No passed"/>
+              <Item lstrtext="false" name="2" text="Modify-No passed"/>
+              <Item lstrtext="false" name="3" text="Passed"/>
+              <Item lstrtext="false" name="4" text="Modifying-No passed"/>
+            </ComboBox>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="121" lstrcomment="false" name="gr7" posX="0" posY="10">
+        <HLine gridWidth="10" name="hl7" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="23" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjADYAZgA5AGYAMQAyADEALQA2ADEANABjAC0ANAA4AGEAZAAtADgAMwBjAGIALQA4AGIAZgA4AGEAYgA2ADYAYwBlADEAOAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADMAZABkADAAMABiADEALQAyADcAMgBiAC0ANABiAGQAZAAtADkAZQAwADQALQBjAGEAZAAzADcAYwA0ADMAMAAyADkAZAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADcANwBlADUAOAA1ADQALQBhADcAMwA0AC0ANAA3ADcAMgAtAGEAMABjAGIALQA4AGYAZgBjADgAMgBlAGMAYwBmADIAZgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADMAYQAxADAAMgBkADAALQBhADgAZAAxAC0ANAA5AGMAZAAtADgAZQA5AGMALQAzADkAYQAzAGYAZQA4AGYANwA4AGYANgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGYAMwAxADgAOAA0ADgALQBjAGYAYQA3AC0ANABjAGIAMwAtADgANgAwAGYALQA2AGYANAAwAGUAMwBmADIANgA3ADMAMQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADQANAAyAGEAYQBlADMALQA3ADQAOAA3AC0ANABiADEAYgAtAGEAOQA4AGYALQA1AGMAMwA5ADYAZgAxADkAZQA3ADMANgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADkAOAA0ADEAMQA0AGYALQBhADkAYwAxAC0ANABmADkAOQAtADkAZQBkADUALQBhAGMAMQBkADIAMwA2AGIAYgBkADkANQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADAAZQAwAGEAZABhAGIALQA4ADgANwA3AC0ANAA5ADAAMQAtADgAYQBjADcALQAxAGEANgBlAGYANwAyADcANABmADgAOQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADEANgA3ADgANwA4ADQALQA4ADUANwA5AC0ANAAxADIAMgAtAGEAMAA4AGUALQAyADYAMQBjADUAYQBlADkAYgBiADQAYgB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a99057d3-0000-4000-b1d1-2bbd9aac15c2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oma" order="" uid="{6d4f479d-0000-4000-afa5-a09d4d42eac9}" where="">
+    <RecordField colName="" fieldIdRef="13" name="plant" sqlTabName="" table_alias_name="" uid="{6f1097bb-0000-4000-a375-5d7279a13d99}"/>
+    <RecordField colName="" fieldIdRef="14" name="tradetype" sqlTabName="" table_alias_name="" uid="{e3886d9a-0000-4000-946b-465c5ef310b2}"/>
+    <RecordField colName="oma11" fieldIdRef="15" fieldType="TABLE_COLUMN" name="oma_file.oma11" sqlTabName="oma_file" sqlType="DATE" table_alias_name="" uid="{6bae5c51-0000-4000-b522-5e4507398355}"/>
+    <RecordField colName="oma01" fieldIdRef="16" fieldType="TABLE_COLUMN" name="oma_file.oma01" sqlTabName="oma_file" sqlType="VARCHAR" table_alias_name="" uid="{1d876526-0000-4000-a3a0-ffe7ca7f0b4b}"/>
+    <RecordField colName="oma23" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oma_file.oma23" sqlTabName="oma_file" sqlType="VARCHAR" table_alias_name="" uid="{8bdffc08-0000-4000-a869-a8d7caa902a9}"/>
+    <RecordField colName="oma50" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oma_file.oma50" sqlTabName="oma_file" sqlType="DECIMAL" table_alias_name="" uid="{cdf60012-0000-4000-bb61-4288789abd9c}"/>
+    <RecordField colName="" fieldIdRef="4" name="weight" sqlTabName="" table_alias_name="" uid="{0822c80e-0000-4000-bde0-ddd60e23e731}"/>
+    <RecordField colName="" fieldIdRef="5" name="balance" sqlTabName="" table_alias_name="" uid="{735516f0-0000-4000-beb7-cb9013ff391b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e53b1857-0000-4000-b61f-877cdadc1afa}" where="">
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="occ33" sqlTabName="" table_alias_name="" uid="{d83c750f-0000-4000-8dbc-0fe1025aa226}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="tot" sqlTabName="" table_alias_name="" uid="{73943b91-0000-4000-93b3-338ef80bb777}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="occ02" sqlTabName="" table_alias_name="" uid="{133af082-0000-4000-8884-99e47064f70a}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="curr" sqlTabName="" table_alias_name="" uid="{4fc08730-0000-4000-9633-7addf0ddd38c}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="link" sqlTabName="" table_alias_name="" uid="{86c66218-0000-4000-9221-fb1246d06800}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{e2695363-0000-4000-be31-e8c70c8d8887}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="l_tot" sqlTabName="" table_alias_name="" uid="{e19b9564-0000-4000-8aa9-ddef2b50d5aa}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="l_bal" sqlTabName="" table_alias_name="" uid="{600eeb1b-0000-4000-8e42-12b7554ccb21}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="138" name="axmq210" spacing="normal" text="axmq210">
+    <VBox gridHeight="22" gridWidth="135" name="vb4" posX="0" posY="0" splitter="">
+      <Folder gridHeight="6" gridWidth="135" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="5" gridWidth="103" name="vb3" posX="0" posY="0" splitter="">
+            <Grid gridHeight="3" gridWidth="103" lstrcomment="false" name="gr2236" posX="0" posY="1">
+              <Label posX="1" posY="0" text="Creidt Line Cust"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" name="occ33" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="60" posY="0" text="Line of Credit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tot" noEntry="true" posX="81" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="1" text="Abbreviation"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="occ02" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="60" posY="1" text="Currency of Credit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="curr" noEntry="true" posX="81" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Contact"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="link" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="135" lstrcomment="false" name="s_oma" posX="0" posY="7" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="plant" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Plant #" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="tradetype" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Transaction Cate" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma11" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="oma_file.oma11" posX="27" posY="0" rowCount="" sqlTabName="oma_file" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Forecasted Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma01" columnCount="" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="oma_file.oma01" posX="43" posY="0" rowCount="" sqlTabName="oma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Document#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma23" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="oma_file.oma23" posX="54" posY="0" rowCount="" sqlTabName="oma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Curr" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma50" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oma_file.oma50" notNull="true" posX="59" posY="0" required="true" rowCount="" sqlTabName="oma_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Trans Amount" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="weight" posX="79" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Weights" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="balance" posX="87" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Credit Balance" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="135" lstrcomment="false" name="gr2237" posX="0" posY="19">
+        <HLine gridWidth="11" name="hl853" posX="1" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl854" posX="27" posY="0"/>
+        <Label posX="38" posY="0" text="Tran.Amt Total"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="l_tot" noEntry="true" posX="54" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl855" posX="76" posY="0"/>
+        <Label posX="87" posY="0" text="Cred.Bal Total"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="l_bal" noEntry="true" posX="103" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl856" posX="125" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

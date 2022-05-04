@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{5e91e44a-0000-4000-9ea3-49dff1b3809e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aag" order="" uid="{558a1c3c-0000-4000-bd93-9a9a688955bc}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{2a90b737-0000-4000-83fc-a8951509564c}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="aag00" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{43a53b1c-0000-4000-a2dc-8d2ef3116e2c}"/>
+    <RecordField colName="aag01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aag_file.aag01" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{e4b1f108-0000-4000-89d1-3bcdd4a94c02}"/>
+    <RecordField colName="aag03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aag_file.aag03" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{172dc7d5-0000-4000-a63c-514beb137663}"/>
+    <RecordField colName="aag02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="aag_file.aag02" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{924e5e98-0000-4000-9e22-4a5c43bb25fd}"/>
+    <RecordField colName="aag13" fieldIdRef="6" fieldType="TABLE_COLUMN" name="aag_file.aag13" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{a32a0b23-0000-4000-9734-32f5463560bc}"/>
+    <RecordField colName="aag04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="aag_file.aag04" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{1499c085-0000-4000-afea-26b53858c5f5}"/>
+    <RecordField colName="aag07" fieldIdRef="8" fieldType="TABLE_COLUMN" name="aag_file.aag07" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{172b4185-0000-4000-8150-a94cb91de20d}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="250" name="q_m_aag1" spacing="normal" text="Query Account">
+    <Grid gridHeight="13" gridWidth="179" lstrcomment="false" name="gr3779" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="177" lstrcomment="false" name="s_aag" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="aag00" noEntry="true" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Book No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aag_file.aag01" noEntry="true" notNull="true" posX="16" posY="0" required="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Account" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Account, Carry forward" lstrcomment="false" lstrtitle="false" name="aag_file.aag03" noEntry="true" posX="36" posY="0" queryEditable="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Property" widget="ComboBox">
+          <Item name="2" text="Account"/>
+          <Item name="4" text="Carry forward"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag_file.aag02" noEntry="true" posX="47" posY="0" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Account Title" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag13" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag_file.aag13" noEntry="true" posX="97" posY="0" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Extra Account Title" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag04" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" items="Balance Sheet, Income Statement" lstrcomment="false" lstrtitle="false" name="aag_file.aag04" noEntry="true" posX="147" posY="0" queryEditable="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="BSIS" widget="ComboBox">
+          <Item name="1" text="Balance Sheet"/>
+          <Item name="2" text="Income Statement"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag07" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="Control Account, Detail Account, Independent Account" lstrcomment="false" lstrtitle="false" name="aag_file.aag07" noEntry="true" posX="154" posY="0" queryEditable="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Control/Detail" widget="ComboBox">
+          <Item name="1" text="Control Account"/>
+          <Item name="2" text="Detail Account"/>
+          <Item name="3" text="Independent Account"/>
+        </ComboBox>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

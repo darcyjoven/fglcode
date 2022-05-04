@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2b7705a2-0000-4000-933f-56cc938956c5}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nqc" order="" uid="{ac3ef4a4-0000-4000-b51f-728078f1a3b4}" where="">
+    <RecordField colName="nqc03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nqc_file.nqc03" sqlTabName="nqc_file" sqlType="SMALLINT" table_alias_name="" uid="{22d74b7e-0000-4000-8ce6-6452a5d09a80}"/>
+    <RecordField colName="nqc04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="nqc_file.nqc04" sqlTabName="nqc_file" sqlType="SMALLINT" table_alias_name="" uid="{d967f124-0000-4000-bc7b-945ed32b457e}"/>
+    <RecordField colName="nqc05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="nqc_file.nqc05" sqlTabName="nqc_file" sqlType="DECIMAL" table_alias_name="" uid="{a3e29c84-0000-4000-a85f-ffb65b2d9716}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c7f4a70b-0000-4000-aedf-5e4bad4b21ee}" where="">
+    <RecordField colName="nqc01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nqc_file.nqc01" sqlTabName="nqc_file" sqlType="VARCHAR" table_alias_name="" uid="{e5091321-0000-4000-a6e7-5851da0f328d}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="azi02_1" sqlTabName="" table_alias_name="" uid="{dc3a96a8-0000-4000-a71a-12ac0b3c0888}"/>
+    <RecordField colName="nqc02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nqc_file.nqc02" sqlTabName="nqc_file" sqlType="VARCHAR" table_alias_name="" uid="{b8659d80-0000-4000-83c0-cf5407ce44a6}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="azi02_2" sqlTabName="" table_alias_name="" uid="{965a4006-0000-4000-85eb-1942b1e1ac0b}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{8c7e4d90-0000-4000-ba3b-ad5087d38b5f}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{92df36f3-0000-4000-a513-adaa241ff574}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="52" name="anmi910" spacing="normal" text="anmi910">
+    <VBox gridHeight="21" gridWidth="49" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="49" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="4" gridWidth="47" name="VBox2" posX="0" posY="0">
+            <Grid gridHeight="2" gridWidth="47" lstrcomment="false" name="gr4065" posX="0" posY="1">
+              <Label posX="1" posY="0" text="Coffer Curr"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nqc01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nqc_file.nqc01" noEntry="true" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="nqc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azi02_1" noEntry="true" posX="35" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="1" text="Logistics Curr"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nqc02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="nqc_file.nqc02" notNull="true" posX="23" posY="1" required="true" rowCount="" sqlTabName="nqc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azi02_2" noEntry="true" posX="35" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="49" lstrcomment="false" name="s_nqc" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nqc03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="nqc_file.nqc03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nqc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Year" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nqc04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="nqc_file.nqc04" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="nqc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Prioed" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nqc05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="nqc_file.nqc05" notNull="true" posX="14" posY="0" required="true" rowCount="" sqlTabName="nqc_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Exchange Rate" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="49" lstrcomment="false" name="gr4066" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1298" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1299" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

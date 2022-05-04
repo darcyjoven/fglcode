@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{de258031-0000-4000-bf56-21b0f8fc7598}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bca51ce6-0000-4000-bacb-7dec5067a7b0}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bgq01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a11f18ca-0000-4000-a26e-973327583e2c}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="bgq02" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{638f3c49-0000-4000-83a9-cd8257d3c5e4}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="y" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0fe3776a-0000-4000-8721-e996f56877e1}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{8dcde84d-0000-4000-b29e-cd94d4777d3f}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="bgq053" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d7029357-cade-4d08-9371-71646c81fdc6}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="52" name="abgp130" spacing="normal" text="abgp130">
+    <VBox gridHeight="13" gridWidth="50" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="9" gridWidth="50" lstrcomment="false" name="Grid1" posX="0" posY="1">
+        <Label posX="1" posY="1" text="Version"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bgq01" notNull="true" posX="18" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="3" text="Enter Year"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bgq02" notNull="true" posX="18" posY="3" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="5" text="Gen. Data Type"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" items="Sales Revenue, Purchase Cost, All" lstrcomment="false" lstrtitle="false" name="y" notNull="true" posX="18" posY="5" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+          <Item name="1" text="Sales Revenue"/>
+          <Item name="2" text="Purchase Cost"/>
+          <Item name="3" text="All"/>
+        </ComboBox>
+        <Label posX="1" posY="7" text="Budget Item"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="bgq053" notNull="true" posX="18" posY="7" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="50" lstrcomment="false" name="Grid2" posX="0" posY="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADEAMQBmADEAOABjAGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMgA2AGUALQA5ADcAMwAzADIANwA1ADgAMwBlADIAYwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGYAZQAzADcANwA2AGEALQAwADAAMAAwAC0ANAAwADAAMAAtADgANwAyADEALQBlADkAOQA2AGYANQA2ADgANwA3AGUAMQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGQAYwBkAGUAOAA0AGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgA5AGUALQBjAGQAOQA0AGQANAA3ADcANwBkADMAZgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADMAOABmADMAYwA0ADkALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMwBhADkALQBjAGQAOAAyADUANwBkADMAYwA1AGUANAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADcAMAAyADkAMwA1ADcALQBjAGEAZABlAC0ANABkADAAOAAtADkAMwA3ADEALQA3ADEANgA0ADYAYwA4ADEAZgBkAGMANgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGMAYQA1ADEAYwBlADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYQBjAGIALQA3AGQAZQBjADUAMAA2ADcAYQA3AGIAMAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="21e00" name="ManagedForm" uid="{fea77352-1652-4786-9f65-61b64b1b82c7}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{0d010339-0779-432d-bb47-d126e7b7b8c6}" where="">
+    <RecordField colName="" fieldIdRef="25" name="cn22" sqlTabName="" table_alias_name="" uid="{db9bdddc-0ba8-4580-b3a1-ab991878cebf}"/>
+    <RecordField colName="" fieldIdRef="2" name="b_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{b37eb8b2-3114-455d-9c08-bb74e2bdcabb}"/>
+    <RecordField colName="" fieldIdRef="3" name="e_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{2bea3ddd-c50f-42f2-8375-38b6a8e627b2}"/>
+    <RecordField colName="" fieldIdRef="13" name="bz" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{597f0ae0-2224-4c98-ac75-d6edb9dc94b6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_hrat" order="" uid="{ed543159-8919-4e7e-b027-12692513313a}" where="">
+    <RecordField colName="" defaultValue="Y" fieldIdRef="7" name="sure" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{dd3d583d-73d4-4ed4-843c-99d41881bda5}"/>
+    <RecordField colName="" fieldIdRef="1" name="hrat01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{87a1fbe9-41ac-463c-9220-1b9a67a77e03}"/>
+    <RecordField colName="" fieldIdRef="4" name="hrat02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{db83dff9-5d8a-429d-b41c-2058873ac1d6}"/>
+    <RecordField colName="" fieldIdRef="5" name="hrat04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{37f0c9e4-e7b6-49c6-bd01-256b9edc2222}"/>
+    <RecordField colName="" fieldIdRef="6" name="hrao02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c5ffc914-57aa-46e2-b0a2-9887412d0326}"/>
+    <RecordField colName="" fieldIdRef="8" name="hrat05" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{008a5951-5ca1-4317-98fa-3bc54687ceee}"/>
+    <RecordField colName="" fieldIdRef="9" name="hras04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{19d32811-8dac-4c50-b210-50ff60c0da0e}"/>
+    <RecordField colName="" fieldIdRef="10" name="hrat25" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{a5d52889-f65f-49c3-9cfa-b57043b60454}"/>
+    <RecordField colName="" fieldIdRef="11" name="hrat19" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6a8db5d8-e4b3-45fe-b236-c763c03a97c0}"/>
+    <RecordField colName="" fieldIdRef="12" name="hrat19_name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2cdebe6a-7a5b-4985-b195-8426a0cd3147}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="138" name="Form" text="Form">
+    <VBox gridHeight="21" gridWidth="133" name="VBox1" posX="1" posY="1">
+      <Folder gridHeight="6" gridWidth="133" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Page1">
+          <Grid gridHeight="5" gridWidth="44" name="Grid1" posX="0" posY="0">
+            <Label posX="1" posY="1" text="b_date"/>
+            <DateEdit colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="10" name="b_date" notNull="true" posX="8" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" title="DateEdit1" widget="DateEdit"/>
+            <Label posX="26" posY="1" text="e_date"/>
+            <DateEdit colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="10" name="e_date" notNull="true" posX="33" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" title="DateEdit1" widget="DateEdit"/>
+            <Label posX="1" posY="2" text="beizhu"/>
+            <TextEdit colName="" columnCount="" fieldId="13" gridHeight="2" gridWidth="35" name="bz" posX="8" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="DateEdit1" widget="TextEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="133" name="s_hrat" posX="0" posY="7" totalRows="10">
+        <CheckBox colName="" columnCount="" defaultValue="Y" fieldId="7" gridHeight="1" gridWidth="10" name="sure" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="" title="sure" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ButtonEdit action="controlp" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="12" image="zoom" name="hrat01" notNull="false" posX="10" posY="0" required="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="hrat01" widget="ButtonEdit"/>
+        <Edit colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="13" name="hrat02" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="hrat02" widget="Edit"/>
+        <ButtonEdit action="controlp" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" image="zoom" name="hrat04" notNull="false" posX="35" posY="0" required="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="hrat04" widget="ButtonEdit"/>
+        <Edit colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="16" name="hrao02" noEntry="true" posX="45" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="hrao02" widget="Edit"/>
+        <ButtonEdit action="controlp" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="10" image="zoom" name="hrat05" notNull="false" posX="61" posY="0" required="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="hrat05" widget="ButtonEdit"/>
+        <Edit colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="15" name="hras04" noEntry="true" posX="71" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="hras04" widget="Edit"/>
+        <DateEdit colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="10" name="hrat25" noEntry="true" posX="86" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="11" table_alias_name="" title="hrat25" widget="DateEdit"/>
+        <ButtonEdit action="controlp" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="10" image="zoom" name="hrat19" notNull="false" posX="96" posY="0" required="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="hrat19" widget="ButtonEdit"/>
+        <Edit colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="16" name="hrat19_name" noEntry="true" posX="106" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="hrat19_name" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="133" name="Grid2" posX="0" posY="18">
+        <HLine gridWidth="10" name="HLine1" posX="1" posY="1"/>
+        <Label gridHeight="1" gridWidth="5" name="Label1" posX="12" posY="1" text="cn22"/>
+        <Edit colName="" columnCount="" fieldId="25" gridHeight="1" gridWidth="10" name="cn22" noEntry="true" posX="18" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Edit1" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine2" posX="29" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

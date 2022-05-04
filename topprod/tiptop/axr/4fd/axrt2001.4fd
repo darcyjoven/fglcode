@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ca654be9-0000-4000-8baf-33ac02f8d24c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ofa" order="" uid="{a77065d1-0000-4000-8389-d638fdfe0abe}" where="">
+    <RecordField colName="ofa02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ofa_file.ofa02" sqlTabName="ofa_file" sqlType="DATE" table_alias_name="" uid="{f7dbf215-0000-4000-9f8e-7df85c2684da}"/>
+    <RecordField colName="ofa01" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ofa_file.ofa01" sqlTabName="ofa_file" sqlType="VARCHAR" table_alias_name="" uid="{522acb47-0000-4000-944e-a96ee3837b56}"/>
+    <RecordField colName="ofa50" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ofa_file.ofa50" sqlTabName="ofa_file" sqlType="DECIMAL" table_alias_name="" uid="{f0ae0696-0000-4000-b47c-ffce8dd09883}"/>
+    <RecordField colName="ofaconf" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ofa_file.ofaconf" sqlTabName="ofa_file" sqlType="VARCHAR" table_alias_name="" uid="{5986ea4c-0000-4000-ab0d-ad24168b70b9}"/>
+    <RecordField colName="olc12" fieldIdRef="8" fieldType="TABLE_COLUMN" name="olc_file.olc12" sqlTabName="olc_file" sqlType="DATE" table_alias_name="" uid="{06a8e850-0000-4000-801a-987a72c255bd}"/>
+    <RecordField colName="olcconf" fieldIdRef="9" fieldType="TABLE_COLUMN" name="olc_file.olcconf" sqlTabName="olc_file" sqlType="VARCHAR" table_alias_name="" uid="{0d8baca5-0000-4000-9af3-910353505caa}"/>
+    <RecordField colName="olc20" fieldIdRef="10" fieldType="TABLE_COLUMN" name="olc_file.olc20" sqlTabName="olc_file" sqlType="DATE" table_alias_name="" uid="{c79d07ea-0000-4000-b80e-19c2a7b72a59}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f9e2f9d8-0000-4000-b81f-5b3017235c48}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ola04" sqlTabName="" table_alias_name="" uid="{7d5dbfc8-0000-4000-91f9-566889774284}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="tot1" sqlTabName="" table_alias_name="" uid="{e679b32a-0000-4000-99b1-becb9f42d88e}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="tot2" sqlTabName="" table_alias_name="" uid="{2db1700e-0000-4000-bf80-192c37c10248}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="tot3" sqlTabName="" table_alias_name="" uid="{d70fbb9f-0000-4000-92d9-85f2e9ed23d5}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="103" name="axrt2001" spacing="normal" text="axrt2001">
+    <VBox gridHeight="19" gridWidth="100" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="3" gridWidth="100" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="43" lstrcomment="false" name="gr2762" posX="0" posY="0">
+            <Label posX="1" posY="0" text="L/C No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ola04" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="100" lstrcomment="false" name="s_ofa" posX="0" posY="4" totalRows="10">
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ofa02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="ofa_file.ofa02" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="ofa_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" title="INV.Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ofa01" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="ofa_file.ofa01" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="ofa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="INVOICE NO" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ofa50" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ofa_file.ofa50" noEntry="true" notNull="true" posX="24" posY="0" required="true" rowCount="" sqlTabName="ofa_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="NV.Amount" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ofaconf" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" lstrtitle="false" name="ofa_file.ofaconf" noEntry="true" notNull="true" posX="44" posY="0" required="true" rowCount="" sqlTabName="ofa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Confirm" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="olc12" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="olc_file.olc12" noEntry="true" posX="52" posY="0" rowCount="" sqlTabName="olc_file" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Negotiation Date" widget="DateEdit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="olcconf" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="olc_file.olcconf" noEntry="true" notNull="true" posX="69" posY="0" required="true" rowCount="" sqlTabName="olc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Confirm" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="olc20" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="olc_file.olc20" noEntry="true" posX="78" posY="0" rowCount="" sqlTabName="olc_file" sqlType="DATE" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Date Recorded" widget="DateEdit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="100" lstrcomment="false" name="gr2763" posX="0" posY="16">
+        <HLine gridWidth="2" name="hl988" posX="1" posY="0"/>
+        <Label posX="4" posY="0" text="Total"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tot1" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="3" name="hl989" posX="33" posY="0"/>
+        <Label posX="37" posY="0" text="Total"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tot2" noEntry="true" posX="44" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <Label posX="66" posY="0" text="- Total"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tot3" noEntry="true" posX="75" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <Label posX="96" posY="0" text="-"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

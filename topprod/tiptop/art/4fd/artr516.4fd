@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{9b20fa73-0000-4000-9663-e30f1f814b65}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8daeb0d3-0000-4000-9e20-d909c889737e}" where="">
+    <RecordField colName="" fieldIdRef="10" name="azp01" sqlTabName="" table_alias_name="" uid="{9b62477d-0000-4000-9de8-7a93aacd1a66}"/>
+    <RecordField colName="" fieldIdRef="2" name="ima131" sqlTabName="" table_alias_name="" uid="{b99a8e5f-0000-4000-8c54-809d4fc97837}"/>
+    <RecordField colName="" fieldIdRef="3" name="ima01" sqlTabName="" table_alias_name="" uid="{3c0c5f36-0000-4000-af04-aaf32f6081ee}"/>
+    <RecordField colName="" fieldIdRef="4" name="rate1" sqlTabName="" table_alias_name="" uid="{9d6c6e08-0000-4000-9978-fb0329f54e70}"/>
+    <RecordField colName="" fieldIdRef="5" name="rate2" sqlTabName="" table_alias_name="" uid="{470971a9-0000-4000-a62d-85a70e4f3c92}"/>
+    <RecordField colName="" fieldIdRef="6" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{d9060436-0000-4000-bf81-1eea16a59ea2}"/>
+    <RecordField colName="" fieldIdRef="7" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{7262bf9d-0000-4000-9ad1-3fd269ab9f70}"/>
+    <RecordField colName="" fieldIdRef="8" name="type" sqlTabName="" table_alias_name="" uid="{78a80e13-0000-4000-b866-1ca9986ff7d3}"/>
+    <RecordField colName="" fieldIdRef="9" name="more" sqlTabName="" table_alias_name="" uid="{e0406e9b-0000-4000-a56e-ccc2218546b5}"/>
+  </Record>
+  <Form gridHeight="30" gridWidth="133" name="artr516" text="artr516">
+    <VBox gridHeight="20" gridWidth="61" name="VBox1" posX="5" posY="2">
+      <Grid gridHeight="4" gridWidth="61" name="Grid4" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="59" name="Group3" posX="1" posY="0" text="QBE1">
+          <Label posX="3" posY="1" text="Logistics Code"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="25" image="zoom.png" name="azp01" notNull="true" posX="28" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+          <Label colorCondition="black" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" name="dummy1" posX="27" posY="2" text="LRDMDS,QY&apos;|&apos;H&apos;;&apos;GK"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="4" gridWidth="61" name="Grid1" posX="0" posY="5">
+        <Group gridHeight="4" gridWidth="57" name="Group1" posX="1" posY="0" text="QBE2">
+          <Label posX="3" posY="1" text="Product Classification"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="25" image="zoom.png" name="ima131" posX="26" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="formonly.ButtonEdit2" widget="ButtonEdit"/>
+          <Label posX="3" posY="2" text="Item No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="25" image="zoom.png" name="ima01" posX="26" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="formonly.ButtonEdit3" widget="ButtonEdit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="7" gridWidth="61" name="Group2" posX="0" posY="9" text="Input">
+        <Grid gridHeight="5" gridWidth="58" name="Grid2" posX="1" posY="1">
+          <Label posX="1" posY="1" text="Turnover Rate"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="10" name="rate1" posX="27" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="formonly.Edit1" widget="Edit"/>
+          <Label posX="38" posY="1" text="~"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" name="rate2" posX="40" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.Edit2" widget="Edit"/>
+          <Label posX="1" posY="2" text="Date QBE"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="10" name="bdate" posX="27" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="formonly.DateEdit1" widget="DateEdit"/>
+          <Label posX="38" posY="2" text="~"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="10" name="edate" posX="40" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" title="formonly.DateEdit2" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Cost calculation category"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="23" items="1:Monthly weighted average cost, 2:FIFO Cost, 3:Specific-Batch Cost, 4:Specific-Project Cost, 5:Individual-Cost by Store (Profit Center)" name="type" notNull="true" posX="27" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="formonly.ComboBox1" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="1:Monthly weighted average cost"/>
+            <Item lstrtext="false" name="2" text="2:FIFO Cost"/>
+            <Item lstrtext="false" name="3" text="3:Specific-Batch Cost"/>
+            <Item lstrtext="false" name="4" text="4:Specific-Project Cost"/>
+            <Item lstrtext="false" name="5" text="5:Individual-Cost by Store (Profit Center)"/>
+          </ComboBox>
+        </Grid>
+      </Group>
+      <Grid gridHeight="3" gridWidth="61" name="Grid3" posX="0" posY="16">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="44" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Other codition to print" title="formonly.CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzAGMAMABjADUAZgAzADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZgAwADQALQBhAGEAZgAzADIAZgA2ADAAOAAxAGUAZQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADcAMAA5ADcAMQBhADkALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANgAyAGQALQA4ADUAYQA3ADAAZQA0AGYAMwBjADkAMgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBkADkAMAA2ADAANAAzADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZgA4ADEALQAxAGUAZQBhADEANgBhADUAOQBlAGEAMgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADgAYQA4ADAAZQAxADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOAA2ADYALQAxAGMAYQA5ADkAOAA2AGYAZgA3AGQAMwB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGIANgAyADQANwA3AGQALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZABlADgALQA3AGEAOQAzAGEAYQBjAGQAMQBhADYANgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADkAOQBhADgAZQA1AGYALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYwA1ADQALQA4ADAAOQBkADQAZgBjADkANwA4ADMANwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGQAYQBlAGIAMABkADMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZQAyADAALQBkADkAMAA5AGMAOAA4ADkANwAzADcAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGQANgBjADYAZQAwADgALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOQA3ADgALQBmAGIAMAAzADIAOQBmADUANABlADcAMAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADAANAAwADYAZQA5AGIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQA2AGUALQBjAGMAYwAyADIAMQA4ADUANAA2AGIANQB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADIANgAyAGIAZgA5AGQALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYQBkADEALQAzAGYAZAAyADYAOQBhAGIAOQBmADcAMAB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

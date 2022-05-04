@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b702d265-53c9-4551-8cca-e4fef02d1fd5}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gdw" order="" uid="{2ace179b-947b-4f16-bb69-bc452efddc09}" where="">
+    <RecordField colName="gdw01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gdw_file.gdw01" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{948dfc4b-288d-4101-bd5f-f4167c2ae9d0}"/>
+    <RecordField colName="gaz03" defaultValue="N" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{2c4e57df-3d6a-41aa-84e0-45013c25a03f}"/>
+    <RecordField colName="gdw09" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gdw_file.gdw09" sqlTabName="gdw_file" sqlType="VARCHAR" table_alias_name="" uid="{d95b9941-9747-4efe-b0f1-abd0e52cea68}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="path" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bbf7cf95-9282-4505-87c6-b711318f9c88}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{61a30055-e5ae-49dc-93ea-b89a65e00000}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn3" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e945e2f9-e655-4e60-8937-549f3db70d80}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="131" lstrtext="false" minHeight="10" minWidth="70" name="p_grwp_4rp" spacing="normal" text="cl_gre">
+    <VBox gridHeight="19" gridWidth="131" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="131" name="Grid2" posX="0" posY="1">
+        <Label gridHeight="1" gridWidth="130" name="dummy01" posX="1" posY="1" text="hint: if modify several reports&apos;s papersize, you can add a new papersize in program p_grwp first and edit theirs in program p_grw."/>
+      </Grid>
+      <Table gridHeight="9" gridWidth="131" name="s_gdw" posX="0" posY="6" totalRows="7">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdw01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="gdw_file.gdw01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="gdw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="FileList" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" defaultValue="N" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" name="gaz_file.gaz03" posX="20" posY="0" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ProgName" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdw09" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" name="gdw_file.gdw09" posX="46" posY="0" rowCount="" sqlTabName="gdw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Template Name" widget="Edit"/>
+        <Phantom colName="" fieldId="10" fieldType="NON_DATABASE" name="path" sqlTabName="" sqlType="VARCHAR" table_alias_name="" widget="Phantom"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="131" name="Grid1" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1420" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn3" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1421" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyAGMANABlADUANwBkAGYALQAzAGQANgBhAC0ANAAxAGEAYQAtADgANABlADAALQA0ADUAMAAxADMAYwAyADUAYQAwADMAZgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADkANAA1AGUAMgBmADkALQBlADYANQA1AC0ANABlADYAMAAtADgAOQAzADcALQA1ADQAOQBmADMAZABiADcAMABkADgAMAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADEAYQAzADAAMAA1ADUALQBlADUAYQBlAC0ANAA5AGQAYwAtADkAMwBlAGEALQBiADgAOQBhADYANQBlADAAMAAwADAAMAB9wGrAAAAAAABAXMAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADQAOABkAGYAYwA0AGIALQAyADgAOABkAC0ANAAxADAAMQAtAGIAZAA1AGYALQBmADQAMQA2ADcAYwAyAGEAZQA5AGQAMAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGIAZgA3AGMAZgA5ADUALQA5ADIAOAAyAC0ANAA1ADAANQAtADgANwBjADYALQBiADcAMQAxADMAMQA4AGYAOQBjADgAOAB9QCQAAAAAAABAWcAAAAAAAD+RaHKwIMSeAQAAAEwAewAyAGEAYwBlADEANwA5AGIALQA5ADQANwBiAC0ANABmADEANgAtAGIAYgA2ADkALQBiAGMANAA1ADIAZQBmAGQAZABjADAAOQB9wHyAAAAAAABAVEAAAAAAAD+WhysCDEm+AQAAAEwAewBkADkANQBiADkAOQA0ADEALQA5ADcANAA3AC0ANABlAGYAZQAtAGIAMABmADEALQBhAGIAZAAwAGUANQAyAGMAZQBhADYAOAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

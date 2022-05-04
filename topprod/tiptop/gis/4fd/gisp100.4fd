@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{09ffbd62-0000-4000-a272-65fcc625d7be}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_plant" order="" uid="{0e16ff56-0000-4000-bcad-308a2dd7fdd7}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="plant" sqlTabName="" table_alias_name="" uid="{b2abc683-0000-4000-a09f-7e2be24cee64}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c7387d21-0000-4000-990c-a9df74463451}" where="">
+    <RecordField colName="oma00" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oma_file.oma00" sqlTabName="oma_file" sqlType="VARCHAR" table_alias_name="" uid="{89064da7-0000-4000-b091-374052b312e0}"/>
+    <RecordField colName="oma01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oma_file.oma01" sqlTabName="oma_file" sqlType="VARCHAR" table_alias_name="" uid="{0b2f0146-0000-4000-a75a-61e842a585d4}"/>
+    <RecordField colName="oma02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oma_file.oma02" sqlTabName="oma_file" sqlType="DATE" table_alias_name="" uid="{9e6f1e6c-0000-4000-bf50-1f5deb7a4419}"/>
+    <RecordField colName="oma03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oma_file.oma03" sqlTabName="oma_file" sqlType="VARCHAR" table_alias_name="" uid="{3947cf42-0000-4000-b316-eef44c9ec3e8}"/>
+    <RecordField colName="omb04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="omb_file.omb04" sqlTabName="omb_file" sqlType="VARCHAR" table_alias_name="" uid="{e010f82e-0000-4000-bbe6-5fc042c746f5}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{0ceb2a52-0000-4000-8ac0-7ef106ceb290}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="54" name="gisp100" spacing="normal" text="gisp100">
+    <Folder gridHeight="16" gridWidth="52" lstrcomment="false" name="pc796" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <Grid gridHeight="14" gridWidth="51" lstrcomment="false" name="gr3479" posX="0" posY="0">
+          <Group gridHeight="7" gridWidth="50" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+            <Label posX="1" posY="1" text="Accounts Category"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma00" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="oma_file.oma00" posX="23" posY="1" rowCount="" sqlTabName="oma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Bill No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="oma_file.oma01" posX="23" posY="2" rowCount="" sqlTabName="oma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Enter Account Date"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="oma_file.oma02" posX="23" posY="3" rowCount="" sqlTabName="oma_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="Customer No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="oma_file.oma03" posX="23" posY="4" rowCount="" sqlTabName="oma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="5" text="Item No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="omb04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="omb_file.omb04" posX="23" posY="5" rowCount="" sqlTabName="omb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          </Group>
+          <Group gridHeight="6" gridWidth="50" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="7" text="Plant No.">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="4" comment="Press &lt;ESC&gt; when done" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="plant" posX="2" posY="1" repeat="true" rowCount="3" sqlTabName="" sqlType="CHAR" stepX="2" stepY="0" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="47" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Exist,Re-Generate?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

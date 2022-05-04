@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{eb838602-0000-4000-aa1d-e770e3328905}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pml2" order="" uid="{2fe4d490-0000-4000-97a9-bc2b68c67a1d}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="pmk09_2" sqlTabName="" table_alias_name="" uid="{75758ef2-0000-4000-b6e4-9477e7550f6b}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="pmc03_2" sqlTabName="" table_alias_name="" uid="{812b6eda-0000-4000-94a1-f76da8a5e0cc}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b49bb2aa-0000-4000-ad11-37a1bd5c6210}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="pml04_2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1654f5ee-0000-4000-a6e5-6924851dbcb9}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="pml041_2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d9894ddd-0000-4000-9036-55132c76a34b}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="pml33_2" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{662839dd-0000-4000-ac89-a69a29e1f58f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="pml07_2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e0d8affc-0000-4000-a1e3-9d7fbed5e25e}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="45" name="apmp460_2" text="dimt_orderform">
+    <VBox gridHeight="15" gridWidth="39" name="vb3" posX="2" posY="1">
+      <Grid gridHeight="6" gridWidth="39" lstrcomment="false" name="gr24" posX="0" posY="1">
+        <Label posX="1" posY="1" text="Item No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" justify="" name="pml04_2" noEntry="true" posX="11" posY="1" repeat="false" rowCount="" sizePolicy="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Item Name"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="26" justify="" name="pml041_2" noEntry="true" posX="11" posY="2" repeat="false" rowCount="" sizePolicy="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="3" text="data"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" name="pml33_2" noEntry="true" posX="11" posY="3" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="4" text="Unit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" justify="" name="pml07_2" noEntry="true" posX="11" posY="4" rowCount="" sizePolicy="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="7" gridWidth="39" name="tb5" posX="0" posY="7" totalRows="5">
+        <ButtonEdit action="CONTROLP" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" image="zoom.png" lstrcomment="false" lstrtitle="false" name="pmk09_2" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Manufacturer No." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="pmc03_2" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Manufacturer Name" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

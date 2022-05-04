@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="161" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="4300" spacing="normal" posX="0" percommentheader="" height="20" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdi118" defaultspacing="true" text="axdi118" gstVersion="11401" percommentlayout="GRID
+PAGE
+FOLDER
+TABLE
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="158" posX="0" posY="0" height="5" lstrcomment="false" name="folder01" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Main" >
+    <Grid width="33" posX="0" posY="0" height="3" lstrcomment="false" hidden="--------" name="gr7760" fontPitch="default" scroll="false" >
+     <Text width="11" lstrtext="false" gridWidth="11" posX="1" posY="0" height="1" sizePolicy="initial" name="text26410" text="Vehicle No." />
+     <FormField sqlDBName="ds" colName="adn01" fieldId="0" sqlTabName="adn_file" name="adn01" fieldtype="TABLE_COLUMN" >
+      <ButtonEdit width="10" case="NONE" comment="&lt;^P>Qry Detail" invisible="--------" gridWidth="10" notNull="true" image="zoom" posX="22" formfieldname="formfield0" action="controlp" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" tabIndex="1" zeroFill="--------" lstrtitle="false" data_type="VARCHAR" name="adn01" reverse="true" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+     </FormField>
+     <Text width="9" lstrtext="false" gridWidth="9" posX="1" posY="1" height="1" sizePolicy="initial" name="text26411" text="Init Date" />
+     <FormField sqlDBName="ds" colName="adn02" fieldId="1" sqlTabName="adn_file" name="adn02" fieldtype="TABLE_COLUMN" >
+      <DateEdit width="10" gridWidth="10" notNull="true" posX="22" formfieldname="formfield1" posY="1" height="1" autoNext="--------" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="2" lstrtitle="false" data_type="DATE" name="adn02" century="R" color="black" fontPitch="default" noEntry="--------" required="true" />
+     </FormField>
+     <Text width="8" lstrtext="false" gridWidth="8" posX="1" posY="2" height="1" sizePolicy="initial" name="text26412" text="End Date" />
+     <FormField sqlDBName="ds" colName="adn03" fieldId="2" sqlTabName="adn_file" name="adn03" fieldtype="TABLE_COLUMN" >
+      <DateEdit width="10" gridWidth="10" notNull="true" posX="22" formfieldname="formfield2" posY="2" height="1" autoNext="--------" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="3" lstrtitle="false" data_type="DATE" name="adn03" century="R" color="black" fontPitch="default" noEntry="--------" required="true" />
+     </FormField>
+    </Grid>
+   </Page>
+  </PageControl>
+  <Table width="158" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="5" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_adn" fontPitch="default" tabName="s_adn" unsortableColumns="--------" tabName1="s_adn" >
+   <TableColumn width="10" lstrtext="false" sqlDBName="ds" height="1" colName="adn04" unsortable="--------" fieldId="3" sqlTabName="adn_file" tabIndex="4" unsizable="--------" unhidable="--------" unmovable="--------" name="adn04" fieldtype="TABLE_COLUMN" text="Line no" >
+    <Edit width="10" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="9" lstrtext="false" sqlDBName="ds" height="1" colName="adn05" unsortable="--------" fieldId="4" sqlTabName="adn_file" tabIndex="5" unsizable="--------" unhidable="--------" unmovable="--------" name="adn05" fieldtype="TABLE_COLUMN" text="Driver" >
+    <ButtonEdit width="9" case="NONE" comment="&lt;^P>Qry Detail" invisible="--------" notNull="true" image="zoom" height="1" action="controlp" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" zeroFill="--------" lstrtitle="false" data_type="VARCHAR" reverse="true" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="7" lstrtext="false" height="1" colName="gen02" unsortable="--------" fieldId="5" sqlTabName="formonly" tabIndex="6" unsizable="--------" unhidable="--------" unmovable="--------" name="gen02" text="Name" >
+    <Edit width="7" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+   <TableColumn width="18" lstrtext="false" sqlDBName="ds" height="1" colName="adn06" unsortable="--------" fieldId="6" sqlTabName="adn_file" tabIndex="7" unsizable="--------" unhidable="--------" unmovable="--------" name="adn06" fieldtype="TABLE_COLUMN" text="Dispatch No." >
+    <ButtonEdit width="18" case="NONE" comment="&lt;^P>Qry Detail" invisible="--------" notNull="--------" image="zoom" height="1" action="controlp" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" zeroFill="--------" lstrtitle="false" data_type="VARCHAR" reverse="true" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+   </TableColumn>
+   <TableColumn width="9" lstrtext="false" sqlDBName="ds" height="1" colName="adn07" unsortable="--------" fieldId="7" sqlTabName="adn_file" tabIndex="8" unsizable="--------" unhidable="--------" unmovable="--------" name="adn07" fieldtype="TABLE_COLUMN" text="Reason" >
+    <Edit width="9" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+   </TableColumn>
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="adn08" unsortable="--------" fieldId="8" sqlTabName="adn_file" tabIndex="9" unsizable="--------" unhidable="--------" unmovable="--------" name="adn08" fieldtype="TABLE_COLUMN" text="Return Date" >
+    <DateEdit width="14" notNull="--------" height="1" autoNext="--------" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="DATE" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" />
+   </TableColumn>
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="adn09" unsortable="--------" fieldId="9" sqlTabName="adn_file" tabIndex="10" unsizable="--------" unhidable="--------" unmovable="--------" name="adn09" fieldtype="TABLE_COLUMN" text="Return Time" >
+    <Edit width="14" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+   </TableColumn>
+   <TableColumn width="15" lstrtext="false" sqlDBName="ds" height="1" colName="adn10" unsortable="--------" fieldId="10" sqlTabName="adn_file" tabIndex="11" unsizable="--------" unhidable="--------" unmovable="--------" name="adn10" fieldtype="TABLE_COLUMN" text="Init Mileage" >
+    <Edit width="15" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="adn11" unsortable="--------" fieldId="11" sqlTabName="adn_file" tabIndex="12" unsizable="--------" unhidable="--------" unmovable="--------" name="adn11" fieldtype="TABLE_COLUMN" text="END Mileage" >
+    <Edit width="14" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="30" lstrtext="false" sqlDBName="ds" height="1" colName="adn12" unsortable="--------" fieldId="12" sqlTabName="adn_file" tabIndex="13" unsizable="--------" unhidable="--------" unmovable="--------" name="adn12" fieldtype="TABLE_COLUMN" text="Memo" >
+    <Edit width="30" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+   </TableColumn>
+   <TableColumn width="5" lstrtext="false" sqlDBName="ds" height="1" colName="adnacti" unsortable="--------" fieldId="13" sqlTabName="adn_file" tabIndex="14" unsizable="--------" unhidable="--------" unmovable="--------" name="adnacti" fieldtype="TABLE_COLUMN" text="Valid" >
+    <CheckBox width="5" lstrtext="false" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="" valueChecked="Y" />
+   </TableColumn>
+  </Table>
+  <Grid width="158" posX="0" posY="17" height="1" lstrcomment="false" hidden="--------" name="gr7761" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl2543" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" posY="0" height="1" sizePolicy="initial" name="text26413" text="Rows" />
+   <FormField colName="cnt" fieldId="14" sqlTabName="formonly" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="17" formfieldname="formfield3" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="15" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cnt" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="24" posY="0" height="1" name="hl2544" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_adn" fromTable="true" tableKey="tb1119" >
+  <Link colName="adn_file.adn04" fromTable="true" colKey="Col11100" />
+  <Link colName="adn_file.adn05" fromTable="true" colKey="Col11101" />
+  <Link colName="formonly.gen02" fromTable="true" colKey="Col11102" />
+  <Link colName="adn_file.adn06" fromTable="true" colKey="Col11103" />
+  <Link colName="adn_file.adn07" fromTable="true" colKey="Col11104" />
+  <Link colName="adn_file.adn08" fromTable="true" colKey="Col11105" />
+  <Link colName="adn_file.adn09" fromTable="true" colKey="Col11106" />
+  <Link colName="adn_file.adn10" fromTable="true" colKey="Col11107" />
+  <Link colName="adn_file.adn11" fromTable="true" colKey="Col11108" />
+  <Link colName="adn_file.adn12" fromTable="true" colKey="Col11109" />
+  <Link colName="adn_file.adnacti" fromTable="true" colKey="Col11110" />
+ </RecordView>
+</Form>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a813af21-0000-4000-8f94-f1f29e616c00}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gcz" order="" uid="{49320a40-0000-4000-ad8b-08dbea573a3d}" where="">
+    <RecordField colName="gcz05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gcz_file.gcz05" sqlTabName="gcz_file" sqlType="SMALLINT" table_alias_name="" uid="{4260eaf0-0000-4000-b7f2-b79136adc047}"/>
+    <RecordField colName="gcz07" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gcz_file.gcz07" sqlTabName="gcz_file" sqlType="VARCHAR" table_alias_name="" uid="{b1fcac34-0000-4000-8399-5ee1fe92335c}"/>
+    <RecordField colName="gcz08" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gcz_file.gcz08" sqlTabName="gcz_file" sqlType="VARCHAR" table_alias_name="" uid="{6bea61ce-0000-4000-a5f4-22f61b639896}"/>
+    <RecordField colName="gcz10" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gcz_file.gcz10" sqlTabName="gcz_file" sqlType="INTEGER" table_alias_name="" uid="{6219cebe-0000-4000-ae2f-154641aa979a}"/>
+    <RecordField colName="gcz11" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gcz_file.gcz11" sqlTabName="gcz_file" sqlType="VARCHAR" table_alias_name="" uid="{0bf75fbb-0000-4000-a81c-c1788126af3b}"/>
+    <RecordField colName="gcz12" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gcz_file.gcz12" sqlTabName="gcz_file" sqlType="VARCHAR" table_alias_name="" uid="{4eee31bb-0000-4000-9b4b-904fc8bd1325}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e5ea1871-0000-4000-8bf3-cb0d5e94d301}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="option" sqlTabName="" table_alias_name="" uid="{49b998c9-0000-4000-b8f6-2e6069f7a7a4}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cancel_cr" sqlTabName="" table_alias_name="" uid="{98ffdf6e-0000-4000-9df3-77c5675fe72f}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="template" sqlTabName="" table_alias_name="" uid="{7fe6cf45-0000-4000-b131-1b76b776f73d}"/>
+  </Record>
+  <Form gridHeight="35" gridWidth="148" lstrtext="false" name="cl_prt_preview" spacing="normal" text="cl_prt_preview">
+    <VBox gridHeight="28" gridWidth="136" name="vb3_" posX="4" posY="1">
+      <Grid gridHeight="7" gridWidth="136" lstrcomment="false" name="gr3045" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="127" lstrcomment="false" lstrtext="false" name="group08" posX="1" posY="0">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="2" gridWidth="33" items="Open Crystal Report, CR data export to Excel" lstrcomment="false" name="option" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="O" text="Open Crystal Report"/>
+            <Item lstrtext="false" name="P" text="CR data export to Excel"/>
+          </RadioGroup>
+          <Label colorCondition="black" gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="lb1" posX="35" posY="1"/>
+          <Label colorCondition="black" gridHeight="1" gridWidth="124" lstrcomment="false" lstrtext="false" name="lb1_1" posX="1" posY="4"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" name="cancel_cr" notNull="true" posX="1" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Close Crystal Reports Data Function ?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+      </Grid>
+      <Folder gridHeight="19" gridWidth="136" lstrcomment="false" name="pc7" posX="0" posY="8">
+        <Page name="page01" text="page01">
+          <VBox gridHeight="18" gridWidth="95" name="vb3" posX="1" posY="0">
+            <Grid gridHeight="4" gridWidth="95" lstrcomment="false" name="gr18" posX="0" posY="1">
+              <Label posX="1" posY="1" text="Category/User"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" items="" lstrcomment="false" name="template" notNull="true" posX="15" posY="1" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox"/>
+              <Button gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="save_as" posX="41" posY="1" tabIndex="" text="Save as"/>
+            </Grid>
+            <HBox gridHeight="12" gridWidth="95" name="hb2" posX="0" posY="5">
+              <Table gridHeight="12" gridWidth="75" name="tb1" posX="2" posY="0" totalRows="10" wantFixedPageSize="true">
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcz05" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="gcz_file.gcz05" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="gcz_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" title="No." widget="Edit"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcz07" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="gcz_file.gcz07" noEntry="true" posX="5" posY="0" rowCount="" sqlTabName="gcz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Field ID" widget="Edit"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcz08" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gcz_file.gcz08" posX="20" posY="0" rowCount="" sqlTabName="gcz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Field Name" widget="Edit"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcz10" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gcz_file.gcz10" notNull="true" posX="40" posY="0" required="true" rowCount="" sqlTabName="gcz_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Width" widget="Edit"/>
+                <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcz11" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" hidden="true" items="Unit Price, Amount, Exchange rate, Total, Quantity, Number, Other, Char, Document No., Multi-Unit, Alternate BOM, Item No., Employee No., Dept. No., Date, Acct. No., Item Description, Specification" lstrcomment="false" lstrtitle="false" name="gcz_file.gcz11" notNull="true" posX="50" posY="0" required="true" rowCount="" sqlTabName="gcz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Attribute" widget="ComboBox">
+                  <Item name="A" text="Unit Price"/>
+                  <Item name="B" text="Amount"/>
+                  <Item name="C" text="Exchange rate"/>
+                  <Item name="D" text="Total"/>
+                  <Item name="E" text="Quantity"/>
+                  <Item name="F" text="Number"/>
+                  <Item name="G" text="Other"/>
+                  <Item name="J" text="Char"/>
+                  <Item name="K" text="Document No."/>
+                  <Item name="L" text="Multi-Unit"/>
+                  <Item name="M" text="Alternate BOM"/>
+                  <Item name="N" text="Item No."/>
+                  <Item name="O" text="Employee No."/>
+                  <Item name="P" text="Dept. No."/>
+                  <Item name="Q" text="Date"/>
+                  <Item name="R" text="Acct. No."/>
+                  <Item name="S" text="Item Description"/>
+                  <Item name="T" text="Specification"/>
+                </ComboBox>
+                <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcz12" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="gcz_file.gcz12" notNull="true" posX="60" posY="0" required="true" rowCount="" sqlTabName="gcz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Hidden" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              </Table>
+              <Grid gridHeight="12" gridWidth="16" lstrcomment="false" name="gr6017" posX="77" posY="0">
+                <Label posX="1" posY="0" text="  "/>
+                <Label posX="1" posY="1" text="  "/>
+                <Label posX="1" posY="2" text="  "/>
+                <Label posX="1" posY="3" text="  "/>
+                <Button gridHeight="1" gridWidth="4" image="arrup" lstrcomment="false" lstrtext="false" name="up" posX="1" posY="4" tabIndex=""/>
+                <Label posX="1" posY="5" text="  "/>
+                <Label posX="1" posY="6" text="  "/>
+                <Button gridHeight="1" gridWidth="4" image="arrdown" lstrcomment="false" lstrtext="false" name="down" posX="1" posY="7" tabIndex=""/>
+                <Label posX="1" posY="8" text="  "/>
+                <Label posX="1" posY="9" text="  "/>
+                <Label posX="1" posY="10" text="  "/>
+                <Label posX="1" posY="11" text="  "/>
+              </Grid>
+            </HBox>
+          </VBox>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADEAZgBjAGEAYwAzADQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMwA5ADkALQA1AGUAZQAxAGYAZQA5ADIAMwAzADUAYwB9QCAAAAQAAABASgAABoAAAAAAAAAAAAAAAQAAAEwAewA3AGYAZQA2AGMAZgA0ADUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMQAzADEALQAxAGIANwA2AGIANwA3ADYAZgA3ADMAZAB9QCAAAAQAAABAUgAABIAAAAAAAAAAAAAAAQAAAEwAewA2ADIAMQA5AGMAZQBiAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZQAyAGYALQAxADUANAA2ADQAMQBhAGEAOQA3ADkAYQB9QCAAAAQAAABAVwAABcAAAAAAAAAAAAAAAQAAAEwAewA2AGIAZQBhADYAMQBjAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQBmADQALQAyADIAZgA2ADEAYgA2ADMAOQA4ADkANgB9QCAAAAQAAABAUgAABIAAAAAAAAAAAAAAAQAAAEwAewAwAGIAZgA3ADUAZgBiAGIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAOAAxAGMALQBjADEANwA4ADgAMQAyADYAYQBmADMAYgB9QCAAAAQAAABAXAAABwAAAAAAAAAAAAAAAQAAAEwAewA5ADgAZgBmAGQAZgA2AGUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZABmADMALQA3ADcAYwA1ADYANwA1AGYAZQA3ADIAZgB9QCAAAAQAAABASgAABoAAAAAAAAAAAAAAAQAAAEwAewBlADUAZQBhADEAOAA3ADEALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYgBmADMALQBjAGIAMABkADUAZQA5ADQAZAAzADAAMQB9QCAAAAQAAABAIAAABAAAAAAAAAAAAAAAAQAAAEwAewA0ADIANgAwAGUAYQBmADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwBmADIALQBiADcAOQAxADMANgBhAGQAYwAwADQANwB9QCAAAAQAAABAQAAABAAAAAAAAAAAAAAAAQAAAEwAewA0AGUAZQBlADMAMQBiAGIALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYgA0AGIALQA5ADAANABmAGMAOABiAGQAMQAzADIANQB9QCAAAAQAAABAYIAABCAAAAAAAAAAAAAAAQAAAEwAewA0ADkAMwAyADAAYQA0ADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZAA4AGIALQAwADgAZABiAGUAYQA1ADcAMwBhADMAZAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADkAYgA5ADkAOABjADkALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOABmADYALQAyAGUANgAwADYAOQBmADcAYQA3AGEANAB9QCAAAAQAAABAQAAABAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

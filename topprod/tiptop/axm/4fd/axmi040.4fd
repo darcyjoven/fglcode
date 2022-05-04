@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3c2e176f-0000-4000-b119-2ab23e791cbf}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oaf" order="" uid="{5b0a576f-0000-4000-8a3d-772ebc306501}" where="">
+    <RecordField colName="oaf02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oaf_file.oaf02" sqlTabName="oaf_file" sqlType="SMALLINT" table_alias_name="" uid="{d6b3107b-0000-4000-bfb6-40d9e5f33779}"/>
+    <RecordField colName="oaf03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oaf_file.oaf03" sqlTabName="oaf_file" sqlType="VARCHAR" table_alias_name="" uid="{682d5b20-0000-4000-a451-0b7380e88eff}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{cef62833-0000-4000-9bd8-f63ebdb132b6}" where="">
+    <RecordField colName="oae01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oae_file.oae01" sqlTabName="oae_file" sqlType="VARCHAR" table_alias_name="" uid="{999c7157-0000-4000-9107-18cbbc54b48f}"/>
+    <RecordField colName="oae02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oae_file.oae02" sqlTabName="oae_file" sqlType="VARCHAR" table_alias_name="" uid="{ed0b117d-0000-4000-be79-42b8064d77d7}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{cd42d55e-0000-4000-a9d3-e20112858b39}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="73" name="axmi040" spacing="normal" text="axmi040">
+    <VBox gridHeight="20" gridWidth="70" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="4" gridWidth="70" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="63" lstrcomment="false" name="gr1993" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Description Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oae01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="oae_file.oae01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="oae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Brief Description"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oae02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="oae_file.oae02" posX="22" posY="1" rowCount="" sqlTabName="oae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="70" lstrcomment="false" name="s_oaf" posX="0" posY="5" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaf02" color="yellow" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="oaf_file.oaf02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oaf_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Line#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaf03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="oaf_file.oaf03" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="oaf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Description" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="70" lstrcomment="false" name="gr1994" posX="0" posY="17">
+        <HLine gridWidth="10" name="hl721" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl722" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

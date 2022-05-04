@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9121fa8a-0000-4000-82db-b8b2a6ead79b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_odv" order="" uid="{da7c96c4-0000-4000-81f6-a30e3c1bbd31}" where="">
+    <RecordField colName="odv02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="odv_file.odv02" sqlTabName="odv_file" sqlType="VARCHAR" table_alias_name="" uid="{ae3d7c78-0000-4000-9917-5603f5f94cbd}"/>
+    <RecordField colName="" fieldIdRef="2" name="tqa02_c" sqlTabName="" table_alias_name="" uid="{4586db6e-0000-4000-8aeb-57f8da6543a4}"/>
+    <RecordField colName="odv03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="odv_file.odv03" sqlTabName="odv_file" sqlType="DECIMAL" table_alias_name="" uid="{a22948d7-0000-4000-bf8d-3bba7e373d07}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{16add3d1-0000-4000-919d-160285356289}" where="">
+    <RecordField colName="odu01" fieldIdRef="7" fieldType="TABLE_COLUMN" name="odu_file.odu01" sqlTabName="odu_file" sqlType="VARCHAR" table_alias_name="" uid="{4e5fede7-0000-4000-841b-fcfd1a15cf98}"/>
+    <RecordField colName="odu02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="odu_file.odu02" sqlTabName="odu_file" sqlType="VARCHAR" table_alias_name="" uid="{55578f8e-0000-4000-886c-765877822fb6}"/>
+    <RecordField colName="odu03" fieldIdRef="9" fieldType="TABLE_COLUMN" name="odu_file.odu03" sqlTabName="odu_file" sqlType="VARCHAR" table_alias_name="" uid="{207304a9-0000-4000-b980-0141610d083d}"/>
+    <RecordField colName="" fieldIdRef="10" name="tqa02" sqlTabName="" table_alias_name="" uid="{15412506-0000-4000-a0a8-f4f3a941902b}"/>
+    <RecordField colName="odu04" fieldIdRef="11" fieldType="TABLE_COLUMN" name="odu_file.odu04" sqlTabName="odu_file" sqlType="VARCHAR" table_alias_name="" uid="{921b20df-0000-4000-b0a4-1c42ac93fcea}"/>
+    <RecordField colName="" fieldIdRef="12" name="tqa02_b" sqlTabName="" table_alias_name="" uid="{75fea95a-0000-4000-89a6-2519d460c816}"/>
+    <RecordField colName="" fieldIdRef="4" name="idx" sqlTabName="" table_alias_name="" uid="{28b7d509-0000-4000-b852-a58b1510a0c5}"/>
+    <RecordField colName="" fieldIdRef="5" name="cnt" sqlTabName="" table_alias_name="" uid="{a2eb2c6a-0000-4000-b4bb-b45871deca50}"/>
+    <RecordField colName="" fieldIdRef="6" name="cni" sqlTabName="" table_alias_name="" uid="{75efb268-0000-4000-a35d-4a747403351c}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="103" name="Form" text="Form">
+    <VBox gridHeight="27" gridWidth="100" name="VBox1" posX="2" posY="0">
+      <Folder gridHeight="11" gridWidth="100" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Basic Data">
+          <Grid gridHeight="10" gridWidth="98" name="Grid1" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="18" name="Label4" posX="3" posY="1" text="Ratio Version"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odu01" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom.png" name="odu_file.odu01" notNull="true" posX="26" posY="1" required="true" rowCount="" sqlTabName="odu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="19" name="Label5" posX="52" posY="1" text="Ratio Description"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odu02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" name="odu_file.odu02" posX="77" posY="1" rowCount="" sqlTabName="odu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="formonly.Edit7" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="18" name="Label6" posX="3" posY="3" text="For Product Type"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odu03" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom.png" name="odu_file.odu03" posX="26" posY="3" rowCount="" sqlTabName="odu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="formonly.ButtonEdit2" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="19" name="tqa02" noEntry="true" posX="52" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="formonly.Edit8" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="18" name="Label7" posX="3" posY="5" text="For Sales Area"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odu04" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom.png" name="odu_file.odu04" posX="26" posY="5" rowCount="" sqlTabName="odu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="formonly.ButtonEdit3" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="19" name="tqa02_b" noEntry="true" posX="52" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="formonly.Edit9" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="100" name="s_odv" posX="0" posY="12" tag="s_odv" totalRows="5">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odv02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom.png" name="odv_file.odv02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="odv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Size" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="8" name="tqa02_c" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odv03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="odv_file.odv03" posX="16" posY="0" rowCount="" sqlTabName="odv_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Radio%" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="7" gridWidth="100" name="Grid2" posX="0" posY="19">
+        <HLine gridWidth="4" name="HLine1" posX="4" posY="1"/>
+        <Label gridHeight="1" gridWidth="6" name="Label1" posX="9" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="7" name="idx" noEntry="true" posX="16" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="formonly.Edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="2" name="Label2" posX="25" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="7" name="cnt" noEntry="true" posX="29" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="formonly.Edit5" widget="Edit"/>
+        <HLine gridWidth="3" name="HLine2" posX="38" posY="1"/>
+        <Label gridHeight="1" gridWidth="6" name="Label3" posX="43" posY="1" text="Items"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="7" name="cni" noEntry="true" posX="51" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="formonly.Edit6" widget="Edit"/>
+        <HLine gridWidth="4" name="HLine4" posX="60" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

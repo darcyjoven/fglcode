@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9eb927b5-0000-4000-923f-f02acae98ad3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmn" order="" uid="{9e84c074-0000-4000-a68d-50d1d5a2bb99}" where="">
+    <RecordField colName="" fieldIdRef="5" name="sure" sqlTabName="" table_alias_name="" uid="{4c89d61f-0000-4000-92ec-93d123a2f5b7}"/>
+    <RecordField colName="pmn02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pmn_file.pmn02" sqlTabName="pmn_file" sqlType="SMALLINT" table_alias_name="" uid="{c2baae3e-0000-4000-8247-288bac5fd679}"/>
+    <RecordField colName="pmn04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pmn_file.pmn04" sqlTabName="pmn_file" sqlType="VARCHAR" table_alias_name="" uid="{0efbb9fa-0000-4000-80b0-d4dca7fba998}"/>
+    <RecordField colName="pmn011" fieldIdRef="8" fieldType="TABLE_COLUMN" name="pmn_file.pmn011" sqlTabName="pmn_file" sqlType="VARCHAR" table_alias_name="" uid="{5ae59c94-0000-4000-b07f-7b4d053d6d23}"/>
+    <RecordField colName="" fieldIdRef="9" name="pmn16" sqlTabName="" table_alias_name="" uid="{13e731ec-0000-4000-9329-7cb3f3b7df66}"/>
+    <RecordField colName="" fieldIdRef="10" name="pmn16_d" sqlTabName="" table_alias_name="" uid="{130774fc-0000-4000-855f-15dd5d8895d5}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{4517a65a-0000-4000-befb-4638669cd9ef}" where="">
+    <RecordField colName="pmm01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmm_file.pmm01" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{d2c51eba-0000-4000-940a-c47af182cf2b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="pmm09" sqlTabName="" table_alias_name="" uid="{c86b7569-0000-4000-b7c5-14ca1b7205dd}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="pmc03" sqlTabName="" table_alias_name="" uid="{be1672d3-0000-4000-b4a1-78e3be65361d}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="y" sqlTabName="" table_alias_name="" uid="{7fa406ff-0000-4000-b337-c843eff9abb3}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="cn3" sqlTabName="" table_alias_name="" uid="{b4b6580d-0000-4000-b94f-d7cf8181407d}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{88a5bcbf-0000-4000-a6e7-167c80f80055}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="83" name="apmp552" spacing="normal" text="apmp552">
+    <VBox gridHeight="26" gridWidth="80" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="9" gridWidth="80" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="8" gridWidth="48" lstrcomment="false" name="gr4920" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="47" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="P/O No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm01" columnCount="" comment="Enter a P/O # to Open   &lt;^P&gt; Query P/O   &lt;^Y&gt;Query P/O Head Detail" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" image="zoom" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm01" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Vender Code"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmm09" noEntry="true" posX="19" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmc03" noEntry="true" posX="34" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="3" gridWidth="47" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="4">
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtext="false" lstrtitle="false" name="y" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Display Opened Data?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="80" lstrcomment="false" name="s_pmn" posX="0" posY="10" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sure" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Sure" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn02" noEntry="true" posX="5" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Ln#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn04" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn04" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn011" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn011" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Property" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pmn16" noEntry="true" posX="42" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Status Code" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="pmn16_d" noEntry="true" posX="54" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Current Status" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="80" lstrcomment="false" name="gr4921" posX="0" posY="21">
+        <Button comment="Select All" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtext="false" name="select_all" posX="2" posY="0" tabIndex=""/>
+        <Button comment="Cancel All" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="cancel_all" posX="19" posY="0" tabIndex=""/>
+        <Label posX="33" posY="0" text="Select Counts"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cn3" noEntry="true" posX="54" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1602" posX="1" posY="1"/>
+        <Label posX="12" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1603" posX="26" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3AGYAYQA0ADAANgBmAGYALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMwAzADcALQBjADgANAAzAGUAZgBmADkAYQBiAGIAMwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGMAOAA5AGQANgAxAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMgBlAGMALQA5ADMAZAAxADIAMwBhADIAZgA1AGIANwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADMAZQA3ADMAMQBlAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMwAyADkALQA3AGMAYgAzAGYAMwBiADcAZABmADYANgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADIAYwA1ADEAZQBiAGEALQAwADAAMAAwAC0ANAAwADAAMAAtADkANAAwAGEALQBjADQANwBhAGYAMQA4ADIAYwBmADIAYgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADQAYgA2ADUAOAAwAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOQA0AGYALQBkADcAYwBmADgAMQA4ADEANAAwADcAZAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADgANgBiADcANQA2ADkALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwBjADUALQAxADQAYwBhADEAYgA3ADIAMAA1AGQAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGUAZgBiAGIAOQBmAGEALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMABiADAALQBkADQAZABjAGEANwBmAGIAYQA5ADkAOAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADIAYgBhAGEAZQAzAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMgA0ADcALQAyADgAOABiAGEAYwA1AGYAZAA2ADcAOQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADMAMAA3ADcANABmAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADgANQA1AGYALQAxADUAZABkADUAZAA4ADgAOQA1AGQANQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGUAOAA0AGMAMAA3ADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANgA4AGQALQA1ADAAZAAxAGQANQBhADIAYgBiADkAOQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADUAMQA3AGEANgA1AGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZQBmAGIALQA0ADYAMwA4ADYANgA5AGMAZAA5AGUAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADgAYQA1AGIAYwBiAGYALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANgBlADcALQAxADYANwBjADgAMABmADgAMAAwADUANQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGEAZQA1ADkAYwA5ADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMAA3AGYALQA3AGIANABkADAANQAzAGQANgBkADIAMwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGUAMQA2ADcAMgBkADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANABhADEALQA3ADgAZQAzAGIAZQA2ADUAMwA2ADEAZAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{40e6b0eb-0000-4000-8108-be636017ed8d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_odb" order="" uid="{f4f72e21-0000-4000-abfc-cc6a8ae0de50}" where="">
+    <RecordField colName="odb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="odb_file.odb01" sqlTabName="odb_file" sqlType="VARCHAR" table_alias_name="" uid="{5cb4e5ae-0000-4000-9638-f2f5543b1c5c}"/>
+    <RecordField colName="odb02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="odb_file.odb02" sqlTabName="odb_file" sqlType="VARCHAR" table_alias_name="" uid="{f4a4851d-0000-4000-9ed1-c541201e2100}"/>
+    <RecordField colName="odb03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="odb_file.odb03" sqlTabName="odb_file" sqlType="DATE" table_alias_name="" uid="{07117433-0000-4000-9b8c-c5842ab54845}"/>
+    <RecordField colName="odb04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="odb_file.odb04" sqlTabName="odb_file" sqlType="VARCHAR" table_alias_name="" uid="{140fbf72-0000-4000-a0e5-06d70b616f93}"/>
+    <RecordField colName="odb05" fieldIdRef="8" fieldType="TABLE_COLUMN" name="odb_file.odb05" sqlTabName="odb_file" sqlType="DATE" table_alias_name="" uid="{b95e2296-0000-4000-bd05-891a37ad545a}"/>
+    <RecordField colName="odb06" fieldIdRef="9" fieldType="TABLE_COLUMN" name="odb_file.odb06" sqlTabName="odb_file" sqlType="DATE" table_alias_name="" uid="{9a88131b-0000-4000-bec3-e66280527d39}"/>
+    <RecordField colName="odb09" fieldIdRef="10" fieldType="TABLE_COLUMN" name="odb_file.odb09" sqlTabName="odb_file" sqlType="VARCHAR" table_alias_name="" uid="{c8d7aeb5-0000-4000-aaa5-98dd91411528}"/>
+    <RecordField colName="odb07" fieldIdRef="11" fieldType="TABLE_COLUMN" name="odb_file.odb07" sqlTabName="odb_file" sqlType="VARCHAR" table_alias_name="" uid="{ab57c9d7-0000-4000-85e8-a6b97395111d}"/>
+    <RecordField colName="" fieldIdRef="12" name="tqb02" sqlTabName="" table_alias_name="" uid="{66d5e22d-0000-4000-8e74-2b100c9a5237}"/>
+    <RecordField colName="odb08" fieldIdRef="2" fieldType="TABLE_COLUMN" name="odb_file.odb08" sqlTabName="odb_file" sqlType="VARCHAR" table_alias_name="" uid="{45d42921-0000-4000-82e2-a3cb9bce2565}"/>
+    <RecordField colName="odbacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="odb_file.odbacti" sqlTabName="odb_file" sqlType="VARCHAR" table_alias_name="" uid="{a0ab825a-0000-4000-9774-93103dd8d78c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c54d7a38-0000-4000-8128-25256b986634}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{5f964c59-0000-4000-b1aa-4dd979238329}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="143" name="atmi160" spacing="normal" text="atmi160">
+    <VBox gridHeight="18" gridWidth="140" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="140" lstrcomment="false" name="pc325" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="138" lstrcomment="false" name="s_odb" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="odb_file.odb01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="odb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Version #" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="odb_file.odb02" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="odb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Version Name" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb03" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="odb_file.odb03" notNull="true" posX="30" posY="0" required="true" rowCount="" sqlTabName="odb_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Plan.Date" widget="DateEdit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb04" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="Quarter, Month, 10-Day, Week, Day" lstrcomment="false" lstrtitle="false" name="odb_file.odb04" notNull="true" posX="40" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="odb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Time Bucket" widget="ComboBox">
+              <Item name="1" text="Quarter"/>
+              <Item name="2" text="Month"/>
+              <Item name="3" text="10-Day"/>
+              <Item name="4" text="Week"/>
+              <Item name="5" text="Day"/>
+            </ComboBox>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb05" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="odb_file.odb05" notNull="true" posX="52" posY="0" required="true" rowCount="" sqlTabName="odb_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Init.Date" widget="DateEdit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb06" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="odb_file.odb06" notNull="true" posX="62" posY="0" required="true" rowCount="" sqlTabName="odb_file" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" title="End Date" widget="DateEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb09" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" image="zoom" lstrcomment="false" lstrtitle="false" name="odb_file.odb09" notNull="true" posX="72" posY="0" required="true" rowCount="" sqlTabName="odb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Curr." widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb07" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="odb_file.odb07" notNull="true" posX="78" posY="0" required="true" rowCount="" sqlTabName="odb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Upper Org. Code" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tqb02" noEntry="true" posX="94" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Upper Org. Name" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odb08" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="odb_file.odb08" noEntry="true" posX="114" posY="0" rowCount="" sqlTabName="odb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Carry" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odbacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="odb_file.odbacti" notNull="true" posX="120" posY="0" required="true" rowCount="" sqlTabName="odb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="140" lstrcomment="false" name="gr1390" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl476" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl477" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

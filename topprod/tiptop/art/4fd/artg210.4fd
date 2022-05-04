@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{dbedc3d8-0eeb-4140-9e03-85605e4f6b41}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="ruw_file" name="Record1" order="" uid="{5f7da11f-fae4-407c-8e5e-9a049801b2fa}" where="">
+    <RecordField colName="ruw02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ruw_file.ruw02" sqlTabName="ruw_file" sqlType="VARCHAR" table_alias_name="" uid="{7c8ca57b-551f-47cc-8945-856d4a94c6d7}" uniqueQueryKey="false"/>
+    <RecordField colName="ruw01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ruw_file.ruw01" sqlTabName="ruw_file" sqlType="VARCHAR" table_alias_name="" uid="{e2cb7edf-726d-4c17-b016-938a626856d3}" uniqueQueryKey="false"/>
+    <RecordField colName="ruw04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ruw_file.ruw04" sqlTabName="ruw_file" sqlType="DATE" table_alias_name="" uid="{88293d72-c8ee-49fb-a8ad-cce4c3ba459a}" uniqueQueryKey="false"/>
+    <RecordField colName="ruw05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ruw_file.ruw05" sqlTabName="ruw_file" sqlType="VARCHAR" table_alias_name="" uid="{acb2c464-dd90-443d-88ca-5072836e69f8}" uniqueQueryKey="false"/>
+    <RecordField colName="ruw06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ruw_file.ruw06" sqlTabName="ruw_file" sqlType="VARCHAR" table_alias_name="" uid="{71b4a68a-5d81-436a-ae12-235f4910369e}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{240d81cc-344c-44aa-a028-8858da79881e}" where="">
+    <RecordField colName="" fieldIdRef="6" name="store" sqlTabName="" table_alias_name="" uid="{01a7ba2d-fb64-4fe5-a8c8-fd35e91ab69c}"/>
+    <RecordField colName="" fieldIdRef="7" name="state" sqlTabName="" table_alias_name="" uid="{187ed82b-7a6e-49f1-b898-79716bf2138f}"/>
+    <RecordField colName="" fieldIdRef="8" name="sort" sqlTabName="" table_alias_name="" uid="{704f1fa7-3abd-45df-9a0b-7f9a2485a765}"/>
+    <RecordField colName="" fieldIdRef="9" name="more" sqlTabName="" table_alias_name="" uid="{a1abee51-a347-4704-9cc5-c5f9d70fce01}"/>
+  </Record>
+  <Form gridHeight="47" gridWidth="220" name="Form" text="Form">
+    <VBox gridHeight="19" gridWidth="61" name="VBox1" posX="2" posY="0">
+      <Grid gridHeight="17" gridWidth="61" name="ds1" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="56" name="Group1" posX="1" posY="1" text="QBE">
+          <Label posX="7" posY="1" text="ruw02"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ruw02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="ruw_file.ruw02" posX="18" posY="1" rowCount="" scroll="true" sqlTabName="ruw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ruw02" widget="ButtonEdit"/>
+          <Label posX="7" posY="2" text="ruw01"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ruw01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="ruw_file.ruw01" notNull="true" posX="18" posY="2" rowCount="" scroll="true" sqlTabName="ruw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ruw01" widget="ButtonEdit"/>
+          <Label posX="7" posY="3" text="ruw04"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ruw04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" name="ruw_file.ruw04" posX="18" posY="3" rowCount="" sqlTabName="ruw_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ruw04" widget="DateEdit"/>
+          <Label posX="7" posY="4" text="ruw05"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ruw05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="ruw_file.ruw05" posX="18" posY="4" rowCount="" scroll="true" sqlTabName="ruw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ruw05" widget="ButtonEdit"/>
+          <Label posX="7" posY="5" text="ruw06"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ruw06" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="ruw_file.ruw06" posX="18" posY="5" rowCount="" scroll="true" sqlTabName="ruw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ruw06" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="5" gridWidth="56" name="Group2" posX="1" posY="8" text="INPUT">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="10" name="store" notNull="true" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="store" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label posX="1" posY="2" text="state"/>
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="44" items="NonConfirm, Confirm, All" left="false" lstrcomment="true" name="state" notNull="true" orientation="horizontal" posX="10" posY="2" reverse="false" rowCount="" sizePolicy="initial" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="RadioGroup1" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="NonConfirm"/>
+            <Item lstrtext="false" name="2" text="Confirm"/>
+            <Item lstrtext="false" name="3" text="All"/>
+          </RadioGroup>
+          <Label posX="1" posY="3" text="sort"/>
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="44" items="No, Item" name="sort" notNull="true" orientation="horizontal" posX="10" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="RadioGroup1" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="No"/>
+            <Item lstrtext="false" name="2" text="Item"/>
+          </RadioGroup>
+        </Group>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="34" name="more" posX="1" posY="14" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="more" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADQAMABkADgAMQBjAGMALQAzADQANABjAC0ANAA0AGEAYQAtAGEAMAAyADgALQA4ADgANQA4AGQAYQA3ADkAOAA4ADEAZQB9QDYAAAAAAABACAAAAAAAAD+euFHrhR6+AQAAAEwAewAxADgANwBlAGQAOAAyAGIALQA3AGEANgBlAC0ANAA5AGYAMQAtAGIAOAA5ADgALQA3ADkANwAxADYAYgBmADIAMQAzADgAZgB9QBQAAAAAAABARwAAAAAAAD+Kn752yLQ8AQAAAEwAewBhADEAYQBiAGUAZQA1ADEALQBhADMANAA3AC0ANAA3ADAANAAtADkAYwBjADUALQBjADUAZgA5AGQANwAwAGYAYwBlADAAMQB9QBQAAAAAAABAVoAAAAAAAD+OuFHrhR68AQAAAEwAewA3AGMAOABjAGEANQA3AGIALQA1ADUAMQBmAC0ANAA3AGMAYwAtADgAOQA0ADUALQA4ADUANgBkADQAYQA5ADQAYwA2AGQANwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGYANwBkAGEAMQAxAGYALQBmAGEAZQA0AC0ANAAwADcAYwAtADgAZQA1AGUALQA5AGEAMAA0ADkAOAAwADEAYgAyAGYAYQB9wF5AAAAAAABACAAAAAAAAD+crAgxJul+AQAAAEwAewA4ADgAMgA5ADMAZAA3ADIALQBjADgAZQBlAC0ANAA5AGYAYgAtAGEAOABhAGQALQBjAGMAZQA0AGMAMwBiAGEANAA1ADkAYQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADIAYwBiADcAZQBkAGYALQA3ADIANgBkAC0ANABjADEANwAtAGIAMAAxADYALQA5ADMAOABhADYAMgA2ADgANQA2AGQAMwB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADEAYQA3AGIAYQAyAGQALQBmAGIANgA0AC0ANABmAGUANQAtAGEAOABjADgALQBmAGQAMwA1AGUAOQAxAGEAYgA2ADkAYwB9QBQAAAAAAABAOAAAAAAAAD+QYk3S8an+AQAAAEwAewA3ADAANABmADEAZgBhADcALQAzAGEAYgBkAC0ANAA1AGQAZgAtADkAYQAwAGIALQA3AGYAOQBhADIANAA4ADUAYQA3ADYANQB9QBQAAAAAAABAUQAAAAAAAD+MrAgxJul8AQAAAEwAewBhAGMAYgAyAGMANAA2ADQALQBkAGQAOQAwAC0ANAA0ADMAZAAtADgAOABjAGEALQA1ADAANwAyADgAMwA2AGUANgA5AGYAOAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADEAYgA0AGEANgA4AGEALQA1AGQAOAAxAC0ANAAzADYAYQAtAGEAZQAxADIALQAyADMANQBmADQAOQAxADAAMwA2ADkAZQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

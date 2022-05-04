@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2ea17d1b-0000-4000-a746-d2e16f394280}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rzl" order="" uid="{cfa70ef1-0000-4000-ba31-fbf21cc00749}" where="">
+    <RecordField colName="rzl02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rzl_file.rzl02" sqlTabName="rzl_file" sqlType="VARCHAR" table_alias_name="" uid="{a808a234-0000-4000-8a33-42d26783151a}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="rtz13" sqlTabName="" table_alias_name="" uid="{feb27dba-0000-4000-8585-5dbbb6b72704}"/>
+    <RecordField colName="rzlacti" fieldIdRef="6" fieldType="TABLE_COLUMN" name="rzl_file.rzlacti" sqlTabName="rzl_file" sqlType="VARCHAR" table_alias_name="" uid="{a9a04901-0000-4000-ba7d-a3d28ef3df3e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6655c945-0000-4000-833c-3e4460fa695b}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="bcn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{febf4e60-0000-4000-a746-ac64dea080a2}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="136" name="apci054_1" text="almi551">
+    <VBox gridHeight="18" gridWidth="45" name="VBox1" posX="1" posY="0">
+      <Folder gridHeight="13" gridWidth="45" lstrcomment="false" name="pc6" posX="0" posY="1">
+        <Page name="main" text="Main">
+          <Table gridHeight="11" gridWidth="40" name="s_rzl" posX="0" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzl02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rzl_file.rzl02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="rzl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="lnk03" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="true" name="rtz13" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="rtz13" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzlacti" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rzl_file.rzlacti" notNull="true" posX="28" posY="0" required="true" rowCount="" sqlTabName="rzl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="lnk05" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="45" lstrcomment="false" name="gr2" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl3" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="bcn2" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="23" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADkAYQAwADQAOQAwADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYQA3AGQALQBhADMAZAAyADgAZQBmADMAZABmADMAZQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGUAYgBmADQAZQA2ADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANwA0ADYALQBhAGMANgA0AGQAZQBhADAAOAAwAGEAMgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADgAMAA4AGEAMgAzADQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYQAzADMALQA0ADIAZAAyADYANwA4ADMAMQA1ADEAYQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYAYQA3ADAAZQBmADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYQAzADEALQBmAGIAZgAyADEAYwBjADAAMAA3ADQAOQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGUAYgAyADcAZABiAGEALQAwADAAMAAwAC0ANAAwADAAMAAtADgANQA4ADUALQA1AGQAYgBiAGIANgBiADcAMgA3ADAANAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADYANQA1AGMAOQA0ADUALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMwAzAGMALQAzAGUANAA0ADYAMABmAGEANgA5ADUAYgB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

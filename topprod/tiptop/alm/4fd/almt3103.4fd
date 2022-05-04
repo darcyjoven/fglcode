@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c856836b-0000-4000-926b-4b4503d00a06}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_luh" order="" uid="{b17cb4f4-0000-4000-843b-9a49d11e036a}" where="">
+    <RecordField colName="luhstore" fieldIdRef="1" fieldType="TABLE_COLUMN" name="luh_file.luhstore" sqlTabName="luh_file" sqlType="VARCHAR" table_alias_name="" uid="{65e9de69-0000-4000-b6e5-cf0b971a72ee}"/>
+    <RecordField colName="" fieldIdRef="2" name="rtz13" sqlTabName="" table_alias_name="" uid="{7ffa25c4-0000-4000-9a2b-ecd8733b37d8}"/>
+    <RecordField colName="luhlegal" fieldIdRef="3" fieldType="TABLE_COLUMN" name="luh_file.luhlegal" sqlTabName="luh_file" sqlType="VARCHAR" table_alias_name="" uid="{9ace45ea-0000-4000-923e-9e1a8de6281f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="azt02" sqlTabName="" table_alias_name="" uid="{5a05532f-0000-4000-aac7-4e5f9b76ae35}"/>
+    <RecordField colName="luh04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="luh_file.luh04" sqlTabName="luh_file" sqlType="VARCHAR" table_alias_name="" uid="{7266d3d1-0000-4000-9acf-29625d282a51}"/>
+    <RecordField colName="luh05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="luh_file.luh05" sqlTabName="luh_file" sqlType="VARCHAR" table_alias_name="" uid="{b12cc478-0000-4000-85df-3893214373b1}"/>
+    <RecordField colName="luh06" defaultValue="N" fieldIdRef="7" fieldType="TABLE_COLUMN" name="luh_file.luh06" sqlTabName="luh_file" sqlType="VARCHAR" table_alias_name="" uid="{046d90bd-0000-4000-bde7-1c9f40d98fe9}"/>
+    <RecordField colName="luh07" fieldIdRef="8" fieldType="TABLE_COLUMN" name="luh_file.luh07" sqlTabName="luh_file" sqlType="VARCHAR" table_alias_name="" uid="{02f61ba0-0000-4000-bc49-48779e10bf26}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{74639c0f-0000-4000-acde-f8d92eef5279}" where="">
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d8fde166-0000-4000-a1df-11da6c636a1c}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="120" lstrtext="false" name="almt3103" spacing="normal" text="almt3103">
+    <VBox gridHeight="13" gridWidth="113" name="vb2" posX="3" posY="1">
+      <Folder gridHeight="8" gridWidth="113" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Main" text="Basic Data">
+          <Table gridHeight="7" gridWidth="111" name="s_luh" posX="1" posY="0" totalRows="5">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="luhstore" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom.png" lstrcomment="false" lstrtitle="false" name="luh_file.luhstore" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="luh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Store No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="rtz13" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Store Name" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="luhlegal" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom.png" lstrcomment="false" name="luh_file.luhlegal" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="luh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Corporation" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="azt02" noEntry="true" posX="42" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Corporation Title" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="luh04" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="unchecked, keqianye, clear" lstrcomment="false" lstrtitle="false" name="luh_file.luh04" posX="52" posY="0" rowCount="" sqlTabName="luh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Corporation Initial Status" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="unchecked"/>
+              <Item lstrtext="false" name="1" text="keqianye"/>
+              <Item lstrtext="false" name="2" text="clear"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="luh05" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="uncheck, keqiny, clear" lstrcomment="false" lstrtitle="false" name="luh_file.luh05" posX="66" posY="0" rowCount="" sqlTabName="luh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Expected Change Status" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="uncheck"/>
+              <Item lstrtext="false" name="1" text="keqiny"/>
+              <Item lstrtext="false" name="2" text="clear"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="luh06" columnCount="" defaultValue="N" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="luh_file.luh06" noEntry="true" notNull="true" posX="79" posY="0" required="true" rowCount="" sqlTabName="luh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Approval Result" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="luh07" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="un, qian, clear" lstrcomment="false" lstrtitle="false" name="luh_file.luh07" noEntry="true" posX="89" posY="0" rowCount="" sqlTabName="luh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Corporation Status" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="un"/>
+              <Item lstrtext="false" name="1" text="qian"/>
+              <Item lstrtext="false" name="2" text="clear"/>
+            </ComboBox>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="113" lstrcomment="false" name="gr2" posX="0" posY="9">
+        <HLine gridWidth="7" name="hl1" posX="2" posY="0"/>
+        <Label posX="9" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" name="idx" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="7" name="hl2" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

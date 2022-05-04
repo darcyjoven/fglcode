@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9c4b07c6-0000-4000-9794-1caa074b477e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_hrcy" order="" uid="{fc121b46-0000-4000-8d3a-d0b359dec695}" where="">
+    <RecordField colName="hrcy01" fieldIdRef="1" fieldType="NON_DATABASE" name="hrcy01" sqlTabName="hrcy_file" sqlType="VARCHAR" table_alias_name="" uid="{fdee4913-0000-4000-823c-18a9b4a6c224}"/>
+    <RecordField colName="hrcy02" fieldIdRef="3" fieldType="NON_DATABASE" name="hrcy02" sqlTabName="hrcy_file" sqlType="VARCHAR" table_alias_name="" uid="{5033980c-0000-4000-8e30-f55e7c5ca5ca}"/>
+    <RecordField colName="hrcy03" fieldIdRef="4" fieldType="NON_DATABASE" name="hrcy03" sqlTabName="hrcy_file" sqlType="DATE" table_alias_name="" uid="{7a68897a-0000-4000-b41b-651f9cc26ef1}"/>
+    <RecordField colName="hrcy04" fieldIdRef="5" fieldType="NON_DATABASE" name="hrcy04" sqlTabName="hrcy_file" sqlType="DATE" table_alias_name="" uid="{64700194-0000-4000-a561-2d310e7bbd15}"/>
+    <RecordField colName="hrcy05" fieldIdRef="6" fieldType="NON_DATABASE" name="hrcy05" sqlTabName="hrcy_file" sqlType="VARCHAR" table_alias_name="" uid="{df335bfb-0000-4000-bef6-a4df5617298f}"/>
+    <RecordField colName="hrcy05_1" fieldIdRef="7" fieldType="NON_DATABASE" name="hrcy05_1" sqlTabName="hrcy_file" sqlType="VARCHAR" table_alias_name="" uid="{2c5c603e-0000-4000-8622-0e030725fc57}"/>
+    <RecordField colName="hrcy06" fieldIdRef="8" fieldType="NON_DATABASE" name="hrcy06" sqlTabName="hrcy_file" sqlType="VARCHAR" table_alias_name="" uid="{061f4e58-0000-4000-b1aa-40083e162ed5}"/>
+    <RecordField colName="hrcy07" fieldIdRef="9" fieldType="NON_DATABASE" name="hrcy07" sqlTabName="hrcy_file" sqlType="VARCHAR" table_alias_name="" uid="{2784cf2d-0000-4000-a0bf-23f922567d1e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{617c5c40-0000-4000-a490-0104d7fe4ba2}" where="">
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3beff366-0000-4000-96e6-3109b5e70492}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="180" name="aooi030" spacing="normal" text="aooi030">
+    <VBox gridHeight="18" gridWidth="176" name="vb3" posX="1" posY="0" splitter="">
+      <Folder gridHeight="14" gridWidth="176" lstrcomment="false" name="pc831" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="152" lstrcomment="false" name="s_hrcy" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hrcy01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="hrcy01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="hrcy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Department No." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hrcy02" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="hrcy02" notNull="true" posX="15" posY="0" required="true" rowCount="" sqlTabName="hrcy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Department Abbreviate" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hrcy03" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="hrcy03" notNull="true" posX="37" posY="0" required="true" rowCount="" sqlTabName="hrcy_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Department Full name" widget="DateEdit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hrcy04" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="hrcy04" notNull="true" posX="58" posY="0" required="true" rowCount="" sqlTabName="hrcy_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Accounting Department" widget="DateEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hrcy05" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="hrcy05" notNull="true" posX="81" posY="0" required="true" rowCount="" sqlTabName="hrcy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Expense Category" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hrcy05_1" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="hrcy05_1" noEntry="true" notNull="false" posX="99" posY="0" required="false" rowCount="" sqlTabName="hrcy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Control Type" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hrcy06" columnCount="" comment="&lt;^P&gt; Qry Cost Center" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="hrcy06" notNull="true" posX="112" posY="0" required="true" rowCount="" sqlTabName="hrcy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="" title="Cost Center" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hrcy07" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="hrcy07" noEntry="false" posX="124" posY="0" rowCount="" sqlTabName="hrcy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Center Desc" widget="TextEdit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="176" lstrcomment="false" name="gr4617" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1420" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1421" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADcAOAA0AGMAZgAyAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMABiAGYALQAyADMAZgA5ADIAMgA1ADYANwBkADEAZQB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGEANgA4ADgAOQA3AGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANAAxAGIALQA2ADUAMQBmADkAYwBjADIANgBlAGYAMQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGQAZQBlADQAOQAxADMALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMgAzAGMALQAxADgAYQA5AGIANABhADYAYwAyADIANAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGIAZQBmAGYAMwA2ADYALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBlADYALQAzADEAMAA5AGIANQBlADcAMAA0ADkAMgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADYAMQBmADQAZQA1ADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMQBhAGEALQA0ADAAMAA4ADMAZQAxADYAMgBlAGQANQB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADQANwAwADAAMQA5ADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQA2ADEALQAyAGQAMwAxADAAZQA3AGIAYgBkADEANQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGMANQBjADYAMAAzAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADgANgAyADIALQAwAGUAMAAzADAANwAyADUAZgBjADUANwB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADEANwBjADUAYwA0ADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANAA5ADAALQAwADEAMAA0AGQANwBmAGUANABiAGEAMgB9QGRAAAAAAABATIAAAAAAAD9QYk3S8an8AQAAAEwAewBkAGYAMwAzADUAYgBmAGIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZQBmADYALQBhADQAZABmADUANgAxADcAMgA5ADgAZgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADAAMwAzADkAOAAwAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZQAzADAALQBmADUANQBlADcAYwA1AGMAYQA1AGMAYQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGMAMQAyADEAYgA0ADYALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZAAzAGEALQBkADAAYgAzADUAOQBkAGUAYwA2ADkANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

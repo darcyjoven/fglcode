@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ce6d1d4d-0000-4000-8290-bec5bcbf595e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ksg" order="" uid="{bdef556d-0000-4000-962e-2141d41e8004}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{91a3adfc-0000-4000-bea0-e2c2e61eabd2}"/>
+    <RecordField colName="ksg01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ksg_file.ksg01" sqlTabName="ksg_file" sqlType="VARCHAR" table_alias_name="" uid="{e69475cb-0000-4000-9dab-32105a56c305}"/>
+    <RecordField colName="ksg02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ksg_file.ksg02" sqlTabName="ksg_file" sqlType="SMALLINT" table_alias_name="" uid="{57aeb0e7-0000-4000-94ad-f2177590ac42}"/>
+    <RecordField colName="ksg03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ksg_file.ksg03" sqlTabName="ksg_file" sqlType="VARCHAR" table_alias_name="" uid="{e534131b-0000-4000-bfc7-c75ad7cfc7bd}"/>
+    <RecordField colName="" fieldIdRef="5" name="ima02" sqlTabName="" table_alias_name="" uid="{5dbcf66c-0000-4000-b4bd-1cd3fe3845e3}"/>
+    <RecordField colName="ksg05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ksg_file.ksg05" sqlTabName="ksg_file" sqlType="DECIMAL" table_alias_name="" uid="{c51a699b-0000-4000-8704-145dc130267f}"/>
+    <RecordField colName="" fieldIdRef="7" name="sfb08" sqlTabName="" table_alias_name="" uid="{bd3832a7-0000-4000-88cd-b91ed6423fe5}"/>
+    <RecordField colName="" fieldIdRef="8" name="noqty" sqlTabName="" table_alias_name="" uid="{6d8ec149-0000-4000-83ef-856f4d20da18}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="132" name="q_ksg1" spacing="normal" text="Qry Manufacturing Advice">
+    <Grid gridHeight="13" gridWidth="130" lstrcomment="false" name="gr3776" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="129" lstrcomment="false" name="s_ksg" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ksg01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="ksg_file.ksg01" noEntry="true" posX="5" posY="0" rowCount="" sqlTabName="ksg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Advice No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ksg02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="ksg_file.ksg02" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="ksg_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ksg03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="ksg_file.ksg03" noEntry="true" posX="31" posY="0" rowCount="" sqlTabName="ksg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Production Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="52" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Production Item Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ksg05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="ksg_file.ksg05" noEntry="true" posX="83" posY="0" rowCount="" sqlTabName="ksg_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Planning Qty" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="sfb08" noEntry="true" posX="96" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Issued W/O" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="noqty" noEntry="true" posX="107" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Unfilled W/O" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="21e00" name="Root" uid="{fda160c8-0000-4000-ac6e-8d78e82e43a0}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7596e8db-0000-4000-96d4-b61e52b2760a}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{7d1c5bca-0000-4000-b0ab-a8c0631786a6}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ama01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ca458a7e-0000-4000-bdc6-156d77ac4242}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="yy" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{683bba0a-0000-4000-ab70-b16336b26d92}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="bm" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{3e77982f-0000-4000-9366-b91c1154327a}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="em" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{999b53d8-0000-4000-bdd5-4f51cab8efd3}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{32bc719e-0000-4000-9a52-1503e9e652b8}"/>
+    <RecordField colName="" fieldIdRef="7" name="oom04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{aaeeb6ac-837d-4962-aa62-dbe507d5d760}"/>
+  </Record>
+  <Form gridHeight="10" gridWidth="101" name="amdr311" spacing="normal" text="amdr311">
+    <VBox gridHeight="10" gridWidth="99" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="6" gridWidth="99" lstrcomment="false" name="gr3713" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="98" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Enter Application Date"/>
+          <DateEdit colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="date" posX="37" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+          <Label gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" name="dummy01" posX="52" posY="1" text="(Century Year)"/>
+          <Label posX="1" posY="2" text="Tax Declaration Department"/>
+          <ButtonEdit action="controlp" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="ama01" posX="37" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Invoice Copies"/>
+          <ComboBox colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="10" items="3.Triplicate, 6.Triplicate Casher Invoice" name="oom04" notNull="true" posX="37" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ComboBox1" widget="ComboBox">
+            <Item lstrtext="false" name="3" text="3.Triplicate"/>
+            <Item lstrtext="false" name="6" text="6.Triplicate Casher Invoice"/>
+          </ComboBox>
+          <Label posX="1" posY="4" text="Uniform Invoice Year Created/Month"/>
+          <Edit colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="yy" posX="37" posY="4" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="48" posY="4" text="/"/>
+          <Edit colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bm" posX="50" posY="4" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label posX="61" posY="4" text="-"/>
+          <Edit colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="em" posX="63" posY="4" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" name="dummy02" posX="76" posY="4" text="(Century Year)"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="99" lstrcomment="false" name="gr3714" posX="0" posY="7">
+        <CheckBox colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzAGUANwA3ADkAOAAyAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMwA2ADYALQBiADkAMQBjADEAMQA1ADQAMwAyADcAYQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADIAYgBjADcAMQA5AGUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYQA1ADIALQAxADUAMAAzAGUAOQBlADYANQAyAGIAOAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGEAZQBlAGIANgBhAGMALQA4ADMANwBkAC0ANAA5ADYAMgAtAGEAYQA2ADIALQBkAGIAZQA1ADAANwBkADUAZAA3ADYAMAB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGEANAA1ADgAYQA3AGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZABjADYALQAxADUANgBkADcANwBhAGMANAAyADQAMgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGQAMQBjADUAYgBjAGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMABhAGIALQBhADgAYwAwADYAMwAxADcAOAA2AGEANgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADUAOQA2AGUAOABkAGIALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBkADQALQBiADYAMQBlADUAMgBiADIANwA2ADAAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADgAMwBiAGIAYQAwAGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYgA3ADAALQBiADEANgAzADMANgBiADIANgBkADkAMgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADkAOQBiADUAMwBkADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZABkADUALQA0AGYANQAxAGMAYQBiADgAZQBmAGQAMwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

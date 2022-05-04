@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{41534721-0000-4000-8d1d-a4cd1c2197d3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aae" order="" uid="{354ed7ce-0000-4000-aa1d-10ff46161c38}" where="">
+    <RecordField colName="" fieldIdRef="1" name="aae01" sqlTabName="" table_alias_name="" uid="{d34686b4-0000-4000-8c5c-96de626c718b}"/>
+    <RecordField colName="aae02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aae_file.aae02" sqlTabName="aae_file" sqlType="VARCHAR" table_alias_name="" uid="{1fa5a10d-0000-4000-9c0e-8196d00a1cb3}"/>
+    <RecordField colName="aae03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aae_file.aae03" sqlTabName="aae_file" sqlType="VARCHAR" table_alias_name="" uid="{c0bf1d8b-0000-4000-8008-51df09e02800}"/>
+    <RecordField colName="aaeacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aae_file.aaeacti" sqlTabName="aae_file" sqlType="VARCHAR" table_alias_name="" uid="{e64fa2de-0000-4000-99e4-ff6626347fd7}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{320f8a31-0000-4000-86e1-31b957639259}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9f54ddad-0000-4000-a0ed-a7a76c00d40a}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="81" name="agli111" spacing="normal" text="agli111">
+    <VBox gridHeight="18" gridWidth="78" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="78" lstrcomment="false" name="pc449" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="76" lstrcomment="false" name="s_aae" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aae01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Account Class. No." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aae02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aae_file.aae02" posX="20" posY="0" rowCount="" sqlTabName="aae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Account Class. Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aae03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aae_file.aae03" posX="40" posY="0" rowCount="" sqlTabName="aae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Memo" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aaeacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" lstrtitle="false" name="aae_file.aaeacti" notNull="true" posX="60" posY="0" required="true" rowCount="" sqlTabName="aae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="78" lstrcomment="false" name="gr2386" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl731" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl732" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0e8dfa3e-0000-4000-993e-0256de2de435}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ske" order="" uid="{6813fb55-0000-4000-83d3-2e285952fee8}" where="">
+    <RecordField colName="ske03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ske_file.ske03" sqlTabName="ske_file" sqlType="SMALLINT" table_alias_name="" uid="{d2318831-0000-4000-b24d-1f9eb0974769}"/>
+    <RecordField colName="ske04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ske_file.ske04" sqlTabName="ske_file" sqlType="VARCHAR" table_alias_name="" uid="{f9bb0435-0000-4000-829c-759f28854a8a}"/>
+    <RecordField colName="ske05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ske_file.ske05" sqlTabName="ske_file" sqlType="VARCHAR" table_alias_name="" uid="{7c2536ae-0000-4000-bb0d-5f2012ae5442}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{efdf5358-0000-4000-9262-bea94b8250f2}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{6bcd0ad8-0000-4000-a6ce-5561bc6a2fae}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="139" name="aski001_1" spacing="normal" text="aski001_1">
+    <VBox gridHeight="18" gridWidth="107" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="107" lstrcomment="false" name="pc1599" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="105" lstrcomment="false" name="s_ske" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ske03" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="27" lstrcomment="false" lstrtitle="false" name="ske_file.ske03" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="ske_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Explain No." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ske04" columnCount="" comment="No blank Field!" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="ske_file.ske04" posX="27" posY="0" rowCount="" sqlTabName="ske_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Explain Content" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ske05" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Not Report, Befor Report, After Report" lstrcomment="false" lstrtitle="false" name="ske_file.ske05" notNull="true" posX="87" posY="0" rowCount="" sqlTabName="ske_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Mimeograph" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Not Report"/>
+              <Item lstrtext="false" name="1" text="Befor Report"/>
+              <Item lstrtext="false" name="2" text="After Report"/>
+            </ComboBox>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="107" lstrcomment="false" name="gr7902" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl2619" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2620" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

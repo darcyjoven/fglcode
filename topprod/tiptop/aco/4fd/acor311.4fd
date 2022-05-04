@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{7dfac1b3-0000-4000-80f8-1f8a4147cd34}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d74c0edd-0000-4000-8b65-2f403ada7f83}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="cno10" sqlTabName="" table_alias_name="" uid="{3b94ad9c-0000-4000-a959-9d11e0e082c7}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnp03" sqlTabName="" table_alias_name="" uid="{4001cd76-0000-4000-9989-fd01fc4395e2}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="b" sqlTabName="" table_alias_name="" uid="{c27f035e-0000-4000-8814-ddf9e1cd4671}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{f1605e30-0000-4000-8d92-5c4ef352c292}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="y" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{542c5338-0000-4000-adfd-69491d7e1731}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d2e5d2ac-0000-4000-99d3-cab159f91449}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="106" name="acor311" spacing="normal" text="acor311">
+    <VBox gridHeight="15" gridWidth="105" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="105" lstrcomment="false" name="gr1434" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="68" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Register Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cno10" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Goods No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnp03" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="6" gridWidth="105" lstrcomment="false" lstrtext="false" name="group04" posX="0" posY="6" text="Input">
+        <Grid gridHeight="4" gridWidth="103" lstrcomment="false" name="gr1435" posX="1" posY="1">
+          <Group gridHeight="3" gridWidth="34" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" items="Statistics, detail" lstrcomment="false" lstrtitle="false" name="b" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Statistics"/>
+              <Item lstrtext="" name="2" text="detail"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="34" lstrcomment="false" lstrtext="false" name="group03" posX="35" posY="0">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" items="All, Carry forward, Transfer, Local Sales" lstrcomment="false" lstrtitle="false" name="a" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="0" text="All"/>
+              <Item lstrtext="" name="1" text="Carry forward"/>
+              <Item lstrtext="" name="2" text="Transfer"/>
+              <Item lstrtext="" name="3" text="Local Sales"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="34" lstrcomment="false" lstrtext="false" name="group05" posX="69" posY="0">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtext="false" lstrtitle="false" name="y" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Convert HS Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="105" lstrcomment="false" name="gr1436" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

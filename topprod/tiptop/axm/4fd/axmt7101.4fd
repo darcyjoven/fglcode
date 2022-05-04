@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{facfa55d-0000-4000-a389-b483ab82c6d2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ohe" order="" uid="{bb76a9b6-0000-4000-acf8-e6dda161f1d5}" where="">
+    <RecordField colName="ohe02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ohe_file.ohe02" sqlTabName="ohe_file" sqlType="SMALLINT" table_alias_name="" uid="{ae33c8c9-0000-4000-baa8-2d6e09ae1690}"/>
+    <RecordField colName="ohe03" fieldIdRef="10" fieldType="TABLE_COLUMN" name="ohe_file.ohe03" sqlTabName="ohe_file" sqlType="VARCHAR" table_alias_name="" uid="{576257cd-0000-4000-b6c6-d2de43377b66}"/>
+    <RecordField colName="" fieldIdRef="11" name="ock02" sqlTabName="" table_alias_name="" uid="{5d254177-0000-4000-8631-67e8c8034caa}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6f793476-0000-4000-8c83-c4b8b14750c0}" where="">
+    <RecordField colName="ohf01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ohf_file.ohf01" sqlTabName="ohf_file" sqlType="VARCHAR" table_alias_name="" uid="{2ff68df5-0000-4000-a5ed-cedb2e633b49}"/>
+    <RecordField colName="ohf02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ohf_file.ohf02" sqlTabName="ohf_file" sqlType="VARCHAR" table_alias_name="" uid="{1a034c1d-0000-4000-aa6b-f7a210ed4ec9}"/>
+    <RecordField colName="ohf03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ohf_file.ohf03" sqlTabName="ohf_file" sqlType="VARCHAR" table_alias_name="" uid="{eae53491-0000-4000-b395-ad8d3fb19c50}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="gen02_1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0963a6f0-0000-4000-8fc5-c130459b18a3}"/>
+    <RecordField colName="ohf04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ohf_file.ohf04" sqlTabName="ohf_file" sqlType="VARCHAR" table_alias_name="" uid="{ee49bf56-0000-4000-8efa-361fc1d45ae0}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="gen02_2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0bf83cdb-0000-4000-b8df-84d1f4afa1ab}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3687a412-0000-4000-92d7-e98d39ae3354}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{8bea1d8b-0000-4000-a0ef-8c50848ac1fc}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="111" name="axmt7101" spacing="normal" text="axmt7101">
+    <VBox gridHeight="21" gridWidth="109" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="109" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <HBox gridHeight="3" gridWidth="109" name="HBox1" posX="0" posY="0">
+            <Grid gridHeight="3" gridWidth="39" lstrcomment="false" name="gr2642" posX="2" posY="0">
+              <Label posX="1" posY="0" text="Cust Complaint Note"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ohf01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="ohf_file.ohf01" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="ohf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="1" text="Category"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ohf02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="ohf_file.ohf02" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="ohf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Grid>
+            <Grid gridHeight="3" gridWidth="33" lstrcomment="false" name="gr2643" posX="41" posY="0">
+              <Label posX="1" posY="0" text="Charge"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ohf03" columnCount="" comment="&lt;^P&gt;Qry Employee" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="ohf_file.ohf03" posX="22" posY="0" rowCount="" sqlTabName="ohf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="1" text="Charge Name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gen02_1" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Grid>
+            <Grid gridHeight="3" gridWidth="33" lstrcomment="false" name="gr2644" posX="74" posY="0">
+              <Label posX="1" posY="0" text="Review"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ohf04" columnCount="" comment="&lt;^P&gt;Qry Employee" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="ohf_file.ohf04" posX="22" posY="0" rowCount="" sqlTabName="ohf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="1" text="Review Name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gen02_2" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </HBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="109" lstrcomment="false" name="s_ohe" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ohe02" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="ohe_file.ohe02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="ohe_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Line No." widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ohe03" columnCount="" comment="&lt;^P&gt;Qry Reason Code" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="ohe_file.ohe03" notNull="true" posX="9" posY="0" required="true" rowCount="" sqlTabName="ohe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Reasn Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="ock02" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Description" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="109" lstrcomment="false" name="gr2645" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl956" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl957" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

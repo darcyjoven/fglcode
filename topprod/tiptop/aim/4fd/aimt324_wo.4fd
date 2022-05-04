@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{fc4671d8-0000-4000-bb65-fb941098e013}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6fbe816e-0000-4000-8a73-cd936f996659}" where="">
+    <RecordField colName="sfb01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sfb_file.sfb01" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{dd2e5e67-0000-4000-acf2-8651366a63c3}"/>
+    <RecordField colName="sfb13" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sfb_file.sfb13" sqlTabName="sfb_file" sqlType="DATE" table_alias_name="" uid="{503374bb-0000-4000-afbf-f449b5c56d19}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ima06" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{4239eca1-0000-4000-9860-6192199b937a}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ima08" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{821e910a-0000-4000-ad17-0742ea03fc05}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="sudate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{1cc0e223-0000-4000-acc0-c1598d4a4982}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="91" name="aimt324_wo" spacing="normal" text="aimt324_wo">
+    <VBox gridHeight="10" gridWidth="88" name="vb2" posX="2" posY="0" splitter="">
+      <Grid gridHeight="5" gridWidth="88" lstrcomment="false" name="gr4902" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="87" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="2" text="W/O No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb01" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="sfb_file.sfb01" posX="22" posY="2" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="45" posY="2" text="W/O Date"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb13" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb13" posX="66" posY="2" rowCount="" sqlTabName="sfb_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Group Code"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima06" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="45" posY="3" text="Source Code"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="ima08" posX="66" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="88" lstrcomment="false" name="gr4903" posX="0" posY="6">
+        <Label posX="1" posY="0" text="Supply Ending Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="sudate" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

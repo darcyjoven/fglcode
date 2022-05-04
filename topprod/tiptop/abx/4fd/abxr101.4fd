@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{067ba35a-0000-4000-9396-51718963fe64}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c2ec5e9a-0000-4000-89bc-3e0e1f3239ee}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="b_part" sqlTabName="" table_alias_name="" uid="{4c344d24-0000-4000-b604-27e805961e3b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="e_part" sqlTabName="" table_alias_name="" uid="{2a4e1726-0000-4000-bdff-2105d2c073c8}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="b_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{56c0134d-0000-4000-bce7-11c93714fa4e}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="e_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{a52e4940-0000-4000-8bad-655d8528d16a}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_pdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{2a8c7023-0000-4000-81fb-7a1926c348c4}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="p_page" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{a5dff515-0000-4000-af10-406a1fd512b7}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="l_c" sqlTabName="" table_alias_name="" uid="{e7b1edb2-0000-4000-a201-a63a9485e5fa}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="l_d" sqlTabName="" table_alias_name="" uid="{3aa12693-0000-4000-a573-12db44241d4b}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="53" name="abxr101" spacing="normal" text="abxr101">
+    <Grid gridHeight="11" gridWidth="52" lstrcomment="false" name="gr1123" posX="0" posY="0">
+      <Group gridHeight="10" gridWidth="51" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+        <Label posX="1" posY="1" text="Item No. QBE"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment=" &lt;^P&gt; Qry Item No." fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="b_part" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="35" posY="1" text="-"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment=" &lt;^P&gt; Qry Item No." fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="e_part" notNull="true" posX="37" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Begin Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="b_date" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="3" text="End Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="e_date" notNull="true" posX="22" posY="3" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="4" text="Date Printed"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="g_pdate" posX="22" posY="4" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="5" text="Initial Page"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="p_page" posX="22" posY="5" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="l_c" notNull="true" posX="2" posY="6" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Print Bond Item" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="l_d" notNull="true" posX="2" posY="7" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Print Zero Change" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

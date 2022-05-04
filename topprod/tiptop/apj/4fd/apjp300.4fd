@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1773c978-0000-4000-9193-d1833efcfe80}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2412d479-0000-4000-b35a-0ebb3e5fc819}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="choice" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{30f3102a-0000-4000-bd74-caec91b595fe}"/>
+    <RecordField colName="afd01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="afd_file.afd01" sqlTabName="afd_file" sqlType="VARCHAR" table_alias_name="" uid="{78e98299-0000-4000-8f48-ef277ad41274}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="note" sqlTabName="" table_alias_name="" uid="{1c6fd18f-0000-4000-84f5-190d9bb4d84e}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{89c66513-0000-4000-b338-dd3670840f1b}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="bookno" sqlTabName="" table_alias_name="" uid="{e5164de5-0000-4000-b199-43a1d29e9044}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{70134403-0000-4000-8d32-4192768d48bf}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" lstrtext="false" name="apjp300" spacing="normal" text="apjp300">
+    <VBox gridHeight="15" gridWidth="57" name="vb2" posX="4" posY="0">
+      <Grid gridHeight="11" gridWidth="57" lstrcomment="false" name="gr1" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="55" lstrcomment="false" lstrtext="false" name="gb3" posX="1" posY="0" text="INPUT1">
+          <Label posX="1" posY="1" text="Data Source"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="abgi200 Department Account Budget, apjt100 Project Budget Sheet Maintenance" lstrcomment="false" name="choice" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="abgi200 Department Account Budget"/>
+            <Item lstrtext="false" name="2" text="apjt100 Project Budget Sheet Maintenance"/>
+          </ComboBox>
+        </Group>
+        <Group gridHeight="3" gridWidth="55" lstrcomment="false" lstrtext="false" name="gb1" posX="1" posY="3" text="QBE">
+          <Label posX="1" posY="1" text="Logistics Code"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="afd01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" name="afd_file.afd01" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="afd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="5" gridWidth="55" lstrcomment="false" lstrtext="false" name="gb2" posX="1" posY="6" text="INPUT">
+          <Label posX="1" posY="1" text="Version"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" name="note" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" lstrcomment="false" name="yy" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" lstrcomment="false" name="bookno" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="57" lstrcomment="false" name="gr4" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="48" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

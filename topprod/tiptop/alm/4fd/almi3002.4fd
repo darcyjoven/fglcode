@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{131e9205-0000-4000-a1b3-7ceb3a1b406f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_lng" order="" uid="{abe67b92-0000-4000-8bda-863f67b076bc}" where="">
+    <RecordField colName="lng03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lng_file.lng03" sqlTabName="lng_file" sqlType="VARCHAR" table_alias_name="" uid="{50b846fb-0000-4000-9231-dc58b67d75f8}"/>
+    <RecordField colName="lng04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lng_file.lng04" sqlTabName="lng_file" sqlType="VARCHAR" table_alias_name="" uid="{68044c35-0000-4000-985e-97b747addc60}"/>
+    <RecordField colName="lng05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lng_file.lng05" sqlTabName="lng_file" sqlType="VARCHAR" table_alias_name="" uid="{9b15d142-0000-4000-85e9-b05a65ea2558}"/>
+    <RecordField colName="lng06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lng_file.lng06" sqlTabName="lng_file" sqlType="DATE" table_alias_name="" uid="{9dfd12af-0000-4000-9350-b98709428eed}"/>
+    <RecordField colName="lng07" fieldIdRef="5" fieldType="TABLE_COLUMN" name="lng_file.lng07" sqlTabName="lng_file" sqlType="DATE" table_alias_name="" uid="{77692c15-0000-4000-8306-0393573bf0e4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{48d23c98-0000-4000-a565-cca71fc01dbf}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{96a3476b-0000-4000-94bc-e98f5d396a41}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="98" lstrtext="false" name="almi3002" spacing="normal" text="almi3002">
+    <VBox gridHeight="14" gridWidth="66" name="vb4" posX="11" posY="2">
+      <Folder gridHeight="9" gridWidth="66" lstrcomment="false" name="pc3" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Table gridHeight="7" gridWidth="63" name="s_lng" posX="1" posY="0" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lng03" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lng_file.lng03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="lng_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Cer.Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lng04" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lng_file.lng04" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="lng_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Cer.num." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lng05" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lng_file.lng05" posX="20" posY="0" rowCount="" sqlTabName="lng_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Operator" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lng06" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="lng_file.lng06" posX="30" posY="0" rowCount="" sqlTabName="lng_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Val.dat.from" widget="DateEdit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lng07" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="lng_file.lng07" posX="44" posY="0" rowCount="" sqlTabName="lng_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Val.dat.to" widget="DateEdit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="66" lstrcomment="false" name="gr3" posX="0" posY="10">
+        <HLine gridWidth="7" name="hl5" posX="1" posY="1"/>
+        <Label posX="9" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="idx" noEntry="true" posX="15" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="7" name="hl6" posX="23" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

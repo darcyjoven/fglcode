@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{6893222d-0000-4000-bcbd-03480db91d1d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_plant" order="" uid="{2db9c0e1-0000-4000-b0af-49602e2f6615}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="azp01" sqlTabName="" table_alias_name="" uid="{8de09c95-0000-4000-9612-132e339474f2}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="azp02" sqlTabName="" table_alias_name="" uid="{b896bcae-0000-4000-87df-e9f62a869b4c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9eead411-0000-4000-98b7-162e3dc0ddc7}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{dbcd579e-0000-4000-9be6-a25c333d20bc}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{1bd24cb0-0000-4000-9e6c-5a89ef211cdd}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="s" sqlTabName="" table_alias_name="" uid="{85938f9f-0000-4000-ab01-cea0f0bff061}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{a1128a3e-0000-4000-8701-355dcf9be5ad}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="mm" sqlTabName="" table_alias_name="" uid="{405a6e5d-0000-4000-b37f-af2ec467cc77}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{66e20c47-0000-4000-ad36-f822220a33f2}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="87" name="axct900_g" spacing="normal" text="axct900_g">
+    <VBox gridHeight="21" gridWidth="87" name="vb3" posX="0" posY="0">
+      <Grid gridHeight="13" gridWidth="87" lstrcomment="false" name="gr1403" posX="0" posY="1">
+        <Group gridHeight="13" gridWidth="56" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+          <Label posX="1" posY="1" text="Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bdate" notNull="true" posX="15" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+          <Label posX="26" posY="1" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="edate" notNull="true" posX="28" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="2" text="Data Source"/>
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="6" gridWidth="22" items="Standard Cost, Actual Cost, Market U/P, Mothly Weigthed Average U/P, Last Selling U/P, Avg. Purchase U/P" lstrcomment="false" name="s" posX="15" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="Standard Cost"/>
+            <Item lstrtext="false" name="2" text="Actual Cost"/>
+            <Item lstrtext="false" name="3" text="Market U/P"/>
+            <Item lstrtext="false" name="4" text="Mothly Weigthed Average U/P"/>
+            <Item lstrtext="false" name="5" text="Last Selling U/P"/>
+            <Item lstrtext="false" name="6" text="Avg. Purchase U/P"/>
+          </RadioGroup>
+          <Label colorCondition="black" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="9" text="m. Weighted Avg. U/P Source:"/>
+          <Label posX="21" posY="9" text="Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" name="yy" posX="26" posY="9" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="32" posY="9" text="Month"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" name="mm" posX="38" posY="9" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="11" text="Markup"/>
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="35" items="No Markup, By Product Class., By Product" lstrcomment="false" name="a" orientation="horizontal" posX="15" posY="11" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="No Markup"/>
+            <Item lstrtext="false" name="2" text="By Product Class."/>
+            <Item lstrtext="false" name="3" text="By Product"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Group gridHeight="6" gridWidth="87" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="14" text="Data Source Plant">
+        <ScrollGrid gridHeight="4" gridWidth="85" lstrcomment="false" name="gr6" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="dummy02" posX="1" posY="1" text="Source Plant"/>
+          <Label gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="dummy03" posX="14" posY="1" text="Logestic Name"/>
+          <Label gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="dummy021" posX="29" posY="1" text="Source Plant"/>
+          <Label gridHeight="1" gridWidth="15" lstrcomment="false" lstrtext="false" name="dummy031" posX="42" posY="1" text="Logestic Name"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="2" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="azp01" posX="1" posY="2" repeat="true" rowCount="1" sqlTabName="" sqlType="CHAR" stepX="16" stepY="0" tabIndex="7" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="2" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" name="azp02" noEntry="true" posX="14" posY="2" repeat="true" rowCount="1" sqlTabName="" sqlType="CHAR" stepX="16" stepY="0" tabIndex="8" table_alias_name="" widget="Edit"/>
+        </ScrollGrid>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

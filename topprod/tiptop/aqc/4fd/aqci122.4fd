@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{765d9507-0000-4000-9182-8cacda5c82bb}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qck" order="" uid="{909617ab-0000-4000-9632-cf334fe0d082}" where="">
+    <RecordField colName="qck02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="qck_file.qck02" sqlTabName="qck_file" sqlType="VARCHAR" table_alias_name="" uid="{d75b3f4b-0000-4000-8c83-a64a03e6f0b9}"/>
+    <RecordField colName="" fieldIdRef="4" name="azf03" sqlTabName="" table_alias_name="" uid="{55acd498-0000-4000-b8aa-6f843f87e4db}"/>
+    <RecordField colName="" fieldIdRef="14" name="ta_qck01" sqlTabName="" table_alias_name="" uid="{ebfd2b34-613b-49ff-b607-f23331758262}"/>
+    <RecordField colName="qck08" fieldIdRef="5" fieldType="TABLE_COLUMN" name="qck_file.qck08" sqlTabName="qck_file" sqlType="VARCHAR" table_alias_name="" uid="{545d6580-0000-4000-988c-e9dd260e690b}"/>
+    <RecordField colName="qck03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="qck_file.qck03" sqlTabName="qck_file" sqlType="VARCHAR" table_alias_name="" uid="{c1e41fac-0000-4000-a8cc-c6253afce83a}"/>
+    <RecordField colName="qck05" fieldIdRef="8" fieldType="TABLE_COLUMN" name="qck_file.qck05" sqlTabName="qck_file" sqlType="VARCHAR" table_alias_name="" uid="{9aaedf02-0000-4000-9faf-7fe4d7009e54}"/>
+    <RecordField colName="qck04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="qck_file.qck04" sqlTabName="qck_file" sqlType="DECIMAL" table_alias_name="" uid="{d0a43023-0000-4000-b226-24c4b6f392e2}"/>
+    <RecordField colName="qck061" fieldIdRef="9" fieldType="TABLE_COLUMN" name="qck_file.qck061" sqlTabName="qck_file" sqlType="DECIMAL" table_alias_name="" uid="{b3955eef-0000-4000-90e0-cdf86cdf75b6}"/>
+    <RecordField colName="qck062" fieldIdRef="10" fieldType="TABLE_COLUMN" name="qck_file.qck062" sqlTabName="qck_file" sqlType="DECIMAL" table_alias_name="" uid="{592054fc-0000-4000-a537-e227e8ffc911}"/>
+    <RecordField colName="qck07" fieldIdRef="11" fieldType="TABLE_COLUMN" name="qck_file.qck07" sqlTabName="qck_file" sqlType="VARCHAR" table_alias_name="" uid="{8481b423-0000-4000-972d-0451f8c4b94d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8ec6ccf4-0000-4000-8c80-46b5c5cc5803}" where="">
+    <RecordField colName="qck01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="qck_file.qck01" sqlTabName="qck_file" sqlType="VARCHAR" table_alias_name="" uid="{cebfa13c-0000-4000-a294-9dbf52e645b3}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="azf03_1" sqlTabName="" table_alias_name="" uid="{80d0de86-0000-4000-b588-a16c01000d6e}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{af75e497-0000-4000-9d23-d0b20e56d9fb}"/>
+    <RecordField colName="qck09" defaultValue="N" fieldIdRef="13" fieldType="TABLE_COLUMN" name="qck_file.qck09" sqlTabName="qck_file" sqlType="VARCHAR" table_alias_name="" uid="{2e796109-54b2-48a4-b1c7-9a261f7404a3}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="101" name="aqci122" spacing="normal" text="aqci122">
+    <VBox gridHeight="19" gridWidth="101" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="4" gridWidth="101" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="64" lstrcomment="false" name="gr10" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Material Category"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck01" columnCount="" comment="&lt;^P&gt;Qry Material Cate No." fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="qck_file.qck01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="qck_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="azf03_1" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck09" columnCount="" defaultValue="N" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="47" name="qck_file.qck09" notNull="true" posX="1" posY="1" rowCount="" sqlTabName="qck_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" text="QC materials and parts to determine whether" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="101" lstrcomment="false" name="s_qck" posX="0" posY="5" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck02" columnCount="" comment="&lt;^P&gt;Qry QC Code" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" image="zoom" lstrcomment="false" lstrtitle="false" name="qck_file.qck02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="qck_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="QC Items" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="azf03" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="8" image="zoom" name="ta_qck01" posX="18" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Unit" widget="ButtonEdit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck08" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="IQC, FQC, PQC, OQC, Stock QC, General" lstrcomment="false" lstrtitle="false" name="qck_file.qck08" notNull="true" posX="26" posY="0" required="true" rowCount="" sqlTabName="qck_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="qck08" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="IQC"/>
+          <Item lstrtext="false" name="2" text="FQC"/>
+          <Item lstrtext="false" name="3" text="PQC"/>
+          <Item lstrtext="false" name="4" text="OQC"/>
+          <Item lstrtext="false" name="5" text="Stock QC"/>
+          <Item lstrtext="false" name="9" text="General"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck03" columnCount="" comment="1:CR  2:MA  3:MI" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="CR, MA, MI" lstrcomment="false" lstrtitle="false" name="qck_file.qck03" notNull="true" posX="36" posY="0" required="true" rowCount="" sqlTabName="qck_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Defect Level" widget="ComboBox">
+          <Item name="1" text="CR"/>
+          <Item name="2" text="MA"/>
+          <Item name="3" text="MI"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck05" columnCount="" comment="1:105D/E  2:C=0" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="105D/E, C=0, 1916(count), 1916(measurement)" lstrcomment="false" lstrtitle="false" name="qck_file.qck05" notNull="true" posX="49" posY="0" required="true" rowCount="" sqlTabName="qck_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="QC Type" widget="ComboBox">
+          <Item name="1" text="105D/E"/>
+          <Item name="2" text="C=0"/>
+          <Item name="3" text="1916(count)"/>
+          <Item name="4" text="1916(measurement)"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck04" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="qck_file.qck04" notNull="true" posX="58" posY="0" required="true" rowCount="" sqlTabName="qck_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="AQL" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck061" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="qck_file.qck061" posX="65" posY="0" rowCount="" sqlTabName="qck_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Low Limit" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck062" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="qck_file.qck062" posX="75" posY="0" rowCount="" sqlTabName="qck_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Up Limit" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qck07" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="qck_file.qck07" posX="84" posY="0" required="true" rowCount="" sqlTabName="qck_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="QC Qty" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="101" lstrcomment="false" name="gr11" posX="0" posY="16">
+        <HLine gridWidth="9" name="hl7" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

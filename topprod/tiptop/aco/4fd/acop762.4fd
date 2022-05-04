@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a17d0c60-0000-4000-9eea-8e2672c5ba82}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ae7ab4aa-0000-4000-8faa-d220d886fc62}" where="">
+    <RecordField colName="cei02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cei_file.cei02" sqlTabName="cei_file" sqlType="SMALLINT" table_alias_name="" uid="{03e90338-0000-4000-845f-eac3de975b3e}"/>
+    <RecordField colName="cei03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cei_file.cei03" sqlTabName="cei_file" sqlType="VARCHAR" table_alias_name="" uid="{97514873-0000-4000-9b4f-7baff75564e9}"/>
+    <RecordField colName="" defaultValue="1" fieldIdRef="5" fieldType="NON_DATABASE" name="cei01" sqlTabName="" table_alias_name="" uid="{b85a91c5-0000-4000-ac67-17c9325d811c}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="6" fieldType="NON_DATABASE" name="cei15" sqlTabName="" table_alias_name="" uid="{77eb9411-0000-4000-8d47-0f24ba76dd1b}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="file_name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{911cbe37-0000-4000-913c-6469558f355f}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="4" fieldType="NON_DATABASE" name="bg_job" sqlTabName="" table_alias_name="" uid="{506a2391-0000-4000-8551-ea3fe5c92a3a}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" lstrtext="false" name="acop762" spacing="normal" text="acop762">
+    <Folder gridHeight="18" gridWidth="52" lstrcomment="false" name="pc1" posX="3" posY="2">
+      <Page name="Page1" text="Main">
+        <Grid gridHeight="12" gridWidth="50" lstrcomment="false" name="gr1" posX="1" posY="1">
+          <Group gridHeight="5" gridWidth="44" lstrcomment="false" lstrtext="false" name="gb4" posX="2" posY="0" text="QBE Condition">
+            <Label posX="1" posY="1" text="Sn"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cei02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="cei_file.cei02" posX="17" posY="1" rowCount="" sqlTabName="cei_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Product Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cei03" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="cei_file.cei03" posX="17" posY="2" rowCount="" sqlTabName="cei_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          </Group>
+          <Group gridHeight="7" gridWidth="44" lstrcomment="false" lstrtext="false" name="gb5" posX="2" posY="5" text="Input">
+            <Label colorCondition="black" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" name="dummy02" posX="1" posY="1" text="Product Type"/>
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="1" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="26" items="Production, Material" lstrcomment="false" lstrtitle="false" name="cei01" notNull="true" orientation="horizontal" posX="10" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="false" name="1" text="Production"/>
+              <Item lstrtext="false" name="2" text="Material"/>
+            </RadioGroup>
+            <Label posX="1" posY="2" text="Invalid?"/>
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" defaultValue="N" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="26" items="Unconfirm, Confirm" lstrcomment="false" name="cei15" notNull="true" orientation="horizontal" posX="10" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="false" name="N" text="Unconfirm"/>
+              <Item lstrtext="false" name="Y" text="Confirm"/>
+            </RadioGroup>
+            <Label posX="1" posY="3" text="Excel File Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" name="file_name" notNull="true" posX="17" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label colorCondition="black" gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="4" text="File Path: c:\tiptop"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="bg_job" notNull="true" posX="1" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="background job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

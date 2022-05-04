@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{477f390d-0000-4000-9de8-f86cfbe568ad}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f9ea23e4-0000-4000-906b-5d04e717fc19}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="npp01" sqlTabName="" table_alias_name="" uid="{4166c12d-0000-4000-b8bf-b07c39ade119}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="npp02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{46524395-0000-4000-9b11-30ab72ca4b83}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="npq03" sqlTabName="" table_alias_name="" uid="{1ddd3373-0000-4000-acf9-b62ddd7b0aeb}"/>
+    <RecordField colName="" defaultValue="1" fieldIdRef="4" fieldType="NON_DATABASE" name="p" sqlTabName="" table_alias_name="" uid="{d205974d-0000-4000-878b-b97210bad5ec}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{e970d851-0000-4000-b837-9ec16f7ef772}"/>
+  </Record>
+  <Form gridHeight="30" gridWidth="88" name="aapr360" spacing="normal" text="aapr360">
+    <VBox gridHeight="24" gridWidth="63" name="VBox1" posX="1" posY="0">
+      <Grid gridHeight="11" gridWidth="63" lstrcomment="false" name="gr268" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="61" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Document No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npp01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Transaction Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npp02" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Accout"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" name="npq03" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="5" gridWidth="61" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="INPUT">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="1" fieldId="4" fieldType="NON_DATABASE" gridHeight="3" gridWidth="31" items="Accounts, Payment, back, adjust" lstrcomment="false" lstrtitle="false" name="p" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="Accounts"/>
+            <Item lstrtext="false" name="2" text="Payment"/>
+            <Item lstrtext="false" name="3" text="back"/>
+            <Item lstrtext="false" name="4" text="adjust"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Grid gridHeight="11" gridWidth="63" lstrcomment="false" name="gr269" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Label posX="1" posY="1" text=" "/>
+        <Label gridHeight="1" gridWidth="45" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="2" text="ps.Checking Item"/>
+        <Label gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" name="dummy02" posX="1" posY="3" text="   1.Summary Entry Sheet Dr and Cr imbalanced"/>
+        <Label gridHeight="1" gridWidth="45" lstrcomment="false" lstrtext="false" name="dummy03" posX="1" posY="4" text="   2.Corresponding Voucher Contents"/>
+        <Label gridHeight="1" gridWidth="45" lstrcomment="false" lstrtext="false" name="dummy04" posX="1" posY="5" text="     a.Account set to Invalid"/>
+        <Label gridHeight="1" gridWidth="45" lstrcomment="false" lstrtext="false" name="dummy05" posX="1" posY="6" text="     b.Not an Account Title"/>
+        <Label gridHeight="1" gridWidth="45" lstrcomment="false" lstrtext="false" name="dummy06" posX="1" posY="7" text="     c.Control Account"/>
+        <Label gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" name="dummy07" posX="1" posY="8" text="     d.Acct or Amt Different from Voucher"/>
+        <Label gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" name="dummy08" posX="1" posY="9" text="     e.Voucher Source is AP but No Correspd.Data"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

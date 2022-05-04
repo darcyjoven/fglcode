@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form CHECKSUM="-1" database_name="ds" defaultspacing="true" fourSTFile="" gstVersion="11401" height="23" lstrtoallcomment="false" lstrtoallitem="false" lstrtoalltext="false" lstrtoalltitle="false" name="axmi151" percommentattribute="" percommentheader="" percommentinstruction="" percommentlayout="GRID
+PAGE
+FOLDER
+TABLE
+GRID
+VBOX
+LAYOUT
+" percommentschema="" posX="0" posY="0" spacing="normal" text="axmi151" width="235">
+  <VBox hidden="" posX="0" posY="0" style="" tag="">
+    <PageControl height="4" lstrcomment="false" name="folder01" posX="0" posY="0" width="235">
+      <Page fontPitch="default" hidden="--------" imagetype="Image as URL" lstrtext="false" name="page01" text="Main">
+        <Grid fontPitch="default" height="2" hidden="--------" lstrcomment="false" name="gr2031" posX="0" posY="0" scroll="false" width="35">
+          <Text gridWidth="10" height="1" lstrtext="false" name="text7052" posX="1" posY="0" sizePolicy="initial" text="Customer #" width="10"/>
+          <FormField colName="obk02" fieldId="0" fieldtype="TABLE_COLUMN" name="obk02" sqlDBName="ds" sqlTabName="obk_file">
+            <ButtonEdit action="controlp" autoNext="--------" case="NONE" century="R" color="black" comment="&lt;^P&gt; Qry Details" data_type="VARCHAR" fontPitch="default" formfieldname="formfield0" gridWidth="12" height="1" hidden="--------" image="zoom" imagetype="Select File" invisible="--------" lstrcomment="false" lstrtitle="false" name="obk02" noEntry="--------" notNull="true" posX="22" posY="0" required="true" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="1" verify="--------" width="12" zeroFill="--------"/>
+          </FormField>
+          <Text gridWidth="13" height="1" lstrtext="false" name="text7053" posX="1" posY="1" sizePolicy="initial" text="Customer Name" width="13"/>
+          <FormField colName="occ02" fieldId="1" fieldtype="FORM_ONLY" name="formonly.occ02" sqlTabName="formonly">
+            <Edit autoNext="--------" case="NONE" century="R" color="black" fontPitch="default" formfieldname="formfield1" gridWidth="12" height="1" hidden="--------" invisible="--------" lstrcomment="false" lstrtitle="false" name="occ02" noEntry="true" notNull="--------" posX="22" posY="1" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="2" verify="--------" width="12" zeroFill="--------"/>
+          </FormField>
+        </Grid>
+      </Page>
+    </PageControl>
+    <Table browserStatus="true" fontPitch="default" height="12" hidden="--------" lstrcomment="false" name="s_obk" posX="0" posY="4" tabName="s_obk" tabName1="s_obk" totalRows="10" unhidableColumns="--------" unmovableColumns="--------" unsizableColumns="--------" unsortableColumns="--------" wantFixedPageSize="--------" width="235">
+      <TableColumn colName="obk01" fieldId="2" fieldtype="TABLE_COLUMN" height="1" lstrtext="false" name="obk01" sqlDBName="ds" sqlTabName="obk_file" tabIndex="3" text="Product No." unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="14">
+        <ButtonEdit action="controlp" autoNext="--------" case="NONE" century="R" color="black" comment="&lt;^P&gt; Qry Product No." data_type="VARCHAR" fontPitch="default" height="1" hidden="--------" image="zoom" imagetype="Select File" invisible="--------" lstrcomment="false" lstrtitle="false" noEntry="--------" notNull="true" required="true" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="14" zeroFill="--------"/>
+      </TableColumn>
+      <TableColumn colName="ima02" fieldId="3" height="1" lstrtext="false" name="ima02" sqlTabName="formonly" tabIndex="4" text="Part Name Specification" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="30">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" fontPitch="default" height="1" hidden="--------" invisible="--------" lstrcomment="false" lstrtitle="false" noEntry="true" notNull="--------" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="30" zeroFill="--------"/>
+      </TableColumn>
+      <TableColumn colName="ima021" fieldId="4" height="1" lstrtext="false" name="ima021" sqlTabName="formonly" tabIndex="5" text="Specification" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="18">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" fontPitch="default" height="1" hidden="--------" invisible="--------" lstrcomment="false" lstrtitle="false" noEntry="true" notNull="--------" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="18" zeroFill="--------"/>
+      </TableColumn>
+      <TableColumn colName="obk03" fieldId="5" fieldtype="TABLE_COLUMN" height="1" lstrtext="false" name="obk03" sqlDBName="ds" sqlTabName="obk_file" tabIndex="6" text="Customer Part No." unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="20">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" comment="Customer Part No." data_type="VARCHAR" fontPitch="default" height="1" hidden="--------" invisible="--------" lstrcomment="false" lstrtitle="false" noEntry="--------" notNull="true" required="true" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="20" zeroFill="--------"/>
+      </TableColumn>
+      <TableColumn colName="obk04" fieldId="6" fieldtype="TABLE_COLUMN" height="1" lstrtext="false" name="obk04" sqlDBName="ds" sqlTabName="obk_file" tabIndex="7" text="Latest Order Date" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="19">
+        <DateEdit autoNext="--------" century="R" color="black" data_type="DATE" fontPitch="default" height="1" hidden="--------" lstrcomment="false" lstrtitle="false" noEntry="--------" notNull="--------" required="--------" sizePolicy="initial" width="19"/>
+      </TableColumn>
+      <TableColumn colName="obk05" fieldId="7" fieldtype="TABLE_COLUMN" height="1" lstrtext="false" name="obk05" sqlDBName="ds" sqlTabName="obk_file" tabIndex="8" text="Currency" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="10">
+        <ButtonEdit action="controlp" autoNext="--------" case="NONE" century="R" color="black" comment="&lt;^P&gt; Qry Details" data_type="VARCHAR" fontPitch="default" height="1" hidden="--------" image="zoom" imagetype="Select File" invisible="--------" lstrcomment="false" lstrtitle="false" noEntry="--------" notNull="true" required="true" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="10" zeroFill="--------"/>
+      </TableColumn>
+      <TableColumn colName="obk07" fieldId="8" fieldtype="TABLE_COLUMN" height="1" lstrtext="false" name="obk07" sqlDBName="ds" sqlTabName="obk_file" tabIndex="9" text="Sales Unit" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="12">
+        <ButtonEdit action="controlp" autoNext="--------" case="NONE" century="R" color="black" comment="&lt;^P&gt; Qry Details" data_type="VARCHAR" fontPitch="default" height="1" hidden="--------" image="zoom" imagetype="Select File" invisible="--------" lstrcomment="false" lstrtitle="false" noEntry="--------" notNull="true" required="true" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="12" zeroFill="--------"/>
+      </TableColumn>
+      <TableColumn colName="obk08" fieldId="9" fieldtype="TABLE_COLUMN" height="1" lstrtext="false" name="obk08" sqlDBName="ds" sqlTabName="obk_file" tabIndex="10" text="Last Order Unit Price" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="23">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" data_type="DECIMAL" fontPitch="default" height="1" hidden="--------" invisible="--------" lstrcomment="false" lstrtitle="false" noEntry="--------" notNull="--------" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="23" zeroFill="--------"/>
+      </TableColumn>
+      <TableColumn colName="obk09" fieldId="10" fieldtype="TABLE_COLUMN" height="1" lstrtext="false" name="obk09" sqlDBName="ds" sqlTabName="obk_file" tabIndex="11" text="Last Order Qty" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="15">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" data_type="DECIMAL" fontPitch="default" height="1" hidden="--------" invisible="--------" lstrcomment="false" lstrtitle="false" noEntry="--------" notNull="--------" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="15" zeroFill="--------"/>
+      </TableColumn>
+      <TableColumn colName="obkuser" fieldtype="TABLE_COLUMN" flag_text_changed="TRUE" lstrtext="false" name="obkuser" sqlDBName="ds" sqlTabName="obk_file" tabIndex="13" text="Record Owner" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="10">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" colorCondition="black" data_type="VARCHAR" fontPitch="default" hidden="--------" invisible="--------" justify="none" lstrcomment="false" noEntry="true" notNull="--------" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------"/>
+      </TableColumn>
+      <TableColumn colName="obkgrup" fieldtype="TABLE_COLUMN" flag_text_changed="TRUE" name="obkgrup" sqlDBName="ds" sqlTabName="obk_file" tabIndex="14" text="Department" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="10">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" colorCondition="black" data_type="VARCHAR" fontPitch="default" hidden="--------" invisible="--------" justify="none" lstrcomment="false" noEntry="true" notNull="--------" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------"/>
+      </TableColumn>
+      <TableColumn colName="obkmodu" fieldtype="TABLE_COLUMN" flag_text_changed="TRUE" name="obkmodu" sqlDBName="ds" sqlTabName="obk_file" tabIndex="15" text="Last Modified by" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="14">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" colorCondition="black" data_type="VARCHAR" fontPitch="default" hidden="--------" invisible="--------" justify="none" length="10" lstrcomment="false" noEntry="true" notNull="--------" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" verify="--------" width="14"/>
+      </TableColumn>
+      <TableColumn colName="obkdate" fieldtype="TABLE_COLUMN" flag_text_changed="TRUE" name="obkdate" sqlDBName="ds" sqlTabName="obk_file" tabIndex="16" text="Create/Modify Date" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="14">
+        <DateEdit century="R" color="black" colorCondition="black" data_type="DATE" fontPitch="default" hidden="--------" justify="none" length="10" lstrcomment="false" noEntry="true" notNull="--------" required="--------" sizePolicy="initial" width="14"/>
+      </TableColumn>
+      <TableColumn colName="obkacti" fieldtype="TABLE_COLUMN" flag_text_changed="TRUE" name="obkacti" sqlDBName="ds" sqlTabName="obk_file" tabIndex="17" text="Data Volid Code" unhidable="--------" unmovable="--------" unsizable="--------" unsortable="--------" width="10">
+        <CheckBox data_type="VARCHAR" fontPitch="default" hidden="--------" lstrcomment="false" lstrtext="true" noEntry="--------" notNull="--------" required="--------" sizePolicy="initial"/>
+      </TableColumn>
+    </Table>
+    <Grid fontPitch="default" height="4" hidden="--------" lstrcomment="false" name="gr2032" posX="0" posY="16" scroll="false" width="235">
+      <HLine gridWidth="10" height="1" name="hl759" posX="1" posY="0" width="10"/>
+      <Text gridWidth="4" height="1" lstrtext="false" name="text7054" posX="11" posY="0" sizePolicy="initial" text="Rows" width="4"/>
+      <FormField colName="cnt" fieldId="11" fieldtype="FORM_ONLY" name="formonly.cnt" sqlTabName="formonly">
+        <Edit autoNext="--------" case="NONE" century="R" color="black" data_type="SMALLINT" fontPitch="default" formfieldname="formfield2" gridWidth="6" height="1" hidden="--------" invisible="--------" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" notNull="--------" posX="17" posY="0" required="--------" reverse="--------" scroll="--------" sizePolicy="initial" tabIndex="12" verify="--------" width="6" zeroFill="--------"/>
+      </FormField>
+      <HLine gridWidth="10" height="1" name="hl760" posX="25" posY="0" width="10"/>
+    </Grid>
+  </VBox>
+  <RecordView SRType="default" fromTable="true" name="s_obk" tableKey="tb1">
+    <Link colKey="Col1" colName="obk_file.obk01" fromTable="true"/>
+    <Link colKey="Col2" colName="formonly.ima02" fromTable="true"/>
+    <Link colKey="Col3" colName="formonly.ima021" fromTable="true"/>
+    <Link colKey="Col4" colName="obk_file.obk03" fromTable="true"/>
+    <Link colKey="Col5" colName="obk_file.obk04" fromTable="true"/>
+    <Link colKey="Col6" colName="obk_file.obk05" fromTable="true"/>
+    <Link colKey="Col7" colName="obk_file.obk07" fromTable="true"/>
+    <Link colKey="Col8" colName="obk_file.obk08" fromTable="true"/>
+    <Link colKey="Col9" colName="obk_file.obk09" fromTable="true"/>
+    <Link colKey="Col10" colName="obk_file.obkuser" fromTable="true"/>
+    <Link colKey="Col11" colName="obk_file.obkgrup" fromTable="true"/>
+    <Link colKey="Col12" colName="obk_file.obkmodu" fromTable="true"/>
+    <Link colKey="Col13" colName="obk_file.obkdate" fromTable="true"/>
+    <Link colKey="Col14" colName="obk_file.obkacti" fromTable="true"/>
+  </RecordView>
+</Form>

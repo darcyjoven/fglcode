@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1a746b2b-0000-4000-85e4-0b6b9ad54199}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_waf" order="" uid="{8a5dff99-0000-4000-ba07-b8764d59586d}" where="">
+    <RecordField colName="waf02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="waf_file.waf02" sqlTabName="waf_file" sqlType="VARCHAR" table_alias_name="" uid="{d70a2871-0000-4000-a795-d62f6366ce5a}"/>
+    <RecordField colName="waf03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="waf_file.waf03" sqlTabName="waf_file" sqlType="VARCHAR" table_alias_name="" uid="{187affb6-0000-4000-a11a-6bc6f3567ea1}"/>
+    <RecordField colName="waf01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="waf_file.waf01" sqlTabName="waf_file" sqlType="VARCHAR" table_alias_name="" uid="{847d42a5-0000-4000-b6ae-8234f3b72589}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{569a6038-0000-4000-b330-b625b23f4789}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{381a83a4-0000-4000-a02f-7cdf5fe02c71}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="61" name="awsi005" spacing="normal" text="awsi005">
+    <VBox gridHeight="19" gridWidth="49" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="15" gridWidth="49" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="14" gridWidth="46" name="VBox2" posX="0" posY="0">
+            <Table gridHeight="12" gridWidth="46" lstrcomment="false" name="s_waf" posX="0" posY="1" totalRows="10">
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="waf01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" imageColumn="waf_file.waf01" lstrcomment="false" lstrtitle="false" name="waf_file.waf01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="waf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="IP" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="waf02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" imageColumn="waf_file.waf02" lstrcomment="false" lstrtitle="false" name="waf_file.waf02" posX="13" posY="0" rowCount="" sqlTabName="waf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Des" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="waf03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" imageColumn="waf_file.waf03" lstrcomment="false" lstrtitle="false" name="waf_file.waf03" posX="22" posY="0" rowCount="" sqlTabName="waf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Path" widget="Edit"/>
+            </Table>
+          </VBox>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="49" lstrcomment="false" name="gr3" posX="0" posY="16">
+        <HLine gridWidth="8" name="hl3" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

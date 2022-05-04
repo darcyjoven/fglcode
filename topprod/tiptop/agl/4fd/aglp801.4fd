@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{744fc3a3-0c43-4381-b1e8-ae568b948b01}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{10f6e60a-90e6-4efc-9494-e21c943cef59}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="o_abg00" sqlTabName="" table_alias_name="" uid="{cee8b110-d928-4d50-9043-a723e2efbc25}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="n_abg00" sqlTabName="" table_alias_name="" uid="{5785d508-4e25-4350-b0ef-64255e3640cc}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="o_abg01" sqlTabName="" table_alias_name="" uid="{dc524130-541c-4df4-a7fd-50a1e29e00a1}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="b_abg06" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{12ac07c6-ff3e-4765-ba05-42bcc9dbd4fe}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="e_abg06" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{7d3d7534-c681-477d-b077-551abe93a565}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{994ef1ef-9387-4328-a19f-893ab4223d90}"/>
+    <RecordField colName="" defaultValue="" fieldIdRef="7" name="g_compare" sqlTabName="" sqlType="CHAR" table_alias_name="" uid="{c754459c-13ac-47c8-82ab-4561a98b8abf}"/>
+    <RecordField colName="b_abg01" fieldIdRef="8" name="b_abg01" sqlTabName="formonly" sqlType="CHAR" table_alias_name="" uid="{ce03e606-2e4b-4afc-a4d8-3f2488fa77b8}"/>
+    <RecordField colName="e_abg01" fieldIdRef="9" name="e_abg01" sqlTabName="formonly" sqlType="CHAR" table_alias_name="" uid="{9791f2c9-37fe-4478-87b1-9d98af333d90}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="87" name="aglp801" spacing="normal" text="aglp801">
+    <VBox gridHeight="18" gridWidth="63" name="vb4" posX="3" posY="4">
+      <Group gridHeight="10" gridWidth="63" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="1" text="INPUT">
+        <Grid gridHeight="8" gridWidth="50" lstrcomment="false" name="gr2514" posX="2" posY="1">
+          <Label posX="1" posY="0" text="Original Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="o_abg00" posX="25" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="1" text="Carry to Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="n_abg00" posX="25" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Original Doc Type"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="o_abg01" posX="25" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Initial voucher date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="b_abg06" notNull="true" posX="25" posY="3" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="4" text="Ending Voucher Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="e_abg06" notNull="true" posX="25" posY="4" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="5" text="Initial voucher No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="b_abg01" columnCount="" fieldId="8" gridHeight="1" gridWidth="20" name="b_abg01" posX="25" posY="5" rowCount="" sqlTabName="formonly" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="6" text="Ending Voucher No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="e_abg01" columnCount="" fieldId="9" gridHeight="1" gridWidth="20" name="e_abg01" posX="25" posY="6" rowCount="" sqlTabName="formonly" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        </Grid>
+      </Group>
+      <Grid gridHeight="3" gridWidth="63" lstrcomment="false" name="gr2515" posX="0" posY="11">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="" fieldId="7" gridHeight="1" gridWidth="30" name="g_compare" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="by comparing old and new titl" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="63" lstrcomment="false" name="gr2516" posX="0" posY="14">
+        <Label posX="1" posY="0" text="NOTE"/>
+        <Label gridHeight="1" gridWidth="54" lstrcomment="false" lstrtext="false" name="dummy01" posX="7" posY="0" text="(1)Confirm After Carry Data"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjAGUAMAAzAGUANgAwADYALQAyAGUANABiAC0ANABhAGYAYwAtAGEANABkADgALQAzAGYAMgA0ADgAOABmAGEANwA3AGIAOAB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGQAMwBkADcANQAzADQALQBjADYAOAAxAC0ANAA3ADcAZAAtAGIAMAA3ADcALQA1ADUAMQBhAGIAZQA5ADMAYQA1ADYANQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADcAOAA1AGQANQAwADgALQA0AGUAMgA1AC0ANAAzADUAMAAtAGIAMABlAGYALQA2ADQAMgA1ADUAZQAzADYANAAwAGMAYwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGMANQAyADQAMQAzADAALQA1ADQAMQBjAC0ANABkAGYANAAtAGEANwBmAGQALQA1ADAAYQAxAGUAMgA5AGUAMAAwAGEAMQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADcANQA0ADQANQA5AGMALQAxADMAYQBjAC0ANAA3AGMAOAAtADgAMgBhAGIALQA0ADUANgAxAGEAOQA4AGIAOABhAGIAZgB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADAAZgA2AGUANgAwAGEALQA5ADAAZQA2AC0ANABlAGYAYwAtADkANAA5ADQALQBlADIAMQBjADkANAAzAGMAZQBmADUAOQB9QGJAAAAAAADAKgAAAAAAAD9QYk3S8an8AQAAAEwAewBjAGUAZQA4AGIAMQAxADAALQBkADkAMgA4AC0ANABkADUAMAAtADkAMAA0ADMALQBhADcAMgAzAGUAMgBlAGYAYgBjADIANQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADIAYQBjADAANwBjADYALQBmAGYAMwBlAC0ANAA3ADYANQAtAGIAYQAwADUALQA0ADIAYgBjAGMAOQBkAGIAZAA0AGYAZQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADcAOQAxAGYAMgBjADkALQAzADcAZgBlAC0ANAA0ADcAOAAtADgANwBiADEALQA5AGQAOQA4AGEAZgAzADMAMwBkADkAMAB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADkANABlAGYAMQBlAGYALQA5ADMAOAA3AC0ANAAzADIAOAAtAGEAMQA5AGYALQA4ADkAMwBhAGIANAAyADIAMwBkADkAMAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

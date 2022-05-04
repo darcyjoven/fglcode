@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a0ba8279-0000-4000-854e-a4620d7d7fc4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_wak" order="" uid="{6f4cb80e-0000-4000-8e24-83eb13deba29}" where="">
+    <RecordField colName="wak04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="wak_file.wak04" sqlTabName="wak_file" sqlType="VARCHAR" table_alias_name="" uid="{4274934b-0000-4000-a6c2-8d4af5cd21d2}"/>
+    <RecordField colName="wak05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="wak_file.wak05" sqlTabName="wak_file" sqlType="VARCHAR" table_alias_name="" uid="{ec33c99d-0000-4000-a21f-4e4389e306bb}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d15aff7c-0000-4000-a52c-1068d4133a56}" where="">
+    <RecordField colName="wak01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="wak_file.wak01" sqlTabName="wak_file" sqlType="VARCHAR" table_alias_name="" uid="{b153ccef-0000-4000-a0c8-3be286da6292}"/>
+    <RecordField colName="wak02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="wak_file.wak02" sqlTabName="wak_file" sqlType="VARCHAR" table_alias_name="" uid="{ee6aba05-0000-4000-8dc4-8eb97b162ae3}"/>
+    <RecordField colName="wak03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="wak_file.wak03" sqlTabName="wak_file" sqlType="VARCHAR" table_alias_name="" uid="{55a93f5d-0000-4000-b2d8-869c3b2284c8}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{e6bfbea0-0000-4000-a5bd-cba87bb48a57}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt1" sqlTabName="" table_alias_name="" uid="{1c3f8f01-0000-4000-8205-49b29b04d7c1}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt2" sqlTabName="" table_alias_name="" uid="{b364f5c4-0000-4000-b645-f80b26bbeb5d}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="68" name="awsi009" spacing="normal" text="awsi009">
+    <VBox gridHeight="18" gridWidth="66" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="66" lstrcomment="false" name="gr8" posX="0" posY="1">
+        <Label posX="3" posY="1" text="Company ID"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wak01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="wak_file.wak01" notNull="true" posX="20" posY="1" required="true" rowCount="" sqlTabName="wak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="3" posY="2" text="Company TBName"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wak02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="wak_file.wak02" notNull="true" posX="20" posY="2" required="true" rowCount="" sqlTabName="wak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="3" posY="3" text="Field Name"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wak03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="wak_file.wak03" notNull="true" posX="20" posY="3" required="true" rowCount="" sqlTabName="wak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+      </Grid>
+      <Table gridHeight="6" gridWidth="66" lstrcomment="false" name="s_wak" posX="0" posY="6" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wak04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="wak_file.wak04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="wak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Values" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wak05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="44" lstrcomment="false" lstrtitle="false" name="wak_file.wak05" notNull="true" posX="16" posY="0" required="true" rowCount="" sqlTabName="wak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Describe" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="5" gridWidth="66" lstrcomment="false" name="gr9" posX="0" posY="12">
+        <HLine gridWidth="10" name="hl9" posX="1" posY="1"/>
+        <Label posX="12" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="cnt1" posX="29" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="38" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="cnt2" posX="40" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="16" name="hl10" posX="50" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

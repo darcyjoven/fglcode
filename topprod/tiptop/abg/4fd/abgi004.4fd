@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{021555c1-0000-4000-980c-32a1ec7546fd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bgd" order="" uid="{044bbf8c-0000-4000-8e4f-aec740897cf5}" where="">
+    <RecordField colName="bgd02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bgd_file.bgd02" sqlTabName="bgd_file" sqlType="VARCHAR" table_alias_name="" uid="{56d419d2-0000-4000-84eb-c5f71a6d3811}"/>
+    <RecordField colName="bgd03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bgd_file.bgd03" sqlTabName="bgd_file" sqlType="SMALLINT" table_alias_name="" uid="{e0c2eb6c-0000-4000-b61a-ed6d43d60f21}"/>
+    <RecordField colName="bgd04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bgd_file.bgd04" sqlTabName="bgd_file" sqlType="DECIMAL" table_alias_name="" uid="{5d16e0d2-0000-4000-bd30-d945c1233fc3}"/>
+    <RecordField colName="bgd05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="bgd_file.bgd05" sqlTabName="bgd_file" sqlType="DECIMAL" table_alias_name="" uid="{024aee97-0000-4000-8dc0-72a35661cb4b}"/>
+    <RecordField colName="bgdacti" fieldIdRef="6" fieldType="TABLE_COLUMN" name="bgd_file.bgdacti" sqlTabName="bgd_file" sqlType="VARCHAR" table_alias_name="" uid="{aab81be8-0000-4000-b782-37daff51942c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fc87b111-0000-4000-a865-4c95766a165d}" where="">
+    <RecordField colName="bgd01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bgd_file.bgd01" sqlTabName="bgd_file" sqlType="VARCHAR" table_alias_name="" uid="{918525f8-0000-4000-a885-afffb0c7ac42}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{1f50189f-0000-4000-9d2f-0aec60354398}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{1f4e67a6-0000-4000-85dc-f2fc733cb8d6}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="69" name="abgi004" spacing="normal" text="abgi004">
+    <VBox gridHeight="19" gridWidth="66" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="3" gridWidth="66" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="21" lstrcomment="false" name="gr580" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Version"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgd01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bgd_file.bgd01" posX="10" posY="0" rowCount="" sqlTabName="bgd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="66" lstrcomment="false" name="s_bgd" posX="0" posY="4" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgd02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="bgd_file.bgd02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="bgd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Class" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgd03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="bgd_file.bgd03" notNull="true" posX="8" posY="0" required="true" rowCount="" sqlTabName="bgd_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Rank" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgd04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bgd_file.bgd04" notNull="true" posX="15" posY="0" required="true" rowCount="" sqlTabName="bgd_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Standard Base Pay" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgd05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="bgd_file.bgd05" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="bgd_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Insurance Salary" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgdacti" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="bgd_file.bgdacti" notNull="true" posX="54" posY="0" required="true" rowCount="" sqlTabName="bgd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="66" lstrcomment="false" name="gr581" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl144" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl145" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

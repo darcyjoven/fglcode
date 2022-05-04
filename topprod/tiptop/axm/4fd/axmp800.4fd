@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c83f0d31-0000-4000-afde-e64088ebb600}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bc19a279-0000-4000-a57a-79b227091372}" where="">
+    <RecordField colName="oea01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oea_file.oea01" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{f469e405-0000-4000-88c4-c55473aa956e}"/>
+    <RecordField colName="oea02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oea_file.oea02" sqlTabName="oea_file" sqlType="DATE" table_alias_name="" uid="{75ae83de-0000-4000-b4e0-9dec4cc6a40e}"/>
+    <RecordField colName="oea904" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oea_file.oea904" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{122cda4a-0000-4000-818e-39386f819522}"/>
+    <RecordField colName="oea905" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oea_file.oea905" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{d1f2f84a-0000-4000-8248-f8d7f5443e5a}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="60" name="axmp800" spacing="normal" text="axmp800">
+    <Grid gridHeight="9" gridWidth="59" lstrcomment="false" name="gr2201" posX="0" posY="0">
+      <Group gridHeight="5" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+        <Label posX="1" posY="1" text="Order No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea01" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="oea_file.oea01" posX="22" posY="1" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Order Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oea_file.oea02" posX="22" posY="2" rowCount="" sqlTabName="oea_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="3" text="Flow Code"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea904" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" lstrcomment="false" name="oea_file.oea904" posX="22" posY="3" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+      </Group>
+      <Group gridHeight="3" gridWidth="58" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="INPUT">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea905" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="54" items="Re-Carry Order Carried, Carry Order Uncarried" lstrcomment="false" lstrtitle="false" name="oea_file.oea905" posX="1" posY="1" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+          <Item lstrtext="" name="Y" text="Re-Carry Order Carried"/>
+          <Item lstrtext="" name="N" text="Carry Order Uncarried"/>
+        </RadioGroup>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

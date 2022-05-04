@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b97d4a82-0000-4000-90bb-ff705fd09d2f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pml" order="" uid="{0cc05b83-0000-4000-94df-d0c55faaefb4}" where="">
+    <RecordField colName="" fieldIdRef="12" name="sure" sqlTabName="" table_alias_name="" uid="{42b3fcd2-0000-4000-9066-9fc0a6c326dd}"/>
+    <RecordField colName="" fieldIdRef="13" name="pml02" sqlTabName="" table_alias_name="" uid="{59d9aeaf-0000-4000-87fa-c532f40031d1}"/>
+    <RecordField colName="" fieldIdRef="2" name="pml04" sqlTabName="" table_alias_name="" uid="{c8421737-0000-4000-9869-b5b18303e08b}"/>
+    <RecordField colName="" fieldIdRef="3" name="pml16_d" sqlTabName="" table_alias_name="" uid="{a41f14e3-0000-4000-bcb8-963e8d0f7b41}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{4af5b908-0000-4000-8b27-2deec31621c8}" where="">
+    <RecordField colName="pmk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmk_file.pmk01" sqlTabName="pmk_file" sqlType="VARCHAR" table_alias_name="" uid="{8a603a56-0000-4000-b809-1811d7caeaff}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="pmk02" sqlTabName="" table_alias_name="" uid="{47900b59-0000-4000-90fc-a4dbf3835cba}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="pmk03" sqlTabName="" table_alias_name="" uid="{278fc0fb-0000-4000-bec6-110e4043d8a2}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="pmk09" sqlTabName="" table_alias_name="" uid="{36f52cff-0000-4000-8a56-1e1c60c99fa6}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="pmc03" sqlTabName="" table_alias_name="" uid="{12534c87-0000-4000-96d5-6e55f47896dc}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="pmk27" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{0ddc4a90-0000-4000-a094-4d0d166d53ed}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="pmk26" sqlTabName="" table_alias_name="" uid="{dd838271-0000-4000-821c-ddc2e06f637b}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn3" sqlTabName="" table_alias_name="" uid="{3d2f825f-0000-4000-b521-fa48e4f4ea8a}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{181c01ec-0000-4000-8a80-4deeb22bb8e9}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="92" name="apmp453" spacing="normal" text="apmp453">
+    <VBox gridHeight="27" gridWidth="89" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="11" gridWidth="89" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="9" gridWidth="88" lstrcomment="false" name="gr4890" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="87" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="P/R No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmk01" columnCount="" comment="Enter a P/R # to Close  &lt;^P&gt; Qry P/R " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="pmk_file.pmk01" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="pmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="43" posY="1" text="Property"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmk02" noEntry="true" posX="62" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Change S/N"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmk03" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="43" posY="2" text="Vender Code"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmk09" noEntry="true" posX="62" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmc03" noEntry="true" posX="74" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="4" gridWidth="81" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="4">
+              <Label posX="1" posY="1" text="Cancel date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pmk27" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+              <Label posX="37" posY="1" text="Reason code"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Press &lt;^P&gt;Qry Reason!" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pmk26" posX="58" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ButtonEdit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="89" lstrcomment="false" name="s_pml" posX="0" posY="12" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sure" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Sure" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="pml02" noEntry="true" posX="5" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Ln#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="pml04" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="pml16_d" noEntry="true" posX="31" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Current Status" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="89" lstrcomment="false" name="gr4891" posX="0" posY="24">
+        <Button comment="Select All" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtext="false" name="select_all" posX="2" posY="0" tabIndex=""/>
+        <Button comment="Cancel All" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="cancel_all" posX="19" posY="0" tabIndex=""/>
+        <Label posX="33" posY="0" text="Select Counts"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cn3" noEntry="true" posX="54" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1588" posX="1" posY="1"/>
+        <Label posX="12" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1589" posX="26" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

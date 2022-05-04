@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c882905d-0000-4000-aab9-1394878e603a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ges" order="" uid="{3fb80b48-0000-4000-8af2-93ccdf5b6400}" where="">
+    <RecordField colName="ges01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ges_file.ges01" sqlTabName="ges_file" sqlType="VARCHAR" table_alias_name="" uid="{8aee41c4-0000-4000-a451-e7d8b9a4fa29}"/>
+    <RecordField colName="ges02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ges_file.ges02" sqlTabName="ges_file" sqlType="VARCHAR" table_alias_name="" uid="{db9153f5-0000-4000-883d-3074e563b9c7}"/>
+    <RecordField colName="ges03" defaultValue="BOM" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ges_file.ges03" sqlTabName="ges_file" sqlType="VARCHAR" table_alias_name="" uid="{4620360e-0000-4000-9207-57f85fef272f}"/>
+    <RecordField colName="ges04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ges_file.ges04" sqlTabName="ges_file" sqlType="VARCHAR" table_alias_name="" uid="{8976eccb-0000-4000-a8e2-e3a5d0247982}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d7685df6-0000-4000-bc05-596c0a4295b8}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{1c685ce3-0000-4000-9090-bcb190f933a5}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="65" name="aooi500" spacing="normal" text="aooi500">
+    <VBox gridHeight="18" gridWidth="62" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="62" lstrcomment="false" name="pc854" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="60" lstrcomment="false" name="s_ges" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ges01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record! " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ges_file.ges01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="ges_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Var No." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ges02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ges_file.ges02" posX="10" posY="0" rowCount="" sqlTabName="ges_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Name" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ges03" columnCount="" defaultValue="BOM" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="Variable, BOM Formula Variable, Const" lstrcomment="false" lstrtitle="false" name="ges_file.ges03" posX="30" posY="0" rowCount="" sqlTabName="ges_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Type" widget="ComboBox">
+              <Item name="VR" text="Variable"/>
+              <Item name="BM" text="BOM Formula Variable"/>
+              <Item name="CT" text="Const"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ges04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ges_file.ges04" posX="44" posY="0" rowCount="" sqlTabName="ges_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Default" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="62" lstrcomment="false" name="gr4655" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1462" posX="2" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1463" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

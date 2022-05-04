@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ca44c39a-3e6c-4195-938a-0266077a4bb5}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zz" order="" uid="{c49bf90f-28c9-4d01-8d47-701ce7b3e6ee}" where="">
+    <RecordField colName="zz01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zz_file.zz01" sqlTabName="zz_file" sqlType="VARCHAR" table_alias_name="" uid="{b313a5d3-9602-4386-bcb7-71b74a0c87af}"/>
+    <RecordField colName="" fieldIdRef="3" name="gaz03" sqlTabName="" table_alias_name="" uid="{9c927efc-a547-4876-a67b-7023654e5903}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gbi" order="" uid="{638e70bb-1cc4-4762-b76b-573cc3dbe68b}" where="">
+    <RecordField colName="gbi02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gbi_file.gbi02" sqlTabName="gbi_file" sqlType="VARCHAR" table_alias_name="" uid="{7487de37-91e7-4b0f-8947-5ad413b4cf0d}"/>
+    <RecordField colName="" fieldIdRef="5" name="gaz03_2" sqlTabName="" table_alias_name="" uid="{ab9f3e6b-e270-481b-bbb0-7b2c7f800dc6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6b9f914a-bd1f-49e0-a42d-2b1bb0b1430a}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="zz01_1" sqlTabName="" table_alias_name="" uid="{6ed02d61-9712-4e7e-bbbf-fe6b3894799f}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="97" name="p_favorite" spacing="normal" text="p_favorite">
+    <VBox gridHeight="16" gridWidth="86" name="VBox1" posX="1" posY="1">
+      <Grid gridHeight="3" gridWidth="86" lstrcomment="false" name="gr3188" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Program Code"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="" columnCount="" comment="Program Code Query" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" image="zoom" lstrcomment="false" lstrtitle="false" name="zz01_1" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Button gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="accept" posX="31" posY="0" tabIndex="" text="Accept"/>
+        <Button gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="cancel" posX="39" posY="0" tabIndex="" text="Cancel"/>
+      </Grid>
+      <HBox gridHeight="11" gridWidth="86" name="HBox1" posX="0" posY="4">
+        <Table gridHeight="11" gridWidth="36" lstrcomment="false" name="s_zz" posX="2" posY="0" totalRows="10">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zz01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="zz_file.zz01" posX="0" posY="0" rowCount="" sqlTabName="zz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Program Code" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gaz03" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Program Name" widget="Edit"/>
+        </Table>
+        <Grid gridHeight="11" gridWidth="10" lstrcomment="false" name="gr3189" posX="38" posY="0">
+          <Button gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="query" posX="1" posY="1" tabIndex="" text="Query"/>
+          <Button gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="exit" posX="1" posY="3" tabIndex="" text="Exit"/>
+        </Grid>
+        <Table gridHeight="11" gridWidth="36" lstrcomment="false" name="s_gbi" posX="48" posY="0" totalRows="10">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbi02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="gbi_file.gbi02" posX="0" posY="0" rowCount="" sqlTabName="gbi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Program Code" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gaz03_2" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Program Name" widget="Edit"/>
+        </Table>
+      </HBox>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA2AGIAOQBmADkAMQA0AGEALQBiAGQAMQBmAC0ANAA5AGUAMAAtAGEANAAyAGQALQAyAGIAMQBiAGIAMABiADEANAAzADAAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGUAZAAwADIAZAA2ADEALQA5ADcAMQAyAC0ANABlADcAZQAtAGIAYgBiAGYALQBmAGUANgBiADMAOAA5ADQANwA5ADkAZgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADMAOABlADcAMABiAGIALQAxAGMAYwA0AC0ANAA3ADYAMgAtAGIANwA2AGIALQA1ADcAMwBjAGMAMwBkAGIAZQA2ADgAYgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADQAOAA3AGQAZQAzADcALQA5ADEAZQA3AC0ANABiADAAZgAtADgAOQA0ADcALQA1AGEAZAA0ADEAMwBiADQAYwBmADAAZAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADMAMQAzAGEANQBkADMALQA5ADYAMAAyAC0ANAAzADgANgAtAGIAYwBiADcALQA3ADEAYgA3ADQAYQAwAGMAOAA3AGEAZgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGIAOQBmADMAZQA2AGIALQBlADIANwAwAC0ANAA4ADEAYgAtAGIAYgBiADAALQA3AGIAMgBjADcAZgA4ADAAMABkAGMANgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADQAOQBiAGYAOQAwAGYALQAyADgAYwA5AC0ANABkADAAMQAtADgAZAA0ADcALQA3ADAAMQBjAGUANwBiADMAZQA2AGUAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGMAOQAyADcAZQBmAGMALQBhADUANAA3AC0ANAA4ADcANgAtAGEANgA3AGIALQA3ADAAMgAzADYANQA0AGUANQA5ADAAMwB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

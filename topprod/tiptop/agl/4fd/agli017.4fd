@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="ManagedForm" uid="{2f7c62ee-d543-4344-9d40-c46dd95a2e34}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aaj" order="" uid="{f596a9c9-8b18-4eff-927d-6e9a2196f51c}" where="">
+    <RecordField colName="aaj03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aaj_file.aaj03" sqlTabName="aaj_file" sqlType="VARCHAR" table_alias_name="" uid="{42cb0075-5a76-4199-bf98-c013cbcea9fa}"/>
+    <RecordField colName="aag02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aag_file.aag02" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{a0d11d15-1336-4e27-9a01-ef681fbacb58}"/>
+    <RecordField colName="aaj06" defaultValue="+" fieldIdRef="11" fieldType="TABLE_COLUMN" name="aaj_file.aaj06" sqlTabName="aaj_file" sqlType="VARCHAR" table_alias_name="" uid="{81a84bd5-ed7a-44a0-8cf8-63e6bb699b96}"/>
+    <RecordField colName="aaj04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="aaj_file.aaj04" sqlTabName="aaj_file" sqlType="VARCHAR" table_alias_name="" uid="{a9b4af27-9691-4813-a555-1355e417ac65}"/>
+    <RecordField colName="aya02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="aya_file.aya02" sqlTabName="aya_file" sqlType="VARCHAR" table_alias_name="" uid="{7fa8a997-2e0f-427d-ab85-318852adc3db}"/>
+    <RecordField colName="aaj05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="aaj_file.aaj05" sqlTabName="aaj_file" sqlType="VARCHAR" table_alias_name="" uid="{7913c1c0-94ea-46a5-9943-5f7c02bc1bcd}"/>
+    <RecordField colName="axl02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="axl_file.axl02" sqlTabName="axl_file" sqlType="VARCHAR" table_alias_name="" uid="{d35ab708-017b-4584-b299-f7302c729f3d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f99c4cb6-a36c-4763-bf9b-ed8d7876c18d}" where="">
+    <RecordField colName="aaj01" fieldIdRef="0" fieldType="TABLE_COLUMN" name="aaj_file.aaj01" sqlTabName="aaj_file" sqlType="VARCHAR" table_alias_name="" uid="{ba65d028-4d0e-4954-b89a-a20377afd21a}"/>
+    <RecordField colName="aaj02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aaj_file.aaj02" sqlTabName="aaj_file" sqlType="VARCHAR" table_alias_name="" uid="{61827745-7261-45ba-aa9d-f273964a7b8d}"/>
+    <RecordField colName="aaj00" fieldIdRef="2" name="aaj00" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{bc6319d8-1433-4f93-af1c-c146b9f9f365}"/>
+    <RecordField colName="cnt" fieldIdRef="9" name="cnt" sqlTabName="formonly" table_alias_name="" uid="{19850368-7160-40ee-9138-4f7a593a1b88}"/>
+    <RecordField colName="cn2" fieldIdRef="10" name="cn2" sqlTabName="formonly" table_alias_name="" uid="{f9f3decc-b55b-41ba-ae5b-2c83e4751795}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="115" name="agli017" text="agli017">
+    <VBox gridHeight="16" gridWidth="115" name="vb2" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="115" name="gr1" posX="0" posY="1">
+        <Label gridHeight="1" gridWidth="10" posX="2" posY="1" text="Group Code"/>
+        <ButtonEdit action="controlp" colName="aaj01" columnCount="" fieldId="0" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom.png" name="aaj_file.aaj01" notNull="true" posX="23" posY="1" required="true" rowCount="" sqlTabName="aaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="ButtonEdit"/>
+        <Label gridHeight="1" gridWidth="14" posX="2" posY="2" text="Parent Company"/>
+        <ButtonEdit action="controlp" colName="aaj02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom.png" name="aaj_file.aaj02" notNull="true" posX="23" posY="2" required="true" rowCount="" sqlTabName="aaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ButtonEdit"/>
+        <Label gridHeight="1" gridWidth="10" posX="2" posY="3" text="Account No"/>
+        <Edit colName="aaj00" columnCount="" fieldId="2" gridHeight="1" gridWidth="17" name="aaj00" noEntry="true" notNull="true" posX="23" posY="3" required="true" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Grid gridHeight="8" gridWidth="115" name="gr2" posX="0" posY="5">
+        <Table gridHeight="7" gridWidth="109" name="tb1" posX="2" posY="1" totalRows="5" unitWidth="characters" width="104">
+          <ButtonEdit action="controlp" colName="aaj03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom.png" name="aaj_file.aaj03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="aaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="aaj03" widget="ButtonEdit"/>
+          <Edit colName="aag02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="aag_file.aag02" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="aag02" widget="Edit"/>
+          <ComboBox colName="aaj06" columnCount="" defaultValue="+" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="+, -" name="aaj_file.aaj06" notNull="true" posX="38" posY="0" required="true" rowCount="" sqlTabName="aaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="aaj06" widget="ComboBox">
+            <Item lstrtext="false" name="+" text="+"/>
+            <Item lstrtext="false" name="-" text="-"/>
+          </ComboBox>
+          <ButtonEdit action="controlp" colName="aaj04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom.png" name="aaj_file.aaj04" notNull="true" posX="46" posY="0" required="true" rowCount="" sqlTabName="aaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="aaj04" widget="ButtonEdit"/>
+          <Edit colName="aya02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" name="aya_file.aya02" noEntry="true" posX="54" posY="0" rowCount="" sqlTabName="aya_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="aya02" widget="Edit"/>
+          <ButtonEdit action="controlp" colName="aaj05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom.png" name="aaj_file.aaj05" notNull="true" posX="67" posY="0" required="true" rowCount="" sqlTabName="aaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="aaj05" widget="ButtonEdit"/>
+          <Edit colName="axl02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" name="axl_file.axl02" noEntry="true" posX="78" posY="0" rowCount="" sqlTabName="axl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="axl02" widget="Edit"/>
+        </Table>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="115" name="gr3" posX="0" posY="13">
+        <HLine gridWidth="10" name="HLine1" posX="2" posY="1"/>
+        <Edit colName="cnt" columnCount="" fieldId="9" gridHeight="1" gridWidth="6" name="cnt" posX="13" posY="1" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="5" posX="21" posY="1" text="Rows"/>
+        <Edit colName="cn2" columnCount="" fieldId="10" gridHeight="1" gridWidth="6" name="cn2" posX="27" posY="1" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine2" posX="36" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADkAZgAzAGQAZQBjAGMALQBiADUANQBiAC0ANAAxAGIAYQAtAGEAZQA1AGIALQAyAGMAOAAzAGUANAA3ADUAMQA3ADkANQB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADMANQBhAGIANwAwADgALQAwADEANwBiAC0ANAA1ADgANAAtAGIAMgA5ADkALQBmADcAMwAwADIAYwA3ADIAOQBmADMAZAB9QBQAAAAAAABAZoAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADEAOAAyADcANwA0ADUALQA3ADIANgAxAC0ANAA1AGIAYQAtAGEAYQA5AGQALQBmADIANwAzADkANgA0AGEANwBiADgAZAB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGYAYQA4AGEAOQA5ADcALQAyAGUAMABmAC0ANAAyADcAZAAtAGEAYgA4ADUALQAzADEAOAA4ADUAMgBhAGQAYwAzAGQAYgB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADkAOAA1ADAAMwA2ADgALQA3ADEANgAwAC0ANAAwAGUAZQAtADkAMQAzADgALQA0AGYANwBhADUAOQAzAGEAMQBiADgAOAB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADkAYgA0AGEAZgAyADcALQA5ADYAOQAxAC0ANAA4ADEAMwAtAGEANQA1ADUALQAxADMANQA1AGUANAAxADcAYQBjADYANQB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADUAOQA2AGEAOQBjADkALQA4AGIAMQA4AC0ANABlAGYAZgAtADkAMgA3AGQALQA2AGUAOQBhADIAMQA5ADYAZgA1ADEAYwB9AAAAAAAAAAAAAAAAAAAAAD94k3S8an76AQAAAEwAewBhADAAZAAxADEAZAAxADUALQAxADMAMwA2AC0ANABlADIANwAtADkAYQAwADEALQBlAGYANgA4ADEAZgBiAGEAYwBiADUAOAB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewBmADkAOQBjADQAYwBiADYALQBhADMANgBjAC0ANAA3ADYAMwAtAGIAZgA5AGIALQBlAGQAOABkADcAOAA3ADYAYwAxADgAZAB9wGygAAAAAABAKgAAAAAAAD9gYk3S8an8AQAAAEwAewA3ADkAMQAzAGMAMQBjADAALQA5ADQAZQBhAC0ANAA2AGEANQAtADkAOQA0ADMALQA1AGYANwBjADAAMgBiAGMAMQBiAGMAZAB9QBQAAAAAAABAY2AAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGMANgAzADEAOQBkADgALQAxADQAMwAzAC0ANABmADkAMwAtAGEAZgAxAGMALQBjADEANAA2AGIAOQBmADkAZgAzADYANQB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADEAYQA4ADQAYgBkADUALQBlAGQANwBhAC0ANAA0AGEAMAAtADgAYwBmADgALQA2ADMAZQA2AGIAYgA2ADkAOQBiADkANgB9QBQAAAAAAABAVAAAAAAAAD+AYk3S8an8AQAAAEwAewA0ADIAYwBiADAAMAA3ADUALQA1AGEANwA2AC0ANAAxADkAOQAtAGIAZgA5ADgALQBjADAAMQAzAGMAYgBjAGUAYQA5AGYAYQB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGEANgA1AGQAMAAyADgALQA0AGQAMABlAC0ANAA5ADUANAAtAGIAOAA5AGEALQBhADIAMAAzADcANwBhAGYAZAAyADEAYQB9QBQAAAAAAABAPgAAAAAAAD9QYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

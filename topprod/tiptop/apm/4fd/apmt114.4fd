@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{790f8bd3-0000-4000-8e5e-a41d77f34470}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{45b01b22-0000-4000-8eb9-e1b84c84ae23}" where="">
+    <RecordField colName="rvw01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rvw_file.rvw01" sqlTabName="rvw_file" sqlType="VARCHAR" table_alias_name="" uid="{e3d765ac-0000-4000-acc0-e747f0d2adaa}"/>
+    <RecordField colName="rvw03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rvw_file.rvw03" sqlTabName="rvw_file" sqlType="VARCHAR" table_alias_name="" uid="{258dee82-0000-4000-a545-80c23eb197e8}"/>
+    <RecordField colName="rvw02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rvw_file.rvw02" sqlTabName="rvw_file" sqlType="DATE" table_alias_name="" uid="{47d92942-0000-4000-be05-6547c17cac4d}"/>
+    <RecordField colName="rvw04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="rvw_file.rvw04" sqlTabName="rvw_file" sqlType="DECIMAL" table_alias_name="" uid="{ba958694-0000-4000-8cb2-f9e32af7e15e}"/>
+    <RecordField colName="rvw11" fieldIdRef="5" fieldType="TABLE_COLUMN" name="rvw_file.rvw11" sqlTabName="rvw_file" sqlType="VARCHAR" table_alias_name="" uid="{e82050ad-0000-4000-aee4-55dcdb4afdbd}"/>
+    <RecordField colName="rvw12" fieldIdRef="6" fieldType="TABLE_COLUMN" name="rvw_file.rvw12" sqlTabName="rvw_file" sqlType="DECIMAL" table_alias_name="" uid="{7df1d7cf-0000-4000-8d30-6ff360234db1}"/>
+    <RecordField colName="rvw05f" fieldIdRef="7" fieldType="TABLE_COLUMN" name="rvw_file.rvw05f" sqlTabName="rvw_file" sqlType="DECIMAL" table_alias_name="" uid="{b3d746c7-0000-4000-a314-b332f08d03ac}"/>
+    <RecordField colName="rvw06f" fieldIdRef="8" fieldType="TABLE_COLUMN" name="rvw_file.rvw06f" sqlTabName="rvw_file" sqlType="DECIMAL" table_alias_name="" uid="{14acd36e-0000-4000-b1f9-c0b2f10d20d6}"/>
+    <RecordField colName="rvw05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="rvw_file.rvw05" sqlTabName="rvw_file" sqlType="DECIMAL" table_alias_name="" uid="{45e78729-0000-4000-8746-a46271996994}"/>
+    <RecordField colName="rvw06" fieldIdRef="10" fieldType="TABLE_COLUMN" name="rvw_file.rvw06" sqlTabName="rvw_file" sqlType="DECIMAL" table_alias_name="" uid="{4fdf6f68-0000-4000-813e-3e50ae8d3810}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="95" name="apmt114" spacing="normal" text="Invoice">
+    <Grid gridHeight="13" gridWidth="94" lstrcomment="false" name="gr5246" posX="0" posY="0">
+      <Group gridHeight="4" gridWidth="93" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+        <Label posX="1" posY="1" text="Invo.#"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw01" posX="22" posY="1" rowCount="" sqlTabName="rvw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="40" posY="1" text="Tax"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw03" columnCount="" comment="&lt;^P&gt;Qry Tax Term" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw03" posX="61" posY="1" rowCount="" sqlTabName="rvw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Invo.Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw02" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="rvw_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+        <Label posX="40" posY="2" text="Tax Rate"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw04" posX="61" posY="2" rowCount="" sqlTabName="rvw_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+      </Group>
+      <Group gridHeight="3" gridWidth="93" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="4">
+        <Label posX="1" posY="1" text="Payment Curr."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw11" columnCount="" comment="&lt;^P&gt;Qry Currency" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw11" posX="22" posY="1" rowCount="" sqlTabName="rvw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="40" posY="1" text="ExRt"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw12" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw12" posX="61" posY="1" rowCount="" sqlTabName="rvw_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+      </Group>
+      <Group gridHeight="5" gridWidth="93" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="7">
+        <Label posX="1" posY="1" text="F.C B-Tax"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw05f" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw05f" posX="22" posY="1" rowCount="" sqlTabName="rvw_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="50" posY="1" text="F.C Tax"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw06f" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw06f" posX="71" posY="1" rowCount="" sqlTabName="rvw_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="H.C B-Tax"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw05" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw05" posX="22" posY="2" rowCount="" sqlTabName="rvw_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="50" posY="2" text="H.C Tax"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvw06" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rvw_file.rvw06" posX="71" posY="2" rowCount="" sqlTabName="rvw_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADMAZAA3ADYANQBhAGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYwBjADAALQBlADcANAA3AGYAMABkADIAYQBkAGEAYQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADUAYgAwADEAYgAyADIALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZQBiADkALQBlADEAYgA4ADQAYwA4ADQAYQBlADIAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADgAMgAwADUAMABhAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZQBlADQALQA1ADUAZABjAGQAYgA0AGEAZgBkAGIAZAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGYAZABmADYAZgA2ADgALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMQAzAGUALQAzAGUANQAwAGEAZQA4AGQAMwA4ADEAMAB9QBQAAAAAAABAa8AAAAAAAAAAAAAAAAAAAQAAAEwAewAxADQAYQBjAGQAMwA2AGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMQBmADkALQBjADAAYgAyAGYAMQAwAGQAMgAwAGQANgB9QBQAAAAAAABAZkAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADUAZQA3ADgANwAyADkALQAwADAAMAAwAC0ANAAwADAAMAAtADgANwA0ADYALQBhADQANgAyADcAMQA5ADkANgA5ADkANAB9QBQAAAAAAABAaQAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADcAZAA5ADIAOQA0ADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZQAwADUALQA2ADUANAA3AGMAMQA3AGMAYQBjADQAZAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGQAZgAxAGQANwBjAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZAAzADAALQA2AGYAZgAzADYAMAAyADMANABkAGIAMQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADUAOABkAGUAZQA4ADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQA0ADUALQA4ADAAYwAyADMAZQBiADEAOQA3AGUAOAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGEAOQA1ADgANgA5ADQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYwBiADIALQBmADkAZQAzADIAYQBmADcAZQAxADUAZQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADMAZAA3ADQANgBjADcALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMwAxADQALQBiADMAMwAyAGYAMAA4AGQAMAAzAGEAYwB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

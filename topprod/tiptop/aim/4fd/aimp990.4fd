@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{2d1abbef-0000-4000-aff4-1ecdf82f42b9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{24d8a841-0000-4000-8e0f-c6b83f2e422c}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="a01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f1052441-0000-4000-b9cd-8bef692fde99}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="sdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{b070c1d9-0000-4000-a684-b8f79ed7efd0}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="dept" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{48e3ff41-0000-4000-967d-bf1a6f446f29}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="b01" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ae99437c-0000-4000-95ed-88ac5a05dd0b}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="memo" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{acc6f6d9-0000-4000-bdfa-db5349089cf9}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2d496372-0000-4000-b3bf-385213c6ab14}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="60" name="aimp990" spacing="normal" text="aimp990">
+    <Grid gridHeight="12" gridWidth="59" lstrcomment="false" name="Grid1" posX="0" posY="0">
+      <Group gridHeight="7" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+        <Label posX="1" posY="1" text="Receipt Tp"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" color="yellow" columnCount="" comment="&lt;^P&gt; Qry Documents" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="a01" notNull="true" posX="27" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Receipt/Issue Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="yellow" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sdate" notNull="true" posX="27" posY="2" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="3" text="Dept. No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="yellow" columnCount="" comment="&lt;^P&gt; Qry Department" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="dept" notNull="true" posX="27" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="4" text="Receipt/Issue Body Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="yellow" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="b01" notNull="true" posX="27" posY="4" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="5" text="Trn.Code"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="yellow" columnCount="" comment="&lt;P&gt;Qry Trn.Code" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="memo" notNull="true" posX="27" posY="5" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+      </Group>
+      <Group gridHeight="4" gridWidth="58" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="7" text="Open Account">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" items="Inventory, WIP" lstrcomment="false" lstrtitle="false" name="a" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+          <Item name="1" text="Inventory"/>
+          <Item name="2" text="WIP"/>
+        </RadioGroup>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

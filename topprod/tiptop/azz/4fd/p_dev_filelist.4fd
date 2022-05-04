@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a7b5fccd-0000-4000-b010-faad90a0f3ca}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gfc" order="" uid="{97c28ea0-0000-4000-bddf-943d689337e6}" where="">
+    <RecordField colName="" fieldIdRef="7" name="check" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0e20ee5b-0000-4000-9c4b-acef08a813f8}"/>
+    <RecordField colName="gfc02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gfc_file.gfc02" sqlTabName="gfc_file" sqlType="SMALLINT" table_alias_name="" uid="{fa199fc6-0000-4000-9254-00f6dd9b8912}"/>
+    <RecordField colName="gfc03" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gfc_file.gfc03" sqlTabName="gfc_file" sqlType="VARCHAR" table_alias_name="" uid="{2ba1859a-0000-4000-8f78-687f600f5a5a}"/>
+    <RecordField colName="gfc04" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gfc_file.gfc04" sqlTabName="gfc_file" sqlType="VARCHAR" table_alias_name="" uid="{dbc3fdf7-0000-4000-af97-4dbf95960e4f}"/>
+    <RecordField colName="gfc05" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gfc_file.gfc05" sqlTabName="gfc_file" sqlType="VARCHAR" table_alias_name="" uid="{b3ecd6ec-0000-4000-bbfa-d3758fc1c392}"/>
+    <RecordField colName="gfc07" fieldIdRef="12" fieldType="TABLE_COLUMN" name="gfc_file.gfc07" sqlTabName="gfc_file" sqlType="VARCHAR" table_alias_name="" uid="{d67246f2-0000-4000-a56a-0578eafcb2b2}"/>
+    <RecordField colName="gfc08" fieldIdRef="13" fieldType="TABLE_COLUMN" name="gfc_file.gfc08" sqlTabName="gfc_file" sqlType="VARCHAR" table_alias_name="" uid="{e66ef571-0000-4000-901b-8bb74fba7cee}"/>
+    <RecordField colName="gfc09" fieldIdRef="14" fieldType="TABLE_COLUMN" name="gfc_file.gfc09" sqlTabName="gfc_file" sqlType="DATE" table_alias_name="" uid="{8fac033a-0000-4000-86aa-c7caf444a280}"/>
+    <RecordField colName="gfc10" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gfc_file.gfc10" sqlTabName="gfc_file" sqlType="DATE" table_alias_name="" uid="{8ebaf70c-0000-4000-bf2c-017519ea8fe6}"/>
+    <RecordField colName="gfc11" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gfc_file.gfc11" sqlTabName="gfc_file" sqlType="DATE" table_alias_name="" uid="{b8efca0f-0000-4000-a127-2b2e8cdd06a8}"/>
+    <RecordField colName="gfc12" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gfc_file.gfc12" sqlTabName="gfc_file" sqlType="VARCHAR" table_alias_name="" uid="{045aec5c-0000-4000-bb89-d0aa264ae79f}"/>
+    <RecordField colName="gfc06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gfc_file.gfc06" sqlTabName="gfc_file" sqlType="VARCHAR" table_alias_name="" uid="{8fd33573-0000-4000-88b4-9d644c3ebac3}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2affecc3-0000-4000-b283-9a216fc4bbeb}" where="">
+    <RecordField colName="gfc01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gfc_file.gfc01" sqlTabName="gfc_file" sqlType="VARCHAR" table_alias_name="" uid="{ddf2d226-0000-4000-8d33-c4fc8cdbf49a}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f2020a62-0000-4000-986f-d76dac5b1547}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="107" name="p_dev_filelist" spacing="normal" text="p_dev_filelist">
+    <Folder gridHeight="24" gridWidth="106" lstrcomment="false" name="pc143" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Page01">
+        <VBox gridHeight="23" gridWidth="103" name="vb2" posX="1" posY="0">
+          <Grid gridHeight="2" gridWidth="103" lstrcomment="false" name="gr5" posX="0" posY="1">
+            <Label posX="1" posY="0" text="Develop No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" name="gfc_file.gfc01" noEntry="true" posX="14" posY="0" rowCount="" sqlTabName="gfc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="38" table_alias_name="" widget="Edit"/>
+          </Grid>
+          <Table gridHeight="12" gridWidth="103" lstrcomment="false" name="s_gfc" posX="0" posY="3" totalRows="10" wantFixedPageSize="true">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="3" lstrcomment="false" name="check" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="51" table_alias_name="" title="Check" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc02" columnCount="" comment="No Blank!" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc02" notNull="true" posX="3" posY="0" required="true" rowCount="" sqlTabName="gfc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="39" table_alias_name="" title="Line" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc03" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" items="" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc03" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="gfc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="40" table_alias_name="" title="Module" widget="ComboBox"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc04" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" items="4gl, 4fd" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc04" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="gfc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="41" table_alias_name="" title="Menu" widget="ComboBox">
+              <Item lstrtext="false" name="4gl" text="4gl"/>
+              <Item lstrtext="false" name="4fd" text="4fd"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc05" columnCount="" comment="No Blank!" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc05" notNull="true" posX="16" posY="0" required="true" rowCount="" sqlTabName="gfc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="42" table_alias_name="" title="Program Name" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc07" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" items="Lock, Unlock" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc07" posX="31" posY="0" rowCount="" sqlTabName="gfc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="43" table_alias_name="" title="Status" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Lock"/>
+              <Item lstrtext="false" name="1" text="Unlock"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc08" colorCondition="black" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc08" noEntry="true" posX="36" posY="0" rowCount="" sqlTabName="gfc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="44" table_alias_name="" title="Owner" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc09" colorCondition="black" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc09" noEntry="true" posX="44" posY="0" rowCount="" sqlTabName="gfc_file" sqlType="DATE" stepX="" stepY="" tabIndex="45" table_alias_name="" title="Lock Date" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc10" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc10" noEntry="true" posX="52" posY="0" rowCount="" sqlTabName="gfc_file" sqlType="DATE" stepX="" stepY="" tabIndex="46" table_alias_name="" title="Last Download" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc11" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc11" noEntry="true" posX="60" posY="0" rowCount="" sqlTabName="gfc_file" sqlType="DATE" stepX="" stepY="" tabIndex="47" table_alias_name="" title="Last Upload" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc12" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc12" noEntry="true" posX="68" posY="0" rowCount="" sqlTabName="gfc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="49" table_alias_name="" title="Download Location" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfc06" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="gfc_file.gfc06" posX="80" posY="0" rowCount="" sqlTabName="gfc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="48" table_alias_name="" title="Memo" widget="Edit"/>
+          </Table>
+          <Group gridHeight="5" gridWidth="103" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="15" text="memo">
+            <Grid gridHeight="3" gridWidth="67" lstrcomment="false" name="gr556" posX="1" posY="1">
+              <Label gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" name="dummy01" posX="3" posY="0" style="fixedFont" text="* Download or upload file will use &quot;C:\tiptop\4gl&quot; or &quot;C:\tiptop\4fd&quot; at client, be sure this folder is exist."/>
+              <Label gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" name="dummy02" posX="3" posY="1" style="fixedFont" text="* if menu select &quot;4gl&quot;, auto booking &quot;4ad&quot;,&quot;4tm&quot; file and correlate date automatically."/>
+              <Label gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" name="dummy03" posX="3" posY="2" style="fixedFont" text="* if menu select &quot;4fd&quot;, auto booking &quot;per&quot;,&quot;sdd&quot; file and correlate date automatically."/>
+            </Grid>
+          </Group>
+          <Grid gridHeight="2" gridWidth="103" lstrcomment="false" name="gr557" posX="0" posY="20">
+            <Label posX="12" posY="0" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="50" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

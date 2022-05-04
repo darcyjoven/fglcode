@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f235363c-0000-4000-bc35-ff1cf4e79fcb}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pjk" order="" uid="{8c2793e0-0000-4000-a8a4-35a9f32edd38}" where="">
+    <RecordField colName="pjk02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pjk_file.pjk02" sqlTabName="pjk_file" sqlType="VARCHAR" table_alias_name="" uid="{c768152c-0000-4000-859c-fead15419084}"/>
+    <RecordField colName="pjk03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pjk_file.pjk03" sqlTabName="pjk_file" sqlType="VARCHAR" table_alias_name="tableAlias1" uid="{d4bb3e90-0000-4000-9204-3b10ff72b8f9}"/>
+    <RecordField colName="pjk11" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pjk_file.pjk11" sqlTabName="pjk_file" sqlType="VARCHAR" table_alias_name="" uid="{8aba3c33-0000-4000-8c76-af86b2348232}"/>
+    <RecordField colName="" fieldIdRef="6" name="pjk27_o" sqlTabName="" table_alias_name="" uid="{cda4f47d-0000-4000-a935-a601093869c1}"/>
+    <RecordField colName="" fieldIdRef="7" name="pjk27_n" sqlTabName="" table_alias_name="" uid="{7783f28e-0000-4000-9e3c-61133f5f2ad8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{402a78c5-0000-4000-993a-cc5767afa570}" where="">
+    <RecordField colName="pjk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pjk_file.pjk01" sqlTabName="pjk_file" sqlType="VARCHAR" table_alias_name="" uid="{a5287b3b-0000-4000-887e-7edcf26650f4}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="pjj02" sqlTabName="" table_alias_name="" uid="{51ac9245-0000-4000-9016-dd882df06664}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{86d610f5-0000-4000-96b9-2c86c0efde81}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{8366ff99-0000-4000-bad3-43a7302b69f5}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="115" lstrtext="false" name="apjp800" spacing="normal" text="apjp800">
+    <VBox gridHeight="19" gridWidth="103" name="vb9" posX="5" posY="0">
+      <Folder gridHeight="5" gridWidth="103" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Grid gridHeight="4" gridWidth="102" lstrcomment="false" name="gr1" posX="0" posY="0">
+            <Label posX="2" posY="1" text="Network No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjk01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom.png" lstrcomment="false" name="pjk_file.pjk01" notNull="true" posX="20" posY="1" required="true" rowCount="" sqlTabName="pjk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="2" posY="2" text="Description"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" lstrcomment="false" name="pjj02" noEntry="true" posX="20" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="10" gridWidth="103" name="tb3" posX="0" posY="6" totalRows="8">
+        <ButtonEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjk02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom.png" lstrcomment="false" lstrtitle="false" name="pjk_file.pjk02" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="pjk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Active No." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjk03" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pjk_file.pjk03" noEntry="true" posX="14" posY="0" rowCount="" sqlTabName="pjk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="tableAlias1" title="Active Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjk11" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="pjk_file.pjk11" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="pjk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="WBS No." widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="17" items="Create, Approved, Frozen, Finished, Closing" lstrcomment="false" lstrtitle="false" name="pjk27_o" noEntry="true" notNull="true" posX="49" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Current Status" widget="ComboBox">
+          <Item lstrtext="false" name="0" text="Create"/>
+          <Item lstrtext="false" name="1" text="Approved"/>
+          <Item lstrtext="false" name="2" text="Frozen"/>
+          <Item lstrtext="false" name="3" text="Finished"/>
+          <Item lstrtext="false" name="4" text="Closing"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" gridHeight="1" gridWidth="28" items="Create, Approved, Frozen, Finished, Closing" lstrcomment="false" lstrtitle="false" name="pjk27_n" notNull="true" posX="66" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Planned Adjustment Status" widget="ComboBox">
+          <Item lstrtext="false" name="0" text="Create"/>
+          <Item lstrtext="false" name="1" text="Approved"/>
+          <Item lstrtext="false" name="2" text="Frozen"/>
+          <Item lstrtext="false" name="3" text="Finished"/>
+          <Item lstrtext="false" name="4" text="Closing"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="2" gridWidth="103" lstrcomment="false" name="gr11" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl3" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

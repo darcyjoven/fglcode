@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6ed29121-0000-4000-b68c-9e8b75d52ff0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_posdi" order="" uid="{4173329f-0000-4000-bd00-30dfadd89a27}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="item" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3f2fb844-0000-4000-8425-52393d3542b9}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="paykind" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1e795439-0000-4000-8794-91302565ba1f}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="dtlno" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{23b7eae4-0000-4000-be90-70954218274d}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="paysernum" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{08fc0567-0000-4000-9c18-095acd2e8d53}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="billdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{e5f0e81f-0000-4000-91d0-3e7adbaf948c}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cobank" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{184e8526-0000-4000-8815-c1e3dbd3eac1}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="pay" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{ab2b7ed2-0000-4000-aaef-0c5e1b0b84d4}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="extra" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{3faf1e34-0000-4000-9a0f-2ff244f49d65}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="changed" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{74936599-0000-4000-b7e3-2553da5eb17d}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="pcnf12" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{ce770b0c-0000-4000-9e86-93c5bd3d64b5}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="poutype" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9f9f6ad2-0000-4000-a5ba-df07aac5eb5c}"/>
+    <RecordField colName="" fieldIdRef="4" name="poundage" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{700a91ed-0000-4000-a0ff-393aba533ea4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6581489a-0000-4000-9f7a-8bc6e16bf542}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{2ba8fcd2-0000-4000-ae03-794871cfcfa0}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="172" lstrtext="false" name="artt411_1" spacing="normal" text="artt411_1">
+    <VBox gridHeight="13" gridWidth="168" name="vb5" posX="4" posY="1" splitter="">
+      <Folder gridHeight="9" gridWidth="168" lstrcomment="false" name="pc3" posX="0" posY="1">
+        <Page name="Page4" text="Basic Data">
+          <Table gridHeight="7" gridWidth="166" name="s_posdi" posX="0" posY="0" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="item" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="16" table_alias_name="" title="Line No." widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Cash, UnionPay cards, Cheque, Coupon, Union Card, Stored-value Cards, Advance, Manual Transfers" lstrcomment="false" lstrtitle="false" name="paykind" notNull="true" posX="5" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="17" table_alias_name="" title="Contributions Type" widget="ComboBox">
+              <Item lstrtext="false" name="01" text="Cash"/>
+              <Item lstrtext="false" name="02" text="UnionPay cards"/>
+              <Item lstrtext="false" name="03" text="Cheque"/>
+              <Item lstrtext="false" name="04" text="Coupon"/>
+              <Item lstrtext="false" name="05" text="Union Card"/>
+              <Item lstrtext="false" name="06" text="Stored-value Cards"/>
+              <Item lstrtext="false" name="07" text="Advance"/>
+              <Item lstrtext="false" name="08" text="Manual Transfers"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="dtlno" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="18" table_alias_name="" title="Amount" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="paysernum" posX="35" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="19" table_alias_name="" title="Number/votes/Account" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="billdate" posX="55" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="20" table_alias_name="" title="Charges Rate" widget="DateEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="cobank" posX="65" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="21" table_alias_name="" title="Charges" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pay" posX="79" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="22" table_alias_name="" title="Cheque Denomination" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="extra" posX="99" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="23" table_alias_name="" title="Invoice Date" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="changed" posX="111" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="24" table_alias_name="" title="Units" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pcnf12" posX="127" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="25" table_alias_name="" title="Card Voucher Category No. " widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" items="20, 0.005, 0.006, 0.025, 0.032" lstrcomment="false" lstrtitle="false" name="poutype" posX="137" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="26" table_alias_name="" title="Coupon Denominations" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="20"/>
+              <Item lstrtext="false" name="2" text="0.005"/>
+              <Item lstrtext="false" name="3" text="0.006"/>
+              <Item lstrtext="false" name="4" text="0.025"/>
+              <Item lstrtext="false" name="5" text="0.032"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="poundage" noEntry="true" posX="143" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="28" table_alias_name="" title="poundage" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="168" lstrcomment="false" name="gr5" posX="0" posY="10">
+        <HLine gridWidth="8" name="hl6" posX="1" posY="0"/>
+        <Label posX="9" posY="0" text="Details"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="27" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="6" name="hl7" posX="24" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

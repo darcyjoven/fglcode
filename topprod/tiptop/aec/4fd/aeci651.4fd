@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{976cec7c-0000-4000-bfdd-d30ecd75db4b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sge" order="" uid="{f7b4c488-0000-4000-b5a6-bcd7d38f4873}" where="">
+    <RecordField colName="sge02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sge_file.sge02" sqlTabName="sge_file" sqlType="VARCHAR" table_alias_name="" uid="{631628a2-0000-4000-919e-04fc5a329e46}"/>
+    <RecordField colName="" fieldIdRef="3" name="gen02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{887f1818-0000-4000-b329-9e3ee63979de}"/>
+    <RecordField colName="sge03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sge_file.sge03" sqlTabName="sge_file" sqlType="DECIMAL" table_alias_name="" uid="{fc3241f3-0000-4000-b55c-2f7457967363}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{20b90779-0000-4000-b008-14eb6a79b635}" where="">
+    <RecordField colName="sge01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sge_file.sge01" sqlTabName="sge_file" sqlType="DATE" table_alias_name="" uid="{8e0576ac-0000-4000-b8a2-9fd339414c95}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{79f450c9-0000-4000-9c52-8fa7b67ad2c9}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9fff08ca-0000-4000-a7ec-ab1234d8ebca}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="51" name="aeci651" spacing="normal" text="aeci651">
+    <VBox gridHeight="22" gridWidth="48" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="48" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="34" lstrcomment="false" name="gr1670" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" name="dummy01" posX="2" posY="0"/>
+            <Label posX="1" posY="1" text="Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sge01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="sge_file.sge01" notNull="true" posX="18" posY="1" required="true" rowCount="" sqlTabName="sge_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+            <Label gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" name="dummy02" posX="2" posY="2"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="48" lstrcomment="false" name="s_sge" posX="0" posY="7" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sge02" columnCount="" comment="&lt;^P&gt;Qry Data" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="sge_file.sge02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="sge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Employee#" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gen02" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sge03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="sge_file.sge03" notNull="true" posX="21" posY="0" required="true" rowCount="" sqlTabName="sge_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Due Input Hours(Hour)" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="48" lstrcomment="false" name="gr1671" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl471" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl472" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

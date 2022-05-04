@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{5b049f1c-0000-4000-be04-950f962114a0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gax" order="" uid="{4d7ebeaa-0000-4000-8601-7b1011a9f0d3}" where="">
+    <RecordField colName="gax02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gax_file.gax02" sqlTabName="gax_file" sqlType="VARCHAR" table_alias_name="" uid="{dd8bcc71-0000-4000-bf7a-9f688e591ca4}"/>
+    <RecordField colName="gae04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gae_file.gae04" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{5af03f1a-0000-4000-bd18-6e85c3fa44f5}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{904162db-0000-4000-9d87-f68a10b54749}" where="">
+    <RecordField colName="gbp01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gbp_file.gbp01" sqlTabName="gbp_file" sqlType="VARCHAR" table_alias_name="" uid="{0acf79f5-0000-4000-8d44-361c00328bc6}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="32" name="p_help_per" spacing="normal" text="p_help_per">
+    <VBox gridHeight="16" gridWidth="29" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="29" lstrcomment="false" name="gr3213" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Program ID"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbp01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gbp_file.gbp01" posX="13" posY="0" rowCount="" sqlTabName="gbp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="29" lstrcomment="false" name="s_gax" posX="0" posY="3" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gax02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="gax_file.gax02" posX="0" posY="0" rowCount="" sqlTabName="gax_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="PER ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="gae_file.gae04" posX="9" posY="0" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="PER Description" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

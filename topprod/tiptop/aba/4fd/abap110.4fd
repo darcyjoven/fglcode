@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b4ffbf85-8fd0-4992-9446-cef0e9413d35}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3eacfa4a-b4ad-4c64-aac8-68beb0193037}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="imgb01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{391ba2d4-3096-47e5-aec7-19b02a52bc38}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="imgb02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c31292e5-5828-4153-9c04-2cbfd72259b1}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="imgb03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7f2facec-436b-45dc-863b-acb3deaf1177}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="imgb04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{406d0327-5687-4238-872c-f5866474f963}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="g_yy" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{2ee8688a-dab1-4f18-8447-4289e35da89c}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="g_mm" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{eed27168-5eaa-4129-80e7-6c22f4f7f430}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="show" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ebb67c6e-7eef-4022-a6af-657db5a0ad2f}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{055bc050-350d-4310-ac15-348303e2ba96}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="91" name="abap110" spacing="normal" text="abap610">
+    <VBox gridHeight="20" gridWidth="89" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="16" gridWidth="89" lstrcomment="false" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="88" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Item No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="imgb01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="45" posY="1" text="Warehouse #"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="imgb02" posX="66" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Location #"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="imgb03" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="45" posY="2" text="Lot#"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="imgb04" posX="66" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="5" gridWidth="88" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="INPUT">
+          <Label posX="1" posY="1" text="Year of Last Period"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="g_yy" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Last Per/YY"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="g_mm" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" name="dummy01" posX="34" posY="2" text="(Correct IMK_FILE End of Period Inventory)"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtext="false" lstrtitle="false" name="show" notNull="true" posX="2" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Show that carries out course information" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="88" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="11">
+          <Label gridHeight="1" gridWidth="74" lstrcomment="false" lstrtext="false" name="dummy02" posX="2" posY="1" text="Task Objective: Update img and ima Inventory by Doc Date"/>
+          <Label gridHeight="1" gridWidth="74" lstrcomment="false" lstrtext="false" name="dummy03" posX="2" posY="2" text="Conf &apos;imk_file&apos; Last End of Period Inv.Qty Correct bef run this task"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="89" lstrcomment="false" name="Grid2" posX="0" posY="17">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Background job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAwADUANQBiAGMAMAA1ADAALQAzADUAMABkAC0ANAAzADEAMAAtAGEAYwAxADUALQAzADQAOAAzADAAMwBlADIAYgBhADkANgB9QBQAAAAAAABAZkAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADMAMQAyADkAMgBlADUALQA1ADgAMgA4AC0ANAAxADUAMwAtADkAYwAwADQALQAyAGMAYgBmAGQANwAyADIANQA5AGIAMQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADkAMQBiAGEAMgBkADQALQAzADAAOQA2AC0ANAA3AGUANQAtAGEAZQBjADcALQAxADkAYgAwADIAYQA1ADIAYgBjADMAOAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADAANgBkADAAMwAyADcALQA1ADYAOAA3AC0ANAAyADMAOAAtADgANwAyAGMALQBmADUAOAA2ADYANAA3ADQAZgA5ADYAMwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGUAZAAyADcAMQA2ADgALQA1AGUAYQBhAC0ANAAxADIAOQAtADgAMABlADcALQA2AGMAMgAyAGYANABmADcAZgA0ADMAMAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGIAYgA2ADcAYwA2AGUALQA3AGUAZQBmAC0ANAAwADIAMgAtAGEANgBhAGYALQA2ADUANwBkAGIANQBhADAAYQBkADIAZgB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGUAYQBjAGYAYQA0AGEALQBiADQAYQBkAC0ANABjADYANAAtAGEAYQBjADgALQA2ADgAYgBlAGIAMAAxADkAMwAwADMANwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGYAMgBmAGEAYwBlAGMALQA0ADMANgBiAC0ANAA1AGQAYwAtADgANgAzAGIALQBhAGMAYgAzAGQAZQBhAGYAMQAxADcANwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGUAZQA4ADYAOAA4AGEALQBkAGEAYgAxAC0ANABmADEAOAAtADgANAA0ADcALQA0ADIAOAA5AGUAMwA1AGQAYQA4ADkAYwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

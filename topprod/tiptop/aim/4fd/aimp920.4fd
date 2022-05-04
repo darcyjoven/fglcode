@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a2dd4a2d-0000-4000-a704-ddfb00f27b53}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{178b960f-0000-4000-878b-a5ef0cc6214d}" where="">
+    <RecordField colName="pia01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pia_file.pia01" sqlTabName="pia_file" sqlType="VARCHAR" table_alias_name="" uid="{8f0a03fc-0000-4000-a9c1-f66225ce248a}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f02ffb95-0000-4000-a0f5-b0ead40149ce}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{33a898f5-0000-4000-b832-c719bb821639}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="48" name="aimp920" spacing="normal" text="aimp920">
+    <VBox gridHeight="11" gridWidth="46" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="46" lstrcomment="false" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="45" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Label"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pia01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pia_file.pia01" posX="22" posY="1" rowCount="" sqlTabName="pia_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="45" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="Select">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" items="Quantity On Hand, WIP W/O" lstrcomment="false" lstrtitle="false" name="a" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+            <Item name="1" text="Quantity On Hand"/>
+            <Item name="2" text="WIP W/O"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="46" lstrcomment="false" name="Grid2" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Background job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

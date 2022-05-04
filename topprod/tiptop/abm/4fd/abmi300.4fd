@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e1c2bf18-0000-4000-9d4e-a4d486dac115}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bmi" order="" uid="{01b88e6c-0000-4000-b349-90e5d379cafa}" where="">
+    <RecordField colName="bmi01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bmi_file.bmi01" sqlTabName="bmi_file" sqlType="VARCHAR" table_alias_name="" uid="{861c7adf-0000-4000-8db2-bfb68aea2775}"/>
+    <RecordField colName="bmi02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bmi_file.bmi02" sqlTabName="bmi_file" sqlType="VARCHAR" table_alias_name="" uid="{27d06e31-0000-4000-9f57-054f509df44a}"/>
+    <RecordField colName="bmiacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bmi_file.bmiacti" sqlTabName="bmi_file" sqlType="VARCHAR" table_alias_name="" uid="{719a069d-0000-4000-96b8-46f3ea3caf5d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{27d4815b-0000-4000-9b08-0e0eb4989cd2}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{30b2e11d-0000-4000-942d-ac972bbbf9ba}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="39" name="abmi300" spacing="normal" text="abmi300">
+    <VBox gridHeight="18" gridWidth="36" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="36" lstrcomment="false" name="pc111" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="34" lstrcomment="false" name="s_bmi" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmi01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="bmi_file.bmi01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="bmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Model" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmi02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="bmi_file.bmi02" posX="5" posY="0" rowCount="" sqlTabName="bmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Model Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmiacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="bmi_file.bmiacti" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="bmi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="36" lstrcomment="false" name="gr730" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl202" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl203" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{75040572-0000-4000-b5fe-dd3bd8f6c685}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_hisd" order="" uid="{4451499b-0000-4000-9ea4-fc28bead776a}" where="">
+    <RecordField colName="hisd02" fieldIdRef="13" fieldType="TABLE_COLUMN" name="hisd_file.hisd02" sqlTabName="hisd_file" sqlType="VARCHAR" table_alias_name="" uid="{e5b1dd8c-0000-4000-9949-9cf183b548ad}"/>
+    <RecordField colName="" fieldIdRef="14" name="hisf02a" sqlTabName="" table_alias_name="" uid="{216a9fe8-0000-4000-9e38-2c2a42b272a4}"/>
+    <RecordField colName="hisd03" fieldIdRef="15" fieldType="TABLE_COLUMN" name="hisd_file.hisd03" sqlTabName="hisd_file" sqlType="VARCHAR" table_alias_name="" uid="{b5692012-0000-4000-a06b-c30876880fc6}"/>
+    <RecordField colName="" fieldIdRef="2" name="hisf02b" sqlTabName="" table_alias_name="" uid="{bd95a0a7-0000-4000-9087-72cd72439ccf}"/>
+    <RecordField colName="hisd04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="hisd_file.hisd04" sqlTabName="hisd_file" sqlType="VARCHAR" table_alias_name="" uid="{1b651601-0000-4000-97e2-e5a9e71bcbee}"/>
+    <RecordField colName="hisd05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="hisd_file.hisd05" sqlTabName="hisd_file" sqlType="VARCHAR" table_alias_name="" uid="{de3b14b6-0000-4000-9f8b-57296282a5e8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ab0bfc17-0000-4000-8b31-1119cb0d5e42}" where="">
+    <RecordField colName="hisc01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="hisc_file.hisc01" sqlTabName="hisc_file" sqlType="VARCHAR" table_alias_name="" uid="{a49ec0b1-0000-4000-ba48-0ef0e79172e8}"/>
+    <RecordField colName="hisc02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="hisc_file.hisc02" sqlTabName="hisc_file" sqlType="VARCHAR" table_alias_name="" uid="{538f1acf-0000-4000-89e5-cdb6d7058ed7}"/>
+    <RecordField colName="hisc03" fieldIdRef="9" fieldType="TABLE_COLUMN" name="hisc_file.hisc03" sqlTabName="hisc_file" sqlType="VARCHAR" table_alias_name="" uid="{0e1f68f6-0000-4000-8ecd-d4ef979acac3}"/>
+    <RecordField colName="hisf02" fieldIdRef="10" fieldType="TABLE_COLUMN" name="hisf_file.hisf02" sqlTabName="hisf_file" sqlType="VARCHAR" table_alias_name="" uid="{604ab668-0000-4000-9d79-4f7f7fa53341}"/>
+    <RecordField colName="hisc04" fieldIdRef="11" fieldType="TABLE_COLUMN" name="hisc_file.hisc04" sqlTabName="hisc_file" sqlType="VARCHAR" table_alias_name="" uid="{73e6c9a2-0000-4000-8616-0493c6ba87eb}"/>
+    <RecordField colName="hisc05" fieldIdRef="12" fieldType="TABLE_COLUMN" name="hisc_file.hisc05" sqlTabName="hisc_file" sqlType="VARCHAR" table_alias_name="" uid="{789616de-0000-4000-9575-d40afa932a0e}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{8b79b291-0000-4000-9127-0060881a67cc}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{1fb377ee-0000-4000-be5c-d68d3b7231c9}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{6617df61-0000-4000-9c03-18f9b5df48cf}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="131" name="p_flowset" spacing="normal" text="p_flowset">
+    <VBox gridHeight="19" gridWidth="128" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="3" gridWidth="128" lstrcomment="false" name="gr8" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Flow Name"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisc01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="hisc_file.hisc01" notNull="true" posX="14" posY="0" required="true" rowCount="" sqlTabName="hisc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="37" posY="0" text="Flow Crip"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisc02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="78" lstrcomment="false" lstrtitle="false" name="hisc_file.hisc02" posX="49" posY="0" rowCount="" sqlTabName="hisc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="1" text="Basic Object"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisc03" columnCount="" comment="Input the basic table. &lt;^P&gt;" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" image="zoom" lstrcomment="false" lstrtitle="false" name="hisc_file.hisc03" notNull="true" posX="14" posY="1" required="true" rowCount="" sqlTabName="hisc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="37" posY="1" text="Object Name"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisf02" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="78" lstrcomment="false" lstrtitle="false" name="hisf_file.hisf02" noEntry="true" posX="49" posY="1" rowCount="" sqlTabName="hisf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Cond Field"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisc04" columnCount="" comment="Input the  condition field.&lt;^P&gt;" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" image="zoom" lstrcomment="false" lstrtitle="false" name="hisc_file.hisc04" posX="14" posY="2" rowCount="" sqlTabName="hisc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="37" posY="2" text="Conditions"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisc05" columnCount="" comment="Input the  conditions .&lt;^P&gt;" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="78" image="zoom" lstrcomment="false" lstrtitle="false" name="hisc_file.hisc05" posX="49" posY="2" rowCount="" sqlTabName="hisc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="128" lstrcomment="false" name="tb4" posX="0" posY="4" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisd02" columnCount="" comment="Input the table name. &lt;^P&gt;" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="hisd_file.hisd02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="hisd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Object No" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="hisf02a" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Object Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisd03" columnCount="" comment="Input the relate table name. &lt;^P&gt;" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom" lstrcomment="false" lstrtitle="false" name="hisd_file.hisd03" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="hisd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Relate Object" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="hisf02b" noEntry="true" posX="37" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Reltab Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisd04" columnCount="" comment="Input the relations. &lt;^P&gt;" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" image="zoom" lstrcomment="false" lstrtitle="false" name="hisd_file.hisd04" notNull="true" posX="49" posY="0" required="true" rowCount="" sqlTabName="hisd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Relation" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="hisd05" columnCount="" comment="Input the conditions. &lt;^P&gt;" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="hisd_file.hisd05" posX="58" posY="0" rowCount="" sqlTabName="hisd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Conditions" widget="ButtonEdit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="128" lstrcomment="false" name="gr9" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl3" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="idx" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="28" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="3" name="hl4" posX="37" posY="0"/>
+        <Label posX="42" posY="0" text="Details"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="51" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl5" posX="59" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

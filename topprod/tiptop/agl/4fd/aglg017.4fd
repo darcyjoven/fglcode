@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b10efd4d-0000-4000-b468-4713802ed5f3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2cc52077-0000-4000-bb06-a668d4a2ff3f}" where="">
+    <RecordField colName="axa01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="axa_file.axa01" sqlTabName="axa_file" sqlType="VARCHAR" table_alias_name="" uid="{74d79dfe-0000-4000-8356-16e47fda5b91}"/>
+    <RecordField colName="axa02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="axa_file.axa02" sqlTabName="axa_file" sqlType="VARCHAR" table_alias_name="" uid="{0042668d-0000-4000-b975-e8ebceae947b}"/>
+    <RecordField colName="axa03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="axa_file.axa03" sqlTabName="axa_file" sqlType="VARCHAR" table_alias_name="" uid="{463a912d-0000-4000-a9a2-2c3207aa122c}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{65406dc3-0000-4000-b955-c5dcf0051ed2}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="axa06" sqlTabName="" table_alias_name="" uid="{4bf17b90-0000-4000-ac35-49ad48a67006}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="em" sqlTabName="" table_alias_name="" uid="{e08a5fb0-0000-4000-a00d-25a9492bd8b3}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="q1" sqlTabName="" table_alias_name="" uid="{28f8f79c-0000-4000-90e8-5dc12cd4a77e}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="h1" sqlTabName="" table_alias_name="" uid="{72fe57a9-0000-4000-9302-c37aa4a51a2d}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="t" sqlTabName="" table_alias_name="" uid="{fbf0b586-0000-4000-9baf-0f16623c050f}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="49" name="aglr017" spacing="normal" text="aglr017">
+    <Grid gridHeight="13" gridWidth="45" lstrcomment="false" name="gr2472" posX="0" posY="1">
+      <Group gridHeight="12" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+        <Label posX="1" posY="1" text="Group No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axa01" columnCount="" comment="&lt;^P&gt;Query Group Data" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="axa_file.axa01" notNull="true" posX="23" posY="1" required="true" rowCount="" sqlTabName="axa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Parent Company"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axa02" columnCount="" comment="&lt;^P&gt;Query " fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="axa_file.axa02" notNull="true" posX="23" posY="2" required="true" rowCount="" sqlTabName="axa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="3" text="Book No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axa03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="axa_file.axa03" noEntry="true" notNull="true" posX="23" posY="3" required="true" rowCount="" sqlTabName="axa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="4" text="Inward Finscal Year"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="yy" notNull="true" posX="23" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="5" text="axa06"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Month, Quarter, Half a Year, Year" lstrcomment="false" name="axa06" notNull="true" posX="23" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ComboBox">
+          <Item name="1" text="Month"/>
+          <Item lstrtext="false" name="2" text="Quarter"/>
+          <Item lstrtext="false" name="3" text="Half a Year"/>
+          <Item lstrtext="false" name="4" text="Year"/>
+        </ComboBox>
+        <Label posX="1" posY="6" text="Ending Period"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="em" notNull="true" posX="23" posY="6" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="7" text="Quarter"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Quarter 1, Quarter 2, Quarter 3, Quarter 4" lstrcomment="false" name="q1" notNull="true" posX="23" posY="7" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Quarter 1"/>
+          <Item lstrtext="false" name="2" text="Quarter 2"/>
+          <Item lstrtext="false" name="3" text="Quarter 3"/>
+          <Item lstrtext="false" name="4" text="Quarter 4"/>
+        </ComboBox>
+        <Label posX="1" posY="8" text="Half a Year"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="First Half Year, Second Half Year" lstrcomment="false" name="h1" notNull="true" posX="23" posY="8" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="First Half Year"/>
+          <Item lstrtext="false" name="2" text="Second Half Year"/>
+        </ComboBox>
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="2" gridWidth="38" items="A/C Balance Check List After Exchange Rate, Dimension A/C Balance Check List After Exchange Rate" lstrcomment="false" lstrtitle="false" name="t" posX="1" posY="9" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="RadioGroup">
+          <Item lstrtext="false" name="1" text="A/C Balance Check List After Exchange Rate"/>
+          <Item lstrtext="false" name="2" text="Dimension A/C Balance Check List After Exchange Rate"/>
+        </RadioGroup>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

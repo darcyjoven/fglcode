@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{d3a13989-78af-4c38-add6-a65bc244b276}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2fe9b5a4-5fa2-47a3-9790-5f8d5d4e9338}" where="">
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{ca7b5686-f98b-44d2-af0d-f823eeb65feb}"/>
+    <RecordField colName="npp00" fieldIdRef="1" fieldType="TABLE_COLUMN" name="npp_file.npp00" sqlTabName="npp_file" sqlType="SMALLINT" table_alias_name="" uid="{fa812879-3445-4281-acec-4dab99066bd7}"/>
+    <RecordField colName="npp01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="npp_file.npp01" sqlTabName="npp_file" sqlType="VARCHAR" table_alias_name="" uid="{6f7157ca-9fb1-4309-ba9b-675f84d2ea11}"/>
+    <RecordField colName="npp02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="npp_file.npp02" sqlTabName="npp_file" sqlType="DATE" table_alias_name="" uid="{c9639ad9-474c-4dbc-a026-8082c875fe4e}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="p_plant" sqlTabName="" table_alias_name="" uid="{e5bcd438-de35-47ad-9a6f-d2c2e81f41b3}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="p_bookno" sqlTabName="" table_alias_name="" uid="{2f30c83e-6aab-45e9-ab69-bf0940693427}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="gl_no" sqlTabName="" table_alias_name="" uid="{e385b16e-bcfd-4d76-82c2-3511b77dd2a8}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="gl_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{c3f47c9c-e7ea-4e6c-8ab7-1d0fdb6f29e2}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="gl_tran" sqlTabName="" table_alias_name="" uid="{203d6a9b-f37a-4deb-b62d-c9a4168a4b43}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="54" name="aglp014" spacing="normal" text="aglp014">
+    <Folder gridHeight="19" gridWidth="52" lstrcomment="false" name="pc479" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="18" gridWidth="50" name="vb17" posX="0" posY="0" splitter="">
+          <Grid gridHeight="3" gridWidth="50" lstrcomment="false" name="gr2496" posX="0" posY="1">
+            <CheckBox colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="47" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+          <Grid gridHeight="13" gridWidth="50" lstrcomment="false" name="gr2495" posX="0" posY="4">
+            <Group gridHeight="5" gridWidth="49" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE:System(CD)">
+              <Label gridHeight="1" gridWidth="8" posX="1" posY="1" text="Category"/>
+              <ComboBox colName="npp00" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Long-term Investments Recognized" lstrcomment="false" lstrtitle="false" name="npp_file.npp00" noEntry="true" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="npp_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="" name="1" text="Long-term Investments Recognized"/>
+              </ComboBox>
+              <Label gridHeight="1" gridWidth="12" posX="1" posY="2" text="Document No."/>
+              <Edit colName="npp01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npp_file.npp01" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="npp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="13" posX="1" posY="3" text="Transact Date"/>
+              <DateEdit colName="npp02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npp_file.npp02" posX="22" posY="3" rowCount="" sqlTabName="npp_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+            </Group>
+            <Group gridHeight="8" gridWidth="48" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="Input">
+              <Label gridHeight="1" gridWidth="21" posX="1" posY="1" text="Gen. Ledger Plant No."/>
+              <ButtonEdit action="controlp" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" image="zoom.png" justify="" name="p_plant" notNull="true" posX="24" posY="1" required="true" rowCount="" sizePolicy="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+              <Label gridHeight="1" gridWidth="18" posX="1" posY="2" text="General Ledger No."/>
+              <ButtonEdit action="controlp" colName="" columnCount="" comment="&lt;^P&gt; Qry Book No" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" image="zoom.png" lstrcomment="false" lstrtitle="false" name="p_bookno" notNull="true" posX="24" posY="2" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+              <Label gridHeight="1" gridWidth="21" posX="1" posY="3" text="Gen. Ledger Voc. Type"/>
+              <ButtonEdit action="controlp" colName="" columnCount="" comment="&lt;^P&gt;Qry Documents " fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gl_no" notNull="true" posX="24" posY="3" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+              <Label gridHeight="1" gridWidth="21" posX="1" posY="4" text="Gen. Ledger Voc. Date"/>
+              <DateEdit colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gl_date" notNull="true" posX="24" posY="4" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="DateEdit"/>
+              <CheckBox colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="43" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gl_tran" notNull="true" posX="1" posY="5" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Carry Memo" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjADkANgAzADkAYQBkADkALQA0ADcANABjAC0ANABkAGIAYwAtAGEAMAAyADYALQA4ADAAOAAyAGMAOAA3ADUAZgBlADQAZQB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGEAOAAxADIAOAA3ADkALQAzADQANAA1AC0ANAAyADgAMQAtAGEAYwBlAGMALQA0AGQAYQBiADkAOQAwADYANgBiAGQANwB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewBlADUAYgBjAGQANAAzADgALQBkAGUAMwA1AC0ANAA3AGEAZAAtADkAYQA2AGYALQBkADIAYwAyAGUAOAAxAGYANAAxAGIAMwB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGEANwBiADUANgA4ADYALQBmADkAOABiAC0ANAA0AGQAMgAtAGEAZgAwAGQALQBmADgAMgAzAGUAZQBiADYANQBmAGUAYgB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADAAMwBkADYAYQA5AGIALQBmADMANwBhAC0ANABkAGUAYgAtAGIANgAyAGQALQBjADkAYQA0ADEANgA4AGEANABiADQAMwB9QBQAAAAAAABAbMAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGYANwAxADUANwBjAGEALQA5AGYAYgAxAC0ANAAzADAAOQAtAGIAYQA5AGIALQA2ADcANQBmADgANABkADIAZQBhADEAMQB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADMAZgA0ADcAYwA5AGMALQBlADcAZQBhAC0ANABlADYAYwAtADgAYQBiADcALQAxAGQAMABmAGQAYgA2AGYAMgA5AGUAMgB9QBQAAAAAAABAaaAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGYAZQA5AGIANQBhADQALQA1AGYAYQAyAC0ANAA3AGEAMwAtADkANwA5ADAALQA1AGYAOABkADUAZAA0AGUAOQAzADMAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGYAMwAwAGMAOAAzAGUALQA2AGEAYQBiAC0ANAA1AGUAOQAtAGEAYgA2ADkALQBiAGYAMAA5ADQAMAA2ADkAMwA0ADIANwB9QBQAAAAAAABAY2AAAAAAAAAAAAAAAAAAAQAAAEwAewBlADMAOAA1AGIAMQA2AGUALQBiAGMAZgBkAC0ANABkADcANgAtADgAMgBjADIALQAzADUAMQAxAGIANwA3AGQAZAAyAGEAOAB9QBQAAAAAAABAZoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

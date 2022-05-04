@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ec16ea3e-0000-4000-aa78-78e6d3e8648e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{47b7211c-0000-4000-b6be-32b34d8e9ec5}" where="">
+    <RecordField colName="sma841" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sma_file.sma841" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{ef660dd7-0000-4000-bb37-23887477bf25}"/>
+    <RecordField colName="sma842" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sma_file.sma842" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{c5599ce1-0000-4000-9ec7-8d9980aacf5b}"/>
+    <RecordField colName="sma843" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sma_file.sma843" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{356182aa-0000-4000-81fd-6e11485fc1a8}"/>
+    <RecordField colName="sma113" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sma_file.sma113" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{9d59121d-0000-4000-811d-8e77c0f53289}"/>
+    <RecordField colName="sma844" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sma_file.sma844" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{34695323-0000-4000-b814-6f197600715d}"/>
+    <RecordField colName="sma112" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sma_file.sma112" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{f3fafd1e-0000-4000-bb87-64f2154f9811}"/>
+    <RecordField colName="sma114" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sma_file.sma114" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{7ec87d6f-0000-4000-9dbf-8193e2c88745}"/>
+    <RecordField colName="sma83" fieldIdRef="8" fieldType="TABLE_COLUMN" name="sma_file.sma83" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{898fe9f1-0000-4000-aac0-9c0b419bd2f4}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="90" name="asms2501" spacing="normal" text="asms2501">
+    <VBox gridHeight="23" gridWidth="87" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="21" gridWidth="87" lstrcomment="false" name="pc205" posX="0" posY="1">
+        <Page lstrtext="false" name="page03" text="Pricing">
+          <Grid gridHeight="19" gridWidth="86" lstrcomment="false" name="gr923" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="85" lstrcomment="false" lstrtext="false" name="group21" posX="1" posY="0" text="P/O Unit Price Method">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma841" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="61" items="Item/Supplier Unit Price,Latest Item Unit Price, Item/Supplier Unit Price,Latest Market Price, Latest Item Unit Price, Latest Market Price, Price from Appraisal Table, Latest Item Unit Price, Price from Appraisal Table, Item/Supplier Unit Price, Price from Appraisal Table" lstrcomment="false" lstrtitle="false" name="sma_file.sma841" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Item/Supplier Unit Price,Latest Item Unit Price"/>
+                <Item lstrtext="" name="2" text="Item/Supplier Unit Price,Latest Market Price"/>
+                <Item lstrtext="" name="3" text="Latest Item Unit Price"/>
+                <Item lstrtext="" name="4" text="Latest Market Price"/>
+                <Item lstrtext="" name="5" text="Price from Appraisal Table, Latest Item Unit Price"/>
+                <Item lstrtext="" name="6" text="Price from Appraisal Table, Item/Supplier Unit Price"/>
+                <Item lstrtext="" name="7" text="Price from Appraisal Table"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="40" lstrcomment="false" lstrtext="false" name="group22" posX="1" posY="5" text="Updt Item Master Last U/P when Rls P/O">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma842" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="37" items="Update    , Update when Lower, No Update" lstrcomment="false" lstrtitle="false" name="sma_file.sma842" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Update    "/>
+                <Item lstrtext="" name="2" text="Update when Lower"/>
+                <Item lstrtext="" name="3" text="No Update"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="45" lstrcomment="false" lstrtext="false" name="group25" posX="41" posY="5" text="Update Item/Supplier Latest U/P Method When Issue PO">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma843" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" items="Update    , Update when Lower, No Update" lstrcomment="false" lstrtitle="false" name="sma_file.sma843" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Update    "/>
+                <Item lstrtext="" name="2" text="Update when Lower"/>
+                <Item lstrtext="" name="3" text="No Update"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="40" lstrcomment="false" lstrtext="false" name="group23" posX="1" posY="9" text="Transferred Blanket PO U/P Set">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma113" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="37" items="Use Blanket PO U/P, Pur.U/P , Take Lower" lstrcomment="false" lstrtitle="false" name="sma_file.sma113" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Use Blanket PO U/P"/>
+                <Item lstrtext="" name="2" text="Pur.U/P "/>
+                <Item lstrtext="" name="3" text="Take Lower"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="45" lstrcomment="false" lstrtext="false" name="group26" posX="41" posY="9" text="Updt Item Master Market Price when Release P/O">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma844" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" items="Update    , Update when Lower, No Update" lstrcomment="false" lstrtitle="false" name="sma_file.sma844" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Update    "/>
+                <Item lstrtext="" name="2" text="Update when Lower"/>
+                <Item lstrtext="" name="3" text="No Update"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="5" gridWidth="40" lstrcomment="false" lstrtext="false" name="group24" posX="1" posY="13">
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma112" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="37" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sma_file.sma112" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Pur.U/P Could = 0" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma114" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="37" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sma_file.sma114" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Sub.Pur.Affect Last Pur.U/P" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+            <Group gridHeight="5" gridWidth="45" lstrcomment="false" lstrtext="false" name="group27" posX="41" posY="13">
+              <Label posX="1" posY="1" text="Update Item/Supplier Latest U/P Method"/>
+              <Label posX="1" posY="2" text="Lower Price fr Appraisal Table and Supplier"/>
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma83" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" items="Update    , Update when Lower, No Update" lstrcomment="false" lstrtitle="false" name="sma_file.sma83" posX="1" posY="3" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Update    "/>
+                <Item lstrtext="" name="2" text="Update when Lower"/>
+                <Item lstrtext="" name="3" text="No Update"/>
+              </RadioGroup>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+</ManagedForm>

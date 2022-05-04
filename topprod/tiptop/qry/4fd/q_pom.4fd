@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c4c56424-0000-4000-beb0-7215a1b0721c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pom" order="" uid="{01f36e56-0000-4000-b845-1d4c7d2a7393}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{56a3554b-0000-4000-8143-75ddfd3fa319}"/>
+    <RecordField colName="pom01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pom_file.pom01" sqlTabName="pom_file" sqlType="VARCHAR" table_alias_name="" uid="{5c0fd2d6-0000-4000-b51f-9752eeb67934}"/>
+    <RecordField colName="pom09" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pom_file.pom09" sqlTabName="pom_file" sqlType="VARCHAR" table_alias_name="" uid="{e2677c16-0000-4000-bd39-36678bc94762}"/>
+    <RecordField colName="pmc03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmc_file.pmc03" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{3886e9f7-0000-4000-8ef1-e6d1fa2e33a2}"/>
+    <RecordField colName="pon02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pon_file.pon02" sqlTabName="pon_file" sqlType="SMALLINT" table_alias_name="" uid="{741291b0-0000-4000-ab88-d88bcef3fffb}"/>
+    <RecordField colName="pon04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pon_file.pon04" sqlTabName="pon_file" sqlType="VARCHAR" table_alias_name="" uid="{3980e943-0000-4000-9f39-0f9984a63a88}"/>
+    <RecordField colName="" fieldIdRef="7" name="rest" sqlTabName="" table_alias_name="" uid="{03d44801-0000-4000-8327-4e5006443278}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="109" name="q_pom" spacing="normal" text="Untransferred P/O Data Query">
+    <Grid gridHeight="13" gridWidth="107" lstrcomment="false" name="gr3832" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="106" lstrcomment="false" name="s_pom" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pom01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="pom_file.pom01" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="pom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="P/O No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pom09" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="pom_file.pom09" noEntry="true" posX="23" posY="0" rowCount="" sqlTabName="pom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Vender No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc03" noEntry="true" posX="36" posY="0" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Vender Abbr." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pon02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="pon_file.pon02" noEntry="true" posX="51" posY="0" rowCount="" sqlTabName="pon_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pon04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pon_file.pon04" noEntry="true" posX="62" posY="0" rowCount="" sqlTabName="pon_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="rest" noEntry="true" posX="82" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Undelivered Qty" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

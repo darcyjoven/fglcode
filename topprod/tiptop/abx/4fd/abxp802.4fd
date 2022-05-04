@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{11c61da9-0000-4000-9c43-7e267b639749}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{17ad2744-0000-4000-bea4-50a1f923c7f3}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="tlf026" sqlTabName="" table_alias_name="" uid="{79c355e1-0000-4000-817d-3178219ea3b6}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="tlf06" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{1cf67536-0000-4000-b491-a0643a94ce90}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="tlf021" sqlTabName="" table_alias_name="" uid="{82f3b1a3-0000-4000-9119-e81858b7936f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{5231acb3-0000-4000-bfcb-26c8d8a32277}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_a" sqlTabName="" table_alias_name="" uid="{5dfa7d9f-0000-4000-8eb2-292ee8e168ca}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{ae15a5cb-0000-4000-bd61-7697fdf9fbd2}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="56" name="abxp802" spacing="normal" text="abxp802">
+    <VBox gridHeight="18" gridWidth="54" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="54" lstrcomment="false" name="gr1080" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="53" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Document No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tlf026" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Transaction Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tlf06" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Warehouse #"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tlf021" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="7" gridWidth="54" lstrcomment="false" name="gr1081" posX="0" posY="8">
+        <Group gridHeight="6" gridWidth="53" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0" text="INPUT">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Bring No." valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_a" notNull="true" posX="2" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="ins abi_file,abj_filea" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label posX="1" posY="3" text="NOTE :"/>
+          <Label gridHeight="1" gridWidth="43" lstrcomment="false" lstrtext="false" name="dummy01" posX="9" posY="3" text="Task will Access tlf_file to ABX Doc Table,Accessed tlf909 set to &apos;Y&apos;, No Access"/>
+          <Label gridHeight="1" gridWidth="43" lstrcomment="false" lstrtext="false" name="dummy02" posX="9" posY="4" text="If Error found,Cancel ABX Doc Table then Re-Access"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="54" lstrcomment="false" name="gr1082" posX="0" posY="15">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

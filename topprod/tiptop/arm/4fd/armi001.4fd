@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{09db7bf0-0000-4000-ad5f-f49a22f27072}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oay" order="" uid="{afd57108-0000-4000-b4f3-01c3aa97c859}" where="">
+    <RecordField colName="oayslip" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oay_file.oayslip" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{7c107154-0000-4000-85a2-2b7fb272dcd2}"/>
+    <RecordField colName="oaydesc" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oay_file.oaydesc" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{30b3e7ab-0000-4000-b067-f38fd2a66ba4}"/>
+    <RecordField colName="oayauno" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oay_file.oayauno" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{387daa4e-0000-4000-b199-fcfa31531e30}"/>
+    <RecordField colName="oayconf" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oay_file.oayconf" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{2efc076c-0000-4000-b015-4692fe7a0f3a}"/>
+    <RecordField colName="oayprnt" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oay_file.oayprnt" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{e897b59f-0000-4000-821b-f47cf81147b1}"/>
+    <RecordField colName="oaytype" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oay_file.oaytype" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{7a4de46d-0000-4000-a658-9a3ee7fca377}"/>
+    <RecordField colName="oay12" fieldIdRef="7" fieldType="TABLE_COLUMN" name="oay_file.oay12" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{c1fa2cc9-0000-4000-88f7-b5bf211e96a9}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ee20958f-0000-4000-8281-7755062e5866}" where="">
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{06279c0b-0000-4000-96fc-cc4984ebe917}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="104" name="armi001" spacing="normal" text="armi001">
+    <Folder gridHeight="17" gridWidth="102" lstrcomment="false" name="pc62" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="16" gridWidth="100" name="VBox1" posX="0" posY="0">
+          <Table gridHeight="12" gridWidth="100" lstrcomment="false" name="s_oay" posX="0" posY="1" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="oayslip" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record! &lt;^Y&gt;User Authorization &lt;^U&gt;Dept Authorization" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="oay_file.oayslip" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Doc" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaydesc" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oay_file.oaydesc" posX="6" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Doc Name" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayauno" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="oay_file.oayauno" notNull="true" posX="26" posY="0" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Auto Num" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayconf" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="oay_file.oayconf" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Auto Cnf" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayprnt" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" lstrtitle="false" name="oay_file.oayprnt" notNull="true" posX="44" posY="0" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Prt Now" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaytype" columnCount="" comment="Enter   70 71 72 73 74 75 " fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="RMA DOC, RMARe-Delivery Note, No-Good Item Analysis Report, RMAScrap Note, RMA INVOICE, Servicing Confirmation" lstrcomment="false" lstrtitle="false" name="oay_file.oaytype" notNull="true" posX="52" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Doc Ptoperty" widget="ComboBox">
+              <Item name="70" text="RMA DOC"/>
+              <Item name="71" text="RMARe-Delivery Note"/>
+              <Item name="72" text="No-Good Item Analysis Report"/>
+              <Item name="73" text="RMAScrap Note"/>
+              <Item name="74" text="RMA INVOICE"/>
+              <Item name="75" text="Servicing Confirmation"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oay12" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtext="false" lstrtitle="false" name="oay_file.oay12" notNull="true" posX="65" posY="0" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Affect Idld Date" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+          <Grid gridHeight="2" gridWidth="100" lstrcomment="false" name="gr229" posX="0" posY="13">
+            <HLine gridWidth="10" name="hl118" posX="1" posY="0"/>
+            <Label posX="12" posY="0" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+            <HLine gridWidth="10" name="hl119" posX="26" posY="0"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

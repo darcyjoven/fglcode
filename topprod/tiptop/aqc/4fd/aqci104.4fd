@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7deb846b-b6e1-4be4-a0b9-c26e5dfe1d24}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qdf" order="" uid="{51cb9eda-81a1-468e-a8ee-c8ec355d6ed3}" where="">
+    <RecordField colName="qdf01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="qdf_file.qdf01" sqlTabName="qdf_file" sqlType="VARCHAR" table_alias_name="" uid="{7e4bab74-4424-4b10-8279-ce1ab395ee3d}"/>
+    <RecordField colName="qdf02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="qdf_file.qdf02" sqlTabName="qdf_file" sqlType="VARCHAR" table_alias_name="" uid="{69d9362a-136b-4bad-931d-460ff9ae6a3f}"/>
+    <RecordField colName="qdf03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="qdf_file.qdf03" sqlTabName="qdf_file" sqlType="DECIMAL" table_alias_name="" uid="{ea7e4f4e-0bb9-402a-a43d-66c9ccf682ad}"/>
+    <RecordField colName="qdf04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="qdf_file.qdf04" sqlTabName="qdf_file" sqlType="DECIMAL" table_alias_name="" uid="{b64fc237-45d8-4076-be3c-8823387b888c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{70984280-e5b1-45b9-bd66-6e5e0facf6f4}" where="">
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{edd59427-c243-4bd0-a9c0-4c8bf4b5d289}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="126" name="aqci104" spacing="normal" text="aqci104">
+    <VBox gridHeight="17" gridWidth="125" name="vb3" posX="1" posY="0" splitter="">
+      <Folder gridHeight="13" gridWidth="125" lstrcomment="false" name="pc6" posX="0" posY="1">
+        <Page name="Page10" text="Page01">
+          <Table gridHeight="12" gridWidth="124" lstrcomment="false" name="s_qca" posX="0" posY="0" totalRows="10">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qdf01" columnCount="" comment="Enter  1/2/3/4" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="I, II, III, IV, V, VI, VII, Reduced-Qty QC, Strict QC" lstrcomment="false" lstrtitle="false" name="qdf_file.qdf01" notNull="true" posX="0" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="qdf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Level" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="I"/>
+              <Item lstrtext="false" name="2" text="II"/>
+              <Item lstrtext="false" name="3" text="III"/>
+              <Item lstrtext="false" name="4" text="IV"/>
+              <Item lstrtext="false" name="5" text="V"/>
+              <Item lstrtext="false" name="6" text="VI"/>
+              <Item lstrtext="false" name="7" text="VII"/>
+              <Item lstrtext="false" name="R" text="Reduced-Qty QC"/>
+              <Item lstrtext="false" name="T" text="Strict QC"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="qdf02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="qdf_file.qdf02" notNull="true" posX="9" posY="0" required="true" rowCount="" sqlTabName="qdf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Sample Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qdf03" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="qdf_file.qdf03" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="qdf_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Initial Lot Qty" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qdf04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="qdf_file.qdf04" notNull="true" posX="37" posY="0" required="true" rowCount="" sqlTabName="qdf_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Ending Lot Qty" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="125" lstrcomment="false" name="gr4" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl7" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlAGQAZAA1ADkANAAyADcALQBjADIANAAzAC0ANABiAGQAMAAtAGEAOQBjADAALQA0AGMAOABiAGYANABiADUAZAAyADgAOQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGUANABiAGEAYgA3ADQALQA0ADQAMgA0AC0ANABiADEAMAAtADgAMgA3ADkALQBjAGUAMQBhAGIAMwA5ADUAZQBlADMAZAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADkAZAA5ADMANgAyAGEALQAxADMANgBiAC0ANABiAGEAZAAtADkAMwAxAGQALQA0ADYAMABmAGYAOQBhAGUANgBhADMAZgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADAAOQA4ADQAMgA4ADAALQBlADUAYgAxAC0ANAA1AGIAOQAtAGIAZAA2ADYALQA2AGUANQBlADAAZgBhAGMAZgA2AGYANAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADEAYwBiADkAZQBkAGEALQA4ADEAYQAxAC0ANAA2ADgAZQAtAGEAOABlAGUALQBjADgAZQBjADMANQA1AGQANgBlAGQAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADYANABmAGMAMgAzADcALQA0ADUAZAA4AC0ANAAwADcANgAtAGIAZQAzAGMALQA4ADgAMgAzADMAOAA3AGIAOAA4ADgAYwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGEANwBlADQAZgA0AGUALQAwAGIAYgA5AC0ANAAwADIAYQAtAGEANAAzAGQALQA2ADYAYwA5AGMAYwBmADYAOAAyAGEAZAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

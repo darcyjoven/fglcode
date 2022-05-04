@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6c384c1a-0000-4000-bbf6-1e60e08b9b22}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sfb" order="" uid="{02268274-0000-4000-a95e-9d5ff4df54c7}" where="">
+    <RecordField colName="sfb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sfb_file.sfb01" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{844bef52-0000-4000-8db3-43634a4fbb7c}"/>
+    <RecordField colName="sfb05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sfb_file.sfb05" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{754105a5-0000-4000-b06e-6b6e07c71349}"/>
+    <RecordField colName="sfb08" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sfb_file.sfb08" sqlTabName="sfb_file" sqlType="DECIMAL" table_alias_name="" uid="{dcafaf8a-0000-4000-8876-0a6598219fc9}"/>
+    <RecordField colName="sfb09" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sfb_file.sfb09" sqlTabName="sfb_file" sqlType="DECIMAL" table_alias_name="" uid="{ce9d3ac7-0000-4000-b928-1d143a37247a}"/>
+    <RecordField colName="sfb04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sfb_file.sfb04" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{f3f46553-0000-4000-8f52-00b972ba59fd}"/>
+    <RecordField colName="sfb02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sfb_file.sfb02" sqlTabName="sfb_file" sqlType="SMALLINT" table_alias_name="" uid="{129f6dcb-0000-4000-852e-3b8a956090e4}"/>
+    <RecordField colName="sfb41" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sfb_file.sfb41" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{14d1ebfd-0000-4000-815d-b93e42cefcf7}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{91e2f562-0000-4000-9605-5516e387617e}" where="">
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{55c70d9b-0000-4000-80ab-b0612f0e8905}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="112" name="asfp430" spacing="normal" text="asfp430">
+    <VBox gridHeight="18" gridWidth="109" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="109" lstrcomment="false" name="pc128" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="107" lstrcomment="false" name="s_sfb" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="WO No." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb05" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb05" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Item #" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb08" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb08" noEntry="true" notNull="true" posX="37" posY="0" required="true" rowCount="" sqlTabName="sfb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Produce Qty" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb09" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb09" noEntry="true" notNull="true" posX="49" posY="0" required="true" rowCount="" sqlTabName="sfb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Complete Qty" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb04" columnCount="" comment="1.Open 2.Rls 3.Prt 4.Iss.Mat 5.WIP 6.FQC 7.St-i 8.Clos" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Gnrl, Rls, Prt, Iss.Mat, WIP, FQC, St-i, Clos" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb04" noEntry="true" posX="62" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="WO Status Code" widget="ComboBox">
+              <Item name="1" text="Gnrl"/>
+              <Item name="2" text="Rls"/>
+              <Item name="3" text="Prt"/>
+              <Item name="4" text="Iss.Mat"/>
+              <Item name="5" text="WIP"/>
+              <Item name="6" text="FQC"/>
+              <Item name="7" text="St-i"/>
+              <Item name="8" text="Clos"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb02" columnCount="" comment="1.Gnrl 5.Rework 7.Sub. 8.Rwrk SUB 11.Disasm 13.Predic 15.Trial " fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="Gnrl, Rework, Sub., Rwrk SUB, Disasm, Predic, Trial" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb02" noEntry="true" posX="77" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="WO Style Code" widget="ComboBox">
+              <Item name="1" text="Gnrl"/>
+              <Item name="5" text="Rework"/>
+              <Item name="7" text="Sub."/>
+              <Item name="8" text="Rwrk SUB"/>
+              <Item name="11" text="Disasm"/>
+              <Item name="13" text="Predic"/>
+              <Item name="15" text="Trial"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb41" columnCount="" comment="Been Frozen" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sfb_file.sfb41" notNull="true" posX="91" posY="0" required="true" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Freeze" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="109" lstrcomment="false" name="gr542" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl210" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl211" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{9256eebf-0000-4000-9077-ade02aae88bd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b3543dbc-0000-4000-b909-dce1f5ff83c9}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="srg16" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d243fba8-0000-4000-b988-d0310b0ce964}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="srg03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d637368f-0000-4000-9b3c-d7f2b5670c2d}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="srf03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{4dca4553-0000-4000-8590-bebab63f12c1}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="ddate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{1776a635-0000-4000-b933-f93acd7a102a}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{0984f953-0000-4000-97f2-0fe936b88042}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="58" name="asfr724" spacing="normal" text="asfr724">
+    <Grid gridHeight="13" gridWidth="53" lstrcomment="false" name="gr1" posX="1" posY="0">
+      <Group gridHeight="5" gridWidth="47" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+        <Label posX="1" posY="1" text="Work/Order No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="srg16" posX="18" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Item No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="srg03" posX="18" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="3" text="Line/Shift"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="srf03" posX="18" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+      </Group>
+      <Group gridHeight="3" gridWidth="47" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="INPUT">
+        <Label posX="2" posY="1" text="Data Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="ddate" notNull="true" posX="18" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+      </Group>
+      <Group gridHeight="4" gridWidth="47" lstrcomment="false" lstrtext="false" name="gb21" posX="1" posY="8" text="Hours Source">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="2" gridWidth="30" items="Item Master, Machine( Production Line)" lstrcomment="false" lstrtitle="false" name="a" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+          <Item lstrtext="false" name="1" text="Item Master"/>
+          <Item lstrtext="false" name="2" text="Machine( Production Line)"/>
+        </RadioGroup>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

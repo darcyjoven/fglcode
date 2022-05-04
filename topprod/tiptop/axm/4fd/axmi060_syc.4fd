@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{827085b2-0000-4000-bf8e-fb736e3202c6}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oah" order="" uid="{5377a261-0000-4000-9987-41b5b7de2633}" where="">
+    <RecordField colName="oah01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oah_file.oah01" sqlTabName="oah_file" sqlType="VARCHAR" table_alias_name="" uid="{1d0bb8c3-0000-4000-8b44-43b7b1ba8850}"/>
+    <RecordField colName="oah02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oah_file.oah02" sqlTabName="oah_file" sqlType="VARCHAR" table_alias_name="" uid="{6a6d2598-0000-4000-b4c5-894e68c4fc58}"/>
+    <RecordField colName="oah03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oah_file.oah03" sqlTabName="oah_file" sqlType="VARCHAR" table_alias_name="" uid="{f2b464ba-0000-4000-9131-2d87a6b9fcec}"/>
+    <RecordField colName="oah04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oah_file.oah04" sqlTabName="oah_file" sqlType="VARCHAR" table_alias_name="" uid="{c0d4339f-0000-4000-bbef-46cd71ead8fa}"/>
+    <RecordField colName="oah05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oah_file.oah05" sqlTabName="oah_file" sqlType="VARCHAR" table_alias_name="" uid="{db5b6fdb-0000-4000-a77f-73948b73aa26}"/>
+    <RecordField colName="oah06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oah_file.oah06" sqlTabName="oah_file" sqlType="VARCHAR" table_alias_name="" uid="{6c972d9b-0000-4000-a4a2-3480f20c2532}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6ab4b62b-0000-4000-a047-e38b5e2cd964}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{bf837a71-0000-4000-a485-51b2c6f315f4}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="106" name="axmi060" spacing="normal" text="axmi060">
+    <VBox gridHeight="18" gridWidth="103" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="103" lstrcomment="false" name="pc444" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="101" lstrcomment="false" name="s_oah" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oah01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="oah_file.oah01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Price Terms" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oah02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="oah_file.oah02" posX="18" posY="0" rowCount="" sqlTabName="oah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oah03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Manual, from Product Master, from Product Price Master, from Customer&apos;s Last Purchasing Price, from Price List" lstrcomment="false" lstrtitle="false" name="oah_file.oah03" notNull="true" posX="48" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="oah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Pricing Method" widget="ComboBox">
+              <Item name="0" text="Manual"/>
+              <Item name="1" text="from Product Master"/>
+              <Item name="2" text="from Product Price Master"/>
+              <Item name="3" text="from Customer&apos;s Last Purchasing Price"/>
+              <Item name="4" text="from Price List"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oah04" columnCount="" comment=" &apos;Y&apos;:Quotation Incl Freight  &apos;N&apos;:No  " fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="oah_file.oah04" notNull="true" posX="63" posY="0" required="true" rowCount="" sqlTabName="oah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Freight" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oah05" columnCount="" comment=" &apos;Y&apos;:Quotation Incl Premium  &apos;N&apos;:No  " fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtext="false" lstrtitle="false" name="oah_file.oah05" notNull="true" posX="72" posY="0" required="true" rowCount="" sqlTabName="oah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Insurance" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oah06" columnCount="" comment=" &apos;Y&apos;:Quotation Incl Commission  &apos;N&apos;:No  " fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" lstrtitle="false" name="oah_file.oah06" notNull="true" posX="83" posY="0" required="true" rowCount="" sqlTabName="oah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Commission" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="103" lstrcomment="false" name="gr1999" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl727" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl728" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

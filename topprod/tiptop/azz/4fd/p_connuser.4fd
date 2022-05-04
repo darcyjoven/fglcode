@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2f1e8de7-0000-4000-a097-88f8ae4aa214}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gbq" order="" uid="{c9993e84-0000-4000-87f9-b0af93c9d552}" where="">
+    <RecordField colName="gbq02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gbq_file.gbq02" sqlTabName="gbq_file" sqlType="VARCHAR" table_alias_name="" uid="{94683bb4-0000-4000-884a-b6dbd6e5e222}"/>
+    <RecordField colName="gbq03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gbq_file.gbq03" sqlTabName="gbq_file" sqlType="VARCHAR" table_alias_name="" uid="{7e633b2e-0000-4000-bbdb-760cbbf946b7}"/>
+    <RecordField colName="gbq05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gbq_file.gbq05" sqlTabName="gbq_file" sqlType="VARCHAR" table_alias_name="" uid="{722e1ec5-0000-4000-963b-b4594518e877}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="gbq06" sqlTabName="" table_alias_name="" uid="{fe0b02e6-0000-4000-a921-f58ab207a7ea}"/>
+    <RecordField colName="gbq11" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gbq_file.gbq11" sqlTabName="gbq_file" sqlType="VARCHAR" table_alias_name="" uid="{fc3c251c-0000-4000-a185-67bffa33f19a}"/>
+    <RecordField colName="zx02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zx_file.zx02" sqlTabName="zx_file" sqlType="VARCHAR" table_alias_name="" uid="{ba65fe8f-0000-4000-867c-029654b53282}"/>
+    <RecordField colName="" fieldIdRef="4" name="process" sqlTabName="" table_alias_name="" uid="{22412e80-0000-4000-bd57-9855b16a58ef}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e13c8ccf-0000-4000-878f-88943ec8416f}" where="">
+    <RecordField colName="" fieldIdRef="11" name="cn2" sqlTabName="" table_alias_name="" uid="{104f1c76-0000-4000-bfcc-1161e60d6334}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="106" name="Form" text="Form">
+    <VBox gridHeight="23" gridWidth="104" name="VBox1" posX="1" posY="2">
+      <Folder gridHeight="15" gridWidth="104" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Page1">
+          <Table gridHeight="13" gridWidth="98" name="ds1" posX="1" posY="1" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbq05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="gbq_file.gbq05" posX="0" posY="0" rowCount="" sqlTabName="gbq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Dept" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbq03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="gbq_file.gbq03" notNull="true" posX="10" posY="0" rowCount="" sqlTabName="gbq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="User ID" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zx02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="zx_file.zx02" posX="20" posY="0" rowCount="" sqlTabName="zx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="User Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" name="gbq06" posX="32" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="GUI" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbq02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" name="gbq_file.gbq02" notNull="true" posX="39" posY="0" rowCount="" scroll="true" sqlTabName="gbq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="FGLSERVER" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbq11" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="gbq_file.gbq11" posX="62" posY="0" rowCount="" scroll="true" sqlTabName="gbq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="AP Server" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="8" name="process" posX="72" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Processes" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="6" gridWidth="104" name="Grid1" posX="0" posY="16">
+        <HLine gridWidth="10" name="HLine1" posX="1" posY="1"/>
+        <Label gridHeight="1" gridWidth="9" name="Label1" posX="12" posY="1" text="Row"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="10" name="cn2" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="formonly.Edit1" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine2" posX="33" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

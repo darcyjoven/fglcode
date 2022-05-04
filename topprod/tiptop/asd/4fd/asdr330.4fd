@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a7615b6f-0000-4000-9b39-e9dd1f3fb6ef}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b0349c14-0000-4000-88c8-db8e5b07be67}" where="">
+    <RecordField colName="stl03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="stl_file.stl03" sqlTabName="stl_file" sqlType="VARCHAR" table_alias_name="" uid="{9a1e7f40-0000-4000-bb87-6bd9c498c685}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="yea" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{5fda829f-0000-4000-a9c2-2be0429d1c15}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="type" sqlTabName="" table_alias_name="" uid="{433c2c27-0000-4000-94c7-4a0825307be9}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{9478ee9c-0000-4000-88ca-cbc1adda5567}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="91" name="asdr330" spacing="normal" text="asdr330">
+    <VBox gridHeight="18" gridWidth="89" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="89" lstrcomment="false" name="gr423" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="88" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Product Type"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="stl03" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="stl_file.stl03" posX="22" posY="1" rowCount="" sqlTabName="stl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="10" gridWidth="89" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="5" text="INPUT">
+        <Grid gridHeight="8" gridWidth="87" lstrcomment="false" name="gr424" posX="1" posY="1">
+          <Group gridHeight="4" gridWidth="86" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Print Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="yea" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Group>
+          <Group gridHeight="3" gridWidth="86" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="4" text="Print">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" items="Gross Sales Amount, Sales Returned, Net Sales Amount" lstrcomment="false" lstrtitle="false" name="type" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Gross Sales Amount"/>
+              <Item lstrtext="" name="2" text="Sales Returned"/>
+              <Item lstrtext="" name="3" text="Net Sales Amount"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="89" lstrcomment="false" name="gr425" posX="0" posY="15">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="52" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

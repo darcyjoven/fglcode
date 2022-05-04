@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{5511ed64-0000-4000-a172-ea64cb6be5a6}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{72516dfc-0000-4000-861b-c2a8609170ae}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bmx01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{98aafe96-0000-4000-bf04-b40386e883e8}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="bmx02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{7ec01363-0000-4000-95ad-f26ca061756f}"/>
+    <RecordField colName="" defaultValue="1" fieldIdRef="3" fieldType="NON_DATABASE" name="type" sqlTabName="" table_alias_name="" uid="{60138fbf-0000-4000-be02-ad3c5dda66f4}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{84d3c6b3-0000-4000-9d54-9833371e4007}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="52" name="abmr720" spacing="normal" text="abmr720">
+    <VBox gridHeight="11" gridWidth="46" name="vb6" posX="1" posY="0">
+      <Grid gridHeight="5" gridWidth="46" lstrcomment="false" name="gr972" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="45" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="E.C.N. No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="bmx01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="E.C.N.Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bmx02" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="46" lstrcomment="false" name="group" posX="0" posY="6">
+        <Label posX="2" posY="0" text="Print BOM Type"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" defaultValue="1" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="Product BOM, Process BOM, All" lstrcomment="false" name="type" notNull="true" posX="21" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Product BOM"/>
+          <Item lstrtext="false" name="2" text="Process BOM"/>
+          <Item lstrtext="false" name="3" text="All"/>
+        </ComboBox>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="46" lstrcomment="false" name="gr973" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

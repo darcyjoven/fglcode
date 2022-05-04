@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9078f427-4aa2-4bbc-ae79-98033d828252}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_axt" order="" uid="{a8f53e6a-5a37-4b1e-9fd9-30e4d4499fe7}" where="">
+    <RecordField colName="axt03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="axt_file.axt03" sqlTabName="axt_file" sqlType="VARCHAR" table_alias_name="" uid="{b665f4c4-e62d-4e0f-bc7a-ba5866ea796e}"/>
+    <RecordField colName="" fieldIdRef="3" name="aag02" sqlTabName="" table_alias_name="" uid="{8625dcb9-2707-4e96-8482-8ad3e77fda22}"/>
+    <RecordField colName="axt04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="axt_file.axt04" sqlTabName="axt_file" sqlType="VARCHAR" table_alias_name="" uid="{451c787e-f136-4d93-9e79-17f180469446}"/>
+    <RecordField colName="axt06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="axt_file.axt06" sqlTabName="axt_file" sqlType="VARCHAR" table_alias_name="" uid="{541434b7-8b06-4408-935c-cdc1dc905821}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fe2a02dd-f0dc-4891-b1ea-45c199f72810}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="axf02" sqlTabName="" table_alias_name="" uid="{83ef797f-a636-492e-9c63-3eefb2d5e6b9}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{269fef68-8d68-47d0-bffc-f0c64bb9d726}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3b27d82f-8167-46b6-b2ff-fbb3eef7f418}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="98" name="agli0032" spacing="normal" text="agli0032">
+    <VBox gridHeight="21" gridWidth="96" name="vb1" posX="0" posY="0">
+      <Folder gridHeight="3" gridWidth="96" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page lstrtext="false" name="page01">
+          <Grid gridHeight="2" gridWidth="44" lstrcomment="false" name="gr1" posX="0" posY="0">
+            <Label posX="2" posY="0" text="Opposite Account"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Query Account No." fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="axf02" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Group gridHeight="14" gridWidth="96" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="4">
+        <Table gridHeight="12" gridWidth="94" lstrcomment="false" name="Table1" posX="1" posY="1" totalRows="10">
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axt03" columnCount="" comment="&lt;^P&gt; Query Account No." fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="axt_file.axt03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="axt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Opposite Acc." widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Acc. Descript" widget="Edit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axt04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" lstrtitle="false" name="axt_file.axt04" notNull="true" posX="48" posY="0" required="true" rowCount="" sqlTabName="axt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Opposite set" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axt06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtext="false" lstrtitle="false" name="axt_file.axt06" notNull="true" posX="60" posY="0" required="true" rowCount="" sqlTabName="axt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Minority stock" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Table>
+      </Group>
+      <Grid gridHeight="2" gridWidth="96" lstrcomment="false" name="gr2" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA1ADQAMQA0ADMANABiADcALQA4AGIAMAA2AC0ANAA0ADAAOAAtADkAMwA1AGMALQBjAGQAYwAxAGQAYwA5ADAANQA4ADIAMQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGIAMgA3AGQAOAAyAGYALQA4ADEANgA3AC0ANAA2AGIANgAtAGIAMgBmAGYALQBmAGIAYgAzAGUAZQBmADcAZgA0ADEAOAB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADYANgA1AGYANABjADQALQBlADYAMgBkAC0ANABlADAAZgAtAGIAYwA3AGEALQBiAGEANQA4ADYANgBlAGEANwA5ADYAZQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADMAZQBmADcAOQA3AGYALQBhADYAMwA2AC0ANAA5ADIAZQAtADkAYwA2ADMALQAzAGUAZQBmAGIAMgBkADUAZQA2AGIAOQB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADYAMgA1AGQAYwBiADkALQAyADcAMAA3AC0ANABlADkANgAtADgANAA4ADIALQA4AGEAZAAzAGUANwA3AGYAZABhADIAMgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADYAOQBmAGUAZgA2ADgALQA4AGQANgA4AC0ANAA3AGQAMAAtAGIAZgBmAGMALQBmADAAYwA2ADQAYgBiADkAZAA3ADIANgB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADUAMQBjADcAOAA3AGUALQBmADEAMwA2AC0ANABkADkAMwAtADkAZQA3ADkALQAxADcAZgAxADgAMAA0ADYAOQA0ADQANgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADgAZgA1ADMAZQA2AGEALQA1AGEAMwA3AC0ANABiADEAZQAtADkAZgBkADkALQAzADAAZQA0AGQANAA0ADkAOQBmAGUANwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGUAMgBhADAAMgBkAGQALQBmADAAZABjAC0ANAA4ADkAMQAtAGIAMQBlAGEALQA0ADUAYwAxADkAOQBmADcAMgA4ADEAMAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

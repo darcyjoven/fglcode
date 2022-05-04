@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{d0329375-0000-4000-9713-b14fc1b734b0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9a40fe97-0000-4000-9800-c5aa04426eeb}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ofd01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{af389bf3-0000-4000-8c41-ea5389683795}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ofd22" sqlTabName="" table_alias_name="" uid="{daad6f1f-0000-4000-939a-675a45cb87fb}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ofd04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{36f55c7e-0000-4000-9ab9-4818136cdf3c}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="ofd10" sqlTabName="" table_alias_name="" uid="{f5424dc1-0000-4000-9c48-387a3fd370d0}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="ofd05" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{258c0a62-0000-4000-9de1-b947fedb8a8e}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="c" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{7e3a5028-0000-4000-ad0b-246bf3e4c2b7}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="d" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a4eed7a6-0000-4000-ab3a-7ab9acc0eefd}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="e" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f59f30bc-0000-4000-80d1-66ba23a21e0b}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{4b3ef714-0000-4000-a02a-75f03e35878a}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="93" name="axmr701" spacing="normal" text="axmr701">
+    <VBox gridHeight="18" gridWidth="91" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="6" gridWidth="91" lstrcomment="false" name="gr4" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="90" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Customer No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ofd01" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="46" posY="1" text="Customer State"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="0.Register 1.Appoint 2.Open 3.Deal 4.Close" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ofd22" posX="68" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Customer Cate"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ofd04" posX="23" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="46" posY="2" text="Customer Level"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ofd10" posX="68" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Area Code"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ofd05" posX="23" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="7" gridWidth="91" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="7" text="INPUT">
+        <HBox gridHeight="5" gridWidth="88" name="hb2" posX="1" posY="1">
+          <Grid gridHeight="5" gridWidth="42" lstrcomment="false" name="gr5" posX="2" posY="0">
+            <Label posX="1" posY="0" text="Columns per Page"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter No. of Columns/Page to Print, Maximum 3" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" items="1, 2, 3" lstrcomment="false" lstrtitle="false" name="c" posX="18" posY="0" queryEditable="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="1"/>
+              <Item lstrtext="" name="2" text="2"/>
+              <Item lstrtext="" name="3" text="3"/>
+            </ComboBox>
+          </Grid>
+          <Grid gridHeight="5" gridWidth="42" lstrcomment="false" name="gr6" posX="44" posY="0">
+            <Group gridHeight="4" gridWidth="34" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0" text="Greeting">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" items="Receipt, Dear, Open, Assigned" lstrcomment="false" lstrtitle="false" name="d" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Receipt"/>
+                <Item lstrtext="" name="2" text="Dear"/>
+                <Item lstrtext="" name="3" text="Open"/>
+                <Item lstrtext="" name="4" text="Assigned"/>
+              </RadioGroup>
+              <Label posX="1" posY="2" text="IF assign,Greeting"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="e" posX="23" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </HBox>
+      </Group>
+      <Grid gridHeight="3" gridWidth="91" lstrcomment="false" name="gr7" posX="0" posY="14">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Other Print Conditions" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

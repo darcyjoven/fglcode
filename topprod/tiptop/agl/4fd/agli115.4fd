@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{da3ca56f-0cf2-4d88-baa3-7f0c7affe70e}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tat" order="" uid="{ce56edf9-669d-4d7d-8011-429916bd7725}" where="">
+    <RecordField colName="tat03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="tat_file.tat03" sqlTabName="tat_file" sqlType="VARCHAR" table_alias_name="" uid="{803b2820-211e-4e8e-9d10-11d01b1a3231}"/>
+    <RecordField colName="" fieldIdRef="5" name="aag021" sqlTabName="" table_alias_name="" uid="{37582dea-a35c-46e8-afdb-622552afd009}"/>
+    <RecordField colName="tat04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="tat_file.tat04" sqlTabName="tat_file" sqlType="VARCHAR" table_alias_name="" uid="{aaa3e36c-473f-4789-acee-782f36f312df}"/>
+    <RecordField colName="" fieldIdRef="7" name="aag022" sqlTabName="" table_alias_name="" uid="{256fd4b3-0e1c-42db-8e3c-eb216d8af61c}"/>
+    <RecordField colName="tat05" fieldIdRef="8" fieldType="TABLE_COLUMN" name="tat_file.tat05" sqlTabName="tat_file" sqlType="VARCHAR" table_alias_name="" uid="{fd547f3b-30d9-41bd-b538-feb4feb2bb72}"/>
+    <RecordField colName="" fieldIdRef="9" name="aag023" sqlTabName="" table_alias_name="" uid="{78fb5c07-258b-423b-b8d7-858d9baf2337}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{cb189146-1d03-4e7a-aa6b-a7dd3b73ac71}" where="">
+    <RecordField colName="tat01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="tat_file.tat01" sqlTabName="tat_file" sqlType="VARCHAR" table_alias_name="" uid="{84df53eb-e057-4de1-b9d6-a93b2afcf7b9}"/>
+    <RecordField colName="tat02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="tat_file.tat02" sqlTabName="tat_file" sqlType="SMALLINT" table_alias_name="" uid="{3f4cff0a-8be8-463a-b20a-bf40e4e9eef5}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{51c34cf8-601e-486e-989b-0b0fd8282bec}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9610aa5f-111a-4a40-a0c3-3af4f7c9c1f6}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="129" name="agli115" spacing="normal" text="agli115">
+    <VBox gridHeight="24" gridWidth="127" name="vb2" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="127" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="70" lstrcomment="false" name="gr2331" posX="1" posY="1">
+            <Label posX="2" posY="1" text="Book No."/>
+            <ButtonEdit action="controlp" colName="tat01" columnCount="" comment="&lt;^P&gt;Qry Book#" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="tat_file.tat01" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="tat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="2" posY="2" text="Year"/>
+            <Edit colName="tat02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="tat_file.tat02" notNull="true" posX="19" posY="2" required="true" rowCount="" sqlTabName="tat_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="127" lstrcomment="false" name="s_tat" posX="0" posY="8" totalRows="10">
+        <ButtonEdit action="controlp" colName="tat03" columnCount="" comment="&lt;^P&gt;Qry Company Data" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="tat_file.tat03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="tat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Account No." widget="ButtonEdit"/>
+        <Edit colName="" colorCondition="black" columnCount="" fieldId="5" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aag021" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Account Name" widget="Edit"/>
+        <ButtonEdit action="controlp" colName="tat04" columnCount="" comment="&lt;^P&gt;Qry Book#" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="tat_file.tat04" notNull="true" posX="40" posY="0" required="true" rowCount="" sqlTabName="tat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="BS Account No." widget="ButtonEdit"/>
+        <Edit colName="" colorCondition="black" columnCount="" fieldId="7" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aag022" noEntry="true" posX="60" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="9" table_alias_name="" title="BS Account Name" widget="Edit"/>
+        <ButtonEdit action="controlp" colName="tat05" columnCount="" comment="&lt;^P&gt;Qry Account No." fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="tat_file.tat05" notNull="true" posX="80" posY="0" required="true" rowCount="" sqlTabName="tat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="IS Account No." widget="ButtonEdit"/>
+        <Edit colName="" colorCondition="black" columnCount="" fieldId="9" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aag023" noEntry="true" posX="100" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="10" table_alias_name="" title="IS Account Name" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="127" lstrcomment="false" name="gr2333" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl1" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjAGIAMQA4ADkAMQA0ADYALQAxAGQAMAAzAC0ANABlADcAYQAtAGEAYQA2AGIALQBhADcAZABkADMAYgA3ADMAYQBjADcAMQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGUANQA2AGUAZABmADkALQA2ADYAOQBkAC0ANABkADcAZAAtADgAMAAxADEALQA0ADIAOQA5ADEANgBiAGQANwA3ADIANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADcANQA4ADIAZABlAGEALQBhADMANQBjAC0ANAA2AGUAOAAtAGEAZgBkAGIALQA2ADIAMgA1ADUAMgBhAGYAZAAwADAAOQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADAAMwBiADIAOAAyADAALQAyADEAMQBlAC0ANABlADgAZQAtADkAZAAxADAALQAxADEAZAAwADEAYgAxAGEAMwAyADMAMQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADQAZABmADUAMwBlAGIALQBlADAANQA3AC0ANABkAGUAMQAtAGIAOQBkADYALQBhADkAMwBiADIAYQBmAGMAZgA3AGIAOQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGEAYQAzAGUAMwA2AGMALQA0ADcAMwBmAC0ANAA3ADgAOQAtAGEAYwBlAGUALQA3ADgAMgBmADMANgBmADMAMQAyAGQAZgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADUANgBmAGQANABiADMALQAwAGUAMQBjAC0ANAAyAGQAYgAtADgAZQAzAGMALQBlAGIAMgAxADYAZAA4AGEAZgA2ADEAYwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADEAYwAzADQAYwBmADgALQA2ADAAMQBlAC0ANAA4ADYAZQAtADkAOAA5AGIALQAwAGIAMABmAGQAOAAyADgAMgBiAGUAYwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADgAZgBiADUAYwAwADcALQAyADUAOABiAC0ANAAyADMAYgAtAGIAOABkADcALQA4ADUAOABkADkAYgBhAGYAMgAzADMANwB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGYANABjAGYAZgAwAGEALQA4AGIAZQA4AC0ANAA2ADMAYQAtAGIAMgAwAGEALQBiAGYANAAwAGUANABlADkAZQBlAGYANQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGQANQA0ADcAZgAzAGIALQAzADAAZAA5AC0ANAAxAGIAZAAtAGIANQAzADgALQBmAGUAYgA0AGYAZQBiADIAYgBiADcAMgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADYAMQAwAGEAYQA1AGYALQAxADEAMQBhAC0ANABhADQAMAAtAGEAMABjADMALQAzAGEAZgA0AGYANwBjADkAYwAxAGYANgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

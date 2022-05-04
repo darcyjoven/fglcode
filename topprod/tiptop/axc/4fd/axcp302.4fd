@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ad6d3606-0000-4000-8c73-0c7f5adba661}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{45ef8b7b-0000-4000-9284-21bc5a9e633c}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="p_plant" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{cabc520f-0000-4000-9682-78a398af4498}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="p_bookno" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{dfbf8347-0000-4000-800b-180aa8b0a154}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="g_existno" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{046942c8-0000-4000-96e4-b12cdcf98266}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="p_bookno1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bc3fe0ce-0000-4000-b712-b5d7c180b3c0}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_existno1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b631e4b6-0000-4000-a0be-7f0fa3fab2bb}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{f5480b75-0000-4000-aa47-c13705cbd77d}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="53" name="axcp302" spacing="normal" text="axcp302">
+    <Folder gridHeight="13" gridWidth="51" lstrcomment="false" name="pc361" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="12" gridWidth="49" name="VBox1" posX="0" posY="0">
+          <Grid gridHeight="8" gridWidth="49" lstrcomment="false" name="gr1504" posX="0" posY="1">
+            <Group gridHeight="7" gridWidth="48" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+              <Label posX="1" posY="1" text="Gen. Ledger PlantNo"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="p_plant" posX="26" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="General Ledger No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="p_bookno" posX="26" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="3" text="Ori.Ge.Led.Vou. No"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="g_existno" posX="26" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="4" text="Sec General Ledger No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="p_bookno1" noEntry="true" posX="26" posY="4" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="5" text="Sec Ori.Ge.Led.Vou. No"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="g_existno1" noEntry="true" posX="26" posY="5" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+          <Grid gridHeight="2" gridWidth="49" lstrcomment="false" name="gr1505" posX="0" posY="9">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="38" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADYAMwAxAGUANABiADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMABiAGUALQA3AGYAMABmAGEAMwBmAGEAYgAyAGIAYgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGEAYgBjADUAMgAwAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgA4ADIALQA3ADgAYQAzADkAOABhAGYANAA0ADkAOAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADQANgA5ADQAMgBjADgALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBlADQALQBiADEAMgBjAGQAYwBmADkAOAAyADYANgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGMAMwBmAGUAMABjAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwAxADIALQBiADUAZAA3AGMAMQA4ADAAYgAzAGMAMAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADUAZQBmADgAYgA3AGIALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMgA4ADQALQAyADEAYgBjADUAYQA5AGUANgAzADMAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADUANAA4ADAAYgA3ADUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYQA0ADcALQBjADEAMwA3ADAANQBjAGIAZAA3ADcAZAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGYAYgBmADgAMwA0ADcALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMAAwAGIALQAxADgAMABhAGEAOABiADAAYQAxADUANAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{6169cb26-9127-43a7-b10e-0c96be359486}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{0b59b3f7-36fd-4f59-be68-38afbee4ba4c}" where="">
+    <RecordField colName="alz01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="alz_file.alz01" sqlTabName="alz_file" sqlType="VARCHAR" table_alias_name="" uid="{8bdcce17-8929-4bc0-b914-a38f78b28b4b}"/>
+    <RecordField colName="alz00" fieldIdRef="2" fieldType="TABLE_COLUMN" name="alz_file.alz00" sqlTabName="alz_file" sqlType="VARCHAR" table_alias_name="" uid="{4e84ebc0-ba7b-46d3-9653-99b72fd66d89}"/>
+    <RecordField colName="alz02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="alz_file.alz02" sqlTabName="alz_file" sqlType="SMALLINT" table_alias_name="" uid="{e479d28a-e316-4994-8691-c5322ce02993}"/>
+    <RecordField colName="alz03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="alz_file.alz03" sqlTabName="alz_file" sqlType="SMALLINT" table_alias_name="" uid="{c6a600f1-652a-4ed9-89e7-33d0b709d500}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="98" name="aapp600" text="Form">
+    <VBox gridHeight="15" gridWidth="90" name="VBox1" posX="1" posY="0">
+      <Group gridHeight="7" gridWidth="90" name="INPUT" posX="0" posY="1" text="INPUT">
+        <Grid gridHeight="4" gridWidth="58" name="Grid2" posX="4" posY="1">
+          <Label gridHeight="1" gridWidth="7" name="Label2" posX="2" posY="0" text="Type"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alz00" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="AP, AR" name="alz_file.alz00" noEntry="true" notNull="false" posX="10" posY="0" rowCount="" scroll="true" sqlTabName="alz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="alz00" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="AP"/>
+            <Item lstrtext="false" name="2" text="AR"/>
+          </ComboBox>
+          <Label gridHeight="1" gridWidth="7" name="Label3" posX="2" posY="1" text="Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alz02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="alz_file.alz02" notNull="true" posX="10" posY="1" rowCount="" scroll="true" sqlTabName="alz_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="alz02" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="7" name="Label4" posX="2" posY="2" text="Month"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alz03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="alz_file.alz03" notNull="true" posX="10" posY="2" rowCount="" scroll="true" sqlTabName="alz_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="alz03" widget="Edit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="6" gridWidth="90" name="Group1" posX="0" posY="8" text="QBE">
+        <Grid gridHeight="3" gridWidth="62" name="Grid1" posX="2" posY="1">
+          <Label gridHeight="1" gridWidth="11" name="Label1" posX="1" posY="0" text="Customer/Manufacturer"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alz01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="alz_file.alz01" notNull="false" posX="13" posY="0" rowCount="" scroll="true" sqlTabName="alz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="alz01" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA4AGIAZABjAGMAZQAxADcALQA4ADkAMgA5AC0ANABiAGMAMAAtAGIAOQAxADQALQBhADMAOABmADcAOABiADIAOABiADQAYgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADYAYQA2ADAAMABmADEALQA2ADUAMgBhAC0ANABlAGQAOQAtADgAOQBlADcALQAzADMAZAAwAGIANwAwADkAZAA1ADAAMAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGIANQA5AGIAMwBmADcALQAzADYAZgBkAC0ANABmADUAOQAtAGIAZQA2ADgALQAzADgAYQBmAGIAZQBlADQAYgBhADQAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGUAOAA0AGUAYgBjADAALQBiAGEANwBiAC0ANAA2AGQAMwAtADkANgA1ADMALQA5ADkAYgA3ADIAZgBkADYANgBkADgAOQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADQANwA5AGQAMgA4AGEALQBlADMAMQA2AC0ANAA5ADkANAAtADgANgA5ADEALQBjADUAMwAyADIAYwBlADAAMgA5ADkAMwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

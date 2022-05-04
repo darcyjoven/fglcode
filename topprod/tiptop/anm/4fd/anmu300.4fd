@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{ecaf16e7-0000-4000-be71-0b65c720aa10}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bbbc6265-0000-4000-95fe-0892bf8458cd}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="nme02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{de7abf4f-0000-4000-9468-99c313a92ba5}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="2" fieldType="NON_DATABASE" name="download" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{14f7ec90-0000-4000-8a23-ee5e1c7ca099}"/>
+    <RecordField colName="" defaultValue="nmd" fieldIdRef="3" fieldType="NON_DATABASE" name="file_name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5323e8ae-0000-4000-9dc3-f1886fa0125a}"/>
+    <RecordField colName="" defaultValue="TODAY" fieldIdRef="4" fieldType="NON_DATABASE" name="file_extension" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{6882d04b-0000-4000-9416-8ace5e6b9eab}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="5" fieldType="NON_DATABASE" name="backup" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a88ef8a7-0000-4000-8e1a-0acc77d3d2d0}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="6" fieldType="NON_DATABASE" name="cleanup" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{123aea1c-0000-4000-8800-a455048f63f2}"/>
+    <RecordField colName="" defaultValue="Y" fieldIdRef="7" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f87352a1-0000-4000-9b1e-8b1f89fa9a06}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="60" name="anmu300" spacing="normal" text="anmu300">
+    <VBox gridHeight="14" gridWidth="58" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="58" lstrcomment="false" name="gr4609" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="57" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="To Clear CIB Tran Log Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nme02" posX="31" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="8" gridWidth="58" lstrcomment="false" lstrtext="false" name="p01" posX="0" posY="5" text="Input">
+        <VBox gridHeight="6" gridWidth="56" name="VBox2" posX="1" posY="1">
+          <Grid gridHeight="4" gridWidth="56" lstrcomment="false" name="gr4610" posX="0" posY="1">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Y:Download, N:No  " defaultValue="N" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" include="Y|N" lstrcomment="false" lstrtext="false" lstrtitle="false" name="download" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" text="Download?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label posX="19" posY="0" text="File Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter File Name" defaultValue="nmd" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="file_name" posX="40" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="44" posY="0" text="_"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Please Input Add Name Of File " defaultValue="TODAY" fieldId="4" fieldType="NON_DATABASE" format="YYMMDD" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="file_extension" posX="46" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Y:Back up  N:No Backup" defaultValue="N" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" include="Y|N" lstrcomment="false" lstrtext="false" lstrtitle="false" name="backup" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Back up?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Y:Clear   N:No    " defaultValue="N" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" include="Y|N" lstrcomment="false" lstrtext="false" lstrtitle="false" name="cleanup" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Clear?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="Y" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" include="Y|N" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Run Now ? " valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

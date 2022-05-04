@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="ManagedForm" uid="{943f645c-e6ef-4677-997d-4343eede1b32}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{08728a21-e758-4ff8-ac07-224c88f51cac}" where="">
+    <RecordField colName="" fieldIdRef="1" name="operating" sqlTabName="" table_alias_name="" uid="{d8c07168-8e5d-4e18-abe6-d4e648833e0d}"/>
+    <RecordField colName="" fieldIdRef="2" name="city" sqlTabName="" table_alias_name="" uid="{a365aa4d-5ee6-4801-a89b-5e57bf9a4a99}"/>
+    <RecordField colName="" fieldIdRef="3" name="saleyear" sqlTabName="" table_alias_name="" uid="{4d4b425d-f91a-47cd-984e-8169f8f9db3b}"/>
+    <RecordField colName="" fieldIdRef="4" name="salemonth" sqlTabName="" table_alias_name="" uid="{2566e9b5-c2d9-4cca-afe8-5d4d695e2b85}"/>
+    <RecordField colName="" fieldIdRef="5" name="Sort" sqlTabName="" table_alias_name="" uid="{78ae4efe-2dd0-4475-b029-b5a821b89777}"/>
+    <RecordField colName="" fieldIdRef="6" name="more" sqlTabName="" table_alias_name="" uid="{bdc121dc-f688-4155-a044-ce6220e79b14}"/>
+    <RecordField colName="" fieldIdRef="7" name="from" sqlTabName="" table_alias_name="" uid="{89c31f22-c80f-42a6-ae4e-a9c0c291ba18}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="119" name="Form" text="Form">
+    <VBox gridHeight="15" gridWidth="54" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="13" gridWidth="54" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="49" name="Group1" posX="1" posY="1" text="QBE">
+          <Label gridHeight="1" gridWidth="12" name="Label1" posX="1" posY="1" text="Operating"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="22" image="zoom" name="operating" posX="16" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="12" name="Label2" posX="1" posY="2" text="City"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="22" image="zoom" name="city" posX="16" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ButtonEdit2" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="12" name="Label3" posX="1" posY="3" text="Sale Date"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="10" name="saleyear" notNull="true" posX="16" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit1" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="2" name="Label4" posX="27" posY="3" text="/"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="8" name="salemonth" notNull="true" posX="30" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Edit2" widget="Edit"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="49" name="Group2" posX="1" posY="6" text="INPUT">
+          <Label gridHeight="1" gridWidth="10" name="Label6" posX="1" posY="1" text="From"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="32" items="yewu, yeji" name="from" notNull="true" posX="13" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="ComboBox1" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="yewu"/>
+            <Item lstrtext="false" name="2" text="yeji"/>
+          </ComboBox>
+          <Label gridHeight="1" gridWidth="10" name="Label5" posX="1" posY="2" text="Sort"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="32" items="Month, Year" name="Sort" notNull="true" posX="13" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ComboBox1" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="Month"/>
+            <Item lstrtext="false" name="2" text="Year"/>
+          </ComboBox>
+        </Group>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="32" name="more" notNull="true" posX="1" posY="11" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="more" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADgAYQBlADQAZQBmAGUALQAyAGQAZAAwAC0ANAA0ADcANQAtAGIAMAAyADkALQBiADUAYQA4ADIAMQBiADgAOQA3ADcANwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGQAYwAxADIAMQBkAGMALQBmADYAOAA4AC0ANAAxADUANQAtAGEAMAA0ADQALQBjAGUANgAyADIAMABlADcAOQBiADEANAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADgANwAyADgAYQAyADEALQBlADcANQA4AC0ANABmAGYAOAAtAGEAYwAwADcALQAyADIANABjADgAOABmADUAMQBjAGEAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADgAYwAwADcAMQA2ADgALQA4AGUANQBkAC0ANABlADEAOAAtAGEAYgBlADYALQBkADQAZQA2ADQAOAA4ADMAMwBlADAAZAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADUANgA2AGUAOQBiADUALQBjADIAZAA5AC0ANABjAGMAYQAtAGEAZgBlADgALQA1AGQANABkADYAOQA1AGUAMgBiADgANQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADkAYwAzADEAZgAyADIALQBjADgAMABmAC0ANAAyAGEANgAtAGEAZQA0AGUALQBhADkAYwAwAGMAMgA5ADEAYgBhADEAOAB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGQANABiADQAMgA1AGQALQBmADkAMQBhAC0ANAA3AGMAZAAtADkAOAA0AGUALQA4ADEANgA5AGYAOABmADkAZABiADMAYgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADMANgA1AGEAYQA0AGQALQA1AGUAZQA2AC0ANAA4ADAAMQAtAGEAOAA5AGIALQA1AGUANQA3AGIAZgA5AGEANABhADkAOQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

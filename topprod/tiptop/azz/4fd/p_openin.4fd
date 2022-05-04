@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d8905927-0000-4000-8625-2e8ab571dfba}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zoa" order="" uid="{fd5349f2-0000-4000-83c4-85c1e0d92da5}" where="">
+    <RecordField colName="zoa01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zoa_file.zoa01" sqlTabName="zoa_file" sqlType="VARCHAR" table_alias_name="" uid="{f92f6006-0000-4000-852b-ae9a0ccdad69}"/>
+    <RecordField colName="zoa03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="zoa_file.zoa03" sqlTabName="zoa_file" sqlType="VARCHAR" table_alias_name="" uid="{1d382d7a-0000-4000-beec-55af435f1af9}"/>
+    <RecordField colName="gaz03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{2f8eb693-0000-4000-8d1c-346add8426cb}"/>
+    <RecordField colName="zoa05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="zoa_file.zoa05" sqlTabName="zoa_file" sqlType="DATE" table_alias_name="" uid="{72bb6e42-0000-4000-bb37-828efc3a37a6}"/>
+    <RecordField colName="zoa06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="zoa_file.zoa06" sqlTabName="zoa_file" sqlType="VARCHAR" table_alias_name="" uid="{2e4832a1-0000-4000-be19-56c011506d67}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zob" order="" uid="{b66a557a-0000-4000-ba29-8c8c55a0af4a}" where="">
+    <RecordField colName="" fieldIdRef="9" name="c" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f40ca0c0-0000-4000-bb30-a1f051e68432}"/>
+    <RecordField colName="zob02" fieldIdRef="10" fieldType="TABLE_COLUMN" name="zob_file.zob02" sqlTabName="zob_file" sqlType="VARCHAR" table_alias_name="" uid="{6cd94314-0000-4000-bc67-1c6357cb7df0}"/>
+    <RecordField colName="gat03" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gat_file.gat03" sqlTabName="gat_file" sqlType="VARCHAR" table_alias_name="" uid="{cb33dc41-0000-4000-a372-c95a06ec8e0c}"/>
+    <RecordField colName="" fieldIdRef="12" name="count" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e68385c0-0000-4000-8377-9257cae4aa0d}"/>
+    <RecordField colName="" fieldIdRef="2" name="f_name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ca8cbb35-0000-4000-98fa-29ea5a267cc1}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c01b6ef0-0000-4000-8ef7-b43b38265f04}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn3" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{547d066d-0000-4000-bbd0-641634437c09}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn4" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{620a56d4-0000-4000-a171-01edeac5a1a2}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="84" name="p_openin" spacing="normal" text="p_openin">
+    <Folder gridHeight="23" gridWidth="82" lstrcomment="false" name="pc3" posX="0" posY="0">
+      <Page lstrtext="false" name="page4" text="Main">
+        <VBox gridHeight="22" gridWidth="80" name="vb5" posX="0" posY="0">
+          <Table gridHeight="6" gridWidth="80" lstrcomment="false" name="s_zoa" posX="0" posY="1" totalRows="4">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zoa01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Base Data, Main Data, Balance" lstrcomment="false" lstrtitle="false" name="zoa_file.zoa01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="zoa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Data Type" widget="ComboBox">
+              <Item name="1" text="Base Data"/>
+              <Item name="2" text="Main Data"/>
+              <Item name="3" text="Balance"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zoa03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="zoa_file.zoa03" noEntry="true" notNull="true" posX="8" posY="0" required="true" rowCount="" sqlTabName="zoa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Data type" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz03" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Col3" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zoa05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="zoa_file.zoa05" noEntry="true" posX="39" posY="0" rowCount="" sqlTabName="zoa_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Col5" widget="DateEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zoa06" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="zoa_file.zoa06" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="zoa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Col6" widget="Edit"/>
+          </Table>
+          <Table gridHeight="10" gridWidth="80" lstrcomment="false" name="s_zob" posX="0" posY="7" totalRows="8">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" lstrtitle="false" name="c" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="16" table_alias_name="" title="c" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zob02" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="zob_file.zob02" noEntry="true" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="zob_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Col1" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gat03" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="gat_file.gat03" noEntry="true" posX="23" posY="0" rowCount="" sqlTabName="gat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Col2" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="count" noEntry="true" posX="46" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="16" table_alias_name="" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="f_name" posX="53" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="f_name" widget="ButtonEdit"/>
+          </Table>
+          <Grid gridHeight="4" gridWidth="80" lstrcomment="false" name="gr6" posX="0" posY="17">
+            <HLine gridWidth="10" name="hl1" posX="1" posY="0"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn3" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+            <Label posX="22" posY="0" text="/"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn4" noEntry="true" posX="25" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+            <HLine gridWidth="10" name="hl2" posX="34" posY="0"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

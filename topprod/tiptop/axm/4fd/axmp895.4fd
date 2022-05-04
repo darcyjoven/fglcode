@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{51b89146-0000-4000-91c2-6f1a6c0865e7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{54b7b466-0000-4000-a7c1-044bfe81245b}" where="">
+    <RecordField colName="oha01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oha_file.oha01" sqlTabName="oha_file" sqlType="VARCHAR" table_alias_name="" uid="{55890071-0000-4000-86cd-d9e97a4b6c3e}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="oha05" sqlTabName="" table_alias_name="" uid="{4422ce7e-0000-4000-8868-0472b522848f}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{183eae82-0000-4000-a445-5432068bab2e}"/>
+  </Record>
+  <Form gridHeight="9" gridWidth="66" name="axmp895" spacing="normal" text="axmp895">
+    <VBox gridHeight="9" gridWidth="64" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="64" lstrcomment="false" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="43" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Sales Return Note No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="oha01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="oha_file.oha01" posX="24" posY="1" rowCount="" sqlTabName="oha_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Rejest Type"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" items="Buyer reject No, Agent reject No" lstrcomment="false" lstrtitle="false" name="oha05" notNull="true" posX="24" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+            <Item name="2" text="Buyer reject No"/>
+            <Item name="3" text="Agent reject No"/>
+          </ComboBox>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="64" lstrcomment="false" name="Grid2" posX="0" posY="6">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

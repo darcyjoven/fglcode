@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{84bb3750-507b-464a-aa82-43e801a15017}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6e919f75-1fa8-4ba2-b5c2-fd307d123498}" where="">
+    <RecordField colName="lpj01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lpj_file.lpj01" sqlTabName="lpj_file" sqlType="VARCHAR" table_alias_name="" uid="{7b091f70-404e-4dd7-a12d-18e9e0232931}"/>
+    <RecordField colName="lpc01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lpc_file.lpc01" sqlTabName="lpc_file" sqlType="VARCHAR" table_alias_name="" uid="{ccccebcc-baa7-4983-b107-0d476434e894}"/>
+    <RecordField colName="lqr03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lqr_file.lqr03" sqlTabName="lqr_file" sqlType="VARCHAR" table_alias_name="" uid="{70399802-7f56-429a-844c-947d2adcc480}"/>
+    <RecordField colName="lqt08" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lqt_file.lqt08" sqlTabName="lqt_file" sqlType="VARCHAR" table_alias_name="" uid="{83f5f4bc-04a2-41df-8856-2866f02a4ce0}"/>
+    <RecordField colName="lqr01" fieldIdRef="5" fieldType="TABLE_COLUMN" name="lqr_file.lqr01" sqlTabName="lqr_file" sqlType="VARCHAR" table_alias_name="" uid="{712bdc60-2965-4db4-a781-ed4fa9b2149d}"/>
+    <RecordField colName="" fieldIdRef="6" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{653e70c2-fd4e-4403-972f-00e08eb611a2}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="lqr_file" name="Record1" order="" uid="{b7a49924-6dcc-4aba-94ca-bc2fe93006e9}" where=""/>
+  <Form gridHeight="26" gridWidth="80" name="Form" text="Form">
+    <VBox gridHeight="16" gridWidth="47" name="VBox1" posX="9" posY="0">
+      <Group gridHeight="7" gridWidth="47" name="g1" posX="0" posY="1" text="Group1">
+        <Grid gridHeight="4" gridWidth="45" name="ds1" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="10" name="lqt03" posX="2" posY="1" text="Member No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lpj01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="lpj_file.lpj01" posX="16" posY="1" rowCount="" sqlTabName="lpj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="10" name="lqt04" posX="2" posY="2" text="Member Level"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lpc01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="lpc_file.lpc01" posX="16" posY="2" rowCount="" sqlTabName="lpc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="5" gridWidth="47" name="g2" posX="0" posY="8" text="Group2">
+        <Grid gridHeight="3" gridWidth="45" name="Grid1" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="10" name="lqr03" posX="2" posY="0" text="Change Resson"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lqr03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="lqr_file.lqr03" notNull="true" posX="16" posY="0" required="true" rowCount="" sqlTabName="lqr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="10" name="lqt08" posX="2" posY="1" text="Up Level"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lqt08" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="lqt_file.lqt08" posX="16" posY="1" rowCount="" sqlTabName="lqt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ButtonEdit2" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="10" name="lpr01" posX="2" posY="2" text="Level"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lqr01" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="lqr_file.lqr01" posX="16" posY="2" rowCount="" sqlTabName="lqr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ButtonEdit3" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="47" name="Grid2" posX="0" posY="13">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtext="false" name="g_bgjob" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Background Job" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADEAMgBiAGQAYwA2ADAALQAyADkANgA1AC0ANABkAGIANAAtAGEANwA4ADEALQBlAGQANABmAGEAOQBiADIAMQA0ADkAZAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGUAOQAxADkAZgA3ADUALQAxAGYAYQA4AC0ANABiAGEAMgAtAGIANQBjADIALQBmAGQAMwAwADcAZAAxADIAMwA0ADkAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGIAMAA5ADEAZgA3ADAALQA0ADAANABlAC0ANABkAGQANwAtAGEAMQAyAGQALQAxADgAZQA5AGUAMAAyADMAMgA5ADMAMQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADUAMwBlADcAMABjADIALQBmAGQANABlAC0ANAA0ADAAMwAtADkANwAyAGYALQAwADAAZQAwADgAZQBiADYAMQAxAGEAMgB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADcAYQA0ADkAOQAyADQALQA2AGQAYwBjAC0ANABhAGIAYQAtADkANABjAGEALQBiAGMAMgBmAGUAOQAzADAAMAA2AGUAOQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGMAYwBjAGUAYgBjAGMALQBiAGEAYQA3AC0ANAA5ADgAMwAtAGIAMQAwADcALQAwAGQANAA3ADYANAAzADQAZQA4ADkANAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADAAMwA5ADkAOAAwADIALQA3AGYANQA2AC0ANAAyADkAYQAtADgANAA0AGMALQA5ADQANwBkADIAYQBkAGMAYwA0ADgAMAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADMAZgA1AGYANABiAGMALQAwADQAYQAyAC0ANAAxAGQAZgAtADgAOAA1ADYALQAyADgANgA2AGYAMAAyAGEANABjAGUAMAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

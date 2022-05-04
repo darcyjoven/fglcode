@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{28f17b87-0000-4000-a3ad-d2d2bede78e2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_maillist" order="" uid="{b660b76e-0000-4000-a40e-b4cd6e2eff3a}" where="">
+    <RecordField colName="mlk03" fieldIdRef="0" fieldType="TABLE_COLUMN" name="mlk_file.mlk03" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{b38c32b8-0000-4000-b834-211dc12c27ad}"/>
+    <RecordField colName="mlk05" fieldIdRef="1" fieldType="TABLE_COLUMN" name="mlk_file.mlk05" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{eb6d2a7b-0000-4000-8c6e-ad405f22b2ad}"/>
+    <RecordField colName="mlk04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="mlk_file.mlk04" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{059c5877-0000-4000-bc73-a6f0b932fbdf}"/>
+    <RecordField colName="mlk07" fieldIdRef="3" fieldType="TABLE_COLUMN" name="mlk_file.mlk07" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{0eabdf97-0000-4000-8d6a-1e26907c11de}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="readygo" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7fb14474-0000-4000-b1f1-e5226f1ae200}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="80" name="cl_gre_maillist">
+    <VBox gridHeight="15" gridWidth="80" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="80" name="Grid1" posX="0" posY="1" style="greMaillistToolBarType">
+        <Button comment="Send Mail" gridHeight="1" gridWidth="1" image="gresend.png" name="send" posX="1" posY="0" style="greMaillistButtonType" tabIndex="1"/>
+        <Button comment="Exit" gridHeight="1" gridWidth="1" image="greexit.png" name="cancel" posX="4" posY="0" style="greMaillistButtonType" tabIndex="2"/>
+      </Grid>
+      <Table gridHeight="11" gridWidth="80" name="Table1" posX="0" posY="3" style="greMaillistTableType" totalRows="10">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mlk03" columnCount="" fieldId="0" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Recipient, cc, bcc" name="mlk_file.mlk03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Type" widget="ComboBox">
+          <Item name="1" text="Recipient"/>
+          <Item name="2" text="cc"/>
+          <Item name="3" text="bcc"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mlk05" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" name="mlk_file.mlk05" posX="10" posY="0" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Name" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mlk04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" name="mlk_file.mlk04" posX="23" posY="0" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="E-Mail" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mlk07" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" items="PDF, Excel (One sheet), Excel (Multi page), Excel(xlsx), Excel(xlsx Multi page), Word (RTF), HTML" name="mlk_file.mlk07" notNull="true" posX="48" posY="0" required="true" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Format" widget="ComboBox">
+          <Item lstrtext="true" name="1" text="PDF"/>
+          <Item lstrtext="true" name="2" text="Excel (One sheet)"/>
+          <Item lstrtext="true" name="3" text="Excel (Multi page)"/>
+          <Item lstrtext="true" name="4" text="Excel(xlsx)"/>
+          <Item lstrtext="true" name="5" text="Excel(xlsx Multi page)"/>
+          <Item lstrtext="true" name="6" text="Word (RTF)"/>
+          <Item lstrtext="true" name="7" text="HTML"/>
+        </ComboBox>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" name="readygo" notNull="true" posX="67" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Send" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADYANgAwAGIANwA2AGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANAAwAGUALQBiADQAYwBkADYAZQAyAGUAZgBmADMAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADMAOABjADMAMgBiADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOAAzADQALQAyADEAMQBkAGMAMQAyAGMAMgA3AGEAZAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGUAYQBiAGQAZgA5ADcALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZAA2AGEALQAxAGUAMgA2ADkAMAA3AGMAMQAxAGQAZQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGIANgBkADIAYQA3AGIALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYwA2AGUALQBhAGQANAAwADUAZgAyADIAYgAyAGEAZAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGYAYgAxADQANAA3ADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMQBmADEALQBlADUAMgAyADYAZgAxAGEAZQAyADAAMAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAwADUAOQBjADUAOAA3ADcALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYwA3ADMALQBhADYAZgAwAGIAOQAzADIAZgBiAGQAZgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

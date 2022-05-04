@@ -1,0 +1,70 @@
+<Form width="59" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="9911" spacing="normal" posX="0" percommentheader="" height="14" posY="0" percommentinstruction="" percommentattribute="--------------------------------------------------------------
+  Per_version = '3.10.06-07.03.05(00000)'   #
+ç¤Žç?ç¤ŽWç¹?
+apsi203 ?·ç¹©?·ç?ç¹¡ç?ç°?ç¹™ç¾¶?@ç¦®@ç¹š~
+.
+ç°žç¹­ç¤Žç?ç«„ç¾¹?¼O
+apsi203
+.
+ç¦®@ç¹š~??ç© ç?
+ç¹™ç¾¶?@ APS ç«??ç¹¹ç¹¡ç¤™ç°§?(ERP aeci670)
+.
+??†ç?ç©«ç??’ç©¢ç¹??’ç???‡ç??†ç©¡??·ç“£ç¿»sç¹?
+??ç½?ç¤Žsç¤Žb Day_Calendar_Table(aps_sad)
+ç¿»dç³§ç°·
+??ç¤?ç¤Žç??¶ç??»J
+Â¯?æ°¸?´æ??¯å‹»?
+??ç¤?ç¤Žç??¶ç??»J
+?’ç??¼çž½ç°??»ç?
+??ç¤?ç¤Žç??¶ç??»J
+???»çž¿?¼i&lt;??ç°??»ç?
+?’ç?ç°¡çž¿ç°?ç«„ç?ç¹™A
+??0:ç¤Žç³§ç°«ç°«ç°¡çž¿ç°?
+1:ç¹•Lç°«ç°«ç°¡çž¿ç°?
+.
+" lstrtoallcomment="false" percommentschema="" name="apsi203" fourSTFile="" defaultspacing="true" text="apsi203" gstVersion="11401" percommentlayout="GRID
+PAGE
+FOLDER
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="56" posX="0" posY="0" height="11" lstrcomment="false" name="pc1" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" >
+    <Grid width="54" posX="0" posY="0" height="9" lstrcomment="false" hidden="--------" name="gr1" fontPitch="default" scroll="false" >
+     <Group width="54" lstrtext="false" gridWidth="54" posX="0" posY="0" height="5" lstrcomment="false" hidden="--------" name="group01" fontPitch="default" gridHeight="5" gridChildrenInParent="--------" >
+      <Text width="11" lstrtext="false" gridWidth="11" posX="1" posY="1" height="1" sizePolicy="initial" name="text1" text="Machine No." />
+      <FormField colName="eq_id" fieldId="0" sqlTabName="formonly" name="formonly.eq_id" fieldtype="FORM_ONLY" >
+       <Edit width="7" case="NONE" invisible="--------" gridWidth="7" notNull="--------" posX="20" formfieldname="formfield0" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="1" zeroFill="--------" reverse="--------" lstrtitle="false" name="eq_id" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+      </FormField>
+      <Text width="17" lstrtext="false" gridWidth="17" posX="1" posY="2" height="1" sizePolicy="initial" name="text2" text="Week Calendar No." />
+      <FormField sqlDBName="ds" colName="wcaln_id" fieldId="2" sqlTabName="aps_eci" name="wcaln_id" fieldtype="TABLE_COLUMN" >
+       <Edit width="32" case="NONE" invisible="--------" gridWidth="32" notNull="--------" posX="20" formfieldname="formfield1" posY="2" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="2" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="wcaln_id" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+      <Text width="16" lstrtext="false" gridWidth="16" posX="1" posY="3" height="1" sizePolicy="initial" name="text3" text="Day Calendar NO." />
+      <FormField sqlDBName="ds" colName="dcaln_id" fieldId="1" sqlTabName="aps_eci" name="dcaln_id" fieldtype="TABLE_COLUMN" >
+       <Edit width="32" case="NONE" invisible="--------" gridWidth="32" notNull="--------" posX="20" formfieldname="formfield2" posY="3" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="3" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="dcaln_id" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+     </Group>
+     <Group width="54" lstrtext="false" gridWidth="54" posX="0" posY="5" height="3" lstrcomment="false" hidden="--------" name="group02" fontPitch="default" text="Capacity Type" gridHeight="3" gridChildrenInParent="--------" >
+      <FormField sqlDBName="ds" colName="eq_type" fieldId="3" sqlTabName="aps_eci" name="eq_type" fieldtype="TABLE_COLUMN" >
+       <RadioGroup width="51" gridWidth="51" notNull="--------" posX="1" formfieldname="formfield3" posY="1" height="1" lstrcomment="false" hidden="--------" orientation="vertical" sizePolicy="initial" tabIndex="4" lstrtitle="false" data_type="DECIMAL" name="eq_type" century="R" fontPitch="default" noEntry="--------" required="--------" >
+        <Item lstrtext="" name="0" text="Limited Capacity" />
+        <Item lstrtext="" name="1" text="Limitless Capacity" />
+       </RadioGroup>
+      </FormField>
+     </Group>
+    </Grid>
+   </Page>
+  </PageControl>
+  <Grid width="56" posX="0" posY="11" height="1" lstrcomment="false" hidden="--------" name="gr2" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl1" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" posY="0" height="1" sizePolicy="initial" name="text4" text="Rows" />
+   <FormField colName="cnt" fieldId="4" sqlTabName="formonly" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="17" formfieldname="formfield4" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="5" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cnt" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="25" posY="0" height="1" name="hl2" />
+  </Grid>
+ </VBox>
+</Form>

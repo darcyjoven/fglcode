@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{d52bd725-0000-4000-9f30-65871c517a88}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{46670c59-0000-4000-ad2a-270286afd8ef}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="database" sqlTabName="" table_alias_name="" uid="{c9db1636-0000-4000-8ebc-4ceb7828def9}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="table" sqlTabName="" table_alias_name="" uid="{cee06c84-0000-4000-86f2-c5f45f816cb8}"/>
+  </Record>
+  <Form gridHeight="9" gridWidth="51" name="p_dbqry_main" spacing="normal" style="naked" text="Simple Database Query for TIPTOP">
+    <TopMenu name="TopMenu1">
+      <TopMenuGroup lstrcomment="false" lstrtext="false" name="form" text="Form">
+        <TopMenuCommand lstrcomment="false" lstrtext="false" name="about" text="About"/>
+        <TopMenuCommand lstrcomment="false" lstrtext="false" name="exit" text="Exit"/>
+      </TopMenuGroup>
+      <TopMenuGroup lstrcomment="false" lstrtext="false" name="database" text="DataBase">
+        <TopMenuCommand lstrcomment="false" lstrtext="false" name="select_db" text="Select a database"/>
+      </TopMenuGroup>
+      <TopMenuGroup lstrcomment="false" lstrtext="false" name="table" text="Table">
+        <TopMenuCommand lstrcomment="false" lstrtext="false" name="select_tab" text="Select a table"/>
+        <TopMenuCommand lstrcomment="false" lstrtext="false" name="view_tab" text="All records with selected table"/>
+        <TopMenuCommand lstrcomment="false" lstrtext="false" name="query_tab" text="Apply filter with selected table"/>
+      </TopMenuGroup>
+    </TopMenu>
+    <VBox gridHeight="9" gridWidth="49" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="7" gridWidth="49" lstrcomment="false" lstrtext="false" name="gb2329" posX="0" posY="1" text="Information">
+        <Grid gridHeight="5" gridWidth="47" lstrcomment="false" name="gr3173" posX="1" posY="1">
+          <Label posX="2" posY="0" text="Current selected database"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="database" noEntry="true" posX="31" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="2" posY="4" text="Current selected table"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="table" noEntry="true" posX="31" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ec42abb1-0000-4000-b628-c5656d3c720a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmm" order="" uid="{28e96858-0000-4000-bb9d-4da520d2f2a9}" where="">
+    <RecordField colName="" fieldIdRef="2" name="check" sqlTabName="" table_alias_name="" uid="{37f2c3de-0000-4000-b0a1-dd0cf5a1f262}"/>
+    <RecordField colName="pmm01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmm_file.pmm01" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{8afdf534-0000-4000-8998-2951de575719}"/>
+    <RecordField colName="pmm02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmm_file.pmm02" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{ab116b24-0000-4000-941b-848a453ec2a2}"/>
+    <RecordField colName="pmm04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pmm_file.pmm04" sqlTabName="pmm_file" sqlType="DATE" table_alias_name="" uid="{e15cc2da-0000-4000-bbe5-0f5d936cb2ae}"/>
+    <RecordField colName="pmm07" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pmm_file.pmm07" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{de7ac658-0000-4000-85f7-9120aa99462e}"/>
+    <RecordField colName="pmm20" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pmm_file.pmm20" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{62d37700-0000-4000-9567-c3086b266fbc}"/>
+    <RecordField colName="pmm12" fieldIdRef="8" fieldType="TABLE_COLUMN" name="pmm_file.pmm12" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{66ddf80d-0000-4000-aa90-e3cc3130b085}"/>
+    <RecordField colName="pmn04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="pmn_file.pmn04" sqlTabName="pmn_file" sqlType="VARCHAR" table_alias_name="" uid="{c252ad1a-0000-4000-9dfe-1950547fb3b0}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{552d249a-0000-4000-a658-38c9a7897ac5}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="vendor" sqlTabName="" table_alias_name="" uid="{aeae165e-0000-4000-9890-dc6af97cf095}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="160" name="q_m_pmm6" spacing="normal" text="Query P/O">
+    <VBox gridHeight="16" gridWidth="157" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="157" lstrcomment="false" name="gr3799" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Supplier No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="vendor" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="157" lstrcomment="false" name="s_pmm" posX="0" posY="3" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm01" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="P/O No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm02" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Property" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm04" noEntry="true" posX="27" posY="0" rowCount="" sqlTabName="pmm_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Document Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm07" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm07" noEntry="true" posX="43" posY="0" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Document Class" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm20" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm20" noEntry="true" posX="60" posY="0" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Payment Method" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm12" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm12" noEntry="true" posX="77" posY="0" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Buyer" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn04" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="62" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn04" noEntry="true" posX="85" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Item No." widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

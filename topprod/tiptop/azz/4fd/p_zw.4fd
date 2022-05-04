@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e15ad7c1-0000-4000-9172-ab3374eebe4d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zw" order="" uid="{db3d6a3a-0000-4000-a739-f52efbddda60}" where="">
+    <RecordField colName="zw01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zw_file.zw01" sqlTabName="zw_file" sqlType="VARCHAR" table_alias_name="" uid="{dd1c570b-0000-4000-be8c-e5b4f93e11af}"/>
+    <RecordField colName="zw02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zw_file.zw02" sqlTabName="zw_file" sqlType="VARCHAR" table_alias_name="" uid="{fa78770e-0000-4000-8d5b-79759eeca101}"/>
+    <RecordField colName="zw03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="zw_file.zw03" sqlTabName="zw_file" sqlType="VARCHAR" table_alias_name="" uid="{537e1ecd-0000-4000-b6fa-8389e5bb5280}"/>
+    <RecordField colName="zw04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="zw_file.zw04" sqlTabName="zw_file" sqlType="VARCHAR" table_alias_name="" uid="{9d2f16fc-0000-4000-863a-a97a1560c9f9}"/>
+    <RecordField colName="zw05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="zw_file.zw05" sqlTabName="zw_file" sqlType="VARCHAR" table_alias_name="" uid="{291c88f9-0000-4000-b84f-17cb4293652b}"/>
+    <RecordField colName="zw06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="zw_file.zw06" sqlTabName="zw_file" sqlType="SMALLINT" table_alias_name="" uid="{6dd12353-0000-4000-b3e2-007ecaee4a09}"/>
+    <RecordField colName="zwacti" fieldIdRef="7" fieldType="TABLE_COLUMN" name="zw_file.zwacti" sqlTabName="zw_file" sqlType="VARCHAR" table_alias_name="" uid="{0e8aea40-0000-4000-8716-471fd9036b06}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{63156825-0000-4000-b46c-434be54b4f5c}" where="">
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{00439612-0000-4000-a4eb-71b7323963d3}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="98" name="p_zw" spacing="normal" text="p_zw">
+    <VBox gridHeight="19" gridWidth="95" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="15" gridWidth="95" lstrcomment="false" name="pc708" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="14" gridWidth="93" name="VBox2" posX="0" posY="0">
+            <Table gridHeight="12" gridWidth="93" lstrcomment="false" name="s_zw" posX="0" posY="1" totalRows="10">
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zw01" columnCount="" comment="KEY Field,No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="zw_file.zw01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="zw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Auth.Cate #" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zw02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="zw_file.zw02" posX="12" posY="0" rowCount="" sqlTabName="zw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Cate Desc" widget="Edit"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="zw03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="zw_file.zw03" posX="23" posY="0" rowCount="" scroll="true" sqlTabName="zw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="MENU No." widget="ButtonEdit"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zw04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="Not Control, Idle Setting By Authority, Idle Setting By Whole System" lstrcomment="false" lstrtitle="false" name="zw_file.zw04" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="zw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Idel Setting" widget="ComboBox">
+                <Item name="1" text="Not Control"/>
+                <Item name="2" text="Idle Setting By Authority"/>
+                <Item name="3" text="Idle Setting By Whole System"/>
+              </ComboBox>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zw05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="Only give a warning, After warning,forced program closed, forced program closed" lstrcomment="false" lstrtitle="false" name="zw_file.zw05" notNull="true" posX="48" posY="0" required="true" rowCount="" sqlTabName="zw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Idel Process" widget="ComboBox">
+                <Item name="1" text="Only give a warning"/>
+                <Item name="2" text="After warning,forced program closed"/>
+                <Item name="3" text="forced program closed"/>
+              </ComboBox>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zw06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="zw_file.zw06" notNull="true" posX="61" posY="0" required="true" rowCount="" sqlTabName="zw_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Idel Time (Sec)" widget="Edit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zwacti" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="zw_file.zwacti" notNull="true" posX="77" posY="0" required="true" rowCount="" sqlTabName="zw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Table>
+          </VBox>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="95" lstrcomment="false" name="gr3067" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl1052" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1053" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6eb3efe9-0000-4000-b385-c71a067e604c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="sub_gae" order="" uid="{1f48cd12-0000-4000-a1c7-0428e404ac60}" where="">
+    <RecordField colName="gae03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gae_file.gae03" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{4cb60f91-0000-4000-94e4-dd277f01bcef}"/>
+    <RecordField colName="gae04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gae_file.gae04" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{42dfed03-0000-4000-bc8e-3f8a2a8259e7}"/>
+    <RecordField colName="gae05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gae_file.gae05" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{931760c2-0000-4000-841b-c2b095c202a5}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fccc0263-0000-4000-9592-eb564f2e0d9e}" where="">
+    <RecordField colName="gae01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gae_file.gae01" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{d50e2439-0000-4000-92ab-d1f93f633787}"/>
+    <RecordField colName="gae02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gae_file.gae02" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{ee80c9d0-0000-4000-9ace-6b402a2c6b7d}"/>
+    <RecordField colName="gae12" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gae_file.gae12" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{01eba273-0000-4000-8918-656330870f2d}"/>
+    <RecordField colName="gae11" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gae_file.gae11" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{955d0fa7-0000-4000-b653-1e154fa05a7a}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="66" name="p_gae_item" spacing="normal" text="p_gae_item">
+    <VBox gridHeight="15" gridWidth="63" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="6" gridWidth="63" lstrcomment="false" name="gr3200" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="49" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Program ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gae_file.gae01" noEntry="true" posX="19" posY="1" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Field ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gae_file.gae02" noEntry="true" posX="19" posY="2" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Industry"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae12" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gae_file.gae12" noEntry="true" posX="19" posY="3" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae11" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="46" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gae_file.gae11" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Editing a Customized PER-File Data" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="7" gridWidth="63" lstrcomment="false" name="sub_gae" posX="0" posY="7" totalRows="5">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" items="" lstrcomment="false" lstrtitle="false" name="gae_file.gae03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Lang" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="39" lstrcomment="false" lstrtitle="false" name="gae_file.gae04" posX="5" posY="0" rowCount="" scroll="true" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="UI Description" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="gae_file.gae05" posX="44" posY="0" rowCount="" scroll="true" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Comment" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

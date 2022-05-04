@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8dd90a08-0000-4000-bac9-7689ce16b8ce}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bma" order="" uid="{fc2a1e22-0000-4000-9e47-717bd9b598fa}" where="">
+    <RecordField colName="" fieldIdRef="6" name="sel" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{8391ed88-0000-4000-999b-8c3b0f0b8708}"/>
+    <RecordField colName="bma01" fieldIdRef="7" fieldType="TABLE_COLUMN" name="bma_file.bma01" sqlTabName="bma_file" sqlType="VARCHAR" table_alias_name="" uid="{6966c9fb-0000-4000-9850-8c247daf0f17}"/>
+    <RecordField colName="bma06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="bma_file.bma06" sqlTabName="bma_file" sqlType="VARCHAR" table_alias_name="" uid="{7da3e7c7-0000-4000-90f7-1b58dbb12271}"/>
+    <RecordField colName="ima02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ima_file.ima02" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{e3136646-0000-4000-84e9-98060d9ffd16}"/>
+    <RecordField colName="ima021" fieldIdRef="10" fieldType="TABLE_COLUMN" name="ima_file.ima021" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{d728605d-0000-4000-8592-2cb7a36625c5}"/>
+    <RecordField colName="ima55" fieldIdRef="11" fieldType="TABLE_COLUMN" name="ima_file.ima55" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{fa28e0fd-0000-4000-ad3c-b60f596710fd}"/>
+    <RecordField colName="ima05" fieldIdRef="12" fieldType="TABLE_COLUMN" name="ima_file.ima05" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{1727dba3-0000-4000-a224-d51c9777000d}"/>
+    <RecordField colName="ima08" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ima_file.ima08" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{ebcf30d9-0000-4000-997f-e219f1d1ec97}"/>
+    <RecordField colName="bma05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bma_file.bma05" sqlTabName="bma_file" sqlType="DATE" table_alias_name="" uid="{f0a9beb3-0000-4000-9162-2b39a8356c9d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{20fd4953-0000-4000-94e0-5aeb28bbfe01}" where="">
+    <RecordField colName="gev04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gev_file.gev04" sqlTabName="gev_file" sqlType="VARCHAR" table_alias_name="" uid="{42b48765-0000-4000-bafe-23a888f8c796}"/>
+    <RecordField colName="geu02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="geu_file.geu02" sqlTabName="geu_file" sqlType="VARCHAR" table_alias_name="" uid="{aec91ea3-0000-4000-a5a1-fbb50ef2d821}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{988da453-0000-4000-86a8-e271a816cae5}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="139" lstrtext="false" name="abmp102" spacing="normal" text="aglp104">
+    <VBox gridHeight="17" gridWidth="105" name="vb12" posX="1" posY="0">
+      <Folder gridHeight="13" gridWidth="105" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Page0">
+          <VBox gridHeight="12" gridWidth="98" name="vb11" posX="6" posY="0">
+            <Grid gridHeight="3" gridWidth="98" lstrcomment="false" name="gr7" posX="0" posY="1">
+              <Label posX="2" posY="1" text="Data Center"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gev04" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom.png" lstrcomment="false" name="gev_file.gev04" posX="14" posY="1" rowCount="" sqlTabName="gev_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geu02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" name="geu_file.geu02" posX="30" posY="1" rowCount="" sqlTabName="geu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Grid>
+            <Table gridHeight="7" gridWidth="98" name="s_bma" posX="0" posY="4" totalRows="5">
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="sel" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="select" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bma01" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom.png" lstrcomment="false" lstrtitle="false" name="bma_file.bma01" posX="8" posY="0" rowCount="" sqlTabName="bma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Master Item No." widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bma06" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="bma_file.bma06" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="bma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Alternate Code" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima02" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="ima_file.ima02" noEntry="true" posX="27" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Item Description" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima021" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="ima_file.ima021" noEntry="true" posX="35" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Item Specification" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima55" colorCondition="black" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="ima_file.ima55" noEntry="true" posX="43" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Production Unit" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima05" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="ima_file.ima05" noEntry="true" posX="51" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Issue Date " widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima08" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="ima_file.ima08" noEntry="true" posX="59" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Source Code" widget="Edit"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bma05" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bma_file.bma05" posX="67" posY="0" rowCount="" sqlTabName="bma_file" sqlType="DATE" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Issue Date" widget="DateEdit"/>
+            </Table>
+          </VBox>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="105" lstrcomment="false" name="gr12" posX="0" posY="14">
+        <Label posX="1" posY="0" text="count"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="cnt" posX="7" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="14" posY="0" text="--"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

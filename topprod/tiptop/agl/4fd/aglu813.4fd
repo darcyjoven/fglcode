@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{bad06cc2-0000-4000-adf9-0876322ad298}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c8b4c83d-0000-4000-83c6-f5b8f7ece6c8}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="aea02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{5a287138-0000-4000-b504-408bbe808f02}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="2" fieldType="NON_DATABASE" name="download" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7b86fb04-0000-4000-b4f2-5f12a4239a99}"/>
+    <RecordField colName="" defaultValue="nmd" fieldIdRef="3" fieldType="NON_DATABASE" name="file_name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{44fc260a-0000-4000-8cfe-640b83c58127}"/>
+    <RecordField colName="" defaultValue="TODAY" fieldIdRef="4" fieldType="NON_DATABASE" name="file_extension" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{8245ea51-0000-4000-a7c2-8773710aa0f3}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="5" fieldType="NON_DATABASE" name="backup" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5b166dfc-0000-4000-8908-5c2f3f411f5b}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="6" fieldType="NON_DATABASE" name="cleanup" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7ab603c9-0000-4000-93d4-52b3fa698c38}"/>
+    <RecordField colName="" defaultValue="1" fieldIdRef="7" fieldType="NON_DATABASE" name="backup_device" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b8552d94-0000-4000-814f-ccab6d34994c}"/>
+    <RecordField colName="" defaultValue="Y" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bebea2d2-0000-4000-abcf-a9249d028e25}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="61" name="aglu813" spacing="normal" text="aglu813">
+    <VBox gridHeight="16" gridWidth="60" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="60" lstrcomment="false" name="gr2890" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Voucher Date QBE to clear"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="aea02" posX="32" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="10" gridWidth="60" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="5" text="Input">
+        <VBox gridHeight="8" gridWidth="58" name="VBox2" posX="1" posY="1">
+          <Grid gridHeight="6" gridWidth="58" lstrcomment="false" name="gr2891" posX="0" posY="1">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Y:Download, N:No  " defaultValue="N" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" include="Y|N" lstrcomment="false" lstrtext="false" lstrtitle="false" name="download" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" text="Download?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label posX="19" posY="0" text="File Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter File Name" defaultValue="nmd" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="file_name" posX="40" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="44" posY="0" text="_"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Please Input Attchement Name Of File " defaultValue="TODAY" fieldId="4" fieldType="NON_DATABASE" format="YYMMDD" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="file_extension" posX="46" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Y:Back up  N:No Backup" defaultValue="N" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" include="Y|N" lstrcomment="false" lstrtext="false" lstrtitle="false" name="backup" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Back up?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Y:Clear   N:No    " defaultValue="N" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" include="Y|N" lstrcomment="false" lstrtext="false" lstrtitle="false" name="cleanup" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Clear?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Group gridHeight="3" gridWidth="38" lstrcomment="false" lstrtext="false" name="group02" posX="19" posY="2" text="Backup Device">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="1" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="34" include="1|2" items="Tape, Floppy" lstrcomment="false" lstrtitle="false" name="backup_device" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Tape"/>
+                <Item lstrtext="" name="2" text="Floppy"/>
+              </RadioGroup>
+            </Group>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="Y" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" include="Y|N" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Run Now ? " valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

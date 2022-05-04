@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{5e7a9b7b-0000-4000-a5b8-d2575bc62188}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sfb" order="" uid="{c2a3e42a-0000-4000-9db4-6b2fc996d920}" where="">
+    <RecordField colName="sfb05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sfb_file.sfb05" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{03a9fa88-0000-4000-9fd3-b4b018d2d796}"/>
+    <RecordField colName="sfb01" fieldIdRef="8" fieldType="TABLE_COLUMN" name="sfb_file.sfb01" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{03e994ad-0000-4000-b5c1-514485cd66fd}"/>
+    <RecordField colName="" fieldIdRef="9" name="qty" sqlTabName="" table_alias_name="" uid="{07873a2b-0000-4000-a3e7-9ca06b11a913}"/>
+    <RecordField colName="" fieldIdRef="10" name="y" sqlTabName="" table_alias_name="" uid="{9c810a94-0000-4000-ac4b-89b1c04f7b6c}"/>
+    <RecordField colName="" fieldIdRef="11" name="in_qty" sqlTabName="" table_alias_name="" uid="{8280e3f3-0000-4000-8eb1-e400986e7616}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{92fe454e-0000-4000-8190-491ea17ee1c3}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="partno" sqlTabName="" table_alias_name="" uid="{a8f0712b-0000-4000-bc05-e106a5c9f3f2}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="seq1" sqlTabName="" table_alias_name="" uid="{89705008-0000-4000-b0de-d48d0bc18615}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="tot_qty" sqlTabName="" table_alias_name="" uid="{cb1a76e1-0000-4000-8b9e-e14356081839}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="seq2" sqlTabName="" table_alias_name="" uid="{3e4129ae-0000-4000-b672-a8dfa4771b2f}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="qty_t" sqlTabName="" table_alias_name="" uid="{d54e69e2-0000-4000-973f-412531128d34}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="in_qty_t" sqlTabName="" table_alias_name="" uid="{8bd5dced-0000-4000-9092-dc4ed208639a}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="114" name="asft621y" spacing="normal" text="asft621y">
+    <VBox gridHeight="25" gridWidth="111" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="111" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="5" gridWidth="110" lstrcomment="false" name="gr780" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="56" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Item No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Query,Can use &apos;*&apos;" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="partno" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Trans-out No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="seq1" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="4" gridWidth="53" lstrcomment="false" lstrtext="false" name="group02" posX="57" posY="0">
+              <Label posX="1" posY="1" text="Transfer Qty"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="tot_qty" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Trans-in No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="seq2" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="111" lstrcomment="false" name="s_sfb" posX="0" posY="8" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb05" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb01" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb01" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="W/O No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="qty" noEntry="true" posX="36" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Routing Qty" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" autoNext="true" case="upper" colName="" columnCount="" comment="Y:W/O to St-in Blank:No Store-in" fieldId="10" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="y" posX="49" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="W/O to Store-in Blank" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="in_qty" posX="72" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Trans.Qty" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="111" lstrcomment="false" name="gr781" posX="0" posY="20">
+        <Group gridHeight="3" gridWidth="48" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="0" text="Routing Qty">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="qty_t" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="53" lstrcomment="false" lstrtext="false" name="group04" posX="49" posY="0" text="Transfer Qty">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="in_qty_t" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

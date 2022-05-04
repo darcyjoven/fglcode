@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{00a12ff5-0000-4000-88f5-b55deefc7352}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gsd" order="" uid="{61ab9bd5-0000-4000-9355-90a5581ba6db}" where="">
+    <RecordField colName="gsd02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gsd_file.gsd02" sqlTabName="gsd_file" sqlType="SMALLINT" table_alias_name="" uid="{5a181ab0-0000-4000-9605-36bcedc591b6}"/>
+    <RecordField colName="gsd03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gsd_file.gsd03" sqlTabName="gsd_file" sqlType="VARCHAR" table_alias_name="" uid="{8e3cd884-0000-4000-8f5b-e544c910d25b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{820131a8-0000-4000-99d0-d40e04cfd73d}" where="">
+    <RecordField colName="gsd01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gsd_file.gsd01" sqlTabName="gsd_file" sqlType="VARCHAR" table_alias_name="" uid="{c12fb152-0000-4000-ab24-c5bc316dcb30}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{87281412-0000-4000-9739-63ede01b8f52}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{67414654-0000-4000-8c1d-fa621daed0f2}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="71" name="anmt601" spacing="normal" text="anmt601">
+    <VBox gridHeight="21" gridWidth="68" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="68" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="4" gridWidth="40" name="VBox2" posX="0" posY="0">
+            <Grid gridHeight="2" gridWidth="40" lstrcomment="false" name="gr4509" posX="0" posY="1">
+              <Label posX="1" posY="0" text="Investment No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gsd01" columnCount="" comment="Key Field, No Blank/Repeated!    " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="gsd_file.gsd01" posX="22" posY="0" rowCount="" sqlTabName="gsd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="68" lstrcomment="false" name="s_gsd" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gsd02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="gsd_file.gsd02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gsd_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Ln#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gsd03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="gsd_file.gsd03" notNull="true" posX="4" posY="0" required="true" rowCount="" sqlTabName="gsd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Description" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="68" lstrcomment="false" name="gr4510" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1363" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1364" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

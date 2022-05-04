@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2e66bedf-0000-4000-b3c4-a8f5400d2add}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rvk" order="" uid="{77ab15a6-0000-4000-b748-3adcdc983124}" where="">
+    <RecordField colName="rvk04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rvk_file.rvk04" sqlTabName="rvk_file" sqlType="VARCHAR" table_alias_name="" uid="{0fb603f3-0000-4000-a1de-83d7dd9a0c4b}"/>
+    <RecordField colName="" fieldIdRef="4" name="rvk04_desc" sqlTabName="" table_alias_name="" uid="{0a6f764e-0000-4000-9915-a82cd9abbea0}"/>
+    <RecordField colName="rvk02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="rvk_file.rvk02" sqlTabName="rvk_file" sqlType="SMALLINT" table_alias_name="" uid="{d7539758-0000-4000-a4c6-3488201b7c8a}"/>
+    <RecordField colName="" fieldIdRef="6" name="rvk02_desc" sqlTabName="" table_alias_name="" uid="{e9e4ba50-0000-4000-a2e7-b4a642e90beb}"/>
+    <RecordField colName="rvk03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="rvk_file.rvk03" sqlTabName="rvk_file" sqlType="VARCHAR" table_alias_name="" uid="{e12d6191-0000-4000-91a6-72fc87d2d90a}"/>
+    <RecordField colName="" fieldIdRef="8" name="rvk03_desc" sqlTabName="" table_alias_name="" uid="{2fe24512-0000-4000-895f-49dd75295880}"/>
+    <RecordField colName="rvkacti" defaultValue="Y" fieldIdRef="9" fieldType="TABLE_COLUMN" name="rvk_file.rvkacti" sqlTabName="rvk_file" sqlType="VARCHAR" table_alias_name="" uid="{44d448e6-0000-4000-be9c-07a54e057217}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{324283ba-0000-4000-8121-11df8f241dba}" where="">
+    <RecordField colName="rvk01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rvk_file.rvk01" sqlTabName="rvk_file" sqlType="VARCHAR" table_alias_name="" uid="{565c3159-0000-4000-bfd4-c0ee72fbab57}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="rvk01_desc" sqlTabName="" table_alias_name="" uid="{02c2d12b-0000-4000-80d9-0ab76ca28f4d}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{255bfcb2-0000-4000-a970-8e42aff0b94e}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{ef53920b-0000-4000-bb21-d86baa66ffcb}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="140" lstrtext="false" name="arti162" spacing="normal" text="arti162">
+    <VBox gridHeight="18" gridWidth="89" name="vb3" posX="5" posY="1">
+      <Folder gridHeight="5" gridWidth="89" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Grid gridHeight="3" gridWidth="62" lstrcomment="false" name="gr3" posX="1" posY="1">
+            <Label posX="2" posY="1" text="Shipping Center"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvk01" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" name="rvk_file.rvk01" notNull="true" posX="20" posY="1" rowCount="" sqlTabName="rvk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" name="rvk01_desc" noEntry="true" posX="32" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="6" gridWidth="89" name="s_rvk" posX="0" posY="6" totalRows="5">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvk04" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rvk_file.rvk04" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="rvk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="rvk04" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rvk04_desc" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="rvk04_desc" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvk02" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rvk_file.rvk02" notNull="true" posX="20" posY="0" rowCount="" sqlTabName="rvk_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="rvk02" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="rvk02_desc" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="rvk02_desc" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvk03" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rvk_file.rvk03" notNull="true" posX="45" posY="0" rowCount="" sqlTabName="rvk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="rvk03" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="rvk03_desc" noEntry="true" posX="55" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="rvk03_desc" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rvkacti" columnCount="" defaultValue="Y" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rvk_file.rvkacti" notNull="true" posX="70" posY="0" required="true" rowCount="" sqlTabName="rvk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="rvkacti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="5" gridWidth="89" lstrcomment="false" name="gr8" posX="0" posY="12">
+        <HLine gridWidth="10" name="hl5" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="count"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="28" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl6" posX="41" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{49aac066-0000-4000-bdb2-73c1e729f37d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_fis" order="" uid="{30a71bc4-0000-4000-8110-9674383688ec}" where="">
+    <RecordField colName="fis01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="fis_file.fis01" sqlTabName="fis_file" sqlType="VARCHAR" table_alias_name="" uid="{bda3bd76-0000-4000-a9f5-bc6be9b58162}"/>
+    <RecordField colName="fis02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="fis_file.fis02" sqlTabName="fis_file" sqlType="VARCHAR" table_alias_name="" uid="{877a2bab-0000-4000-bfd4-32fe5e936dda}"/>
+    <RecordField colName="fisacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="fis_file.fisacti" sqlTabName="fis_file" sqlType="VARCHAR" table_alias_name="" uid="{a9853fbe-0000-4000-b89d-1ee447b255e5}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{4c0b4ab9-0000-4000-b6a6-3dbe1dd82973}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{abd811d0-0000-4000-89be-2d1ea9d0791a}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="52" name="aemi109" spacing="normal" text="aemi109">
+    <VBox gridHeight="18" gridWidth="49" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="49" lstrcomment="false" name="pc304" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="47" lstrcomment="false" name="s_fis" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fis01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record! " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="fis_file.fis01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="fis_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Item" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fis02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="fis_file.fis02" posX="7" posY="0" rowCount="" sqlTabName="fis_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fisacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="fis_file.fisacti" notNull="true" posX="37" posY="0" required="true" rowCount="" sqlTabName="fis_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="49" lstrcomment="false" name="gr1755" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl521" posX="2" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl522" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{732b37b5-0000-4000-869f-43737a5e03c0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_lqg" order="" uid="{a53a77f1-0000-4000-9249-789706c2fbfd}" where="">
+    <RecordField colName="" fieldIdRef="1" name="sel" sqlTabName="" table_alias_name="" uid="{6ad88f21-0000-4000-b331-1fc019c580e0}"/>
+    <RecordField colName="lqg01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lqg_file.lqg01" sqlTabName="lqg_file" sqlType="VARCHAR" table_alias_name="" uid="{6a826c66-0000-4000-970e-3b9351723132}"/>
+    <RecordField colName="lqg02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lqg_file.lqg02" sqlTabName="lqg_file" sqlType="VARCHAR" table_alias_name="" uid="{6150f430-0000-4000-b780-9dc9b8465f96}"/>
+    <RecordField colName="lqg03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lqg_file.lqg03" sqlTabName="lqg_file" sqlType="VARCHAR" table_alias_name="" uid="{6b22f0ba-0000-4000-9726-b1f6452a0811}"/>
+    <RecordField colName="" fieldIdRef="5" name="lqf02" sqlTabName="" table_alias_name="" uid="{ca97228b-0000-4000-8a81-c3d05a78100f}"/>
+    <RecordField colName="" fieldIdRef="6" name="lqf03" sqlTabName="" table_alias_name="" uid="{b11634f6-0000-4000-ad0b-df7845f81cee}"/>
+    <RecordField colName="lqg08" fieldIdRef="7" fieldType="TABLE_COLUMN" name="lqg_file.lqg08" sqlTabName="lqg_file" sqlType="VARCHAR" table_alias_name="" uid="{06ccca9b-0000-4000-a72a-b542bfed4c04}"/>
+    <RecordField colName="lqg09" fieldIdRef="8" fieldType="TABLE_COLUMN" name="lqg_file.lqg09" sqlTabName="lqg_file" sqlType="DATE" table_alias_name="" uid="{b2856de5-0000-4000-af2f-c8fc70f9d3a8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{61f29d8a-0000-4000-8665-75b8693d84bb}" where="">
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d168c90d-0000-4000-b805-9f91a83de82c}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="108" lstrtext="false" name="almp760" spacing="normal" text="almp760">
+    <VBox gridHeight="14" gridWidth="96" name="vb3" posX="4" posY="3">
+      <Folder gridHeight="9" gridWidth="96" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Table gridHeight="7" gridWidth="93" name="s_lqg" posX="1" posY="0" totalRows="5">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="sel" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lqg01" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="lqg_file.lqg01" noEntry="true" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="lqg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ProDoc.No." widget="ButtonEdit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lqg02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="z, o, t, d" lstrcomment="false" lstrtitle="false" name="lqg_file.lqg02" noEntry="true" notNull="true" posX="16" posY="0" required="true" rowCount="" sqlTabName="lqg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Pro.Type" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="z"/>
+              <Item lstrtext="false" name="1" text="o"/>
+              <Item lstrtext="false" name="2" text="t"/>
+              <Item lstrtext="false" name="3" text="d"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lqg03" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom.png" lstrcomment="false" lstrtitle="false" name="lqg_file.lqg03" noEntry="true" notNull="true" posX="27" posY="0" required="true" rowCount="" sqlTabName="lqg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="P.S.Do.No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="lqf02" noEntry="true" posX="38" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Do.Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="lqf03" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Doc.Desc." widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lqg08" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="lqg_file.lqg08" noEntry="true" posX="62" posY="0" rowCount="" sqlTabName="lqg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Approver" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lqg09" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="lqg_file.lqg09" noEntry="true" posX="71" posY="0" rowCount="" sqlTabName="lqg_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="App.on" widget="DateEdit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="96" lstrcomment="false" name="gr1" posX="0" posY="10">
+        <HLine gridWidth="6" name="hl1" posX="1" posY="1"/>
+        <Label posX="7" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" name="idx" noEntry="true" posX="13" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="7" name="hl2" posX="23" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

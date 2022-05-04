@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{969d3613-0000-4000-b336-55612b5274e2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sfh" order="" uid="{cfe099c2-0000-4000-8154-ebccacff5b17}" where="">
+    <RecordField colName="sfh13" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sfh_file.sfh13" sqlTabName="sfh_file" sqlType="VARCHAR" table_alias_name="" uid="{ea2e6675-0000-4000-9b39-9e8991545f3a}"/>
+    <RecordField colName="sfh02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sfh_file.sfh02" sqlTabName="sfh_file" sqlType="DATE" table_alias_name="" uid="{86f21420-0000-4000-8127-a45c2c7e61ff}"/>
+    <RecordField colName="sfh08" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sfh_file.sfh08" sqlTabName="sfh_file" sqlType="VARCHAR" table_alias_name="" uid="{56b91f89-0000-4000-824d-2896bcff0d2b}"/>
+    <RecordField colName="imd02" fieldIdRef="10" fieldType="TABLE_COLUMN" name="imd_file.imd02" sqlTabName="imd_file" sqlType="VARCHAR" table_alias_name="" uid="{cda582f0-181d-4080-bee2-9cf52d1312f7}"/>
+    <RecordField colName="sfh06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sfh_file.sfh06" precisionDecimal="15" scaleDecimal="3" sqlTabName="sfh_file" sqlType="DECIMAL" table_alias_name="" uid="{e08cd6be-0000-4000-b5df-d458eace921a}"/>
+    <RecordField colName="sfh07" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sfh_file.sfh07" sqlTabName="sfh_file" sqlType="VARCHAR" table_alias_name="" uid="{ca5c8d99-0000-4000-80e9-2c624c581a4c}"/>
+    <RecordField colName="sfh09" fieldIdRef="8" fieldType="TABLE_COLUMN" name="sfh_file.sfh09" sqlTabName="sfh_file" sqlType="VARCHAR" table_alias_name="" uid="{a0b78a43-0000-4000-9478-66d2e67b65e6}"/>
+    <RecordField colName="ime03" fieldIdRef="11" fieldType="TABLE_COLUMN" name="ime_file.ime03" sqlTabName="ime_file" sqlType="VARCHAR" table_alias_name="" uid="{8159a4f5-d1a9-464e-8ebf-1cc3becc7813}"/>
+    <RecordField colName="sfh10" fieldIdRef="9" fieldType="TABLE_COLUMN" name="sfh_file.sfh10" sqlTabName="sfh_file" sqlType="VARCHAR" table_alias_name="" uid="{9f06f1ae-0000-4000-ae81-a4f4a47d05c1}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7787e41a-0000-4000-98e9-8006e11d66ec}" where="">
+    <RecordField colName="sfb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sfb_file.sfb01" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{9af57591-0000-4000-a684-a600e38187b9}"/>
+    <RecordField colName="sfb05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sfb_file.sfb05" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{81029e6b-0000-4000-ba23-3b5e5c4438c2}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="141" name="asfq4201" spacing="normal" text="asfq4201">
+    <VBox gridHeight="20" gridWidth="141" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="141" lstrcomment="false" name="pc139" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="4" gridWidth="101" lstrcomment="false" name="gr581" posX="0" posY="0">
+            <Group gridHeight="3" gridWidth="60" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="W/O No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb01" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="3" gridWidth="40" lstrcomment="false" lstrtext="false" name="group02" posX="61" posY="0">
+              <Label posX="1" posY="1" text="Production Item"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb05" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb05" noEntry="true" posX="18" posY="1" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="141" lstrcomment="false" name="s_sfh" posX="0" posY="7" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfh13" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="sfh_file.sfh13" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="sfh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="St-in Note#" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfh02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="sfh_file.sfh02" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="sfh_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfh08" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="sfh_file.sfh08" noEntry="true" posX="25" posY="0" rowCount="" sqlTabName="sfh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Warehouse" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imd02" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="imd_file.imd02" noEntry="true" posX="36" posY="0" rowCount="" sqlTabName="imd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Warehouse Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfh06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="sfh_file.sfh06" noEntry="true" posX="56" posY="0" precisionDecimal="15" rowCount="" scaleDecimal="3" sqlTabName="sfh_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Completed Sets" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfh07" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="sfh_file.sfh07" noEntry="true" posX="72" posY="0" rowCount="" sqlTabName="sfh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Unit" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfh09" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="sfh_file.sfh09" noEntry="true" posX="77" posY="0" rowCount="" sqlTabName="sfh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Location" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ime03" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="ime_file.ime03" noEntry="true" posX="88" posY="0" rowCount="" sqlTabName="ime_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Location Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfh10" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="sfh_file.sfh10" noEntry="true" posX="108" posY="0" rowCount="" sqlTabName="sfh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Lot#" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjAGEANQBjADgAZAA5ADkALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMABlADkALQAyAGMANgAyADQAYwA1ADgAMQBhADQAYwB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADEANQA5AGEANABmADUALQBkADEAYQA5AC0ANAA2ADQAZQAtADgAZQBiAGYALQAxAGMAYwAzAGIAZQBjAGMANwA4ADEAMwB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewBlADAAOABjAGQANgBiAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANQBkAGYALQBkADQANQA4AGUAYQBjAGUAOQAyADEAYQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGEAZgA1ADcANQA5ADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANgA4ADQALQBhADYAMAAwAGUAMwA4ADEAOAA3AGIAOQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADEAMAAyADkAZQA2AGIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYQAyADMALQAzAGIANQBlADUAYwA0ADQAMwA4AGMAMgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADcAOAA3AGUANAAxAGEALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOABlADkALQA4ADAAMAA2AGUAMQAxAGQANgA2AGUAYwB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGQAYQA1ADgAMgBmADAALQAxADgAMQBkAC0ANAAwADgAMAAtAGIAZQBlADIALQA5AGMAZgA1ADIAZAAxADMAMQAyAGYANwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYAZQAwADkAOQBjADIALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMQA1ADQALQBlAGIAYwBjAGEAYwBmAGYANQBiADEANwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADYAZgAyADEANAAyADAALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMQAyADcALQBhADQANQBjADIAYwA3AGUANgAxAGYAZgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGEAMgBlADYANgA3ADUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYgAzADkALQA5AGUAOAA5ADkAMQA1ADQANQBmADMAYQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADYAYgA5ADEAZgA4ADkALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMgA0AGQALQAyADgAOQA2AGIAYwBmAGYAMABkADIAYgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGYAMAA2AGYAMQBhAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZQA4ADEALQBhADQAZgA0AGEANAA3AGQAMAA1AGMAMQB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADAAYgA3ADgAYQA0ADMALQAwADAAMAAwAC0ANAAwADAAMAAtADkANAA3ADgALQA2ADYAZAAyAGUANgA3AGIANgA1AGUANgB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

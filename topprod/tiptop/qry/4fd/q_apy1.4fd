@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{aa16c58f-0000-4000-8d07-e0285677d3c8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_apy" order="" uid="{c0daf123-0000-4000-846c-2ee94aeef3fa}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{1ce5da46-0000-4000-a821-d82e7e3f3d8d}"/>
+    <RecordField colName="apyslip" fieldIdRef="2" fieldType="TABLE_COLUMN" name="apy_file.apyslip" sqlTabName="apy_file" sqlType="VARCHAR" table_alias_name="" uid="{d8737ced-0000-4000-9efb-3666ac68cda4}"/>
+    <RecordField colName="apydesc" fieldIdRef="3" fieldType="TABLE_COLUMN" name="apy_file.apydesc" sqlTabName="apy_file" sqlType="VARCHAR" table_alias_name="" uid="{17698107-0000-4000-8788-4d712ba16cfa}"/>
+    <RecordField colName="apyauno" fieldIdRef="4" fieldType="TABLE_COLUMN" name="apy_file.apyauno" sqlTabName="apy_file" sqlType="VARCHAR" table_alias_name="" uid="{6f6940ff-0000-4000-8214-e90f6d4ccf02}"/>
+    <RecordField colName="apydmy2" fieldIdRef="5" fieldType="TABLE_COLUMN" name="apy_file.apydmy2" sqlTabName="apy_file" sqlType="VARCHAR" table_alias_name="" uid="{4fe1c43e-0000-4000-a886-834781fc3716}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="73" name="q_apy1" spacing="normal" text="Qry Document Type">
+    <Grid gridHeight="13" gridWidth="71" lstrcomment="false" name="gr3731" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="70" lstrcomment="false" name="s_apy" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apyslip" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="apy_file.apyslip" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="apy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Document" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apydesc" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="apy_file.apydesc" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="apy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Document Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apyauno" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="apy_file.apyauno" noEntry="true" posX="37" posY="0" rowCount="" sqlTabName="apy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Automatic No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apydmy2" columnCount="" comment="1.Serial Number 2.By Year and Month                                              3.By Year and Week 4.By Year,Month and Day" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="apy_file.apydmy2" noEntry="true" posX="53" posY="0" rowCount="" sqlTabName="apy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="No. Method" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

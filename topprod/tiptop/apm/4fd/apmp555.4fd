@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{bd0c8f2d-0000-4000-a21f-fd2000bd40ef}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1775f4b3-0000-4000-9c47-1f17416011b3}" where="">
+    <RecordField colName="pmm01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmm_file.pmm01" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{9b6de12b-0000-4000-930c-ccd26cce4d99}"/>
+    <RecordField colName="pmm09" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmm_file.pmm09" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{1d4396cd-0000-4000-b0a6-714ee1d74ed7}"/>
+    <RecordField colName="pmm04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmm_file.pmm04" sqlTabName="pmm_file" sqlType="DATE" table_alias_name="" uid="{933e094c-0000-4000-99ed-64921a80250e}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="y" sqlTabName="" table_alias_name="" uid="{fd3de458-0000-4000-b070-c39c2e04cd72}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{4cef861d-0000-4000-9275-35c94ec5bcf5}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="91" name="apmp555" spacing="normal" text="apmp555">
+    <VBox gridHeight="15" gridWidth="89" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="11" gridWidth="89" lstrcomment="false" name="gr4926" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="88" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="P/O No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm01" posX="22" posY="1" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="45" posY="1" text="Vender No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm09" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm09" posX="66" posY="1" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="88" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="INPUT">
+          <Label posX="1" posY="1" text="Ending Purchase date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm04" columnCount="" comment="Closed/Canceled P/O before this Date will be deleted " fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm04" notNull="true" posX="23" posY="1" required="true" rowCount="" sqlTabName="pmm_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="57" lstrcomment="false" lstrtext="false" lstrtitle="false" name="y" notNull="true" posX="2" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Re-confirm bef delete P/O" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="88" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="7">
+          <Label gridHeight="1" gridWidth="50" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="Confirm P/O been Backed up Before running this task"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="89" lstrcomment="false" name="gr4927" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxADcANwA1AGYANABiADMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwA0ADcALQAxAGYAMQA3ADQAMQA2ADAAMQAxAGIAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGQANAAzADkANgBjAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMABhADYALQA3ADEANABlAGUAMQBkADcANABlAGQANwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGMAZQBmADgANgAxAGQALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMgA3ADUALQAzADUAYwA5ADQAZQBjADUAYgBjAGYANQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGIANgBkAGUAMQAyAGIALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMwAwAGMALQBjAGMAZAAyADYAYwBjAGUANABkADkAOQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADMAMwBlADAAOQA0AGMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOQBlAGQALQA2ADQAOQAyADEAYQA4ADAAMgA1ADAAZQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGQAMwBkAGUANAA1ADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMAA3ADAALQBjADMAOQBjADIAZQAwADQAYwBkADcAMgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

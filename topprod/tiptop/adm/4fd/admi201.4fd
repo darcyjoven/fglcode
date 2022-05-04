@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3ac8fac9-0000-4000-8f74-644cff63af8f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_dmb" order="" uid="{f71a3381-0000-4000-bc49-517324733b8b}" where="">
+    <RecordField colName="dmb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="dmb_file.dmb01" sqlTabName="dmb_file" sqlType="VARCHAR" table_alias_name="" uid="{e732cfd4-0000-4000-bc0d-b29a67f90993}"/>
+    <RecordField colName="dmb02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="dmb_file.dmb02" sqlTabName="dmb_file" sqlType="VARCHAR" table_alias_name="" uid="{51f23562-0000-4000-a012-9fb750ecf6ca}"/>
+    <RecordField colName="dmbacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="dmb_file.dmbacti" sqlTabName="dmb_file" sqlType="VARCHAR" table_alias_name="" uid="{900b8248-0000-4000-b65b-c3bc806bb2b2}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f3e77b9c-0000-4000-8795-ce8237cb724d}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{31a69bf3-0000-4000-9920-e7afce9276ca}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="53" name="admi201" spacing="normal" text="admi201">
+    <VBox gridHeight="18" gridWidth="50" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="50" lstrcomment="false" name="pc247" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="48" lstrcomment="false" name="s_dmb" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="dmb01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="dmb_file.dmb01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="dmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Version" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="dmb02" columnCount="" comment="No blank Field!" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="dmb_file.dmb02" posX="8" posY="0" rowCount="" sqlTabName="dmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="dmbacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="dmb_file.dmbacti" notNull="true" posX="38" posY="0" required="true" rowCount="" sqlTabName="dmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="50" lstrcomment="false" name="gr1581" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl435" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl436" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

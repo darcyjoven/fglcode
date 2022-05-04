@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2bfa4f3d-0000-4000-b64b-b76a9c04a56d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qci" order="" uid="{50c87044-0000-4000-b5ec-28b5737e17e5}" where="">
+    <RecordField colName="qci02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="qci_file.qci02" sqlTabName="qci_file" sqlType="VARCHAR" table_alias_name="" uid="{5cfd26be-0000-4000-a38a-692805ca78f0}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{db9ec2fa-0000-4000-9a42-20ab3cdd1b51}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="qcf01" sqlTabName="" table_alias_name="" uid="{f6899b12-0000-4000-bf30-fd3eed202069}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="37" name="aqct4101" spacing="normal" text="aqct4101">
+    <VBox gridHeight="18" gridWidth="35" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="35" lstrcomment="false" name="gr202" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="34" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Document No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="qcf01" noEntry="true" posX="15" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="12" gridWidth="35" lstrcomment="false" name="s_qci" posX="0" posY="5" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qci02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="qci_file.qci02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="qci_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Product S/N" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

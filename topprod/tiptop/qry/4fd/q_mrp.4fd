@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d0bed825-0000-4000-9bcd-77b18ac4e078}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_msr" order="" uid="{ea59d2db-0000-4000-86c4-d711c06f7f39}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{a78a08d3-0000-4000-a476-7ad5abb99baf}"/>
+    <RecordField colName="msr_v" fieldIdRef="2" fieldType="TABLE_COLUMN" name="msr_file.msr_v" sqlTabName="msr_file" sqlType="VARCHAR" table_alias_name="" uid="{85b5c7bb-0000-4000-a741-fbfcfc4e3aeb}"/>
+    <RecordField colName="msr01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="msr_file.msr01" sqlTabName="msr_file" sqlType="DATE" table_alias_name="" uid="{1a3a6921-0000-4000-9ebf-936cdd820bee}"/>
+    <RecordField colName="bdate" fieldIdRef="4" fieldType="TABLE_COLUMN" name="msr_file.bdate" sqlTabName="msr_file" sqlType="DATE" table_alias_name="" uid="{b9fe98ee-0000-4000-b3ac-8d9476617d13}"/>
+    <RecordField colName="edate" fieldIdRef="5" fieldType="TABLE_COLUMN" name="msr_file.edate" sqlTabName="msr_file" sqlType="DATE" table_alias_name="" uid="{a1a41fe5-0000-4000-ae06-95986ba6ad78}"/>
+    <RecordField colName="buk_type" fieldIdRef="6" fieldType="TABLE_COLUMN" name="msr_file.buk_type" sqlTabName="msr_file" sqlType="VARCHAR" table_alias_name="" uid="{1dd9f228-0000-4000-b0ee-79785bb78be4}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="90" name="q_mrp" spacing="normal" text="Sub-Plant MRP Version">
+    <Grid gridHeight="13" gridWidth="88" lstrcomment="false" name="gr3802" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="87" lstrcomment="false" name="s_msr" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msr_v" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="msr_file.msr_v" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="msr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Version" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msr01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="msr_file.msr01" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="msr_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Execute Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bdate" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="msr_file.bdate" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="msr_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Initial Time" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="edate" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="msr_file.edate" noEntry="true" posX="46" posY="0" rowCount="" sqlTabName="msr_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Ending Time" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="buk_type" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="msr_file.buk_type" noEntry="true" posX="60" posY="0" rowCount="" sqlTabName="msr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Time Bucket Method" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

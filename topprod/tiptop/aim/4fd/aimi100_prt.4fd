@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{a404d756-d291-410b-9501-49182d321415}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_imac" order="" uid="{379773d2-cda5-4a31-91be-ea67cbb9a35a}" where="">
+    <RecordField colName="imac02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="imac_file.imac02" sqlTabName="imac_file" sqlType="SMALLINT" table_alias_name="" uid="{8dd6b290-d5ef-4caa-b1c7-97b7c40a5925}"/>
+    <RecordField colName="imac03" defaultValue="1" fieldIdRef="4" fieldType="TABLE_COLUMN" name="imac_file.imac03" sqlTabName="imac_file" sqlType="VARCHAR" table_alias_name="" uid="{a1fc846b-cd8b-42e5-92d5-da930934adcb}"/>
+    <RecordField colName="imac04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="imac_file.imac04" sqlTabName="imac_file" sqlType="VARCHAR" table_alias_name="" uid="{c8cfb9ad-cfbb-4caf-8020-65a54d41cec5}"/>
+    <RecordField colName="ini02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ini_file.ini02" sqlTabName="ini_file" sqlType="VARCHAR" table_alias_name="" uid="{35ac1c99-d56d-478d-b831-4edc0d062a3e}"/>
+    <RecordField colName="ini03" defaultValue="1" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ini_file.ini03" sqlTabName="ini_file" sqlType="VARCHAR" table_alias_name="" uid="{61a12491-2497-40a5-8d6c-35a1f4af8021}"/>
+    <RecordField colName="imac05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="imac_file.imac05" sqlTabName="imac_file" sqlType="VARCHAR" table_alias_name="" uid="{c4fd6cc8-22bc-433b-a930-c3cb14045a43}"/>
+  </Record>
+  <Form gridHeight="34" gridWidth="203" name="Form" text="Form">
+    <VBox gridHeight="12" gridWidth="113" name="VBox1" posX="1" posY="0">
+      <Table gridHeight="10" gridWidth="113" name="s_imac" posX="0" posY="1" totalRows="8">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imac02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="imac_file.imac02" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="imac_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Item" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imac03" columnCount="" defaultValue="1" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="料号, 制造批号" name="imac_file.imac03" notNull="true" posX="10" posY="0" required="true" rowCount="" scroll="true" sqlTabName="imac_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Ownership level" widget="ComboBox">
+          <Item lstrtext="true" name="1" text="料号"/>
+          <Item lstrtext="true" name="2" text="制造批号"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imac04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="imac_file.imac04" notNull="true" posX="20" posY="0" required="true" rowCount="" scroll="true" sqlTabName="imac_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Feature code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ini02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="ini_file.ini02" noEntry="true" notNull="false" posX="35" posY="0" rowCount="" scroll="true" sqlTabName="ini_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Feature Name" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ini03" columnCount="" defaultValue="1" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="字元, 数值" name="ini_file.ini03" noEntry="true" posX="55" posY="0" rowCount="" scroll="true" sqlTabName="ini_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Field Properties" widget="ComboBox">
+          <Item lstrtext="true" name="1" text="字元"/>
+          <Item lstrtext="true" name="2" text="数值"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imac05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="imac_file.imac05" posX="65" posY="0" rowCount="" scroll="true" sqlTabName="imac_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Property values" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADEAZgBjADgANAA2AGIALQBjAGQAOABiAC0ANAAyAGUANQAtADkAMgBkADUALQBkAGEAOQAzADAAOQAzADQAYQBkAGMAYgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADcAOQA3ADcAMwBkADIALQBjAGQAYQA1AC0ANABhADMAMQAtADkAMQBiAGUALQBlAGEANgA3AGMAYgBiADkAYQAzADUAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADQAZgBkADYAYwBjADgALQAyADIAYgBjAC0ANAAzADMAYgAtAGEAOQAzADAALQBjADMAYwBiADEANAAwADQANQBhADQAMwB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADgAYwBmAGIAOQBhAGQALQBjAGYAYgBiAC0ANABjAGEAZgAtADgAMAAyADAALQA2ADUAYQA1ADQAZAA0ADEAYwBlAGMANQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGQAZAA2AGIAMgA5ADAALQBkADUAZQBmAC0ANABjAGEAYQAtAGIAMQBjADcALQA5ADcAYgA3AGMANAAwAGEANQA5ADIANQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADUAYQBjADEAYwA5ADkALQBkADUANgBkAC0ANAA3ADgAZAAtAGIAOAAzADEALQA0AGUAZABjADAAZAAwADYAMgBhADMAZQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADEAYQAxADIANAA5ADEALQAyADQAOQA3AC0ANAAwAGEANQAtADgAZAA2AGMALQAzADUAYQAxAGYANABhAGYAOAAwADIAMQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

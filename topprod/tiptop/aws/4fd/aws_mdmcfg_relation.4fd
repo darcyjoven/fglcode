@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{bca0bdd5-0000-4000-bc84-dd1d85eb54fd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_wsv" order="" uid="{0beb3cb8-0000-4000-8962-47f1bbe61d8c}" where="">
+    <RecordField colName="wsv01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="wsv_file.wsv01" sqlTabName="wsv_file" sqlType="VARCHAR" table_alias_name="" uid="{449cf373-0000-4000-b763-fc8b491dbfa4}"/>
+    <RecordField colName="" fieldIdRef="2" name="gaz03" sqlTabName="" table_alias_name="" uid="{fc36f269-0000-4000-95e6-e3cc3f78fb1b}"/>
+    <RecordField colName="wsv03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="wsv_file.wsv03" sqlTabName="wsv_file" sqlType="VARCHAR" table_alias_name="" uid="{2b0d420d-0000-4000-be38-1bb2d963370b}"/>
+    <RecordField colName="wsv02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="wsv_file.wsv02" sqlTabName="wsv_file" sqlType="VARCHAR" table_alias_name="" uid="{73f0df5a-0000-4000-99a2-2f2000a4c2d8}"/>
+    <RecordField colName="" fieldIdRef="5" name="gat03" sqlTabName="" table_alias_name="" uid="{6ce9a85b-0000-4000-9a41-68aac78c723f}"/>
+    <RecordField colName="wsv04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="wsv_file.wsv04" sqlTabName="wsv_file" sqlType="VARCHAR" table_alias_name="" uid="{e64078a5-0000-4000-bf44-f0daeec60b57}"/>
+    <RecordField colName="wsv05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="wsv_file.wsv05" sqlTabName="wsv_file" sqlType="VARCHAR" table_alias_name="" uid="{335919d8-0000-4000-93b3-d0fa6274fc1b}"/>
+    <RecordField colName="wsv06" defaultValue="1000" fieldIdRef="8" fieldType="TABLE_COLUMN" name="wsv_file.wsv06" sqlTabName="wsv_file" sqlType="INTEGER" table_alias_name="" uid="{f22c3822-0000-4000-ae86-8a59bb2866f7}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="146" name="aws_mdmcfg_relation" spacing="normal" text="V-Point Express Report Relation Config">
+    <Grid gridHeight="13" gridWidth="144" lstrcomment="false" name="gr2" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="143" lstrcomment="false" name="s_wsv" posX="1" posY="0" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsv01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" image="zoom" lstrcomment="false" lstrtitle="false" name="wsv_file.wsv01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="wsv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Program" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Programme Name" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsv03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Head, Detail" lstrcomment="false" lstrtitle="false" name="wsv_file.wsv03" notNull="true" posX="27" posY="0" rowCount="" sqlTabName="wsv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="File Type" widget="ComboBox">
+          <Item lstrtext="false" name="H" text="Head"/>
+          <Item lstrtext="false" name="D" text="Detail"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsv02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" image="zoom.png" lstrcomment="false" lstrtitle="false" name="wsv_file.wsv02" notNull="true" posX="37" posY="0" required="true" rowCount="" sqlTabName="wsv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Table ID" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="gat03" noEntry="true" posX="46" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Table Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsv04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="wsv_file.wsv04" posX="64" posY="0" required="true" rowCount="" sqlTabName="wsv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="MDM Table Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsv05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="wsv_file.wsv05" posX="79" posY="0" required="true" rowCount="" sqlTabName="wsv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="MDM Flow Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsv06" columnCount="" defaultValue="1000" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="wsv_file.wsv06" posX="92" posY="0" rowCount="" sqlTabName="wsv_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Max Number" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

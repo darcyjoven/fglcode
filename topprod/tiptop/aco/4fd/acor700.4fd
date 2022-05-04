@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0081718e-0000-4000-89c1-2bd84fac90cf}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ab316db1-0000-4000-9ae7-86f938a39dd6}" where="">
+    <RecordField colName="coo09" fieldIdRef="1" fieldType="TABLE_COLUMN" name="coo_file.coo09" sqlTabName="coo_file" sqlType="VARCHAR" table_alias_name="" uid="{3eeef87b-0000-4000-9218-5d0a5c15a89d}"/>
+    <RecordField colName="coo07" fieldIdRef="2" fieldType="TABLE_COLUMN" name="coo_file.coo07" sqlTabName="coo_file" sqlType="VARCHAR" table_alias_name="" uid="{a02d9b29-0000-4000-ab71-e6757d522e8a}"/>
+    <RecordField colName="coo01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="coo_file.coo01" sqlTabName="coo_file" sqlType="VARCHAR" table_alias_name="" uid="{4c534965-0000-4000-8772-285ce890130c}"/>
+    <RecordField colName="coo03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="coo_file.coo03" sqlTabName="coo_file" sqlType="DATE" table_alias_name="" uid="{e18279c6-0000-4000-b708-b099f5f129e6}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{2683fe4e-0000-4000-b79b-1bd08b92ec75}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{92d120eb-0000-4000-b0f8-64ed9973897b}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d6dda3f6-0000-4000-b56c-abb49e8a2b62}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="55" name="acor700" spacing="normal" text="acor700">
+    <VBox gridHeight="14" gridWidth="53" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="10" gridWidth="53" lstrcomment="false" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="48" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Bonded No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coo09" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coo_file.coo09" posX="22" posY="1" rowCount="" sqlTabName="coo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Declaration No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coo07" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coo_file.coo07" posX="22" posY="2" rowCount="" sqlTabName="coo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Document No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coo01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coo_file.coo01" posX="22" posY="3" rowCount="" sqlTabName="coo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Document Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coo03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coo_file.coo03" posX="22" posY="4" rowCount="" sqlTabName="coo_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="52" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="6" text="Input">
+          <Label posX="1" posY="1" text="Declaration Date QBE"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bdate" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+          <Label posX="36" posY="1" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="edate" posX="38" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="53" lstrcomment="false" name="Grid2" posX="0" posY="11">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

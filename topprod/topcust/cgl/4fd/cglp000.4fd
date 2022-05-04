@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{f7f57309-f3fb-4e38-918a-e45a56955fc3}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{de5b15f9-401b-4c7d-b475-22c44753f8e2}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{36886045-2bb6-4dc7-a69d-e3aa5a187fc0}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="bm" sqlTabName="" table_alias_name="" uid="{59122d90-a3d6-49ce-96ab-ae51b5e8ff8d}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="em" sqlTabName="" table_alias_name="" uid="{a82a183d-327f-47fe-8e4f-3316f8285d0c}"/>
+    <RecordField colName="axa01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="axa_file.axa01" sqlTabName="axa_file" sqlType="VARCHAR" table_alias_name="" uid="{f75d743b-d5f3-46d8-bbf0-7a1cd25bde9c}"/>
+    <RecordField colName="axz01" fieldIdRef="5" fieldType="TABLE_COLUMN" name="axz_file.axz01" sqlTabName="axz_file" sqlType="VARCHAR" table_alias_name="" uid="{3dec58bf-6b3b-4a2b-8d27-516ae4e0b29c}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{7c640067-7b46-4955-b037-9052d7308222}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="59" name="aglp000" spacing="normal" text="aglp000">
+    <VBox gridHeight="18" gridWidth="57" name="vb3" posX="0" posY="0">
+      <Grid gridHeight="10" gridWidth="57" lstrcomment="false" name="gr2472" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+          <Label gridHeight="1" gridWidth="19" posX="1" posY="2" text="Inward Finscal Year"/>
+          <Edit colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="yy" notNull="true" posX="23" posY="2" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="14" posX="1" posY="3" text="Initial Period"/>
+          <Edit colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="bm" noEntry="true" notNull="true" posX="23" posY="3" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="13" posX="1" posY="4" text="Ending Period"/>
+          <Edit colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="em" notNull="true" posX="23" posY="4" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="9" posX="1" posY="5" text="Group No."/>
+          <ButtonEdit action="controlp" colName="axa01" columnCount="" comment="&lt;^P&gt;Query Group Data" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom" lstrcomment="false" lstrtitle="false" name="axa_file.axa01" notNull="true" posX="23" posY="5" required="true" rowCount="" sqlTabName="axa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="44" lstrcomment="false" lstrtext="false" name="gb3" posX="1" posY="7" text="QBE">
+          <Label gridHeight="1" gridWidth="14" posX="1" posY="1" text="Parent Company"/>
+          <ButtonEdit action="controlp" colName="axz01" columnCount="" comment="&lt;^P&gt;Query " fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom" lstrcomment="false" lstrtitle="false" name="axz_file.axz01" notNull="true" posX="23" posY="1" required="true" rowCount="" sqlTabName="axz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="6" gridWidth="57" lstrcomment="false" name="grid" posX="0" posY="11">
+        <CheckBox colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADcANQBkADcANAAzAGIALQBkADUAZgAzAC0ANAA2AGQAOAAtAGIAYgBmADAALQA3AGEAMQBjAGQAMgA1AGIAZABlADkAYwB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADYAOAA4ADYAMAA0ADUALQAyAGIAYgA2AC0ANABkAGMANwAtAGEANgA5AGQALQBlADMAYQBhADUAYQAxADgANwBmAGMAMAB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADkAMQAyADIAZAA5ADAALQBhADMAZAA2AC0ANAA5AGMAZQAtADkANgBhAGIALQBhAGUANQAxAGIANQBlADgAZgBmADgAZAB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewBhADgAMgBhADEAOAAzAGQALQAzADIANwBmAC0ANAA3AGYAZQAtADgAZQA0AGYALQAzADMAMQA2AGYAOAAyADgANQBkADAAYwB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGMANgA0ADAAMAA2ADcALQA3AGIANAA2AC0ANAA5ADUANQAtAGIAMAAzADcALQA5ADAANQAyAGQANwAzADAAOAAyADIAMgB9QBQAAAAAAABAY2AAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGUANQBiADEANQBmADkALQA0ADAAMQBiAC0ANABjADcAZAAtAGIANAA3ADUALQAyADIAYwA0ADQANwA1ADMAZgA4AGUAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGQAZQBjADUAOABiAGYALQA2AGIAMwBiAC0ANABhADIAYgAtADgAZAAyADcALQA1ADEANgBhAGUANABlADAAYgAyADkAYwB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

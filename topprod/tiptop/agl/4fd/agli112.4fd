@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{97df99e5-0000-4000-b72e-6511ae7b5687}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="tree" order="" uid="{bf1aa27c-0000-4000-bbec-013128a379bb}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="name" sqlTabName="" table_alias_name="" uid="{9c520b9b-0000-4000-a428-4a685a72a679}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="pid" sqlTabName="" table_alias_name="" uid="{95b55f23-0000-4000-a7d9-76953bc408a0}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="id" sqlTabName="" table_alias_name="" uid="{6efee633-0000-4000-b39c-5a20a1b22f54}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="has_children" sqlTabName="" table_alias_name="" uid="{31a58ba4-0000-4000-b3db-b3e2bb689f2b}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="expanded" sqlTabName="" table_alias_name="" uid="{150ef28b-0000-4000-908e-ee8f98618353}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="level" sqlTabName="" table_alias_name="" uid="{e6316cbb-0000-4000-ac70-261d9f2ef0b8}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="path" sqlTabName="" table_alias_name="" uid="{6fe5f540-0000-4000-a8f6-482914a2a530}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="treekey1" sqlTabName="" table_alias_name="" uid="{e2aa46e5-0000-4000-9f2d-07e59ab5001f}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="treekey2" sqlTabName="" table_alias_name="" uid="{3cd2b6ae-0000-4000-a9e0-c77aab984da0}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_abd" order="" uid="{b26c5a5e-0000-4000-998a-b97621ab8930}" where="">
+    <RecordField colName="abd02" fieldIdRef="12" fieldType="TABLE_COLUMN" name="abd_file.abd02" sqlTabName="abd_file" sqlType="VARCHAR" table_alias_name="" uid="{152ef2f3-0000-4000-bf53-b42eb16f55d3}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="gem02" sqlTabName="" table_alias_name="" uid="{bcaeef26-0000-4000-a613-7c2a6ba6463c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ee2f71ec-0000-4000-974c-620b3b3f9af6}" where="">
+    <RecordField colName="abd01" fieldIdRef="10" fieldType="TABLE_COLUMN" name="abd_file.abd01" sqlTabName="abd_file" sqlType="VARCHAR" table_alias_name="" uid="{44b448f7-0000-4000-9541-a8f46b54268d}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="gem02n" sqlTabName="" table_alias_name="" uid="{9923f735-0000-4000-9fd0-20f31e31ccb2}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ea09ab4f-0000-4000-b19e-92e5d757ea69}"/>
+    <RecordField colName="" fieldIdRef="14" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{4387462b-0000-4000-83e8-49e4f06cceac}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="73" name="agli112" text="agli112">
+    <VBox gridHeight="20" gridWidth="73" name="vb11" posX="0" posY="0">
+      <Folder gridHeight="16" gridWidth="73" name="folder01" posX="0" posY="1">
+        <Page name="page01" text="Main">
+          <HBox gridHeight="15" gridWidth="72" name="hb3" posX="0" posY="0">
+            <Grid gridHeight="15" gridWidth="22" name="grid_tree" posX="2" posY="0">
+              <Tree expandedColumn="expanded" gridHeight="12" gridWidth="21" idColumn="id" imageCollapsed="folder" imageExpanded="open" imageLeaf="file" isNodeColumn="has_children" name="Tree1" parentIdColumn="pid" posX="1" posY="0" totalRows="10" width="21">
+                <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" name="name" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" unsortable="true" widget="FFLabel"/>
+                <Phantom colName="" fieldId="2" fieldType="NON_DATABASE" name="pid" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+                <Phantom colName="" fieldId="3" fieldType="NON_DATABASE" name="id" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+                <Phantom colName="" fieldId="4" fieldType="NON_DATABASE" name="has_children" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+                <Phantom colName="" fieldId="5" fieldType="NON_DATABASE" name="expanded" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+                <Phantom colName="" fieldId="6" fieldType="NON_DATABASE" name="level" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+                <Phantom colName="" fieldId="7" fieldType="NON_DATABASE" name="path" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+                <Phantom colName="" fieldId="8" fieldType="NON_DATABASE" name="treekey1" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+                <Phantom colName="" fieldId="9" fieldType="NON_DATABASE" name="treekey2" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              </Tree>
+            </Grid>
+            <Grid gridHeight="15" gridWidth="14" name="Grid1" posX="24" posY="0">
+              <Button gridHeight="1" gridWidth="7" image="next2" name="addchild" posX="1" posY="1" tabIndex="17"/>
+            </Grid>
+            <VBox gridHeight="15" gridWidth="32" name="vb10" posX="38" posY="0">
+              <Grid gridHeight="2" gridWidth="32" name="gr2387" posX="0" posY="1">
+                <Label posX="1" posY="0" text="Upper Department"/>
+                <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="abd01" columnCount="" comment="&lt;^P&gt;Query Department" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="abd_file.abd01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="abd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+                <Label posX="1" posY="1" text="Department Name"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="gem02n" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              </Grid>
+              <Table gridHeight="11" gridWidth="32" name="s_abd" posX="0" posY="3" totalRows="10">
+                <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="abd02" columnCount="" comment="&lt;^P&gt;Query Department" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="abd_file.abd02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="abd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Sub-Dept." widget="ButtonEdit"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" name="gem02" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Desc." widget="Edit"/>
+              </Table>
+            </VBox>
+          </HBox>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="73" name="gr2388" posX="0" posY="17">
+        <HLine gridWidth="10" name="HLine1" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine2" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

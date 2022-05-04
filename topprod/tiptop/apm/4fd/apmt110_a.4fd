@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a761beee-0000-4000-8993-a8e7d609d3f2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmn1" order="" uid="{abacec22-0000-4000-b663-a0d52093857f}" where="">
+    <RecordField colName="pmn04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmn_file.pmn04" sqlTabName="pmn_file" sqlType="VARCHAR" table_alias_name="" uid="{10e41122-0000-4000-a104-e8568bb7107c}"/>
+    <RecordField colName="pmn041" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmn_file.pmn041" sqlTabName="pmn_file" sqlType="VARCHAR" table_alias_name="" uid="{a0e7d331-0000-4000-adce-09920a449917}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="pmn50_55" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{e8ef002d-0000-4000-9c31-9dfdc9c6d63e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6218a112-0000-4000-8ae2-b887b3655504}" where="">
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="order" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{193de475-0000-4000-b0b7-74beec006808}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="type" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{56e43909-0000-4000-a3c1-8bf7582d1a61}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="89" name="Form1" text="apmt110_a">
+    <VBox gridHeight="15" gridWidth="85" name="vb1" posX="2" posY="1">
+      <Grid gridHeight="5" gridWidth="85" lstrcomment="false" name="gr1" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="82" lstrcomment="false" lstrtext="false" name="gb1" posX="1" posY="1" text="deal order">
+          <Label colorCondition="black" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" name="dummy1" posX="2" posY="1" text="sort"/>
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="28" items="by order, by reverse" name="order" notNull="true" orientation="horizontal" posX="16" posY="1" required="true" rowCount="" sizePolicy="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="by order"/>
+            <Item lstrtext="false" name="2" text="by reverse"/>
+          </RadioGroup>
+          <Label colorCondition="black" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" name="dummy2" posX="2" posY="2" text="type"/>
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" items="Purchase Date, Orig. Arrival  Date" lstrcomment="false" name="type" notNull="true" orientation="horizontal" posX="16" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="Purchase Date"/>
+            <Item lstrtext="false" name="2" text="Orig. Arrival  Date"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Grid gridHeight="8" gridWidth="85" lstrcomment="false" name="gr2" posX="0" posY="6">
+        <Table gridHeight="7" gridWidth="82" name="s_pmn1" posX="1" posY="0" totalRows="5">
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn04" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="pmn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Item No." widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn041" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn041" noEntry="true" posX="23" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Item Description" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="pmn50_55" notNull="true" posX="63" posY="0" required="true" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title=" Qty" widget="Edit"/>
+        </Table>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

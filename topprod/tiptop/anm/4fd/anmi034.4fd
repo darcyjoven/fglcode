@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2f7b5830-0000-4000-a041-93c0e65dd1b3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nnc" order="" uid="{dc071e53-0000-4000-a10d-4268b1a3ece9}" where="">
+    <RecordField colName="nnc02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nnc_file.nnc02" sqlTabName="nnc_file" sqlType="VARCHAR" table_alias_name="" uid="{20a2d0bf-0000-4000-b0a9-e1271286275e}"/>
+    <RecordField colName="nnc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nnc_file.nnc03" sqlTabName="nnc_file" sqlType="VARCHAR" table_alias_name="" uid="{489b6763-0000-4000-bb2b-b37995df1558}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1ee6f886-0000-4000-8fd5-e7a3c03739b9}" where="">
+    <RecordField colName="nnc01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nnc_file.nnc01" sqlTabName="nnc_file" sqlType="VARCHAR" table_alias_name="" uid="{9626d34c-0000-4000-901a-53e099c5a2e4}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f1097237-0000-4000-82a0-8c841e764527}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e99c85a4-0000-4000-843e-e229cbdee79f}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="98" lstrtext="false" name="anmi034" spacing="normal" text="anmi034">
+    <VBox gridHeight="15" gridWidth="94" name="vb2" posX="2" posY="1" splitter="">
+      <Folder gridHeight="4" gridWidth="94" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Page0">
+          <Grid gridHeight="3" gridWidth="91" lstrcomment="false" name="gr1" posX="2" posY="0">
+            <Label posX="1" posY="1" text="type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnc01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" items="Import, Export" lstrcomment="false" name="nnc_file.nnc01" posX="9" posY="1" rowCount="" sqlTabName="nnc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Import"/>
+              <Item lstrtext="false" name="2" text="Export"/>
+            </ComboBox>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="94" name="s_nnc" posX="0" posY="5" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnc02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="nnc_file.nnc02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nnc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="type code" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnc03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="80" lstrcomment="false" lstrtitle="false" name="nnc_file.nnc03" posX="11" posY="0" rowCount="" sqlTabName="nnc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="type desc." widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="94" lstrcomment="false" name="gr2" posX="0" posY="12">
+        <Label posX="1" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" lstrcomment="false" name="cnt" noEntry="true" posX="7" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="15" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" lstrcomment="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

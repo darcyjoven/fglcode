@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{fb960d33-0000-4000-a20c-bcfb523eedd8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_azp1" order="" uid="{986ce3c6-0000-4000-9907-d7127ae856f9}" where="">
+    <RecordField colName="" fieldIdRef="1" name="select" sqlTabName="" table_alias_name="" uid="{b9cf1853-0000-4000-8927-4afc53c5d233}"/>
+    <RecordField colName="azp01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="azp_file.azp01" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{c8a770cd-0000-4000-be39-a2b5639bf7ea}"/>
+    <RecordField colName="azp02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="azp_file.azp02" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{4aa027d5-0000-4000-b37c-4635fd0f1670}"/>
+    <RecordField colName="azp03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="azp_file.azp03" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{6a5ccd36-0000-4000-8e9d-42f2c0c772cb}"/>
+    <RecordField colName="" fieldIdRef="5" name="tab_syn" sqlTabName="" table_alias_name="" uid="{7ee48669-0000-4000-a1ac-50ec184bd083}"/>
+    <RecordField colName="" fieldIdRef="6" name="syn_db" sqlTabName="" table_alias_name="" uid="{142bcb12-0000-4000-ab40-2334bb1ee9e6}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="87" name="p_zta_seldb2" spacing="normal" text="p_zta_seldb2">
+    <Grid gridHeight="15" gridWidth="85" lstrcomment="false" name="gr3069" posX="0" posY="0">
+      <Table gridHeight="14" gridWidth="84" lstrcomment="false" name="s_azp1" posX="1" posY="0" totalRows="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="select" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Select" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="azp_file.azp01" noEntry="true" posX="7" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Logistics code" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="azp_file.azp02" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Logistics Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="azp_file.azp03" noEntry="true" posX="41" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Schema No." widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="14" items="Table, Synonym" lstrcomment="false" lstrtitle="false" name="tab_syn" noEntry="true" notNull="true" posX="52" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Table/Synonym" widget="ComboBox">
+          <Item name="T" text="Table"/>
+          <Item name="S" text="Synonym"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="syn_db" noEntry="true" posX="66" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Synonym DB" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

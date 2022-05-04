@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8702f39f-0000-4000-a6c0-40bda55837be}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nmy" order="" uid="{f1146720-0000-4000-a54c-096a2d66f44b}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{12f15961-0000-4000-aa5f-94251e86f2df}"/>
+    <RecordField colName="nmyslip" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nmy_file.nmyslip" sqlTabName="nmy_file" sqlType="VARCHAR" table_alias_name="" uid="{e7abefa8-0000-4000-be36-ff6501479f8b}"/>
+    <RecordField colName="nmydesc" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nmy_file.nmydesc" sqlTabName="nmy_file" sqlType="VARCHAR" table_alias_name="" uid="{11e1641b-0000-4000-884b-0995d8da17e2}"/>
+    <RecordField colName="nmyauno" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nmy_file.nmyauno" sqlTabName="nmy_file" sqlType="VARCHAR" table_alias_name="" uid="{842c443b-0000-4000-8b3f-6638a4315b60}"/>
+    <RecordField colName="nmydmy2" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nmy_file.nmydmy2" sqlTabName="nmy_file" sqlType="VARCHAR" table_alias_name="" uid="{a8a63765-0000-4000-a5e8-7f99e0e3fbd4}"/>
+    <RecordField colName="nmykind" fieldIdRef="6" fieldType="TABLE_COLUMN" name="nmy_file.nmykind" sqlTabName="nmy_file" sqlType="VARCHAR" table_alias_name="" uid="{895a1550-0000-4000-9153-386d03316248}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="80" name="q_nmy" spacing="normal" text="Qry Document Type">
+    <Grid gridHeight="13" gridWidth="78" lstrcomment="false" name="gr3803" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="77" lstrcomment="false" name="s_nmy" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmyslip" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="nmy_file.nmyslip" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="nmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Document" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmydesc" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmy_file.nmydesc" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="nmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Document Name" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmyauno" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="nmy_file.nmyauno" noEntry="true" posX="35" posY="0" rowCount="" sqlTabName="nmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Auto No." valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmydmy2" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" items="Serial Number, By Year and Month, By Year and Week, By Year,Month and Day" lstrcomment="false" lstrtitle="false" name="nmy_file.nmydmy2" noEntry="true" posX="44" posY="0" queryEditable="true" rowCount="" sqlTabName="nmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Numbering Method" widget="ComboBox">
+          <Item name="1" text="Serial Number"/>
+          <Item name="2" text="By Year and Month"/>
+          <Item name="3" text="By Year and Week"/>
+          <Item name="4" text="By Year,Month and Day"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmykind" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Drawing Slip No., Note Receipt No., Income/Expense List No., Financing Doc No., Loan Contract, Interest Payment Slip No., Payment Slip No., Investment Doc No., Exchange Transaction, A/P Transaction, A/R Transaction, Covering Doc, Interest Income, deposit due, Investment buy, Fixed Deposit, Conglomerate Transfer, Conglomerate Transfer Payment, Delivery Order No." lstrcomment="false" lstrtitle="false" name="nmy_file.nmykind" noEntry="true" notNull="true" posX="61" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="nmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Property" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Drawing Slip No."/>
+          <Item lstrtext="false" name="2" text="Note Receipt No."/>
+          <Item lstrtext="false" name="3" text="Income/Expense List No."/>
+          <Item lstrtext="false" name="4" text="Financing Doc No."/>
+          <Item lstrtext="false" name="5" text="Loan Contract"/>
+          <Item lstrtext="false" name="6" text="Interest Payment Slip No."/>
+          <Item lstrtext="false" name="7" text="Payment Slip No."/>
+          <Item lstrtext="false" name="8" text="Investment Doc No."/>
+          <Item lstrtext="false" name="9" text="Exchange Transaction"/>
+          <Item lstrtext="false" name="A" text="A/P Transaction"/>
+          <Item lstrtext="false" name="B" text="A/R Transaction"/>
+          <Item lstrtext="false" name="C" text="Covering Doc"/>
+          <Item lstrtext="false" name="D" text="Interest Income"/>
+          <Item lstrtext="false" name="E" text="deposit due"/>
+          <Item lstrtext="false" name="F" text="Investment buy"/>
+          <Item lstrtext="false" name="G" text="Fixed Deposit"/>
+          <Item lstrtext="false" name="H" text="Conglomerate Transfer"/>
+          <Item lstrtext="false" name="I" text="Conglomerate Transfer Payment"/>
+          <Item lstrtext="false" name="J" text="Delivery Order No."/>
+        </ComboBox>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

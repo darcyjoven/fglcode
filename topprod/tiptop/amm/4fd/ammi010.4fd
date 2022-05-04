@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e12d99e7-0000-4000-ac17-ed579b59faea}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_mmc" order="" uid="{182689ec-0000-4000-9419-9ae5fed862d3}" where="">
+    <RecordField colName="mmc01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="mmc_file.mmc01" sqlTabName="mmc_file" sqlType="VARCHAR" table_alias_name="" uid="{abe0c999-0000-4000-925e-5c3f68686ff3}"/>
+    <RecordField colName="mmc02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="mmc_file.mmc02" sqlTabName="mmc_file" sqlType="VARCHAR" table_alias_name="" uid="{03740294-0000-4000-8619-badac369a52e}"/>
+    <RecordField colName="mmcacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="mmc_file.mmcacti" sqlTabName="mmc_file" sqlType="VARCHAR" table_alias_name="" uid="{8ea653ef-0000-4000-bbec-42528334abe3}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ce063ea9-0000-4000-aaf1-29ed2a12a2b3}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{5af4c62b-0000-4000-b6a1-4fa7c536b0ca}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="50" name="ammi010" spacing="normal" text="ammi010">
+    <VBox gridHeight="18" gridWidth="47" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="47" lstrcomment="false" name="pc691" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="45" lstrcomment="false" name="s_mmc" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mmc01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="mmc_file.mmc01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="mmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ProcessingCode" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mmc02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="mmc_file.mmc02" posX="15" posY="0" rowCount="" sqlTabName="mmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ProcessingName" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mmcacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="mmc_file.mmcacti" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="mmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="47" lstrcomment="false" name="gr3740" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1159" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1160" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

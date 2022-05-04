@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7fbba321-0000-4000-8efa-a55542d4ce07}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6f4522b9-0000-4000-a489-08a20d2b7a6e}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="only_one" sqlTabName="" table_alias_name="" uid="{698f5f16-0000-4000-b2a7-1564da83b8ae}"/>
+    <RecordField colName="aag00" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aag_file.aag00" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="tableAlias1" uid="{e8e1f104-0000-4000-9ffe-0c634974a220}"/>
+    <RecordField colName="aag01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aag_file.aag01" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{1497f2fc-0000-4000-bba8-8ceec49d1e1b}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="62" name="agli102_1" spacing="normal" text="Add Extra Name">
+    <Grid gridHeight="10" gridWidth="53" lstrcomment="false" name="gr2367" posX="0" posY="0">
+      <Group gridHeight="3" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Add Extra Name Condition">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="39" items="Add by this Subject only, Add  by QBE Condition" lstrcomment="false" lstrtitle="false" name="only_one" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+          <Item lstrtext="" name="1" text="Add by this Subject only"/>
+          <Item lstrtext="" name="2" text="Add  by QBE Condition"/>
+        </RadioGroup>
+      </Group>
+      <Group gridHeight="5" gridWidth="43" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="Enter Condition to Add Name:">
+        <Label posX="1" posY="1" text="Book No"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag00" colorCondition="black" columnCount="" comment="&lt;^P&gt; Qry Book No." fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" name="aag_file.aag00" posX="27" posY="1" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="tableAlias1" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Payment Slip# QBE"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag01" columnCount="" comment="&lt;^P&gt;Qry Account No. " fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="aag_file.aag01" notNull="true" posX="26" posY="2" required="true" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

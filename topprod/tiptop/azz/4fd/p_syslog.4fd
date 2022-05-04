@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{48d97ed2-0079-4bab-ac3d-7ea783278a7b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="undefined" order="" uid="{800f0491-88e2-49e8-9a75-119cb9440ca4}" where="">
+    <RecordField colName="cnt2" fieldIdRef="12" name="cnt2" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{cf3200fb-3ccd-493c-aa2c-e564d8c24965}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gdp_head" order="" uid="{8a3c60c0-87fe-4103-98fe-4fe768d26550}" where="">
+    <RecordField colName="gdp06" fieldIdRef="0" fieldType="TABLE_COLUMN" name="gdp_file.gdp06" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{613d680a-8666-495d-aa7b-199ea65df6e6}"/>
+    <RecordField colName="edit1" fieldIdRef="1" name="total" sqlTabName="formonly" table_alias_name="" uid="{2fe10c6e-8083-481a-86d1-8051ed35399a}"/>
+    <RecordField colName="edit2" fieldIdRef="2" name="system" sqlTabName="formonly" table_alias_name="" uid="{eacdae03-4c58-4d60-9289-28e60cc3d423}"/>
+    <RecordField colName="edit3" fieldIdRef="3" name="general" sqlTabName="formonly" table_alias_name="" uid="{0db7b5f6-c0b0-47ed-88e0-fa92212fb121}"/>
+    <RecordField colName="edit4" fieldIdRef="4" name="detail" sqlTabName="formonly" table_alias_name="" uid="{50fc193f-a0f6-463d-8257-0f9329bc38bb}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gdp_detail" order="" uid="{aa7d604e-fd90-4157-83b0-c7eb0b555c91}" where="">
+    <RecordField colName="gdp05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gdp_file.gdp05" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{a5e3bd07-e5fb-4624-a754-7b51b07c45bc}"/>
+    <RecordField colName="gdp01" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gdp_file.gdp01" sqlTabName="gdp_file" sqlType="DATE" table_alias_name="" uid="{d8abe01d-6e59-46c7-b320-851ffbc57bf5}"/>
+    <RecordField colName="gdp02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gdp_file.gdp02" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{93296dcf-1d9f-4470-bd59-0a39d7bf289e}"/>
+    <RecordField colName="gdp03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gdp_file.gdp03" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{bb88c44f-d066-4c71-af9d-fa5dcb3d7016}"/>
+    <RecordField colName="gdp04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gdp_file.gdp04" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{cba3e472-4b76-442a-a820-abbbf1ac660b}"/>
+    <RecordField colName="gdp07" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gdp_file.gdp07" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{c31cd142-b473-4329-a271-261b32658a43}"/>
+    <RecordField colName="gdp09" fieldIdRef="13" fieldType="TABLE_COLUMN" name="gdp_file.gdp09" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{077ae047-15d0-48ae-9179-b5fc6cb2d7fd}"/>
+    <RecordField colName="gdp10" fieldIdRef="14" fieldType="TABLE_COLUMN" name="gdp_file.gdp10" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{24d51ffa-2af5-48f0-aeff-afde2970cbd8}"/>
+    <RecordField colName="gdp11" fieldIdRef="15" fieldType="TABLE_COLUMN" name="gdp_file.gdp11" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{409f63ec-e0b6-4271-a423-053ecf9b430e}"/>
+    <RecordField colName="gdp08" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gdp_file.gdp08" sqlTabName="gdp_file" sqlType="VARCHAR" table_alias_name="" uid="{b5eda537-1c2f-43f9-ae84-f01bc8d98dbd}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="98" lstrtext="true" name="p_syslog" text="Form">
+    <VBox gridHeight="22" gridWidth="97" name="VBox1" posX="1" posY="0">
+      <Grid gridHeight="18" gridWidth="97" name="grid1" posX="0" posY="1">
+        <Table gridHeight="5" gridWidth="86" name="s_gdp_head" posX="1" posY="1" totalRows="4" unitWidth="characters" width="69">
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp06" columnCount="" fieldId="0" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" items="" name="gdp_file.gdp06" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdp06" widget="ComboBox">
+            <Item name="E" text="Error"/>
+            <Item name="W" text="Worng"/>
+            <Item name="A" text="Allow"/>
+          </ComboBox>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="edit1" columnCount="" fieldId="1" gridHeight="1" gridWidth="13" name="total" posX="16" posY="0" rowCount="" sqlTabName="formonly" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Total Count" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="edit2" columnCount="" fieldId="2" gridHeight="1" gridWidth="11" name="system" posX="29" posY="0" rowCount="" sqlTabName="formonly" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Systmem Layer" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="edit3" columnCount="" fieldId="3" gridHeight="1" gridWidth="8" name="general" posX="40" posY="0" rowCount="" sqlTabName="formonly" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="General Layer" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="edit4" columnCount="" fieldId="4" gridHeight="1" gridWidth="14" name="detail" posX="48" posY="0" rowCount="" sqlTabName="formonly" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Detail Layer" widget="Edit"/>
+        </Table>
+        <HLine gridWidth="11" name="HLine1" posX="4" posY="6"/>
+        <Label gridHeight="1" gridWidth="11" lstrtext="true" name="lb1" posX="16" posY="6" text="Message Detail"/>
+        <HLine gridWidth="16" name="HLine2" posX="29" posY="6"/>
+        <Table gridHeight="11" gridWidth="96" name="s_gdp_datail" posX="1" posY="7" totalRows="10" unitWidth="characters" width="69">
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="" name="gdp_file.gdp05" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdp05" widget="ComboBox">
+            <Item name="S" text="System"/>
+            <Item name="G" text="General"/>
+            <Item name="D" text="Detail"/>
+          </ComboBox>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp01" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="gdp_file.gdp01" notNull="true" posX="9" posY="0" required="true" rowCount="" sqlTabName="gdp_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdp01" widget="DateEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp02" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="gdp_file.gdp02" notNull="true" posX="19" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdp02" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp03" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="gdp_file.gdp03" notNull="true" posX="27" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdp03" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp04" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="gdp_file.gdp04" notNull="true" posX="36" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdp04" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp07" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="gdp_file.gdp07" posX="43" posY="0" rowCount="" scroll="true" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdp07" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp09" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="gdp_file.gdp09" posX="50" posY="0" rowCount="" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="gdp09" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp10" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="gdp_file.gdp10" posX="58" posY="0" rowCount="" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="gdp10" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp11" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="gdp_file.gdp11" posX="66" posY="0" rowCount="" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="gdp11" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdp08" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="gdp_file.gdp08" notNull="true" posX="74" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gdp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdp08" widget="Edit"/>
+        </Table>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="97" name="gr4618" posX="0" posY="19">
+        <HLine gridWidth="10" name="HLine3" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cnt2" columnCount="" fieldId="12" gridHeight="1" gridWidth="6" name="cnt2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine4" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

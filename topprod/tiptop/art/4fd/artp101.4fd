@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{86bd557b-d91f-47b1-8255-00d55c85bd09}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1a4ea345-9a54-4232-8984-4a2feba5a138}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="date" sqlTabName="" sqlType="DATETIME" table_alias_name="" uid="{9a0e809e-206c-4d49-a303-77f0773530cc}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="plant" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{4f737a24-c7e4-46c6-a115-258d78010cba}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="rti01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{05091461-6a22-448a-afa9-8a619654c333}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="rtm01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{93896462-0c57-4b58-b2fb-74f7ed9d337a}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{2e1ab2b1-ebd7-42c9-a596-8c352ecd915f}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="119" lstrtext="false" name="artp101" spacing="normal" text="artp101">
+    <VBox gridHeight="12" gridWidth="33" name="VBox1" posX="2" posY="0">
+      <Grid gridHeight="7" gridWidth="33" lstrcomment="false" name="gr4" posX="0" posY="1">
+        <Label posX="5" posY="1" text="date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" name="date" notNull="true" posX="11" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATETIME" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+        <Label posX="5" posY="2" text="plant"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" name="plant" notNull="true" posX="11" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="5" posY="3" text="No"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" name="rti01" posX="11" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="5" posY="4" text="Dno"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" name="rtm01" posX="11" posY="4" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="33" name="gr1" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtext="false" name="g_bgjob" notNull="true" posX="3" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxAGEANABlAGEAMwA0ADUALQA5AGEANQA0AC0ANAAyADMAMgAtADgAOQA4ADQALQA0AGEAMgBmAGUAYgBhADUAYQAxADMAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADMAOAA5ADYANAA2ADIALQAwAGMANQA3AC0ANABiADUAOAAtAGIAMgBmAGIALQA3ADQAZgA3AGUAZAA5AGQAMwAzADcAYQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGEAMABlADgAMAA5AGUALQAyADAANgBjAC0ANABkADQAOQAtAGEAMwAwADMALQA3ADcAZgAwADcANwAzADUAMwAwAGMAYwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGYANwAzADcAYQAyADQALQBjADcAZQA0AC0ANAA2AGMANgAtAGEAMQAxADUALQAyADUAOABkADcAOAAwADEAMABjAGIAYQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADUAMAA5ADEANAA2ADEALQA2AGEAMgAyAC0ANAA0ADgAYQAtAGEAZgBhADkALQA4AGEANgAxADkANgA1ADQAYwAzADMAMwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGUAMQBhAGIAMgBiADEALQBlAGIAZAA3AC0ANAAyAGMAOQAtAGEANQA5ADYALQA4AGMAMwA1ADIAZQBjAGQAOQAxADUAZgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

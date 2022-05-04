@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{143284ed-0000-4000-9414-8640f5e8b164}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bma" order="" uid="{76a97aeb-0000-4000-920b-40068069c64f}" where="">
+    <RecordField colName="" fieldIdRef="1" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ef1660d7-0000-4000-8878-6ea0527094ae}"/>
+    <RecordField colName="" fieldIdRef="2" name="bma01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{be2aee79-0000-4000-927f-b64f0bfcac75}"/>
+    <RecordField colName="ima02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ima_file.ima02" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{f20f7dd9-0000-4000-85de-724e29351051}"/>
+    <RecordField colName="" fieldIdRef="4" name="bma06" sqlTabName="" table_alias_name="" uid="{ced51db8-0000-4000-b817-e6388478ef4c}"/>
+    <RecordField colName="" fieldIdRef="5" name="qty" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{b6679013-0000-4000-b849-ecf4d051ef7c}"/>
+    <RecordField colName="" fieldIdRef="6" name="num" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{102f4ca3-0000-4000-9250-3d1a1e8279a4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{42eb6136-9a2e-41a3-8fb5-80a686835d04}" where="">
+    <RecordField colName="" defaultValue="3" fieldIdRef="7" name="bst" sqlTabName="" table_alias_name="" uid="{8c940987-4169-4653-8529-86f27ccb4b6b}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="114" name="asfr580" spacing="normal" text="asfr580">
+    <Folder gridHeight="20" gridWidth="112" lstrcomment="false" name="pc146" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="19" gridWidth="111" name="VBox1" posX="0" posY="0">
+          <Grid gridHeight="6" gridWidth="111" name="Grid1" posX="0" posY="1">
+            <Group gridHeight="3" gridWidth="110" name="Group01" posX="1" posY="1" text="BOM Status">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="3" fieldId="7" gridHeight="1" gridWidth="39" items="UnConfirmed, Confirmed, All" name="bst" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" title="RadioGroup1" widget="RadioGroup">
+                <Item lstrtext="false" name="1" text="UnConfirmed"/>
+                <Item lstrtext="false" name="2" text="Confirmed"/>
+                <Item lstrtext="false" name="3" text="All"/>
+              </RadioGroup>
+            </Group>
+          </Grid>
+          <Table gridHeight="11" gridWidth="111" lstrcomment="false" name="s_bma" posX="0" posY="7" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Line No" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="No Blank Field, &lt;^P&gt;Qry Item No." fieldId="2" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="bma01" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Finished Product No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima_file.ima02" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Description" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="bma06" posX="53" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Alternate Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="No Blank Field,must be greater then zero" fieldId="5" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="qty" posX="68" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Production Sets" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="num" posX="88" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Pre-NumberW/O" widget="Edit"/>
+          </Table>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADYAYQA5ADcAYQBlAGIALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMgAwAGIALQA0ADAAMAA2ADgAMAA2ADkAYwA2ADQAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGYAMQA2ADYAMABkADcALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOAA3ADgALQA2AGUAYQAwADUAMgA3ADAAOQA0AGEAZQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGMAOQA0ADAAOQA4ADcALQA0ADEANgA5AC0ANAA2ADUAMwAtADgANQAyADkALQA4ADYAZgAyADcAYwBjAGIANABiADYAYgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADIAZQBiADYAMQAzADYALQA5AGEAMgBlAC0ANAAxAGEAMwAtADgAZgBiADUALQA4ADAAYQA2ADgANgA4ADMANQBkADAANAB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADIAMABmADcAZABkADkALQAwADAAMAAwAC0ANAAwADAAMAAtADgANQBkAGUALQA3ADIANABlADIAOQAzADUAMQAwADUAMQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGUAZAA1ADEAZABiADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOAAxADcALQBlADYAMwA4ADgANAA3ADgAZQBmADQAYwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADYANgA3ADkAMAAxADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOAA0ADkALQBlAGMAZgA0AGQAMAA1ADEAZQBmADcAYwB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAxADAAMgBmADQAYwBhADMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMgA1ADAALQAzAGQAMQBhADEAZQA4ADIANwA5AGEANAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGUAMgBhAGUAZQA3ADkALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMgA3AGYALQBiADYANABmADAAYgBmAGMAYQBjADcANQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

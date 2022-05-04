@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ea2a0396-0000-4000-b554-e909a51e740b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_geo" order="" uid="{73af3f5a-0000-4000-9b55-fd697a954517}" where="">
+    <RecordField colName="geo01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="geo_file.geo01" sqlTabName="geo_file" sqlType="VARCHAR" table_alias_name="" uid="{e580b909-0000-4000-8110-813bcc66b23b}"/>
+    <RecordField colName="geo02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="geo_file.geo02" sqlTabName="geo_file" sqlType="VARCHAR" table_alias_name="" uid="{9edf4092-0000-4000-aaba-d22524a9e5a7}"/>
+    <RecordField colName="geo03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="geo_file.geo03" sqlTabName="geo_file" sqlType="VARCHAR" table_alias_name="" uid="{bc5e5b24-0000-4000-9539-c239e5b375b2}"/>
+    <RecordField colName="" fieldIdRef="4" name="geb02" sqlTabName="" table_alias_name="" uid="{80a62da8-0000-4000-be2a-f3d9d1f1e581}"/>
+    <RecordField colName="geoacti" fieldIdRef="5" fieldType="TABLE_COLUMN" name="geo_file.geoacti" sqlTabName="geo_file" sqlType="VARCHAR" table_alias_name="" uid="{bc05a345-0000-4000-9dd5-dea2842379b4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{347447db-0000-4000-a531-86d2f7152308}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{8dd45a88-0000-4000-87e4-1331fedc9a02}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="75" name="aooi110" spacing="normal" text="aooi110">
+    <VBox gridHeight="18" gridWidth="72" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="72" lstrcomment="false" name="pc842" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="70" lstrcomment="false" name="s_geo" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geo01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="geo_file.geo01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="geo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Local No" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geo02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="geo_file.geo02" posX="13" posY="0" rowCount="" sqlTabName="geo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Local Name" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geo03" columnCount="" comment="&lt;^P&gt; Query Local " fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" lstrcomment="false" lstrtitle="false" name="geo_file.geo03" posX="28" posY="0" rowCount="" sqlTabName="geo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Country Code" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="geb02" noEntry="true" posX="41" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Country Name" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geoacti" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="geo_file.geoacti" notNull="true" posX="58" posY="0" required="true" rowCount="" sqlTabName="geo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="72" lstrcomment="false" name="gr4634" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1442" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1443" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

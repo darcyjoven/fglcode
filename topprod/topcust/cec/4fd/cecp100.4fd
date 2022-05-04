@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{8fa93ec5-af1e-4af8-8804-e815494d8082}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ecu" order="" uid="{1a76d7a1-9e96-4679-a33d-d2095bf12aa3}" where="">
+    <RecordField colName="select" fieldIdRef="0" name="select" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{30c5a0c8-3ab0-4a4b-a717-5e6a8ec18305}"/>
+    <RecordField colName="pml01" fieldIdRef="1" fieldType="NON_DATABASE" name="ecu01" sqlTabName="pml_file" sqlType="VARCHAR" table_alias_name="" uid="{dadfe2f6-1e08-420d-80d4-b113c76c9a1b}"/>
+    <RecordField colName="pmk12" fieldIdRef="4" fieldType="NON_DATABASE" name="ima02" sqlTabName="pmk_file" sqlType="VARCHAR" table_alias_name="" uid="{150f7963-1b5a-44fa-816f-f9517f90a70c}"/>
+    <RecordField colName="pmk13" fieldIdRef="6" fieldType="NON_DATABASE" name="ima021" sqlTabName="pmk_file" sqlType="VARCHAR" table_alias_name="" uid="{d8a82115-c712-47ed-b387-636c6998865a}"/>
+    <RecordField colName="gem02" fieldIdRef="7" fieldType="NON_DATABASE" name="ecu02" sqlTabName="gem_file" sqlType="VARCHAR" table_alias_name="" uid="{b656ad9e-ae85-430f-8626-79bc4897892d}"/>
+    <RecordField colName="pml04" defaultValue="N" fieldIdRef="11" fieldType="NON_DATABASE" name="ecu06" sqlTabName="pml_file" sqlType="VARCHAR" table_alias_name="" uid="{3944c337-c9e2-4712-9aba-3b906c2900ee}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="106" lstrtext="true" name="cecp100" text="Form">
+    <HBox gridHeight="11" gridWidth="106" name="hbox1" posX="0" posY="0">
+      <Table gridHeight="11" gridWidth="102" lstrcomment="true" name="tb100" posX="2" posY="0" totalRows="10" unitHeight="characters" unitWidth="characters" width="910">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="select" columnCount="" fieldId="0" gridHeight="1" gridWidth="17" name="select" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pml01" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" image="zoom" name="ecu01" noEntry="false" notNull="true" posX="17" posY="0" required="true" rowCount="" sqlTabName="pml_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ecu01" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmk12" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" image="zoom" name="ima02" noEntry="false" posX="33" posY="0" rowCount="" sqlTabName="pmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ima02" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmk13" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" image="zoom" name="ima021" noEntry="false" posX="48" posY="0" rowCount="" sqlTabName="pmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ima021" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gem02" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" name="ecu02" noEntry="false" notNull="true" posX="64" posY="0" required="true" rowCount="" sqlTabName="gem_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ecu02" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pml04" columnCount="" defaultValue="N" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" hidden="false" lstrtitle="false" name="ecu06" noEntry="false" notNull="false" posX="80" posY="0" required="false" rowCount="" sqlTabName="pml_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" text="" title="ecu06" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+    </HBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADYANQA2AGEAZAA5AGUALQBhAGUAOAA1AC0ANAAzADAAZgAtADgANgAyADYALQA3ADkAYgBjADQAOAA5ADcAOAA5ADIAZAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAxADUAMABmADcAOQA2ADMALQAxAGIANQBhAC0ANAA0AGYAYQAtADgAMQA2AGYALQBmADkANQAxADcAZgA5ADAAYQA3ADAAYwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADgAYQA4ADIAMQAxADUALQBjADcAMQAyAC0ANAA3AGUAZAAtAGIAMwA4ADcALQA2ADMANgBjADYAOQA5ADgAOAA2ADUAYQB9QCQAAAAAAABAWcAAAAAAAD9QYk3S8an8AQAAAEwAewAzADkANAA0AGMAMwAzADcALQBjADkAZQAyAC0ANAA3ADEAMgAtADkAYQBiAGEALQAzAGIAOQAwADYAYwAyADkAMAAwAGUAZQB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGEAZABmAGUAMgBmADYALQAxAGUAMAA4AC0ANAAyADAAZAAtADgAMABkADQALQBiADEAMQAzAGMANwA2AGMAOQBhADEAYgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGEANwA2AGQANwBhADEALQA5AGUAOQA2AC0ANAA2ADcAOQAtAGEAMwAzAGQALQBkADIAMAA5ADUAYgBmADEAMgBhAGEAMwB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADAAYwA1AGEAMABjADgALQAzAGEAYgAwAC0ANABhADQAYgAtAGEANwAxADcALQA1AGUANgBhADgAZQBjADEAOAAzADAANQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

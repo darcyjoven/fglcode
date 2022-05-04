@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d7ba90bd-0000-4000-bfcc-e4b56f96998d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="azz_gbc" order="" uid="{3b369166-0000-4000-beec-de3b38a35700}" where="">
+    <RecordField colName="gbc04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gbc_file.gbc04" sqlTabName="gbc_file" sqlType="VARCHAR" table_alias_name="" uid="{7a637ab6-0000-4000-9440-e8515f875d12}"/>
+    <RecordField colName="gbc05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gbc_file.gbc05" sqlTabName="gbc_file" sqlType="VARCHAR" table_alias_name="" uid="{8ad45383-0000-4000-9afb-f1a4173eb871}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d2115ffd-0000-4000-817c-991d906e5e56}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="gbc01" sqlTabName="" table_alias_name="" uid="{4d6a0431-0000-4000-9760-2a88766ee269}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="gbc02" sqlTabName="" table_alias_name="" uid="{b9a6e687-0000-4000-8868-c03c6f4cc42f}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="gbc03" sqlTabName="" table_alias_name="" uid="{3babca44-0000-4000-9a89-4947a1be33ed}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="51" name="p_itemname_update" spacing="normal" text="p_itemname_update">
+    <VBox gridHeight="19" gridWidth="49" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="6" gridWidth="49" lstrcomment="false" name="gr3217" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="46" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Table ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gbc01" noEntry="true" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Field ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gbc02" noEntry="true" posX="17" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="KEY Series"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gbc03" noEntry="true" posX="17" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="9" gridWidth="49" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="7">
+        <Table gridHeight="7" gridWidth="47" lstrcomment="false" name="azz_gbc" posX="1" posY="1" totalRows="5">
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbc04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="" lstrcomment="false" lstrtitle="false" name="gbc_file.gbc04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gbc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Language" widget="ComboBox"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbc05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="34" lstrcomment="false" lstrtitle="false" name="gbc_file.gbc05" posX="9" posY="0" rowCount="" scroll="true" sqlTabName="gbc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Item Name" widget="Edit"/>
+        </Table>
+      </Group>
+      <Grid gridHeight="2" gridWidth="49" lstrcomment="false" name="gr3218" posX="0" posY="16">
+        <Button gridHeight="1" gridWidth="1" lstrcomment="false" lstrtext="false" name="update_zx14" posX="1" posY="0" tabIndex=""/>
+        <Label gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" name="dummy01" posX="4" posY="0" text="Auto-Bringing Multi-Lingual Input Dialog When Data Modified!"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6c91e167-0000-4000-969b-01d8587dfc97}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ozf" order="" uid="{1b3bebf0-0000-4000-bb90-169d2a645b82}" where="">
+    <RecordField colName="" fieldIdRef="10" name="ogb01" sqlTabName="" table_alias_name="" uid="{57db8081-0000-4000-abff-09cfa8e8b294}"/>
+    <RecordField colName="" fieldIdRef="11" name="ogb04" sqlTabName="" table_alias_name="" uid="{8cda9c7e-0000-4000-9597-db97b20d973d}"/>
+    <RecordField colName="" fieldIdRef="12" name="ozf07" sqlTabName="" table_alias_name="" uid="{bb5f1696-0000-4000-af01-3a3491504e44}"/>
+    <RecordField colName="" fieldIdRef="13" name="ozf04" sqlTabName="" table_alias_name="" uid="{4344bb44-0000-4000-81d4-bcbb7b9dfb50}"/>
+    <RecordField colName="" fieldIdRef="2" name="ozf05" sqlTabName="" table_alias_name="" uid="{2b374d4f-0000-4000-9b94-9e6814484874}"/>
+    <RecordField colName="" fieldIdRef="3" name="ozf09" sqlTabName="" table_alias_name="" uid="{689c7a4b-0000-4000-9bb8-d65fe827feaf}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{277ddf16-0000-4000-a8ac-3379f264417e}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="oze04" sqlTabName="" table_alias_name="" uid="{12d3085b-0000-4000-b9c3-448718b83a5a}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="oze07" sqlTabName="" table_alias_name="" uid="{9c3b7f13-0000-4000-8f3c-249fad3bb1c7}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="oze05" sqlTabName="" table_alias_name="" uid="{c408a0fe-0000-4000-b65a-0161ee73545b}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="oze08" sqlTabName="" table_alias_name="" uid="{6177dd2e-0000-4000-883b-7abf855b56c2}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="oze06" sqlTabName="" table_alias_name="" uid="{ea4c747d-0000-4000-abf5-25c80960c54a}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3b49b212-0000-4000-8e97-4eeb7b5a86eb}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{5facbbe1-0000-4000-b011-cbc3ca972ecc}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="114" name="axmq920" spacing="normal" text="axmq920">
+    <VBox gridHeight="21" gridWidth="112" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="112" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <HBox gridHeight="3" gridWidth="112" name="HBox1" posX="0" posY="0">
+            <Grid gridHeight="3" gridWidth="36" lstrcomment="false" name="gr2294" posX="2" posY="0">
+              <Label posX="1" posY="0" text="Transportation Type"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" items="Ocean, Container, House, Air, Express" lstrcomment="false" lstrtitle="false" name="oze04" posX="23" posY="0" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="" name="O" text="Ocean"/>
+                <Item lstrtext="" name="C" text="Container"/>
+                <Item lstrtext="" name="H" text="House"/>
+                <Item lstrtext="" name="A" text="Air"/>
+                <Item lstrtext="" name="E" text="Express"/>
+              </ComboBox>
+              <Label posX="1" posY="1" text="Port of Departure"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="oze07" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Grid>
+            <Grid gridHeight="3" gridWidth="36" lstrcomment="false" name="gr2295" posX="38" posY="0">
+              <Label posX="1" posY="0" text="Freight Code"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="oze05" posX="23" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="1" text="Port of Unloading"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="oze08" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Grid>
+            <Grid gridHeight="3" gridWidth="36" lstrcomment="false" name="gr2296" posX="74" posY="0">
+              <Label posX="1" posY="0" text="Transportation Code"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="oze06" posX="23" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+            </Grid>
+          </HBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="112" lstrcomment="false" name="s_ozf" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="ogb01" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Advice No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="ogb04" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Product No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="ozf07" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Goods Information" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="ozf04" posX="47" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Port of Departure" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="ozf05" posX="65" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Port of Unloading" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="ozf09" posX="83" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Arrival Time" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="112" lstrcomment="false" name="gr2297" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl905" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl906" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

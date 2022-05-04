@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{ea9842aa-0000-4000-bd71-5cccdaf2489a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6b93c6d3-0000-4000-a82a-0119373e79c7}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="yy" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{b5edf62a-0000-4000-b84c-ff3054eddb96}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="mm" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3e657297-0000-4000-96a5-38a45a06c783}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{e1e3fede-0000-4000-892a-91b6ec46804b}"/>
+    <RecordField colName="" fieldIdRef="4" name="faj09" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6a6f1c63-1f9d-42da-8029-fe53e4ba8686}"/>
+    <RecordField colName="" fieldIdRef="5" name="faj04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f26e610f-fbdb-4d52-99e3-5d4ae4e40654}"/>
+    <RecordField colName="" fieldIdRef="6" name="faj02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6b64725b-d57f-4686-890a-3e132c882418}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="70" name="afap301" spacing="normal" text="afap301">
+    <Folder gridHeight="19" gridWidth="68" lstrcomment="false" name="pc1" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="18" gridWidth="66" name="VBox1" posX="0" posY="0">
+          <Group gridHeight="10" gridWidth="66" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="1">
+            <VBox gridHeight="8" gridWidth="64" name="VBox2" posX="1" posY="1">
+              <Grid gridHeight="4" gridWidth="64" lstrcomment="false" name="gr1" posX="0" posY="1">
+                <Group gridHeight="3" gridWidth="46" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0">
+                  <Label posX="1" posY="1" text="Deprec. Year Period"/>
+                  <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="yy" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+                  <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="mm" noEntry="true" posX="34" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+                </Group>
+              </Grid>
+              <Grid gridHeight="2" gridWidth="64" lstrcomment="false" name="gr2" posX="0" posY="5">
+                <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              </Grid>
+            </VBox>
+          </Group>
+          <Grid gridHeight="6" gridWidth="66" lstrcomment="false" name="gr3" posX="0" posY="11">
+            <Group gridHeight="5" gridWidth="46" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+              <Label posX="1" posY="1" text="Asset Property"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="1.Tangible 2.Intangible Asset 3.Land 4.Dim.Asset 5.Exp" fieldId="4" gridHeight="1" gridWidth="20" image="zoom" name="faj09" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Asset Category"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="20" image="zoom" name="faj04" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+              <Label posX="1" posY="3" text="Property No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="20" image="zoom" name="faj02" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            </Group>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADIANgBlADYAMQAwAGYALQBmAGIAZABiAC0ANABkADUAMgAtADkAOQBlADMALQA1AGQANABhAGUANABlADQAMAA2ADUANAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBiADUAZQBkAGYANgAyAGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOAA0AGMALQBmAGYAMwAwADUANABlAGQAZABiADkANgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGUANgA1ADcAMgA5ADcALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBhADUALQAzADgAYQA0ADUAYQAwADYAYwA3ADgAMwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGIAOQAzAGMANgBkADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAOAAyAGEALQAwADEAMQA5ADMANwAzAGUANwA5AGMANwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGEANgBmADEAYwA2ADMALQAxAGYAOQBkAC0ANAAyAGQAYQAtADgAMAAyADkALQBmAGUANQAzAGUANABiAGEAOAA2ADgANgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGIANgA0ADcAMgA1AGIALQBkADUANwBmAC0ANAA2ADgANgAtADgAOQAwAGEALQAzAGUAMQAzADIAYwA4ADgAMgA0ADEAOAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADEAZQAzAGYAZQBkAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOQAyAGEALQA5ADEAYgA2AGUAYwA0ADYAOAAwADQAYgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

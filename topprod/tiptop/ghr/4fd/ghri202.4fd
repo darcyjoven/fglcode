@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{271d5276-b0a0-48ad-8b60-64edd5cfe2ab}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tc_hraa" order="" uid="{07d08f26-6e3b-4506-8ef2-a16e5a380b5b}" where="">
+    <RecordField colName="zxy03" fieldIdRef="3" fieldType="NON_DATABASE" name="tc_hraa03" sqlTabName="zxy_file" sqlType="VARCHAR" table_alias_name="" uid="{535ae1de-ae34-4520-b596-0e872f9f1800}"/>
+    <RecordField colName="azp02" fieldIdRef="4" fieldType="NON_DATABASE" name="gem02" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{547b77fc-0cf0-4377-8a31-b9f0bfa362fc}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{06f6f3a2-1be2-4421-8c23-9aaa8e5f87fa}" where="">
+    <RecordField colName="zxy01" fieldIdRef="1" fieldType="NON_DATABASE" name="tc_hraa01" sqlTabName="zxy_file" sqlType="VARCHAR" table_alias_name="" uid="{f9237426-4bf9-4d0a-aee1-4da6f425f705}"/>
+    <RecordField colName="zx02" fieldIdRef="2" fieldType="NON_DATABASE" name="tc_hraa02" sqlTabName="zx_file" sqlType="VARCHAR" table_alias_name="" uid="{4fd150fc-b69d-4555-a32f-0b2eed78757d}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{091e4779-c914-4523-bcde-674fa0c32719}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{1eec5694-6712-4efa-bb4b-964cc1aeb423}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="50" name="ghri202" spacing="normal" text="p_zxy">
+    <VBox gridHeight="23" gridWidth="47" name="vb1" posX="0" posY="0" splitter="">
+      <Folder gridHeight="7" gridWidth="47" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="5" gridWidth="33" lstrcomment="false" name="gr3057" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="32" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="User ID"/>
+              <ButtonEdit action="controlp" colName="zxy01" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" image="zoom" lstrcomment="false" lstrtitle="false" name="tc_hraa01" posX="17" posY="1" required="true" rowCount="" sqlTabName="zxy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="User Name"/>
+              <Edit colName="zx02" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="tc_hraa02" noEntry="true" posX="17" posY="2" rowCount="" sqlTabName="zx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="47" lstrcomment="false" name="s_zxy" posX="0" posY="8" totalRows="10">
+        <ButtonEdit action="controlp" colName="zxy03" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" image="zoom" lstrcomment="false" lstrtitle="false" name="tc_hraa03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="zxy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Plant No." widget="ButtonEdit"/>
+        <Edit colName="azp02" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="gem02" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Plant Name" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="47" lstrcomment="false" name="gr3058" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl1044" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1045" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADkAMgAzADcANAAyADYALQA0AGIAZgA5AC0ANABkADAAYQAtAGEAZQBlADEALQA0AGQAYQA2AGYANAAyADUAZgA3ADAANQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGUAZQBjADUANgA5ADQALQA2ADcAMQAyAC0ANABlAGYAYQAtAGIAYgA0AGIALQA5ADYANABjAGMAMQBhAGUAYgA0ADIAMwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADMANQBhAGUAMQBkAGUALQBhAGUAMwA0AC0ANAA1ADIAMAAtAGIANQA5ADYALQAwAGUAOAA3ADIAZgA5AGYAMQA4ADAAMAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADQANwBiADcANwBmAGMALQAwAGMAZgAwAC0ANAAzADcANwAtADgAYQAzADEALQBiADkAZgAwAGIAZgBhADMANgAyAGYAYwB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADcAZAAwADgAZgAyADYALQA2AGUAMwBiAC0ANAA1ADAANgAtADgAZQBmADIALQBhADEANgBlADUAYQAzADgAMABiADUAYgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADYAZgA2AGYAMwBhADIALQAxAGIAZQAyAC0ANAA0ADIAMQAtADgAYwAyADMALQA5AGEAYQBhADgAZQA1AGYAOAA3AGYAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGYAZAAxADUAMABmAGMALQBiADYAOQBkAC0ANAA1ADUANQAtAGEAMwAyAGYALQAwAGIAMgBlAGUAZAA3ADgANwA1ADcAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADkAMQBlADQANwA3ADkALQBjADkAMQA0AC0ANAA1ADIAMwAtAGIAYwBkAGUALQA2ADcANABmAGEAMABjADMAMgA3ADEAOQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

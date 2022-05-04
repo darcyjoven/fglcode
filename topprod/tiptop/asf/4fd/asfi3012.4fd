@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{03c106cc-0000-4000-a25e-bcb09e2b4073}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sfa" order="" uid="{ec05b6a9-0000-4000-9263-2a8f067efcbe}" where="">
+    <RecordField colName="sfa03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sfa_file.sfa03" sqlTabName="sfa_file" sqlType="VARCHAR" table_alias_name="" uid="{ac707793-0000-4000-8d69-a1a9e9fdb264}"/>
+    <RecordField colName="sfa08" fieldIdRef="8" fieldType="TABLE_COLUMN" name="sfa_file.sfa08" sqlTabName="sfa_file" sqlType="VARCHAR" table_alias_name="" uid="{bcee3650-0000-4000-bd10-59e91d46d4f7}"/>
+    <RecordField colName="sfa12" fieldIdRef="9" fieldType="TABLE_COLUMN" name="sfa_file.sfa12" sqlTabName="sfa_file" sqlType="VARCHAR" table_alias_name="" uid="{f0f019c3-0000-4000-a62a-d49e33a841a1}"/>
+    <RecordField colName="sfa26" fieldIdRef="10" fieldType="TABLE_COLUMN" name="sfa_file.sfa26" sqlTabName="sfa_file" sqlType="VARCHAR" table_alias_name="" uid="{a00d756a-0000-4000-a8a9-b22af926ef07}"/>
+    <RecordField colName="" fieldIdRef="2" name="ima02" sqlTabName="" table_alias_name="" uid="{cd25d7df-0000-4000-80bc-1325f8683538}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{4f22e55b-0000-4000-88c5-0786f6de930c}" where="">
+    <RecordField colName="sfa29" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sfa_file.sfa29" sqlTabName="sfa_file" sqlType="VARCHAR" table_alias_name="" uid="{78ba8a2f-0000-4000-b24e-224d758ae214}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ima02a" sqlTabName="" table_alias_name="" uid="{c020dd4a-0000-4000-9113-1caa3230247f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn1" sqlTabName="" table_alias_name="" uid="{e79a22b6-0000-4000-90fe-f4a3a64aa8fe}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{24dcca1a-0000-4000-b92c-c6c189e8ec34}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn3" sqlTabName="" table_alias_name="" uid="{c9837d39-0000-4000-afed-33324bebc098}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="98" name="asfi3012" spacing="normal" text="Qry W/O Allotment">
+    <VBox gridHeight="22" gridWidth="95" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="95" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="5" gridWidth="55" lstrcomment="false" name="gr463" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="54" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Up Level Itme No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfa29" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="sfa_file.sfa29" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="sfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02a" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+        <Page lstrtext="false" name="info" text="Info">
+          <Grid gridHeight="6" gridWidth="35" lstrcomment="false" name="gr464" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="34" lstrcomment="false" lstrtext="false" name="grpinfo" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Line No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cn1" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Retrieve Rows"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Detail Counts"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cn3" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="95" lstrcomment="false" name="s_sfa" posX="0" posY="9" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfa03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="sfa_file.sfa03" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="sfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfa08" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="sfa_file.sfa08" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="sfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Task No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfa12" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="sfa_file.sfa12" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="sfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Issuing Unit" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfa26" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="sfa_file.sfa26" noEntry="true" posX="42" posY="0" rowCount="" sqlTabName="sfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Substitute code" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="58" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Part Name Specification" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

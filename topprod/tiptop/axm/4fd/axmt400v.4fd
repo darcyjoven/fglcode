@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c16d43fb-0000-4000-8e68-6b58db0dca15}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2c31c9f6-0000-4000-a041-40df02672656}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="msa01" sqlTabName="" table_alias_name="" uid="{a901684b-0000-4000-9738-f54929e187ff}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{a5ff5fc3-0000-4000-a143-c98b8af16491}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="msm06" sqlTabName="" table_alias_name="" uid="{04d11cc5-0000-4000-867a-a4979bb9f278}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="msm02" sqlTabName="" table_alias_name="" uid="{c34051d3-0000-4000-ac2b-5a888d057779}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="msp01" sqlTabName="" table_alias_name="" uid="{22acce0d-0000-4000-91cc-4ac8cd567a13}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="ware" sqlTabName="" table_alias_name="" uid="{4ffe93ae-0000-4000-9517-a63986dea9ed}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="48" name="axmt400v" spacing="normal" text="axmt400v">
+    <VBox gridHeight="13" gridWidth="46" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="11" gridWidth="46" lstrcomment="false" name="Folder1" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="9" gridWidth="44" lstrcomment="false" name="Grid1" posX="0" posY="0">
+            <Group gridHeight="8" gridWidth="43" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="MPS Document No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter MPS Note No. for Allotment Planned" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="msa01" notNull="true" posX="24" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Expiry Date(BOM)"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bdate" notNull="true" posX="24" posY="2" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+              <Label posX="1" posY="3" text="Production Department"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Production Plant" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="msm06" notNull="true" posX="24" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="4" text="Purchase Del.Loc"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Input Pur.Allotment D/P " fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="msm02" notNull="true" posX="24" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="5" text="MRP Defini Vers"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="According To MRP Ver. which range the warehouse &amp; Doc. ,Calcuation Qty" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="msp01" posX="24" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="6" text="Local Warehouse"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Assign Transfer-out WH " fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ware" posX="24" posY="6" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+</ManagedForm>

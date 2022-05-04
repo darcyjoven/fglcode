@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c12a3bae-0000-4000-ac4a-7f75f5444a3d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qryauth" order="" uid="{2fc2878c-0000-4000-be5b-fbe42544dd72}" where="">
+    <RecordField colName="gbd01" fieldIdRef="12" fieldType="TABLE_COLUMN" name="gbd_file.gbd01" sqlTabName="gbd_file" sqlType="VARCHAR" table_alias_name="" uid="{22169712-0000-4000-9617-a9275689b511}"/>
+    <RecordField colName="gbd04" fieldIdRef="13" fieldType="TABLE_COLUMN" name="gbd_file.gbd04" sqlTabName="gbd_file" sqlType="VARCHAR" table_alias_name="" uid="{2749c8d1-0000-4000-8da9-4c68b1124b3f}"/>
+    <RecordField colName="" fieldIdRef="14" name="zxw04" sqlTabName="" table_alias_name="" uid="{6d156d23-0000-4000-8925-53ec4c418241}"/>
+    <RecordField colName="" fieldIdRef="15" name="gbl03" sqlTabName="" table_alias_name="" uid="{0852c2af-0000-4000-b99a-0cdcabf95587}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bc34f6e8-0000-4000-9bf1-658a3a844130}" where="">
+    <RecordField colName="zx01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zx_file.zx01" sqlTabName="zx_file" sqlType="VARCHAR" table_alias_name="" uid="{c303268e-0000-4000-b91d-43bdd499aa14}"/>
+    <RecordField colName="zx02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zx_file.zx02" sqlTabName="zx_file" sqlType="VARCHAR" table_alias_name="" uid="{95825e2b-0000-4000-a7ef-18f53f648b4d}"/>
+    <RecordField colName="zx04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="zx_file.zx04" sqlTabName="zx_file" sqlType="VARCHAR" table_alias_name="" uid="{b36fa697-0000-4000-872a-1735ae82bcbc}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="zw02" sqlTabName="" table_alias_name="" uid="{6b09e175-0000-4000-8689-52cb3df6de94}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="zxwtxt" sqlTabName="" table_alias_name="" uid="{a19bf5b3-0000-4000-9cb7-8e9879462661}"/>
+    <RecordField colName="zx03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="zx_file.zx03" sqlTabName="zx_file" sqlType="VARCHAR" table_alias_name="" uid="{1ad6ac0e-0000-4000-903e-38d8d551c20d}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="gem03" sqlTabName="" table_alias_name="" uid="{c19acb8b-0000-4000-b1ac-aee83676796f}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="zywtxt" sqlTabName="" table_alias_name="" uid="{6f02fa00-0000-4000-9e7e-de926881d2cb}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="zxytxt" sqlTabName="" table_alias_name="" uid="{337dd889-0000-4000-bf0c-8b52a6ad4e61}"/>
+    <RecordField colName="zz01" fieldIdRef="10" fieldType="TABLE_COLUMN" name="zz_file.zz01" sqlTabName="zz_file" sqlType="VARCHAR" table_alias_name="" uid="{1da7f813-0000-4000-8ab8-381e17a2b3ee}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="gaz03" sqlTabName="" table_alias_name="" uid="{0355d5d5-0000-4000-bfc7-36af4b7f15bc}"/>
+    <RecordField colName="zy04" fieldIdRef="16" fieldType="TABLE_COLUMN" name="zy_file.zy04" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{48cde3d1-0000-4000-ac65-7949c2c7d021}"/>
+    <RecordField colName="zy05" fieldIdRef="17" fieldType="TABLE_COLUMN" name="zy_file.zy05" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{a9227558-0000-4000-aac5-c38365747411}"/>
+    <RecordField colName="zy07" fieldIdRef="18" fieldType="TABLE_COLUMN" name="zy_file.zy07" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{7e6be783-0000-4000-9eff-a18f0bfdeb1c}"/>
+    <RecordField colName="zy06" fieldIdRef="19" fieldType="TABLE_COLUMN" name="zy_file.zy06" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{092269bb-0000-4000-b908-5301f630097f}"/>
+    <RecordField colName="" fieldIdRef="20" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{38a83632-0000-4000-b8e8-c297535f5e23}"/>
+  </Record>
+  <Form gridHeight="44" gridWidth="107" name="p_qryauth" spacing="normal" text="p_qryauth">
+    <VBox gridHeight="43" gridWidth="89" name="vb5" posX="0" posY="0">
+      <Group gridHeight="20" gridWidth="89" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="1" text="User Info">
+        <VBox gridHeight="13" gridWidth="55" name="VBox1" posX="5" posY="1">
+          <Grid gridHeight="3" gridWidth="55" lstrcomment="false" name="gr1" posX="0" posY="1">
+            <Label posX="1" posY="0" text="User Id"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zx01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="zx_file.zx01" notNull="true" posX="17" posY="0" required="true" rowCount="" scroll="true" sqlTabName="zx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zx02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="zx_file.zx02" noEntry="true" posX="31" posY="0" rowCount="" sqlTabName="zx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+          <Folder gridHeight="8" gridWidth="55" lstrcomment="false" name="pc1" posX="0" posY="4">
+            <Page lstrtext="false" name="page01" text="Category">
+              <Grid gridHeight="7" gridWidth="52" lstrcomment="false" name="gr2" posX="0" posY="0">
+                <Label posX="1" posY="0" text="Category"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zx04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="zx_file.zx04" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="zx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="zw02" noEntry="true" posX="31" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+                <Label posX="1" posY="1" text="                                                "/>
+                <Label posX="1" posY="2" text="Union Category"/>
+                <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="4" gridWidth="50" lstrcomment="false" lstrtitle="false" name="zxwtxt" noEntry="true" posX="1" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="NONE" tabIndex="5" table_alias_name="" widget="TextEdit"/>
+              </Grid>
+            </Page>
+            <Page lstrtext="false" name="page02" text="Department Restriction">
+              <Grid gridHeight="7" gridWidth="52" lstrcomment="false" name="gr3" posX="0" posY="0">
+                <Label posX="1" posY="0" text="Department No."/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zx03" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="zx_file.zx03" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="zx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gem03" noEntry="true" posX="31" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+                <Label posX="1" posY="1" text="                                                "/>
+                <Label posX="1" posY="2" text="Releative-Department Group"/>
+                <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="4" gridWidth="50" lstrcomment="false" lstrtitle="false" name="zywtxt" noEntry="true" posX="1" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="NONE" tabIndex="8" table_alias_name="" widget="TextEdit"/>
+              </Grid>
+            </Page>
+            <Page lstrtext="false" name="page03" text="Plant Permission">
+              <Grid gridHeight="7" gridWidth="52" lstrcomment="false" name="gr4" posX="0" posY="0">
+                <Label posX="1" posY="0" text="Allowed Execute Plant List"/>
+                <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="6" gridWidth="50" lstrcomment="false" lstrtitle="false" name="zxytxt" noEntry="true" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="NONE" tabIndex="9" table_alias_name="" widget="TextEdit"/>
+              </Grid>
+            </Page>
+          </Folder>
+        </VBox>
+      </Group>
+      <Group gridHeight="21" gridWidth="89" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="21" text="Program Info">
+        <VBox gridHeight="19" gridWidth="77" name="vb4" posX="1" posY="1">
+          <Grid gridHeight="5" gridWidth="77" lstrcomment="false" name="gr5" posX="0" posY="1">
+            <Label posX="1" posY="0" text="Program Id"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="zz01" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="zz_file.zz01" notNull="true" posX="17" posY="0" required="true" rowCount="" scroll="true" sqlTabName="zz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="31" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="                                                "/>
+            <Label gridHeight="1" gridWidth="50" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="2" text="Permissive Functions"/>
+          </Grid>
+          <Table gridHeight="6" gridWidth="77" lstrcomment="false" name="tb1" posX="0" posY="6" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbd01" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="gbd_file.gbd01" posX="0" posY="0" rowCount="" sqlTabName="gbd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Permissive function id" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbd04" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="gbd_file.gbd04" posX="23" posY="0" rowCount="" sqlTabName="gbd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Function Description" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="zxw04" posX="44" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Setting By" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="gbl03" posX="56" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" title="Auth.Regard As" widget="Edit"/>
+          </Table>
+          <Grid gridHeight="6" gridWidth="77" lstrcomment="false" name="gr6" posX="0" posY="12">
+            <Label posX="1" posY="0" text="                                                          "/>
+            <Label posX="1" posY="1" text="Non-owner&apos;s Data Permission"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy04" columnCount="" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="Can Query,Modify,Delete, Can Query,Modify,But Delete, Can Query,But Modify,Can Delete, Can Query,But Modify,nor Delete, Can&apos;t Query,nor Modify,nor Delete" lstrcomment="false" lstrtitle="false" name="zy_file.zy04" posX="31" posY="1" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="16" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="0" text="Can Query,Modify,Delete"/>
+              <Item lstrtext="" name="1" text="Can Query,Modify,But Delete"/>
+              <Item lstrtext="" name="2" text="Can Query,But Modify,Can Delete"/>
+              <Item lstrtext="" name="3" text="Can Query,But Modify,nor Delete"/>
+              <Item lstrtext="" name="4" text="Can&apos;t Query,nor Modify,nor Delete"/>
+            </ComboBox>
+            <Label posX="1" posY="2" text="Over Dept.&apos;s Data Permission"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy05" columnCount="" fieldId="17" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="Different Dept., Can Query,Modify,Delete, Different Dept., Can Query,Modify,But Delete, Different Dept., Can Query,But Modify,Can Delete, Different Dept., Can Query,But Modify,nor Delete, Different Dept., Can&apos;t Query,nor Modify,nor Delete, In Relative Dept, Can Query,Modify,But Delete, In Relative Dept, Can Query,But Modify,Can Delete, In Relative Dept, Can Query,But Modify,nor Delete, In Relative Dept, Can Query,Modify,Delete" lstrcomment="false" lstrtitle="false" name="zy_file.zy05" posX="31" posY="2" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="17" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="0" text="Different Dept., Can Query,Modify,Delete"/>
+              <Item lstrtext="" name="1" text="Different Dept., Can Query,Modify,But Delete"/>
+              <Item lstrtext="" name="2" text="Different Dept., Can Query,But Modify,Can Delete"/>
+              <Item lstrtext="" name="3" text="Different Dept., Can Query,But Modify,nor Delete"/>
+              <Item lstrtext="" name="4" text="Different Dept., Can&apos;t Query,nor Modify,nor Delete"/>
+              <Item lstrtext="" name="5" text="In Relative Dept, Can Query,Modify,But Delete"/>
+              <Item lstrtext="" name="6" text="In Relative Dept, Can Query,But Modify,Can Delete"/>
+              <Item lstrtext="" name="7" text="In Relative Dept, Can Query,But Modify,nor Delete"/>
+              <Item lstrtext="" name="8" text="In Relative Dept, Can Query,Modify,Delete"/>
+            </ComboBox>
+            <Label posX="1" posY="3" text="Detail Data Permission"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy07" columnCount="" fieldId="18" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="Can Insert, Delete, Can Insert,But Delete, Cannot Insert,Can Delete, Cannot Insert,nor Delete" lstrcomment="false" lstrtitle="false" name="zy_file.zy07" posX="31" posY="3" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="18" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="0" text="Can Insert, Delete"/>
+              <Item lstrtext="" name="1" text="Can Insert,But Delete"/>
+              <Item lstrtext="" name="2" text="Cannot Insert,Can Delete"/>
+              <Item lstrtext="" name="3" text="Cannot Insert,nor Delete"/>
+            </ComboBox>
+            <Label posX="1" posY="4" text="Output Report Allowed Method"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy06" columnCount="" fieldId="19" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="zy_file.zy06" posX="31" posY="4" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="19" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="5" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="20" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" name="cnt" noEntry="true" posX="6" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="20" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </VBox>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

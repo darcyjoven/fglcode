@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f02e0564-0000-4000-b67d-f9b5664ff6e1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_apa" order="" uid="{ce42b6fc-0000-4000-90a9-eb694f9acf5d}" where="">
+    <RecordField colName="" fieldIdRef="10" name="check" sqlTabName="" table_alias_name="" uid="{8ed9d587-0000-4000-82fe-6d361655cd35}"/>
+    <RecordField colName="apc01" fieldIdRef="11" fieldType="TABLE_COLUMN" name="apc_file.apc01" sqlTabName="apc_file" sqlType="VARCHAR" table_alias_name="" uid="{e6ebb556-0000-4000-b037-aef8a417167f}"/>
+    <RecordField colName="apa36" fieldIdRef="12" fieldType="TABLE_COLUMN" name="apa_file.apa36" sqlTabName="apa_file" sqlType="VARCHAR" table_alias_name="" uid="{09335bf7-0000-4000-babb-9b37bcae6bb6}"/>
+    <RecordField colName="apc02" fieldIdRef="13" fieldType="TABLE_COLUMN" name="apc_file.apc02" sqlTabName="apc_file" sqlType="SMALLINT" table_alias_name="" uid="{8e6072b3-0000-4000-baa0-e98b801a1de8}"/>
+    <RecordField colName="apc12" fieldIdRef="2" fieldType="TABLE_COLUMN" name="apc_file.apc12" sqlTabName="apc_file" sqlType="VARCHAR" table_alias_name="" uid="{5cb95911-0000-4000-8ab6-e007ec8088d8}"/>
+    <RecordField colName="apc04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="apc_file.apc04" sqlTabName="apc_file" sqlType="DATE" table_alias_name="" uid="{903d2750-0000-4000-bb6c-e19f59408d2b}"/>
+    <RecordField colName="apc05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="apc_file.apc05" sqlTabName="apc_file" sqlType="DATE" table_alias_name="" uid="{62a598f1-0000-4000-9ff5-a591fbedfd8c}"/>
+    <RecordField colName="" fieldIdRef="5" name="apc13_u" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{93891f2b-0000-4000-8026-f44c64384258}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d03cdb74-0000-4000-a680-3f5bff15a940}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="vendor" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1bb699ff-0000-4000-9646-7b4795a31af9}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="abbr" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b6dedc39-0000-4000-8d5a-cc06cb265a5c}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="emp_no" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{8812db4b-0000-4000-8955-bb5fa21cd814}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cur" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{03c66e9b-0000-4000-8182-b652f63bc444}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="tot" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{13e62a4a-0000-4000-a8d9-f38100503f2e}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="134" name="q_m_apa" spacing="normal" text="Query A/P">
+    <VBox gridHeight="17" gridWidth="134" name="VBox1" posX="0" posY="0">
+      <HBox gridHeight="3" gridWidth="134" name="HBox1" posX="0" posY="1">
+        <Grid gridHeight="3" gridWidth="65" lstrcomment="false" name="grid01" posX="2" posY="0">
+          <Label posX="1" posY="0" text="Paying Vender"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="vendor" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="abbr" posX="36" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="1" text="Account Employee"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="emp_no" posX="24" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        </Grid>
+        <Grid gridHeight="3" gridWidth="65" lstrcomment="false" name="grid02" posX="67" posY="0">
+          <Label posX="1" posY="0" text="Currency"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cur" posX="42" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="1" text="Unpd Original Currency Amount tot"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tot" noEntry="true" posX="42" posY="1" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Grid>
+      </HBox>
+      <Table gridHeight="12" gridWidth="134" lstrcomment="false" name="s_apa" posX="0" posY="4" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apc01" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="apc_file.apc01" noEntry="true" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="apc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Account No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apa36" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="apa_file.apa36" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="apa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Class" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apc02" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="apc_file.apc02" noEntry="true" notNull="true" posX="31" posY="0" required="true" rowCount="" sqlTabName="apc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apc12" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="apc_file.apc12" noEntry="true" posX="40" posY="0" rowCount="" sqlTabName="apc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Invoice No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apc04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="apc_file.apc04" noEntry="true" posX="56" posY="0" rowCount="" sqlTabName="apc_file" sqlType="DATE" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Accounts Pay Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apc05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="apc_file.apc05" noEntry="true" posX="76" posY="0" rowCount="" sqlTabName="apc_file" sqlType="DATE" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Tenor Granted" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtitle="false" name="apc13_u" noEntry="true" posX="92" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Unpd Original Currency Amount" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

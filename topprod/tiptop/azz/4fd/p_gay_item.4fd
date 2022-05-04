@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{20cb0e38-0000-4000-b3ea-749a412ad665}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="sub_gay" order="" uid="{588797b9-0000-4000-9162-0970a0a0e939}" where="">
+    <RecordField colName="gay02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gay_file.gay02" sqlTabName="gay_file" sqlType="VARCHAR" table_alias_name="" uid="{7cac73ae-0000-4000-bd23-779c42c6e035}"/>
+    <RecordField colName="gay03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gay_file.gay03" sqlTabName="gay_file" sqlType="VARCHAR" table_alias_name="" uid="{0353fe9b-0000-4000-91e9-2ac224ca0dae}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{98b151c3-0000-4000-9f3b-39e59f0b5456}" where="">
+    <RecordField colName="gay01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gay_file.gay01" sqlTabName="gay_file" sqlType="VARCHAR" table_alias_name="" uid="{868225a4-0000-4000-b734-a053e8109aea}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="41" name="p_gay_item" spacing="normal" text="p_gay_item">
+    <VBox gridHeight="18" gridWidth="38" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="4" gridWidth="38" lstrcomment="false" name="gr3202" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="34" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Setting Language ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gay01" columnCount="" comment="Key,No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="gay_file.gay01" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="gay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="12" gridWidth="38" lstrcomment="false" name="sub_gay" posX="0" posY="5" totalRows="10">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gay02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="" lstrcomment="false" lstrtitle="false" name="gay_file.gay02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Language" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gay03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="gay_file.gay03" notNull="true" posX="9" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Language Description" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

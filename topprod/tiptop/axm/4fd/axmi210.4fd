@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{18273f93-0000-4000-981e-5e08bb141e39}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oca" order="" uid="{67f1d07b-0000-4000-8897-4cec864bdb13}" where="">
+    <RecordField colName="oca01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oca_file.oca01" sqlTabName="oca_file" sqlType="VARCHAR" table_alias_name="" uid="{da2c573a-0000-4000-8fbf-566d276a68ac}"/>
+    <RecordField colName="oca02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oca_file.oca02" sqlTabName="oca_file" sqlType="VARCHAR" table_alias_name="" uid="{e09692cd-0000-4000-bbca-8c815101ae26}"/>
+    <RecordField colName="oca03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oca_file.oca03" sqlTabName="oca_file" sqlType="VARCHAR" table_alias_name="" uid="{72bcf3ee-0000-4000-9989-6ad016cb0956}"/>
+    <RecordField colName="oca04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oca_file.oca04" sqlTabName="oca_file" sqlType="VARCHAR" table_alias_name="" uid="{f5ea9792-0000-4000-b087-799b61b5b065}"/>
+    <RecordField colName="" fieldIdRef="5" name="aag02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{252b4d6c-0000-4000-85ff-e2a57bdcb000}"/>
+    <RecordField colName="" fieldIdRef="6" name="aag021" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f94d9e68-0000-4000-95d0-819c898db3f9}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{10c4b331-0000-4000-9e9c-147e0c454f73}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{97fa72ac-0000-4000-96af-ff8260ad8907}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="197" name="axmi210" spacing="normal" text="axmi210">
+    <VBox gridHeight="18" gridWidth="194" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="194" lstrcomment="false" name="pc466" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="192" lstrcomment="false" name="s_oca" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oca01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="oca_file.oca01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oca_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Class.Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oca02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="oca_file.oca02" posX="13" posY="0" rowCount="" sqlTabName="oca_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Class Name" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oca03" columnCount="" comment="&lt;^P&gt;Query Account" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" image="zoom" lstrcomment="false" lstrtitle="false" name="oca_file.oca03" posX="28" posY="0" rowCount="" sqlTabName="oca_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Accounts Receivable" widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oca04" columnCount="" comment="&lt;^P&gt;Query Account" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" image="zoom" lstrcomment="false" lstrtitle="false" name="oca_file.oca04" posX="56" posY="0" rowCount="" sqlTabName="oca_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Accounts Receivable2" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="48" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="88" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="48" lstrcomment="false" lstrtitle="false" name="aag021" noEntry="true" posX="136" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Name2" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="194" lstrcomment="false" name="gr2041" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl769" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl770" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

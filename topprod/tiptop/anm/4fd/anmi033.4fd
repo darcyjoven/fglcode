@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{cdeb025e-0000-4000-bb44-5bce161cf42e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nmk" order="" uid="{28b4b352-0000-4000-a360-548b42cf9e01}" where="">
+    <RecordField colName="nmk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nmk_file.nmk01" sqlTabName="nmk_file" sqlType="VARCHAR" table_alias_name="" uid="{c436175a-0000-4000-8ae3-1a21bd74c896}"/>
+    <RecordField colName="nmk02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nmk_file.nmk02" sqlTabName="nmk_file" sqlType="VARCHAR" table_alias_name="" uid="{d71d7bdd-0000-4000-9434-6fcdcb4fa7f5}"/>
+    <RecordField colName="nmk03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nmk_file.nmk03" sqlTabName="nmk_file" sqlType="VARCHAR" table_alias_name="" uid="{67e6599a-0000-4000-8503-e6e9ac3d230f}"/>
+    <RecordField colName="nmkacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nmk_file.nmkacti" sqlTabName="nmk_file" sqlType="VARCHAR" table_alias_name="" uid="{f4cb672f-0000-4000-bc19-ea931bdce725}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1bd87b93-0000-4000-b286-9e54cf736636}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{42ac9c9c-0000-4000-8079-b048fdfeb7de}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="67" name="anmi033" spacing="normal" text="anmi033">
+    <VBox gridHeight="18" gridWidth="64" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="64" lstrcomment="false" name="pc744" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="62" lstrcomment="false" name="s_nmk" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmk01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="nmk_file.nmk01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Adjust Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmk02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="nmk_file.nmk02" posX="13" posY="0" rowCount="" sqlTabName="nmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Adjust Desc" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmk03" columnCount="" comment="Method (+/-)" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" items="+, -" lstrcomment="false" lstrtitle="false" name="nmk_file.nmk03" notNull="true" posX="25" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="nmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Cash in Bank Method(+/-)" widget="ComboBox">
+              <Item name="+" text="+"/>
+              <Item name="-" text="-"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmkacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="nmk_file.nmkacti" notNull="true" posX="50" posY="0" required="true" rowCount="" sqlTabName="nmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="64" lstrcomment="false" name="gr4023" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1263" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1264" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

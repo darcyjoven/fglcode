@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7ac9ed9f-b7a9-43f4-a1ee-13d6734cf4c0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_plant" order="" uid="{67963eec-8320-4987-b434-f1740286f0c8}" where="">
+    <RecordField colName="" fieldIdRef="3" name="azw02_old" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b8e08a55-3f93-424f-b7c2-ee0e0e037d93}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="azw01_old" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b342b98a-76b1-4f38-a9df-1ebb8e8a906b}"/>
+    <RecordField colName="" fieldIdRef="4" name="azw05_old" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b3da930c-1851-44da-b79c-821370a2327e}"/>
+    <RecordField colName="" fieldIdRef="5" name="azw02_new" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{84a706fe-2c86-4ef8-a77b-a58215bf040c}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="azw01_new" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3f495f1a-143d-4a43-aca5-3063354b0c6e}"/>
+    <RecordField colName="" fieldIdRef="6" name="azw05_new" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ed0eb6ee-1a97-4120-a4c6-7ec79996d31b}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="115" name="p_plant_list" spacing="normal" text="p_plant_list">
+    <VBox gridHeight="19" gridWidth="115" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="17" gridWidth="115" name="Folder1" posX="0" posY="1">
+        <Page action="prod_list" name="page_Plant" text="PlantList">
+          <Table gridHeight="15" gridWidth="113" name="s_plant" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azw02_old" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="azw02_old" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azw01_old" noEntry="false" notNull="false" posX="10" posY="0" required="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="azw01_old" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azw05_old" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="azw05_old" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azw02_new" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="azw02_new" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Query Group Data" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="azw01_new" noEntry="false" notNull="true" posX="40" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="azw01_new" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azw05_new" posX="50" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="azw05_new" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADMAZABhADkAMwAwAGMALQAxADgANQAxAC0ANAA0AGQAYQAtAGIANwA5AGMALQA4ADIAMQAzADcAMABhADIAMwAyADcAZQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADgAZQAwADgAYQA1ADUALQAzAGYAOQAzAC0ANAAyADQAZgAtAGIANwBjADIALQBlAGUAMABlADAAZQAwADMANwBkADkAMwB9QBQAAAAAAABAOAAAAAAAAD+EeuFHrhR8AQAAAEwAewAzAGYANAA5ADUAZgAxAGEALQAxADQAMwBkAC0ANABhADQAMwAtAGEAYwBhADUALQAzADAANgAzADMANQA0AGIAMABjADYAZQB9QBQAAAAAAABAXAAAAAAAAD+Ik3S8an78AQAAAEwAewA2ADcAOQA2ADMAZQBlAGMALQA4ADMAMgAwAC0ANAA5ADgANwAtAGIANAAzADQALQBmADEANwA0ADAAMgA4ADYAZgAwAGMAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADQAYQA3ADAANgBmAGUALQAyAGMAOAA2AC0ANABlAGYAOAAtAGEANwA3AGIALQBhADUAOAAyADEANQBiAGYAMAA0ADAAYwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADMANAAyAGIAOQA4AGEALQA3ADYAYgAxAC0ANABmADMAOAAtAGEAOQBkAGYALQAxAGUAYgBiADgAZQA4AGEAOQAwADYAYgB9QBQAAAAAAABARwAAAAAAAD+AYk3S8an8AQAAAEwAewBlAGQAMABlAGIANgBlAGUALQAxAGEAOQA3AC0ANAAxADIAMAAtAGEANABjADYALQA3AGUAYwA3ADkAOQA5ADYAZAAzADEAYgB9QBQAAAAAAABAYMAAAAAAAD94k3S8an76AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

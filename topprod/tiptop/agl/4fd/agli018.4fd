@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e8e33235-8906-4caa-9c81-3dc99946acc7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aes" order="" uid="{c868333c-3603-40be-af0e-ebc58a9fc16e}" where="">
+    <RecordField colName="aes01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aes_file.aes01" sqlTabName="aes_file" sqlType="VARCHAR" table_alias_name="" uid="{42645fe2-7110-4b84-b891-5c24455f702e}"/>
+    <RecordField colName="aes02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aes_file.aes02" sqlTabName="aes_file" sqlType="VARCHAR" table_alias_name="" uid="{be973bca-e00a-4758-9922-2613f4788909}"/>
+    <RecordField colName="aes03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aes_file.aes03" sqlTabName="aes_file" sqlType="VARCHAR" table_alias_name="" uid="{c68732e7-ba8d-4ce0-8195-92fd14595fdb}"/>
+    <RecordField colName="aes05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aes_file.aes05" sqlTabName="aes_file" sqlType="SMALLINT" table_alias_name="" uid="{8e43b3d0-3589-4144-95de-e30e756fb9ec}"/>
+    <RecordField colName="aesacti" fieldIdRef="5" fieldType="TABLE_COLUMN" name="aes_file.aesacti" sqlTabName="aes_file" sqlType="VARCHAR" table_alias_name="" uid="{e3bad685-eff6-4f4b-8fa2-e56096adc864}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9c70cd51-0070-459d-9659-5870a7b91850}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6d4be6e5-1cf4-41a9-9d29-1c196fca0a9c}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="128" lstrtext="false" name="agli018" spacing="normal" text="agli018">
+    <VBox gridHeight="18" gridWidth="86" name="vb1" posX="2" posY="1">
+      <Folder gridHeight="14" gridWidth="86" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Page0">
+          <Table gridHeight="12" gridWidth="84" name="s_aes" posX="1" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aes01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="aes_file.aes01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="aes_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="aes01" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aes02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="aes_file.aes02" posX="12" posY="0" rowCount="" sqlTabName="aes_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="aes02" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aes03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="Business Activity Income, Business Activity Expenditure, Investment Income, Investment Expenditure, Financial Activity Income, Financial Activity Expenditure, Influence" lstrcomment="false" name="aes_file.aes03" notNull="true" posX="24" posY="0" required="true" rowCount="" sqlTabName="aes_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="aes03" widget="ComboBox">
+              <Item name="10" text="Business Activity Income"/>
+              <Item name="11" text="Business Activity Expenditure"/>
+              <Item name="20" text="Investment Income"/>
+              <Item name="21" text="Investment Expenditure"/>
+              <Item name="30" text="Financial Activity Income"/>
+              <Item name="31" text="Financial Activity Expenditure"/>
+              <Item name="40" text="Influence"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aes05" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" name="aes_file.aes05" posX="36" posY="0" rowCount="" sqlTabName="aes_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="aes05" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aesacti" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" name="aes_file.aesacti" posX="48" posY="0" rowCount="" sqlTabName="aes_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="aesacti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="86" lstrcomment="false" name="gr2" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1" posX="3" posY="0"/>
+        <Label posX="14" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="cn2" posX="21" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="29" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA5AGMANwAwAGMAZAA1ADEALQAwADAANwAwAC0ANAA1ADkAZAAtADkANgA1ADkALQA1ADgANwAwAGEANwBiADkAMQA4ADUAMAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGUAOQA3ADMAYgBjAGEALQBlADAAMABhAC0ANAA3ADUAOAAtADkAOQAyADIALQAyADYAMQAzAGYANAA3ADgAOAA5ADAAOQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADMAYgBhAGQANgA4ADUALQBlAGYAZgA2AC0ANABmADQAYgAtADgAZgBhADIALQBlADUANgAwADkANgBhAGQAYwA4ADYANAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGUANAAzAGIAMwBkADAALQAzADUAOAA5AC0ANAAxADQANAAtADkANQBkAGUALQBlADMAMABlADcANQA2AGYAYgA5AGUAYwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADgANgA4ADMAMwAzAGMALQAzADYAMAAzAC0ANAAwAGIAZQAtAGEAZgAwAGUALQBlAGIAYwA1ADgAYQA5AGYAYwAxADYAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADIANgA0ADUAZgBlADIALQA3ADEAMQAwAC0ANABiADgANAAtAGIAOAA5ADEALQA1AGMAMgA0ADQANQA1AGYANwAwADIAZQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADYAOAA3ADMAMgBlADcALQBiAGEAOABkAC0ANABjAGUAMAAtADgAMQA5ADUALQA5ADIAZgBkADEANAA1ADkANQBmAGQAYgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGQANABiAGUANgBlADUALQAxAGMAZgA0AC0ANAAxAGEAOQAtADkAZAAyADkALQAxAGMAMQA5ADYAZgBjAGEAMABhADkAYwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

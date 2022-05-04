@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a9c700d9-0000-4000-8c0e-248eb0598217}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zab" order="" uid="{7ddb974a-0000-4000-b7f0-00f3e006ed2d}" where="">
+    <RecordField colName="zab03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="zab_file.zab03" sqlTabName="zab_file" sqlType="VARCHAR" table_alias_name="" uid="{1bbe9040-0000-4000-9c9f-61c4ff635484}"/>
+    <RecordField colName="zab04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="zab_file.zab04" sqlTabName="zab_file" sqlType="VARCHAR" table_alias_name="" uid="{a39f2d07-0000-4000-b493-c573c680ecb5}"/>
+    <RecordField colName="zab05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="zab_file.zab05" sqlTabName="zab_file" sqlType="VARCHAR" table_alias_name="" uid="{080b8df9-0000-4000-bf36-9e0119e7b612}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{56bacafc-0000-4000-8ff0-08c588874ca7}" where="">
+    <RecordField colName="zab01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zab_file.zab01" sqlTabName="zab_file" sqlType="VARCHAR" table_alias_name="" uid="{7fd6ebff-0000-4000-be09-d933cfbd37c5}"/>
+    <RecordField colName="zab02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zab_file.zab02" sqlTabName="zab_file" sqlType="VARCHAR" table_alias_name="" uid="{1e56e581-0000-4000-b3c4-d1aa57659e0a}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{c0189d0a-0000-4000-a24f-30b5b2bd6b6a}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ad8aedaf-0000-4000-88c4-45d5237b5a34}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="96" name="p_zab" spacing="normal" text="p_zab">
+    <VBox gridHeight="23" gridWidth="93" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="93" lstrcomment="false" name="pc727" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="5" gridWidth="42" lstrcomment="false" name="gr3121" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="41" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Memo Code"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zab01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="zab_file.zab01" notNull="true" posX="13" posY="1" required="true" rowCount="" sqlTabName="zab_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Memo Name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zab02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="zab_file.zab02" posX="13" posY="2" rowCount="" sqlTabName="zab_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="93" lstrcomment="false" name="s_zab" posX="0" posY="8" totalRows="10">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zab03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="1, 2" lstrcomment="false" lstrtitle="false" name="zab_file.zab03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="zab_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Line Seq." widget="ComboBox">
+          <Item name="1" text="1"/>
+          <Item name="2" text="2"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zab04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="" lstrcomment="false" lstrtitle="false" name="zab_file.zab04" notNull="true" posX="9" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="zab_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Language" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zab05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="70" lstrcomment="false" lstrtitle="false" name="zab_file.zab05" posX="18" posY="0" rowCount="" sqlTabName="zab_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Memo Content" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="93" lstrcomment="false" name="gr3122" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl1084" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1085" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

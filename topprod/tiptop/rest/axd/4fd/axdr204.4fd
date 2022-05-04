@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="64" lstrtoalltitle="false" lstrtoallitem="false" database_name="formonly" spacing="normal" CHECKSUM="10092" posX="0" height="15" posY="0" percommentheader="" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdr204" defaultspacing="true" text="axdr204" lstrtoalltext="false" percommentlayout="GRID
+GRID
+VBOX
+LAYOUT
+" gstVersion="11401" >
+ <VBox width="62" posX="0" height="13" posY="0" >
+  <Grid width="61" posX="0" height="12" posY="0" lstrcomment="false" hidden="--------" fontPitch="default" scroll="false" >
+   <Group width="60" lstrtext="false" gridWidth="60" posX="1" height="6" posY="0" lstrcomment="false" hidden="--------" name="group01" fontPitch="default" gridHeight="6" text="QBE" gridChildrenInParent="--------" >
+    <Text width="15" lstrtext="false" gridWidth="15" posX="1" height="1" posY="1" sizePolicy="initial" name="" text="Transfer-In No." />
+    <FormField colName="adh01" sqlTabName="formonly" fieldId="0" name="formonly.adh01" fieldtype="FORM_ONLY" >
+     <Edit width="16" case="NONE" gridWidth="16" invisible="--------" notNull="--------" posX="24" height="1" posY="1" lstrcomment="false" autoNext="--------" hidden="--------" verify="--------" tabIndex="1" sizePolicy="initial" zeroFill="--------" name="adh01" lstrtitle="false" reverse="--------" fontPitch="default" color="black" century="R" required="--------" noEntry="--------" scroll="--------" />
+    </FormField>
+    <Text width="16" lstrtext="false" gridWidth="16" posX="1" height="1" posY="2" sizePolicy="initial" name="" text="Transfer-In Date" />
+    <FormField colName="adh02" sqlTabName="formonly" fieldId="1" name="formonly.adh02" fieldtype="FORM_ONLY" >
+     <DateEdit width="10" gridWidth="10" notNull="--------" posX="24" height="1" posY="2" lstrcomment="false" autoNext="--------" hidden="--------" tabIndex="2" sizePolicy="initial" name="adh02" data_type="DATE" lstrtitle="false" fontPitch="default" color="black" century="R" required="--------" noEntry="--------" />
+    </FormField>
+    <Text width="8" lstrtext="false" gridWidth="8" posX="1" height="1" posY="3" sizePolicy="initial" name="" text="Employee" />
+    <FormField colName="adh03" sqlTabName="formonly" fieldId="2" name="formonly.adh03" fieldtype="FORM_ONLY" >
+     <Edit width="10" case="NONE" gridWidth="10" invisible="--------" notNull="--------" posX="24" height="1" posY="3" lstrcomment="false" autoNext="--------" hidden="--------" verify="--------" tabIndex="3" sizePolicy="initial" zeroFill="--------" name="adh03" lstrtitle="false" reverse="--------" fontPitch="default" color="black" century="R" required="--------" noEntry="--------" scroll="--------" />
+    </FormField>
+    <Text width="10" lstrtext="false" gridWidth="10" posX="1" height="1" posY="4" sizePolicy="initial" name="" text="Department" />
+    <FormField colName="adh04" sqlTabName="formonly" fieldId="3" name="formonly.adh04" fieldtype="FORM_ONLY" >
+     <Edit width="10" case="NONE" gridWidth="10" invisible="--------" notNull="--------" posX="24" height="1" posY="4" lstrcomment="false" autoNext="--------" hidden="--------" verify="--------" tabIndex="4" sizePolicy="initial" zeroFill="--------" name="adh04" lstrtitle="false" reverse="--------" fontPitch="default" color="black" century="R" required="--------" noEntry="--------" scroll="--------" />
+    </FormField>
+   </Group>
+   <Group width="60" lstrtext="false" gridWidth="60" posX="1" height="5" posY="6" lstrcomment="false" hidden="--------" name="group02" fontPitch="default" gridHeight="5" text="INPUT" gridChildrenInParent="--------" >
+    <Text width="17" lstrtext="false" gridWidth="17" posX="1" height="1" posY="1" sizePolicy="initial" name="" text="Transfer Category" />
+    <FormField colName="a" sqlTabName="formonly" fieldId="4" name="formonly.a" fieldtype="FORM_ONLY" >
+     <ComboBox width="10" comment="Please insert 1/2/3/4" case="NONE" gridWidth="10" notNull="true" posX="24" height="1" posY="1" lstrcomment="false" hidden="--------" tabIndex="5" sizePolicy="initial" name="a" lstrtitle="false" fontPitch="default" color="black" century="R" queryEditable="true" required="true" noEntry="--------" >
+      <Item name="1" text="In Tran" />
+      <Item name="2" text="Out Tran" />
+      <Item name="3" text="Out Retn" />
+      <Item name="4" text="All" />
+     </ComboBox>
+    </FormField>
+    <Text width="11" lstrtext="false" gridWidth="11" posX="1" height="1" posY="2" sizePolicy="initial" name="" text="Status Code" />
+    <FormField colName="b" sqlTabName="formonly" fieldId="5" name="formonly.b" fieldtype="FORM_ONLY" >
+     <ComboBox width="29" comment="Please insert 0/1/2/3/4/5" case="NONE" gridWidth="29" notNull="true" posX="24" height="1" posY="2" lstrcomment="false" hidden="--------" tabIndex="6" sizePolicy="initial" name="b" lstrtitle="false" fontPitch="default" color="black" century="R" queryEditable="true" required="true" noEntry="--------" >
+      <Item name="0" text="Open" />
+      <Item name="1" text="Approved" />
+      <Item name="2" text="Appr Sent" />
+      <Item name="3" text="Appr Rejected" />
+      <Item name="4" text="Appr Withdrawn" />
+      <Item name="5" text="All" />
+     </ComboBox>
+    </FormField>
+   </Group>
+  </Grid>
+  <Grid width="27" posX="0" height="1" posY="12" lstrcomment="false" hidden="--------" fontPitch="default" scroll="false" >
+   <FormField colName="more" sqlTabName="formonly" fieldId="6" name="formonly.more" fieldtype="FORM_ONLY" >
+    <CheckBox width="24" lstrtext="false" gridWidth="24" notNull="true" posX="2" height="1" posY="0" lstrcomment="false" hidden="--------" tabIndex="7" sizePolicy="initial" name="more" data_type="VARCHAR" lstrtitle="false" valueUnchecked="N" fontPitch="default" text="Other condition to print" required="true" noEntry="--------" valueChecked="Y" />
+   </FormField>
+  </Grid>
+ </VBox>
+</Form>
+

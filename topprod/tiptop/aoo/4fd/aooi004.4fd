@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="ManagedForm" uid="{73651fae-691b-43d8-9876-7ce3cf143c11}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="g_tc_auth" order="" uid="{97d7b649-459f-462b-9a0e-fad7e4ab736f}" where="">
+    <RecordField colName="" fieldIdRef="1" name="tc_auth01" sqlTabName="" table_alias_name="" uid="{63a9c66c-823f-4dd1-aceb-35b9caf9d60d}"/>
+    <RecordField colName="" fieldIdRef="2" name="zx02" sqlTabName="" table_alias_name="" uid="{e63f08a4-e3c8-4edf-b9f7-f603791c93c7}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tc_auth" order="" uid="{6a0d85a3-8a81-4ca3-8ed1-735ed0a76eba}" where="">
+    <RecordField colName="" fieldIdRef="3" name="tc_auth02" sqlTabName="" table_alias_name="" uid="{c9f6bb14-c661-4c01-8cc1-d3735a29ea92}"/>
+    <RecordField colName="" fieldIdRef="4" name="tc_auth03" sqlTabName="" table_alias_name="" uid="{5f13acc9-b25d-4bd8-bc2c-1004dd010bdb}"/>
+    <RecordField colName="" fieldIdRef="5" name="tc_auth04" sqlTabName="" table_alias_name="" uid="{4d787a69-bbd2-46a0-bc7b-3194c225097c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5013ff1c-b082-4237-8d0c-65676ab5e07a}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{30bc53e6-2331-4106-b2c5-99f31dcb962f}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{233d09da-e22c-4cea-908b-5228d154e0d4}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e46be741-432d-4d23-81f4-a19d4f6d23a6}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="132" name="Form" text="Form">
+    <VBox gridHeight="20" gridWidth="77" name="VBox1" posX="1" posY="0">
+      <Folder gridHeight="8" gridWidth="77" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Page1">
+          <Grid gridHeight="5" gridWidth="56" name="Grid1" posX="3" posY="1">
+            <Label gridHeight="1" gridWidth="17" name="Label1" posX="2" posY="1" text="Label1"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="21" image="zoom" name="tc_auth01" posX="25" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="17" name="Label2" posX="2" posY="3" text="Label2"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="21" name="zx02" noEntry="true" posX="25" posY="3" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Edit3" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="77" name="Table1" posX="0" posY="9" totalRows="5">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="21" items="权限组, 作业权限" name="tc_auth02" noEntry="false" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit1" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="权限组"/>
+          <Item lstrtext="false" name="2" text="作业权限"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="24" image="zoom" name="tc_auth03" posX="21" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit2" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="26" name="tc_auth04" noEntry="true" posX="45" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit3" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="77" name="Grid2" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl1563" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="idx" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="28" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="3" name="hl1564" posX="37" posY="0"/>
+        <Label posX="42" posY="0" text="Details"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="51" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1565" posX="59" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA1ADAAMQAzAGYAZgAxAGMALQBiADAAOAAyAC0ANAAyADMANwAtADgAZAAwAGMALQA2ADUANgA3ADYAYQBiADUAZQAwADcAYQB9wCIAAAAAAABAAAAAAAAAAD90euFHrhR7AQAAAEwAewA5ADcAZAA3AGIANgA0ADkALQA0ADUAOQBmAC0ANAA2ADIAYgAtADkAYQAwAGUALQBmAGEAZAA3AGUANABhAGIANwAzADYAZgB9wFPAAAAAAADAX4AAAAAAAD9wYk3S8an8AQAAAEwAewBlADYAMwBmADAAOABhADQALQBlADMAYwA4AC0ANABlAGQAZgAtAGIAOQBmADcALQBmADYAMAAzADcAOQAxAGMAOQAzAGMANwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADkAZgA2AGIAYgAxADQALQBjADYANgAxAC0ANABjADAAMQAtADgAYwBjADEALQBkADMANwAzADUAYQAyADkAZQBhADkAMgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADQANgBiAGUANwA0ADEALQA0ADMAMgBkAC0ANABkADIAMwAtADgAMQBmADQALQBhADEAOQBkADQAZgA2AGQAMgAzAGEANgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADAAYgBjADUAMwBlADYALQAyADMAMwAxAC0ANAAxADAANgAtAGIAMgBjADUALQA5ADkAZgAzADEAZABjAGIAOQA2ADIAZgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGYAMQAzAGEAYwBjADkALQBiADIANQBkAC0ANABiAGQAOAAtAGIAYwAyAGMALQAxADAAMAA0AGQAZAAwADEAMABiAGQAYgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGQANwA4ADcAYQA2ADkALQBiAGIAZAAyAC0ANAA2AGEAMAAtAGIAYwA3AGIALQAzADEAOQA0AGMAMgAyADUAMAA5ADcAYwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADMAMwBkADAAOQBkAGEALQBlADIAMgBjAC0ANABjAGUAYQAtADkAMAA4AGIALQA1ADIAMgA4AGQAMQA1ADQAZQAwAGQANAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGEAMABkADgANQBhADMALQA4AGEAOAAxAC0ANABjAGEAMwAtADgAZQBkADEALQA3ADMANQBlAGQAMABhADcANgBlAGIAYQB9wHPAAAAAAADASQAAAAAAAD94k3S8an76AQAAAEwAewA2ADMAYQA5AGMANgA2AGMALQA4ADIAMwBmAC0ANABkAGQAMQAtAGEAYwBlAGIALQAzADUAYgA5AGMAYQBmADkAZAA2ADAAZAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

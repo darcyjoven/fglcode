@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{55abeedc-0000-4000-9e3b-e1e0b6e24992}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_cac" order="" uid="{d3c09b83-0000-4000-afe6-14fa561727d2}" where="">
+    <RecordField colName="cac01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cac_file.cac01" sqlTabName="cac_file" sqlType="VARCHAR" table_alias_name="" uid="{82a9a352-0000-4000-bf91-513f8a858ff1}"/>
+    <RecordField colName="cac02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cac_file.cac02" sqlTabName="cac_file" sqlType="VARCHAR" table_alias_name="" uid="{5843fd8e-0000-4000-ad49-3a4ba82cf297}"/>
+    <RecordField colName="" fieldIdRef="3" name="cab02" sqlTabName="" table_alias_name="" uid="{c7442c27-0000-4000-8187-1411d400f0bb}"/>
+    <RecordField colName="cac03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="cac_file.cac03" sqlTabName="cac_file" sqlType="DECIMAL" table_alias_name="" uid="{c7200439-0000-4000-b430-f2647edb95ea}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{dc08e68d-0000-4000-a6aa-bb83df87c68f}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{1ef58415-0000-4000-a6b7-e99a7fcb14be}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="60" name="axci050" spacing="normal" text="axci050">
+    <VBox gridHeight="18" gridWidth="57" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="57" lstrcomment="false" name="pc346" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="55" lstrcomment="false" name="s_cac" posX="0" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cac01" columnCount="" comment="&lt;^P&gt;Query Cost Cnt  &lt;^O&gt;Copy Prev." fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="cac_file.cac01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="cac_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Cost Cnt" widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cac02" columnCount="" comment="&lt;^P&gt;Qry Cost Items" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="cac_file.cac02" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="cac_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Cost Itm" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="cab02" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Cost Item Desc" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cac03" columnCount="" comment="Input Appo.Rt In Cost Item" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="cac_file.cac03" posX="40" posY="0" rowCount="" sqlTabName="cac_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Appo.Rt" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="57" lstrcomment="false" name="gr1450" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl521" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl522" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

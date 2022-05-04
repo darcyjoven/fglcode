@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c8b99fa1-0000-4000-b5cd-792b394d32b4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_lnr" order="" uid="{8b4ecb06-0000-4000-91ee-be528ceccec7}" where="">
+    <RecordField colName="lnr01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lnr_file.lnr01" sqlTabName="lnr_file" sqlType="VARCHAR" table_alias_name="" uid="{3b193340-0000-4000-a383-e30570ce120b}"/>
+    <RecordField colName="lnr02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lnr_file.lnr02" sqlTabName="lnr_file" sqlType="VARCHAR" table_alias_name="" uid="{a7a9981d-0000-4000-bd6a-a537b4142910}"/>
+    <RecordField colName="lnr03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lnr_file.lnr03" sqlTabName="lnr_file" sqlType="DECIMAL" table_alias_name="" uid="{7837e54b-0000-4000-8fbd-307ea49b889a}"/>
+    <RecordField colName="lnr04" defaultValue="Y" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lnr_file.lnr04" sqlTabName="lnr_file" sqlType="VARCHAR" table_alias_name="" uid="{53a538d2-0000-4000-a1c1-c1bb86e4b587}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{88cddd97-0000-4000-9cec-36c6202ce5b6}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{360b4ddb-0000-4000-82e1-028f3061ec70}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="82" lstrtext="false" name="almi380" spacing="normal" text="almi380">
+    <VBox gridHeight="13" gridWidth="66" name="vb2" posX="4" posY="1">
+      <Folder gridHeight="9" gridWidth="66" lstrcomment="false" name="pc4" posX="0" posY="1">
+        <Page name="Page6" text="Basic Data">
+          <Table gridHeight="7" gridWidth="63" name="s_lnr" posX="0" posY="0" totalRows="5">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnr01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom.png" lstrcomment="false" lstrtitle="false" name="lnr_file.lnr01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="lnr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="lnr01" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnr02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="lnr_file.lnr02" posX="22" posY="0" rowCount="" sqlTabName="lnr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="lnr02" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnr03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="lnr_file.lnr03" notNull="true" posX="44" posY="0" rowCount="" sqlTabName="lnr_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="lnr03" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnr04" columnCount="" defaultValue="Y" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="lnr_file.lnr04" notNull="true" posX="50" posY="0" rowCount="" sqlTabName="lnr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="lnr04" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="66" lstrcomment="false" name="gr10" posX="0" posY="10">
+        <HLine gridWidth="10" name="hl8" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl9" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

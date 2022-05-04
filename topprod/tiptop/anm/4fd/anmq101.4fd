@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{924a1e15-0000-4000-8be0-e99356d3c11d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nmd" order="" uid="{fa9c6b98-0000-4000-876a-a15e0705b7bf}" where="">
+    <RecordField colName="" fieldIdRef="1" name="nmd03" sqlTabName="" table_alias_name="" uid="{3f1f454c-0000-4000-8d83-2a6e6ae06641}"/>
+    <RecordField colName="" fieldIdRef="4" name="nmd02" sqlTabName="" table_alias_name="" uid="{143716a3-0000-4000-b133-1fc420f5d344}"/>
+    <RecordField colName="" fieldIdRef="5" name="nmd07" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{92766dac-0000-4000-a4bf-fe510886bb49}"/>
+    <RecordField colName="" fieldIdRef="6" name="nmd05" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{5de01191-0000-4000-b388-ff20bb7bb795}"/>
+    <RecordField colName="" fieldIdRef="7" name="nmd04" sqlTabName="" table_alias_name="" uid="{4e48f919-0000-4000-8739-117a0e7bf09b}"/>
+    <RecordField colName="" fieldIdRef="8" name="nmd08" sqlTabName="" table_alias_name="" uid="{175a4127-0000-4000-a397-1e0e94cfafe5}"/>
+    <RecordField colName="" fieldIdRef="9" name="nmd24" sqlTabName="" table_alias_name="" uid="{f053473a-0000-4000-a89f-6f9d198281f9}"/>
+    <RecordField colName="" fieldIdRef="10" name="nmd12" sqlTabName="" table_alias_name="" uid="{3c6b8beb-0000-4000-9478-4ba0273f16c4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b264bd72-0000-4000-bf87-aa6e8565957f}" where="">
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="cnt2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{04fcce21-0000-4000-9d56-4868b3083f1c}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt3" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{8a5fc6e8-0000-4000-bf9c-a51c70e79da7}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e4b9edcf-0000-4000-9251-fa7234726935}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="157" name="anmq101" spacing="normal" text="anmq101">
+    <VBox gridHeight="21" gridWidth="154" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="17" gridWidth="154" lstrcomment="false" name="pc769" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="16" gridWidth="152" name="VBox2" posX="0" posY="0">
+            <Table gridHeight="12" gridWidth="152" lstrcomment="false" name="s_nmd" posX="0" posY="1" totalRows="10">
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="nmd03" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Paying Bank" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nmd02" posX="12" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Note#" widget="Edit"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="nmd07" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Drawing Date" widget="DateEdit"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="nmd05" posX="35" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Due Date" widget="DateEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd04" posX="44" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Face Value" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="nmd08" posX="64" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Vender#" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd24" noEntry="true" posX="72" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Vender Abbreviation" widget="Edit"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="11" items="Draw, Withdraw, Return, Cash, Void, Issue" lstrcomment="false" lstrtitle="false" name="nmd12" posX="92" posY="0" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Note Status" widget="ComboBox">
+                <Item name="1" text="Draw"/>
+                <Item name="6" text="Withdraw"/>
+                <Item name="7" text="Return"/>
+                <Item name="8" text="Cash"/>
+                <Item name="9" text="Void"/>
+                <Item name="X" text="Issue"/>
+              </ComboBox>
+            </Table>
+            <Grid gridHeight="2" gridWidth="152" lstrcomment="false" name="gr4139" posX="0" posY="13">
+              <Label gridHeight="1" gridWidth="32" lstrcomment="false" lstrtext="false" name="dummy01" posX="2" posY="0"/>
+              <Label posX="36" posY="0" text="Number of Checks"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnt2" noEntry="true" posX="57" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="27" lstrcomment="false" lstrtext="false" name="dummy02" posX="80" posY="0"/>
+              <Label posX="109" posY="0" text="Check Amount"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnt3" noEntry="true" posX="130" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="154" lstrcomment="false" name="gr4140" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1306" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1307" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{c41d941e-0000-4000-ba42-874cb043ce0c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{85d56c33-0000-4000-aa78-8f464251a053}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="tsg01" sqlTabName="" table_alias_name="" uid="{301c054d-0000-4000-9cd8-8bed5b3d8211}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="tsg06" sqlTabName="" table_alias_name="" uid="{650ab4b2-0000-4000-a633-e84fb52dcde6}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="tsg02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{7cc39064-0000-4000-9cf5-d75d6a7c3b53}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="tsg03" sqlTabName="" table_alias_name="" uid="{6d1355a0-0000-4000-8f52-48516fc2bade}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="tsg17" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{31837b60-0000-4000-8918-c29514b2bdc0}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="tsg18" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{336c1cda-0000-4000-92d8-dbb085356e08}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="tsg05" sqlTabName="" table_alias_name="" uid="{31a60bfe-0000-4000-afc9-9b294c71cfc4}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{292ccbfc-0000-4000-9dcc-f970cdae8fac}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="78" name="atmr253" spacing="normal" text="atmr253">
+    <VBox gridHeight="11" gridWidth="75" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="75" lstrcomment="false" name="gr1193" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="74" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Application Note No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="tsg01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="40" posY="1" text="Origin Plant"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="tsg06" posX="57" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Application Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="tsg02" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Label posX="40" posY="2" text="Request Plant"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="tsg03" posX="57" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Pre-ship Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="tsg17" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+          <Label posX="40" posY="3" text="Actual Ship Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="tsg18" posX="57" posY="3" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="4" text="Status"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" items="Issue, Confirmed, Posted, voided" lstrcomment="false" lstrtitle="false" name="tsg05" noEntry="true" posX="22" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="" name="1" text="Issue"/>
+            <Item lstrtext="" name="2" text="Confirmed"/>
+            <Item lstrtext="" name="3" text="Posted"/>
+            <Item lstrtext="" name="4" text="voided"/>
+          </ComboBox>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="75" lstrcomment="false" name="gr1194" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="68" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

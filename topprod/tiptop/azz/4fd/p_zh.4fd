@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ad714473-0000-4000-975d-6ff5d224de17}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gan" order="" uid="{70e69b6f-0000-4000-839c-82923f7fa0ab}" where="">
+    <RecordField colName="gan01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gan_file.gan01" sqlTabName="gan_file" sqlType="SMALLINT" table_alias_name="" uid="{ce6809bc-0000-4000-82a8-7bde8a272921}"/>
+    <RecordField colName="ganmodu" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gan_file.ganmodu" sqlTabName="gan_file" sqlType="VARCHAR" table_alias_name="" uid="{c98f486b-0000-4000-a760-d1bfc34e441e}"/>
+    <RecordField colName="gandate" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gan_file.gandate" sqlTabName="gan_file" sqlType="DATE" table_alias_name="" uid="{3d8d4c68-0000-4000-a1df-f84076cc997a}"/>
+    <RecordField colName="gan03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gan_file.gan03" sqlTabName="gan_file" sqlType="VARCHAR" table_alias_name="" uid="{055c28fd-0000-4000-ba67-f7372a299f27}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{23a1324e-0000-4000-9a65-94eee3a07918}" where="">
+    <RecordField colName="gam01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gam_file.gam01" sqlTabName="gam_file" sqlType="VARCHAR" table_alias_name="" uid="{eafee3dc-0000-4000-8288-9b4aa015002a}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="gaz03" sqlTabName="" table_alias_name="" uid="{a596e302-0000-4000-92a6-3ef5de21fd0a}"/>
+    <RecordField colName="gam02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gam_file.gam02" sqlTabName="gam_file" sqlType="VARCHAR" table_alias_name="" uid="{3d5c0d7b-0000-4000-84b9-9783130fc1a3}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e4147bda-0000-4000-aefe-9a1e33d4937e}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3b4b5810-0000-4000-84d4-d82a2f1c472f}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="68" name="p_zh" spacing="normal" text="p_zh">
+    <VBox gridHeight="26" gridWidth="65" name="vb6" posX="0" posY="0">
+      <Folder gridHeight="10" gridWidth="65" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="8" gridWidth="64" lstrcomment="false" name="gr3098" posX="0" posY="0">
+            <Group gridHeight="7" gridWidth="63" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Program ID"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gam01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gam_file.gam01" posX="22" posY="1" rowCount="" sqlTabName="gam_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="27" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="34" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Customerization Name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gam02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gam_file.gam02" posX="22" posY="2" rowCount="" sqlTabName="gam_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="65" lstrcomment="false" name="s_gan" posX="0" posY="11" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gan01" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="gan_file.gan01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="gan_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ganmodu" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="gan_file.ganmodu" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="gan_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Modifier" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gandate" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="gan_file.gandate" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="gan_file" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Modified Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gan03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="gan_file.gan03" posX="34" posY="0" rowCount="" sqlTabName="gan_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Memo" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="65" lstrcomment="false" name="gr3099" posX="0" posY="23">
+        <HLine gridWidth="10" name="hl3" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

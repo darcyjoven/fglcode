@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="121" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="13934" spacing="normal" posX="0" percommentheader="" height="16" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="apsi104" defaultspacing="true" text="apsi104" gstVersion="11401" percommentlayout="TABLE
+PAGE
+GRID
+PAGE
+FOLDER
+LAYOUT
+" lstrtoalltext="false" >
+ <PageControl width="119" posX="0" posY="0" height="14" lstrcomment="false" name="pc1015" >
+  <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" >
+   <Table width="117" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="0" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_aps" fontPitch="default" tabName="s_aps" unsortableColumns="--------" tabName1="s_aps" >
+    <TableColumn width="15" lstrtext="false" sqlDBName="ds" height="1" colName="wm_id" unsortable="--------" fieldId="0" sqlTabName="aps_sae" tabIndex="1" unsizable="--------" unhidable="--------" unmovable="--------" name="wm_id" fieldtype="TABLE_COLUMN" text="Work Model No." >
+     <Edit width="15" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+    </TableColumn>
+    <TableColumn width="16" lstrtext="false" sqlDBName="ds" height="1" colName="st_t" unsortable="--------" fieldId="1" sqlTabName="aps_sae" tabIndex="2" unsizable="--------" unhidable="--------" unmovable="--------" name="st_t" fieldtype="TABLE_COLUMN" text="Start Time(Sec)" >
+     <Edit width="16" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+    </TableColumn>
+    <TableColumn width="17" lstrtext="false" sqlDBName="ds" height="1" colName="ed_t" unsortable="--------" fieldId="2" sqlTabName="aps_sae" tabIndex="3" unsizable="--------" unhidable="--------" unmovable="--------" name="ed_t" fieldtype="TABLE_COLUMN" text="Ending Time(Sec)" >
+     <Edit width="17" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+    </TableColumn>
+    <TableColumn width="8" lstrtext="false" sqlDBName="ds" height="1" colName="wk_type" unsortable="--------" fieldId="3" sqlTabName="aps_sae" tabIndex="4" unsizable="--------" unhidable="--------" unmovable="--------" name="wk_type" fieldtype="TABLE_COLUMN" text="Type" >
+     <ComboBox width="8" case="NONE" comment="0:Not Work Time 1:Work Time" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="SMALLINT" century="R" color="black" fontPitch="default" noEntry="--------" required="true" queryEditable="true" >
+      <Item name="0" text="Not Work Time" />
+      <Item name="1" text="Time" />
+     </ComboBox>
+    </TableColumn>
+    <TableColumn width="27" lstrtext="false" sqlDBName="ds" height="1" colName="wm_name" unsortable="--------" fieldId="4" sqlTabName="aps_sae" tabIndex="5" unsizable="--------" unhidable="--------" unmovable="--------" name="wm_name" fieldtype="TABLE_COLUMN" text="Model Name" >
+     <Edit width="27" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" scroll="true" />
+    </TableColumn>
+    <TableColumn width="26" lstrtext="false" sqlDBName="ds" height="1" colName="wm_des" unsortable="--------" fieldId="5" sqlTabName="aps_sae" tabIndex="6" unsizable="--------" unhidable="--------" unmovable="--------" name="wm_des" fieldtype="TABLE_COLUMN" text="Model Description" >
+     <Edit width="26" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" scroll="true" />
+    </TableColumn>
+   </Table>
+  </Page>
+  <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="info" fontPitch="default" text="Info" >
+   <Grid width="32" posX="0" posY="0" height="4" lstrcomment="false" hidden="--------" name="gr5348" fontPitch="default" scroll="false" >
+    <Group width="32" lstrtext="false" gridWidth="32" posX="0" posY="0" height="3" lstrcomment="false" hidden="--------" name="grpinfo" fontPitch="default" gridHeight="3" gridChildrenInParent="--------" >
+     <Text width="13" lstrtext="false" gridWidth="13" posX="1" posY="1" height="1" sizePolicy="initial" name="text17956" text="Detail Counts" />
+     <FormField colName="cn2" fieldId="6" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+      <Edit width="10" case="NONE" invisible="--------" gridWidth="10" notNull="--------" posX="21" formfieldname="formfield0" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="7" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+     </FormField>
+    </Group>
+   </Grid>
+  </Page>
+ </PageControl>
+ <RecordView SRType="default" name="s_aps" fromTable="true" tableKey="tb713" >
+  <Link colName="aps_sae.wm_id" fromTable="true" colKey="Col7176" />
+  <Link colName="aps_sae.st_t" fromTable="true" colKey="Col7177" />
+  <Link colName="aps_sae.ed_t" fromTable="true" colKey="Col7178" />
+  <Link colName="aps_sae.wk_type" fromTable="true" colKey="Col7179" />
+  <Link colName="aps_sae.wm_name" fromTable="true" colKey="Col7180" />
+  <Link colName="aps_sae.wm_des" fromTable="true" colKey="Col7181" />
+ </RecordView>
+</Form>
+

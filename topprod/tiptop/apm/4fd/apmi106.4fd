@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{297d1c64-0000-4000-a247-ab945d60fcdc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmy" order="" uid="{877810bc-0000-4000-8783-de8a7d0b0770}" where="">
+    <RecordField colName="pmy01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmy_file.pmy01" sqlTabName="pmy_file" sqlType="VARCHAR" table_alias_name="" uid="{f38df061-0000-4000-afd9-72673d1ed2f4}"/>
+    <RecordField colName="pmy02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmy_file.pmy02" sqlTabName="pmy_file" sqlType="VARCHAR" table_alias_name="" uid="{26cdc44f-0000-4000-b7fc-ae5888cee93d}"/>
+    <RecordField colName="pmyacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmy_file.pmyacti" sqlTabName="pmy_file" sqlType="VARCHAR" table_alias_name="" uid="{6df0bf1a-0000-4000-96c6-7a2c820081ab}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d1cc4778-0000-4000-a140-91f80f41c313}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3e73eab5-0000-4000-8aaf-72424ad066aa}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="55" name="apmi106" spacing="normal" text="apmi106">
+    <VBox gridHeight="18" gridWidth="52" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="52" lstrcomment="false" name="pc916" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="50" lstrcomment="false" name="s_pmy" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmy01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="pmy_file.pmy01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="pmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Vender Class Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmy02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pmy_file.pmy02" posX="19" posY="0" rowCount="" sqlTabName="pmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmyacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="pmy_file.pmyacti" notNull="true" posX="39" posY="0" required="true" rowCount="" sqlTabName="pmy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="52" lstrcomment="false" name="gr4822" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1551" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1552" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

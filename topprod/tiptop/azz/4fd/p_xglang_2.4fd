@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ee6583a9-8552-46ce-8b1a-ac82e9b44558}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gds_chart" order="" uid="{dc37c9dc-f74a-4c4a-a736-cd9e736dca26}" where="">
+    <RecordField colName="gds01" fieldIdRef="16" fieldType="TABLE_COLUMN" name="gds_file.gds01" sqlTabName="gds_file" sqlType="SMALLINT" table_alias_name="" uid="{cb6a690e-b65a-4215-b083-2fbb431cb2b4}"/>
+    <RecordField colName="gds03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gds_file.gds03" sqlTabName="gds_file" sqlType="VARCHAR" table_alias_name="" uid="{f3e370ae-c9ba-4e9f-96e7-972892185bc2}"/>
+    <RecordField colName="gds04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gds_file.gds04" sqlTabName="gds_file" sqlType="VARCHAR" table_alias_name="" uid="{83bffee5-c73a-4b9c-ab5e-1eb208fee2e5}"/>
+    <RecordField colName="gds26" fieldIdRef="26" fieldType="TABLE_COLUMN" name="gds_file.gds26" sqlTabName="gds_file" sqlType="VARCHAR" table_alias_name="" uid="{bcce9d9a-7c70-4738-b853-4502d74ddd0f}"/>
+    <RecordField colName="gds24" fieldIdRef="22" fieldType="TABLE_COLUMN" name="gds_file.gds24" sqlTabName="gds_file" sqlType="SMALLINT" table_alias_name="" uid="{64cdf792-4ab9-4122-a5b5-ab93259d614e}"/>
+    <RecordField colName="gds25" fieldIdRef="25" fieldType="TABLE_COLUMN" name="gds_file.gds25" sqlTabName="gds_file" sqlType="VARCHAR" table_alias_name="" uid="{cecb3f5e-ee3b-40d5-ab83-fae27e997144}"/>
+    <RecordField colName="gds27" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gds_file.gds27" sqlTabName="gds_file" sqlType="VARCHAR" table_alias_name="" uid="{a6ad2dbc-b3de-49a2-8ccf-5f6a694b4fba}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gdr" order="" uid="{6149978a-3dde-449b-b660-019f63f3b499}" where=""/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5fa21d43-d545-4309-b4e1-bc9a3892d1d9}" where="">
+    <RecordField colName="gdr11" fieldIdRef="27" fieldType="TABLE_COLUMN" name="gdr_file.gdr11" sqlTabName="gdr_file" sqlType="VARCHAR" table_alias_name="" uid="{14b70fee-23b6-4096-bbf7-d6f5f346b7d3}"/>
+    <RecordField colName="gdr12" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gdr_file.gdr12" sqlTabName="gdr_file" sqlType="VARCHAR" table_alias_name="" uid="{6c452b6b-fc51-4059-ae36-2a32c3b012cd}"/>
+  </Record>
+  <Form fourSTFile="" gridHeight="30" gridWidth="196" name="p_xglang" spacing="normal" text="p_replang">
+    <VBox gridHeight="18" gridWidth="71" name="VBox1" posX="20" posY="4">
+      <Folder gridHeight="5" gridWidth="71" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="Page1" text="main">
+          <Grid gridHeight="3" gridWidth="61" lstrcomment="false" name="gr3257" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="10" name="Label8" posX="1" posY="1" text="Chart"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdr11" columnCount="" fieldId="27" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="1, Pie, Rader" name="gdr_file.gdr11" posX="12" posY="1" rowCount="" sqlTabName="gdr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="1"/>
+              <Item lstrtext="false" name="2" text="Pie"/>
+              <Item lstrtext="false" name="3" text="Rader"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdr12" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="1, 2" name="gdr_file.gdr12" notNull="true" posX="23" posY="1" required="true" rowCount="" sqlTabName="gdr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="1"/>
+              <Item lstrtext="false" name="2" text="2"/>
+            </ComboBox>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="71" lstrcomment="false" name="s_gds_chart" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gds01" columnCount="" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="gds_file.gds01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="gds_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Sequence" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gds03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gds_file.gds03" noEntry="true" posX="5" posY="0" rowCount="" scroll="true" sqlTabName="gds_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Field" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gds04" columnCount="" comment="IF Field Name is &apos;wintitle&apos;, Then This Field is &apos;NO Entry&apos;! Using &apos;Update&apos; Function!" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="gds_file.gds04" noEntry="true" posX="15" posY="0" rowCount="" scroll="true" sqlTabName="gds_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Description" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gds26" columnCount="" fieldId="26" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="gds_file.gds26" notNull="true" posX="31" posY="0" required="true" rowCount="" sqlTabName="gds_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Edit1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gds24" columnCount="" fieldId="22" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="gds_file.gds24" noEntry="true" posX="40" posY="0" rowCount="" sqlTabName="gds_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Type" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gds25" columnCount="" fieldId="25" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="1, 2, Area" name="gds_file.gds25" posX="45" posY="0" rowCount="" sqlTabName="gds_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Edit1" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="1"/>
+          <Item lstrtext="false" name="2" text="2"/>
+          <Item lstrtext="false" name="3" text="Area"/>
+        </ComboBox>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gds27" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="gds_file.gds27" notNull="true" posX="53" posY="0" required="true" rowCount="" sqlTabName="gds_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="" title="Edit1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjAGIANgBhADYAOQAwAGUALQBiADYANQBhAC0ANAAyADEANQAtAGIAMAA4ADMALQAyAGYAYgBiADQAMwAxAGMAYgAyAGIANAB9QCQAAAAAAABAQoAAAAAAAD+QYk3S8an+AQAAAEwAewBiAGMAYwBlADkAZAA5AGEALQA3AGMANwAwAC0ANAA3ADMAOAAtAGIAOAA1ADMALQA0ADUAMAAyAGQANwA0AGQAZABkADAAZgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGMANAA1ADIAYgA2AGIALQBmAGMANQAxAC0ANAAwADUAOQAtAGEAZQAzADYALQAyAGEAMwAyAGMAMwBiADAAMQAyAGMAZAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADQAYwBkAGYANwA5ADIALQA0AGEAYgA5AC0ANAAxADIAMgAtAGEANQBiADUALQBhAGIAOQAzADIANQA5AGQANgAxADQAZQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGYAYQAyADEAZAA0ADMALQBkADUANAA1AC0ANAAzADAAOQAtAGIANABlADEALQBiAGMAOQBhADMAOAA5ADIAZAAxAGQAOQB9wGFgAAAAAADAQAAAAAAAAD+Yk3S8an7+AQAAAEwAewA2ADEANAA5ADkANwA4AGEALQAzAGQAZABlAC0ANAA0ADkAYgAtAGIANgA2ADAALQAwADEAOQBmADYAMwBmADMAYgA0ADkAOQB9wHMQAAAAAADAQIAAAAAAAD+WhysCDEm+AQAAAEwAewBhADYAYQBkADIAZABiAGMALQBiADMAZABlAC0ANAA5AGEAMgAtADgAYwBjAGYALQA1AGYANgBhADYAOQA0AGIANABmAGIAYQB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGUAYwBiADMAZgA1AGUALQBlAGUAMwBiAC0ANAAwAGQANQAtAGEAYgA4ADMALQBmAGEAZQAyADcAZQA5ADkANwAxADQANAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADQAYgA3ADAAZgBlAGUALQAyADMAYgA2AC0ANAAwADkANgAtAGIAYgBmADcALQBkADYAZgA1AGYAMwA0ADYAYgA3AGQAMwB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADMAZQAzADcAMABhAGUALQBjADkAYgBhAC0ANABlADkAZgAtADkANgBlADcALQA5ADcAMgA4ADkAMgAxADgANQBiAGMAMgB9QCQAAAAAAABATYAAAAAAAD+RaHKwIMSeAQAAAEwAewA4ADMAYgBmAGYAZQBlADUALQBjADcAMwBhAC0ANABiADkAYwAtAGEAYgA1AGUALQAxAGUAYgAyADAAOABmAGUAZQAyAGUANQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGMAMwA3AGMAOQBkAGMALQBmADcANABhAC0ANABjADQAYQAtAGEANwAzADYALQBjAGQAOQBlADcAMwA2AGQAYwBhADIANgB9wH0AAAAAAADAQQAAAAAAAD+crAgxJul+AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

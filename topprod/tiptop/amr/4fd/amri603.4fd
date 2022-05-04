@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f5740c2e-0000-4000-84d5-3f37e08609d7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_msw" order="" uid="{fe8ba66b-0000-4000-aac2-b626fbca7c76}" where="">
+    <RecordField colName="msw08" fieldIdRef="8" fieldType="TABLE_COLUMN" name="msw_file.msw08" sqlTabName="msw_file" sqlType="VARCHAR" table_alias_name="" uid="{7516e979-0000-4000-932d-aeaa458024b4}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="azp02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9b7772a4-0000-4000-a7c5-3fd2db4c3370}"/>
+    <RecordField colName="msw10" fieldIdRef="10" fieldType="TABLE_COLUMN" name="msw_file.msw10" sqlTabName="msw_file" sqlType="VARCHAR" table_alias_name="" uid="{e0e258e6-0000-4000-b7a0-23b5abb6a909}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e97a1d61-0000-4000-814a-0a7cea3b00a6}" where="">
+    <RecordField colName="msw000" fieldIdRef="3" fieldType="TABLE_COLUMN" name="msw_file.msw000" sqlTabName="msw_file" sqlType="VARCHAR" table_alias_name="" uid="{95a8b3e6-0000-4000-afbd-36689b4fa1f9}"/>
+    <RecordField colName="msw03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="msw_file.msw03" sqlTabName="msw_file" sqlType="DATE" table_alias_name="" uid="{8b097b72-0000-4000-9865-b85b0f4ec30f}"/>
+    <RecordField colName="msw04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="msw_file.msw04" sqlTabName="msw_file" sqlType="VARCHAR" table_alias_name="" uid="{bbc346ab-0000-4000-be1b-65e160813292}"/>
+    <RecordField colName="msw05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="msw_file.msw05" sqlTabName="msw_file" sqlType="VARCHAR" table_alias_name="" uid="{eed25c68-0000-4000-8f2b-d334f531ab11}"/>
+    <RecordField colName="msw07" fieldIdRef="6" fieldType="TABLE_COLUMN" name="msw_file.msw07" sqlTabName="msw_file" sqlType="VARCHAR" table_alias_name="" uid="{47e26c26-0000-4000-a449-534a0187634d}"/>
+    <RecordField colName="msw02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="msw_file.msw02" sqlTabName="msw_file" sqlType="SMALLINT" table_alias_name="" uid="{4f689a93-0000-4000-85ab-fa5603a3a57b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{fa9d7a07-0000-4000-a3e1-8cd8478c3991}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="119" lstrtext="false" name="amri603" spacing="normal" text="amri603">
+    <VBox gridHeight="21" gridWidth="77" name="vb3" posX="1" posY="0">
+      <Folder gridHeight="10" gridWidth="77" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <VBox gridHeight="9" gridWidth="75" name="vb4" posX="1" posY="0">
+            <Grid gridHeight="4" gridWidth="75" lstrcomment="false" name="gr1" posX="0" posY="1">
+              <Label posX="1" posY="0" text="Version:"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msw000" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="msw_file.msw000" notNull="true" posX="13" posY="0" required="true" rowCount="" sqlTabName="msw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="1" text="Latest Run:"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msw03" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="msw_file.msw03" noEntry="true" posX="13" posY="1" rowCount="" sqlTabName="msw_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msw04" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="msw_file.msw04" noEntry="true" posX="25" posY="1" rowCount="" sqlTabName="msw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msw05" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="msw_file.msw05" noEntry="true" posX="37" posY="1" rowCount="" sqlTabName="msw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msw07" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="msw_file.msw07" noEntry="true" posX="49" posY="1" rowCount="" sqlTabName="msw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            </Grid>
+            <Grid gridHeight="3" gridWidth="75" lstrcomment="false" name="gr2" posX="0" posY="5">
+              <Label posX="2" posY="1" text="PR/PO:"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msw02" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="msw_file.msw02" posX="10" posY="1" rowCount="" sqlTabName="msw_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="77" name="tb1" posX="0" posY="11" totalRows="5">
+        <ButtonEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msw08" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="ZOOM" lstrcomment="false" lstrtitle="false" name="msw_file.msw08" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="msw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Logistics code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="azp02" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Logistics name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="msw10" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="msw_file.msw10" posX="25" posY="0" rowCount="" sqlTabName="msw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="MRP Version" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="77" lstrcomment="false" name="gr3" posX="0" posY="18">
+        <HLine gridWidth="4" name="hl1" posX="1" posY="0"/>
+        <Label posX="5" posY="0" text="rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" name="cnt" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="6" name="hl2" posX="16" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

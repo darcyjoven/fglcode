@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d005ba72-0000-4000-95fc-383482eb6626}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nae" order="" uid="{3f02c29b-0000-4000-adb1-31d3af62369f}" where="">
+    <RecordField colName="nae01" fieldIdRef="9" fieldType="TABLE_COLUMN" name="nae_file.nae01" sqlTabName="nae_file" sqlType="VARCHAR" table_alias_name="" uid="{71679af3-0000-4000-9c76-3a8fc32a8c46}"/>
+    <RecordField colName="" fieldIdRef="10" name="nma02" sqlTabName="" table_alias_name="" uid="{29d62eca-0000-4000-97d7-02583f486c9c}"/>
+    <RecordField colName="" fieldIdRef="11" name="nma10" sqlTabName="" table_alias_name="" uid="{ce9e8811-0000-4000-ad97-0f4de286853e}"/>
+    <RecordField colName="nae02" fieldIdRef="12" fieldType="TABLE_COLUMN" name="nae_file.nae02" sqlTabName="nae_file" sqlType="VARCHAR" table_alias_name="" uid="{11e0f9d1-0000-4000-8c9d-8ce5254c93d0}"/>
+    <RecordField colName="nae03" fieldIdRef="13" fieldType="TABLE_COLUMN" name="nae_file.nae03" sqlTabName="nae_file" sqlType="DECIMAL" table_alias_name="" uid="{997feeb1-0000-4000-bd07-6f98bdc1cfe3}"/>
+    <RecordField colName="nae06" fieldIdRef="14" fieldType="TABLE_COLUMN" name="nae_file.nae06" sqlTabName="nae_file" sqlType="DECIMAL" table_alias_name="" uid="{27020b73-0000-4000-a325-77041cb425df}"/>
+    <RecordField colName="nae09" fieldIdRef="15" fieldType="TABLE_COLUMN" name="nae_file.nae09" sqlTabName="nae_file" sqlType="VARCHAR" table_alias_name="" uid="{bfd42578-0000-4000-806e-3298f0a48267}"/>
+    <RecordField colName="nae07" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nae_file.nae07" sqlTabName="nae_file" sqlType="VARCHAR" table_alias_name="" uid="{550b4138-0000-4000-b090-cdb9a3c56847}"/>
+    <RecordField colName="naeconf" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nae_file.naeconf" sqlTabName="nae_file" sqlType="VARCHAR" table_alias_name="" uid="{6b7694cb-0000-4000-ac6f-366fdaf510d7}"/>
+    <RecordField colName="" fieldIdRef="4" name="g_type" sqlTabName="" table_alias_name="" uid="{c3c18663-0000-4000-880c-2e86f6c5ace4}"/>
+    <RecordField colName="nae08" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nae_file.nae08" sqlTabName="nae_file" sqlType="VARCHAR" table_alias_name="" uid="{8235a6cf-0000-4000-b6a9-3a3c9571c81b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d6fcbbf9-0000-4000-81b4-896612f22c6e}" where="">
+    <RecordField colName="nae04" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nae_file.nae04" sqlTabName="nae_file" sqlType="DATE" table_alias_name="" uid="{25e2b768-0000-4000-92c4-111a00e1f17a}"/>
+    <RecordField colName="nae05" fieldIdRef="8" fieldType="TABLE_COLUMN" name="nae_file.nae05" sqlTabName="nae_file" sqlType="DATE" table_alias_name="" uid="{ae87bcc0-0000-4000-aeae-9453b4924ff7}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{b442283d-0000-4000-b66a-919fb804e195}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{a6307d3c-0000-4000-a622-36c259ec556f}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="137" name="anmt950" spacing="normal" text="anmt950">
+    <VBox gridHeight="24" gridWidth="134" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="134" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="63" lstrcomment="false" name="gr4598" posX="0" posY="0">
+            <Group gridHeight="3" gridWidth="62" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Accrual Begin"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae04" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nae_file.nae04" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="nae_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+              <Label posX="33" posY="1" text="Accrual End"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae05" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nae_file.nae05" notNull="true" posX="46" posY="1" required="true" rowCount="" sqlTabName="nae_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Folder gridHeight="14" gridWidth="134" lstrcomment="false" name="pc827" posX="0" posY="7">
+        <Page lstrtext="false" name="info" text="Info">
+          <Table gridHeight="12" gridWidth="132" lstrcomment="false" name="s_nae" posX="0" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae01" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="nae_file.nae01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Bank Account No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nma02" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Bank name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nma10" noEntry="true" posX="27" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Currencyi" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae02" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="0.Current, 1.one year fixed deposit, 2.two years fixed deposit, 3.three years fixed deposit, 4.five years fixed deposit" lstrcomment="false" lstrtitle="false" name="nae_file.nae02" noEntry="true" posX="37" posY="0" rowCount="" sqlTabName="nae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Accrual Type" widget="ComboBox">
+              <Item name="0" text="0.Current"/>
+              <Item name="1" text="1.one year fixed deposit"/>
+              <Item name="2" text="2.two years fixed deposit"/>
+              <Item name="3" text="3.three years fixed deposit"/>
+              <Item name="4" text="4.five years fixed deposit"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae03" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="nae_file.nae03" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="nae_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Rate" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae06" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="nae_file.nae06" posX="56" posY="0" rowCount="" sqlTabName="nae_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Interest amount Into Change" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae09" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="nae_file.nae09" posX="71" posY="0" rowCount="" sqlTabName="nae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae07" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="nae_file.nae07" noEntry="true" posX="83" posY="0" rowCount="" sqlTabName="nae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Accrual Slp# Confirm" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="naeconf" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Not Confirm, Confirmed" lstrcomment="false" lstrtitle="false" name="nae_file.naeconf" noEntry="true" notNull="true" posX="95" posY="0" required="true" rowCount="" sqlTabName="nae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ComboBox">
+              <Item name="N" text="Not Confirm"/>
+              <Item name="Y" text="Confirmed"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_type" notNull="true" posX="103" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Chooice" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nae08" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom" lstrcomment="false" lstrtitle="false" name="nae_file.nae08" noEntry="true" posX="111" posY="0" rowCount="" sqlTabName="nae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Plant" widget="ButtonEdit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="134" lstrcomment="false" name="gr4599" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl1414" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <Label posX="25" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="cn2" posX="27" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="14" name="hl1415" posX="33" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1eeffee4-0000-4000-86e6-ab41af435de9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nnq" order="" uid="{a5afb918-0000-4000-ba18-97a0d01f3048}" where="">
+    <RecordField colName="nnq03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nnq_file.nnq03" sqlTabName="nnq_file" sqlType="SMALLINT" table_alias_name="" uid="{14429fe6-0000-4000-b185-c7aa8d51774d}"/>
+    <RecordField colName="nnq04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nnq_file.nnq04" sqlTabName="nnq_file" sqlType="VARCHAR" table_alias_name="" uid="{1e585bcf-0000-4000-85e4-81e41a0dadc8}"/>
+    <RecordField colName="nnq05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nnq_file.nnq05" sqlTabName="nnq_file" sqlType="VARCHAR" table_alias_name="" uid="{dc5a167f-0000-4000-bc63-ef92f56dcf7f}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{53845f4d-0000-4000-8895-c7c3697fcaf7}" where="">
+    <RecordField colName="nnq01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nnq_file.nnq01" sqlTabName="nnq_file" sqlType="VARCHAR" table_alias_name="" uid="{fdc13fbe-0000-4000-888c-9ad50e41423c}"/>
+    <RecordField colName="nnq02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nnq_file.nnq02" sqlTabName="nnq_file" sqlType="SMALLINT" table_alias_name="" uid="{51d21c02-0000-4000-84c6-da7f47a7ac27}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{4b19e775-0000-4000-b520-67dac38b0b2b}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{71c6e920-0000-4000-bb01-4566fcbd4616}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="112" name="anmi712" spacing="normal" text="anmi712">
+    <VBox gridHeight="21" gridWidth="109" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="109" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="4" gridWidth="35" name="VBox2" posX="0" posY="0">
+            <Grid gridHeight="2" gridWidth="35" lstrcomment="false" name="gr4052" posX="0" posY="1">
+              <Label posX="1" posY="0" text="Contract No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnq01" columnCount="" comment="Key Field, No Blank/Repeated!     &lt;^P&gt; Qry Contract # " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="nnq_file.nnq01" posX="23" posY="0" rowCount="" sqlTabName="nnq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="1" text="Line No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnq02" columnCount="" comment="Comb. with [Doc#] as Key Field " fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nnq_file.nnq02" posX="23" posY="1" rowCount="" sqlTabName="nnq_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="109" lstrcomment="false" name="s_nnq" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnq03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="nnq_file.nnq03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nnq_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Ln#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnq04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="nnq_file.nnq04" notNull="true" posX="4" posY="0" required="true" rowCount="" sqlTabName="nnq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Proviso" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnq05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="nnq_file.nnq05" posX="54" posY="0" rowCount="" sqlTabName="nnq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Memo Property" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="109" lstrcomment="false" name="gr4053" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1291" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1292" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

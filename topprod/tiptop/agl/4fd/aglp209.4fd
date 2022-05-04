@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{c840227e-0000-4000-8afa-7fb1cedd3f6d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{a637fe15-0000-4000-aa9d-1762005068f3}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="bookno" sqlTabName="" table_alias_name="" uid="{c1b6f639-0000-4000-b11c-8c80f7794018}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="old_no" sqlTabName="" table_alias_name="" uid="{8a0f311c-0000-4000-9c6e-b9cbe0965ac7}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="old_no2" sqlTabName="" table_alias_name="" uid="{e546d03d-0000-4000-b476-82f5566603a5}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="new_no" sqlTabName="" table_alias_name="" uid="{7871e4e8-0000-4000-8f0b-6b6ae0145c96}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{6f1c6cb4-0000-4000-8ef7-91196e3c0449}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="67" name="aglp209" spacing="normal" text="aglp209">
+    <VBox gridHeight="11" gridWidth="64" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="6" gridWidth="64" lstrcomment="false" name="gr2503" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="53" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+          <Label posX="1" posY="1" text="Book No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" comment="&lt;^P&gt; Qry Book No." fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" image="zoom.png" lstrcomment="false" name="bookno" notNull="true" posX="30" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Old Independent Account No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Account #" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="old_no" notNull="true" posX="30" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="New control account number"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="old_no2" posX="30" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="New Classification Item #"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Account #" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="new_no" notNull="true" posX="30" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="64" lstrcomment="false" name="gr2504" posX="0" posY="7">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADUANAA2AGQAMAAzAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANAA3ADYALQA4ADIAZgA1ADUANgA2ADYAMAAzAGEANQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGYAMQBjADYAYwBiADQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZQBmADcALQA5ADEAMQA5ADYAZQAzAGMAMAA0ADQAOQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADEAYgA2AGYANgAzADkALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMQAxAGMALQA4AGMAOAAwAGYANwA3ADkANAAwADEAOAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADgANwAxAGUANABlADgALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZgAwAGIALQA2AGIANgBhAGUAMAAxADQANQBjADkANgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADYAMwA3AGYAZQAxADUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYQA5AGQALQAxADcANgAyADAAMAA1ADAANgA4AGYAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGEAMABmADMAMQAxAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwA2AGUALQBiADkAYwBiAGUAMAA5ADYANQBhAGMANwB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

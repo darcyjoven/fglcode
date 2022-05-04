@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f7983e8b-0000-4000-9ca2-dfbf9930d7b6}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_icd" order="" uid="{69e792d1-0000-4000-a850-a126363b5a99}" where="">
+    <RecordField colName="icd01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="icd_file.icd01" sqlTabName="icd_file" sqlType="VARCHAR" table_alias_name="" uid="{e7e80d79-0000-4000-8997-b1595169a775}"/>
+    <RecordField colName="icd02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="icd_file.icd02" sqlTabName="icd_file" sqlType="VARCHAR" table_alias_name="" uid="{8fd2e6bd-0000-4000-b428-0d6a4737a374}"/>
+    <RecordField colName="icd03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="icd_file.icd03" sqlTabName="icd_file" sqlType="VARCHAR" table_alias_name="" uid="{00e5cbc3-0000-4000-884b-5085820239f2}"/>
+    <RecordField colName="icdacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="icd_file.icdacti" sqlTabName="icd_file" sqlType="VARCHAR" table_alias_name="" uid="{62dcd31d-0000-4000-9292-f0fdf62dc5c4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6e4c8549-0000-4000-8a12-37d3a4f69e05}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{f47be532-0000-4000-9355-fa381b94b2d8}"/>
+  </Record>
+  <Form gridHeight="31" gridWidth="120" lstrtext="false" name="aici003" spacing="normal" text="aici003">
+    <VBox gridHeight="23" gridWidth="119" name="vb1" posX="1" posY="1">
+      <Folder gridHeight="19" gridWidth="119" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page name="Page3" text="Main">
+          <Table gridHeight="18" gridWidth="116" name="s_icd" posX="1" posY="0" totalRows="16">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icd01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="icd_file.icd01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="icd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="code" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icd02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" items="Wafer Size, Purpose, Technology, Process Type, W/F THICKNESS, Package type, Pin Count, RoHS, EDN USER, Ink Material, Wafer Test Region Code, Process Group" lstrcomment="false" lstrtitle="false" name="icd_file.icd02" notNull="true" posX="8" posY="0" required="true" rowCount="" sqlTabName="icd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="cate" widget="ComboBox">
+              <Item lstrtext="false" name="J" text="Wafer Size"/>
+              <Item lstrtext="false" name="K" text="Purpose"/>
+              <Item lstrtext="false" name="L" text="Technology"/>
+              <Item lstrtext="false" name="M" text="Process Type"/>
+              <Item lstrtext="false" name="N" text="W/F THICKNESS"/>
+              <Item lstrtext="false" name="O" text="Package type"/>
+              <Item lstrtext="false" name="P" text="Pin Count"/>
+              <Item lstrtext="false" name="Q" text="RoHS"/>
+              <Item lstrtext="false" name="R" text="EDN USER"/>
+              <Item lstrtext="false" name="S" text="Ink Material"/>
+              <Item lstrtext="false" name="T" text="Wafer Test Region Code"/>
+              <Item lstrtext="false" name="U" text="Process Group"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icd03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="icd_file.icd03" posX="26" posY="0" rowCount="" sqlTabName="icd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Desc" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icdacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="icd_file.icdacti" notNull="true" posX="56" posY="0" rowCount="" sqlTabName="icd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="119" lstrcomment="false" name="gr1" posX="0" posY="20">
+        <Label posX="3" posY="0" text="--------Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="cn2" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="28" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

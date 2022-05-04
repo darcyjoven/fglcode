@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a296d062-0000-4000-947d-0307b5021903}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zz" order="" uid="{618aabea-0000-4000-bc69-65c84dd9dbd0}" where="">
+    <RecordField colName="" fieldIdRef="3" name="xxxx" sqlTabName="" table_alias_name="" uid="{d5df0aec-0000-4000-9e07-50a47e7b40b0}"/>
+    <RecordField colName="zz01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="zz_file.zz01" sqlTabName="zz_file" sqlType="VARCHAR" table_alias_name="" uid="{cd8214f8-0000-4000-ba69-f6c63e974374}"/>
+    <RecordField colName="zz02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="zz_file.zz02" sqlTabName="zz_file" sqlType="VARCHAR" table_alias_name="" uid="{483da819-0000-4000-8f4c-06faa10e6eeb}"/>
+    <RecordField colName="zz011" fieldIdRef="6" fieldType="TABLE_COLUMN" name="zz_file.zz011" sqlTabName="zz_file" sqlType="VARCHAR" table_alias_name="" uid="{df594b58-0000-4000-9529-0a0d55fa1608}"/>
+    <RecordField colName="zz03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="zz_file.zz03" sqlTabName="zz_file" sqlType="VARCHAR" table_alias_name="" uid="{2e0c3537-0000-4000-831a-6bbd24a05508}"/>
+    <RecordField colName="zz10" fieldIdRef="8" fieldType="TABLE_COLUMN" name="zz_file.zz10" sqlTabName="zz_file" sqlType="VARCHAR" table_alias_name="" uid="{b93f4e37-0000-4000-8aee-029e7575031e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{578f2f53-0000-4000-982a-ce7fcb19de96}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="g_zy01" sqlTabName="" table_alias_name="" uid="{196e2083-0000-4000-96f9-2dd94465f903}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="zw02" sqlTabName="" table_alias_name="" uid="{31161f3a-0000-4000-aa43-7aae1c5ba162}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="104" name="p_zy_g" spacing="normal" text="p_zy_g">
+    <VBox gridHeight="19" gridWidth="101" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="101" lstrcomment="false" name="gr3052" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Authorization Category"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="g_zy01" posX="37" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Authorization Category Description"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="zw02" noEntry="true" posX="37" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="12" gridWidth="101" lstrcomment="false" name="s_zz" posX="0" posY="6" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" lstrtitle="false" name="xxxx" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Checked" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="zz01" columnCount="" comment="&lt;^P&gt; Qry Program Name" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" lstrcomment="false" lstrtitle="false" name="zz_file.zz01" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="zz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Program Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zz02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="zz_file.zz02" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="zz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Program Name" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zz011" columnCount="" comment="Which Module is the Program in. Fill it!" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="" lstrcomment="false" lstrtitle="false" name="zz_file.zz011" notNull="true" posX="47" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="zz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Module ID" widget="ComboBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zz03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" items="Input/Create, Menu, Other, Process/Batch, Query, Report, System Parameter, Transaction, Update" lstrcomment="false" lstrtitle="false" name="zz_file.zz03" posX="57" posY="0" queryEditable="true" rowCount="" sqlTabName="zz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Program Category" widget="ComboBox">
+          <Item name="I" text="Input/Create"/>
+          <Item name="M" text="Menu"/>
+          <Item name="O" text="Other"/>
+          <Item name="P" text="Process/Batch"/>
+          <Item name="Q" text="Query"/>
+          <Item name="R" text="Report"/>
+          <Item name="S" text="System Parameter"/>
+          <Item name="T" text="Transaction"/>
+          <Item name="U" text="Update"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zz10" columnCount="" comment="zz10, Printing Default" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom" lstrcomment="false" lstrtitle="false" name="zz_file.zz10" posX="74" posY="0" rowCount="" sqlTabName="zz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Program Group" widget="ButtonEdit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

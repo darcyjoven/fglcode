@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4892e935-0000-4000-91a4-8519c3215c28}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmb" order="" uid="{0c2bc98c-0000-4000-a1bd-986328649d93}" where="">
+    <RecordField colName="pmb03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmb_file.pmb03" sqlTabName="pmb_file" sqlType="SMALLINT" table_alias_name="" uid="{a3db3594-0000-4000-bb64-53eabf578f16}"/>
+    <RecordField colName="pmb04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmb_file.pmb04" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{444594bf-0000-4000-b3ab-8f2f297834d3}"/>
+    <RecordField colName="" fieldIdRef="5" name="pmb04_pma02" sqlTabName="" table_alias_name="" uid="{85cd7d1b-0000-4000-bac0-ac2445145a49}"/>
+    <RecordField colName="pmb05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pmb_file.pmb05" sqlTabName="pmb_file" sqlType="DECIMAL" table_alias_name="" uid="{0c65b1d5-0000-4000-9d23-e1d2ac188abe}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{301325b1-0000-4000-8460-4c83332a1d26}" where="">
+    <RecordField colName="pmb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmb_file.pmb01" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{a46f0193-0000-4000-b54e-89666c900c09}"/>
+    <RecordField colName="pmb02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="pmb_file.pmb02" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{20a896f9-0000-4000-8ee1-1fbd2650246e}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="pmb01_pma02" sqlTabName="" table_alias_name="" uid="{07f7667f-0000-4000-8e4e-27ffe81df5c1}"/>
+    <RecordField colName="pmbuser" fieldIdRef="10" fieldType="TABLE_COLUMN" name="pmb_file.pmbuser" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{913d2e5a-0000-4000-8dec-d7847a54b6be}"/>
+    <RecordField colName="pmbmodu" fieldIdRef="11" fieldType="TABLE_COLUMN" name="pmb_file.pmbmodu" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{6f07c8dd-0000-4000-bf48-bdad5c0b9854}"/>
+    <RecordField colName="pmbacti" fieldIdRef="12" fieldType="TABLE_COLUMN" name="pmb_file.pmbacti" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{f7a352f8-0000-4000-b524-58894cf93411}"/>
+    <RecordField colName="pmbgrup" fieldIdRef="13" fieldType="TABLE_COLUMN" name="pmb_file.pmbgrup" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{cd4c0eb3-0000-4000-9c66-e07ec5964408}"/>
+    <RecordField colName="pmbdate" fieldIdRef="14" fieldType="TABLE_COLUMN" name="pmb_file.pmbdate" sqlTabName="pmb_file" sqlType="DATE" table_alias_name="" uid="{05c069b7-0000-4000-bc2d-77f57bfcec3a}"/>
+    <RecordField colName="pmboriu" fieldIdRef="15" fieldType="TABLE_COLUMN" name="pmb_file.pmboriu" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{d2a313c6-0000-4000-bac0-a87be0014500}"/>
+    <RecordField colName="pmborig" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmb_file.pmborig" sqlTabName="pmb_file" sqlType="VARCHAR" table_alias_name="" uid="{295cd93e-0000-4000-97a9-fe6fa22b26ed}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{6aeec199-0000-4000-af8b-a1282a9a0e3c}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="91" name="apmi101" spacing="normal" text="apmi101">
+    <VBox gridHeight="21" gridWidth="88" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="88" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="75" lstrcomment="false" name="gr4817" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Upper Payment Method"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="pmb_file.pmb01" notNull="true" posX="24" posY="0" required="true" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="55" posY="0" text="Category"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmb02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="By Rate, User Defined Column" lstrcomment="false" lstrtitle="false" name="pmb_file.pmb02" notNull="true" posX="64" posY="0" required="true" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="By Rate"/>
+              <Item lstrtext="" name="2" text="User Defined Column"/>
+            </ComboBox>
+            <Label posX="1" posY="1" text="Description"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="pmb01_pma02" noEntry="true" posX="24" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+        <Page lstrtext="false" name="info" text="Info">
+          <Grid gridHeight="4" gridWidth="86" lstrcomment="false" name="gr4818" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Record Owner"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmbuser" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmb_file.pmbuser" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Label posX="35" posY="0" text="Last Modified by"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmbmodu" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmb_file.pmbmodu" noEntry="true" posX="56" posY="0" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="69" posY="0" text="Valid"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmbacti" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmb_file.pmbacti" noEntry="true" posX="75" posY="0" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Department"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmbgrup" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmb_file.pmbgrup" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            <Label posX="35" posY="1" text="Create/Modify Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmbdate" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmb_file.pmbdate" noEntry="true" posX="56" posY="1" rowCount="" sqlTabName="pmb_file" sqlType="DATE" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="2" text="Record Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmboriu" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmb_file.pmboriu" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="501" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Dept Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmborig" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmb_file.pmborig" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="502" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="88" lstrcomment="false" name="s_pmb" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmb03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pmb_file.pmb03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="pmb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Line No." widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmb04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="pmb_file.pmb04" notNull="true" posX="12" posY="0" required="true" rowCount="" sqlTabName="pmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Payment Method" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtitle="false" name="pmb04_pma02" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Description" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmb05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="pmb_file.pmb05" posX="58" posY="0" rowCount="" sqlTabName="pmb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Payment Ratio%" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="88" lstrcomment="false" name="gr4819" posX="0" posY="18">
+        <HLine gridWidth="12" name="hl1547" posX="1" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="12" name="hl1548" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

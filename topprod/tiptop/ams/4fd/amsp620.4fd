@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{fa36699d-0000-4000-bdc4-a5b554569024}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6b1a506c-0000-4000-bd30-8a96104baa8c}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ver_no" sqlTabName="" table_alias_name="" uid="{abce3349-0000-4000-b214-01857db20c3c}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="rccp_ver" sqlTabName="" table_alias_name="" uid="{2c182946-0000-4000-a910-ba1b0fe42d11}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="incl_wo" sqlTabName="" table_alias_name="" uid="{6ca6bf62-0000-4000-9a3f-b8a148294fad}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="incl_mps" sqlTabName="" table_alias_name="" uid="{86baed06-0000-4000-a815-fc9234b6763c}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="incl_plm" sqlTabName="" table_alias_name="" uid="{34621c88-0000-4000-a58f-3d28eead79bd}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{587033ab-0000-4000-8c08-e6de192fb649}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="67" name="amsp620" spacing="normal" text="amsp620">
+    <VBox gridHeight="12" gridWidth="64" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="64" lstrcomment="false" name="gr3950" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="MPS Simulation Version"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ver_no" posX="25" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Rescource #"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rccp_ver" posX="25" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtext="false" lstrtitle="false" name="incl_wo" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="W/O Include?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtext="false" lstrtitle="false" name="incl_mps" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="MPS Include?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtext="false" lstrtitle="false" name="incl_plm" notNull="true" posX="1" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="PLM Include?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="64" lstrcomment="false" name="gr3951" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="62" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

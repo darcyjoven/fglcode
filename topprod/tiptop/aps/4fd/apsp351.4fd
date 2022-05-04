@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{e127a524-0000-4000-aa21-f646ec8c1831}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{358a7a2e-0000-4000-98bd-e0febf26fee9}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ima01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bb5790e4-0000-4000-9ecc-ccefe73d4661}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ima131" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5ed8d42b-0000-4000-b3a1-fe91c08866f1}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{8200cfa7-0000-4000-8c2d-a2ff03e63594}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="b" sqlTabName="" table_alias_name="" uid="{64ccbe34-0000-4000-971a-bd5c445f7e8b}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="c" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0c86946b-0000-4000-82c1-d03e742baf88}"/>
+  </Record>
+  <Form gridHeight="31" gridWidth="116" name="apsp351" spacing="normal" text="apsp351">
+    <VBox gridHeight="30" gridWidth="90" name="vb27" posX="4" posY="0">
+      <Grid gridHeight="9" gridWidth="90" lstrcomment="false" name="gr5" posX="0" posY="1">
+        <Group gridHeight="8" gridWidth="86" lstrcomment="false" lstrtext="false" name="group01" posX="2" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="ima01"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="ima01" posX="10" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="40" posY="1" text="ima131"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="ima131" posX="55" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="19" gridWidth="90" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="10" text="INPUT">
+        <Grid gridHeight="17" gridWidth="84" lstrcomment="false" name="gr6" posX="1" posY="1">
+          <Group gridHeight="3" gridWidth="57" lstrcomment="false" lstrtext="false" name="group02" posX="2" posY="0" text="Sequence">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="22" items="ima01, ima131" lstrcomment="false" lstrtitle="false" name="a" notNull="true" posX="2" posY="1" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="ima01"/>
+              <Item lstrtext="false" name="2" text="ima131"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" items="ima01, ima131" lstrcomment="false" lstrtitle="false" name="b" notNull="true" posX="27" posY="1" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="ima01"/>
+              <Item lstrtext="false" name="2" text="ima131"/>
+            </ComboBox>
+          </Group>
+          <Group gridHeight="6" gridWidth="34" lstrcomment="false" lstrtext="false" name="group04" posX="2" posY="4" text="Data Option">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="2" gridWidth="8" items="Insert, Append" lstrcomment="false" lstrtitle="false" name="c" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="false" name="1" text="Insert"/>
+              <Item lstrtext="false" name="2" text="Append"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

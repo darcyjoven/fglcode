@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{38ca7715-0000-4000-aec4-e5a4078b5474}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qao" order="" uid="{5d43897f-0000-4000-82fe-40e39bfd61e2}" where="">
+    <RecordField colName="qao03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="qao_file.qao03" sqlTabName="qao_file" sqlType="SMALLINT" table_alias_name="" uid="{830f58bf-0000-4000-94da-1ee0d119ecdb}"/>
+    <RecordField colName="qao05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="qao_file.qao05" sqlTabName="qao_file" sqlType="VARCHAR" table_alias_name="" uid="{2eb36885-0000-4000-a539-41948d219bdf}"/>
+    <RecordField colName="qao04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="qao_file.qao04" sqlTabName="qao_file" sqlType="SMALLINT" table_alias_name="" uid="{8af9e439-0000-4000-b0bb-8d4a0f9ae4bb}"/>
+    <RecordField colName="qao06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="qao_file.qao06" sqlTabName="qao_file" sqlType="VARCHAR" table_alias_name="" uid="{4ff3b581-0000-4000-aca6-3f87752e0db7}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="61" name="s_aqc_memo" spacing="normal" text="s_aqc_memo">
+    <Grid gridHeight="13" gridWidth="59" lstrcomment="false" name="gr3868" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="58" lstrcomment="false" name="s_qao" posX="1" posY="0" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qao03" columnCount="" comment="0 Page Memo   ,123...Body Memo   " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="qao_file.qao03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="qao_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Ln #" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qao05" columnCount="" comment="1.Print before Line # 2.Print after Line # 0.Internal Reference for Qry Only" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" items="Print Before Line#, Print After Line#, Internal Reference For Qry Only" lstrcomment="false" lstrtitle="false" name="qao_file.qao05" notNull="true" posX="5" posY="0" required="true" rowCount="" sqlTabName="qao_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Loc" widget="ComboBox">
+          <Item name="1" text="Print Before Line#"/>
+          <Item name="2" text="Print After Line#"/>
+          <Item name="0" text="Internal Reference For Qry Only"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qao04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="qao_file.qao04" posX="7" posY="0" rowCount="" sqlTabName="qao_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Ln #" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qao06" columnCount="" comment="Prt Body Memo aft Ln#, Limit char(30)" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="qao_file.qao06" posX="12" posY="0" rowCount="" sqlTabName="qao_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Memo" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

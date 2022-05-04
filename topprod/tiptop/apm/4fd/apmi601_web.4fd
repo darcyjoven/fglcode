@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9d53ade0-0000-4000-a95c-5dcfee767438}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_wpa_1" order="" uid="{2c105f43-0000-4000-84b4-498695e32e78}" where="">
+    <RecordField colName="wpa03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="wpa_file.wpa03" sqlTabName="wpa_file" sqlType="VARCHAR" table_alias_name="" uid="{695cc754-0000-4000-9f51-13ba4636919e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{41bcbd66-0000-4000-b852-d0d08125937f}" where="">
+    <RecordField colName="wpa01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="wpa_file.wpa01" sqlTabName="wpa_file" sqlType="VARCHAR" table_alias_name="" uid="{247f06dd-0000-4000-9bc6-846ff3d085d3}"/>
+    <RecordField colName="pmc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmc_file.pmc03" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{4b775fa4-0000-4000-9faf-ac41f4d19dbf}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="120" name="Form3" text="Web  User Configuration">
+    <VBox gridHeight="12" gridWidth="49" name="VBox1" posX="2" posY="3">
+      <Grid gridHeight="4" gridWidth="49" lstrcomment="false" name="gr12" posX="0" posY="1">
+        <Label posX="4" posY="1" text="Factory No"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpa01" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" name="wpa_file.wpa01" notNull="true" posX="18" posY="1" required="true" rowCount="" sqlTabName="wpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="4" posY="2" text="shortName"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" name="pmc_file.pmc03" noEntry="true" notNull="true" posX="18" posY="2" required="true" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="6" gridWidth="49" name="Table1" posX="0" posY="5" totalRows="5">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpa03" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="43" image="zoom" name="wpa_file.wpa03" posX="0" posY="0" rowCount="" sqlTabName="wpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="WEB User" widget="ButtonEdit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

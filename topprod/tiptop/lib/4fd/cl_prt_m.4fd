@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{578ba580-0000-4000-aa63-6d08da8f6deb}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b407d6c6-0000-4000-b4e9-9d221bf6f03e}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="choice" sqlTabName="" table_alias_name="" uid="{2f6a9fde-0000-4000-b5fc-1cf603f59637}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="choice2" sqlTabName="" table_alias_name="" uid="{2bd080db-0000-4000-a773-c88a6e6fa8c8}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="choice3" sqlTabName="" table_alias_name="" uid="{f672fe59-0000-4000-93fe-2d0fe5af69f2}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="choice4" sqlTabName="" table_alias_name="" uid="{0ee27201-0000-4000-8b56-c5a01a79c449}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="pagenum" sqlTabName="" table_alias_name="" uid="{efc03f09-0000-4000-af1a-aa1370067280}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="startpage" sqlTabName="" table_alias_name="" uid="{d6589eb1-0000-4000-a9d1-b53a71f0e46c}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="endpage" sqlTabName="" table_alias_name="" uid="{8a8cccc7-0000-4000-b100-9aaf55515312}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="45" name="cl_prt_m" spacing="normal" text="Report Output">
+    <VBox gridHeight="12" gridWidth="43" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="6" gridWidth="43" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="1" text="Options">
+        <HBox gridHeight="4" gridWidth="40" name="HBox1" posX="1" posY="1">
+          <Grid gridHeight="4" gridWidth="18" lstrcomment="false" name="Grid1" posX="2" posY="0">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="System Printer, Local Printer, Rich Format Output, View, VPrint, JavaMail, CK History." lstrcomment="false" lstrtitle="false" name="choice" posX="2" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+              <Item name="1" text="System Printer"/>
+              <Item name="L" text="Local Printer"/>
+              <Item name="O" text="Rich Format Output"/>
+              <Item name="V" text="View"/>
+              <Item name="N" text="VPrint"/>
+              <Item name="J" text="JavaMail"/>
+              <Item name="H" text="CK History."/>
+            </RadioGroup>
+          </Grid>
+          <Grid gridHeight="4" gridWidth="18" lstrcomment="false" name="Grid2" posX="20" posY="0">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="System Printer-1, System Printer-2, System Printer-3, System Printer-4, System Printer-5, System Printer-6, System Printer-7, System Printer-8, System Printer-9" lstrcomment="false" lstrtitle="false" name="choice2" notNull="true" posX="2" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item name="1" text="System Printer-1"/>
+              <Item name="2" text="System Printer-2"/>
+              <Item name="3" text="System Printer-3"/>
+              <Item name="4" text="System Printer-4"/>
+              <Item name="5" text="System Printer-5"/>
+              <Item name="6" text="System Printer-6"/>
+              <Item name="7" text="System Printer-7"/>
+              <Item name="8" text="System Printer-8"/>
+              <Item name="9" text="System Printer-9"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="VTCP Standard Print(A4:78 Letter:80 US SF:132 A3:162), VTCP ET code Compact Print(A4:117 Letter:125 US SF:204 A3:243), VTCP ET code Compact Print(A4:156 Letter:165 US SF:272 A3:324), VTCP ET code Compact Print(A4:234 Letter:250 US SF:408 A3:486), Add Control Code ^L for Page Jumping, EPSON Standard Print(82,136), EPSON Compact Print(112,181), EPSON Compact Print(126,204), GDC Local Printer List" lstrcomment="false" lstrtitle="false" name="choice3" notNull="true" posX="2" posY="1" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+              <Item name="1" text="VTCP Standard Print(A4:78 Letter:80 US SF:132 A3:162)"/>
+              <Item name="2" text="VTCP ET code Compact Print(A4:117 Letter:125 US SF:204 A3:243)"/>
+              <Item name="3" text="VTCP ET code Compact Print(A4:156 Letter:165 US SF:272 A3:324)"/>
+              <Item name="4" text="VTCP ET code Compact Print(A4:234 Letter:250 US SF:408 A3:486)"/>
+              <Item name="5" text="Add Control Code ^L for Page Jumping"/>
+              <Item name="6" text="EPSON Standard Print(82,136)"/>
+              <Item name="7" text="EPSON Compact Print(112,181)"/>
+              <Item name="8" text="EPSON Compact Print(126,204)"/>
+              <Item name="9" text="GDC Local Printer List"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="Text File, Microsoft Office Word, Microsoft Office Excel, DataSystems CallViewer, Microsoft Internet Explorer(HTML), Adobe Acrobat PDF, Dynamic Table(Marge), Dynamic Table(Pages), Report Continuous View" lstrcomment="false" lstrtitle="false" name="choice4" notNull="true" posX="2" posY="2" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+              <Item name="T" text="Text File"/>
+              <Item name="D" text="Microsoft Office Word"/>
+              <Item name="X" text="Microsoft Office Excel"/>
+              <Item name="W" text="DataSystems CallViewer"/>
+              <Item name="H" text="Microsoft Internet Explorer(HTML)"/>
+              <Item name="P" text="Adobe Acrobat PDF"/>
+              <Item name="M" text="Dynamic Table(Marge)"/>
+              <Item name="S" text="Dynamic Table(Pages)"/>
+              <Item name="C" text="Report Continuous View"/>
+            </ComboBox>
+          </Grid>
+        </HBox>
+      </Group>
+      <Group gridHeight="4" gridWidth="43" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="7" text="Print Range">
+        <Grid gridHeight="2" gridWidth="41" lstrcomment="false" name="Grid3" posX="1" posY="1">
+          <Label posX="2" posY="0" text="Total pages"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pagenum" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label posX="2" posY="1" text="Print Range"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="startpage" posX="15" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Label posX="27" posY="1" text="~"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="endpage" posX="30" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

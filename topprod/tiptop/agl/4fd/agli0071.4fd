@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="ManagedForm" uid="{14f0b4ec-e440-4b95-82ee-b7f74747f40d}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_axo" order="" uid="{2b6a0bf0-c213-4e3b-9449-17223eaeb9fe}" where="">
+    <RecordField colName="axo14" fieldIdRef="3" fieldType="TABLE_COLUMN" name="axo_file.axo14" sqlTabName="axo_file" sqlType="VARCHAR" table_alias_name="" uid="{9fe99a66-255e-44f9-887b-9afa29510110}"/>
+    <RecordField colName="aya02" fieldIdRef="4" name="aya02" sqlTabName="formonly" table_alias_name="" uid="{96f6276a-dc2e-4065-8a19-b8b13cee1b24}"/>
+    <RecordField colName="axo15" fieldIdRef="5" fieldType="TABLE_COLUMN" name="axo_file.axo15" sqlTabName="axo_file" sqlType="VARCHAR" table_alias_name="" uid="{461e768b-6d27-4050-a373-17ebd0f0bc0e}"/>
+    <RecordField colName="axl02" fieldIdRef="6" name="axl02" sqlTabName="formonly" table_alias_name="" uid="{2041c385-14d5-46b6-98bc-36a0a29cfb8d}"/>
+    <RecordField colName="axo04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="axo_file.axo04" sqlTabName="axo_file" sqlType="DECIMAL" table_alias_name="" uid="{c190e608-435f-451c-8cb1-6d6106def77e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3a8f33ce-d0a2-483c-b24b-465001588568}" where="">
+    <RecordField colName="axo12" fieldIdRef="0" fieldType="TABLE_COLUMN" name="axo_file.axo12" sqlTabName="axo_file" sqlType="VARCHAR" table_alias_name="" uid="{af9a73c1-8dd2-4d7f-8dd4-0f05cd174131}"/>
+    <RecordField colName="axo01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="axo_file.axo01" sqlTabName="axo_file" sqlType="SMALLINT" table_alias_name="" uid="{bad43877-bcc3-439a-80a4-336973ea2efa}"/>
+    <RecordField colName="axo02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="axo_file.axo02" sqlTabName="axo_file" sqlType="SMALLINT" table_alias_name="" uid="{9742e07c-1651-4f60-b5f5-47cb98739d87}"/>
+    <RecordField colName="cnt" fieldIdRef="8" name="cnt" sqlTabName="formonly" table_alias_name="" uid="{dacd84b1-2c82-462e-9624-bd29a91799b1}"/>
+    <RecordField colName="cn2" fieldIdRef="9" name="cn2" sqlTabName="formonly" table_alias_name="" uid="{0b040a80-88c5-4a32-a3aa-933be20df80d}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="70" name="agli0071" text="agli0071">
+    <VBox gridHeight="21" gridWidth="70" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="70" name="folder01" posX="0" posY="1">
+        <Page name="page01" text="Main">
+          <Grid gridHeight="5" gridWidth="27" name="gr2343" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="8" posX="1" posY="0" text="Book No."/>
+            <ButtonEdit action="controlp" colName="axo12" columnCount="" fieldId="0" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom.png" name="axo_file.axo12" notNull="true" posX="13" posY="0" required="true" rowCount="" sqlTabName="axo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="4" posX="1" posY="1" text="Year"/>
+            <Edit colName="axo01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="axo_file.axo01" notNull="true" posX="13" posY="1" required="true" rowCount="" sqlTabName="axo_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="5" posX="1" posY="2" text="Month"/>
+            <Edit colName="axo02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="axo_file.axo02" notNull="true" posX="13" posY="2" required="true" rowCount="" sqlTabName="axo_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="70" name="s_axo" posX="0" posY="7" totalRows="10">
+        <ButtonEdit action="controlp" colName="axo14" columnCount="" comment="&lt;^P&gt;Flow Category Code" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom" name="axo_file.axo14" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="axo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Flow Category Code" widget="ButtonEdit"/>
+        <Edit colName="aya02" columnCount="" fieldId="4" gridHeight="1" gridWidth="16" name="aya02" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Description" widget="Edit"/>
+        <ButtonEdit action="controlp" colName="axo15" columnCount="" comment="&lt;^P&gt;Flow Category Code" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom" name="axo_file.axo15" notNull="true" posX="24" posY="0" required="true" rowCount="" sqlTabName="axo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Group Code" widget="ButtonEdit"/>
+        <Edit colName="axl02" columnCount="" fieldId="6" gridHeight="1" gridWidth="16" name="axl02" noEntry="true" posX="32" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Description" widget="Edit"/>
+        <Edit colName="axo04" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" name="axo_file.axo04" notNull="true" posX="48" posY="0" precisionDecimal="20" required="true" rowCount="" scaleDecimal="6" sqlTabName="axo_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Transaction Amount" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="70" name="gr2344" posX="0" posY="18">
+        <HLine gridWidth="10" name="HLine1" posX="2" posY="0"/>
+        <Label gridHeight="1" gridWidth="5" posX="13" posY="0" text="Rows"/>
+        <Edit colName="cnt" columnCount="" fieldId="8" gridHeight="1" gridWidth="6" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="2" posX="27" posY="0" text="/"/>
+        <Edit colName="cn2" columnCount="" fieldId="9" gridHeight="1" gridWidth="6" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine2" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

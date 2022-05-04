@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9cad7e76-0000-4000-9869-35a710df7a20}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aak" order="" uid="{0311fb3e-0000-4000-a60e-8481aadf3678}" where="">
+    <RecordField colName="aak03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="aak_file.aak03" sqlTabName="aak_file" sqlType="SMALLINT" table_alias_name="" uid="{b0dfa633-0000-4000-adfd-166b0ad6217a}"/>
+    <RecordField colName="aak04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="aak_file.aak04" sqlTabName="aak_file" sqlType="VARCHAR" table_alias_name="" uid="{6237c80f-0000-4000-966f-7e460f99a683}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{75835f04-0000-4000-863b-d183b532b85d}" where="">
+    <RecordField colName="aak00" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aak_file.aak00" sqlTabName="aak_file" sqlType="VARCHAR" table_alias_name="" uid="{52850d41-0000-4000-a1fa-5e8991d25365}"/>
+    <RecordField colName="aak01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aak_file.aak01" sqlTabName="aak_file" sqlType="VARCHAR" table_alias_name="" uid="{d30b2f74-0000-4000-83e6-b11a56dcf2b2}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="aag02" sqlTabName="" table_alias_name="" uid="{aa51cb42-0000-4000-86f4-804154ea1c43}"/>
+    <RecordField colName="aak02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aak_file.aak02" sqlTabName="aak_file" sqlType="VARCHAR" table_alias_name="" uid="{4db499d1-0000-4000-bfc5-0135f3bbc91d}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{5bf1063f-0000-4000-80a6-5ac23c40c37e}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{05d82028-0000-4000-989a-243451a4d77d}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="79" name="agli103" spacing="normal" text="agli103">
+    <VBox gridHeight="18" gridWidth="76" name="vb4" posX="1" posY="0">
+      <Folder gridHeight="6" gridWidth="76" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="74" lstrcomment="false" name="gr2370" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Book No"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aak00" columnCount="" comment="&lt;^P&gt; Qry Book No" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" image="zoom" lstrcomment="false" lstrtitle="false" name="aak_file.aak00" notNull="true" posX="24" posY="0" required="true" rowCount="" sqlTabName="aak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="1" text="Account Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aak01" columnCount="" comment="&lt;^P&gt; Qry Account " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="aak_file.aak01" notNull="true" posX="23" posY="1" required="true" rowCount="" sqlTabName="aak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Account Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="23" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Description Category"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aak02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="aak_file.aak02" notNull="true" posX="23" posY="3" required="true" rowCount="" sqlTabName="aak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="8" gridWidth="76" lstrcomment="false" name="s_aak" posX="0" posY="7" totalRows="6">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aak03" columnCount="" comment="Key Field, No Blank/Repeated    " fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="aak_file.aak03" noEntry="true" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="aak_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Line#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aak04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="aak_file.aak04" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="aak_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Extra Description" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="76" lstrcomment="false" name="gr2371" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl721" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl722" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

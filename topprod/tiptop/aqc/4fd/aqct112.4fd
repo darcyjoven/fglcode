@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{dfc30a77-0000-4000-a865-1a7e7991b461}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qcv" order="" uid="{0da6728e-0000-4000-b64e-8521e14f2a3a}" where="">
+    <RecordField colName="qcv03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="qcv_file.qcv03" sqlTabName="qcv_file" sqlType="SMALLINT" table_alias_name="" uid="{02c86218-0000-4000-b52a-b74d03d68686}"/>
+    <RecordField colName="" fieldIdRef="5" name="item" sqlTabName="" table_alias_name="" uid="{ca6f4163-0000-4000-bc22-8769c9293d88}"/>
+    <RecordField colName="" fieldIdRef="6" name="azf03" sqlTabName="" table_alias_name="" uid="{8e575a8c-0000-4000-b14f-45760bb03ca1}"/>
+    <RecordField colName="qcv04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="qcv_file.qcv04" sqlTabName="qcv_file" sqlType="VARCHAR" table_alias_name="" uid="{df4ce5f9-0000-4000-85b6-64d808456b5c}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fc861edd-0000-4000-b551-d59ef1345f75}" where="">
+    <RecordField colName="qcv01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="qcv_file.qcv01" sqlTabName="qcv_file" sqlType="VARCHAR" table_alias_name="" uid="{9c4d17b8-0000-4000-8b00-5e4b5f3459e0}"/>
+    <RecordField colName="qcv02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="qcv_file.qcv02" sqlTabName="qcv_file" sqlType="SMALLINT" table_alias_name="" uid="{3359e6d4-0000-4000-9ba1-669ad7747ed2}"/>
+    <RecordField colName="qcv021" fieldIdRef="3" fieldType="TABLE_COLUMN" name="qcv_file.qcv021" sqlTabName="qcv_file" sqlType="SMALLINT" table_alias_name="" uid="{bd7c82c8-0000-4000-87f5-514b4d8d82c9}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{84f6e2f9-0000-4000-bcb2-17689e8a1194}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{6af6e015-0000-4000-b282-7e0d15e489d9}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="75" name="aqct112" spacing="normal" text="aqct112">
+    <VBox gridHeight="24" gridWidth="72" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="72" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="6" gridWidth="41" lstrcomment="false" name="gr195" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="40" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Receipt#"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcv01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="qcv_file.qcv01" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="qcv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Line No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcv02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="qcv_file.qcv02" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="qcv_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Lot QC Sequence"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcv021" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="qcv_file.qcv021" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="qcv_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="72" lstrcomment="false" name="s_qcv" posX="0" posY="9" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcv03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="qcv_file.qcv03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="qcv_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Line #" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="item" noEntry="true" posX="7" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="QC Items" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azf03" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Desc" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcv04" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="qcv_file.qcv04" posX="26" posY="0" rowCount="" sqlTabName="qcv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Memo" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="72" lstrcomment="false" name="gr196" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl98" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl99" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{18e6e275-0000-4000-aece-af68d8d12cb6}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_vms" order="" uid="{df049746-0000-4000-ae14-9d4f52e088aa}" where="">
+    <RecordField colName="vms05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="vms_file.vms05" sqlTabName="vms_file" sqlType="SMALLINT" table_alias_name="" uid="{e7e7cf67-0000-4000-a8b4-856fcefcf9eb}"/>
+    <RecordField colName="vms06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="vms_file.vms06" sqlTabName="vms_file" sqlType="SMALLINT" table_alias_name="" uid="{e94cfe10-0000-4000-9df8-b061de3d4c22}"/>
+    <RecordField colName="vms04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="vms_file.vms04" sqlTabName="vms_file" sqlType="VARCHAR" table_alias_name="" uid="{27729f44-0000-4000-9912-3bca002c0406}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3d930852-0000-4000-b72b-bf9f1fc69868}" where="">
+    <RecordField colName="vms01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vms_file.vms01" sqlTabName="vms_file" sqlType="VARCHAR" table_alias_name="" uid="{e58e8c55-0000-4000-9a53-c1f310720dbc}"/>
+    <RecordField colName="vms02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vms_file.vms02" sqlTabName="vms_file" sqlType="VARCHAR" table_alias_name="" uid="{bff568b4-0000-4000-b49a-a83a16091c9b}"/>
+    <RecordField colName="vms03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vms_file.vms03" sqlTabName="vms_file" sqlType="VARCHAR" table_alias_name="" uid="{1c41cda3-0000-4000-83ec-68135fdc6e51}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{c081d2a0-0000-4000-8f3c-ad8f85a54ae3}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{31918ef6-0000-4000-ae58-f17b0e8bc815}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="57" name="apsi326" spacing="normal" text="apsi326">
+    <VBox gridHeight="24" gridWidth="53" name="vb2_" posX="0" posY="0">
+      <Grid gridHeight="19" gridWidth="53" lstrcomment="false" name="gr5444" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="49" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Basic Data">
+          <Label posX="3" posY="1" text="Product No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vms01" columnCount="" comment="Assign Add/Query Item#" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="vms_file.vms01" notNull="true" posX="25" posY="1" required="true" rowCount="" sqlTabName="vms_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="3" posY="2" text="Routing Code."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vms02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" name="vms_file.vms02" noEntry="true" notNull="true" posX="25" posY="2" required="true" rowCount="" sqlTabName="vms_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+          <Label posX="3" posY="3" text="Routing Sequence."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vms03" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" name="vms_file.vms03" noEntry="true" notNull="true" posX="25" posY="3" required="true" rowCount="" sqlTabName="vms_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Table gridHeight="12" gridWidth="42" name="s_vms" posX="4" posY="6" totalRows="10">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vms05" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="vms_file.vms05" noEntry="true" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="vms_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Item" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vms06" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="vms_file.vms06" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="vms_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Order No." widget="Edit"/>
+          <ButtonEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vms04" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="vms_file.vms04" posX="19" posY="0" rowCount="" sqlTabName="vms_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="APS Version Description" widget="ButtonEdit"/>
+        </Table>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="53" lstrcomment="false" name="gr881" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl267" posX="1" posY="1"/>
+        <Label posX="13" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl268" posX="38" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

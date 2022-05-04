@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6b31c67f-0000-4000-b6fd-b8d6b8474d0e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_xmh" order="" uid="{6e8c4118-0000-4000-b082-486031e8eaea}" where="">
+    <RecordField colName="xmh01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="xmh_file.xmh01" sqlTabName="xmh_file" sqlType="VARCHAR" table_alias_name="" uid="{9de8fbfe-0000-4000-9d01-17b7dba76cdb}"/>
+    <RecordField colName="" fieldIdRef="2" name="oca02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f5af477a-0000-4000-9de3-02107141ab03}"/>
+    <RecordField colName="xmh02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="xmh_file.xmh02" sqlTabName="xmh_file" sqlType="VARCHAR" table_alias_name="" uid="{069be7fe-0000-4000-bee3-aa90fb855f2e}"/>
+    <RecordField colName="" fieldIdRef="4" name="oba02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7e8b0aad-0000-4000-bc41-38d74a1dcc14}"/>
+    <RecordField colName="xmh03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="xmh_file.xmh03" sqlTabName="xmh_file" sqlType="DECIMAL" table_alias_name="" uid="{afc259d1-0000-4000-bcaf-e8827fa22727}"/>
+    <RecordField colName="xmh04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="xmh_file.xmh04" sqlTabName="xmh_file" sqlType="VARCHAR" table_alias_name="" uid="{19aae562-0000-4000-903f-783b85a45654}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f00b2f86-0000-4000-b67d-8b3992aae5d1}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{23a1250b-0000-4000-9965-59ceaa1853e4}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="109" name="axmi540" spacing="normal" text="axmi540">
+    <VBox gridHeight="18" gridWidth="106" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="106" lstrcomment="false" name="pc500" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="104" lstrcomment="false" name="s_xmh" posX="0" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xmh01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^P&gt;Qry Customer class#" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="xmh_file.xmh01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="xmh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Customer Class.Cd" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="oca02" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Customer Class Name" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xmh02" columnCount="" comment="&lt;^P&gt;Qry Product Class Code" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" image="zoom" lstrcomment="false" lstrtitle="false" name="xmh_file.xmh02" notNull="true" posX="39" posY="0" required="true" rowCount="" sqlTabName="xmh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Product Class Code" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="oba02" noEntry="true" posX="60" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Produce Class Cd Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xmh03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="xmh_file.xmh03" posX="82" posY="0" rowCount="" sqlTabName="xmh_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Discount" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="xmh04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="xmh_file.xmh04" notNull="true" posX="91" posY="0" required="true" rowCount="" sqlTabName="xmh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="106" lstrcomment="false" name="gr2118" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl807" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl808" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

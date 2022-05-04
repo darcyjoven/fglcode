@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{c65b3316-3732-4759-bce9-62a29b035be1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6c85c887-862d-4652-9c0b-52b2755a5565}" where="">
+    <RecordField colName="" fieldIdRef="2" name="passwd1" sqlTabName="" table_alias_name="" uid="{16f55e78-8cd2-4b50-b5f9-1d0e7d711841}"/>
+    <RecordField colName="" fieldIdRef="3" name="passwd2" sqlTabName="" table_alias_name="" uid="{2c6c24ff-fcc2-4ad3-98c7-14431756cff4}"/>
+    <RecordField colName="" fieldIdRef="4" name="passwd3" sqlTabName="" table_alias_name="" uid="{92ed3428-eed8-4034-b65f-560ee5edb9dd}"/>
+    <RecordField colName="gen02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gen_file.gen02" sqlTabName="gen_file" sqlType="VARCHAR" table_alias_name="" uid="{f220ff9c-f54a-439a-b082-5b3a321d6bc3}"/>
+    <RecordField colName="ryi01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ryi_file.ryi01" sqlTabName="ryi_file" sqlType="VARCHAR" table_alias_name="" uid="{579cfe3d-6783-4f61-aab0-4585f1e65345}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="ryi_file" name="Record1" order="" uid="{cf143652-01e6-437b-837e-ebd82bbb8e03}" where=""/>
+  <Form gridHeight="25" gridWidth="80" name="Form" text="Form">
+    <Grid gridHeight="5" gridWidth="69" name="Grid1" posX="1" posY="0">
+      <Label gridHeight="1" gridWidth="10" name="Label1" posX="2" posY="0" text="POS User"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryi01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" name="ryi_file.ryi01" notNull="true" posX="20" posY="0" rowCount="" scroll="true" sqlTabName="ryi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ryi01" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gen02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="gen_file.gen02" posX="50" posY="0" rowCount="" sqlTabName="gen_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Edit5" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="10" name="Label2" posX="2" posY="1" text="Passwd1"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="25" invisible="true" name="passwd1" posX="20" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Edit2" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="10" name="Label3" posX="2" posY="2" text="Passwd2"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="25" invisible="true" name="passwd2" noEntry="false" notNull="true" posX="20" posY="2" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Edit3" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="10" name="Label4" posX="2" posY="3" text="Passwd3"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="none" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="25" invisible="true" name="passwd3" notNull="true" posX="20" posY="3" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit4" widget="Edit"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA5ADIAZQBkADMANAAyADgALQBlAGUAZAA4AC0ANAAwADMANAAtAGIANgA1AGYALQA1ADYAMABlAGUANQBlAGQAYgA5AGQAZAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGMANgBjADIANABmAGYALQBmAGMAYwAyAC0ANABhAGQAMwAtADkAOABjADcALQAxADQANAAzADEANwA1ADYAYwBmAGYANAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADYAZgA1ADUAZQA3ADgALQA4AGMAZAAyAC0ANABiADUAMAAtAGIANQBmADkALQAxAGQAMABlADcAZAA3ADEAMQA4ADQAMQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYAMQA0ADMANgA1ADIALQAwADEAZQA2AC0ANAAzADcAYgAtADgAMwA3AGUALQBlAGIAZAA4ADIAYgBiAGIAOABlADAAMwB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGMAOAA1AGMAOAA4ADcALQA4ADYAMgBkAC0ANAA2ADUAMgAtADkAYwAwAGIALQA1ADIAYgAyADcANQA1AGEANQA1ADYANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADIAMgAwAGYAZgA5AGMALQBmADUANABhAC0ANAAzADkAYQAtAGIAMAA4ADIALQA1AGIAMwBhADMAMgAxAGQANgBiAGMAMwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADcAOQBjAGYAZQAzAGQALQA2ADcAOAAzAC0ANABmADYAMQAtAGEAYQBiADAALQA0ADUAOAA1AGYAMQBlADYANQAzADQANQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

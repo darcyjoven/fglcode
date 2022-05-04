@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6bf743d1-0000-4000-a301-6756f10688e1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{47d6c714-0000-4000-9e4a-afbcec44949c}" where="">
+    <RecordField colName="vlm01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vlm_file.vlm01" sqlTabName="vlm_file" sqlType="VARCHAR" table_alias_name="" uid="{88f818e5-0000-4000-84e0-24156b92a90d}"/>
+    <RecordField colName="vlm02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vlm_file.vlm02" sqlTabName="vlm_file" sqlType="VARCHAR" table_alias_name="" uid="{924c3a3f-0000-4000-bc08-850456bff75a}"/>
+    <RecordField colName="vlm03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vlm_file.vlm03" sqlTabName="vlm_file" sqlType="SMALLINT" table_alias_name="" uid="{b97b092e-0000-4000-baf1-165ec207847f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{8f2d5d44-0000-4000-bbb6-f56b6f20e352}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{a6970024-0000-4000-8d64-2a374837a311}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="74" name="apss306" spacing="normal" text="apss306">
+    <VBox gridHeight="14" gridWidth="67" name="vb2_" posX="1" posY="1">
+      <Folder gridHeight="10" gridWidth="67" lstrcomment="false" name="pc10" posX="0" posY="1">
+        <Page action="erp" lstrtext="false" name="erp" text="TIPTOP">
+          <Grid gridHeight="8" gridWidth="65" lstrcomment="false" name="gr39" posX="0" posY="0">
+            <Group gridHeight="8" gridWidth="63" lstrcomment="false" lstrtext="false" name="group011" posX="1" posY="0">
+              <Label posX="1" posY="1" text="APS SERVER NAME"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vlm01" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="vlm_file.vlm01" posX="18" posY="1" rowCount="" sqlTabName="vlm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="APS SERVER IP"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vlm02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="vlm_file.vlm02" notNull="true" posX="18" posY="2" required="true" rowCount="" sqlTabName="vlm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="APS SERVER PORT"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vlm03" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="vlm_file.vlm03" notNull="true" posX="18" posY="3" required="true" rowCount="" sqlTabName="vlm_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="67" lstrcomment="false" name="gr48" posX="0" posY="11">
+        <Label posX="1" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="idx" posX="7" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="14" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

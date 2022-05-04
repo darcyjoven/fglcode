@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{c657de4e-0000-4000-8817-aea1828a9e72}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{07f4a85c-0000-4000-a028-cb7b95ec02f8}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="cware" sqlTabName="" table_alias_name="" uid="{59e2d5a0-0000-4000-9bff-db28c45c7411}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cloc" sqlTabName="" table_alias_name="" uid="{505779d9-0000-4000-8d05-2715e738b81a}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{9ce24c07-0000-4000-8469-7cf6b50da777}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="oea01" sqlTabName="" table_alias_name="" uid="{774fc8e3-0000-4000-8d06-98b43c95bebb}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="oea02" sqlTabName="" table_alias_name="" uid="{84ab0963-0000-4000-b05c-d3506abd1352}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="oeb15" sqlTabName="" table_alias_name="" uid="{c01fe138-0000-4000-afb2-77ce87a2c4a5}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="46" name="axmt600a" spacing="normal" text="Delivery to Offshore W/H">
+    <Grid gridHeight="11" gridWidth="45" lstrcomment="false" name="Grid1" posX="0" posY="0">
+      <Group gridHeight="4" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+        <Label posX="1" posY="1" text="Assign Offshore W/H"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" comment="&lt;^P&gt; Qry Warehouse" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="cware" notNull="true" posX="27" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Assign Offshore Location"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" comment="&lt;^P&gt; Qry Warehouse/Location" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="cloc" posX="27" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+      </Group>
+      <Group gridHeight="6" gridWidth="44" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="4">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="39" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Auto Gen. Offsore W/H Del. S/O" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Label posX="1" posY="2" text="S/O Doc. Type"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Qry Doc.Slip" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="oea01" posX="27" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="3" text="S/O Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="oea02" posX="27" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="4" text="Planned Del. Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="oeb15" posX="27" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

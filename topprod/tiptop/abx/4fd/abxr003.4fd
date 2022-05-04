@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{948ce6ad-0000-4000-a2ca-3dbbf439fa18}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{896335bc-0000-4000-a7d5-a1ff7f4fc775}" where="">
+    <RecordField colName="ima01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ima_file.ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{3e9ac949-0000-4000-b833-5deb37daff3b}"/>
+    <RecordField colName="ima1916" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ima_file.ima1916" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{5b17e629-0000-4000-8427-be198420185c}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{62ae3ddb-0000-4000-a56f-3ddf974b8ef5}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="yy2" sqlTabName="" table_alias_name="" uid="{bdaaf30c-0000-4000-a237-c8d0f17b849e}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="mm" sqlTabName="" table_alias_name="" uid="{414e9213-0000-4000-ab13-5accddbddaab}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="kk" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{37772976-0000-4000-a010-6700f11529f9}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="s1" sqlTabName="" table_alias_name="" uid="{66fa2663-0000-4000-8ab1-45749169d9b0}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="s2" sqlTabName="" table_alias_name="" uid="{9b2e6538-0000-4000-9fd8-18106c9f0114}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="u1" sqlTabName="" table_alias_name="" uid="{2c5641fb-0000-4000-83e3-a9a4fe83ad42}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="u2" sqlTabName="" table_alias_name="" uid="{075978e2-0000-4000-829b-82730cce4883}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ima15" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b5ef42cd-0000-4000-9737-f7b62a37590b}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="76" name="abxr003" spacing="normal" text="abxr003">
+    <VBox gridHeight="17" gridWidth="75" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="4" gridWidth="75" lstrcomment="false" lstrtext="false" name="g02" posX="0" posY="1" text="QBE">
+        <Grid gridHeight="2" gridWidth="41" lstrcomment="false" name="gr1091" posX="1" posY="1">
+          <Label posX="1" posY="0" text="Item No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" columnCount="" comment="&lt;P&gt;Qry Item Master" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="ima_file.ima01" notNull="true" posX="20" posY="0" required="true" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="1" text="ima1916"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima1916" columnCount="" comment="&lt;P&gt;Qry Bonded Group" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="ima_file.ima1916" posX="20" posY="1" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="11" gridWidth="75" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="5" text="INPUT">
+        <Grid gridHeight="9" gridWidth="73" lstrcomment="false" name="gr1092" posX="1" posY="1">
+          <Label posX="1" posY="0" text="Inventory Taking Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="yy" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="1" text="Book Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="yy2" posX="24" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="38" posY="1" text="Book Month"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="mm" posX="54" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Group gridHeight="3" gridWidth="32" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="2" text="Item">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="23" items="Material, Product, Stockage, Transport-Product, Semi-Product, Semi-Product+Product" lstrcomment="false" lstrtitle="false" name="kk" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Material"/>
+              <Item lstrtext="" name="2" text="Product"/>
+              <Item lstrtext="" name="3" text="Stockage"/>
+              <Item lstrtext="" name="4" text="Transport-Product"/>
+              <Item lstrtext="" name="5" text="Semi-Product"/>
+              <Item lstrtext="" name="6" text="Semi-Product+Product"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="6" gridWidth="38" lstrcomment="false" lstrtext="false" name="group03" posX="35" posY="2" text="Sequence">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" items="Item No., Bonded Group Code" lstrcomment="false" lstrtitle="false" name="s1" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="Item No."/>
+              <Item lstrtext="" name="2" text="Bonded Group Code"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="Item No., Bonded Group Code" lstrcomment="false" lstrtitle="false" name="s2" posX="20" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="Item No."/>
+              <Item lstrtext="" name="2" text="Bonded Group Code"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Y:Print Subtotal   N:Do&apos;nt Print" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtext="false" lstrtitle="false" name="u1" notNull="true" posX="2" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Subtotal" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Y:Print Subtotal   N:Do&apos;nt Print" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtext="false" lstrtitle="false" name="u2" notNull="true" posX="20" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="Subtotal" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+          <Group gridHeight="3" gridWidth="32" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="Bond Date">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="23" items="Bonded, All" lstrcomment="false" lstrtitle="false" name="ima15" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Bonded"/>
+              <Item lstrtext="" name="2" text="All"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

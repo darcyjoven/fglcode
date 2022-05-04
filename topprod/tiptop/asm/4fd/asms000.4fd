@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{fec8379c-0000-4000-a2ba-cca59c5ba24b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{a64c982a-0000-4000-ae39-2079a74e6f32}" where="">
+    <RecordField colName="smi02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="smi_file.smi02" sqlTabName="smi_file" sqlType="VARCHAR" table_alias_name="" uid="{17dfc3ad-0000-4000-884f-f320b1d65cde}"/>
+    <RecordField colName="smi03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="smi_file.smi03" sqlTabName="smi_file" sqlType="DATE" table_alias_name="" uid="{8907e3c5-0000-4000-aa32-89c30ea0c750}"/>
+    <RecordField colName="smi04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="smi_file.smi04" sqlTabName="smi_file" sqlType="VARCHAR" table_alias_name="" uid="{d4649f3f-0000-4000-ba8f-e9875c4ef0c1}"/>
+    <RecordField colName="smi01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="smi_file.smi01" sqlTabName="smi_file" sqlType="VARCHAR" table_alias_name="" uid="{81190293-0000-4000-8a81-ea9d076d9568}"/>
+    <RecordField colName="smi05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="smi_file.smi05" sqlTabName="smi_file" sqlType="VARCHAR" table_alias_name="" uid="{4b059465-0000-4000-9992-2ac6c5777dc2}"/>
+    <RecordField colName="smi06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="smi_file.smi06" sqlTabName="smi_file" sqlType="VARCHAR" table_alias_name="" uid="{2af24a04-0000-4000-90bc-ead91adfe05b}"/>
+    <RecordField colName="smj14" fieldIdRef="7" fieldType="TABLE_COLUMN" name="smj_file.smj14" sqlTabName="smj_file" sqlType="VARCHAR" table_alias_name="" uid="{5e5883ee-0000-4000-856a-38d3d5fc0318}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="65" name="asms000" spacing="normal" text="asms000">
+    <VBox gridHeight="20" gridWidth="62" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="18" gridWidth="62" lstrcomment="false" name="pc193" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="16" gridWidth="61" lstrcomment="false" name="gr906" posX="0" posY="0">
+            <Group gridHeight="9" gridWidth="60" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="System Shutdown Message">
+              <Label posX="1" posY="1" text="Shutdown Cause"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="smi02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="smi_file.smi02" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="smi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="OFF Time"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="smi03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="smi_file.smi03" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="smi_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="smi04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="smi_file.smi04" noEntry="true" posX="34" posY="2" rowCount="" sqlTabName="smi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="By Us"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="smi01" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="smi_file.smi01" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="smi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="4" text="Terminal Type"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="smi05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="smi_file.smi05" noEntry="true" posX="22" posY="4" rowCount="" sqlTabName="smi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="5" text="OFF Reason"/>
+              <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="smi06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="3" gridWidth="30" lstrcomment="false" lstrtitle="false" name="smi_file.smi06" noEntry="true" posX="22" posY="5" rowCount="" sqlTabName="smi_file" sqlType="VARCHAR" stepX="" stepY="" stretch="NONE" tabIndex="6" table_alias_name="" widget="TextEdit"/>
+            </Group>
+            <Group gridHeight="6" gridWidth="60" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="9" text="System Restart Message">
+              <Label posX="1" posY="1" text="Record"/>
+              <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="smj14" columnCount="" comment="Enter &apos;Task Memo Desc&apos; of &apos;System Restart&apos;" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="3" gridWidth="30" lstrcomment="false" lstrtitle="false" name="smj_file.smj14" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="smj_file" sqlType="VARCHAR" stepX="" stepY="" stretch="NONE" tabIndex="7" table_alias_name="" widget="TextEdit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+</ManagedForm>

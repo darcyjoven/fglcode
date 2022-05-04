@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{10aed0b4-0000-4000-bb7d-a975d9c9f3af}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_fag" order="" uid="{0600ca01-0000-4000-80e1-ac9aa44d5ad3}" where="">
+    <RecordField colName="fag01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="fag_file.fag01" sqlTabName="fag_file" sqlType="VARCHAR" table_alias_name="" uid="{558680c8-0000-4000-a84c-7fefc28c097e}"/>
+    <RecordField colName="fag02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="fag_file.fag02" sqlTabName="fag_file" sqlType="VARCHAR" table_alias_name="" uid="{09dbe0da-0000-4000-a845-caab3598efb7}"/>
+    <RecordField colName="fag03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="fag_file.fag03" sqlTabName="fag_file" sqlType="VARCHAR" table_alias_name="" uid="{514afca8-0000-4000-8f8c-0cb73a2ce5a6}"/>
+    <RecordField colName="fagacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="fag_file.fagacti" sqlTabName="fag_file" sqlType="VARCHAR" table_alias_name="" uid="{a5ee1fbb-0000-4000-8b0b-8c50cbc28ff6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f5a1ad3a-0000-4000-a5d8-27371d7203c0}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ca165a68-0000-4000-804f-ca5122137572}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="60" name="afai050" spacing="normal" text="afai050">
+    <VBox gridHeight="18" gridWidth="57" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="57" lstrcomment="false" name="pc322" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="55" lstrcomment="false" name="s_fag" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fag01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="fag_file.fag01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="fag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Reason Code" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fag02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="Capitalization, Inventory Taking, Transfer, Sale, Retire, Charge off, Improve, Revaluate, Adj, Snd, Rcall, Re-Amortize, Transfer Place, Deduction Preparation, Removal" lstrcomment="false" lstrtitle="false" name="fag_file.fag02" notNull="true" posX="14" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="fag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Pty" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Capitalization"/>
+              <Item lstrtext="false" name="2" text="Inventory Taking"/>
+              <Item lstrtext="false" name="3" text="Transfer"/>
+              <Item lstrtext="false" name="4" text="Sale"/>
+              <Item lstrtext="false" name="5" text="Retire"/>
+              <Item lstrtext="false" name="6" text="Charge off"/>
+              <Item lstrtext="false" name="7" text="Improve"/>
+              <Item lstrtext="false" name="8" text="Revaluate"/>
+              <Item lstrtext="false" name="9" text="Adj"/>
+              <Item lstrtext="false" name="A" text="Snd"/>
+              <Item lstrtext="false" name="B" text="Rcall"/>
+              <Item lstrtext="false" name="C" text="Re-Amortize"/>
+              <Item lstrtext="false" name="D" text="Transfer Place"/>
+              <Item lstrtext="false" name="E" text="Deduction Preparation"/>
+              <Item lstrtext="false" name="F" text="Removal"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fag03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fag_file.fag03" posX="23" posY="0" rowCount="" sqlTabName="fag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Reason Des." widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fagacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="fag_file.fagacti" notNull="true" posX="43" posY="0" required="true" rowCount="" sqlTabName="fag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="57" lstrcomment="false" name="gr1806" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl569" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl570" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d6dd1728-0000-4000-bc5f-d4091abe8efd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ome" order="" uid="{5b9b0f45-0000-4000-8111-970dd3c15456}" where="">
+    <RecordField colName="ome01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ome_file.ome01" sqlTabName="ome_file" sqlType="VARCHAR" table_alias_name="" uid="{d60296f9-0000-4000-b6ed-5260fdf4a69d}"/>
+    <RecordField colName="ome02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ome_file.ome02" sqlTabName="ome_file" sqlType="DATE" table_alias_name="" uid="{05d0a71c-0000-4000-bdb8-4745cbfe4df5}"/>
+    <RecordField colName="" fieldIdRef="5" name="occ02" sqlTabName="" table_alias_name="" uid="{79643151-0000-4000-8226-7a4a59e0da4f}"/>
+    <RecordField colName="ome211" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ome_file.ome211" sqlTabName="ome_file" sqlType="SMALLINT" table_alias_name="" uid="{d5e80c86-0000-4000-80d8-9d1033199178}"/>
+    <RecordField colName="ome59" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ome_file.ome59" sqlTabName="ome_file" sqlType="DECIMAL" table_alias_name="" uid="{1f1d1578-0000-4000-ba6c-3f13cf93909b}"/>
+    <RecordField colName="ome59x" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ome_file.ome59x" sqlTabName="ome_file" sqlType="DECIMAL" table_alias_name="" uid="{7fc3ff2d-0000-4000-8369-9ef00fa6cf4d}"/>
+    <RecordField colName="ome59t" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ome_file.ome59t" sqlTabName="ome_file" sqlType="DECIMAL" table_alias_name="" uid="{11277b78-0000-4000-b747-b731c01d9514}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{a3862778-0000-4000-bf60-5d121d31626e}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="fbe01" sqlTabName="" table_alias_name="" uid="{05ac9019-0000-4000-901b-05c94c975cda}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="fbe11" sqlTabName="" table_alias_name="" uid="{4d3f3a92-0000-4000-adb0-fdcee05818e0}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="128" name="afat1103" spacing="normal" text="afat1103">
+    <VBox gridHeight="11" gridWidth="125" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="125" lstrcomment="false" name="gr2265" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Sale Doc No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="yellow" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="fbe01" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="53" posY="0" text="Bill No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="yellow" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="fbe11" noEntry="true" posX="71" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="7" gridWidth="125" lstrcomment="false" name="s_ome" posX="0" posY="3" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome01" color="yellow" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="ome_file.ome01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="ome_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Invoice#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome02" color="yellow" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="ome_file.ome02" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="ome_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Invoice Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="yellow" columnCount="" fieldId="5" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="occ02" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Customer Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome211" color="yellow" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="ome_file.ome211" noEntry="true" posX="45" posY="0" rowCount="" sqlTabName="ome_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Tax Rate%" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome59" color="yellow" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ome_file.ome59" noEntry="true" notNull="true" posX="56" posY="0" required="true" rowCount="" sqlTabName="ome_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Before Tax Amount" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome59x" color="yellow" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ome_file.ome59x" noEntry="true" notNull="true" posX="76" posY="0" required="true" rowCount="" sqlTabName="ome_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Tax Amount" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ome59t" color="yellow" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ome_file.ome59t" noEntry="true" notNull="true" posX="96" posY="0" required="true" rowCount="" sqlTabName="ome_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="With Tax Amount" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

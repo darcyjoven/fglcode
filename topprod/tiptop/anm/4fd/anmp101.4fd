@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{98d59de6-a9a7-4730-a2b1-68800186d638}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nag" order="" uid="{f65d2292-c6d4-4112-b18c-8de14dbe8081}" where="">
+    <RecordField colName="" fieldIdRef="13" name="chk1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{30544fc0-ea52-495b-ab5e-b256c77a47d3}"/>
+    <RecordField colName="nag04" fieldIdRef="15" fieldType="TABLE_COLUMN" name="nag_file.nag04" sqlTabName="nag_file" sqlType="VARCHAR" table_alias_name="" uid="{36f1985c-0b08-4e60-a5aa-086201d694e2}"/>
+    <RecordField colName="nag03" fieldIdRef="32" fieldType="TABLE_COLUMN" name="nag_file.nag03" sqlTabName="nag_file" sqlType="VARCHAR" table_alias_name="" uid="{9fed8de5-25bd-4972-adc3-0ec54248b71a}"/>
+    <RecordField colName="nmu03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nmu_file.nmu03" sqlTabName="nmu_file" sqlType="VARCHAR" table_alias_name="" uid="{975c7caa-6416-442f-9428-ebacce24a591}"/>
+    <RecordField colName="nag05" fieldIdRef="18" fieldType="TABLE_COLUMN" name="nag_file.nag05" sqlTabName="nag_file" sqlType="VARCHAR" table_alias_name="" uid="{89a15646-6b5c-42fa-b7cb-4bfdf359fe28}"/>
+    <RecordField colName="nag06" fieldIdRef="19" fieldType="TABLE_COLUMN" name="nag_file.nag06" sqlTabName="nag_file" sqlType="SMALLINT" table_alias_name="" uid="{e4c83026-6b9a-4cf9-a5d5-2990f0fb018e}"/>
+    <RecordField colName="nme05" fieldIdRef="20" fieldType="TABLE_COLUMN" name="nme_file.nme05" sqlTabName="nme_file" sqlType="VARCHAR" table_alias_name="" uid="{7690965d-0676-4927-9e1f-c536dbd11a86}"/>
+    <RecordField colName="nme16" fieldIdRef="21" fieldType="TABLE_COLUMN" name="nme_file.nme16" sqlTabName="nme_file" sqlType="DATE" table_alias_name="" uid="{7c6628b4-b9d7-49ce-b7b0-d758365410be}"/>
+    <RecordField colName="" fieldIdRef="22" name="dc1" sqlTabName="" table_alias_name="" uid="{a1a7e5a8-a7dc-4347-a58a-7b21c64deda5}"/>
+    <RecordField colName="nme08" fieldIdRef="23" fieldType="TABLE_COLUMN" name="nme_file.nme08" precisionDecimal="20" scaleDecimal="6" sqlTabName="nme_file" sqlType="DECIMAL" table_alias_name="" uid="{c075a9b5-ba63-4f55-9705-6f73a9867281}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7d9eca2a-c089-4a10-8c41-723c5615a936}" where="">
+    <RecordField colName="" fieldIdRef="1" name="type" sqlTabName="" table_alias_name="" uid="{a0ad0c50-e132-43c2-9440-f0f62db0e01d}"/>
+    <RecordField colName="nme01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nme_file.nme01" sqlTabName="nme_file" sqlType="VARCHAR" table_alias_name="" uid="{116eaec7-f35a-46bf-a106-4c6da160d01f}"/>
+    <RecordField colName="nmu01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nmu_file.nmu01" sqlTabName="nmu_file" sqlType="DATE" table_alias_name="" uid="{6e832247-f54e-408e-b58d-9d31834976de}"/>
+  </Record>
+  <Form gridHeight="68" gridWidth="284" name="anmp101" text="anmp101">
+    <VBox gridHeight="21" gridWidth="124" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="9" gridWidth="124" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Grid gridHeight="7" gridWidth="122" name="Grid1" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="10" name="Label4" posX="1" posY="1" text="Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="18" items="Comp, Bank" name="type" noEntry="false" notNull="false" posX="12" posY="1" required="false" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Comp"/>
+              <Item lstrtext="false" name="2" text="Bank"/>
+            </ComboBox>
+            <Label gridHeight="1" gridWidth="10" name="Label1" posX="1" posY="2" text="Bank"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nme01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" name="nme_file.nme01" picture="" posX="12" posY="2" rowCount="" sqlTabName="nme_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label2" posX="1" posY="3" text="Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmu01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" name="nmu_file.nmu01" posX="12" posY="3" rowCount="" sqlTabName="nmu_file" sqlType="DATE" stepX="" stepY="" tabIndex="12" table_alias_name="" title="DateEdit1" widget="DateEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="10" gridWidth="124" name="s_nag" posX="0" posY="10" totalRows="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="8" name="chk1" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" text="" title="chk1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nag04" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Auto, Hand" name="nag_file.nag04" noEntry="true" notNull="true" posX="8" posY="0" rowCount="" sqlTabName="nag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="nag04" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Auto"/>
+          <Item lstrtext="false" name="2" text="Hand"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nag03" columnCount="" fieldId="32" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" hidden="false" name="nag_file.nag03" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="nag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="nag03" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmu03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="nmu_file.nmu03" noEntry="true" posX="26" posY="0" rowCount="" sqlTabName="nmu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="nmu03" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nag05" columnCount="" fieldId="18" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="nag_file.nag05" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="nag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="nag05" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nag06" columnCount="" fieldId="19" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="nag_file.nag06" noEntry="true" posX="42" posY="0" rowCount="" sqlTabName="nag_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="nag06" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nme05" columnCount="" fieldId="20" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" name="nme_file.nme05" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="nme_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="nme05" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nme16" columnCount="" fieldId="21" fieldType="TABLE_COLUMN" gridHeight="3" gridWidth="9" name="nme_file.nme16" noEntry="true" posX="73" posY="0" rowCount="" sqlTabName="nme_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" title="nme16" widget="DateEdit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="22" gridHeight="1" gridWidth="8" items="" name="dc1" noEntry="true" notNull="true" posX="82" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="dc1" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nme08" columnCount="" fieldId="23" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" name="nme_file.nme08" noEntry="true" posX="90" posY="0" precisionDecimal="20" rowCount="" scaleDecimal="6" sqlTabName="nme_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="1" table_alias_name="" title="nme08" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA4ADkAYQAxADUANgA0ADYALQA2AGIANQBjAC0ANAAyAGYAYQAtAGIANwBjAGIALQA0AGIAZgBkAGYAMwA1ADkAZgBlADIAOAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADAAYQBkADAAYwA1ADAALQBlADEAMwAyAC0ANAAzAGMAMgAtADkANAA0ADAALQBmADAAZgA2ADIAZABiADAAZQAwADEAZAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGYAZQBkADgAZABlADUALQAyADUAYgBkAC0ANAA5ADcAMgAtAGEAZABjADMALQAwAGUAYwA1ADQAMgA0ADgAYgA3ADEAYQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADcANQBjADcAYwBhAGEALQA2ADQAMQA2AC0ANAA0ADIAZgAtADkANAAyADgALQBlAGIAYQBjAGMAZQAyADQAYQA1ADkAMQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADAANQA0ADQAZgBjADAALQBlAGEANQAyAC0ANAA5ADUAYgAtAGEAYgA1AGUALQBiADIANQA2AGMANwA3AGEANAA3AGQAMwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGMANgA2ADIAOABiADQALQBiADkAZAA3AC0ANAA5AGMAZQAtAGIANwBiADAALQBkADcANQA4ADMANgA1ADQAMQAwAGIAZQB9QBQAAAAAAABAZkAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADYANQBkADIAMgA5ADIALQBjADYAZAA0AC0ANAAxADEAMgAtAGIAMQA4AGMALQA4AGQAZQAxADQAZABiAGUAOAAwADgAMQB9QGSgAAAAAADAIAAAAAAAAD+QYk3S8an+AQAAAEwAewA3ADYAOQAwADkANgA1AGQALQAwADYANwA2AC0ANAA5ADIANwAtADkAZQAxAGYALQBjADUAMwA2AGQAYgBkADEAMQBhADgANgB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewAzADYAZgAxADkAOAA1AGMALQAwAGIAMAA4AC0ANABlADYAMAAtAGEANQBhAGEALQAwADgANgAyADAAMQBkADYAOQA0AGUAMgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADQAYwA4ADMAMAAyADYALQA2AGIAOQBhAC0ANABjAGYAOQAtAGEANQBkADUALQAyADkAOQAwAGYAMABmAGIAMAAxADgAZQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGQAOQBlAGMAYQAyAGEALQBjADAAOAA5AC0ANABhADEAMAAtADgAYwA0ADEALQA3ADIAMwBjADUANgAxADUAYQA5ADMANgB9wC4AAAAAAAA/8AAAAAAAAD+RaHKwIMSeAQAAAEwAewAxADEANgBlAGEAZQBjADcALQBmADMANQBhAC0ANAA2AGIAZgAtAGEAMQAwADYALQA0AGMANgBkAGEAMQA2ADAAZAAwADEAZgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADEAYQA3AGUANQBhADgALQBhADcAZABjAC0ANAAzADQANwAtAGEANQA4AGEALQA3AGIAMgAxAGMANgA0AGQAZQBkAGEANQB9QBQAAAAAAABAaQAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGUAOAAzADIAMgA0ADcALQBmADUANABlAC0ANAAwADgAZQAtAGIANQA4AGQALQA5AGQAMwAxADgAMwA0ADkANwA2AGQAZQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADAANwA1AGEAOQBiADUALQBiAGEANgAzAC0ANABmADUANQAtADkANwAwADUALQA2AGYANwAzAGEAOQA4ADYANwAyADgAMQB9QBQAAAAAAABAa8AAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

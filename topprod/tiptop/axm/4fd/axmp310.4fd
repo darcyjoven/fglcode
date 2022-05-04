@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{95f122f2-0000-4000-83bf-605739a2d4d5}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1e37e4bd-0000-4000-b4f6-bf82d2856158}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="id" sqlTabName="" table_alias_name="" uid="{61045fd6-0000-4000-ae11-da900f3eb6b3}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{4367b4c1-0000-4000-b4ca-76d5baaca599}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="amta" sqlTabName="" table_alias_name="" uid="{f3418572-0000-4000-b03d-078927ada376}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="b" sqlTabName="" table_alias_name="" uid="{ef29d5c5-0000-4000-bb03-b050b7000fba}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="amtb" sqlTabName="" table_alias_name="" uid="{0e6b2407-0000-4000-9818-7346595fab9d}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="d" sqlTabName="" table_alias_name="" uid="{091c5d6c-0000-4000-b9f6-0981046c7b6e}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="c" sqlTabName="" table_alias_name="" uid="{fffada96-0000-4000-b97b-df1b3ec5dad3}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="amtc" sqlTabName="" table_alias_name="" uid="{84a46015-0000-4000-a0f7-19bf98e91798}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="e" sqlTabName="" table_alias_name="" uid="{a16132e1-0000-4000-a22f-a5a730544e70}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{e16df0e2-0000-4000-a056-5caf2e6d00c4}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="82" name="axmp310" spacing="normal" text="axmp310">
+    <VBox gridHeight="20" gridWidth="80" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="16" gridWidth="80" lstrcomment="false" name="gr2166" posX="0" posY="1">
+        <Label posX="2" posY="0" text=" "/>
+        <Label posX="2" posY="1" text="Enter Estimate to Apportion"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Documents" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="id" posX="31" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="2" posY="2" text=" "/>
+        <Group gridHeight="3" gridWidth="79" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="3" text="Material">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" text="Adjust?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label posX="24" posY="1" text="Adjust Amt(Estimate Currency)"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="amta" posX="55" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="79" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="6" text="Labor">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" lstrtitle="false" name="b" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Adjust?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label posX="24" posY="1" text="Adjust Amt(Estimate Currency)"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="amtb" posX="55" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label posX="24" posY="2" text="Adjust Method"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" items="Adjust Labor Hour, Adjust Direct Labor Wage Rate" lstrcomment="false" lstrtitle="false" name="d" notNull="true" posX="39" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="" name="1" text="Adjust Labor Hour"/>
+            <Item lstrtext="" name="2" text="Adjust Direct Labor Wage Rate"/>
+          </ComboBox>
+        </Group>
+        <Group gridHeight="5" gridWidth="79" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="10" text="Overhead">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" lstrtitle="false" name="c" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Adjust?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label posX="24" posY="1" text="Adjust Amt(Estimate Currency)"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="amtc" posX="55" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+          <Label posX="24" posY="2" text="Adjust Method"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" items="Adjust Machine Hour, Adjust Indrt Overhd Apportmt Ratio" lstrcomment="false" lstrtitle="false" name="e" notNull="true" posX="39" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="" name="1" text="Adjust Machine Hour"/>
+            <Item lstrtext="" name="2" text="Adjust Indrt Overhd Apportmt Ratio"/>
+          </ComboBox>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="80" lstrcomment="false" name="gr2167" posX="0" posY="17">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

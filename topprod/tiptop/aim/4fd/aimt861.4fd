@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{fc87b068-0000-4000-8f40-161d02962df8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pie" order="" uid="{b70042b8-0000-4000-8ef9-dd333c9d8be0}" where="">
+    <RecordField colName="pie07" fieldIdRef="9" fieldType="TABLE_COLUMN" name="pie_file.pie07" sqlTabName="pie_file" sqlType="SMALLINT" table_alias_name="" uid="{8531ab06-0000-4000-8aba-8757f234e3ee}"/>
+    <RecordField colName="pie05" fieldIdRef="10" fieldType="TABLE_COLUMN" name="pie_file.pie05" sqlTabName="pie_file" sqlType="VARCHAR" table_alias_name="" uid="{4d080e63-0000-4000-8489-144c9c1c0fce}"/>
+    <RecordField colName="pie03" fieldIdRef="11" fieldType="TABLE_COLUMN" name="pie_file.pie03" sqlTabName="pie_file" sqlType="VARCHAR" table_alias_name="" uid="{a60b4458-0000-4000-bb2e-5073cc3396a4}"/>
+    <RecordField colName="pie02" fieldIdRef="12" fieldType="TABLE_COLUMN" name="pie_file.pie02" sqlTabName="pie_file" sqlType="VARCHAR" table_alias_name="" uid="{41b0e16f-0000-4000-a81b-e3b4b188edbc}"/>
+    <RecordField colName="" fieldIdRef="13" name="ima02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d34e11ab-0000-4000-806a-e465956e0a2d}"/>
+    <RecordField colName="pie04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pie_file.pie04" sqlTabName="pie_file" sqlType="VARCHAR" table_alias_name="" uid="{7789c30c-0000-4000-b6ef-8b31604ce4fe}"/>
+    <RecordField colName="" fieldIdRef="3" name="qty" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{9d2e880c-0000-4000-b624-740013cf16d8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ecacb624-0000-4000-aa4b-5ce14ec0e3a1}" where="">
+    <RecordField colName="pid01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pid_file.pid01" sqlTabName="pid_file" sqlType="VARCHAR" table_alias_name="" uid="{b02c3448-0000-4000-b930-5af0cb307531}"/>
+    <RecordField colName="pid02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pid_file.pid02" sqlTabName="pid_file" sqlType="VARCHAR" table_alias_name="" uid="{bb8eb966-0000-4000-836c-9cbfe052af6f}"/>
+    <RecordField colName="pid03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pid_file.pid03" sqlTabName="pid_file" sqlType="VARCHAR" table_alias_name="" uid="{d4719aeb-0000-4000-a745-ecbe01851281}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="ima02_d" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9a5fdf3e-0000-4000-bda4-bfa33b5c0dee}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ee643844-0000-4000-9c33-5b51baa6ae4a}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{5b7b19da-0000-4000-9531-e4c0444ed7de}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="116" name="aimt861" spacing="normal" text="aimt861">
+    <VBox gridHeight="25" gridWidth="105" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="9" gridWidth="105" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="7" gridWidth="55" lstrcomment="false" name="gr3522" posX="0" posY="0">
+            <Group gridHeight="6" gridWidth="54" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Inventory Sheet No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pid01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pid_file.pid01" posX="22" posY="1" rowCount="" sqlTabName="pid_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="W/O No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pid02" columnCount="" comment="&lt;^P&gt;Query W/O No." fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pid_file.pid02" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="pid_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="3" text="Production Item"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pid03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pid_file.pid03" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="pid_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="4" text="Part Name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02_d" noEntry="true" posX="22" posY="4" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="105" lstrcomment="false" name="s_pie" posX="0" posY="10" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pie07" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="pie_file.pie07" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="pie_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Ln#" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pie05" columnCount="" comment="&lt;^P&gt;Qry Workstation" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="pie_file.pie05" posX="4" posY="0" rowCount="" sqlTabName="pie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Workstation" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pie03" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="pie_file.pie03" posX="16" posY="0" rowCount="" sqlTabName="pie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Task" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pie02" columnCount="" comment="&lt;^P&gt;Qry Item Master   " fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="pie_file.pie02" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="pie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Item Inv Taking No." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="43" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Part Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pie04" columnCount="" comment="&lt;^P&gt;Qry Unit &lt;^Y&gt;Create Unit   &lt;^U&gt;/&lt;^T&gt;Create Item/ Unit conversion" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" image="zoom" lstrcomment="false" lstrtitle="false" name="pie_file.pie04" posX="73" posY="0" rowCount="" sqlTabName="pie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Unit" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Modify Inventory Taking Employee/Date" fieldId="3" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="qty" posX="75" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="11" table_alias_name="" title="2nd Inv Qty" widget="ButtonEdit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="105" lstrcomment="false" name="gr3523" posX="0" posY="22">
+        <HLine gridWidth="10" name="hl1055" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1056" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

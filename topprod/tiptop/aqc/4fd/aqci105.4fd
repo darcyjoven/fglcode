@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9a7191f0-7b20-4fb3-a43c-15ad0d551005}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qdg" order="" uid="{28ea68fa-1a36-464c-b5cd-6e589f7eefcc}" where="">
+    <RecordField colName="qdg01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="qdg_file.qdg01" sqlTabName="qdg_file" sqlType="VARCHAR" table_alias_name="" uid="{85a4e84e-6461-422f-9b21-b461d6151d81}"/>
+    <RecordField colName="qdg02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="qdg_file.qdg02" sqlTabName="qdg_file" sqlType="DECIMAL" table_alias_name="" uid="{382f6313-0352-4471-bc96-20ccd530a6c5}"/>
+    <RecordField colName="qdg03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="qdg_file.qdg03" sqlTabName="qdg_file" sqlType="VARCHAR" table_alias_name="" uid="{bfd0e508-e6a4-42ef-b36b-7430bd310996}"/>
+    <RecordField colName="qdg04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="qdg_file.qdg04" sqlTabName="qdg_file" sqlType="VARCHAR" table_alias_name="" uid="{cebe368f-d100-4943-836e-216bd9e0b037}"/>
+    <RecordField colName="qdg05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="qdg_file.qdg05" sqlTabName="qdg_file" sqlType="SMALLINT" table_alias_name="" uid="{fbfc276d-1624-442a-acab-2bb8108919d3}"/>
+    <RecordField colName="qdg06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="qdg_file.qdg06" sqlTabName="qdg_file" sqlType="SMALLINT" table_alias_name="" uid="{27d3d15c-0938-4c7f-b4dd-d33a38bee545}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8638a384-9473-40f4-ad83-a37cfbe46a68}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{51d9b87f-8eba-4b51-a5ff-ab55e1ad2f64}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="87" name="aqci105" spacing="normal" text="aqci105">
+    <VBox gridHeight="18" gridWidth="86" name="vb5" posX="1" posY="0" splitter="">
+      <Folder gridHeight="13" gridWidth="86" lstrcomment="false" name="pc9" posX="0" posY="1">
+        <Page name="Page16" text="Page01">
+          <Table gridHeight="12" gridWidth="81" lstrcomment="false" name="s_qdg" posX="0" posY="0" totalRows="10">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="qdg01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="1916(count), 1916(measurement)" lstrcomment="false" lstrtitle="false" name="qdg_file.qdg01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="qdg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="QC Degree" widget="ComboBox">
+              <Item lstrtext="false" name="3" text="1916(count)"/>
+              <Item lstrtext="false" name="4" text="1916(measurement)"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qdg02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Normal/Special/1916, Normal/Special/1916, Normal/Special/1916, Special/1916, 1916, 1916, 1916, Reduced-Qty QC, Strict QC" lstrcomment="false" lstrtitle="false" name="qdg_file.qdg02" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="qdg_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="2" table_alias_name="" title="AQL" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Normal/Special/1916"/>
+              <Item lstrtext="false" name="2" text="Normal/Special/1916"/>
+              <Item lstrtext="false" name="3" text="Normal/Special/1916"/>
+              <Item lstrtext="false" name="4" text="Special/1916"/>
+              <Item lstrtext="false" name="5" text="1916"/>
+              <Item lstrtext="false" name="6" text="1916"/>
+              <Item lstrtext="false" name="7" text="1916"/>
+              <Item lstrtext="false" name="R" text="Reduced-Qty QC"/>
+              <Item lstrtext="false" name="T" text="Strict QC"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="qdg03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="qdg_file.qdg03" notNull="true" posX="18" posY="0" required="true" rowCount="" sqlTabName="qdg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Sample Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="qdg04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="qdg_file.qdg04" notNull="true" posX="30" posY="0" required="true" rowCount="" sqlTabName="qdg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Adjust Sample Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qdg05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="qdg_file.qdg05" posX="49" posY="0" required="false" rowCount="" sqlTabName="qdg_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Accept" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qdg06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="qdg_file.qdg06" posX="62" posY="0" required="false" rowCount="" sqlTabName="qdg_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Reject" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="86" lstrcomment="false" name="gr11" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl15" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl16" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiAGYAZAAwAGUANQAwADgALQBlADYAYQA0AC0ANAAyAGUAZgAtAGIAMwA2AGIALQA3ADQAMwAwAGIAZAAzADEAMAA5ADkANgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADgAZQBhADYAOABmAGEALQAxAGEAMwA2AC0ANAA2ADQAYwAtAGIANQBjAGQALQA2AGUANQA4ADkAZgA3AGUAZQBmAGMAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADgAMgBmADYAMwAxADMALQAwADMANQAyAC0ANAA0ADcAMQAtAGIAYwA5ADYALQAyADAAYwBjAGQANQAzADAAYQA2AGMANQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADUAYQA0AGUAOAA0AGUALQA2ADQANgAxAC0ANAAyADIAZgAtADkAYgAyADEALQBiADQANgAxAGQANgAxADUAMQBkADgAMQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGIAZgBjADIANwA2AGQALQAxADYAMgA0AC0ANAA0ADIAYQAtAGEAYwBhAGIALQAyAGIAYgA4ADEAMAA4ADkAMQA5AGQAMwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADcAZAAzAGQAMQA1AGMALQAwADkAMwA4AC0ANABjADcAZgAtAGIANABkAGQALQBkADMAMwBhADMAOABiAGUAZQA1ADQANQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADEAZAA5AGIAOAA3AGYALQA4AGUAYgBhAC0ANABiADUAMQAtAGEANQBmAGYALQBhAGIANQA1AGUAMQBhAGQAMgBmADYANAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADYAMwA4AGEAMwA4ADQALQA5ADQANwAzAC0ANAAwAGYANAAtAGEAZAA4ADMALQBhADMANwBjAGYAYgBlADQANgBhADYAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGUAYgBlADMANgA4AGYALQBkADEAMAAwAC0ANAA5ADQAMwAtADgAMwA2AGUALQAyADEANgBiAGQAOQBlADAAYgAwADMANwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

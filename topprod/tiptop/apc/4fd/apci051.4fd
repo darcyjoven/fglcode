@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b4507d79-0000-4000-8690-012f5daa730a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{efa5d2f5-0000-4000-9048-65c04647d8bf}" where="">
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ef0bf0db-0000-4000-816c-da867f181c91}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d7465f26-0000-4000-89dc-07ec2be6c6fb}"/>
+    <RecordField colName="rze01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rze_file.rze01" sqlTabName="rze_file" sqlType="VARCHAR" table_alias_name="" uid="{5d1c394b-634b-4021-9642-3409b8ecaabb}"/>
+    <RecordField colName="" fieldIdRef="5" name="rze01_desc" sqlTabName="" table_alias_name="" uid="{f7f7020b-f5bc-4c5e-b30d-01a10ab2fc50}"/>
+    <RecordField colName="rze02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="rze_file.rze02" sqlTabName="rze_file" sqlType="VARCHAR" table_alias_name="" uid="{bd6ab930-a674-4c15-848d-d68b14942ac2}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rze" order="" uid="{4a3339a1-b2ec-420d-88d9-b4f5dacb4366}" where="">
+    <RecordField colName="rze03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="rze_file.rze03" sqlTabName="rze_file" sqlType="VARCHAR" table_alias_name="" uid="{78a57d9e-a62d-4c66-bece-f64603fed8e0}"/>
+    <RecordField colName="" fieldIdRef="8" name="rze03_desc" sqlTabName="" table_alias_name="" uid="{26c12b77-cf1f-4d40-bc6c-cf16ac45cd87}"/>
+    <RecordField colName="rze04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="rze_file.rze04" sqlTabName="rze_file" sqlType="VARCHAR" table_alias_name="" uid="{0bff470c-39b6-4142-bc01-106246ee51d1}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="rze04_desc" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{4ee5360d-e231-46a3-aae4-aa5af4093840}"/>
+    <RecordField colName="rzeacti" defaultValue="Y" fieldIdRef="13" fieldType="TABLE_COLUMN" name="rze_file.rzeacti" sqlTabName="rze_file" sqlType="VARCHAR" table_alias_name="" uid="{e556837f-0716-4807-88dc-abf63f85af7d}"/>
+    <RecordField colName="rzepos" defaultValue="1" fieldIdRef="14" fieldType="TABLE_COLUMN" name="rze_file.rzepos" sqlTabName="rze_file" sqlType="VARCHAR" table_alias_name="" uid="{01665340-3f5a-4c1e-958e-f49968087103}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="119" name="apci051" spacing="normal" text="apci051">
+    <VBox gridHeight="18" gridWidth="107" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="3" gridWidth="107" lstrcomment="false" name="gr01" posX="0" posY="1">
+        <Label posX="1" posY="1" text="Plant"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rze01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" name="rze_file.rze01" notNull="true" posX="9" posY="1" required="true" rowCount="" sqlTabName="rze_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="20" name="rze01_desc" noEntry="true" posX="31" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Edit1" widget="Edit"/>
+        <Label posX="54" posY="1" text="Cut"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rze02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" name="rze_file.rze02" notNull="true" posX="62" posY="1" required="true" rowCount="" sqlTabName="rze_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+      </Grid>
+      <Table gridHeight="11" gridWidth="107" name="s_rze" posX="0" posY="4" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rze03" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom.png" name="rze_file.rze03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="rze_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Parameters No." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="20" name="rze03_desc" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Parameters No.Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rze04" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom.png" name="rze_file.rze04" posX="42" posY="0" rowCount="" sqlTabName="rze_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Parameter value" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" name="rze04_desc" noEntry="true" posX="64" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Parameter value name" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzeacti" columnCount="" defaultValue="Y" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrtext="false" name="rze_file.rzeacti" notNull="true" posX="84" posY="0" rowCount="" sqlTabName="rze_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Acti." valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzepos" columnCount="" defaultValue="1" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Add-No passed, Modify-No passed, Passed, Change,not preach" name="rze_file.rzepos" noEntry="true" notNull="true" posX="92" posY="0" rowCount="" sqlTabName="rze_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="POS?" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Add-No passed"/>
+          <Item lstrtext="false" name="2" text="Modify-No passed"/>
+          <Item lstrtext="false" name="3" text="Passed"/>
+          <Item lstrtext="false" name="4" text="Change,not preach"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="2" gridWidth="107" lstrcomment="false" name="gr02" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl01" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl02" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAwADEANgA2ADUAMwA0ADAALQAzAGYANQBhAC0ANABjADEAZQAtADkANQA4AGUALQBmADQAOQA5ADYAOAAwADgANwAxADAAMwB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADcANAA2ADUAZgAyADYALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOQBkAGMALQAwADcAZQBjADIAYgBlADYAYwA2AGYAYgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADUANQA2ADgAMwA3AGYALQAwADcAMQA2AC0ANAA4ADAANwAtADgAOABkAGMALQBhAGIAZgA2ADMAZgA4ADUAYQBmADcAZAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAyADYAYwAxADIAYgA3ADcALQBjAGYAMQBmAC0ANABkADQAMAAtAGIAYwA2AGMALQBjAGYAMQA2AGEAYwA0ADUAYwBkADgANwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGEAMwAzADMAOQBhADEALQBiADIAZQBjAC0ANAAyADAAZAAtADgAOABkADkALQBiADQAZgA1AGQAYQBjAGIANAAzADYANgB9QD4AAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGQAMQBjADMAOQA0AGIALQA2ADMANABiAC0ANAAwADIAMQAtADkANgA0ADIALQAzADQAMAA5AGIAOABlAGMAYQBhAGIAYgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADcAZgA3ADAAMgAwAGIALQBmADUAYgBjAC0ANABjADUAZQAtAGIAMwAwAGQALQAwADEAYQAxADAAYQBiADIAZgBjADUAMAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADgAYQA1ADcAZAA5AGUALQBhADYAMgBkAC0ANABjADYANgAtAGIAZQBjAGUALQBmADYANAA2ADAAMwBmAGUAZAA4AGUAMAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGYAYQA1AGQAMgBmADUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMAA0ADgALQA2ADUAYwAwADQANgA0ADcAZAA4AGIAZgB9QGZgAAAAAADAOgAAAAAAAD9gYk3S8an8AQAAAEwAewA0AGUAZQA1ADMANgAwAGQALQBlADIAMwAxAC0ANAA2AGEAMwAtAGEAYQBlADQALQBhAGEANQBhAGYANAAwADkAMwA4ADQAMAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGYAMABiAGYAMABkAGIALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMQA2AGMALQBkAGEAOAA2ADcAZgAxADgAMQBjADkAMQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGQANgBhAGIAOQAzADAALQBhADYANwA0AC0ANABjADEANQAtADgANAA4AGQALQBkADYAOABiADEANAA5ADQAMgBhAGMAMgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGIAZgBmADQANwAwAGMALQAzADkAYgA2AC0ANAAxADQAMgAtAGIAYwAwADEALQAxADAANgAyADQANgBlAGUANQAxAGQAMQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

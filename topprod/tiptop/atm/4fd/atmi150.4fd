@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a5d00e90-0000-4000-acd7-f4d901586d46}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oaj" order="" uid="{f06b71a7-0000-4000-ba4d-1bb255af4181}" where="">
+    <RecordField colName="oaj01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oaj_file.oaj01" sqlTabName="oaj_file" sqlType="VARCHAR" table_alias_name="" uid="{2bb0bdff-0000-4000-884d-997e8bf3ed6f}"/>
+    <RecordField colName="oaj02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oaj_file.oaj02" sqlTabName="oaj_file" sqlType="VARCHAR" table_alias_name="" uid="{59ba813b-0000-4000-8ac0-82795a0931ac}"/>
+    <RecordField colName="oaj03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oaj_file.oaj03" sqlTabName="oaj_file" sqlType="VARCHAR" table_alias_name="" uid="{da3df838-0000-4000-ae5a-e56658f80c18}"/>
+    <RecordField colName="" fieldIdRef="4" name="tqe02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d2bd1d90-0000-4000-a16a-4a7c7401b904}"/>
+    <RecordField colName="" fieldIdRef="5" name="oajacti" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{96a88819-0000-4000-8a02-39497d8d935b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8ee19164-0000-4000-8cd2-b71e993b84c5}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{225c303f-0000-4000-8946-cff7cfd76dd3}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="91" name="atmi150" spacing="normal" text="atmi150">
+    <VBox gridHeight="18" gridWidth="88" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="88" lstrcomment="false" name="pc324" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="86" lstrcomment="false" name="s_oaj" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaj01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="oaj_file.oaj01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Expense Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaj02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oaj_file.oaj02" notNull="true" posX="15" posY="0" required="true" rowCount="" sqlTabName="oaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Expense Description" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaj03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="oaj_file.oaj03" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="oaj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Reason Code" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tqe02" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Reason Name" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="oajacti" notNull="true" posX="70" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="88" lstrcomment="false" name="gr1389" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl474" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl475" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

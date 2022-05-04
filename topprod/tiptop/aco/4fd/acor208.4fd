@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9abce45f-0000-4000-9646-02aa80a94709}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d7ab7703-0000-4000-8ff3-d91838436959}" where="">
+    <RecordField colName="cor06" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cor_file.cor06" sqlTabName="cor_file" sqlType="VARCHAR" table_alias_name="" uid="{7fb4e5ae-0000-4000-94ef-18682218c809}"/>
+    <RecordField colName="cor01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="cor_file.cor01" sqlTabName="cor_file" sqlType="VARCHAR" table_alias_name="" uid="{41f7bbb9-0000-4000-a16b-1d9c87e10373}"/>
+    <RecordField colName="cor05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="cor_file.cor05" sqlTabName="cor_file" sqlType="VARCHAR" table_alias_name="" uid="{214cae1d-0000-4000-8fc1-b698edfe623b}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{9c389dea-0000-4000-927f-b7c99680f43e}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{552ea2d0-0000-4000-bc5f-97caff2572f7}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3a31fd9a-0000-4000-b853-850e635c62e4}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="s1" sqlTabName="" table_alias_name="" uid="{2d382aae-0000-4000-8f6d-8908354d2a73}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="s2" sqlTabName="" table_alias_name="" uid="{2bcac48f-0000-4000-a606-4753a9c0bf66}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="s3" sqlTabName="" table_alias_name="" uid="{f749a65b-0000-4000-be93-5ed92c38eb3f}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bcbcd24d-0000-4000-b3c2-ef7ce7e839a5}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="66" name="acor208" spacing="normal" text="acor208">
+    <VBox gridHeight="21" gridWidth="63" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="63" lstrcomment="false" name="gr1393" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="46" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Custom No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cor06" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="cor_file.cor06" posX="25" posY="1" required="true" rowCount="" sqlTabName="cor_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Document No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cor01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="cor_file.cor01" posX="25" posY="2" required="true" rowCount="" sqlTabName="cor_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Goods No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cor05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="cor_file.cor05" posX="25" posY="3" required="true" rowCount="" sqlTabName="cor_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="10" gridWidth="63" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="8" text="INPUT">
+        <Grid gridHeight="8" gridWidth="43" lstrcomment="false" name="gr1394" posX="1" posY="1">
+          <Label posX="2" posY="0" text="Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bdate" notNull="true" posX="16" posY="0" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+          <Label posX="27" posY="0" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="edate" notNull="true" posX="29" posY="0" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="3" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Convert HS Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Group gridHeight="4" gridWidth="42" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="3" text="Sequence">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Date, Doc No., Customer" lstrcomment="false" lstrtitle="false" name="s1" posX="2" posY="1" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="Date"/>
+              <Item lstrtext="" name="2" text="Doc No."/>
+              <Item lstrtext="" name="3" text="Customer"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Date, Doc No., Customer" lstrcomment="false" lstrtitle="false" name="s2" posX="15" posY="1" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="Date"/>
+              <Item lstrtext="" name="2" text="Doc No."/>
+              <Item lstrtext="" name="3" text="Customer"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Date, Doc No., Customer" lstrcomment="false" lstrtitle="false" name="s3" posX="28" posY="1" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="Date"/>
+              <Item lstrtext="" name="2" text="Doc No."/>
+              <Item lstrtext="" name="3" text="Customer"/>
+            </ComboBox>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="63" lstrcomment="false" name="gr1395" posX="0" posY="18">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

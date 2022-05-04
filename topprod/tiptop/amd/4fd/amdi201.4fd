@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d52c19f9-0000-4000-b37c-618087c080ef}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_amh" order="" uid="{38854d58-0000-4000-96d3-d76b458b8315}" where="">
+    <RecordField colName="amh04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="amh_file.amh04" sqlTabName="amh_file" sqlType="VARCHAR" table_alias_name="" uid="{bc37e1a0-0000-4000-8b63-c365dd3b1cea}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="occ02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{25d45307-0000-4000-9273-7f97e2ed0a25}"/>
+    <RecordField colName="amh05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="amh_file.amh05" sqlTabName="amh_file" sqlType="VARCHAR" table_alias_name="" uid="{49dd0e92-0000-4000-b837-fcb4d032f88e}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="azf03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5330768e-0000-4000-98db-084593fe2e09}"/>
+    <RecordField colName="amh06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="amh_file.amh06" sqlTabName="amh_file" sqlType="VARCHAR" table_alias_name="" uid="{0be2d717-0000-4000-9672-1d6901bcb615}"/>
+    <RecordField colName="amh07" fieldIdRef="7" fieldType="TABLE_COLUMN" name="amh_file.amh07" sqlTabName="amh_file" sqlType="VARCHAR" table_alias_name="" uid="{a4a87294-0000-4000-a203-85a55b4d6ddf}"/>
+    <RecordField colName="amhacti" defaultValue="Y" fieldIdRef="20" fieldType="TABLE_COLUMN" name="amh_file.amhacti" sqlTabName="amh_file" sqlType="VARCHAR" table_alias_name="" uid="{7caf6e39-0000-4000-bb85-37a9d0f4d041}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6a29f284-0000-4000-a9e3-0396fa706a51}" where="">
+    <RecordField colName="amh01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="amh_file.amh01" sqlTabName="amh_file" sqlType="VARCHAR" table_alias_name="" uid="{02180bc1-0000-4000-82e9-59c85fed06e3}"/>
+    <RecordField colName="amh02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="amh_file.amh02" sqlTabName="amh_file" sqlType="VARCHAR" table_alias_name="" uid="{dff1b686-0000-4000-a668-849ff2fea114}"/>
+    <RecordField colName="amh03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="amh_file.amh03" sqlTabName="amh_file" sqlType="VARCHAR" table_alias_name="" uid="{6e30dc37-0000-4000-8310-93458fb4cf54}"/>
+    <RecordField colName="" fieldIdRef="21" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{adfb6783-0000-4000-928a-34778387b6ea}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cn1" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{7f2d1ce5-0000-4000-986f-f04b0160997e}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="95" minHeight="1" minWidth="1" name="amdi201" spacing="normal" text="aooi300">
+    <VBox gridHeight="25" gridWidth="93" name="VBox1" posX="1" posY="0">
+      <Folder gridHeight="9" gridWidth="93" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Grid gridHeight="7" gridWidth="89" name="Grid1" posX="1" posY="1">
+            <Label posX="1" posY="1" text="Main Store Number"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amh01" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="amh_file.amh01" notNull="true" posX="28" posY="1" required="true" rowCount="" sqlTabName="amh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="3" text="Classification Method"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amh02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Othr Group Code 1, Othr Group Code 2, Othr Group Code 3, Main Group Code, Product Classification" lstrcomment="false" lstrtitle="false" name="amh_file.amh02" notNull="true" posX="28" posY="3" required="true" rowCount="" sqlTabName="amh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="D" text="Othr Group Code 1"/>
+              <Item lstrtext="false" name="E" text="Othr Group Code 2"/>
+              <Item lstrtext="false" name="F" text="Othr Group Code 3"/>
+              <Item lstrtext="false" name="M" text="Main Group Code"/>
+              <Item lstrtext="false" name="P" text="Product Classification"/>
+            </ComboBox>
+            <Label posX="1" posY="5" text="Memo"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amh03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="amh_file.amh03" posX="28" posY="5" rowCount="" sqlTabName="amh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="93" lstrcomment="false" name="s_amh" posX="0" posY="10" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amh04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="amh_file.amh04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="amh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Store Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="occ02" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Customer Abbr." widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amh05" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" name="amh_file.amh05" notNull="true" posX="25" posY="0" required="true" rowCount="" sqlTabName="amh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Product Category No." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" name="azf03" noEntry="true" posX="43" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Item Category No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amh06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="amh_file.amh06" posX="60" posY="0" rowCount="" sqlTabName="amh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Matched Store Code" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amh07" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="amh_file.amh07" posX="68" posY="0" rowCount="" sqlTabName="amh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Vendor Code" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amhacti" colorCondition="black" columnCount="" defaultValue="Y" fieldId="20" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" name="amh_file.amhacti" notNull="true" posX="76" posY="0" rowCount="" sqlTabName="amh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Validity? (y/n)" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="93" lstrcomment="false" name="gr4644" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl1452" posX="2" posY="1"/>
+        <Label posX="13" posY="1" text="ROWS"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="21" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="19" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn1" noEntry="true" posX="28" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1453" posX="36" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

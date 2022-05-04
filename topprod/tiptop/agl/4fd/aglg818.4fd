@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{8fb67c28-d9d4-4548-b545-a2a828e45d15}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b5e3821b-ac3a-434e-90d5-28f02683c572}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="o_abg00" sqlTabName="" table_alias_name="" uid="{88c403c5-0bbe-406b-ba94-5576fb0408fa}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="n_abg00" sqlTabName="" table_alias_name="" uid="{a8adcfc6-46c6-4628-bc08-53532a11a0f4}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="o_abg01" sqlTabName="" table_alias_name="" uid="{c7f7c1f9-dfe9-468b-b6a2-36940b0b672c}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="b_abg06" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{631cac2b-df15-4a71-8c77-72b85ee0cf72}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="e_abg06" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{8a859ea5-ac6f-4b6d-ba3e-e8459f743798}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{3cd2b2bf-1d17-4cab-981f-4d46f8f91162}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="67" name="aglr818" spacing="normal" text="aglr818">
+    <VBox gridHeight="12" gridWidth="63" name="vb2" posX="2" posY="1">
+      <Group gridHeight="8" gridWidth="63" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="1" text="INPUT">
+        <Grid gridHeight="6" gridWidth="50" lstrcomment="false" name="gr2514" posX="2" posY="1">
+          <Label posX="1" posY="0" text="Original Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="o_abg00" notNull="true" posX="28" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="1" text="Carry to Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="n_abg00" notNull="true" posX="28" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="OriginalDocType"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="o_abg01" notNull="true" posX="28" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Initial voucher date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="b_abg06" notNull="true" posX="28" posY="3" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="4" text="EndingVoucher Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="e_abg06" notNull="true" posX="28" posY="4" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="63" lstrcomment="false" name="gr2515" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADgAYQBkAGMAZgBjADYALQA0ADYAYwA2AC0ANAA2ADIAOAAtAGIAYwAwADgALQA1ADMANQAzADIAYQAxADEAYQAwAGYANAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADMAMQBjAGEAYwAyAGIALQBkAGYAMQA1AC0ANABhADcAMQAtADgAYwA3ADcALQA3ADIAYgA4ADUAZQBlADAAYwBmADcAMgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGMAZAAyAGIAMgBiAGYALQAxAGQAMQA3AC0ANABjAGEAYgAtADkAOAAxAGYALQA0AGQANAA2AGYAOABmADkAMQAxADYAMgB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADcAZgA3AGMAMQBmADkALQBkAGYAZQA5AC0ANAA2ADgAYgAtAGIANgBhADIALQAzADYAOQA0ADAAYgAwAGIANgA3ADIAYwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADgAYwA0ADAAMwBjADUALQAwAGIAYgBlAC0ANAAwADYAYgAtAGIAYQA5ADQALQA1ADUANwA2AGYAYgAwADQAMAA4AGYAYQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADUAZQAzADgAMgAxAGIALQBhAGMAMwBhAC0ANAAzADQAZQAtADkAMABkADUALQAyADgAZgAwADIANgA4ADMAYwA1ADcAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGEAOAA1ADkAZQBhADUALQBhAGMANgBmAC0ANABiADYAZAAtAGIAYQAzAGUALQBlADgANAA1ADkAZgA3ADQAMwA3ADkAOAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

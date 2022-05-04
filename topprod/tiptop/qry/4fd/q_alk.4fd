@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{910aa18f-0000-4000-b9d9-cd6673501bab}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_alk" order="" uid="{0f1b8b4a-0000-4000-8ede-559e26691e82}" where="">
+    <RecordField colName="" fieldIdRef="5" name="check" sqlTabName="" table_alias_name="" uid="{a4c1a430-0000-4000-9e47-5d4352d62f36}"/>
+    <RecordField colName="alk01" fieldIdRef="6" fieldType="TABLE_COLUMN" name="alk_file.alk01" sqlTabName="alk_file" sqlType="VARCHAR" table_alias_name="" uid="{f8ca6771-0000-4000-b48b-32bd59839151}"/>
+    <RecordField colName="alk07" fieldIdRef="7" fieldType="TABLE_COLUMN" name="alk_file.alk07" sqlTabName="alk_file" sqlType="VARCHAR" table_alias_name="" uid="{b674af69-0000-4000-8597-0054ec4c81f5}"/>
+    <RecordField colName="alk02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="alk_file.alk02" sqlTabName="alk_file" sqlType="DATE" table_alias_name="" uid="{161ad220-0000-4000-b4c6-88388405d3a1}"/>
+    <RecordField colName="alk13" fieldIdRef="9" fieldType="TABLE_COLUMN" name="alk_file.alk13" sqlTabName="alk_file" sqlType="DECIMAL" table_alias_name="" uid="{e48c8dcb-0000-4000-8fe2-5c8cea692a7d}"/>
+    <RecordField colName="alk12" fieldIdRef="10" fieldType="TABLE_COLUMN" name="alk_file.alk12" sqlTabName="alk_file" sqlType="DECIMAL" table_alias_name="" uid="{0b991949-0000-4000-8f27-c9e9b025f51c}"/>
+    <RecordField colName="alk33" fieldIdRef="2" fieldType="TABLE_COLUMN" name="alk_file.alk33" sqlTabName="alk_file" sqlType="DECIMAL" table_alias_name="" uid="{99a918a7-0000-4000-9c3e-fe6bb5df44cd}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{49e8999c-0000-4000-873e-9bb6a51ef958}" where="">
+    <RecordField colName="alk03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="alk_file.alk03" sqlTabName="alk_file" sqlType="VARCHAR" table_alias_name="" uid="{8c51200e-0000-4000-8eb9-57fe7761c951}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="alk13_t" sqlTabName="" table_alias_name="" uid="{8d93a28b-0000-4000-9ca1-7d10ed1b0fd8}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="alk33_t" sqlTabName="" table_alias_name="" uid="{bf227ed1-0000-4000-8669-13db18a7df62}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="134" name="q_alk" spacing="normal" text="Creadit Letter Arrival Query">
+    <VBox gridHeight="17" gridWidth="131" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="3" gridWidth="131" lstrcomment="false" name="gr3724" posX="0" posY="1">
+        <Label posX="1" posY="0" text="L/C No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alk03" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="alk_file.alk03" posX="22" posY="0" rowCount="" sqlTabName="alk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="1" text="Arrival Notify $ Sum"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="alk13_t" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Arriving Note $ Sum"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="alk33_t" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="131" lstrcomment="false" name="s_alk" posX="0" posY="4" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alk01" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="alk_file.alk01" posX="6" posY="0" rowCount="" sqlTabName="alk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Arrival Notify No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alk07" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="alk_file.alk07" posX="27" posY="0" rowCount="" sqlTabName="alk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Arriving Notify No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alk02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="alk_file.alk02" posX="49" posY="0" rowCount="" sqlTabName="alk_file" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Arrival Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alk13" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="alk_file.alk13" posX="64" posY="0" rowCount="" sqlTabName="alk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Arrival Notify $" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alk12" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="alk_file.alk12" posX="83" posY="0" rowCount="" sqlTabName="alk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Arrival Exchange Rate" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="alk33" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="alk_file.alk33" posX="107" posY="0" rowCount="" sqlTabName="alk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Arriving Note $" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

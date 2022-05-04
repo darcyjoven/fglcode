@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6c704845-0000-4000-b398-ec19c5317008}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{296ab369-0000-4000-915d-82c13c05f212}" where="">
+    <RecordField colName="azk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="azk_file.azk01" sqlTabName="azk_file" sqlType="VARCHAR" table_alias_name="" uid="{74410c97-0000-4000-878d-40504c4f1e51}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="azi02" sqlTabName="" table_alias_name="" uid="{40121035-0000-4000-b55e-d4079e6e9952}"/>
+    <RecordField colName="azk02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="azk_file.azk02" sqlTabName="azk_file" sqlType="DATE" table_alias_name="" uid="{08aacc15-0000-4000-a670-b44e68c7f821}"/>
+    <RecordField colName="azk03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="azk_file.azk03" sqlTabName="azk_file" sqlType="DECIMAL" table_alias_name="" uid="{da80d3f6-0000-4000-93d5-fab7eb938c0c}"/>
+    <RecordField colName="azk04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="azk_file.azk04" sqlTabName="azk_file" sqlType="DECIMAL" table_alias_name="" uid="{db1c1a01-0000-4000-a012-bf8bf3103aea}"/>
+    <RecordField colName="azk041" fieldIdRef="6" fieldType="TABLE_COLUMN" name="azk_file.azk041" sqlTabName="azk_file" sqlType="DECIMAL" table_alias_name="" uid="{d0510f4d-0000-4000-9d15-704e5a62d5e5}"/>
+    <RecordField colName="azk051" fieldIdRef="7" fieldType="TABLE_COLUMN" name="azk_file.azk051" sqlTabName="azk_file" sqlType="DECIMAL" table_alias_name="" uid="{a92a845b-0000-4000-8643-cec985a3dbc4}"/>
+    <RecordField colName="azk052" fieldIdRef="8" fieldType="TABLE_COLUMN" name="azk_file.azk052" sqlTabName="azk_file" sqlType="DECIMAL" table_alias_name="" uid="{8513cd9a-0000-4000-8370-e513e5d38c2f}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3c72a7e4-0000-4000-a9df-a69778eff578}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="84" name="aooi070" spacing="normal" text="aooi070">
+    <VBox gridHeight="17" gridWidth="81" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="13" gridWidth="81" lstrcomment="false" name="pc835" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="11" gridWidth="80" lstrcomment="false" name="gr4623" posX="0" posY="0">
+            <Label posX="2" posY="0" text="Currency"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azk01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^P&gt;Qry Currency Table" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="azk_file.azk01" notNull="true" posX="32" posY="0" required="true" rowCount="" sqlTabName="azk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="azi02" noEntry="true" posX="45" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="2" posY="1" text="Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azk02" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="azk_file.azk02" notNull="true" posX="32" posY="1" required="true" rowCount="" sqlTabName="azk_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+            <Group gridHeight="8" gridWidth="79" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="2">
+              <Label posX="1" posY="1" text="Bank Buying ExRt"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azk03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="azk_file.azk03" notNull="true" posX="31" posY="1" required="true" rowCount="" sqlTabName="azk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Bank Selling ExRt"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azk04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="azk_file.azk04" notNull="true" posX="31" posY="2" required="true" rowCount="" sqlTabName="azk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="3" text="Bank Average ExRt"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azk041" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="azk_file.azk041" notNull="true" posX="31" posY="3" required="true" rowCount="" sqlTabName="azk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="5" text="Customs Buying ExRt"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azk051" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="azk_file.azk051" notNull="true" posX="31" posY="5" required="true" rowCount="" sqlTabName="azk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="6" text="Customs Selling ExRt"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azk052" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="azk_file.azk052" notNull="true" posX="31" posY="6" required="true" rowCount="" sqlTabName="azk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ButtonEdit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="81" lstrcomment="false" name="gr4624" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl1428" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1429" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

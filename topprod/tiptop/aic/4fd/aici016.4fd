@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d07ddae2-0000-4000-9292-12e2e1c87d36}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_icq" order="" uid="{8ba00cf2-0000-4000-ae76-2886b70b71c8}" where="">
+    <RecordField colName="icq01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="icq_file.icq01" sqlTabName="icq_file" sqlType="VARCHAR" table_alias_name="" uid="{6d271616-0000-4000-ba1e-fcda707d502c}"/>
+    <RecordField colName="" fieldIdRef="2" name="pmc03" sqlTabName="" table_alias_name="" uid="{ab4d4ed2-0000-4000-8d56-1a43094d7e76}"/>
+    <RecordField colName="icq02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="icq_file.icq02" sqlTabName="icq_file" sqlType="VARCHAR" table_alias_name="" uid="{3215cc6a-0000-4000-ba8d-a782dbd9bd9a}"/>
+    <RecordField colName="icq03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="icq_file.icq03" sqlTabName="icq_file" sqlType="VARCHAR" table_alias_name="" uid="{0b5e4f59-0000-4000-91f5-81a71baee594}"/>
+    <RecordField colName="icq04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="icq_file.icq04" sqlTabName="icq_file" sqlType="VARCHAR" table_alias_name="" uid="{c69145da-0000-4000-9d66-63f159815190}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6117ce63-0000-4000-a766-b3b9014b7410}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{2debc225-0000-4000-b128-99dbdc1c1a98}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="103" lstrtext="false" name="aici016" spacing="normal" text="aici016">
+    <VBox gridHeight="20" gridWidth="102" name="vb5" posX="1" posY="0">
+      <Folder gridHeight="16" gridWidth="102" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Main">
+          <Table gridHeight="14" gridWidth="101" name="s_icq" posX="0" posY="0" totalRows="12">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icq01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" lstrtitle="false" name="icq_file.icq01" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="icq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Factory No" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="pmc03" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icq02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" name="icq_file.icq02" posX="28" posY="0" rowCount="" sqlTabName="icq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Wafer Site&#10;" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icq03" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" name="icq_file.icq03" posX="44" posY="0" rowCount="" sqlTabName="icq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Wafer site desc" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icq04" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" name="icq_file.icq04" notNull="true" posX="60" posY="0" rowCount="" sqlTabName="icq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Standed Mark" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="102" lstrcomment="false" name="gr9" posX="0" posY="17">
+        <HLine gridWidth="10" name="hl9" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl10" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

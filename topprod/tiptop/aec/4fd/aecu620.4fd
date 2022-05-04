@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{e8b813bf-0000-4000-aa2a-e20b4cb7e289}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{be961074-0000-4000-b12c-19ffd40d83a4}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ima06" sqlTabName="" table_alias_name="" uid="{1697cce2-0000-4000-b17b-fefde2f56f3a}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ima01" sqlTabName="" table_alias_name="" uid="{6c73d33e-0000-4000-a1c0-6e9b0bdfbd8f}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="b" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{6bb5d717-0000-4000-92e5-0266def85ab2}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="c" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{9780cfdb-0000-4000-b5fe-11106715f1e1}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="d" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{72f0d353-0000-4000-9353-c397acc7f7f7}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="57" name="aecu620" spacing="normal" text="aecu620">
+    <Folder gridHeight="17" gridWidth="55" lstrcomment="false" name="pc283" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <Grid gridHeight="15" gridWidth="54" lstrcomment="false" name="gr1711" posX="0" posY="0">
+          <Group gridHeight="4" gridWidth="53" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="&lt;QBE&gt;">
+            <Label posX="1" posY="1" text="Item Group Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Query Condition by QBE" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima06" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Item No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="Enter Query Condition by QBE" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtitle="false" name="ima01" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Group>
+          <Group gridHeight="3" gridWidth="44" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="4" text="Re-calculate Option">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" items="Variable Lead Time, Fixed Lead Time, Variable and Fixed Lead Time" lstrcomment="false" lstrtitle="false" name="b" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Variable Lead Time"/>
+              <Item lstrtext="" name="2" text="Fixed Lead Time"/>
+              <Item lstrtext="" name="3" text="Variable and Fixed Lead Time"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="44" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="7">
+            <Label posX="1" posY="1" text="Expiry Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="No Blank,Enter Option" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="c" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+          </Group>
+          <Group gridHeight="4" gridWidth="44" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="10" text="Simulating Calculation or Modifying Item Lead Time">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" items="Simulation, Actually Amend, Amend &amp; Include Report" lstrcomment="false" lstrtitle="false" name="d" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Simulation"/>
+              <Item lstrtext="" name="2" text="Actually Amend"/>
+              <Item lstrtext="" name="3" text="Amend &amp; Include Report"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

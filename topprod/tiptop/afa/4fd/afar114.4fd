@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{a4e178dc-0000-4000-9a76-cd2e1d0d0f25}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8d8173af-0000-4000-bc0c-1cd5acdef222}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="fbx01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9412f2f1-0000-4000-8610-38cf65fc3cee}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="fbx02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{8606c4f2-0000-4000-82db-6a4197f4e62c}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="fbx03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{29c82c6a-0000-4000-a426-9364213a1770}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="fbx04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c646cd01-0000-4000-8b2b-7f8eec308b7b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="fbx05" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{ab70c3c7-0000-4000-8387-76b96b32c10d}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b9dc97bc-0000-4000-8549-d40c22860228}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="b" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{eab3424a-0000-4000-b601-71641c5e4dd6}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{583a33c6-0000-4000-a497-0c5973e75ef7}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="106" name="afar114" spacing="normal" text="afar114">
+    <VBox gridHeight="19" gridWidth="104" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="104" lstrcomment="false" name="gr1995" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="103" lstrcomment="false" lstrtext="false" name="grpqbe" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Transaction Doc."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="fbx01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Transaction Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fbx02" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Applicant"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="fbx03" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="4" text="Applying Dept"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" name="fbx04" posX="22" posY="4" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="5" text="Applying Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fbx05" posX="22" posY="5" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="7" gridWidth="104" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="9" text="INPUT">
+        <Grid gridHeight="5" gridWidth="102" lstrcomment="false" name="gr1996" posX="1" posY="1">
+          <Group gridHeight="4" gridWidth="50" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0" text="Data Option">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="46" items="Confirmed, UnConfirmed, All" lstrcomment="false" lstrtitle="false" name="a" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Confirmed"/>
+              <Item lstrtext="" name="2" text="UnConfirmed"/>
+              <Item lstrtext="" name="3" text="All"/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="4" gridWidth="50" lstrcomment="false" lstrtext="false" name="group03" posX="52" posY="0" text="Data Option">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="46" items="Confirmed, UnConfirmed, All" lstrcomment="false" lstrtitle="false" name="b" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Confirmed"/>
+              <Item lstrtext="" name="2" text="UnConfirmed"/>
+              <Item lstrtext="" name="3" text="All"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="104" lstrcomment="false" name="gr1997" posX="0" posY="16">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="45" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

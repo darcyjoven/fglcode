@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{e59d58ec-0000-4000-8ec8-1d04c2e4a3f1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1c84c4a3-0000-4000-9a39-caed50328cff}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="cob09" sqlTabName="" table_alias_name="" uid="{5f07f577-0000-4000-8392-322a69cd563d}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="coc03" sqlTabName="" table_alias_name="" uid="{7cdb140a-0000-4000-909c-2c465f0f30f0}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cob01" sqlTabName="" table_alias_name="" uid="{c938759c-0000-4000-a05c-fb5dbeeed6da}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="coo05" sqlTabName="" table_alias_name="" uid="{c3429e87-0000-4000-b0fa-00c6d021cfa5}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="y1" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{3de640c2-0000-4000-99d1-30b21c0553c7}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="y2" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{87ac425e-0000-4000-906f-415ee2b1956b}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="y" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{12fbb80c-0000-4000-a590-be35a0dc445c}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1ddbe795-0000-4000-8426-cbfb9103fbe8}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="84" name="acor212" spacing="normal" text="acor212">
+    <VBox gridHeight="17" gridWidth="82" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="82" lstrcomment="false" name="gr1406" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="81" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Custom No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="cob09" posX="25" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="coc03" posX="25" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Goods No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="cob01" posX="25" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Customer No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="coo05" posX="25" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="5" gridWidth="82" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="9" text="INPUT">
+        <Grid gridHeight="3" gridWidth="63" lstrcomment="false" name="gr1407" posX="1" posY="1">
+          <Label posX="1" posY="0" text="Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="y1" notNull="true" posX="15" posY="0" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+          <Label posX="26" posY="0" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="y2" notNull="true" posX="28" posY="0" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="y" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Convert HS Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="82" lstrcomment="false" name="gr1408" posX="0" posY="14">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

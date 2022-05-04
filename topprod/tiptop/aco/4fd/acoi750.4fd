@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8acb70bc-0000-4000-af60-c9bb46e4da63}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_cea" order="" uid="{b64505a5-0000-4000-9741-253c7d3b8dad}" where="">
+    <RecordField colName="cea01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cea_file.cea01" sqlTabName="cea_file" sqlType="VARCHAR" table_alias_name="" uid="{70af5757-0000-4000-b6db-c68d97e6e95a}"/>
+    <RecordField colName="cea02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cea_file.cea02" sqlTabName="cea_file" sqlType="VARCHAR" table_alias_name="tableAlias1" uid="{982d0e71-0000-4000-aa07-e1ad5081848e}"/>
+    <RecordField colName="ceaacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="cea_file.ceaacti" sqlTabName="cea_file" sqlType="VARCHAR" table_alias_name="" uid="{aac20feb-0000-4000-aebf-ae855e5ad6a4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6e356399-0000-4000-9842-e591f561009c}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{17e346ad-0000-4000-9cef-358b4540fd7b}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="59" name="acoi750" spacing="normal" text="acoi750">
+    <VBox gridHeight="18" gridWidth="54" name="vb2" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="54" lstrcomment="false" name="pc883" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="49" lstrcomment="false" name="s_cea" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cea01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="cea_file.cea01" posX="0" posY="0" rowCount="" sqlTabName="cea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Supervision Method Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cea02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cea_file.cea02" notNull="true" posX="13" posY="0" required="true" rowCount="" sqlTabName="cea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="tableAlias1" title="Supervision Method Name" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ceaacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="cea_file.ceaacti" notNull="true" posX="33" posY="0" required="true" rowCount="" sqlTabName="cea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="54" lstrcomment="false" name="gr4740" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1494" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1495" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

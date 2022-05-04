@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{cd6604aa-0000-4000-b414-2fce6e1773ba}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_lsn" order="" uid="{6f175523-0000-4000-afde-04558d0f6e16}" where="">
+    <RecordField colName="lsn01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lsn_file.lsn01" sqlTabName="lsn_file" sqlType="VARCHAR" table_alias_name="" uid="{4199d5f9-0000-4000-86a1-81ce208c943e}"/>
+    <RecordField colName="lsn10" fieldIdRef="11" fieldType="TABLE_COLUMN" name="lsn_file.lsn10" precisionDecimal="20" scaleDecimal="2" sqlTabName="lsn_file" sqlType="VARCHAR" table_alias_name="" uid="{b42aac9e-20e9-4c5e-8bef-0d72c760d32d}"/>
+    <RecordField colName="lsn02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lsn_file.lsn02" sqlTabName="lsn_file" sqlType="VARCHAR" table_alias_name="" uid="{1984eb3a-0000-4000-abb0-55688a01014d}"/>
+    <RecordField colName="lsn03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lsn_file.lsn03" sqlTabName="lsn_file" sqlType="VARCHAR" table_alias_name="" uid="{ff274d10-0000-4000-99e4-0ba6544bd8bc}"/>
+    <RecordField colName="lsn05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="lsn_file.lsn05" sqlTabName="lsn_file" sqlType="DATE" table_alias_name="" uid="{3984fde6-9782-4d74-8395-982f7f85c6c0}"/>
+    <RecordField colName="lsn04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="lsn_file.lsn04" precisionDecimal="20" scaleDecimal="2" sqlTabName="lsn_file" sqlType="DECIMAL" table_alias_name="" uid="{65c2931d-0000-4000-a4d8-2a2176acf19b}"/>
+    <RecordField colName="lsn06" fieldIdRef="7" fieldType="TABLE_COLUMN" name="lsn_file.lsn06" sqlTabName="lsn_file" sqlType="DATE" table_alias_name="" uid="{82e52313-0000-4000-b3ae-978a6dbe5ecd}"/>
+    <RecordField colName="lsn09" fieldIdRef="10" fieldType="TABLE_COLUMN" name="lsn_file.lsn09" precisionDecimal="20" scaleDecimal="6" sqlTabName="lsn_file" sqlType="DECIMAL" table_alias_name="" uid="{40bd8342-8122-4910-8115-320aeb3209be}"/>
+    <RecordField colName="lsn07" fieldIdRef="8" fieldType="TABLE_COLUMN" name="lsn_file.lsn07" precisionDecimal="6" scaleDecimal="2" sqlTabName="lsn_file" sqlType="DECIMAL" table_alias_name="" uid="{bf71c7ca-0000-4000-b7f2-471c943613df}"/>
+    <RecordField colName="lsnstore" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lsn_file.lsnstore" sqlTabName="lsn_file" sqlType="VARCHAR" table_alias_name="" uid="{32de79ec-174d-4f5a-8a1b-4bf9e4bc0201}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1965ef4f-0000-4000-98c5-2942b7694f6f}" where="">
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{97ade076-0000-4000-836f-c3f73f945fce}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="156" lstrtext="false" name="almq619" spacing="normal" text="almq619">
+    <VBox gridHeight="12" gridWidth="134" name="VBox1" posX="2" posY="0">
+      <Table gridHeight="7" gridWidth="134" name="lsn" posX="0" posY="1" totalRows="5">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom.png" lstrcomment="false" lstrtitle="false" name="lsn_file.lsn01" posX="0" posY="0" rowCount="" sqlTabName="lsn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="lsn01" widget="ButtonEdit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn10" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="ERP, POS, CYTZ" name="lsn_file.lsn10" posX="13" posY="0" rowCount="" sqlTabName="lsn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="lsn10" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="ERP"/>
+          <Item lstrtext="false" name="2" text="POS"/>
+          <Item lstrtext="false" name="3" text="CYTZ"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="Remittance Note, Sales Return No., Card, Value Stored, Stored Value Card Balance, SO, Shipping Order, Sales Return No., Amt Returnable, Pledge Receiving, Pledge Returning, Expense, Expense, ERP Order, ERP Ship" lstrcomment="false" lstrtitle="false" name="lsn_file.lsn02" posX="26" posY="0" rowCount="" sqlTabName="lsn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="lsn02" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Remittance Note"/>
+          <Item lstrtext="false" name="2" text="Sales Return No."/>
+          <Item lstrtext="false" name="3" text="Card"/>
+          <Item lstrtext="false" name="4" text="Value Stored"/>
+          <Item lstrtext="false" name="5" text="Stored Value Card Balance"/>
+          <Item lstrtext="false" name="6" text="SO"/>
+          <Item lstrtext="false" name="7" text="Shipping Order"/>
+          <Item lstrtext="false" name="8" text="Sales Return No."/>
+          <Item lstrtext="false" name="9" text="Amt Returnable"/>
+          <Item lstrtext="false" name="A" text="Pledge Receiving"/>
+          <Item lstrtext="false" name="B" text="Pledge Returning"/>
+          <Item lstrtext="false" name="C" text="Expense"/>
+          <Item lstrtext="false" name="D" text="Expense"/>
+          <Item lstrtext="false" name="E" text="ERP Order"/>
+          <Item lstrtext="false" name="F" text="ERP Ship"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn03" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom.png" lstrcomment="false" lstrtitle="false" name="lsn_file.lsn03" posX="39" posY="0" rowCount="" sqlTabName="lsn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="lsn03" widget="ButtonEdit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn05" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="lsn_file.lsn05" posX="51" posY="0" rowCount="" sqlTabName="lsn_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="lsn05" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn04" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="lsn_file.lsn04" posX="63" posY="0" precisionDecimal="20" rowCount="" scaleDecimal="2" sqlTabName="lsn_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="lsn04" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn06" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="lsn_file.lsn06" posX="76" posY="0" rowCount="" sqlTabName="lsn_file" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" title="lsn06" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn09" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="lsn_file.lsn09" posX="89" posY="0" precisionDecimal="20" rowCount="" scaleDecimal="6" sqlTabName="lsn_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="lsn09" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsn07" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="lsn_file.lsn07" posX="101" posY="0" precisionDecimal="6" rowCount="" scaleDecimal="2" sqlTabName="lsn_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="lsn07" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lsnstore" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="lsn_file.lsnstore" posX="113" posY="0" rowCount="" sqlTabName="lsn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="lsnstore" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="134" lstrcomment="false" name="gr2" posX="0" posY="8">
+        <HLine gridWidth="10" name="hl3" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0ADAAYgBkADgAMwA0ADIALQA4ADEAMgAyAC0ANAA5ADEAMAAtADgAMQAxADUALQAzADIAMABhAGUAYgAzADIAMAA5AGIAZQB9QCQAAAAAAABAZ+AAAAAAAD9ok3S8an76AQAAAEwAewA0ADEAOQA5AGQANQBmADkALQAwADAAMAAwAC0ANAAwADAAMAAtADgANgBhADEALQA4ADEAYwBlADIAMAA4AGMAOQA0ADMAZQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADkAOAA0AGYAZABlADYALQA5ADcAOAAyAC0ANABkADcANAAtADgAMwA5ADUALQA5ADgAMgBmADcAZgA4ADUAYwA2AGMAMAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGYAMgA3ADQAZAAxADAALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOQBlADQALQAwAGIAYQA2ADUANAA0AGIAZAA4AGIAYwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADIAZABlADcAOQBlAGMALQAxADcANABkAC0ANABmADUAYQAtADgAYQAxAGIALQA0AGIAZgA5AGUANABiAGMAMAAyADAAMQB9QCQAAAAAAABAbWAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGYAMQA3ADUANQAyADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZgBkAGUALQAwADQANQA1ADgAZAAwAGYANgBlADEANgB9AAAAAAAAAAAAAAAAAAAAAD90euFHrhR7AQAAAEwAewBiADQAMgBhAGEAYwA5AGUALQAyADAAZQA5AC0ANABjADUAZQAtADgAYgBlAGYALQAwAGQANwAyAGMANwA2ADAAZAAzADIAZAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADUAYwAyADkAMwAxAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANABkADgALQAyAGEAMgAxADcANgBhAGMAZgAxADkAYgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADcAYQBkAGUAMAA3ADYALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMwA2AGYALQBjADMAZgA3ADMAZgA5ADQANQBmAGMAZQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADkAOAA0AGUAYgAzAGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYgBiADAALQA1ADUANgA4ADgAYQAwADEAMAAxADQAZAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADIAZQA1ADIAMwAxADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMwBhAGUALQA5ADcAOABhADYAZABiAGUANQBlAGMAZAB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGYANwAxAGMANwBjAGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwBmADIALQA0ADcAMQBjADkANAAzADYAMQAzAGQAZgB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADkANgA1AGUAZgA0AGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOABjADUALQAyADkANAAyAGIANwA2ADkANABmADYAZgB9wHDAAAAAAAAAAAAAAAAAAD9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

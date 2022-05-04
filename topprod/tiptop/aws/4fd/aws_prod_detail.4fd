@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7ac9ed9f-b7a9-43f4-a1ee-13d6734cf4c0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f3516eac-de8a-4b46-8ba5-1d322d8e748d}" where="">
+    <RecordField colName="wap03" fieldIdRef="1" fieldType="COLUMN_LIKE" name="wsdl" sqlTabName="wap_file" sqlType="VARCHAR" table_alias_name="" uid="{e154609a-108d-4c9d-82f7-ae8118476e78}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="name" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7cb80e11-91bb-476c-89f6-980c45d0cb11}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="dcnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{6a7bd34a-07b5-4a67-896f-e51e34f923e9}"/>
+    <RecordField colName="" fieldIdRef="16" fieldType="NON_DATABASE" name="dcn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3dfd0c3b-5535-4046-9918-eeae7938930c}"/>
+    <RecordField colName="wap06" fieldIdRef="11" fieldType="NON_DATABASE" name="ver" sqlTabName="wap_file" sqlType="VARCHAR" table_alias_name="" uid="{fbd63f75-7c26-4f4f-9e13-dcbb3b19dace}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="ip" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1d72af14-a59f-47dd-8c9e-86f91cc21152}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="id" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f9151d42-1576-4875-9d1c-5cba6c9137a3}"/>
+    <RecordField colName="azp052" fieldIdRef="6" fieldType="COLUMN_LIKE" name="timezone" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{8fafcef9-f9e1-4129-9bdb-4e0eb352c3fd}"/>
+    <RecordField colName="wap05" fieldIdRef="21" fieldType="COLUMN_LIKE" name="retrytimes" sqlTabName="wap_file" sqlType="SMALLINT" table_alias_name="" uid="{c4bc8601-a507-46ab-b8be-e22f1eb1f5bf}"/>
+    <RecordField colName="wap06" fieldIdRef="22" fieldType="COLUMN_LIKE" name="retryinterval" sqlTabName="wap_file" sqlType="SMALLINT" table_alias_name="" uid="{1e590a74-949b-4cef-978e-7b685f6dc376}"/>
+    <RecordField colName="wap07" fieldIdRef="23" fieldType="COLUMN_LIKE" name="concurrence" sqlTabName="wap_file" sqlType="SMALLINT" table_alias_name="" uid="{e0c7f406-458d-4c7b-8ad3-5b19bd02701f}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_srv" order="" uid="{686178ef-ce14-4162-b5e2-143f7c00946e}" where="">
+    <RecordField colName="wsr01" fieldIdRef="14" fieldType="COLUMN_LIKE" name="wsr01" sqlTabName="wsr_file" sqlType="VARCHAR" table_alias_name="" uid="{7eb75783-3753-4473-a1c1-0f4ba0c906cd}"/>
+    <RecordField colName="wsr03" fieldIdRef="19" fieldType="COLUMN_LIKE" name="wsr03" sqlTabName="wsr_file" sqlType="VARCHAR" table_alias_name="" uid="{9a2fea5a-efea-4ca0-8f38-6df248ebeacd}"/>
+  </Record>
+  <Form gridHeight="36" gridWidth="132" name="aws_prod_detail" spacing="normal" text="aws_crosscfg">
+    <VBox gridHeight="36" gridWidth="130" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="11" gridWidth="130" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="9" gridWidth="104" lstrcomment="false" name="gr6" posX="0" posY="0">
+            <Group gridHeight="8" gridWidth="103" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="name" noEntry="true" notNull="false" posX="26" posY="1" required="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="52" posY="1" text="timezone"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp052" columnCount="" fieldId="6" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="timezone" notNull="false" posX="80" posY="1" required="false" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="496" table_alias_name="" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="24" name="Label1" posX="1" posY="2" text="ver"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wap06" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" name="ver" noEntry="true" posX="26" posY="2" rowCount="" sqlTabName="wap_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="484" table_alias_name="" title="Edit1" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="27" name="Label4" posX="52" posY="2" text="retrytimes"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wap05" columnCount="" fieldId="21" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="15" name="retrytimes" posX="80" posY="2" rowCount="" sqlTabName="wap_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="497" table_alias_name="" title="Edit1" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="24" name="Label2" posX="1" posY="3" text="ip"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" name="ip" noEntry="true" posX="26" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="484" table_alias_name="" title="Edit2" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="27" name="Label5" posX="52" posY="3" text="retryinterval"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wap06" columnCount="" fieldId="22" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="15" name="retryinterval" posX="80" posY="3" rowCount="" sqlTabName="wap_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="498" table_alias_name="" title="Edit2" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="24" name="Label3" posX="1" posY="4" text="id"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" name="id" posX="26" posY="4" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="495" table_alias_name="" title="Edit2" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="27" name="Label6" posX="52" posY="4" text="concurrence"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wap07" columnCount="" fieldId="23" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="15" name="concurrence" posX="80" posY="4" rowCount="" sqlTabName="wap_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="499" table_alias_name="" title="Edit2" widget="Edit"/>
+              <Label posX="1" posY="5" text="wsdl"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wap03" columnCount="" fieldId="1" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="69" lstrcomment="false" lstrtitle="false" name="wsdl" notNull="false" posX="26" posY="5" required="false" rowCount="" sqlTabName="wap_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Folder gridHeight="20" gridWidth="130" name="Folder1" posX="0" posY="12">
+        <Page action="tp_list" name="page_tp" text="TIPTOP Services List">
+          <Table gridHeight="18" gridWidth="101" name="s_srv" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsr01" columnCount="" fieldId="14" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="30" name="wsr01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="wsr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="493" table_alias_name="" title="wsr01" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsr03" columnCount="" fieldId="19" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="50" name="wsr03" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="wsr_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="494" table_alias_name="" title="wsr03" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="130" lstrcomment="false" name="gr8" posX="0" posY="32">
+        <HLine gridWidth="10" name="hl5" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="dcnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="dcn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl6" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA2AGEANwBiAGQAMwA0AGEALQAwADcAYgA1AC0ANABhADYANwAtADgAOQA2AGYALQBlADUAMQBlADMANABmADkAMgAzAGUAOQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGUAYgA3ADUANwA4ADMALQAzADcANQAzAC0ANAA0ADcAMwAtAGEAMQBjADEALQAwAGYANABiAGEAMABjADkAMAA2AGMAZAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGUANQA5ADAAYQA3ADQALQA5ADQAOQBiAC0ANABjAGUAZgAtADkANwA4AGUALQA3AGIANgA4ADUAZgA2AGQAYwAzADcANgB9QBQAAAAAAABAa8AAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGQAZgBkADAAYwAzAGIALQA1ADUAMwA1AC0ANAAwADQANgAtADkAOQAxADgALQBlAGUAYQBlADcAOQAzADgAOQAzADAAYwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADMANQAxADYAZQBhAGMALQBkAGUAOABhAC0ANABiADQANgAtADgAYgBhADUALQAxAGQAMwAyADIAZAA4AGUANwA0ADgAZAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGMAYgA4ADAAZQAxADEALQA5ADEAYgBiAC0ANAA3ADYAYwAtADgAOQBmADYALQA5ADgAMABjADQANQBkADAAYwBiADEAMQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGQANwAyAGEAZgAxADQALQBhADUAOQBmAC0ANAA3AGQAZAAtADgAYwA5AGUALQA4ADYAZgA5ADEAYwBjADIAMQAxADUAMgB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADQAYgBjADgANgAwADEALQBhADUAMAA3AC0ANAA2AGEAYgAtAGIAOABiAGUALQBlADIAMgBmADEAZQBiADEAZgA1AGIAZgB9QBQAAAAAAABAaQAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADEANQA0ADYAMAA5AGEALQAxADAAOABkAC0ANABjADkAZAAtADgAMgBmADcALQBhAGUAOAAxADEAOAA0ADcANgBlADcAOAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGEAMgBmAGUAYQA1AGEALQBlAGYAZQBhAC0ANABjAGEAMAAtADgAZgAzADgALQA2AGQAZgAyADQAOABlAGIAZQBhAGMAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGYAYQBmAGMAZQBmADkALQBmADkAZQAxAC0ANAAxADIAOQAtADkAYgBkAGIALQA0AGUAMABlAGIAMwA1ADIAYwAzAGYAZAB9QBQAAAAAAABAZkAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADkAMQA1ADEAZAA0ADIALQAxADUANwA2AC0ANAA4ADcANQAtADkAZAAxAGMALQA1AGMAYgBhADYAYwA5ADEAMwA3AGEAMwB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADgANgAxADcAOABlAGYALQBjAGUAMQA0AC0ANAAxADYAMgAtAGIANQBlADIALQAxADQAMwBmADcAYwAwADAAOQA0ADYAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADAAYwA3AGYANAAwADYALQA0ADUAOABkAC0ANABjADcAYgAtADgAYQBkADMALQA1AGIAMQA5AGIAZAAwADIANwAwADEAZgB9QBQAAAAAAABAboAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGIAZAA2ADMAZgA3ADUALQA3AGMAMgA2AC0ANABmADQAZgAtADkAZQAxADMALQBkAGMAYgBiADMAYgAxADkAZABhAGMAZQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

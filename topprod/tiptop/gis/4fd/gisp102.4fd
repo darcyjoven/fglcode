@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{275bebdc-431c-44dc-8521-aa2ef8a8ab9b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="record1" order="" uid="{33a1f9ab-2fb1-4ef5-91bc-35260056175c}" where="">
+    <RecordField colName="omg04" fieldIdRef="1" fieldType="TABLE_COLUMN" name="omg_file.omg04" sqlTabName="omg_file" sqlType="VARCHAR" table_alias_name="" uid="{41b32cfc-eda4-4054-af5b-b8405b0b9554}"/>
+    <RecordField colName="omg14" fieldIdRef="2" fieldType="TABLE_COLUMN" name="omg_file.omg14" sqlTabName="omg_file" sqlType="VARCHAR" table_alias_name="" uid="{2f50230e-b3ce-4df6-a68d-065a6fca0386}"/>
+    <RecordField colName="omg03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="omg_file.omg03" sqlTabName="omg_file" sqlType="DATE" table_alias_name="" uid="{e99b9671-66d9-403a-9dc8-94d878a75864}"/>
+    <RecordField colName="omg01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="omg_file.omg01" sqlTabName="omg_file" sqlType="VARCHAR" table_alias_name="" uid="{eeb2b50f-d5d8-4f12-ac79-6c990c8d79a2}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="undefined" order="" uid="{c2ddd57c-f3c5-4183-af46-b6d0b417e10f}" where="">
+    <RecordField colName="" defaultValue="N" fieldIdRef="6" fieldType="NON_DATABASE" name="bgjob" sqlTabName="" table_alias_name="" uid="{f1ea9a46-765b-421e-a93e-e373de1ccfc8}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="5" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{c22ac538-3963-453a-9a0f-5502f5197ceb}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="43" name="gisp101.tmp" spacing="normal" text="Form">
+    <Folder gridHeight="15" gridWidth="41" lstrcomment="false" name="folder1" posX="0" posY="0">
+      <Page name="page1" text="Page1">
+        <VBox gridHeight="14" gridWidth="39" name="vbox1" posX="0" posY="0">
+          <Group gridHeight="8" gridWidth="39" lstrcomment="false" name="group1" posX="0" posY="1" text="Group1">
+            <Grid gridHeight="6" gridWidth="34" lstrcomment="false" name="ds1" posX="1" posY="1">
+              <Label gridHeight="1" gridWidth="8" lstrcomment="false" name="omf05" posX="1" posY="1" text="omg04"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="omg04" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="omg_file.omg04" posX="10" posY="1" rowCount="" scroll="true" sqlTabName="omg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label gridHeight="1" gridWidth="8" lstrcomment="false" name="omf13" posX="1" posY="2" text="omg14"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="omg14" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="omg_file.omg14" posX="10" posY="2" rowCount="" scroll="true" sqlTabName="omg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+              <Label gridHeight="1" gridWidth="8" lstrcomment="false" name="omf03" posX="1" posY="3" text="omg03"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="omg03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="omg_file.omg03" posX="10" posY="3" rowCount="" sqlTabName="omg_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+              <Label gridHeight="1" gridWidth="8" lstrcomment="false" name="omf01" posX="1" posY="4" text="omg01"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="omg01" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="omg_file.omg01" notNull="true" posX="10" posY="4" required="true" rowCount="" scroll="true" sqlTabName="omg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+            </Grid>
+          </Group>
+          <Grid gridHeight="2" gridWidth="39" lstrcomment="false" name="grid2" posX="0" posY="9">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Exist,Re-Generate?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+          <Grid gridHeight="2" gridWidth="39" lstrcomment="false" name="grid1" posX="0" posY="11">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="34" lstrcomment="false" lstrtitle="false" name="bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="backgroup" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlAGUAYgAyAGIANQAwAGYALQBkADUAZAA4AC0ANABmADEAMgAtAGEAYwA3ADkALQA2AGMAOQA5ADAAYwA4AGQANwA5AGEAMgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADIAMgBhAGMANQAzADgALQAzADkANgAzAC0ANAA1ADMAYQAtADkAYQAwAGYALQA1ADUAMAAyAGYANQAxADkANwBjAGUAYgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADEAYgAzADIAYwBmAGMALQBlAGQAYQA0AC0ANAAwADUANAAtAGEAZgA1AGIALQBiADgANAAwADUAYgAwAGIAOQA1ADUANAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGYANQAwADIAMwAwAGUALQBiADMAYwBlAC0ANABkAGYANgAtAGEANgA4AGQALQAwADYANQBhADYAZgBjAGEAMAAzADgANgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADEAZQBhADkAYQA0ADYALQA3ADYANQBiAC0ANAAyADEAZQAtAGEAOQAzAGUALQBlADMANwAzAGQAZQAxAGMAYwBmAGMAOAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADkAOQBiADkANgA3ADEALQA2ADYAZAA5AC0ANAAwADMAYQAtADkAZABjADgALQA5ADQAZAA4ADcAOABhADcANQA4ADYANAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADMAYQAxAGYAOQBhAGIALQAyAGYAYgAxAC0ANABlAGYANQAtADkAMQBiAGMALQAzADUAMgA2ADAAMAA1ADYAMQA3ADUAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADIAZABkAGQANQA3AGMALQBmADMAYwA1AC0ANAAxADgAMwAtAGEAZgA0ADYALQBiADYAZAAwAGIANAAxADcAZQAxADAAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{30e0f299-0000-4000-87e0-4d97f48b61e9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b95d8954-0000-4000-a506-1d696fb5c01f}" where="">
+    <RecordField colName="vom01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="vom_file.vom01" sqlTabName="vom_file" sqlType="VARCHAR" table_alias_name="" uid="{ac2324af-0000-4000-a869-6ec1c6234d47}"/>
+    <RecordField colName="vom08" fieldIdRef="9" fieldType="TABLE_COLUMN" name="vom_file.vom08" sqlTabName="vom_file" sqlType="DECIMAL" table_alias_name="" uid="{925b1c3c-0000-4000-b5ce-50112170e628}"/>
+    <RecordField colName="vom02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vom_file.vom02" sqlTabName="vom_file" sqlType="VARCHAR" table_alias_name="" uid="{f2b170c9-0000-4000-ac90-d473856c6775}"/>
+    <RecordField colName="vom09" fieldIdRef="8" fieldType="TABLE_COLUMN" name="vom_file.vom09" sqlTabName="vom_file" sqlType="DATE" table_alias_name="" uid="{39b6cee0-0000-4000-a8d6-8d95531238ed}"/>
+    <RecordField colName="vom03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vom_file.vom03" sqlTabName="vom_file" sqlType="VARCHAR" table_alias_name="" uid="{21c29546-0000-4000-815f-d69cc78c8f88}"/>
+    <RecordField colName="vom10" fieldIdRef="10" fieldType="TABLE_COLUMN" name="vom_file.vom10" sqlTabName="vom_file" sqlType="DATE" table_alias_name="" uid="{9ae4d77c-0000-4000-8aa2-0f927a3f669f}"/>
+    <RecordField colName="vom04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="vom_file.vom04" sqlTabName="vom_file" sqlType="VARCHAR" table_alias_name="" uid="{b2c85440-0000-4000-93c8-d4c6e0ac9791}"/>
+    <RecordField colName="vom11" fieldIdRef="11" fieldType="TABLE_COLUMN" name="vom_file.vom11" sqlTabName="vom_file" sqlType="DECIMAL" table_alias_name="" uid="{fd04800d-0000-4000-a7b2-1c3fca94746e}"/>
+    <RecordField colName="vom05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="vom_file.vom05" sqlTabName="vom_file" sqlType="VARCHAR" table_alias_name="" uid="{7aff7b97-0000-4000-8fe0-1b18e5e6441d}"/>
+    <RecordField colName="vom12" fieldIdRef="12" fieldType="TABLE_COLUMN" name="vom_file.vom12" sqlTabName="vom_file" sqlType="DECIMAL" table_alias_name="" uid="{83901250-0000-4000-8d90-16f139bd0985}"/>
+    <RecordField colName="vom06" fieldIdRef="7" fieldType="TABLE_COLUMN" name="vom_file.vom06" sqlTabName="vom_file" sqlType="VARCHAR" table_alias_name="" uid="{abbfc4e6-0000-4000-a2a4-e252ab667f34}"/>
+    <RecordField colName="vom07" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vom_file.vom07" sqlTabName="vom_file" sqlType="VARCHAR" table_alias_name="" uid="{adcccbc2-0000-4000-89bc-49187c591f0a}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="94" name="apsq821_3" spacing="normal" text="apsq821_3">
+    <Folder gridHeight="12" gridWidth="92" lstrcomment="false" name="pc194" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <Grid gridHeight="10" gridWidth="89" lstrcomment="false" name="gr907" posX="0" posY="0">
+          <Group gridHeight="9" gridWidth="87" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+            <Label posX="1" posY="1" text="APS Version"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom01" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" name="vom_file.vom01" posX="18" posY="1" rowCount="" sqlTabName="vom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="44" posY="1" text="Lock Code Setting"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom08" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="不鎖定時間, 鎖定開始時間, 鎖定結束時間, 鎖定開始及結束時間" lstrcomment="false" name="vom_file.vom08" posX="69" posY="1" rowCount="" sqlTabName="vom_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="不鎖定時間"/>
+              <Item lstrtext="false" name="1" text="鎖定開始時間"/>
+              <Item lstrtext="false" name="2" text="鎖定結束時間"/>
+              <Item lstrtext="false" name="3" text="鎖定開始及結束時間"/>
+            </ComboBox>
+            <Label posX="1" posY="2" text="Save Version"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" name="vom_file.vom02" posX="18" posY="2" rowCount="" sqlTabName="vom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+            <Label posX="44" posY="2" text="Start Time"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom09" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="vom_file.vom09" notNull="true" posX="69" posY="2" required="true" rowCount="" sqlTabName="vom_file" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="WO No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom03" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="vom_file.vom03" notNull="true" posX="18" posY="3" required="true" rowCount="" sqlTabName="vom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="44" posY="3" text="End Time"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom10" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="vom_file.vom10" notNull="true" posX="69" posY="3" required="true" rowCount="" sqlTabName="vom_file" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="Routing Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="vom_file.vom04" notNull="true" posX="18" posY="4" required="true" rowCount="" sqlTabName="vom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="44" posY="4" text="Schedule"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom11" colorCondition="black" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="未排程, 已排程" lstrcomment="false" name="vom_file.vom11" posX="69" posY="4" rowCount="" sqlTabName="vom_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="未排程"/>
+              <Item lstrtext="false" name="1" text="已排程"/>
+            </ComboBox>
+            <Label posX="1" posY="5" text="Routing Sequence"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="vom_file.vom05" notNull="true" posX="18" posY="5" required="true" rowCount="" sqlTabName="vom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="44" posY="5" text="Task of Parallel Machine"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom12" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="否, 是" lstrcomment="false" name="vom_file.vom12" posX="69" posY="5" rowCount="" sqlTabName="vom_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="否"/>
+              <Item lstrtext="false" name="1" text="是"/>
+            </ComboBox>
+            <Label posX="1" posY="6" text="Operation No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom06" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="vom_file.vom06" notNull="true" posX="18" posY="6" required="true" rowCount="" sqlTabName="vom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="7" text="Resource No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vom07" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="vom_file.vom07" notNull="true" posX="18" posY="7" required="true" rowCount="" sqlTabName="vom_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

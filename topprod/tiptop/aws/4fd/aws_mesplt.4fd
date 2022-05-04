@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{542937ed-0000-4000-9e1a-c1387aaffe91}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bwge" order="" uid="{b6c35b6d-0000-4000-b19e-f46b44c0a23e}" where="">
+    <RecordField colName="" fieldIdRef="7" name="bwge06" sqlTabName="" table_alias_name="" uid="{473a5a14-0000-4000-a8f8-e65b9caaffa8}"/>
+    <RecordField colName="" fieldIdRef="8" name="bwge04" sqlTabName="" table_alias_name="" uid="{446a289f-0000-4000-ac72-60492a341873}"/>
+    <RecordField colName="" fieldIdRef="9" name="bwge02" sqlTabName="" table_alias_name="" uid="{6035b0d7-0000-4000-af2f-b323c3aa1414}"/>
+    <RecordField colName="" fieldIdRef="10" name="bwge03" sqlTabName="" table_alias_name="" uid="{8710c612-0000-4000-b04c-f550e7b89c5f}"/>
+    <RecordField colName="" fieldIdRef="2" name="bwge08" sqlTabName="" table_alias_name="" uid="{a84a31b1-0000-4000-bbe3-2af64186010e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7dd5aba0-0000-4000-a7e9-cfbe29a097c4}" where="">
+    <RecordField colName="wge06" fieldIdRef="1" fieldType="TABLE_COLUMN" name="wge_file.wge06" sqlTabName="wge_file" sqlType="VARCHAR" table_alias_name="" uid="{5485ced9-0000-4000-964d-42a52512419d}"/>
+    <RecordField colName="wge04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="wge_file.wge04" sqlTabName="wge_file" sqlType="VARCHAR" table_alias_name="" uid="{d3c63de1-0000-4000-b8f5-db3a6446b72e}"/>
+    <RecordField colName="wge02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="wge_file.wge02" sqlTabName="wge_file" sqlType="VARCHAR" table_alias_name="" uid="{c5e57f4a-0000-4000-88a9-4c6f41226594}"/>
+    <RecordField colName="wge03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="wge_file.wge03" sqlTabName="wge_file" sqlType="VARCHAR" table_alias_name="" uid="{5fef022f-0000-4000-8e26-3459c6f67076}"/>
+    <RecordField colName="wge08" fieldIdRef="6" fieldType="TABLE_COLUMN" name="wge_file.wge08" sqlTabName="wge_file" sqlType="VARCHAR" table_alias_name="" uid="{89952ebb-0000-4000-9c21-1c7e2785f611}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="128" name="aws_mesplt" spacing="normal" text="GPM Station Config">
+    <VBox gridHeight="18" gridWidth="125" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="9" gridWidth="125" lstrcomment="false" name="gr1426" posX="0" posY="1">
+        <Group gridHeight="8" gridWidth="89" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="GPM Station Setting">
+          <Label posX="1" posY="1" text="Plant No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wge06" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="wge_file.wge06" notNull="true" posX="37" posY="1" required="true" rowCount="" sqlTabName="wge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="MES station name"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wge04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="wge_file.wge04" notNull="true" posX="37" posY="2" required="true" rowCount="" sqlTabName="wge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="MES station IP address"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wge02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="wge_file.wge02" notNull="true" posX="37" posY="3" required="true" rowCount="" sqlTabName="wge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="MES SOAP Services URL"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wge03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="wge_file.wge03" notNull="true" posX="37" posY="4" required="true" rowCount="" scroll="true" sqlTabName="wge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="5" text="MES HTTP Services URL"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wge08" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="wge_file.wge08" notNull="true" posX="37" posY="5" required="true" rowCount="" scroll="true" sqlTabName="wge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="7" gridWidth="125" lstrcomment="false" name="s_bwge" posX="0" posY="10" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="bwge06" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Plant No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bwge04" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Station name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="bwge02" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="IP address" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="bwge03" noEntry="true" posX="48" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="SOAP Services URL" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bwge08" noEntry="true" posX="98" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="HTTP Services URL" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

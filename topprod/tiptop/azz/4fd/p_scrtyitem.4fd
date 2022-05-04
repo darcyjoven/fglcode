@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{d9878264-9cd3-4d01-8dc3-a647974457c7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="undefined" order="" uid="{fe909096-2f2b-41b9-82b6-220bf230825f}" where="">
+    <RecordField colName="ex" fieldIdRef="7" name="ex" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{9defb3f2-9c74-43e0-866f-4f32d181d69d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gdu" order="" uid="{8f65b517-1b0f-400d-9a8a-848c5e26a3dc}" where="">
+    <RecordField colName="gdu01" fieldIdRef="0" fieldType="TABLE_COLUMN" name="gdu_file.gdu01" sqlTabName="gdu_file" sqlType="VARCHAR" table_alias_name="" uid="{53ab762f-8571-4926-a9ef-063aea82ef01}"/>
+    <RecordField colName="gdu02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gdu_file.gdu02" sqlTabName="gdu_file" sqlType="VARCHAR" table_alias_name="" uid="{e3601704-1411-49d3-b076-0b243b044f95}"/>
+    <RecordField colName="gdu03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gdu_file.gdu03" sqlTabName="gdu_file" sqlType="SMALLINT" table_alias_name="" uid="{9b74cb74-15db-4401-a575-6d52a8e4f1d5}"/>
+    <RecordField colName="gdu04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gdu_file.gdu04" sqlTabName="gdu_file" sqlType="SMALLINT" table_alias_name="" uid="{c19c0466-57c5-40fd-a775-f66694a8187a}"/>
+    <RecordField colName="gdu05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gdu_file.gdu05" sqlTabName="gdu_file" sqlType="SMALLINT" table_alias_name="" uid="{dc3b15a2-9343-45ae-9178-ad4134ca1ef7}"/>
+    <RecordField colName="gdu06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gdu_file.gdu06" sqlTabName="gdu_file" sqlType="VARCHAR" table_alias_name="" uid="{b9841c56-4cc6-478a-a599-01f14d2611d4}"/>
+    <RecordField colName="gdu07" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gdu_file.gdu07" sqlTabName="gdu_file" sqlType="VARCHAR" table_alias_name="" uid="{a89f0a14-1676-4770-8d9a-29f1f8e00288}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="95" lstrtext="true" name="p_scrtyitem" text="Form">
+    <VBox gridHeight="19" gridWidth="95" name="vbox1" posX="0" posY="0">
+      <Table gridHeight="11" gridWidth="95" name="ds1" posX="0" posY="1" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdu01" columnCount="" fieldId="0" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="gdu_file.gdu01" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gdu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="gdu01" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdu02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="gdu_file.gdu02" posX="10" posY="0" rowCount="" scroll="true" sqlTabName="gdu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="gdu02" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdu07" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" items="" name="gdu_file.gdu07" posX="30" posY="0" rowCount="" sqlTabName="gdu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="gdu07" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdu03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="gdu_file.gdu03" posX="46" posY="0" rowCount="" scroll="true" sqlTabName="gdu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="gdu03" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdu04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="gdu_file.gdu04" posX="56" posY="0" rowCount="" scroll="true" sqlTabName="gdu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="gdu04" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdu05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="gdu_file.gdu05" posX="66" posY="0" rowCount="" scroll="true" sqlTabName="gdu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="gdu05" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdu06" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="gdu_file.gdu06" posX="76" posY="0" rowCount="" scroll="true" sqlTabName="gdu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="gdu06" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="6" gridWidth="95" name="grid1" posX="0" posY="12">
+        <Group gridHeight="5" gridWidth="66" lstrtext="true" name="group1" posX="2" posY="1" text="Type Preview">
+          <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ex" columnCount="" fieldId="7" gridHeight="3" gridWidth="56" name="ex" posX="3" posY="1" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" wantNoReturns="false" widget="TextEdit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADgAOQBmADAAYQAxADQALQAxADYANwA2AC0ANAA3ADcAMAAtADgAZAA5AGEALQAyADkAZgAxAGYAOABlADAAMAAyADgAOAB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGIANwA0AGMAYgA3ADQALQAxADUAZABiAC0ANAA0ADAAMQAtAGEANQA3ADUALQA2AGQANQAyAGEAOABlADQAZgAxAGQANQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADMAYQBiADcANgAyAGYALQA4ADUANwAxAC0ANAA5ADIANgAtAGEAOQBlAGYALQAwADYAMwBhAGUAYQA4ADIAZQBmADAAMQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGQAZQBmAGIAMwBmADIALQA5AGMANwA0AC0ANAAzAGUAMAAtADgANgA2AGYALQA0AGYAMwAyAGQAMQA4ADEAZAA2ADkAZAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGUAOQAwADkAMAA5ADYALQAyAGYAMgBiAC0ANAAxAGIAOQAtADgAMgBiADYALQAyADIAMABiAGYAMgAzADAAOAAyADUAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGMAMwBiADEANQBhADIALQA5ADMANAAzAC0ANAA1AGEAZQAtADkAMQA3ADgALQBhAGQANAAxADMANABjAGEAMQBlAGYANwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGYANgA1AGIANQAxADcALQAxAGIAMABmAC0ANAAwADAAZAAtADkAYQA4AGEALQA4ADQAOABjADUAZQAyADYAYQAzAGQAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADEAOQBjADAANAA2ADYALQA1ADcAYwA1AC0ANAAwAGYAZAAtAGEANwA3ADUALQBmADYANgA2ADkANABhADgAMQA4ADcAYQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADMANgAwADEANwAwADQALQAxADQAMQAxAC0ANAA5AGQAMwAtAGIAMAA3ADYALQAwAGIAMgA0ADMAYgAwADQANABmADkANQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADkAOAA0ADEAYwA1ADYALQA0AGMAYwA2AC0ANAA3ADgAYQAtAGEANQA5ADkALQAwADEAZgAxADQAZAAyADYAMQAxAGQANAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

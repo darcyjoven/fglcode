@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{56e36640-0000-4000-a31b-34786a9c5cf4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_dma" order="" uid="{b74aad3f-0000-4000-984b-8bdfe28a805c}" where="">
+    <RecordField colName="dma01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="dma_file.dma01" sqlTabName="dma_file" sqlType="VARCHAR" table_alias_name="" uid="{88f3a60c-0000-4000-a546-07a0c2ede788}"/>
+    <RecordField colName="dma02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="dma_file.dma02" sqlTabName="dma_file" sqlType="VARCHAR" table_alias_name="" uid="{c84f955e-0000-4000-b543-485ce6a3cd96}"/>
+    <RecordField colName="dmaacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="dma_file.dmaacti" sqlTabName="dma_file" sqlType="VARCHAR" table_alias_name="" uid="{1387756a-0000-4000-ad1f-a5444ba7548f}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{927dec5f-0000-4000-af67-0d7f86335a0f}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{dee15ee8-0000-4000-985e-6b0f4aa8776f}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="55" name="admi200" spacing="normal" text="admi200">
+    <VBox gridHeight="18" gridWidth="52" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="52" lstrcomment="false" name="pc246" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="50" lstrcomment="false" name="s_dma" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="dma01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="dma_file.dma01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="dma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Category" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="dma02" columnCount="" comment="No Blank Field!" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="dma_file.dma02" posX="10" posY="0" rowCount="" sqlTabName="dma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="dmaacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="dma_file.dmaacti" notNull="true" posX="40" posY="0" required="true" rowCount="" sqlTabName="dma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="52" lstrcomment="false" name="gr1580" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl433" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl434" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

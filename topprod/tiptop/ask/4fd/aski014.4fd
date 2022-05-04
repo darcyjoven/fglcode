@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1766998a-0000-4000-a00a-e4c1fe1f44ce}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_slb" order="" uid="{dc44a241-0000-4000-a744-1baf692f32cd}" where="">
+    <RecordField colName="slb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="slb_file.slb01" sqlTabName="slb_file" sqlType="VARCHAR" table_alias_name="" uid="{dd1b0d8d-0000-4000-af1f-bc67d0e223d1}"/>
+    <RecordField colName="slb02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="slb_file.slb02" sqlTabName="slb_file" sqlType="VARCHAR" table_alias_name="" uid="{f60fc152-0000-4000-aed1-265491eb6a24}"/>
+    <RecordField colName="slb03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="slb_file.slb03" sqlTabName="slb_file" sqlType="VARCHAR" table_alias_name="" uid="{f9314c33-0000-4000-9861-83fe631fcab0}"/>
+    <RecordField colName="slbacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="slb_file.slbacti" sqlTabName="slb_file" sqlType="VARCHAR" table_alias_name="" uid="{1678f00e-0000-4000-9e71-d3fadc922728}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c33c9c7b-0000-4000-aa5b-b44eec7bfeab}" where="">
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{a2c0f551-0000-4000-a42a-81d9604461f5}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="76" name="aski014" spacing="normal" text="aski014">
+    <VBox gridHeight="18" gridWidth="75" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="75" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="75" lstrcomment="false" name="s_slb" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="slb01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="slb_file.slb01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="slb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Item No" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="slb02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="slb_file.slb02" posX="15" posY="0" rowCount="" sqlTabName="slb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="slb03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="slb_file.slb03" posX="33" posY="0" rowCount="" sqlTabName="slb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ENG Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="slbacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="slb_file.slbacti" notNull="true" posX="59" posY="0" required="true" rowCount="" sqlTabName="slb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="75" lstrcomment="false" name="gr1" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Row"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

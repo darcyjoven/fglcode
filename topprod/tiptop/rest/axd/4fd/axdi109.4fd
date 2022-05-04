@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="73" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="13370" spacing="normal" posX="0" percommentheader="" height="18" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdi109" defaultspacing="true" text="axdi109" gstVersion="11401" percommentlayout="GRID
+PAGE
+FOLDER
+TABLE
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="70" posX="0" posY="0" height="3" lstrcomment="false" name="folder01" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Main" >
+    <Grid width="68" posX="0" posY="0" height="1" lstrcomment="false" hidden="--------" name="gr7744" fontPitch="default" scroll="false" >
+     <Text width="13" lstrtext="false" gridWidth="13" posX="1" posY="0" height="1" sizePolicy="initial" name="text26354" text="Vehicle Brand" />
+     <FormField sqlDBName="ds" colName="obt01" fieldId="0" sqlTabName="obt_file" name="obt01" fieldtype="TABLE_COLUMN" >
+      <ButtonEdit width="16" case="NONE" comment="&lt;^P>Qry Detail" invisible="--------" gridWidth="16" notNull="true" image="zoom" posX="19" formfieldname="formfield0" action="controlp" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" tabIndex="1" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="obt01" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+     </FormField>
+     <FormField sqlDBName="ds" colName="obs02" fieldId="1" sqlTabName="obs_file" name="obs02" fieldtype="TABLE_COLUMN" >
+      <Edit width="30" case="NONE" invisible="--------" gridWidth="30" notNull="--------" posX="37" formfieldname="formfield1" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="2" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="obs02" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+     </FormField>
+    </Grid>
+   </Page>
+  </PageControl>
+  <Table width="70" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="3" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_obt" fontPitch="default" tabName="s_obt" unsortableColumns="--------" tabName1="s_obt" >
+   <TableColumn width="20" lstrtext="false" sqlDBName="ds" height="1" colName="obt02" unsortable="--------" fieldId="2" sqlTabName="obt_file" tabIndex="3" unsizable="--------" unhidable="--------" unmovable="--------" name="obt02" fieldtype="TABLE_COLUMN" text="Vehicle Model" >
+    <Edit width="20" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="30" lstrtext="false" sqlDBName="ds" height="1" colName="obt03" unsortable="--------" fieldId="3" sqlTabName="obt_file" tabIndex="4" unsizable="--------" unhidable="--------" unmovable="--------" name="obt03" fieldtype="TABLE_COLUMN" text="Description" >
+    <Edit width="30" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+   </TableColumn>
+  </Table>
+  <Grid width="70" posX="0" posY="15" height="1" lstrcomment="false" hidden="--------" name="gr7745" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl2527" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" posY="0" height="1" sizePolicy="initial" name="text26355" text="Rows" />
+   <FormField colName="cnt" fieldId="4" sqlTabName="formonly" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="17" formfieldname="formfield2" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="5" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cnt" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="24" posY="0" height="1" name="hl2528" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_obt" fromTable="true" tableKey="tb1114" >
+  <Link colName="obt_file.obt02" fromTable="true" colKey="Col11079" />
+  <Link colName="obt_file.obt03" fromTable="true" colKey="Col11080" />
+ </RecordView>
+</Form>
+

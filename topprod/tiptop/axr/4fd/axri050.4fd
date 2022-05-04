@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{568179cb-0000-4000-ac8f-34f2e37a1c8e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ood" order="" uid="{c319c23d-0000-4000-a108-211c4c897eb2}" where="">
+    <RecordField colName="ood01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ood_file.ood01" sqlTabName="ood_file" sqlType="VARCHAR" table_alias_name="" uid="{cb9dffb4-0000-4000-90e9-af56380fd146}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ood01_desc" sqlTabName="" table_alias_name="" uid="{66556beb-0000-4000-ace9-9b0a8282360c}"/>
+    <RecordField colName="ood02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ood_file.ood02" sqlTabName="ood_file" sqlType="VARCHAR" table_alias_name="" uid="{0a6bb188-0000-4000-9647-cfbd154a5876}"/>
+    <RecordField colName="" fieldIdRef="4" name="ood02_desc" sqlTabName="" table_alias_name="" uid="{b7aae89e-0000-4000-9995-9d1a66bab073}"/>
+    <RecordField colName="ood03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ood_file.ood03" sqlTabName="ood_file" sqlType="VARCHAR" table_alias_name="" uid="{7e95a729-0000-4000-aef6-3df8f519a5b5}"/>
+    <RecordField colName="" fieldIdRef="6" name="ood03_desc" sqlTabName="" table_alias_name="" uid="{0880d995-0000-4000-b9e1-a4e2d0a11f78}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1f9df338-0000-4000-8a4d-8ea20f7ad949}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{b684c6d4-0000-4000-9da3-57c559b26454}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="139" lstrtext="false" name="arti108" spacing="normal" text="axri050">
+    <VBox gridHeight="14" gridWidth="122" name="vb2" posX="4" posY="1">
+      <Folder gridHeight="10" gridWidth="122" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page name="Page2" text="Main">
+          <Table gridHeight="7" gridWidth="80" name="s_ood" posX="2" posY="1" totalRows="5">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ood01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="ood_file.ood01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="ood_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ood01" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" lstrcomment="false" name="ood01_desc" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="ood01_desc" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ood02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="ood_file.ood02" posX="23" posY="0" rowCount="" sqlTabName="ood_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ood02" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="ood02_desc" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ood02_desc" widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ood03" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="ood_file.ood03" posX="48" posY="0" rowCount="" sqlTabName="ood_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ood03" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="ood03_desc" noEntry="true" posX="58" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ood03_desc" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="122" lstrcomment="false" name="gr7" posX="0" posY="11">
+        <HLine gridWidth="10" name="hl7" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="23" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

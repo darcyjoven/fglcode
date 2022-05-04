@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{cb56b3bf-0000-4000-8b13-75f2b7706df8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1dae7081-0000-4000-88ff-101595e66946}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bgg01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{75cebd06-0000-4000-9238-33050094424e}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="bgn01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5a467ae2-0000-4000-9e48-6836ba9d10b4}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="bgn02" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f582ba42-0000-4000-bbef-214cc1bb97b9}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="yy" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{bda0c072-0000-4000-9713-d941cd5b48a6}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="mm" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{1c700658-0000-4000-bbd1-4f12d59f812f}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="c" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{97a42af7-0000-4000-8a78-33e08a5863e0}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{786705ee-0000-4000-8689-3e1ed90b8081}"/>
+    <RecordField colName="" fieldIdRef="8" name="type" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{533ec963-f82e-4305-b2c1-88e22a056df4}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="64" name="abgp110" spacing="normal" text="abgp110">
+    <VBox gridHeight="13" gridWidth="60" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="60" lstrcomment="false" name="gr630" posX="0" posY="1">
+        <Label posX="1" posY="0" text="BOM Version"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bgg01" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="1" text="ABG Version"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bgn01" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Year"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bgn02" notNull="true" posX="19" posY="2" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="3" text="Begin Year/Month"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="yy" notNull="true" posX="19" posY="3" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="mm" notNull="true" posX="31" posY="3" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtext="false" lstrtitle="false" name="c" notNull="true" posX="19" posY="4" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Re-generate existing Budget Data" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Label posX="1" posY="6" text="Cost Method"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="25" items="Monthly Weighted Unit Cost, FIFO Cost, Identify Manually-Batch Cost, Identify Manually-Item Cost, Identify Manually-Store Profit Center" name="type" notNull="true" posX="19" posY="6" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="ComboBox1" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Monthly Weighted Unit Cost"/>
+          <Item lstrtext="false" name="2" text="FIFO Cost"/>
+          <Item lstrtext="false" name="3" text="Identify Manually-Batch Cost"/>
+          <Item lstrtext="false" name="4" text="Identify Manually-Item Cost"/>
+          <Item lstrtext="false" name="5" text="Identify Manually-Store Profit Center"/>
+        </ComboBox>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="60" lstrcomment="false" name="gr631" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Background job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADgANgA3ADAANQBlAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADgANgA4ADkALQAzAGUAMQBlAGQAOQAwAGIAOAAwADgAMQB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGQAYQAwAGMAMAA3ADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkANwAxADMALQBkADkANAAxAGMAZAA1AGIANAA4AGEANgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGEANAA2ADcAYQBlADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZQA0ADgALQA2ADgAMwA2AGIAYQA5AGQAMQAwAGIANAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADMAMwBlAGMAOQA2ADMALQBmADgAMgBlAC0ANAAzADAANQAtAGIAMgBjADEALQA4ADgAZQAyADIAYQAwADUANgBkAGYANAB9QBQAAAAAAABAZkAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADUAYwBlAGIAZAAwADYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMgAzADgALQAzADMAMAA1ADAAMAA5ADQANAAyADQAZQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADUAOAAyAGIAYQA0ADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYgBlAGYALQAyADEANABjAGMAMQBiAGIAOQA3AGIAOQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGMANwAwADAANgA1ADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYgBkADEALQA0AGYAMQAyAGQANQA5AGYAOAAxADIAZgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADcAYQA0ADIAYQBmADcALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYQA3ADgALQAzADMAZQAwADgAYQA1ADgANgAzAGUAMAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGQAYQBlADcAMAA4ADEALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOABmAGYALQAxADAAMQA1ADkANQBlADYANgA5ADQANgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

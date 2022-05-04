@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ff5784be-0000-4000-b6da-af8ae059fa4e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmn" order="" uid="{13430da2-0000-4000-8e61-ca70b81e6568}" where="">
+    <RecordField colName="pmn04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmn_file.pmn04" sqlTabName="pmn_file" sqlType="VARCHAR" table_alias_name="" uid="{612c99b0-0000-4000-9c72-18dc5b9b6eaf}"/>
+    <RecordField colName="pmn02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pmn_file.pmn02" sqlTabName="pmn_file" sqlType="SMALLINT" table_alias_name="" uid="{f25ad5bd-0000-4000-be7c-b2c5989c9999}"/>
+    <RecordField colName="pmn41" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pmn_file.pmn41" sqlTabName="pmn_file" sqlType="VARCHAR" table_alias_name="" uid="{86e865e7-0000-4000-9ced-5759a95f4395}"/>
+    <RecordField colName="sfb251" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sfb_file.sfb251" sqlTabName="sfb_file" sqlType="DATE" table_alias_name="" uid="{ddcdd61a-0000-4000-ab18-793db48e8d11}"/>
+    <RecordField colName="pmn20" fieldIdRef="8" fieldType="TABLE_COLUMN" name="pmn_file.pmn20" sqlTabName="pmn_file" sqlType="DECIMAL" table_alias_name="" uid="{7c9ba28c-0000-4000-ad40-615b4b3d2806}"/>
+    <RecordField colName="pmn07" fieldIdRef="9" fieldType="TABLE_COLUMN" name="pmn_file.pmn07" sqlTabName="pmn_file" sqlType="VARCHAR" table_alias_name="" uid="{77b43842-0000-4000-afa5-10a7edfccb7b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3a55fd89-0000-4000-8a64-46e783c5a313}" where="">
+    <RecordField colName="pmm01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmm_file.pmm01" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{4e353a7d-0000-4000-a296-9a7de401e70f}"/>
+    <RecordField colName="pmm09" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmm_file.pmm09" sqlTabName="pmm_file" sqlType="VARCHAR" table_alias_name="" uid="{24163185-0000-4000-aa47-28ae518c535b}"/>
+    <RecordField colName="pmc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmc_file.pmc03" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{db570fd5-0000-4000-9e67-07e8f9b27791}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="73" name="apmp6101" spacing="normal" text="apmp6101">
+    <VBox gridHeight="19" gridWidth="70" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="70" lstrcomment="false" name="gr4945" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="67" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="P/O No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm01" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Vender No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmm09" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmm_file.pmm09" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="pmm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc03" noEntry="true" posX="34" posY="2" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="12" gridWidth="70" lstrcomment="false" name="s_pmn" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn04" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn02" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Ln#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn41" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn41" noEntry="true" posX="26" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="W/O#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb251" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb251" noEntry="true" posX="37" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Issu.Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn20" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn20" noEntry="true" notNull="true" posX="47" posY="0" required="true" rowCount="" sqlTabName="pmn_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Qty" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmn07" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="pmn_file.pmn07" noEntry="true" posX="58" posY="0" rowCount="" sqlTabName="pmn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Unit" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{852fd748-0000-4000-8e2b-c06f9c7894d3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f0bf66e5-0000-4000-96ce-be9f2b4610bc}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="azp01" sqlTabName="" table_alias_name="" uid="{e0a3e747-0000-4000-849b-b1d576dc8f5d}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ima131" sqlTabName="" table_alias_name="" uid="{7ba11137-0000-4000-aa15-2b6c1f91a468}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ima01" sqlTabName="" table_alias_name="" uid="{57049847-0000-4000-a6b4-ea27b43910ff}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="imk02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3ef01b56-0000-4000-a0e1-d6802f002fbb}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="yy01" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{fe531d10-0000-4000-8ef3-56e975a3f137}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="yy02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{26b5286c-0000-4000-b027-dd96da2f3799}"/>
+    <RecordField colName="" defaultValue="1" fieldIdRef="5" fieldType="NON_DATABASE" name="type" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{589fa92c-0000-4000-94bc-20499c2f9793}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{0b07fc61-0000-4000-93d4-371363a35b74}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="114" name="axmr760" spacing="normal" text="artr505">
+    <VBox gridHeight="15" gridWidth="92" name="vb2" posX="1" posY="0">
+      <Grid gridHeight="11" gridWidth="92" lstrcomment="false" name="gr1" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="90" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Logistics Code"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" justify="" name="azp01" posX="23" posY="1" rowCount="" sizePolicy="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label colorCondition="black" gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" name="dummy1" posX="1" posY="2" text="LRDMDS,QY&apos;|&apos;H&apos;;&apos;GK"/>
+          <Label posX="1" posY="3" text="Product Class"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" justify="" name="ima131" posX="23" posY="3" rowCount="" sizePolicy="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="4" text="Item No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" justify="" name="ima01" posX="23" posY="4" rowCount="" sizePolicy="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="5" text="Warehouse No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" justify="" name="imk02" posX="23" posY="5" rowCount="" sizePolicy="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="89" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="7" text="INPUT">
+          <Label posX="2" posY="1" text="Date Scope"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" century="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" justify="" name="yy01" posX="18" posY="1" rowCount="" sizePolicy="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+          <Label posX="29" posY="1" text="~"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" century="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" justify="" name="yy02" posX="31" posY="1" repeat="false" rowCount="" sizePolicy="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="DateEdit"/>
+          <Label posX="2" posY="2" text="Cost Method"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="" colName="" colorCondition="black" columnCount="" defaultValue="1" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" items="Monthly Weighted Unit Cost, FIFO Cost, Identify Manually-Batch Cost, Identify Manually-Item Cost, Identify Manually-Store Profit Center" name="type" posX="18" posY="2" queryEditable="" rowCount="" scroll="" sizePolicy="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="Monthly Weighted Unit Cost"/>
+            <Item lstrtext="false" name="2" text="FIFO Cost"/>
+            <Item lstrtext="false" name="3" text="Identify Manually-Batch Cost"/>
+            <Item lstrtext="false" name="4" text="Identify Manually-Item Cost"/>
+            <Item lstrtext="false" name="5" text="Identify Manually-Store Profit Center"/>
+          </ComboBox>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="92" lstrcomment="false" name="gr2" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAwAGIAMAA3AGYAYwA2ADEALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMwBkADQALQAzADcAMQAzADYAMwBhADMANQBiADcANAB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGUAZgAwADEAYgA1ADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMABlADEALQBkADYAOAAwADIAZgAwADAAMgBmAGIAYgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGUANQAzADEAZAAxADAALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZQBmADMALQA1ADYAZQA5ADcANQBhADMAZgAxADMANwB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBlADAAYQAzAGUANwA0ADcALQAwADAAMAAwAC0ANAAwADAAMAAtADgANAA5AGIALQBiADEAZAA1ADcANgBkAGMAOABmADUAZAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADgAOQBmAGEAOQAyAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADkANABiAGMALQAyADAANAA5ADkAYwAyAGYAOQA3ADkAMwB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADAAYgBmADYANgBlADUALQAwADAAMAAwAC0ANAAwADAAMAAtADkANgBjAGUALQBiAGUAOQBmADIAYgA0ADYAMQAwAGIAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADcAMAA0ADkAOAA0ADcALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANgBiADQALQBlAGEAMgA3AGIANAAzADkAMQAwAGYAZgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADYAYgA1ADIAOAA2AGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMAAyADcALQBkAGQAOQA2AGQAYQAyAGYAMwA3ADkAOQB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGIAYQAxADEAMQAzADcALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYQAxADUALQAyAGIANgBjADEAZgA5ADEAYQA0ADYAOAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{80f9e0b5-d743-45a2-bd0c-dd227306c31b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c5ab9b53-f728-4bca-8026-72a939439bd6}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="azw01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{62b40c7d-9f07-416a-90c1-f112d3b7efda}"/>
+    <RecordField colName="ima01" fieldIdRef="4" fieldType="COLUMN_LIKE" name="ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{e85242d6-1e05-4bb1-9558-33c835446a09}"/>
+    <RecordField colName="ima131" fieldIdRef="5" fieldType="COLUMN_LIKE" name="ima131" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{3a15d4af-e556-45a7-8c6f-d60b29537426}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="11" name="more" sqlTabName="" table_alias_name="" uid="{f3f880d6-256c-45f6-ac66-a8ca0bbf8520}"/>
+    <RecordField colName="" fieldIdRef="12" name="date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{13dac96f-e6d0-440c-b923-8448bb4e9f4a}"/>
+    <RecordField colName="" fieldIdRef="14" name="type" sqlTabName="" table_alias_name="" uid="{97cf19bc-953f-4f2e-b04c-1b2f4817b003}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="206" name="Form" text="Form">
+    <VBox gridHeight="16" gridWidth="55" name="VBox1" posX="2" posY="0">
+      <Grid gridHeight="11" gridWidth="55" name="Grid2" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="52" name="Group1" posX="1" posY="0" text="Group1">
+          <Label posX="4" posY="1" text="Product No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" columnCount="" fieldId="4" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="24" image="zoom.png" name="ima01" posX="23" posY="1" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ButtonEdit3" widget="ButtonEdit"/>
+          <Label posX="4" posY="2" text="Product Categories"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima131" columnCount="" fieldId="5" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="24" image="zoom.png" name="ima131" posX="23" posY="2" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ButtonEdit4" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="6" gridWidth="51" name="Group2" posX="1" posY="4" text="Group2">
+          <Label posX="4" posY="1" text="Plant"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" image="zoom.png" name="azw01" notNull="false" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ButtonEdit2" widget="ButtonEdit"/>
+          <Label colorCondition="black" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtext="false" name="dummy1" posX="23" posY="2" text="LRDMDS,QY&apos;|&apos;H&apos;;&apos;GK"/>
+          <Label posX="4" posY="3" text="Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="24" name="date" posX="23" posY="3" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Edit1" widget="DateEdit"/>
+          <Label posX="4" posY="4" text="Cost In Category"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="24" items="1, 2, 3, 4, 5" name="type" notNull="true" posX="23" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="ComboBox1" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="1"/>
+            <Item lstrtext="false" name="2" text="2"/>
+            <Item lstrtext="false" name="3" text="3"/>
+            <Item lstrtext="false" name="4" text="4"/>
+            <Item lstrtext="false" name="5" text="5"/>
+          </ComboBox>
+        </Group>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="55" name="Grid1" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="11" gridHeight="1" gridWidth="14" name="more" notNull="true" posX="3" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="more" title="CheckBox3" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjADUAYQBiADkAYgA1ADMALQBmADcAMgA4AC0ANABiAGMAYQAtADgAMAAyADYALQA3ADIAYQA5ADMAOQA0ADMAOQBiAGQANgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGEAMQA1AGQANABhAGYALQBlADUANQA2AC0ANAA1AGEANwAtADgAYwA2AGYALQBkADYAMABiADIAOQA1ADMANwA0ADIANgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADcAYwBmADEAOQBiAGMALQA5ADUAMwBmAC0ANABmADIAZQAtAGIAMAA0AGMALQAxAGIAMgBmADQAOAAxADcAYgAwADAAMwB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADgANQAyADQAMgBkADYALQAxAGUAMAA1AC0ANABiAGIAMQAtADkANQA1ADgALQAzADMAYwA4ADMANQA0ADQANgBhADAAOQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADIAYgA0ADAAYwA3AGQALQA5AGYAMAA3AC0ANAAxADYAYQAtADkAMABjADEALQBmADEAMQAyAGQAMwBiADcAZQBmAGQAYQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADMAZgA4ADgAMABkADYALQAyADUANgBjAC0ANAA1AGYANgAtAGEAYwA2ADYALQBhADgAYwBhADAAYgBiAGYAOAA1ADIAMAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADMAZABhAGMAOQA2AGYALQBlADYAZAAwAC0ANAA0ADAAYwAtAGIAOQAyADMALQA4ADQANAA4AGIAYgA0AGUAOQBmADQAYQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

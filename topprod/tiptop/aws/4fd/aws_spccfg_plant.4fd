@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6fc789b6-0000-4000-9827-096ded324b4d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bwce" order="" uid="{077a076f-0000-4000-a063-a6f38da2913d}" where="">
+    <RecordField colName="" fieldIdRef="5" name="bwce06" sqlTabName="" table_alias_name="" uid="{00c3b0ee-0000-4000-9194-3627285138e9}"/>
+    <RecordField colName="" fieldIdRef="6" name="bwce04" sqlTabName="" table_alias_name="" uid="{7e47dfe8-0000-4000-8964-d7839f6cfa69}"/>
+    <RecordField colName="" fieldIdRef="7" name="bwce02" sqlTabName="" table_alias_name="" uid="{6524d41f-0000-4000-b459-5484fe9b2cfe}"/>
+    <RecordField colName="" fieldIdRef="8" name="bwce03" sqlTabName="" table_alias_name="" uid="{a56dcbe0-0000-4000-88f5-706afceb1691}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{81d4e083-0000-4000-89a6-72067ee3be42}" where="">
+    <RecordField colName="wce06" fieldIdRef="1" fieldType="TABLE_COLUMN" name="wce_file.wce06" sqlTabName="wce_file" sqlType="VARCHAR" table_alias_name="" uid="{d7f53aef-0000-4000-87c4-9a7f156ca16f}"/>
+    <RecordField colName="wce04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="wce_file.wce04" sqlTabName="wce_file" sqlType="VARCHAR" table_alias_name="" uid="{e80cd013-0000-4000-9baa-a01b7bfa6c39}"/>
+    <RecordField colName="wce02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="wce_file.wce02" sqlTabName="wce_file" sqlType="VARCHAR" table_alias_name="" uid="{9d06a56e-0000-4000-ad8f-5b071a531b0e}"/>
+    <RecordField colName="wce03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="wce_file.wce03" sqlTabName="wce_file" sqlType="VARCHAR" table_alias_name="" uid="{d4b49588-0000-4000-b1a3-fc9d85babbb0}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="107" name="aws_spccfg_plant" spacing="normal" text="SPC Station Config">
+    <VBox gridHeight="18" gridWidth="104" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="9" gridWidth="104" lstrcomment="false" name="gr1434" posX="0" posY="1">
+        <Group gridHeight="8" gridWidth="89" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Exception Station Setting">
+          <Label posX="1" posY="1" text="Plant No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wce06" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="wce_file.wce06" notNull="true" posX="37" posY="1" required="true" rowCount="" sqlTabName="wce_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="EasyFlow station name"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wce04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="wce_file.wce04" notNull="true" posX="37" posY="2" required="true" rowCount="" sqlTabName="wce_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="EasyFlow station IP address"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wce02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="wce_file.wce02" notNull="true" posX="37" posY="3" required="true" rowCount="" sqlTabName="wce_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="EasyFlow SOAP Services URL"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wce03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="wce_file.wce03" notNull="true" posX="37" posY="4" required="true" rowCount="" scroll="true" sqlTabName="wce_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="7" gridWidth="104" lstrcomment="false" name="s_bwce" posX="0" posY="10" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="bwce06" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Plant No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bwce04" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Station name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="bwce02" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="IP address" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="bwce03" noEntry="true" posX="48" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="SOAP Services URL" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

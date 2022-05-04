@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{071feca3-0000-4000-aa3c-60cd7ef0addd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tsa" order="" uid="{e9112509-0000-4000-aa2b-68ad956ac1e3}" where="">
+    <RecordField colName="tsa03" fieldIdRef="11" fieldType="TABLE_COLUMN" name="tsa_file.tsa03" sqlTabName="tsa_file" sqlType="SMALLINT" table_alias_name="" uid="{05ae277e-0000-4000-b133-73d4343ea71e}"/>
+    <RecordField colName="" fieldIdRef="12" name="tqz03" sqlTabName="" table_alias_name="" uid="{6e882563-0000-4000-bb93-df047019bf0b}"/>
+    <RecordField colName="" fieldIdRef="13" name="ima02" sqlTabName="" table_alias_name="" uid="{5a39c944-0000-4000-acf6-bf01a7a11cdf}"/>
+    <RecordField colName="" fieldIdRef="14" name="ima31" sqlTabName="" table_alias_name="" uid="{2bd12358-0000-4000-9775-d5160460914b}"/>
+    <RecordField colName="tsa04" fieldIdRef="15" fieldType="TABLE_COLUMN" name="tsa_file.tsa04" sqlTabName="tsa_file" sqlType="DECIMAL" table_alias_name="" uid="{fb59ae04-0000-4000-bb99-d9a0ffd5e6ca}"/>
+    <RecordField colName="tsa05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="tsa_file.tsa05" sqlTabName="tsa_file" sqlType="DECIMAL" table_alias_name="" uid="{9d766258-0000-4000-8262-f894db717865}"/>
+    <RecordField colName="tsa08" fieldIdRef="3" fieldType="TABLE_COLUMN" name="tsa_file.tsa08" sqlTabName="tsa_file" sqlType="DECIMAL" table_alias_name="" uid="{ababa090-0000-4000-8136-4a89278f4dfa}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{0c093c95-0000-4000-baee-bd3c3e7b5307}" where="">
+    <RecordField colName="tsa01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="tsa_file.tsa01" sqlTabName="tsa_file" sqlType="VARCHAR" table_alias_name="" uid="{f9947e7a-0000-4000-9ddb-b21ec87547f1}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="tqy03" sqlTabName="" table_alias_name="" uid="{8c120eff-0000-4000-82b1-a25736b1604b}"/>
+    <RecordField colName="tsa02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="tsa_file.tsa02" sqlTabName="tsa_file" sqlType="SMALLINT" table_alias_name="" uid="{bfd01411-0000-4000-b19c-9b50494bda1f}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="occ02" sqlTabName="" table_alias_name="" uid="{7e202148-0000-4000-9a3a-6abb8b4d9d37}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{a4e13868-0000-4000-9d90-931ad5b92ae2}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{0ed9cde0-0000-4000-841c-7fc9c782053e}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="tqy10" sqlTabName="" table_alias_name="" uid="{1b51c14e-0000-4000-84c8-2084537c3c80}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="tqy11" sqlTabName="" table_alias_name="" uid="{36ac69f9-0000-4000-bff0-62ef3380b43c}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="133" name="atmt233_6" spacing="normal" text="atmt233_6">
+    <VBox gridHeight="19" gridWidth="130" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="130" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <HBox gridHeight="3" gridWidth="97" name="HBox1" posX="0" posY="0">
+            <Grid gridHeight="3" gridWidth="39" lstrcomment="false" name="gr1101" posX="2" posY="0">
+              <Label posX="2" posY="0" text="Promotion No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tsa01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="tsa_file.tsa01" noEntry="true" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="tsa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="2" posY="1" text="Cust. No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="tqy03" noEntry="true" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Grid>
+            <Grid gridHeight="3" gridWidth="54" lstrcomment="false" name="gr1102" posX="41" posY="0">
+              <Label posX="2" posY="0" text="Cust. Seq"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tsa02" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="tsa_file.tsa02" noEntry="true" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="tsa_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="2" posY="1" text="Cust. Abbr."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="occ02" noEntry="true" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </HBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="10" gridWidth="130" lstrcomment="false" name="s_tsa" posX="0" posY="6" totalRows="8">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tsa03" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="tsa_file.tsa03" noEntry="true" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="tsa_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Seq" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="tqz03" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Item No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Part Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="ima31" noEntry="true" posX="44" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Unit" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tsa04" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="tsa_file.tsa04" posX="53" posY="0" rowCount="" sqlTabName="tsa_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Quantity" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tsa05" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="tsa_file.tsa05" posX="68" posY="0" rowCount="" sqlTabName="tsa_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Bef. Amount" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tsa08" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="tsa_file.tsa08" posX="83" posY="0" rowCount="" sqlTabName="tsa_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Aft. Amount" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="130" lstrcomment="false" name="gr1103" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl348" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl349" posX="37" posY="0"/>
+        <Label posX="47" posY="0" text="Without-Tax Amount"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="tqy10" noEntry="true" posX="67" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <Label posX="89" posY="0" text="With-Tax Amount"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tqy11" noEntry="true" posX="109" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

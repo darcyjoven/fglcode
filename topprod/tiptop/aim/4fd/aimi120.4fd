@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7fd38d3f-0000-4000-abb3-a777b936d1c5}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_imz" order="" uid="{a0122eb1-0000-4000-a941-0c9e31ec6995}" where="">
+    <RecordField colName="imz01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="imz_file.imz01" sqlTabName="imz_file" sqlType="VARCHAR" table_alias_name="" uid="{44f9e138-0000-4000-876f-42cfd9443ae3}"/>
+    <RecordField colName="imz02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="imz_file.imz02" sqlTabName="imz_file" sqlType="VARCHAR" table_alias_name="" uid="{9ed85b9f-0000-4000-a04d-2b3c5046bf93}"/>
+    <RecordField colName="imzacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="imz_file.imzacti" sqlTabName="imz_file" sqlType="VARCHAR" table_alias_name="" uid="{2c11f2ea-0000-4000-8ca9-0d8f141025c3}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{a0c3bcdd-0000-4000-9efa-17d4fc0579ed}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{4ea57e73-0000-4000-a66a-32e1beb26b96}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="54" name="aimi120" spacing="normal" text="aimi120">
+    <VBox gridHeight="19" gridWidth="51" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="15" gridWidth="51" lstrcomment="false" name="pc541" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="14" gridWidth="49" name="VBox2" posX="0" posY="0">
+            <Table gridHeight="12" gridWidth="49" lstrcomment="false" name="s_imz" posX="0" posY="1" totalRows="10">
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imz01" columnCount="" comment="Assign Add/Query Item Group Code" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="imz_file.imz01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="imz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Group Cd" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imz02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="imz_file.imz02" posX="8" posY="0" rowCount="" sqlTabName="imz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imzacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="imz_file.imzacti" notNull="true" posX="38" posY="0" required="true" rowCount="" sqlTabName="imz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Table>
+          </VBox>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="51" lstrcomment="false" name="gr2998" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl876" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl877" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

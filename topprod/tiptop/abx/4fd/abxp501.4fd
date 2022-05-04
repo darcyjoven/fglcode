@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{62c7c767-0000-4000-8d42-37d260d8bce3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7a41d283-0000-4000-96b5-2071c9c7048e}" where="">
+    <RecordField colName="bza01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bza_file.bza01" sqlTabName="bza_file" sqlType="VARCHAR" table_alias_name="" uid="{e0b6afdf-0000-4000-839a-0531b66e96c2}"/>
+    <RecordField colName="bza05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bza_file.bza05" sqlTabName="bza_file" sqlType="VARCHAR" table_alias_name="" uid="{d2648168-0000-4000-9812-f43ae8f28c4b}"/>
+    <RecordField colName="bzb03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="bzb_file.bzb03" sqlTabName="bzb_file" sqlType="VARCHAR" table_alias_name="" uid="{78acdab6-0000-4000-89bb-a800e961a1b1}"/>
+    <RecordField colName="bzb04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="bzb_file.bzb04" sqlTabName="bzb_file" sqlType="VARCHAR" table_alias_name="" uid="{f15ebd8d-0000-4000-b39e-c84491b9b484}"/>
+    <RecordField colName="bza12" fieldIdRef="7" fieldType="TABLE_COLUMN" name="bza_file.bza12" sqlTabName="bza_file" sqlType="DATE" table_alias_name="" uid="{57309e5c-0000-4000-a034-9b2283e8f9a2}"/>
+    <RecordField colName="bza13" fieldIdRef="8" fieldType="TABLE_COLUMN" name="bza_file.bza13" sqlTabName="bza_file" sqlType="DATE" table_alias_name="" uid="{c9aa5cc1-0000-4000-8770-3496aed6af81}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="sure1" sqlTabName="" table_alias_name="" uid="{f4ef5003-0000-4000-8aa5-7e04cd419bf4}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="sure2" sqlTabName="" table_alias_name="" uid="{99e83797-0000-4000-b69d-d4c2e7f560f6}"/>
+    <RecordField colName="bze01" fieldIdRef="11" fieldType="TABLE_COLUMN" name="bze_file.bze01" sqlTabName="bze_file" sqlType="VARCHAR" table_alias_name="" uid="{965d439c-0000-4000-8796-cb1fcf998ff0}"/>
+    <RecordField colName="bze02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bze_file.bze02" sqlTabName="bze_file" sqlType="DATE" table_alias_name="" uid="{ecb0195f-0000-4000-a235-3deaa5cf1983}"/>
+    <RecordField colName="bze04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bze_file.bze04" sqlTabName="bze_file" sqlType="SMALLINT" table_alias_name="" uid="{cc15cbd7-0000-4000-989d-11fa5321f04c}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="59" name="abxp501" spacing="normal" text="abxp501">
+    <Grid gridHeight="16" gridWidth="58" lstrcomment="false" name="gr1076" posX="0" posY="0">
+      <Group gridHeight="8" gridWidth="57" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+        <Label posX="1" posY="1" text="Machine Equipment No"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bza01" columnCount="" comment="&lt;^P&gt; Qry Machine Equipment No" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="bza_file.bza01" notNull="true" posX="31" posY="1" required="true" rowCount="" sqlTabName="bza_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Style"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bza05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="M.Item, Accessory" lstrcomment="false" lstrtitle="false" name="bza_file.bza05" posX="31" posY="2" queryEditable="true" rowCount="" sqlTabName="bza_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="" name="1" text="M.Item"/>
+          <Item lstrtext="" name="2" text="Accessory"/>
+        </ComboBox>
+        <Label posX="1" posY="3" text="Keeping Department"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bzb03" columnCount="" comment="&lt;^P&gt; Qry Keeping Department" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="bzb_file.bzb03" posX="31" posY="3" rowCount="" sqlTabName="bzb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="4" text="Keeper"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bzb04" columnCount="" comment="&lt;^P&gt; Qry Keeper" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="bzb_file.bzb04" posX="31" posY="4" rowCount="" sqlTabName="bzb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="5" text="Release Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bza12" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bza_file.bza12" posX="31" posY="5" rowCount="" sqlTabName="bza_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="6" text="Account Due Datei"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bza13" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bza_file.bza13" posX="31" posY="6" rowCount="" sqlTabName="bza_file" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+      </Group>
+      <Group gridHeight="7" gridWidth="55" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="8" text="INPUT">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sure1" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Sure to Generate Book Surplus Qty zero Data?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sure2" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Sure to Generate Charge Off Data?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Label posX="1" posY="3" text="Inventory Taking No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bze01" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="bze_file.bze01" notNull="true" posX="31" posY="3" required="true" rowCount="" sqlTabName="bze_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="4" text="Inventory Taking Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bze02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="bze_file.bze02" notNull="true" posX="31" posY="4" required="true" rowCount="" sqlTabName="bze_file" sqlType="DATE" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="5" text="Inventory Taking Year"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bze04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="bze_file.bze04" notNull="true" posX="31" posY="5" required="true" rowCount="" sqlTabName="bze_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{485a5a35-0000-4000-a8de-99c0975956b7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gap" order="" uid="{2b7adcf4-0000-4000-bd8e-856416b05c6e}" where="">
+    <RecordField colName="gap03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gap_file.gap03" sqlTabName="gap_file" sqlType="VARCHAR" table_alias_name="" uid="{77d915f6-0000-4000-8445-4c51858d2f20}"/>
+    <RecordField colName="gbd06" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gbd_file.gbd06" sqlTabName="gbd_file" sqlType="VARCHAR" table_alias_name="" uid="{ea571005-0000-4000-91d8-5f0bec1bde89}"/>
+    <RecordField colName="gap02" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gap_file.gap02" sqlTabName="gap_file" sqlType="VARCHAR" table_alias_name="" uid="{469ed239-0000-4000-8612-0d1abcea3531}"/>
+    <RecordField colName="gbd04" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gbd_file.gbd04" sqlTabName="gbd_file" sqlType="VARCHAR" table_alias_name="" uid="{9efc3c75-0000-4000-90a8-45cf5313ed6c}"/>
+    <RecordField colName="gbd05" fieldIdRef="12" fieldType="TABLE_COLUMN" name="gbd_file.gbd05" sqlTabName="gbd_file" sqlType="VARCHAR" table_alias_name="" uid="{9c973be7-0000-4000-a842-ea8f7c052c6c}"/>
+    <RecordField colName="gap04" fieldIdRef="13" fieldType="TABLE_COLUMN" name="gap_file.gap04" sqlTabName="gap_file" sqlType="VARCHAR" table_alias_name="" uid="{c75d978c-0000-4000-926d-641becb3073f}"/>
+    <RecordField colName="gap05" fieldIdRef="14" fieldType="TABLE_COLUMN" name="gap_file.gap05" sqlTabName="gap_file" sqlType="VARCHAR" table_alias_name="" uid="{cded0caa-0000-4000-a1bd-f053c66c7bde}"/>
+    <RecordField colName="" fieldIdRef="2" name="gbd04_s" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{cd9d4f54-0000-4000-b19d-b806180ae3b3}"/>
+    <RecordField colName="" fieldIdRef="3" name="gbd05_s" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9a99f6e9-0000-4000-ab7d-5cb35cbac421}"/>
+    <RecordField colName="gap08" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gap_file.gap08" sqlTabName="gap_file" sqlType="VARCHAR" table_alias_name="" uid="{07cc9696-0000-4000-84af-5d54f82c0b8b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2ec6adcf-0000-4000-bf74-f8a6be829f5b}" where="">
+    <RecordField colName="gap01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gap_file.gap01" sqlTabName="gap_file" sqlType="VARCHAR" table_alias_name="" uid="{b7fba8da-0000-4000-a70d-4ef36c3af38f}"/>
+    <RecordField colName="gaz03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{a27ae544-0000-4000-969f-fed32d517a3d}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{0c29b66a-0000-4000-b136-937e1737359a}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f9bd55f2-0000-4000-a8e0-770babc30a05}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="185" name="p_base_act" spacing="normal" text="p_base_act">
+    <VBox gridHeight="28" gridWidth="182" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="11" gridWidth="182" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="9" gridWidth="69" lstrcomment="false" name="gr3152" posX="0" posY="0">
+            <Group gridHeight="8" gridWidth="68" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Program">
+              <Label posX="1" posY="1" text="Program ID"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gap01" columnCount="" comment="Key Value" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gap_file.gap01" notNull="true" posX="14" posY="1" required="true" rowCount="" sqlTabName="gap_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz03" noEntry="true" posX="36" posY="1" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="182" lstrcomment="false" name="s_gap" posX="0" posY="12" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gap03" columnCount="" comment="Is The Action Belongs USER-DEFINE" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gap_file.gap03" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="gap_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="UserDefine" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbd06" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gbd_file.gbd06" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="gbd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Std Act" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gap02" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gap_file.gap02" notNull="true" posX="20" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gap_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Action ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbd04" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="gbd_file.gbd04" noEntry="true" posX="32" posY="0" rowCount="" sqlTabName="gbd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="General Action Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbd05" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="gbd_file.gbd05" noEntry="true" posX="55" posY="0" rowCount="" sqlTabName="gbd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="General Action Comments" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gap04" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gap_file.gap04" notNull="true" posX="80" posY="0" required="true" rowCount="" sqlTabName="gap_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Detail" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gap05" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gap_file.gap05" notNull="true" posX="87" posY="0" required="true" rowCount="" sqlTabName="gap_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="TopMenu" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="gbd04_s" posX="95" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Action Name By Program" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="27" lstrcomment="false" lstrtitle="false" name="gbd05_s" posX="118" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Action Comments By Program" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gap08" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="gap_file.gap08" noEntry="true" posX="145" posY="0" rowCount="" sqlTabName="gap_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Hot Key" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="182" lstrcomment="false" name="gr3153" posX="0" posY="24">
+        <HLine gridWidth="10" name="hl7" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

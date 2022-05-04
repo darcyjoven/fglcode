@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{830f417b-2933-41e2-a764-3d6070e51ff6}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6435d87b-42d3-4df4-a95d-785cea9fad33}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="lpk01_a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{156e9e83-5ba7-4280-8ef1-4d47c1693cb2}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="lpk04_a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{108f14e8-f7e2-41f8-b819-711048f4789a}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="lpk03_a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{94477089-6861-48d7-8592-206a55b0ff27}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="lpk17_a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{88adb04a-dc5b-430a-a9fe-0003e9647d64}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="lpk18_a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{459cc539-8adb-4469-bb55-850f76b295b5}"/>
+    <RecordField colName="" fieldIdRef="10" name="cnt_a" sqlTabName="" table_alias_name="" uid="{05fd17ae-da2a-4ad5-b099-e521f4cd4941}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="lpa_file" name="s_lpa" order="" uid="{82908af7-35be-4301-b4a8-402d0b9acb9d}" where="">
+    <RecordField colName="lpa02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="lpa_file.lpa02" sqlTabName="lpa_file" sqlType="VARCHAR" table_alias_name="" uid="{b135a07c-640b-430a-9a3f-090b39ca91bc}" uniqueQueryKey="false"/>
+    <RecordField colName="lpc02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="lpc_file.lpc02" sqlTabName="lpc_file" sqlType="VARCHAR" table_alias_name="" uid="{1df3e0d3-ba03-4e4d-9fc0-2f28e248c971}" uniqueQueryKey="false"/>
+    <RecordField colName="lpa03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="lpa_file.lpa03" sqlTabName="lpa_file" sqlType="DATE" table_alias_name="" uid="{0d3c256e-7f94-45af-9fc5-3ba0e1d9853d}" uniqueQueryKey="false"/>
+    <RecordField colName="lpaacti" fieldIdRef="9" fieldType="TABLE_COLUMN" name="lpa_file.lpaacti" sqlTabName="lpa_file" sqlType="VARCHAR" table_alias_name="" uid="{cf8b43c8-0907-496e-9f99-5baf909f9bf5}" uniqueQueryKey="false"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="125" name="Form" text="Form">
+    <VBox gridHeight="18" gridWidth="124" name="VBox1" posX="1" posY="0">
+      <Folder gridHeight="7" gridWidth="124" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Page1">
+          <Grid gridHeight="5" gridWidth="116" name="Grid1" posX="0" posY="0">
+            <Label posX="1" posY="1" text="Card No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" name="lpk01_a" noEntry="true" notNull="true" posX="22" posY="1" rowCount="" scroll="true" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="lpk01" widget="Edit"/>
+            <Label posX="60" posY="1" text="TEL No"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" name="lpk17_a" noEntry="true" posX="70" posY="1" rowCount="" scroll="true" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="lpk17" widget="Edit"/>
+            <Label posX="1" posY="2" text="Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" name="lpk04_a" noEntry="true" posX="22" posY="2" rowCount="" scroll="true" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="lpk04" widget="Edit"/>
+            <Label posX="60" posY="2" text="Phone No"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" name="lpk18_a" noEntry="true" posX="70" posY="2" rowCount="" scroll="true" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="lpk18" widget="Edit"/>
+            <Label posX="1" posY="3" text="Identification No"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" name="lpk03_a" noEntry="true" posX="22" posY="3" rowCount="" scroll="true" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="lpk03" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="124" name="s_lpa" posX="0" posY="8" totalRows="5">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lpa02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" name="lpa_file.lpa02" notNull="true" posX="0" posY="0" rowCount="" scroll="true" sqlTabName="lpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Commemoration day No" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lpc02" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="lpc_file.lpc02" noEntry="true" posX="12" posY="0" rowCount="" scroll="true" sqlTabName="lpc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Desc" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lpa03" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="lpa_file.lpa03" notNull="true" posX="42" posY="0" rowCount="" sqlTabName="lpa_file" sqlType="DATE" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Commemoration Date" widget="DateEdit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lpaacti" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" name="lpa_file.lpaacti" notNull="true" posX="54" posY="0" rowCount="" sqlTabName="lpa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Acti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="124" name="Grid2" posX="0" posY="15">
+        <HLine gridWidth="13" name="HLine1" posX="1" posY="0"/>
+        <Label gridHeight="1" gridWidth="7" name="details" posX="15" posY="0" text="Label1"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="11" name="cnt_a" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Edit1" widget="Edit"/>
+        <HLine gridWidth="11" name="HLine2" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxADUANgBlADkAZQA4ADMALQA1AGIAYQA3AC0ANAAyADgAMAAtADgAZQBmADEALQA0AGQANAA3AGMAMQA2ADkAMwBjAGIAMgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADAAOABmADEANABlADgALQBmADcAZQAyAC0ANAAxAGYAOAAtAGIAOAAxADkALQA3ADEAMQAwADQAOABmADQANwA4ADkAYQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADQAMwA1AGQAOAA3AGIALQA0ADIAZAAzAC0ANABkAGYANAAtAGEAOQA1AGQALQA3ADgANQBjAGUAYQA5AGYAYQBkADMAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADIAOQAwADgAYQBmADcALQAzADUAYgBlAC0ANAAzADAAMQAtAGIANABhADgALQA0ADAAMgBkADAAYgA5AGEAYwBiADkAZAB9AAAAAAAAAAAAAAAAAAAAAD9QYk3S8an8AQAAAEwAewA5ADQANAA3ADcAMAA4ADkALQA2ADgANgAxAC0ANAA4AGQANwAtADgANQA5ADIALQAyADAANgBhADUANQBiADAAZgBmADIANwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADgAYQBkAGIAMAA0AGEALQBkAGMANQBiAC0ANAAzADAAYQAtAGEAOQBmAGUALQAwADAAMAAzAGUAOQA2ADQANwBkADYANAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADUAZgBkADEANwBhAGUALQBkAGEAMgBhAC0ANABhAGQANQAtAGIAMAA5ADkALQBlADUAMgAxAGYANABjAGQANAA5ADQAMQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGQAMwBjADIANQA2AGUALQA3AGYAOQA0AC0ANAA1AGEAZgAtADkAZgBjADUALQAzAGIAYQAwAGUAMQBkADkAOAA1ADMAZAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADUAOQBjAGMANQAzADkALQA4AGEAZABiAC0ANAA0ADYAOQAtAGIAYgA1ADUALQA4ADUAMABmADcANgBiADIAOQA1AGIANQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGQAZgAzAGUAMABkADMALQBiAGEAMAAzAC0ANABlADQAZAAtADkAZgBjADAALQAyAGYAMgA4AGUAMgA0ADgAYwA5ADcAMQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADEAMwA1AGEAMAA3AGMALQA2ADQAMABiAC0ANAAzADAAYQAtADkAYQAzAGYALQAwADkAMABiADMAOQBjAGEAOQAxAGIAYwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYAOABiADQAMwBjADgALQAwADkAMAA3AC0ANAA5ADYAZQAtADkAZgA5ADkALQA1AGIAYQBmADkAMAA5AGYAOQBiAGYANQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{01f9841e-0000-4000-98ed-c1dd474bf246}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b7944e00-0000-4000-9b68-5175cb0c3245}" where="">
+    <RecordField colName="oha01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oha_file.oha01" sqlTabName="oha_file" sqlType="VARCHAR" table_alias_name="" uid="{6bb1f844-0000-4000-b2a1-64828e84c38a}"/>
+    <RecordField colName="oha02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oha_file.oha02" sqlTabName="oha_file" sqlType="DATE" table_alias_name="" uid="{40bc3235-0000-4000-8346-0d74ae4eb1d7}"/>
+    <RecordField colName="oha03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oha_file.oha03" sqlTabName="oha_file" sqlType="VARCHAR" table_alias_name="" uid="{05c004cc-0000-4000-a06f-1b4217f3f3ea}"/>
+    <RecordField colName="oayslip" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oay_file.oayslip" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{bed7fb2d-0000-4000-87a6-0775fff52bca}"/>
+    <RecordField colName="oaydesc" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oay_file.oaydesc" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{aca5fb27-0000-4000-a3e9-4c2e6bc8ab09}"/>
+    <RecordField colName="oaymxno" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oay_file.oaymxno" sqlTabName="oay_file" sqlType="VARCHAR" table_alias_name="" uid="{d4ad71b8-0000-4000-8a9d-e22fa8c49194}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="62" name="axmt7008" spacing="normal" text="axmt7008">
+    <Group gridHeight="11" gridWidth="61" lstrcomment="false" lstrtext="false" name="gb1885" posX="0" posY="0" text="QBE">
+      <VBox gridHeight="9" gridWidth="59" name="VBox1" posX="1" posY="1">
+        <Grid gridHeight="3" gridWidth="59" lstrcomment="false" name="gr2656" posX="0" posY="1">
+          <Label posX="1" posY="0" text="Sls/Rn Note#"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oha01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oha_file.oha01" posX="22" posY="0" rowCount="" sqlTabName="oha_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="1" text="Sls/Rn Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oha02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oha_file.oha02" posX="22" posY="1" rowCount="" sqlTabName="oha_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="2" text="Customer No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oha03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oha_file.oha03" posX="22" posY="2" rowCount="" sqlTabName="oha_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Grid>
+        <Group gridHeight="4" gridWidth="59" lstrcomment="false" lstrtext="false" name="gb1886" posX="0" posY="4">
+          <Grid gridHeight="2" gridWidth="57" lstrcomment="false" name="gr2657" posX="1" posY="1">
+            <Label posX="1" posY="0" text="Exchange order"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oayslip" columnCount="" comment="&lt;^P&gt;Qry Details" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="oay_file.oayslip" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaydesc" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="oay_file.oaydesc" posX="34" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oaymxno" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="oay_file.oaymxno" posX="46" posY="0" rowCount="" sqlTabName="oay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Group>
+      </VBox>
+    </Group>
+  </Form>
+</ManagedForm>

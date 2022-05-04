@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{31c91f95-0000-4000-acd1-e0c225e9700b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{778ef1ab-0000-4000-abeb-7f53a2266211}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="m" sqlTabName="" table_alias_name="" uid="{72ea5d41-0000-4000-8b9d-38e2a6ad1543}"/>
+    <RecordField colName="oea01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oea_file.oea01" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{e489e755-0000-4000-85fb-4df6afc7cc81}"/>
+    <RecordField colName="oea03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oea_file.oea03" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{a5ae8752-0000-4000-bc87-90cbcda48d39}"/>
+    <RecordField colName="oea02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oea_file.oea02" sqlTabName="oea_file" sqlType="DATE" table_alias_name="" uid="{b055af8e-0000-4000-8230-e8da18701da9}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="55" name="amri401g" spacing="normal" text="amri401g">
+    <VBox gridHeight="11" gridWidth="46" name="vb6" posX="4" posY="2">
+      <Grid gridHeight="4" gridWidth="46" lstrcomment="false" name="gr2" posX="0" posY="1">
+        <Label posX="2" posY="1" text="SO Material NO."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" name="m" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Grid gridHeight="5" gridWidth="46" lstrcomment="false" name="gr1" posX="0" posY="5">
+        <Group gridHeight="5" gridWidth="43" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="SO NO. QBE"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="oea_file.oea01" posX="22" posY="1" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Custom No. QBE"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="oea_file.oea03" posX="22" posY="2" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="SO Date QBE"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oea_file.oea02" posX="22" posY="3" rowCount="" sqlTabName="oea_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

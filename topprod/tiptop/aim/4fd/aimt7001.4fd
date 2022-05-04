@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{299f6cb3-0000-4000-93fb-ba35cf585097}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3ed095c2-0000-4000-a35f-a268858d400f}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="wono" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{328d2e78-0000-4000-a526-cd67e334237e}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="part" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7a1e513a-0000-4000-a6ae-3af2f849a398}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="idate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{6dd00c79-0000-4000-834a-d0e5022b2d58}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{10cb4f32-0000-4000-a234-5307e8a5e802}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="qty" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{d8affd6f-0000-4000-b69d-024abe00c3b3}"/>
+    <RecordField colName="imn04" fieldIdRef="10" fieldType="TABLE_COLUMN" name="imn_file.imn04" sqlTabName="imn_file" sqlType="VARCHAR" table_alias_name="" uid="{760ef4c4-0000-4000-bea4-211845ee9862}"/>
+    <RecordField colName="imn05" fieldIdRef="11" fieldType="TABLE_COLUMN" name="imn_file.imn05" sqlTabName="imn_file" sqlType="VARCHAR" table_alias_name="" uid="{1c13f8d3-0000-4000-8655-719a6992b06b}"/>
+    <RecordField colName="imn06" fieldIdRef="12" fieldType="TABLE_COLUMN" name="imn_file.imn06" sqlTabName="imn_file" sqlType="VARCHAR" table_alias_name="" uid="{c8dfc3c8-0000-4000-a5b3-9a80c17e5398}"/>
+    <RecordField colName="imn09" fieldIdRef="13" fieldType="TABLE_COLUMN" name="imn_file.imn09" sqlTabName="imn_file" sqlType="VARCHAR" table_alias_name="" uid="{0d11f2dd-0000-4000-bda4-084912b778a6}"/>
+    <RecordField colName="imn15" fieldIdRef="2" fieldType="TABLE_COLUMN" name="imn_file.imn15" sqlTabName="imn_file" sqlType="VARCHAR" table_alias_name="" uid="{d45322d7-0000-4000-be11-e288cca9bed0}"/>
+    <RecordField colName="imn16" fieldIdRef="3" fieldType="TABLE_COLUMN" name="imn_file.imn16" sqlTabName="imn_file" sqlType="VARCHAR" table_alias_name="" uid="{2cded888-0000-4000-a4c1-f3338c3895d6}"/>
+    <RecordField colName="imn17" fieldIdRef="4" fieldType="TABLE_COLUMN" name="imn_file.imn17" sqlTabName="imn_file" sqlType="VARCHAR" table_alias_name="" uid="{0f9d8d4b-0000-4000-b474-fa6498bc4784}"/>
+    <RecordField colName="imn20" fieldIdRef="5" fieldType="TABLE_COLUMN" name="imn_file.imn20" sqlTabName="imn_file" sqlType="VARCHAR" table_alias_name="" uid="{a85ea78b-0000-4000-83d9-4ca566f7a63a}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="50" name="aimt7001" spacing="normal" text="aimt7001">
+    <VBox gridHeight="22" gridWidth="48" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="20" gridWidth="48" lstrcomment="false" name="gr52" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="47" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="W/O No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="wono" posX="25" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="BOM Item"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="part" posX="25" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Expiry Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="idate" posX="25" posY="3" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="34" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="to Bottom Level?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label posX="1" posY="5" text="Estimated Transfer Qty"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="qty" posX="25" posY="5" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="6" gridWidth="47" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="7" text="Estimated Transfer-out">
+          <Label posX="1" posY="1" text="Warehouse"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imn04" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imn_file.imn04" posX="25" posY="1" rowCount="" sqlTabName="imn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Location"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imn05" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imn_file.imn05" posX="25" posY="2" rowCount="" sqlTabName="imn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Lot#"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imn06" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imn_file.imn06" posX="25" posY="3" rowCount="" sqlTabName="imn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Inventory Unit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imn09" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imn_file.imn09" posX="25" posY="4" rowCount="" sqlTabName="imn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="6" gridWidth="47" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="13" text="Estimated Transfer-in">
+          <Label posX="1" posY="1" text="Warehouse"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imn15" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imn_file.imn15" posX="25" posY="1" rowCount="" sqlTabName="imn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Location"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imn16" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imn_file.imn16" posX="25" posY="2" rowCount="" sqlTabName="imn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Lot#"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imn17" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imn_file.imn17" posX="25" posY="3" rowCount="" sqlTabName="imn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Inventory Unit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imn20" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imn_file.imn20" posX="25" posY="4" rowCount="" sqlTabName="imn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

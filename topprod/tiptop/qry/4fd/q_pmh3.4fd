@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1bbb1464-0000-4000-b6a5-5770c87cc972}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmh" order="" uid="{68dc7716-0000-4000-b11e-5d7b5baa4ec5}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{aef8fc0a-0000-4000-a89c-35260f642e64}"/>
+    <RecordField colName="pmh02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmh_file.pmh02" sqlTabName="pmh_file" sqlType="VARCHAR" table_alias_name="" uid="{7c7c7e16-0000-4000-a4de-83c5e411ca2e}"/>
+    <RecordField colName="pmc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmc_file.pmc03" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{418a698f-0000-4000-ab34-a1fbf4263bb0}"/>
+    <RecordField colName="pmh13" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmh_file.pmh13" sqlTabName="pmh_file" sqlType="VARCHAR" table_alias_name="" uid="{380feec3-0000-4000-bfb6-8fa0f6634547}"/>
+    <RecordField colName="" fieldIdRef="5" name="unitprice" sqlTabName="" table_alias_name="" uid="{cbb5dc7f-0000-4000-9d24-fca9bca1b8ce}"/>
+    <RecordField colName="" fieldIdRef="6" name="unitpricet" sqlTabName="" table_alias_name="" uid="{81d2c68b-0000-4000-bff2-8f93b503b3c4}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="88" name="q_pmh3" spacing="normal" text="Query Item/Supplier">
+    <Grid gridHeight="13" gridWidth="86" lstrcomment="false" name="gr3825" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="85" lstrcomment="false" name="s_pmh" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmh02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="pmh_file.pmh02" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="pmh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Supplier No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc03" notNull="true" posX="21" posY="0" required="true" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Abbreviation" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmh13" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="pmh_file.pmh13" notNull="true" posX="36" posY="0" required="true" rowCount="" sqlTabName="pmh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Currency" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="unitprice" notNull="true" posX="47" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Get Unit Price" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="unitpricet" notNull="true" posX="62" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="GET Unit T. Pr" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

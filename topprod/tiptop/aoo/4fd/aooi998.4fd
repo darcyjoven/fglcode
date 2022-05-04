@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{030ab6bf-0000-4000-8529-42dfd59498be}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_mlk" order="" uid="{c3e84569-0000-4000-9311-274031a1a0bf}" where="">
+    <RecordField colName="mlk02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="mlk_file.mlk02" sqlTabName="mlk_file" sqlType="SMALLINT" table_alias_name="" uid="{a7f66ef6-0000-4000-bf7a-25be098d2ff1}"/>
+    <RecordField colName="mlk03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="mlk_file.mlk03" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{34abfd35-0000-4000-90b0-7c3530e66471}"/>
+    <RecordField colName="mlk05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="mlk_file.mlk05" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{e85a2e60-0000-4000-ba80-011702176dc9}"/>
+    <RecordField colName="mlk04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="mlk_file.mlk04" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{4216a59e-0000-4000-9e17-8870e88aebb4}"/>
+    <RecordField colName="mlk07" fieldIdRef="7" fieldType="TABLE_COLUMN" name="mlk_file.mlk07" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{c9c5877f-0000-4000-8713-6e74d79a646a}"/>
+    <RecordField colName="mlk06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="mlk_file.mlk06" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{97e35283-0000-4000-ae8b-d481d2893763}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5dcf0793-0000-4000-b703-daac63914823}" where="">
+    <RecordField colName="mlk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="mlk_file.mlk01" sqlTabName="mlk_file" sqlType="VARCHAR" table_alias_name="" uid="{6d841286-0000-4000-b26a-144626d66a81}"/>
+    <RecordField colName="gaz03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{41f44a9e-0000-4000-9c27-fbe23f6c1aef}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{06a1fb08-0000-4000-9b05-a165df6386c0}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{9fd9e35f-0000-4000-854d-3e05c3a5daf4}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="111" name="aooi998" spacing="normal" text="aooi998">
+    <VBox gridHeight="23" gridWidth="108" name="vb11" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="108" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="5" gridWidth="54" lstrcomment="false" name="gr4675" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="53" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label gridHeight="1" gridWidth="12" name="Label3" posX="1" posY="1" text="Program Name"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="mlk01" columnCount="" comment="KEY Field, No Blank/Repeated!, &lt;^P&gt;Qry Program Name" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="mlk_file.mlk01" notNull="true" posX="15" posY="1" required="true" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz03" noEntry="true" posX="15" posY="2" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="108" lstrcomment="false" name="s_mlk" posX="0" posY="7" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mlk02" columnCount="" comment="&lt;^U&gt;Ln# +1 Automatically Under The Line, &lt;^Y&gt;Ln # Renew From 1st" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="mlk_file.mlk02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="mlk_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Ln #" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mlk03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" items="Receiver, C.C., Secret C.C" lstrcomment="false" lstrtitle="false" name="mlk_file.mlk03" notNull="true" posX="5" posY="0" required="true" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Type" widget="ComboBox">
+          <Item name="1" text="Receiver"/>
+          <Item name="2" text="C.C."/>
+          <Item name="3" text="Secret C.C"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="mlk05" columnCount="" comment="Enter Receiver Name" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="mlk_file.mlk05" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Receiver Name" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="mlk04" columnCount="" comment="Enter Receiver E-mail Address" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="mlk_file.mlk04" notNull="true" posX="30" posY="0" required="true" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="E-mail Address" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mlk07" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Adobe Acrobat (*.pdf), Crystal Report (*.rpt), Microsoft Word (*.doc), Microsoft Excel(*.xls), Microsoft Excel - Print header and footer on each page (*.xls)&#13;&#10;), Microsoft Excel - Data only (*.xls)" lstrcomment="false" lstrtitle="false" name="mlk_file.mlk07" posX="52" posY="0" rowCount="" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Attachment (Report Format)" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Adobe Acrobat (*.pdf)"/>
+          <Item lstrtext="false" name="2" text="Crystal Report (*.rpt)"/>
+          <Item lstrtext="false" name="3" text="Microsoft Word (*.doc)"/>
+          <Item lstrtext="false" name="4" text="Microsoft Excel(*.xls)"/>
+          <Item lstrtext="false" name="5" text="Microsoft Excel - Print header and footer on each page (*.xls)&#13;&#10;)"/>
+          <Item lstrtext="true" name="6" text="Microsoft Excel - Data only (*.xls)"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mlk06" columnCount="" comment="Enter Other Memo of Receiver" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="mlk_file.mlk06" posX="62" posY="0" rowCount="" scroll="true" sqlTabName="mlk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Memo" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="108" lstrcomment="false" name="gr4676" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1472" posX="2" posY="0"/>
+        <Label gridHeight="1" gridWidth="4" name="Label1" posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="1" name="Label2" posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1473" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADcAZgA2ADYAZQBmADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZgA3AGEALQAyADUAYgBlADAAOQA4AGQAMgBmAGYAMQB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGQAYwBmADAANwA5ADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwAwADMALQBkAGEAYQBjADYAMwA5ADEANAA4ADIAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADgANQBhADIAZQA2ADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYQA4ADAALQAwADEAMQA3ADAAMgAxADcANgBkAGMAOQB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADcAZQAzADUAMgA4ADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZQA4AGIALQBkADQAOAAxAGQAMgA4ADkAMwA3ADYAMwB9QBQAAAAAAABAY2AAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGQAOAA0ADEAMgA4ADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgA2AGEALQAxADQANAA2ADIANgBkADYANgBhADgAMQB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADQAYQBiAGYAZAAzADUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMABiADAALQA3AGMAMwA1ADMAMABlADYANgA0ADcAMQB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGYAZAA5AGUAMwA1AGYALQAwADAAMAAwAC0ANAAwADAAMAAtADgANQA0AGQALQAzAGUAMAA1AGMAMwBhADUAZABhAGYANAB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADYAYQAxAGYAYgAwADgALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYgAwADUALQBhADEANgA1AGQAZgA2ADMAOAA2AGMAMAB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADMAZQA4ADQANQA2ADkALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMwAxADEALQAyADcANAAwADMAMQBhADEAYQAwAGIAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADIAMQA2AGEANQA5AGUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZQAxADcALQA4ADgANwAwAGUAOAA4AGEAZQBiAGIANAB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADkAYwA1ADgANwA3AGYALQAwADAAMAAwAC0ANAAwADAAMAAtADgANwAxADMALQA2AGUANwA0AGQANwA5AGEANgA0ADYAYQB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADEAZgA0ADQAYQA5AGUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwAyADcALQBmAGIAZQAyADMAZgA2AGMAMQBhAGUAZgB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

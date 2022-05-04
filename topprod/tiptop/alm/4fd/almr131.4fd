@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{84c490d3-bd36-46dd-b2a4-4e79f194af97}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="lmd_file" name="Record1" order="" uid="{2d2fc138-474c-4f1d-acf2-c679e4997113}" where="">
+    <RecordField colName="lmdstore" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lmd_file.lmdstore" sqlTabName="lmd_file" sqlType="VARCHAR" table_alias_name="" uid="{148002c0-445e-46d1-a6f9-af55731c2bc9}" uniqueQueryKey="false"/>
+    <RecordField colName="lmd03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lmd_file.lmd03" sqlTabName="lmd_file" sqlType="VARCHAR" table_alias_name="" uid="{c9882d45-809a-4a1f-9485-8e9f77a1e4cb}" uniqueQueryKey="false"/>
+    <RecordField colName="lmd04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lmd_file.lmd04" sqlTabName="lmd_file" sqlType="VARCHAR" table_alias_name="" uid="{83a4ca13-7f2c-4452-a79a-2c50cd594e21}" uniqueQueryKey="false"/>
+    <RecordField colName="lmd14" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lmd_file.lmd14" sqlTabName="lmd_file" sqlType="VARCHAR" table_alias_name="" uid="{9c7defa1-67d4-4816-9606-174b55094bd6}" uniqueQueryKey="false"/>
+    <RecordField colName="lmd01" fieldIdRef="5" fieldType="TABLE_COLUMN" name="lmd_file.lmd01" sqlTabName="lmd_file" sqlType="VARCHAR" table_alias_name="" uid="{8a87ac8b-af28-4061-9c04-c25367fb2cca}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{4305e934-76c1-40ff-a62f-2d1a5af19b22}" where="">
+    <RecordField colName="lmd07" fieldIdRef="6" fieldType="TABLE_COLUMN" name="lmd_file.lmd07" sqlTabName="lmd_file" sqlType="VARCHAR" table_alias_name="" uid="{dee83f09-6db8-4050-a66d-b22e9a54bee3}"/>
+    <RecordField colName="" fieldIdRef="7" name="sub" sqlTabName="" table_alias_name="" uid="{7b977f59-c78a-4dd3-bea6-a6fad70000c8}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="CHAR" table_alias_name="" uid="{b5d5d2ba-036e-43b3-930d-e1e277e5ae14}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="84" name="Form" text="Form">
+    <VBox gridHeight="19" gridWidth="44" name="VBox1" posX="6" posY="0">
+      <Group gridHeight="9" gridWidth="44" name="Group1" posX="0" posY="1" text="QBE">
+        <Grid gridHeight="7" gridWidth="39" name="ds1" posX="3" posY="1">
+          <Label posX="2" posY="1" text="Store No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lmdstore" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="lmd_file.lmdstore" notNull="true" posX="15" posY="1" rowCount="" scroll="true" sqlTabName="lmd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="lmdstore" widget="ButtonEdit"/>
+          <Label posX="2" posY="2" text="Building No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lmd03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="lmd_file.lmd03" posX="15" posY="2" rowCount="" scroll="true" sqlTabName="lmd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="lmd03" widget="ButtonEdit"/>
+          <Label posX="2" posY="3" text="Floor No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lmd04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="lmd_file.lmd04" posX="15" posY="3" rowCount="" scroll="true" sqlTabName="lmd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="lmd04" widget="ButtonEdit"/>
+          <Label posX="2" posY="4" text="Region Code"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lmd14" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="lmd_file.lmd14" posX="15" posY="4" rowCount="" scroll="true" sqlTabName="lmd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="lmd14" widget="ButtonEdit"/>
+          <Label posX="2" posY="5" text="Ground No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lmd01" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" name="lmd_file.lmd01" notNull="true" posX="15" posY="5" rowCount="" scroll="true" sqlTabName="lmd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="lmd01" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="6" gridWidth="44" name="Group2" posX="0" posY="10" text="Input">
+        <Grid gridHeight="4" gridWidth="39" name="Grid1" posX="3" posY="1">
+          <Group gridHeight="3" gridWidth="31" name="Group3" posX="2" posY="0" text="Fie.Stat.">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lmd07" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="27" items="All, Used, Unused" name="lmd_file.lmd07" notNull="true" orientation="horizontal" posX="1" posY="1" required="true" rowCount="" sqlTabName="lmd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="CheckBox1" widget="RadioGroup">
+              <Item lstrtext="true" name="0" text="All"/>
+              <Item lstrtext="false" name="1" text="Used"/>
+              <Item lstrtext="false" name="2" text="Unused"/>
+            </RadioGroup>
+          </Group>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="13" name="sub" notNull="true" posX="2" posY="3" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Subtotal" title="CheckBox2" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="44" lstrcomment="false" name="gr132" posX="0" posY="16">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyAGQAMgBmAGMAMQAzADgALQA0ADcANABjAC0ANABmADEAZAAtAGEAYwBmADIALQBjADYANwA5AGUANAA5ADkANwAxADEAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADMAMAA1AGUAOQAzADQALQA3ADYAYwAxAC0ANAAwAGYAZgAtAGEANgAyAGYALQAyAGQAMQBhADUAYQBmADEAOQBiADIAMgB9QDQAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGEAOAA3AGEAYwA4AGIALQBhAGYAMgA4AC0ANAAwADYAMQAtADkAYwAwADQALQBjADIANQAzADYANwBmAGIAMgBjAGMAYQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAxADQAOAAwADAAMgBjADAALQA0ADQANQBlAC0ANAA2AGQAMQAtAGEANgBmADkALQBhAGYANQA1ADcAMwAxAGMAMgBiAGMAOQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADkAOAA4ADIAZAA0ADUALQA4ADAAOQBhAC0ANABhADEAZgAtADkANAA4ADUALQA4AGUAOQBmADcANwBhADEAZQA0AGMAYgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADMAYQA0AGMAYQAxADMALQA3AGYAMgBjAC0ANAA0ADUAMgAtAGEANwA5AGEALQAyAGMANQAwAGMAZAA1ADkANABlADIAMQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGIAOQA3ADcAZgA1ADkALQBjADcAOABhAC0ANABkAGQAMwAtAGIAZQBhADYALQBhADYAZgBhAGQANwAwADAAMAAwAGMAOAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGUAZQA4ADMAZgAwADkALQA2AGQAYgA4AC0ANAAwADUAMAAtAGEANgA2AGQALQBiADIAMgBlADkAYQA1ADQAYgBlAGUAMwB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADUAZAA1AGQAMgBiAGEALQAwADMANgBlAC0ANAAzAGIAMwAtADkAMwAwAGQALQBlADEAZQAyADcANwBlADUAYQBlADEANAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGMANwBkAGUAZgBhADEALQA2ADcAZAA0AC0ANAA4ADEANgAtADkANgAwADYALQAxADcANABiADUANQAwADkANABiAGQANgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

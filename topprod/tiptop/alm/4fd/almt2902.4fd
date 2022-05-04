@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{1b4e5d97-0000-4000-a5a3-44e91a2222a8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_lnd" order="" uid="{1842dfb8-0000-4000-9b98-8c43a6310a29}" where="">
+    <RecordField colName="lnd02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lnd_file.lnd02" sqlTabName="lnd_file" sqlType="VARCHAR" table_alias_name="" uid="{fd2a9643-0000-4000-b9c7-a1b5a918aead}"/>
+    <RecordField colName="lnd03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="lnd_file.lnd03" sqlTabName="lnd_file" sqlType="VARCHAR" table_alias_name="" uid="{69d4807c-0000-4000-a8c3-add078786031}"/>
+    <RecordField colName="lnd04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lnd_file.lnd04" sqlTabName="lnd_file" sqlType="VARCHAR" table_alias_name="" uid="{59e3c3c7-0000-4000-ab5f-458d26a544c5}"/>
+    <RecordField colName="lnd05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="lnd_file.lnd05" sqlTabName="lnd_file" sqlType="DATE" table_alias_name="" uid="{4ca1ae23-0000-4000-a493-faf3ff9b10f8}"/>
+    <RecordField colName="lnd06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="lnd_file.lnd06" sqlTabName="lnd_file" sqlType="DATE" table_alias_name="" uid="{ed4fc8aa-0000-4000-8f8d-fec40e0a5fbe}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3a89c612-0000-4000-84a8-43a0975251da}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{af07852e-0000-4000-ba76-8f2d9e891144}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="98" lstrtext="false" name="almt2902" spacing="normal" text="almt2902">
+    <VBox gridHeight="14" gridWidth="66" name="vb4" posX="11" posY="2">
+      <Folder gridHeight="9" gridWidth="66" lstrcomment="false" name="pc3" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Table gridHeight="7" gridWidth="64" name="s_lnd" posX="1" posY="0" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnd02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lnd_file.lnd02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="lnd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Cert.Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnd03" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lnd_file.lnd03" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="lnd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Cert.num" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnd04" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="lnd_file.lnd04" posX="20" posY="0" rowCount="" sqlTabName="lnd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Operator" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnd05" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="lnd_file.lnd05" posX="30" posY="0" rowCount="" sqlTabName="lnd_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Val.date from" widget="DateEdit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lnd06" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="lnd_file.lnd06" posX="44" posY="0" rowCount="" sqlTabName="lnd_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Val.date to" widget="DateEdit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="66" lstrcomment="false" name="gr3" posX="0" posY="10">
+        <HLine gridWidth="7" name="hl5" posX="1" posY="1"/>
+        <Label posX="9" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" name="idx" noEntry="true" posX="15" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="7" name="hl6" posX="23" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

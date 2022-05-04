@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{cd7edc2c-0000-4000-8bee-23230d4c82c4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sfb" order="" uid="{5e50ac19-0000-4000-a12e-e13b23d665de}" where="">
+    <RecordField colName="" fieldIdRef="1" name="sel" sqlTabName="" table_alias_name="" uid="{819efe23-0000-4000-aac5-9dd87609de75}"/>
+    <RecordField colName="sfb01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sfb_file.sfb01" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{7c19045e-0000-4000-9f94-07bfaec91323}"/>
+    <RecordField colName="ima01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ima_file.ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{4e7a28ff-0000-4000-95a4-1ffd2baf38f4}"/>
+    <RecordField colName="ima25" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ima_file.ima25" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{dcfbfcd4-0000-4000-bb3a-3c108bf1f8d4}"/>
+    <RecordField colName="sfb08" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sfb_file.sfb08" sqlTabName="sfb_file" sqlType="DECIMAL" table_alias_name="" uid="{17c845c8-0000-4000-9fb4-8a0d2982dd76}"/>
+    <RecordField colName="sfb13" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sfb_file.sfb13" sqlTabName="sfb_file" sqlType="DATE" table_alias_name="" uid="{22caf560-0000-4000-a9bd-21ca99063eb9}"/>
+    <RecordField colName="sfb04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sfb_file.sfb04" sqlTabName="sfb_file" sqlType="VARCHAR" table_alias_name="" uid="{fd743741-0000-4000-9f1b-c3822dcf1291}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="92" lstrtext="false" name="aeci120_1" spacing="normal" text="aeci120_1">
+    <Table gridHeight="11" gridWidth="88" name="s_sfb" posX="1" posY="4" totalRows="9">
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" gridHeight="1" gridWidth="8" lstrcomment="false" name="sel" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="sel" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb01" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" name="sfb_file.sfb01" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="WO" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" name="ima_file.ima01" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Item No." widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima25" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="ima_file.ima25" noEntry="true" posX="32" posY="0" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Unit" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb08" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="sfb_file.sfb08" noEntry="true" posX="42" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Pro.Qty" widget="Edit"/>
+      <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb13" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb13" posX="52" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" title="bdate" widget="DateEdit"/>
+      <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sfb04" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Gnrl, Rls, Prt, Iss.Mat, WIP, FQC, St-i, Clos" lstrcomment="false" lstrtitle="false" name="sfb_file.sfb04" noEntry="true" posX="62" posY="0" rowCount="" sqlTabName="sfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Status" widget="ComboBox">
+        <Item lstrtext="false" name="1" text="Gnrl"/>
+        <Item lstrtext="false" name="2" text="Rls"/>
+        <Item lstrtext="false" name="3" text="Prt"/>
+        <Item lstrtext="false" name="4" text="Iss.Mat"/>
+        <Item lstrtext="false" name="5" text="WIP"/>
+        <Item lstrtext="false" name="6" text="FQC"/>
+        <Item lstrtext="false" name="7" text="St-i"/>
+        <Item lstrtext="false" name="8" text="Clos"/>
+      </ComboBox>
+    </Table>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e5ca05d4-0000-4000-94f8-1ab6e68b1f81}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ppb" order="" uid="{898b22c6-0000-4000-b574-7268a939bbe4}" where="">
+    <RecordField colName="ppb02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ppb_file.ppb02" sqlTabName="ppb_file" sqlType="SMALLINT" table_alias_name="" uid="{19358bb5-0000-4000-b57f-70a09f0cb8dc}"/>
+    <RecordField colName="ppb03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ppb_file.ppb03" sqlTabName="ppb_file" sqlType="DECIMAL" table_alias_name="" uid="{0b60fe6a-0000-4000-a490-5b086c67eb69}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{457f2f78-0000-4000-a128-07b59c0cfbfd}" where="">
+    <RecordField colName="ppb01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ppb_file.ppb01" sqlTabName="ppb_file" sqlType="VARCHAR" table_alias_name="" uid="{e395b6bc-0000-4000-95af-6dee293b1783}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ppa03" sqlTabName="" table_alias_name="" uid="{00a827e4-0000-4000-b377-ea76fb967464}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{fe41fae4-0000-4000-bfc7-d3536441c695}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" lstrtext="false" name="apmi005" spacing="normal" text="apmi005">
+    <VBox gridHeight="22" gridWidth="63" name="vb3" posX="1" posY="0">
+      <Folder gridHeight="6" gridWidth="63" lstrcomment="false" name="folder" posX="0" posY="1">
+        <Page name="Page11" text="Main">
+          <Grid gridHeight="4" gridWidth="63" lstrcomment="false" name="gr5" posX="0" posY="1">
+            <Label posX="2" posY="1" text="Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ppb01" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" name="ppb_file.ppb01" posX="8" posY="1" rowCount="" sqlTabName="ppb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="2" posY="2" text="Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="33" lstrcomment="false" name="ppa03" noEntry="true" posX="8" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="63" name="s_ppb" posX="0" posY="7" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ppb02" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="ppb_file.ppb02" posX="0" posY="0" rowCount="" sqlTabName="ppb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Diff Rate" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ppb03" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="ppb_file.ppb03" posX="8" posY="0" rowCount="" sqlTabName="ppb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Score" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="63" lstrcomment="false" name="gr5_" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl5" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl6" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

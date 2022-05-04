@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7d08f186-0000-4000-a65c-19b824b4bab1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_azo" order="" uid="{6e1ae386-0000-4000-ba8f-e2a64fa21c1b}" where="">
+    <RecordField colName="azo01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="azo_file.azo01" sqlTabName="azo_file" sqlType="VARCHAR" table_alias_name="" uid="{a4a65439-0000-4000-8b63-31372455ed62}"/>
+    <RecordField colName="azo02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="azo_file.azo02" sqlTabName="azo_file" sqlType="VARCHAR" table_alias_name="" uid="{752a91d4-0000-4000-82fd-836303a5853e}"/>
+    <RecordField colName="azo03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="azo_file.azo03" sqlTabName="azo_file" sqlType="DATE" table_alias_name="" uid="{d5be8c0e-0000-4000-864f-1f34669906cf}"/>
+    <RecordField colName="azo04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="azo_file.azo04" sqlTabName="azo_file" sqlType="VARCHAR" table_alias_name="" uid="{4652f694-0000-4000-b7d8-102764674b49}"/>
+    <RecordField colName="azo05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="azo_file.azo05" sqlTabName="azo_file" sqlType="VARCHAR" table_alias_name="" uid="{b8a41f92-0000-4000-b3e7-20982e68db9d}"/>
+    <RecordField colName="azo06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="azo_file.azo06" sqlTabName="azo_file" sqlType="VARCHAR" table_alias_name="" uid="{f81c1231-0000-4000-9465-f4a895431ca1}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{91c48514-0000-4000-b0f5-ae2882ae23b3}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{bca8e8da-0000-4000-97e4-647c7da1d9e7}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="137" name="aooq030" spacing="normal" text="aooq030">
+    <VBox gridHeight="18" gridWidth="134" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="134" lstrcomment="false" name="pc867" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="132" lstrcomment="false" name="s_azo" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azo01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azo_file.azo01" posX="0" posY="0" rowCount="" sqlTabName="azo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Program#" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azo02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="azo_file.azo02" posX="10" posY="0" rowCount="" sqlTabName="azo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="User" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azo03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="azo_file.azo03" posX="18" posY="0" rowCount="" sqlTabName="azo_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Transaction Date" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azo04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="azo_file.azo04" posX="35" posY="0" rowCount="" sqlTabName="azo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Transaction Time" widget="DateEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azo05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="azo_file.azo05" posX="52" posY="0" rowCount="" sqlTabName="azo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="KEY VALUE" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azo06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="54" lstrcomment="false" lstrtitle="false" name="azo_file.azo06" posX="70" posY="0" rowCount="" sqlTabName="azo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Description" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="134" lstrcomment="false" name="gr4683" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1478" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Row"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1479" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

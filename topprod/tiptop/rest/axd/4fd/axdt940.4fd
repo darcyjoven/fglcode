@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="126" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="25482" spacing="normal" posX="0" percommentheader="" height="21" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdt940" defaultspacing="true" text="axdt940" gstVersion="11401" percommentlayout="GRID
+GRID
+GRID
+HBOX
+PAGE
+FOLDER
+TABLE
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="123" posX="0" posY="0" height="6" lstrcomment="false" name="folder01" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Main" >
+    <HBox width="121" tag="" posX="0" posY="0" height="3" hidden="" style="" name="" >
+     <Grid width="42" posX="0" posY="0" height="3" lstrcomment="false" hidden="--------" name="gr7884" fontPitch="default" scroll="false" >
+      <Text width="9" lstrtext="false" gridWidth="9" posX="1" posY="0" height="1" sizePolicy="initial" name="text26729" text="Slip Type" />
+      <FormField sqlDBName="ds" colName="adf00" fieldId="0" sqlTabName="adf_file" name="adf00" fieldtype="TABLE_COLUMN" >
+       <ComboBox width="10" case="NONE" gridWidth="10" notNull="--------" posX="23" formfieldname="formfield0" posY="0" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="1" lstrtitle="false" data_type="VARCHAR" name="adf00" century="R" color="black" fontPitch="default" required="--------" queryEditable="--------" noEntry="true" >
+        <Item lstrtext="" name="1" text="In Tran" />
+        <Item lstrtext="" name="2" text="Out Tran" />
+        <Item lstrtext="" name="3" text="Out Retn" />
+       </ComboBox>
+      </FormField>
+      <Text width="13" lstrtext="false" gridWidth="13" posX="1" posY="1" height="1" sizePolicy="initial" name="text26730" text="Trans-Out No." />
+      <FormField sqlDBName="ds" colName="adg01" fieldId="1" sqlTabName="adg_file" name="adg01" fieldtype="TABLE_COLUMN" >
+       <ButtonEdit width="18" case="NONE" comment="&lt;^P>Qry Tr-out No." invisible="--------" gridWidth="18" notNull="true" image="zoom" posX="23" formfieldname="formfield1" action="controlp" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" tabIndex="2" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="adg01" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+      </FormField>
+      <Text width="8" lstrtext="false" gridWidth="8" posX="1" posY="2" height="1" sizePolicy="initial" name="text26731" text="Line No." />
+      <FormField sqlDBName="ds" colName="adg02" fieldId="2" sqlTabName="adg_file" name="adg02" fieldtype="TABLE_COLUMN" >
+       <Edit width="10" case="NONE" invisible="--------" gridWidth="10" notNull="true" posX="23" formfieldname="formfield2" posY="2" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="3" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="adg02" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+      </FormField>
+     </Grid>
+     <Grid width="44" posX="42" posY="0" height="1" lstrcomment="false" hidden="--------" name="gr7885" fontPitch="default" scroll="false" >
+      <Text width="14" lstrtext="false" gridWidth="14" posX="1" posY="0" height="1" sizePolicy="initial" name="text26732" text="Trans-In Plant" />
+      <FormField sqlDBName="ds" colName="adg09" fieldId="3" sqlTabName="adg_file" name="adg09" fieldtype="TABLE_COLUMN" >
+       <ButtonEdit width="10" case="NONE" invisible="--------" gridWidth="10" notNull="--------" image="zoom" posX="23" formfieldname="formfield3" action="controlp" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" tabIndex="4" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="adg09" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+      <Text width="11" lstrtext="false" gridWidth="11" posX="1" posY="1" height="1" sizePolicy="initial" name="text26733" text="Product No." />
+      <FormField sqlDBName="ds" colName="adg05" fieldId="4" sqlTabName="adg_file" name="adg05" fieldtype="TABLE_COLUMN" >
+       <ButtonEdit width="20" case="NONE" invisible="--------" gridWidth="20" notNull="--------" image="zoom" posX="23" formfieldname="formfield4" action="controlp" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" tabIndex="5" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="adg05" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+     </Grid>
+     <Grid width="34" posX="86" posY="0" height="1" lstrcomment="false" hidden="--------" name="gr7886" fontPitch="default" scroll="false" >
+      <Text width="8" lstrtext="false" gridWidth="8" posX="1" posY="0" height="1" sizePolicy="initial" name="text26734" text="Operator" />
+      <FormField sqlDBName="ds" colName="adf03" fieldId="5" sqlTabName="adf_file" name="adf03" fieldtype="TABLE_COLUMN" >
+       <ButtonEdit width="10" case="NONE" invisible="--------" gridWidth="10" notNull="--------" image="zoom" posX="23" formfieldname="formfield5" action="controlp" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" tabIndex="6" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="adf03" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+      <Text width="13" lstrtext="false" gridWidth="13" posX="1" posY="1" height="1" sizePolicy="initial" name="text26735" text="Transfer Flow" />
+      <FormField sqlDBName="ds" colName="adf05" fieldId="6" sqlTabName="adf_file" name="adf05" fieldtype="TABLE_COLUMN" >
+       <ButtonEdit width="10" case="NONE" invisible="--------" gridWidth="10" notNull="--------" image="zoom" posX="23" formfieldname="formfield6" action="controlp" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" tabIndex="7" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="adf05" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+     </Grid>
+    </HBox>
+   </Page>
+  </PageControl>
+  <Table width="123" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="6" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_oze" fontPitch="default" tabName="s_oze" unsortableColumns="--------" tabName1="s_oze" >
+   <TableColumn width="6" lstrtext="false" sqlDBName="ds" height="1" colName="oze03" unsortable="--------" fieldId="7" sqlTabName="oze_file" tabIndex="8" unsizable="--------" unhidable="--------" unmovable="--------" name="oze03" fieldtype="TABLE_COLUMN" text="S/N" >
+    <Edit width="6" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="20" lstrtext="false" sqlDBName="ds" height="1" colName="oze04" unsortable="--------" fieldId="8" sqlTabName="oze_file" tabIndex="9" unsizable="--------" unhidable="--------" unmovable="--------" name="oze04" fieldtype="TABLE_COLUMN" text="Transportation Type" >
+    <ComboBox width="20" case="NONE" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" noEntry="--------" required="true" queryEditable="true" >
+     <Item name="O" text="Ocean" />
+     <Item name="C" text="Container" />
+     <Item name="H" text="House" />
+     <Item name="A" text="Air" />
+     <Item name="E" text="Express" />
+    </ComboBox>
+   </TableColumn>
+   <TableColumn width="13" lstrtext="false" sqlDBName="ds" height="1" colName="oze05" unsortable="--------" fieldId="9" sqlTabName="oze_file" tabIndex="10" unsizable="--------" unhidable="--------" unmovable="--------" name="oze05" fieldtype="TABLE_COLUMN" text="Freight Code" >
+    <Edit width="13" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="20" lstrtext="false" sqlDBName="ds" height="1" colName="oze06" unsortable="--------" fieldId="10" sqlTabName="oze_file" tabIndex="11" unsizable="--------" unhidable="--------" unmovable="--------" name="oze06" fieldtype="TABLE_COLUMN" text="Transportation Code" >
+    <ButtonEdit width="20" case="NONE" invisible="--------" notNull="true" image="zoom" height="1" action="controlp" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="18" lstrtext="false" sqlDBName="ds" height="1" colName="oze07" unsortable="--------" fieldId="11" sqlTabName="oze_file" tabIndex="12" unsizable="--------" unhidable="--------" unmovable="--------" name="oze07" fieldtype="TABLE_COLUMN" text="Port of Departure" >
+    <Edit width="18" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+   <TableColumn width="18" lstrtext="false" sqlDBName="ds" height="1" colName="oze08" unsortable="--------" fieldId="12" sqlTabName="oze_file" tabIndex="13" unsizable="--------" unhidable="--------" unmovable="--------" name="oze08" fieldtype="TABLE_COLUMN" text="Port of Unloading" >
+    <Edit width="18" case="NONE" invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+   </TableColumn>
+  </Table>
+  <Grid width="123" posX="0" posY="18" height="1" lstrcomment="false" hidden="--------" name="gr7887" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl2597" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="12" posY="0" height="1" sizePolicy="initial" name="text26736" text="Rows" />
+   <FormField colName="cnt" fieldId="13" sqlTabName="formonly" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="18" formfieldname="formfield7" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="14" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cnt" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <Text width="1" lstrtext="false" gridWidth="1" posX="26" posY="0" height="1" sizePolicy="initial" name="text26737" text="/" />
+   <FormField colName="cn2" fieldId="14" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="29" formfieldname="formfield8" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="15" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="37" posY="0" height="1" name="hl2598" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_oze" fromTable="true" tableKey="tb1144" >
+  <Link colName="oze_file.oze03" fromTable="true" colKey="Col11357" />
+  <Link colName="oze_file.oze04" fromTable="true" colKey="Col11358" />
+  <Link colName="oze_file.oze05" fromTable="true" colKey="Col11359" />
+  <Link colName="oze_file.oze06" fromTable="true" colKey="Col11360" />
+  <Link colName="oze_file.oze07" fromTable="true" colKey="Col11361" />
+  <Link colName="oze_file.oze08" fromTable="true" colKey="Col11362" />
+ </RecordView>
+</Form>
+

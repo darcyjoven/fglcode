@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{623f3caa-0000-4000-9886-db5011ad9ca0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{30e180be-0000-4000-b7e3-9bf85c52d8a3}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="method" sqlTabName="" table_alias_name="" uid="{2dc47909-0000-4000-a4c7-f6cba157497a}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="commod" sqlTabName="" table_alias_name="" uid="{45a95624-0000-4000-9a13-ec38069b5a24}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="commod5" sqlTabName="" table_alias_name="" uid="{a11d7cbf-0000-4000-acd2-3e756dafff97}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="commod2" sqlTabName="" table_alias_name="" uid="{cc7c842b-0000-4000-8b3f-47a6f3ce0629}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="commex" sqlTabName="" table_alias_name="" uid="{dfe230d1-0000-4000-83ca-548972f1faf0}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="commod1" sqlTabName="" table_alias_name="" uid="{273c76b8-0000-4000-be0e-709b00b71537}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="commod4" sqlTabName="" table_alias_name="" uid="{ca0d7803-0000-4000-80d7-4cc16e6e81d8}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="commod3" sqlTabName="" table_alias_name="" uid="{f3ad8f70-0000-4000-aa23-4c6fc917fbaf}"/>
+    <RecordField colName="" fieldIdRef="14" fieldType="NON_DATABASE" name="commex_1" sqlTabName="" table_alias_name="" uid="{7b4d3adb-0000-4000-b81a-be51dc6204fe}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="commod1_1" sqlTabName="" table_alias_name="" uid="{0ba72db9-0000-4000-8219-94f4acadf5d0}"/>
+    <RecordField colName="" fieldIdRef="16" fieldType="NON_DATABASE" name="commod4_1" sqlTabName="" table_alias_name="" uid="{4b72579d-0000-4000-beb4-82ebfa0ec0ec}"/>
+    <RecordField colName="" fieldIdRef="17" fieldType="NON_DATABASE" name="commod3_1" sqlTabName="" table_alias_name="" uid="{0503beb6-0000-4000-bca1-23fac5444f33}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="moth" sqlTabName="" table_alias_name="" uid="{ce60ae4e-0000-4000-a9d3-873bc6be0b0c}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="day" sqlTabName="" table_alias_name="" uid="{b1809d4d-0000-4000-8d5a-c9caf29c5ccc}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="week" sqlTabName="" table_alias_name="" uid="{d3ff2cb4-0000-4000-8d8f-8d6afcb1399f}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="weekday" sqlTabName="" table_alias_name="" uid="{9f0e3223-0000-4000-a9e9-562dd07d6ded}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="nday" sqlTabName="" table_alias_name="" uid="{67d7b654-0000-4000-bf14-571d182c87c5}"/>
+    <RecordField colName="" fieldIdRef="18" name="diff" sqlTabName="" table_alias_name="" uid="{c102a404-4b0a-4447-859c-0905d5f8a1c8}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="67" name="p_cron_setpara" spacing="normal" text="p_cron_setpara">
+    <VBox gridHeight="27" gridWidth="63" name="vb2" posX="0" posY="0">
+      <Folder gridHeight="25" gridWidth="63" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Group gridHeight="24" gridWidth="63" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="0" text="Main">
+            <VBox gridHeight="22" gridWidth="60" name="vb1" posX="2" posY="1">
+              <HBox gridHeight="20" gridWidth="60" name="hb1" posX="0" posY="1">
+                <Grid gridHeight="20" gridWidth="56" lstrcomment="false" name="gr8" posX="2" posY="0">
+                  <Label posX="2" posY="0" text="Method"/>
+                  <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" items="By Year, By week, By month, By day" lstrcomment="false" lstrtitle="false" name="method" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+                    <Item lstrtext="false" name="Y" text="By Year"/>
+                    <Item lstrtext="false" name="W" text="By week"/>
+                    <Item lstrtext="false" name="M" text="By month"/>
+                    <Item lstrtext="false" name="D" text="By day"/>
+                  </ComboBox>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="48" lstrcomment="false" lstrtitle="false" name="commod" posX="3" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commod5" posX="3" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commod2" posX="3" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commex" posX="3" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commod1" posX="3" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commod4" posX="3" posY="6" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commod3" posX="3" posY="7" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commex_1" posX="3" posY="8" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commod1_1" posX="3" posY="9" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commod4_1" posX="3" posY="10" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="17" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="commod3_1" posX="3" posY="11" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+                  <Label posX="1" posY="13" text="moth"/>
+                  <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="moth" notNull="true" posX="7" posY="13" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+                  <Label posX="19" posY="13" text="day"/>
+                  <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" initializer="initday2" items="" lstrcomment="false" lstrtitle="false" name="day" notNull="true" posX="24" posY="13" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="ComboBox"/>
+                  <Label posX="35" posY="13" text="nday"/>
+                  <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="18" gridHeight="1" gridWidth="10" initializer="initday3" items="-1" lstrcomment="false" name="diff" notNull="true" posX="40" posY="13" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" title="ComboBox1" widget="ComboBox">
+                    <Item lstrtext="false" name="-1" text="-1"/>
+                  </ComboBox>
+                  <Label posX="1" posY="14" text="week"/>
+                  <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="week" notNull="true" posX="7" posY="14" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+                  <Label posX="19" posY="14" text="weekday"/>
+                  <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" initializer="initweekday" items="" lstrcomment="false" lstrtitle="false" name="weekday" notNull="true" posX="27" posY="14" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="ComboBox"/>
+                  <Label posX="2" posY="15" text="day"/>
+                  <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nday" notNull="true" posX="8" posY="15" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+                </Grid>
+              </HBox>
+            </VBox>
+          </Group>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{0b36a4d9-dba9-4f05-91a1-7cec5585637c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_azp03" order="" uid="{cfaf2a46-ae30-4e32-a8c2-bb20a4df9477}" where="">
+    <RecordField colName="" fieldIdRef="1" name="alter_chk" sqlTabName="" table_alias_name="" uid="{0ee5b86c-6b4d-4a1b-9bfc-34f771a01eb0}"/>
+    <RecordField colName="" fieldIdRef="4" name="Backup_chk" sqlTabName="" table_alias_name="" uid="{848d0a47-d5af-4a43-9601-2a949251fdd8}"/>
+    <RecordField colName="" fieldIdRef="2" name="azp03" sqlTabName="" table_alias_name="" uid="{05e92735-3177-4e74-8aa2-010b5beb7cef}"/>
+    <RecordField colName="" fieldIdRef="3" name="type" sqlTabName="" table_alias_name="" uid="{76ebcb80-3633-4a7f-b5b4-503324bdf79f}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pwd_chk" order="" uid="{d3b38a13-7d65-4a10-a59c-d6312e6495f7}" where="">
+    <RecordField colName="" defaultValue="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_pwd" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{47df6015-a031-4261-b046-376ed0be8a69}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_pwd_sys" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{578c7add-307c-474b-af4d-44b6d8522643}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="7" name="delete_chk" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{50a739bc-cae7-4721-8437-ac5240887077}"/>
+  </Record>
+  <Form gridHeight="53" gridWidth="306" name="p_unpack2_sel_db" spacing="normal" text="choice_database_for_alter_table">
+    <VBox gridHeight="20" gridWidth="47" name="VBox1" posX="22" posY="0">
+      <Grid gridHeight="4" gridWidth="47" lstrcomment="false" name="gr49" posX="0" posY="1">
+        <Label posX="2" posY="0" text="ORACLE SYSTEM的密碼："/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" autoNext="false" colName="" columnCount="" defaultValue="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" invisible="true" lstrcomment="false" lstrtitle="false" name="g_pwd" noEntry="false" notNull="true" posX="29" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="2" posY="1" text="ORACLE SYS的密碼："/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" invisible="true" lstrcomment="false" lstrtitle="false" name="g_pwd_sys" noEntry="false" notNull="true" posX="29" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="7" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtext="false" name="delete_chk" noEntry="false" notNull="true" posX="1" posY="2" required="false" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="進行刪除PATCH備份檔的動作" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+      <VBox gridHeight="14" gridWidth="47" name="VBox2" posX="0" posY="5">
+        <Table gridHeight="12" gridWidth="47" lstrcomment="false" name="tb1" posX="0" posY="1" totalRows="10">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="alter_chk" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="alter" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="Backup_chk" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="" title="Backup" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="azp03" noEntry="true" posX="12" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="db_name" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" gridHeight="1" gridWidth="10" lstrcomment="false" name="type" noEntry="true" posX="24" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="type" widget="Edit"/>
+        </Table>
+      </VBox>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkADMAYgAzADgAYQAxADMALQA3AGQANgA1AC0ANABhADEAMAAtAGEANQA5AGMALQBkADYAMwAxADIAZQA2ADQAOQA1AGYANwB9QBwAAAAAAADAIAAAAAAAAD+WhysCDEm+AQAAAEwAewA1ADAAYQA3ADMAOQBiAGMALQBjAGEAZQA3AC0ANAA3ADIAMQAtADgANAAzADcALQBhAGMANQAyADQAMAA4ADgANwAwADcANwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADcAOABjADcAYQBkAGQALQAzADAANwBjAC0ANAA3ADQAYgAtAGEAZgA0AGQALQA0ADQAYgA2AGQAOAA1ADIAMgA2ADQAMwB9QBQAAAAAAABARwAAAAAAAD9QYk3S8an8AQAAAEwAewA4ADQAOABkADAAYQA0ADcALQBkADUAYQBmAC0ANABhADQAMwAtADkANgAwADEALQAyAGEAOQA0ADkAMgA1ADEAZgBkAGQAOAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADYAZQBiAGMAYgA4ADAALQAzADYAMwAzAC0ANABhADcAZgAtAGIANQBiADQALQA1ADAAMwAzADIANABiAGQAZgA3ADkAZgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYAYQBmADIAYQA0ADYALQBhAGUAMwAwAC0ANABlADMAMgAtAGEAOABjADIALQBiAGIAMgAwAGEANABkAGYAOQA0ADcANwB9wGegAAAAAABATgAAAAAAAD+RaHKwIMSeAQAAAEwAewA0ADcAZABmADYAMAAxADUALQBhADAAMwAxAC0ANAAyADYAMQAtAGIAMAA0ADYALQAzADcANgBlAGQAMABiAGUAOABhADYAOQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGUAZQA1AGIAOAA2AGMALQA2AGIANABkAC0ANABhADEAYgAtADkAYgBmAGMALQAzADQAZgA3ADcAMQBhADAAMQBlAGIAMAB9QBQAAAAAAABAOAAAAAAAAD+MrAgxJul8AQAAAEwAewAwADUAZQA5ADIANwAzADUALQAzADEANwA3AC0ANABlADcANAAtADgAYQBhADIALQAwADEAMABiADUAYgBlAGIANwBjAGUAZgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

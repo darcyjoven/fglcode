@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{0adda608-26ff-4907-8542-f05e018cbd2e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6846a8c6-440c-426c-9335-f7a217005842}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="pdb" sqlTabName="" table_alias_name="" uid="{79b46a41-1cf4-45c0-955e-000c6178031e}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="plant" sqlTabName="" table_alias_name="" uid="{ca6dc089-d3a8-4877-b7a1-3fa1164bbab7}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="pos" sqlTabName="" table_alias_name="" uid="{e41b0038-4d0b-466b-b5ea-e225a4f606e4}"/>
+    <RecordField colName="" fieldIdRef="3" name="date" sqlTabName="" table_alias_name="" uid="{1c86dd92-534b-4ab4-a042-c91fb62c6f67}"/>
+    <RecordField colName="" fieldIdRef="5" name="sale" sqlTabName="" table_alias_name="" uid="{aac3cfe6-fc66-4a4a-a00d-d283576a2624}"/>
+    <RecordField colName="" fieldIdRef="6" name="order" sqlTabName="" table_alias_name="" uid="{eef28f53-43c0-4332-b375-5cdaf23ea3d6}"/>
+    <RecordField colName="" fieldIdRef="7" name="deposit" sqlTabName="" table_alias_name="" uid="{3fb8064a-32d4-44fa-84b1-8fffd466fa66}"/>
+    <RecordField colName="" fieldIdRef="8" name="card" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e418f5b8-1f51-4c73-9fc0-13fe346c2e96}"/>
+    <RecordField colName="" fieldIdRef="9" name="coupon" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d66be51c-a8a4-486d-b485-86a71994e0bd}"/>
+  </Record>
+  <Form gridHeight="29" gridWidth="131" name="Form4" text="apcp101">
+    <Grid gridHeight="20" gridWidth="113" lstrcomment="false" name="gr7" posX="3" posY="1">
+      <Group gridHeight="3" gridWidth="107" lstrcomment="false" lstrtext="false" name="gb7" posX="2" posY="1" text="Basic Info">
+        <Label posX="6" posY="1" text="Trans_DB"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" lstrcomment="false" name="pdb" notNull="true" posX="16" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Group>
+      <Group gridHeight="7" gridWidth="107" lstrcomment="false" lstrtext="false" name="gb8" posX="2" posY="4" text="Choice Plant">
+        <Label posX="6" posY="1" text="Appoint Plant"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="51" image="zoom" justify="" name="plant" notNull="true" posX="20" posY="1" required="true" rowCount="" sizePolicy="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label colorCondition="black" gridHeight="1" gridWidth="76" lstrcomment="false" lstrtext="false" name="dummy1" posX="20" posY="2" text="LRDMDS,QY&apos;|&apos;H&apos;;&apos;GK"/>
+        <Label posX="6" posY="4" text="Appoint Pos"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="51" justify="" name="pos" notNull="false" posX="20" posY="4" required="false" rowCount="" sizePolicy="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+      </Group>
+      <Group gridHeight="8" gridWidth="107" lstrcomment="false" lstrtext="false" name="gb9" posX="2" posY="12" text="TransData Area">
+        <Label posX="7" posY="1" text="Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="30" name="date" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="DateEdit1" widget="DateEdit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="23" name="sale" notNull="true" posX="19" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Pos Sale Data" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="28" name="order" notNull="true" posX="19" posY="3" required="false" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Pos Order Data" title="CheckBox2" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="16" name="deposit" notNull="true" posX="19" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Pos Deposit Data" title="CheckBox3" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="16" name="card" notNull="true" posX="19" posY="5" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Pos Card" title="CheckBox3" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="16" name="coupon" notNull="true" posX="19" posY="6" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Pos Coupon" title="CheckBox3" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA2ADgANAA2AGEAOABjADYALQA0ADQAMABjAC0ANAAyADYAYwAtADkAMwAzADUALQBmADcAYQAyADEANwAwADAANQA4ADQAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADYANgBiAGUANQAxAGMALQBhADgAYQA0AC0ANAA4ADYAZAAtAGIANAA4ADUALQA4ADYAYQA3ADEAOQA5ADQAZQAwAGIAZAB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGEANgBkAGMAMAA4ADkALQBkADMAYQA4AC0ANAA4ADcANwAtAGIANwBhADEALQAzAGYAYQAxADEANgA0AGIAYgBhAGIANwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGEAYwAzAGMAZgBlADYALQBmAGMANgA2AC0ANABhADQAYQAtAGEAMAAwAGQALQBkADIAOAAzADUANwA2AGEAMgA2ADIANAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGMAOAA2AGQAZAA5ADIALQA1ADMANABiAC0ANABhAGIANAAtAGEAMAA0ADIALQBjADkAMQBmAGIANgAyAGMANgBmADYANwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADQAMQA4AGYANQBiADgALQAxAGYANQAxAC0ANABjADcAMwAtADkAZgBjADAALQAxADMAZgBlADMANAA2AGMAMgBlADkANgB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADkAYgA0ADYAYQA0ADEALQAxAGMAZgA0AC0ANAA1AGMAMAAtADkANQA1AGUALQAwADAAMABjADYAMQA3ADgAMAAzADEAZQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGYAYgA4ADAANgA0AGEALQAzADIAZAA0AC0ANAA0AGYAYQAtADgANABiADEALQA4AGYAZgBmAGQANAA2ADYAZgBhADYANgB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGUAZgAyADgAZgA1ADMALQA0ADMAYwAwAC0ANAAzADMAMgAtAGIAMwA3ADUALQA1AGMAZABhAGYAMgAzAGUAYQAzAGQANgB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADQAMQBiADAAMAAzADgALQA0AGQAMABiAC0ANAA2ADYAYgAtAGIANQBlAGEALQBlADIAMgA1AGEANABmADYAMAA2AGUANAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

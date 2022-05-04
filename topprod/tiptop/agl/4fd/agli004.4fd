@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{99207ee0-0000-4000-b373-a0b0b1f4ba2b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_axl" order="" uid="{f1f7fb78-0000-4000-97df-b4cb0ff936fd}" where="">
+    <RecordField colName="axl01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="axl_file.axl01" sqlTabName="axl_file" sqlType="VARCHAR" table_alias_name="" uid="{d88dc59a-0000-4000-8a35-f6af5af012a6}"/>
+    <RecordField colName="axl02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="axl_file.axl02" sqlTabName="axl_file" sqlType="VARCHAR" table_alias_name="" uid="{2aca9173-0000-4000-a475-25ed2a76604f}"/>
+    <RecordField colName="axl03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="axl_file.axl03" sqlTabName="axl_file" sqlType="VARCHAR" table_alias_name="" uid="{59760a3c-0000-4000-8892-85e143804e97}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3020beba-0000-4000-a562-5502158b3318}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9d2e3dbd-0000-4000-b6bb-69233b72d7f1}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="87" name="agli004" spacing="normal" text="agli004">
+    <Folder gridHeight="17" gridWidth="85" lstrcomment="false" name="pc432" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="16" gridWidth="83" name="VBox1" posX="0" posY="0">
+          <Table gridHeight="12" gridWidth="83" lstrcomment="false" name="s_axl" posX="0" posY="1" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axl01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="axl_file.axl01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="axl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Group Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axl02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="axl_file.axl02" posX="11" posY="0" rowCount="" sqlTabName="axl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="axl03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="36" items="Capital, Capital Deposit, Legal Rest Deposit, Unset Rest, Accumulated Conversion Adjust Qty, Unputative Pension Cost Dead Loss" lstrcomment="false" lstrtitle="false" name="axl_file.axl03" notNull="true" posX="41" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="axl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Class" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Capital"/>
+              <Item lstrtext="false" name="2" text="Capital Deposit"/>
+              <Item lstrtext="false" name="3" text="Legal Rest Deposit"/>
+              <Item lstrtext="false" name="4" text="Unset Rest"/>
+              <Item lstrtext="false" name="5" text="Accumulated Conversion Adjust Qty"/>
+              <Item lstrtext="false" name="6" text="Unputative Pension Cost Dead Loss"/>
+            </ComboBox>
+          </Table>
+          <Grid gridHeight="2" gridWidth="83" lstrcomment="false" name="gr2336" posX="0" posY="13">
+            <HLine gridWidth="10" name="hl696" posX="2" posY="0"/>
+            <Label posX="13" posY="0" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <HLine gridWidth="10" name="hl697" posX="27" posY="0"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

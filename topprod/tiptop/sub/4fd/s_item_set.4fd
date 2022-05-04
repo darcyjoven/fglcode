@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a9692018-0000-4000-87e4-9306cc3b2fbb}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_item" order="" uid="{8ca50914-0000-4000-ac7b-819ca4fd6331}" where="">
+    <RecordField colName="" fieldIdRef="4" name="gae03_co" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bafff5cc-0000-4000-b3cf-c6ce9d989bc2}"/>
+    <RecordField colName="" fieldIdRef="5" name="gae03_t" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d099308a-0000-4000-be3e-2a7271d97632}"/>
+    <RecordField colName="gae04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gae_file.gae04" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{fe7587c1-0000-4000-9a92-224c297fd6eb}"/>
+    <RecordField colName="gae05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gae_file.gae05" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{92491e92-0000-4000-8205-211b9737e547}"/>
+    <RecordField colName="gae06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gae_file.gae06" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{fe719d48-0000-4000-9c41-3b1eda9ff156}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{623019dd-0000-4000-bb60-351ddf44c827}" where="">
+    <RecordField colName="gae01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gae_file.gae01" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{11831473-0000-4000-9cf0-abf0daaf0d10}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="zz02" sqlTabName="" table_alias_name="" uid="{9d0083db-0000-4000-a9ed-dd89d13e2874}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="gae03_h" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5a3fc211-0000-4000-b9bd-e67a11592a8f}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="131" name="s_item_set" spacing="normal" text="s_item_set">
+    <VBox gridHeight="19" gridWidth="128" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="128" lstrcomment="false" name="gr3907" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="83" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Program">
+          <Label posX="1" posY="1" text="Form ID"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae01" columnCount="" comment="Enter Program ID" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gae_file.gae01" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="zz02" posX="41" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Combox/Radiogroup"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gae03_h" notNull="true" posX="19" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="12" gridWidth="128" lstrcomment="false" name="s_item" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="gae03_co" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Field" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gae03_t" notNull="true" posX="16" posY="0" required="true" rowCount="" scroll="true" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Item TAG" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="gae_file.gae04" notNull="true" posX="26" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Traditional Chinese Description" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="gae_file.gae05" notNull="true" posX="58" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="English Description" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae06" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtitle="false" name="gae_file.gae06" posX="90" posY="0" rowCount="" scroll="true" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Simplified Chinese Description" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

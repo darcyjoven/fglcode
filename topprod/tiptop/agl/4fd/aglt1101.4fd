@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{611a59d7-0000-4000-aade-e69f38f55a37}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{01b68e8a-0000-4000-b008-0d2d0234a1e5}" where="">
+    <RecordField colName="aba13" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aba_file.aba13" precisionDecimal="20" scaleDecimal="6" sqlTabName="aba_file" sqlType="DECIMAL" table_alias_name="" uid="{3170f7b4-0000-4000-ab99-881a02697789}"/>
+    <RecordField colName="aba14" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aba_file.aba14" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{2659bb63-0000-4000-9d9b-6e7cad489c9d}"/>
+    <RecordField colName="aba15" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aba_file.aba15" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{c7ecb624-0000-4000-83d0-8e8496b79a18}"/>
+    <RecordField colName="aba00" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aba_file.aba00" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{be79d432-cd97-4fcd-a93c-56957ec293ea}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="46" name="aglt1101" spacing="normal" text="Cost Apportionment">
+    <Group gridHeight="12" gridWidth="46" lstrcomment="false" lstrtext="false" name="gb1917" posX="0" posY="0">
+      <VBox gridHeight="10" gridWidth="43" name="VBox1" posX="1" posY="1">
+        <Grid gridHeight="5" gridWidth="43" lstrcomment="false" name="gr2869" posX="0" posY="1">
+          <Label posX="2" posY="0" text="Apportioned Amount"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba13" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aba_file.aba13" notNull="true" posX="22" posY="0" precisionDecimal="20" required="true" rowCount="" scaleDecimal="6" sqlTabName="aba_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Group gridHeight="3" gridWidth="38" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="1" text="Apportionment Method">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba14" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="34" items="Fixed Amount, Fixed Ratio, Variable Ratio, No" lstrcomment="false" lstrtitle="false" name="aba_file.aba14" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Fixed Amount"/>
+              <Item lstrtext="" name="2" text="Fixed Ratio"/>
+              <Item lstrtext="" name="3" text="Variable Ratio"/>
+              <Item lstrtext="" name="0" text="No"/>
+            </RadioGroup>
+          </Group>
+        </Grid>
+        <Grid gridHeight="3" gridWidth="43" lstrcomment="false" name="gr2870" posX="0" posY="6">
+          <Label posX="1" posY="0" text="Apportionment No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba15" columnCount="" comment=" &lt;^P&gt; Qry Apportionment No. " fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom" lstrcomment="false" lstrtitle="false" name="aba_file.aba15" notNull="true" posX="21" posY="0" required="true" rowCount="" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="1" text="Book No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba00" columnCount="" comment="&lt;^P&gt;Qry Apportionment Category &lt;^Y&gt;Create Book No" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" image="zoom" lstrcomment="false" lstrtitle="false" name="aba_file.aba00" notNull="true" posX="21" posY="1" required="true" rowCount="" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        </Grid>
+      </VBox>
+    </Group>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiAGUANwA5AGQANAAzADIALQBjAGQAOQA3AC0ANABmAGMAZAAtAGEAOQAzAGMALQA1ADYAOQA1ADcAZQBjADIAOQAzAGUAYQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADcAZQBjAGIANgAyADQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMwBkADAALQA4AGUAOAA0ADkANgBiADcAOQBhADEAOAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADEANwAwAGYANwBiADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYgA5ADkALQA4ADgAMQBhADAAMgA2ADkANwA3ADgAOQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADYANQA5AGIAYgA2ADMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZAA5AGIALQA2AGUANwBjAGEAZAA0ADgAOQBjADkAZAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADEAYgA2ADgAZQA4AGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMAAwADgALQAwAGQAMgBkADAAMgAzADQAYQAxAGUANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

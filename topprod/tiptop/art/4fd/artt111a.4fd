@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9509777c-0000-4000-831c-92c10062b01d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e8cea0a3-0000-4000-a791-a8e7194ae923}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ima01" sqlTabName="" table_alias_name="" uid="{f7c33179-0000-4000-9208-249afb471122}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="ima131" sqlTabName="" table_alias_name="" uid="{119833d6-0000-4000-a753-58acd9f324ca}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="ryn03" sqlTabName="" table_alias_name="" uid="{d4a0865d-0000-4000-931a-4e3cd05b891e}"/>
+    <RecordField colName="ryn02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ryn_file.ryn02" sqlTabName="ryn_file" sqlType="VARCHAR" table_alias_name="" uid="{f62b14fd-0000-4000-8f08-bd7a6af4b57a}"/>
+    <RecordField colName="ryn05" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ryn_file.ryn05" sqlTabName="ryn_file" sqlType="VARCHAR" table_alias_name="" uid="{09eca571-0000-4000-9fbf-15731eb5ae1a}"/>
+    <RecordField colName="ryn06" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ryn_file.ryn06" sqlTabName="ryn_file" sqlType="VARCHAR" table_alias_name="" uid="{4a99ffc0-0000-4000-96b7-bb53ceec2da3}"/>
+    <RecordField colName="ryn15" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ryn_file.ryn15" sqlTabName="ryn_file" sqlType="VARCHAR" table_alias_name="" uid="{6181c6bd-0000-4000-906c-9fb5486aeea9}"/>
+    <RecordField colName="ryn07" fieldIdRef="10" fieldType="TABLE_COLUMN" name="ryn_file.ryn07" sqlTabName="ryn_file" sqlType="VARCHAR" table_alias_name="" uid="{2ed69c88-0000-4000-b748-8864c564153d}"/>
+    <RecordField colName="ryn09" fieldIdRef="11" fieldType="TABLE_COLUMN" name="ryn_file.ryn09" sqlTabName="ryn_file" sqlType="DECIMAL" table_alias_name="" uid="{9189170b-0000-4000-bf9f-eea66d88ec6b}"/>
+    <RecordField colName="ryn12" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ryn_file.ryn12" sqlTabName="ryn_file" sqlType="VARCHAR" table_alias_name="" uid="{af11ac7e-0000-4000-a9b1-1586d0f61b4e}"/>
+    <RecordField colName="ryn13" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ryn_file.ryn13" sqlTabName="ryn_file" sqlType="VARCHAR" table_alias_name="" uid="{bc0ad3e4-0000-4000-83bf-15966f2f348c}"/>
+    <RecordField colName="ryn14" fieldIdRef="12" fieldType="TABLE_COLUMN" name="ryn_file.ryn14" sqlTabName="ryn_file" sqlType="VARCHAR" table_alias_name="" uid="{436add8c-0000-4000-a6e4-953d3130a8e7}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="70" lstrtext="false" name="artt111a" spacing="normal" text="artt111a">
+    <Folder gridHeight="24" gridWidth="68" lstrcomment="false" name="pc3" posX="1" posY="0">
+      <Page name="Page12" text="QBE">
+        <Grid gridHeight="21" gridWidth="64" lstrcomment="false" name="gr8" posX="3" posY="1">
+          <Group gridHeight="7" gridWidth="58" lstrcomment="false" lstrtext="false" name="gb1" posX="4" posY="1" text="CONSTRUCT">
+            <Label posX="3" posY="2" text="Item No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" image="zoom.png" lstrcomment="false" name="ima01" posX="12" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="3" posY="3" text="Type"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" image="zoom.png" lstrcomment="false" name="ima131" posX="12" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="3" posY="4" text="Org."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" image="zoom.png" lstrcomment="false" name="ryn03" notNull="true" posX="12" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          </Group>
+          <Group gridHeight="11" gridWidth="58" lstrcomment="false" lstrtext="false" name="gb2" posX="4" posY="9" text="INPUT">
+            <Label posX="3" posY="1" text="Modify Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn02" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Modify, Add" lstrcomment="false" name="ryn_file.ryn02" notNull="true" posX="21" posY="1" rowCount="" sqlTabName="ryn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Modify"/>
+              <Item lstrtext="false" name="2" text="Add"/>
+            </ComboBox>
+            <Label posX="3" posY="2" text="Purchase Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn05" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Self-defined, PO, Provide, Purchase" lstrcomment="false" name="ryn_file.ryn05" notNull="true" posX="21" posY="2" rowCount="" sqlTabName="ryn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Self-defined"/>
+              <Item lstrtext="false" name="2" text="PO"/>
+              <Item lstrtext="false" name="3" text="Provide"/>
+              <Item lstrtext="false" name="4" text="Purchase"/>
+            </ComboBox>
+            <Label posX="3" posY="3" text="Dept"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn06" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" name="ryn_file.ryn06" posX="21" posY="3" rowCount="" sqlTabName="ryn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="3" posY="4" text="PO Center"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn15" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" name="ryn_file.ryn15" posX="21" posY="4" rowCount="" sqlTabName="ryn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="3" posY="5" text="Main Provider"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn07" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" name="ryn_file.ryn07" notNull="true" posX="21" posY="5" rowCount="" sqlTabName="ryn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="3" posY="6" text="Rate%"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn09" colorCondition="black" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" name="ryn_file.ryn09" posX="21" posY="6" rowCount="" sqlTabName="ryn_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            <Label posX="3" posY="7" text="PO Trade Flow"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn12" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" name="ryn_file.ryn12" posX="21" posY="7" rowCount="" sqlTabName="ryn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="3" posY="8" text="Return Trade Flow"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn13" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" name="ryn_file.ryn13" posX="21" posY="8" rowCount="" sqlTabName="ryn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ButtonEdit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ryn14" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="ryn_file.ryn14" notNull="true" posX="21" posY="9" rowCount="" sqlTabName="ryn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="invalid?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

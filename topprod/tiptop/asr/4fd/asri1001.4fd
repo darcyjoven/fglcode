@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6a0d0ff7-0000-4000-b9c4-b53a2b0577a2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6a39333e-0000-4000-be5e-64c0e45497cf}" where="">
+    <RecordField colName="srb02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="srb_file.srb02" sqlTabName="srb_file" sqlType="VARCHAR" table_alias_name="" uid="{5d63f012-0000-4000-a82c-3ed6e26a7a86}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="eci06" sqlTabName="" table_alias_name="" uid="{3b304ec7-0000-4000-98f4-88f7d8ddeee0}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="a2_b" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{ca132c83-0000-4000-bb72-5f6a62be7b49}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="a2_e" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{e70d77b3-0000-4000-894b-5b078c878a83}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="a3" sqlTabName="" table_alias_name="" uid="{cdf5f494-0000-4000-8810-1f024c1b21b3}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="a4" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e1a369ab-0000-4000-8a53-d0b003db1be5}"/>
+    <RecordField colName="srb06" fieldIdRef="9" fieldType="TABLE_COLUMN" name="srb_file.srb06" sqlTabName="srb_file" sqlType="VARCHAR" table_alias_name="" uid="{73467c4d-0000-4000-aa79-91d40190f796}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="gen02" sqlTabName="" table_alias_name="" uid="{8b23d119-0000-4000-93fb-1be1fe771b3f}"/>
+    <RecordField colName="srb03" fieldIdRef="11" fieldType="TABLE_COLUMN" name="srb_file.srb03" sqlTabName="srb_file" sqlType="VARCHAR" table_alias_name="" uid="{b00df879-0000-4000-ba23-dac4a1318354}"/>
+    <RecordField colName="srb04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="srb_file.srb04" sqlTabName="srb_file" sqlType="VARCHAR" table_alias_name="" uid="{2f9f6b24-0000-4000-9f38-21b1fce428d7}"/>
+    <RecordField colName="srb05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="srb_file.srb05" sqlTabName="srb_file" sqlType="DECIMAL" table_alias_name="" uid="{e6349a9f-0000-4000-9079-fbe10e187f57}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="55" name="asri1001" spacing="normal" text="asri1001">
+    <VBox gridHeight="13" gridWidth="53" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="11" gridWidth="53" lstrcomment="false" name="gr996" posX="0" posY="1">
+        <Group gridHeight="10" gridWidth="52" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Machine Line"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srb02" columnCount="" comment="Key Field, No Blank/Repeated!    &lt;^Y&gt;Enter Item Detail" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="srb_file.srb02" notNull="true" posX="15" posY="1" required="true" rowCount="" sqlTabName="srb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Desc."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="35" lstrcomment="false" lstrtitle="false" name="eci06" noEntry="true" posX="15" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Range"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="a2_b" notNull="true" posX="15" posY="3" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Label posX="29" posY="3" text="~"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="a2_e" notNull="true" posX="32" posY="3" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="4" text="Option"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" items="Month, Ten days, Week" lstrcomment="false" lstrtitle="false" name="a3" notNull="true" posX="15" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="" name="1" text="Month"/>
+            <Item lstrtext="" name="2" text="Ten days"/>
+            <Item lstrtext="" name="3" text="Week"/>
+          </ComboBox>
+          <Label posX="1" posY="5" text="Day."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="a4" notNull="true" posX="15" posY="5" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="6" text="Empl."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srb06" columnCount="" comment="&lt;^P&gt;Qry Employee" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="srb_file.srb06" notNull="true" posX="15" posY="6" required="true" rowCount="" sqlTabName="srb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gen02" noEntry="true" posX="32" posY="6" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="7" text="Time Range"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srb03" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="srb_file.srb03" notNull="true" picture="XX:XX" posX="15" posY="7" required="true" rowCount="" sqlTabName="srb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+          <Label posX="29" posY="7" text="~"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srb04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="srb_file.srb04" notNull="true" picture="XX:XX" posX="32" posY="7" required="true" rowCount="" sqlTabName="srb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="8" text="Time."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="srb05" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="srb_file.srb05" notNull="true" posX="15" posY="8" required="true" rowCount="" sqlTabName="srb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

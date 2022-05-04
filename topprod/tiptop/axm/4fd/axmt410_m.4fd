@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3dca1b44-0000-4000-a696-c48c6d13a5f0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oeaa" order="" uid="{267b5eda-0000-4000-ab5b-6014575e6450}" where="">
+    <RecordField colName="oeaa03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oeaa_file.oeaa03" sqlTabName="oeaa_file" sqlType="SMALLINT" table_alias_name="" uid="{ddf88f3b-0000-4000-8dd4-662a9aedae59}"/>
+    <RecordField colName="oeaa04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oeaa_file.oeaa04" sqlTabName="oeaa_file" sqlType="VARCHAR" table_alias_name="" uid="{c6debc86-0000-4000-a39a-f197d78890bf}"/>
+    <RecordField colName="" fieldIdRef="6" name="oag02" sqlTabName="" table_alias_name="" uid="{1c7d6144-0000-4000-b2a9-e79a3ae63900}"/>
+    <RecordField colName="oeaa05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="oeaa_file.oeaa05" sqlTabName="oeaa_file" sqlType="DATE" table_alias_name="" uid="{7ad062eb-0000-4000-aa74-17eefdae5aac}"/>
+    <RecordField colName="oeaa06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="oeaa_file.oeaa06" sqlTabName="oeaa_file" sqlType="DATE" table_alias_name="" uid="{e6ea225f-0000-4000-a8dc-c0d0e67b7baf}"/>
+    <RecordField colName="oeaa07" fieldIdRef="9" fieldType="TABLE_COLUMN" name="oeaa_file.oeaa07" sqlTabName="oeaa_file" sqlType="DECIMAL" table_alias_name="" uid="{561d606c-0000-4000-b23b-5f8fc4c5d797}"/>
+    <RecordField colName="oeaa08" fieldIdRef="10" fieldType="TABLE_COLUMN" name="oeaa_file.oeaa08" sqlTabName="oeaa_file" sqlType="DECIMAL" table_alias_name="" uid="{36c7664d-0000-4000-be4a-a30af51578de}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7809d228-0000-4000-ac43-5d40e3c60baf}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="oeaa02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{11a4c38f-0000-4000-87c1-f6d2832c3330}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="p_amt" sqlTabName="" table_alias_name="" uid="{0c40c000-0000-4000-88de-ac91d598194b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{0928cb66-0000-4000-9314-6a006638cff3}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="159" name="axmt410_m" spacing="normal" text="axmt410_m">
+    <VBox gridHeight="22" gridWidth="156" name="vbox1" posX="0" posY="1">
+      <Folder gridHeight="4" gridWidth="156" lstrcomment="false" name="pc658" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="2" gridWidth="33" lstrcomment="false" name="gr1993" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" items="Deposit, Balance" lstrcomment="false" lstrtitle="false" name="oeaa02" notNull="true" posX="11" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+              <Item name="1" text="Deposit"/>
+              <Item name="2" text="Balance"/>
+            </ComboBox>
+            <Label posX="1" posY="1" text="Amount"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="p_amt" noEntry="true" posX="11" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Amount" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="156" lstrcomment="false" name="s_oeaa" posX="0" posY="5" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oeaa03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="oeaa_file.oeaa03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oeaa_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Ln#" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oeaa04" columnCount="" comment="Qry Collection Terms No. " fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="oeaa_file.oeaa04" notNull="true" posX="21" posY="0" required="true" rowCount="" sqlTabName="oeaa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Collection Terms" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oag02" noEntry="true" posX="32" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Description" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oeaa05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="oeaa_file.oeaa05" notNull="true" posX="52" posY="0" required="true" rowCount="" sqlTabName="oeaa_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Rec. Date" widget="DateEdit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oeaa06" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="oeaa_file.oeaa06" notNull="true" posX="63" posY="0" required="true" rowCount="" sqlTabName="oeaa_file" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Note Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oeaa07" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="oeaa_file.oeaa07" noEntry="true" posX="84" posY="0" rowCount="" sqlTabName="oeaa_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Exchange Rate" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oeaa08" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="oeaa_file.oeaa08" notNull="true" posX="105" posY="0" required="true" rowCount="" sqlTabName="oeaa_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Ori Curr Rece W-Tax" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="156" lstrcomment="false" name="gr2738" posX="0" posY="17">
+        <HLine gridWidth="10" name="hl1" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

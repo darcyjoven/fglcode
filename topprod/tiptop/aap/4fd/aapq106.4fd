@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{88358401-0000-4000-a75f-377f7baf1947}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nmd" order="" uid="{d45eb9d4-0000-4000-8129-10390719faed}" where="">
+    <RecordField colName="" fieldIdRef="16" name="payno" sqlTabName="" table_alias_name="" uid="{12674c8b-0000-4000-a05c-5521dd22da82}"/>
+    <RecordField colName="" fieldIdRef="17" name="seq" sqlTabName="" table_alias_name="" uid="{5adbd2a5-0000-4000-bd0d-2897fd0b097f}"/>
+    <RecordField colName="" fieldIdRef="2" name="aph04" sqlTabName="" table_alias_name="" uid="{df2b410b-0000-4000-bcbd-862ef5057be6}"/>
+    <RecordField colName="" fieldIdRef="3" name="amtf" sqlTabName="" table_alias_name="" uid="{71410394-0000-4000-ad5d-17385e45f30f}"/>
+    <RecordField colName="" fieldIdRef="4" name="amt" sqlTabName="" table_alias_name="" uid="{8c1ef182-0000-4000-8d51-51c95dd60d6d}"/>
+    <RecordField colName="" fieldIdRef="5" name="nmd02" sqlTabName="" table_alias_name="" uid="{5b175e02-0000-4000-826a-774423bdd951}"/>
+    <RecordField colName="" fieldIdRef="6" name="nmd05" sqlTabName="" table_alias_name="" uid="{42b6f8b0-0000-4000-a2e9-61e06dfe82bd}"/>
+    <RecordField colName="" fieldIdRef="7" name="nmd04" sqlTabName="" table_alias_name="" uid="{e7eef610-0000-4000-ac86-c8300470cc21}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b89ee816-0000-4000-8d5f-2cae3ef1192b}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="apk03" sqlTabName="" table_alias_name="" uid="{735ede9e-0000-4000-9d0b-a2bd7c4bba88}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="apk05" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{2f5953f5-0000-4000-a080-4b39aa2ab1b4}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="apa06" sqlTabName="" table_alias_name="" uid="{e4d52d4f-0000-4000-8541-a277c23dc13b}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="apa07" sqlTabName="" table_alias_name="" uid="{748fcf4e-0000-4000-aa28-4154491b8605}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="apk01" sqlTabName="" table_alias_name="" uid="{3006fa82-0000-4000-9688-5e37d1411e9c}"/>
+    <RecordField colName="" fieldIdRef="14" fieldType="NON_DATABASE" name="apk08" sqlTabName="" table_alias_name="" uid="{e1a2ebe3-0000-4000-be24-b69d753085f4}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="apk07" sqlTabName="" table_alias_name="" uid="{54705159-0000-4000-8032-3321604f9db6}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{dc4a4234-0000-4000-ab4c-3a8046e8d984}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ddb44bb5-0000-4000-b593-e3a5e94e79c4}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="117" name="aapq106" spacing="normal" text="aapq106">
+    <VBox gridHeight="24" gridWidth="114" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="114" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="6" gridWidth="92" lstrcomment="false" name="gr112" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="47" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Invoice No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="apk03" posX="21" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Invoice Date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="apk05" posX="21" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+              <Label posX="1" posY="3" text="Vender No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="apa06" posX="21" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="apa07" posX="33" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="5" gridWidth="44" lstrcomment="false" lstrtext="false" name="group02" posX="48" posY="0">
+              <Label posX="1" posY="1" text="Accounts No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" image="zoom" lstrcomment="false" lstrtitle="false" name="apk01" posX="21" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Before-Tax Amt"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="apk08" posX="21" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Tax"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="apk07" posX="21" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="114" lstrcomment="false" name="s_nmd" posX="0" posY="9" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="payno" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Document #" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="17" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="seq" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Ln#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="aph04" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Cate" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="amtf" posX="25" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Contra F.C" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="amt" posX="45" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Contra H.C" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nmd02" posX="65" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Check No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="nmd05" posX="75" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Due Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd04" posX="84" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" title="Face Value" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="114" lstrcomment="false" name="gr113" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl45" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="16" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="17" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl46" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

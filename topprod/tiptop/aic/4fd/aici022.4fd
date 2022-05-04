@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f9c26f4c-0000-4000-9954-3730964e138e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ids" order="" uid="{b27949a7-0000-4000-979c-17f88b5d63a6}" where="">
+    <RecordField colName="ids01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ids_file.ids01" sqlTabName="ids_file" sqlType="VARCHAR" table_alias_name="" uid="{4eba0909-0000-4000-b8b5-17f2382ed66b}"/>
+    <RecordField colName="ids02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ids_file.ids02" sqlTabName="ids_file" sqlType="VARCHAR" table_alias_name="" uid="{3ce50d79-0000-4000-936d-8a3819ebc3ea}"/>
+    <RecordField colName="ids03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ids_file.ids03" sqlTabName="ids_file" sqlType="VARCHAR" table_alias_name="" uid="{a0e367b7-0000-4000-bd3a-bac707f3158f}"/>
+    <RecordField colName="ids04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ids_file.ids04" sqlTabName="ids_file" sqlType="VARCHAR" table_alias_name="" uid="{bca8d3c1-0000-4000-8545-7b65b7d388cc}"/>
+    <RecordField colName="idsacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ids_file.idsacti" sqlTabName="ids_file" sqlType="VARCHAR" table_alias_name="" uid="{d7a5c351-0000-4000-b666-7d8938449ec6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2729545d-0000-4000-9924-1ec5793b7f78}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{b6336396-0000-4000-b0b9-9aabc0ce2ddd}"/>
+  </Record>
+  <Form gridHeight="31" gridWidth="121" lstrtext="false" name="aici022" spacing="normal" text="aici022">
+    <VBox gridHeight="17" gridWidth="73" name="VBox1" posX="1" posY="1">
+      <Folder gridHeight="13" gridWidth="73" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page name="Page3" text="Main">
+          <Table gridHeight="12" gridWidth="68" name="s_ids" posX="1" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ids01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="ids_file.ids01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="ids_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Lot No." widget="ButtonEdit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ids02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Before, After" lstrcomment="false" lstrtitle="false" name="ids_file.ids02" notNull="true" posX="24" posY="0" required="true" rowCount="" sqlTabName="ids_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Hold type" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Before"/>
+              <Item lstrtext="false" name="2" text="After"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ids03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Body, No Test Wafer, Tested Wafer, No Test IC, Tested IC, Other, WIP" name="ids_file.ids03" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="ids_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Item Status" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Body"/>
+              <Item lstrtext="false" name="1" text="No Test Wafer"/>
+              <Item lstrtext="false" name="2" text="Tested Wafer"/>
+              <Item lstrtext="false" name="3" text="No Test IC"/>
+              <Item lstrtext="false" name="4" text="Tested IC"/>
+              <Item lstrtext="false" name="9" text="Other"/>
+              <Item lstrtext="false" name="W" text="WIP"/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ids04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Body, No Test Wafer, Tested Wafer, No Test IC, Tested IC" name="ids_file.ids04" notNull="true" posX="44" posY="0" required="true" rowCount="" sqlTabName="ids_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Lock status" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Body"/>
+              <Item lstrtext="false" name="1" text="No Test Wafer"/>
+              <Item lstrtext="false" name="2" text="Tested Wafer"/>
+              <Item lstrtext="false" name="3" text="No Test IC"/>
+              <Item lstrtext="false" name="4" text="Tested IC"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="idsacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="ids_file.idsacti" notNull="true" posX="54" posY="0" required="true" rowCount="" sqlTabName="ids_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Valid Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="73" lstrcomment="false" name="gr1" posX="0" posY="14">
+        <Label posX="3" posY="0" text="--------Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="cn2" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="28" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

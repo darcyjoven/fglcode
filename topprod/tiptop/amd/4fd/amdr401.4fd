@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0ea67320-0000-4000-951d-ee0bc59f9427}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fd6bf194-0000-4000-81f3-4ae4011a9e2f}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{58c85216-0000-4000-930b-62f5d381a708}"/>
+    <RecordField colName="amd22" fieldIdRef="2" fieldType="TABLE_COLUMN" name="amd_file.amd22" sqlTabName="amd_file" sqlType="VARCHAR" table_alias_name="" uid="{62856033-0000-4000-95be-6517ce541b2d}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="amd173_b" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{54e757e6-0000-4000-bacd-4d370f11e181}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="amd174_b" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{eaf6de15-0000-4000-a36c-c1debd15d71e}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="amd174_e" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e88b1513-0000-4000-9b3e-31bc8fbf6c16}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="pdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{a2237d1c-0000-4000-9b4d-e12a464decbd}"/>
+    <RecordField colName="" defaultValue="1" fieldIdRef="7" fieldType="NON_DATABASE" name="t" sqlTabName="" table_alias_name="" uid="{85321cdd-0000-4000-8729-b33a2efc44f5}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{1fb555e9-0000-4000-afbd-6f38a2f454ef}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="101" name="amdr401" spacing="normal" text="amdr401">
+    <VBox gridHeight="11" gridWidth="98" name="vb2" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="98" lstrcomment="false" name="gr3721" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="97" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" text="Print TaxID Together?  " valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label posX="1" posY="2" text="Declaring Department"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amd22" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="amd_file.amd22" posX="22" posY="2" rowCount="" sqlTabName="amd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Data Year/Month"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="No Blank Field" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="amd173_b" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="33" posY="3" text="/"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="No Blank Field" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="amd174_b" posX="35" posY="3" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="46" posY="3" text="-"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="No Blank Field" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="amd174_e" posX="48" posY="3" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" name="dummy01" posX="59" posY="3" text="(century year)"/>
+          <Label posX="1" posY="4" text="Declaration Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pdate" posX="22" posY="4" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="5" text="Report Templet"/>
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" defaultValue="1" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" items="Templet1, Templet2" lstrcomment="false" name="t" notNull="true" orientation="horizontal" posX="22" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="false" name="1" text="Templet1"/>
+            <Item lstrtext="false" name="2" text="Templet2"/>
+          </RadioGroup>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="98" lstrcomment="false" name="gr3722" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

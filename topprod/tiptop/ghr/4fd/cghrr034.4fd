@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="21e00" name="ManagedForm" uid="{688052c7-c655-438e-ad2c-80193181ffb3}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d945f24e-d27d-4d7e-b063-a4cf1fa72cab}" where="">
+    <RecordField colName="" fieldIdRef="7" name="imzud02" sqlTabName="" table_alias_name="" uid="{f2919486-98a8-44b1-bb37-e09294f8d116}"/>
+    <RecordField colName="" fieldIdRef="10" name="l_year" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{7f48b064-a902-4e3f-b445-1d4320650e00}"/>
+    <RecordField colName="" fieldIdRef="13" name="l_month" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{ff52ba02-a4d3-42de-8025-2cbf207c04e2}"/>
+    <RecordField colName="" defaultValue="1" fieldIdRef="1" name="l_type" sqlTabName="" table_alias_name="" uid="{4406bc72-8a7c-42d3-b54f-c4146be90e91}"/>
+    <RecordField colName="" defaultValue="" fieldIdRef="2" name="l_plant" sqlTabName="" table_alias_name="" uid="{c6f6407e-1cf9-417d-b020-3e6e4e2b221b}"/>
+    <RecordField colName="" fieldIdRef="3" name="gen_safeqty" sqlTabName="" table_alias_name="" uid="{4e0deb93-ae55-44bf-b356-85bebe5d10f5}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="77" name="Form" text="Form">
+    <VBox gridHeight="19" gridWidth="68" name="VBox1" posX="3" posY="0">
+      <Group gridHeight="7" gridWidth="68" name="Group1" posX="0" posY="1" text="QBE">
+        <Grid gridHeight="3" gridWidth="61" name="Grid1" posX="2" posY="1">
+          <Label gridHeight="1" gridWidth="10" name="Label7" posX="4" posY="1" text="imzud02"/>
+          <ButtonEdit action="controlp" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="20" image="zoom" name="imzud02" posX="16" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+        </Grid>
+      </Group>
+      <Group gridHeight="10" gridWidth="68" name="Group2" posX="0" posY="8" text="INPUT">
+        <Grid gridHeight="8" gridWidth="61" name="Grid2" posX="2" posY="1">
+          <Label gridHeight="1" gridWidth="10" name="Label10" posX="5" posY="1" text="y1"/>
+          <Edit colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="14" name="l_year" notNull="true" posX="16" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Edit1" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="10" name="Label13" posX="5" posY="2" text="y2"/>
+          <Edit colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="14" name="l_month" notNull="true" posX="16" posY="2" required="true" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit1" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="10" name="Label1" posX="5" posY="3" text="y2"/>
+          <ComboBox colName="" columnCount="" defaultValue="1" fieldId="1" gridHeight="1" gridWidth="19" items="1, 2, 3" name="l_type" notNull="true" posX="16" posY="3" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ComboBox1" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="1"/>
+            <Item lstrtext="false" name="2" text="2"/>
+            <Item lstrtext="false" name="3" text="3"/>
+          </ComboBox>
+          <CheckBox colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="20" name="gen_safeqty" posX="5" posY="4" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" text="gen_safeqty" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Label gridHeight="1" gridWidth="10" name="Label2" posX="5" posY="5" text="y2"/>
+          <ComboBox colName="" columnCount="" defaultValue="" fieldId="2" gridHeight="1" gridWidth="19" items="XS, HN" name="l_plant" notNull="false" posX="16" posY="5" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ComboBox1" widget="ComboBox">
+            <Item lstrtext="false" name="XS" text="XS"/>
+            <Item lstrtext="false" name="HN" text="HN"/>
+          </ComboBox>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkADkANAA1AGYAMgA0AGUALQBkADIANwBkAC0ANABkADcAZQAtAGIAMAA2ADMALQBhADQAYwBmADEAZgBhADcAMgBjAGEAYgB9AAAAAAAAAAAAAAAAAAAAAD9QYk3S8an8AQAAAEwAewBjADYAZgA2ADQAMAA3AGUALQAxAGMAZgA5AC0ANAAxADcAZAAtAGIAMAAyADAALQAzAGUANgBlADQAZQAyAGIAMgAyADEAYgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADIAOQAxADkANAA4ADYALQA5ADgAYQA4AC0ANAA0AGIAMQAtAGIAYgAzADcALQBlADAAOQAyADkANABmADgAZAAxADEANgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGUAMABkAGUAYgA5ADMALQBhAGUANQA1AC0ANAA0AGIAZgAtAGIAMwA1ADYALQA4ADUAYgBlAGIAZQA1AGQAMQAwAGYANQB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADQAMAA2AGIAYwA3ADIALQA4AGEANwBjAC0ANAAyAGQAMwAtAGIANQA0AGYALQBjADQAMQA0ADYAYgBlADkAMABlADkAMQB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGYANAA4AGIAMAA2ADQALQBhADkAMAAyAC0ANABlADMAZgAtAGIANAA0ADUALQAxAGQANAAzADIAMAA2ADUAMABlADAAMAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGYANQAyAGIAYQAwADIALQBhADQAZAAzAC0ANAAyAGQAZQAtADgAMAAyADUALQAyAGMAYgBmADIAMAA3AGMAMAA0AGUAMgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

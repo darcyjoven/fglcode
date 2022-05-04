@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a7a30854-0000-4000-b792-c07d81b6b35b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rxy" order="" uid="{bf192c8f-0000-4000-94f3-0cd082b05471}" where="">
+    <RecordField colName="rxy02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rxy_file.rxy02" sqlTabName="rxy_file" sqlType="SMALLINT" table_alias_name="" uid="{1f0786cb-0000-4000-bf94-9084eaec7282}"/>
+    <RecordField colName="rxy19" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rxy_file.rxy19" sqlTabName="rxy_file" sqlType="VARCHAR" table_alias_name="" uid="{a58d56d3-0000-4000-a56a-c6fef5e780fe}"/>
+    <RecordField colName="rxy06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rxy_file.rxy06" sqlTabName="rxy_file" sqlType="VARCHAR" table_alias_name="" uid="{a48c100d-0000-4000-8e89-822118aeef42}"/>
+    <RecordField colName="rxy03" fieldIdRef="11" fieldType="TABLE_COLUMN" name="rxy_file.rxy03" sqlTabName="rxy_file" sqlType="VARCHAR" table_alias_name="" uid="{24a4b6ca-f578-4158-8469-1d4fc3368994}"/>
+    <RecordField colName="rxy32" fieldIdRef="8" fieldType="TABLE_COLUMN" name="rxy_file.rxy32" sqlTabName="rxy_file" sqlType="SMALLINT" table_alias_name="" uid="{3edd2742-f871-44a5-88eb-467644179c02}"/>
+    <RecordField colName="" fieldIdRef="9" name="lul05" sqlTabName="" table_alias_name="" uid="{3571d7f3-7e13-41c3-88f2-ff5fdb4aff67}"/>
+    <RecordField colName="" fieldIdRef="10" name="oaj02" sqlTabName="" table_alias_name="" uid="{d17a2c05-e7ce-43ae-aede-3be588635fdf}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="sum1" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{899963fb-0000-4000-9f45-84f7831e8182}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="sum2" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{060114bd-0000-4000-9816-58dba6b1592e}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="sum3" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{b707378d-0000-4000-97ab-199fa89fc2dc}"/>
+    <RecordField colName="rxy05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="rxy_file.rxy05" precisionDecimal="20" scaleDecimal="6" sqlTabName="rxy_file" sqlType="DECIMAL" table_alias_name="" uid="{4d59f342-0000-4000-94d9-d534f1be1b32}"/>
+  </Record>
+  <Form gridHeight="31" gridWidth="257" lstrtext="false" name="s_pay7" spacing="normal" text="s_pay7">
+    <VBox gridHeight="9" gridWidth="132" name="VBox1" posX="1" posY="0">
+      <Table gridHeight="7" gridWidth="132" name="s_rxy" posX="0" posY="1" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxy02" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy02" posX="0" posY="0" rowCount="" sqlTabName="rxy_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="rxy02" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxy19" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="prepare, zhanshi, expense Note" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy19" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="rxy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="rxy19" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="prepare"/>
+          <Item lstrtext="false" name="2" text="zhanshi"/>
+          <Item lstrtext="false" name="3" text="expense Note"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxy06" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy06" notNull="true" posX="20" posY="0" required="true" rowCount="" sqlTabName="rxy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="rxy06" widget="ButtonEdit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxy03" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Cash, UnionPay cards, Cheque, Coupon, Union Card, Stored-value Cards, Advance, Manual Transfers, Money Type, Pay Discount" name="rxy_file.rxy03" posX="33" posY="0" rowCount="" sqlTabName="rxy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="rxy03" widget="ComboBox">
+          <Item lstrtext="false" name="01" text="Cash"/>
+          <Item lstrtext="false" name="02" text="UnionPay cards"/>
+          <Item lstrtext="false" name="03" text="Cheque"/>
+          <Item lstrtext="false" name="04" text="Coupon"/>
+          <Item lstrtext="false" name="05" text="Union Card"/>
+          <Item lstrtext="false" name="06" text="Stored-value Cards"/>
+          <Item lstrtext="false" name="07" text="Advance"/>
+          <Item lstrtext="false" name="08" text="Manual Transfers"/>
+          <Item lstrtext="false" name="09" text="Money Type"/>
+          <Item lstrtext="false" name="10" text="Pay Discount"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxy32" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="rxy_file.rxy32" noEntry="false" notNull="true" posX="41" posY="0" rowCount="" sqlTabName="rxy_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="rxy32" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="12" name="lul05" noEntry="true" posX="53" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="lul05" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="12" name="oaj02" noEntry="true" posX="65" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="oaj02" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sum1" noEntry="true" posX="77" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="sum1" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sum2" noEntry="true" posX="87" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="sum2" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="sum3" noEntry="true" posX="97" posY="0" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="sum3" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rxy05" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy05" notNull="true" posX="106" posY="0" precisionDecimal="20" required="true" rowCount="" scaleDecimal="6" sqlTabName="rxy_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="11" table_alias_name="" title="rxy05" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxAGYAMAA3ADgANgBjAGIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZgA5ADQALQA5ADAAOAA0AGUAYQBlAGMANwAyADgAMgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADUANwAxAGQANwBmADMALQA3AGUAMQAzAC0ANAAxAGMAMwAtADgAOABmADIALQBmAGYANQBmAGQAYgA0AGEAZgBmADYANwB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGYAMQA5ADIAYwA4AGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkANABmADMALQAwAGMAZAAwADgAMgBiADAANQA0ADcAMQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGUAZABkADIANwA0ADIALQBmADgANwAxAC0ANAA0AGEANQAtADgAOABlAGIALQA0ADYANwA2ADQANAAxADcAOQBjADAAMgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBkADEANwBhADIAYwAwADUALQBlADcAYwBlAC0ANAAzAGEAZQAtAGEAZQBkAGUALQAzAGIAZQA1ADgAOAA2ADMANQBmAGQAZgB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADUAOABkADUANgBkADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQA2AGEALQBjADYAZgBlAGYANQBlADcAOAAwAGYAZQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADYAMAAxADEANABiAGQALQAwADAAMAAwAC0ANAAwADAAMAAtADkAOAAxADYALQA1ADgAZABiAGEANgBiADEANQA5ADIAZQB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGQANQA5AGYAMwA0ADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkANABkADkALQBkADUAMwA0AGYAMQBiAGUAMQBiADMAMgB9QCQAAAAAAABAcBAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADQAOABjADEAMAAwAGQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZQA4ADkALQA4ADIAMgAxADEAOABhAGUAZQBmADQAMgB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADQAYQA0AGIANgBjAGEALQBmADUANwA4AC0ANAAxADUAOAAtADgANAA2ADkALQAxAGQANABmAGMAMwAzADYAOAA5ADkANAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADkAOQA5ADYAMwBmAGIALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZgA0ADUALQA4ADQAZgA3ADgAMwAxAGUAOAAxADgAMgB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewBiADcAMAA3ADMANwA4AGQALQAwADAAMAAwAC0ANAAwADAAMAAtADkANwBhAGIALQAxADkAOQBmAGEAOAA5AGYAYwAyAGQAYwB9QCQAAAAAAABAbWAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

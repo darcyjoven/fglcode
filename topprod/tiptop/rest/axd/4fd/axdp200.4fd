@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="113" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="24994" spacing="normal" posX="0" percommentheader="" height="23" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdp200" defaultspacing="true" text="axdp200" gstVersion="11401" percommentlayout="GRID
+GRID
+HBOX
+PAGE
+FOLDER
+TABLE
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="110" posX="0" posY="0" height="8" lstrcomment="false" name="folder01" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Main" >
+    <HBox width="77" tag="" posX="0" posY="0" height="5" hidden="" style="" name="" >
+     <Grid width="41" posX="0" posY="0" height="5" lstrcomment="false" hidden="--------" name="gr7782" fontPitch="default" scroll="false" >
+      <Group width="41" lstrtext="false" gridWidth="41" posX="0" posY="0" height="4" lstrcomment="false" hidden="--------" name="group01" fontPitch="default" gridHeight="4" gridChildrenInParent="--------" >
+       <Text width="16" lstrtext="false" gridWidth="16" posX="1" posY="1" height="1" sizePolicy="initial" name="text26457" text="Application Note" />
+       <FormField sqlDBName="ds" colName="add01" fieldId="0" sqlTabName="add_file" name="add01" fieldtype="TABLE_COLUMN" >
+        <ButtonEdit width="18" case="NONE" comment="&lt;^P>Qry Application Note " invisible="--------" gridWidth="18" notNull="true" image="zoom" posX="22" formfieldname="formfield0" action="controlp" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" tabIndex="1" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" name="add01" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+       </FormField>
+       <Text width="16" lstrtext="false" gridWidth="16" posX="1" posY="2" height="1" sizePolicy="initial" name="text26458" text="Application Date" />
+       <FormField sqlDBName="ds" colName="add02" fieldId="1" sqlTabName="add_file" name="add02" fieldtype="TABLE_COLUMN" >
+        <DateEdit width="10" gridWidth="10" notNull="--------" posX="22" formfieldname="formfield1" posY="2" height="1" autoNext="--------" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="2" lstrtitle="false" data_type="DATE" name="add02" century="R" color="black" fontPitch="default" required="--------" noEntry="true" />
+       </FormField>
+      </Group>
+     </Grid>
+     <Grid width="35" posX="41" posY="0" height="5" lstrcomment="false" hidden="--------" name="gr7783" fontPitch="default" scroll="false" >
+      <Group width="35" lstrtext="false" gridWidth="35" posX="0" posY="0" height="4" lstrcomment="false" hidden="--------" name="group02" fontPitch="default" gridHeight="4" gridChildrenInParent="--------" >
+       <FormField colName="a" fieldId="2" sqlTabName="formonly" name="formonly.a" fieldtype="FORM_ONLY" >
+        <CheckBox width="30" lstrtext="false" gridWidth="30" notNull="true" posX="2" formfieldname="formfield2" posY="1" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="3" lstrtitle="false" name="a" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="Close All the Items Of the Application" valueChecked="Y" />
+       </FormField>
+       <FormField colName="y" fieldId="3" sqlTabName="formonly" name="formonly.y" fieldtype="FORM_ONLY" >
+        <CheckBox width="30" lstrtext="false" gridWidth="30" notNull="true" posX="2" formfieldname="formfield3" posY="2" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" tabIndex="4" lstrtitle="false" name="y" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="Display the Close Items" valueChecked="Y" />
+       </FormField>
+      </Group>
+     </Grid>
+    </HBox>
+   </Page>
+  </PageControl>
+  <Table width="110" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="8" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_ade" fontPitch="default" tabName="s_ade" unsortableColumns="--------" tabName1="s_ade" >
+   <TableColumn width="8" lstrtext="false" sqlDBName="ds" height="1" colName="ade13" unsortable="--------" fieldId="4" sqlTabName="ade_file" tabIndex="5" unsizable="--------" unhidable="--------" unmovable="--------" name="ade13" fieldtype="TABLE_COLUMN" text="Close?" >
+    <CheckBox width="8" lstrtext="false" notNull="--------" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="--------" text="" valueChecked="Y" />
+   </TableColumn>
+   <TableColumn width="10" lstrtext="false" sqlDBName="ds" height="1" colName="ade02" unsortable="--------" fieldId="5" sqlTabName="ade_file" tabIndex="6" unsizable="--------" unhidable="--------" unmovable="--------" name="ade02" fieldtype="TABLE_COLUMN" text="Line No" >
+    <Edit width="10" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+   <TableColumn width="24" lstrtext="false" sqlDBName="ds" height="1" colName="ade03" unsortable="--------" fieldId="6" sqlTabName="ade_file" tabIndex="7" unsizable="--------" unhidable="--------" unmovable="--------" name="ade03" fieldtype="TABLE_COLUMN" text="Item No." >
+    <Edit width="24" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+   <TableColumn width="16" lstrtext="false" sqlDBName="ds" height="1" colName="ade05" unsortable="--------" fieldId="7" sqlTabName="ade_file" tabIndex="8" unsizable="--------" unhidable="--------" unmovable="--------" name="ade05" fieldtype="TABLE_COLUMN" text="Applied Qty" >
+    <Edit width="16" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+   <TableColumn width="26" lstrtext="false" sqlDBName="ds" height="1" colName="ade12" unsortable="--------" fieldId="8" sqlTabName="ade_file" tabIndex="9" unsizable="--------" unhidable="--------" unmovable="--------" name="ade12" fieldtype="TABLE_COLUMN" text="Transfered-out Qty" >
+    <Edit width="26" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+   <TableColumn width="18" lstrtext="false" sqlDBName="ds" height="1" colName="ade15" unsortable="--------" fieldId="9" sqlTabName="ade_file" tabIndex="10" unsizable="--------" unhidable="--------" unmovable="--------" name="ade15" fieldtype="TABLE_COLUMN" text="Transfered-In Qty" >
+    <Edit width="18" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+  </Table>
+  <Grid width="110" posX="0" posY="20" height="1" lstrcomment="false" hidden="--------" name="gr7784" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl2555" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" posY="0" height="1" sizePolicy="initial" name="text26459" text="Rows" />
+   <FormField colName="cn2" fieldId="10" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+    <Edit width="5" case="NONE" invisible="--------" gridWidth="5" notNull="--------" posX="17" formfieldname="formfield4" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="11" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="23" posY="0" height="1" name="hl2556" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_ade" fromTable="true" tableKey="tb1125" >
+  <Link colName="ade_file.ade13" fromTable="true" colKey="Col11146" />
+  <Link colName="ade_file.ade02" fromTable="true" colKey="Col11147" />
+  <Link colName="ade_file.ade03" fromTable="true" colKey="Col11148" />
+  <Link colName="ade_file.ade05" fromTable="true" colKey="Col11149" />
+  <Link colName="ade_file.ade12" fromTable="true" colKey="Col11150" />
+  <Link colName="ade_file.ade15" fromTable="true" colKey="Col11151" />
+ </RecordView>
+</Form>
+

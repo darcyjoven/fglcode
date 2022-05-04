@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4bf3774c-0000-4000-a786-6cc4976753a2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f4d66b29-0000-4000-b951-099c2c4073bf}" where="">
+    <RecordField colName="fca01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="fca_file.fca01" sqlTabName="fca_file" sqlType="VARCHAR" table_alias_name="" uid="{fd99ba6d-0000-4000-86d2-9868958b39b6}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="posdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{6c9c0ca5-0000-4000-b2b7-013d31d8bd0a}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{750f7708-0000-4000-9115-39b52cc0f53f}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="67" name="afap610" spacing="normal" text="afap610">
+    <VBox gridHeight="11" gridWidth="64" name="vb2" posX="1" posY="0">
+      <Grid gridHeight="7" gridWidth="64" lstrcomment="false" name="gr1937" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Input">
+          <Label posX="1" posY="1" text="Inventory Taking No"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fca01" columnCount="" comment="&lt;^P&gt;Qry Inventory Taking" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="fca_file.fca01" posX="25" posY="1" rowCount="" sqlTabName="fca_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Inventory Posting Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" name="posdate" posX="25" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Label gridHeight="1" gridWidth="8" lstrcomment="false" lstrtext="false" name="dummy02" posX="1" posY="3"/>
+          <Label gridHeight="1" gridWidth="55" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="4" text="* Confirm Inventory Data (FM) done and no error found *"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="64" lstrcomment="false" name="gr1938" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="62" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0071c143-0000-4000-b4f0-b798d7eec376}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ff7b6bf7-0000-4000-823f-c8c7a80d5fe1}" where="">
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5bea13c1-0000-4000-8bb7-e7f49b7a02a4}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="b" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a6f47584-0000-4000-a5f4-6633dbeed802}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="a_b_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{9ba2fc22-0000-4000-a153-372c2e67af75}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="a_e_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{8681c2f4-0000-4000-8cc7-3c06770217d0}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="b_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{2e028853-0000-4000-b102-e0cd34188769}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="e_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{3a4ed013-0000-4000-956a-a05d002fff44}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="7" fieldType="NON_DATABASE" name="bgjob" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1d59be02-0000-4000-ba13-66c511f768b9}"/>
+  </Record>
+  <Form gridHeight="8" gridWidth="85" lstrtext="false" name="anmp301" spacing="normal" text="anmp301">
+    <VBox gridHeight="8" gridWidth="82" name="vb1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="82" lstrcomment="false" name="gr6" posX="0" posY="1">
+        <Label posX="1" posY="0" text="bankcode"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" name="a" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" name="b" noEntry="true" posX="28" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Grid gridHeight="4" gridWidth="82" lstrcomment="false" name="gr2" posX="0" posY="3">
+        <Label posX="1" posY="0" text="F.Download date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" name="a_b_date" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+        <Label posX="30" posY="0" text="L.download date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" name="a_e_date" noEntry="true" posX="46" posY="0" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="1" text="B.Download date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" name="b_date" notNull="true" posX="17" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+        <Label posX="30" posY="1" text="E.download date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" name="e_date" notNull="true" posX="46" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtext="false" name="bgjob" notNull="true" posX="2" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="background" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="Root" uid="{167bf1e0-0000-4000-9169-7dbeee4580c2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c8fb20c0-0000-4000-92c3-bb2f90020119}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bmx01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{fba66bae-0000-4000-b197-4a1dc6438a19}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="bmx02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{c43576ad-0000-4000-9535-ebb941db2f5f}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="bmy29" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{7be6165c-0000-4000-bd1a-1c08ef4798c2}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="bmx50" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{67de5274-0000-4000-87f0-fa0179b86ec2}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{60ee5c4d-0000-4000-aa97-8641c615f56a}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="78" name="abmr730" spacing="normal" text="abmr730">
+    <VBox gridHeight="11" gridWidth="49" name="VBox1" posX="9" posY="4">
+      <Grid gridHeight="5" gridWidth="49" lstrcomment="false" name="gr974" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="45" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="E.C.N. No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="bmx01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="E.C.N.Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bmx02" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Alternate Code"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bmy29" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="4" gridWidth="49" lstrcomment="false" name="gr3" posX="0" posY="6">
+        <Label posX="3" posY="1" text="Bom Style"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" items="Product Bom, Process Bom, All" lstrcomment="false" name="bmx50" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Product Bom"/>
+          <Item lstrtext="false" name="2" text="Process Bom"/>
+          <Item lstrtext="false" name="3" text="All"/>
+        </ComboBox>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

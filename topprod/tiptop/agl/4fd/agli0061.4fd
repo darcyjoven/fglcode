@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="ManagedForm" uid="{24dd0d18-3e85-4c9f-9c83-a5896125a92c}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_axn" order="" uid="{0b232d5b-a495-4106-8c2b-6390af1bd44e}" where="">
+    <RecordField colName="axn17" fieldIdRef="3" fieldType="TABLE_COLUMN" name="axn_file.axn17" sqlTabName="axn_file" sqlType="VARCHAR" table_alias_name="" uid="{149e307e-7cb5-4175-b82f-358f30b359b2}"/>
+    <RecordField colName="aya02" fieldIdRef="4" name="aya02" sqlTabName="formonly" table_alias_name="" uid="{5e71b087-409e-4985-b9af-32d77a541814}"/>
+    <RecordField colName="axn19" fieldIdRef="5" fieldType="TABLE_COLUMN" name="axn_file.axn19" sqlTabName="axn_file" sqlType="VARCHAR" table_alias_name="" uid="{571b3000-9c32-43ce-823f-599ae4d0cad1}"/>
+    <RecordField colName="axl02" fieldIdRef="6" name="axl02" sqlTabName="formonly" table_alias_name="" uid="{1ba7164f-d636-48f4-a879-85ea0ca1c6d6}"/>
+    <RecordField colName="axn18" fieldIdRef="7" fieldType="TABLE_COLUMN" name="axn_file.axn18" sqlTabName="axn_file" sqlType="DECIMAL" table_alias_name="" uid="{6f8a7fe5-b3bd-403f-a0a9-39d5f7d9cc17}"/>
+    <RecordField colName="axn20" fieldIdRef="8" fieldType="TABLE_COLUMN" name="axn_file.axn20" sqlTabName="axn_file" sqlType="VARCHAR" table_alias_name="" uid="{a0fa0e9d-e8f9-492e-b81a-a3cdf6829382}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f6edd524-a77e-43fa-b599-d0b4e513a1c4}" where="">
+    <RecordField colName="axn15" fieldIdRef="0" fieldType="TABLE_COLUMN" name="axn_file.axn15" sqlTabName="axn_file" sqlType="VARCHAR" table_alias_name="" uid="{02d138dd-67a8-40cc-a489-de7c2b444174}"/>
+    <RecordField colName="axn01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="axn_file.axn01" sqlTabName="axn_file" sqlType="SMALLINT" table_alias_name="" uid="{f709ca0a-9bca-4dc5-a7a9-b941a0e8ecba}"/>
+    <RecordField colName="axn02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="axn_file.axn02" sqlTabName="axn_file" sqlType="SMALLINT" table_alias_name="" uid="{daa5b995-eba1-4aeb-a9af-933db824ce39}"/>
+    <RecordField colName="cnt" fieldIdRef="9" name="cnt" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{2f9e7dec-11c5-4421-9206-e89897f480e1}"/>
+    <RecordField colName="cn2" fieldIdRef="10" name="cn2" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{7d3e2e0b-8133-433b-bc28-b722d89c8146}"/>
+    <RecordField colName="sum_axn18" fieldIdRef="11" name="sum_axn18" sqlTabName="formonly" table_alias_name="" uid="{77254a2a-1ff7-4e4e-a8cb-9735f05ff0e4}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="89" name="agli0061" text="agli006">
+    <VBox gridHeight="21" gridWidth="89" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="89" name="folder01" posX="0" posY="1">
+        <Page name="page01" text="Main">
+          <Grid gridHeight="5" gridWidth="23" name="gr2403" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="9" posX="1" posY="0" text="Book No."/>
+            <ButtonEdit action="controlp" colName="axn15" columnCount="" fieldId="0" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom.png" name="axn_file.axn15" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="axn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="4" posX="1" posY="1" text="Year"/>
+            <Edit colName="axn01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="axn_file.axn01" notNull="true" posX="11" posY="1" required="true" rowCount="" sqlTabName="axn_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="5" posX="1" posY="2" text="Month"/>
+            <Edit colName="axn02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="axn_file.axn02" noEntry="true" notNull="true" posX="11" posY="2" required="true" rowCount="" sqlTabName="axn_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="89" name="s_axn" posX="0" posY="7" totalRows="10">
+        <ButtonEdit action="controlp" colName="axn17" columnCount="" comment="&lt;^P&gt;Flow Category Code" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="axn_file.axn17" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="axn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Flow Category Code" widget="ButtonEdit"/>
+        <Edit colName="aya02" columnCount="" fieldId="4" gridHeight="1" gridWidth="20" name="aya02" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Descriptiom" widget="Edit"/>
+        <ButtonEdit action="controlp" colName="axn19" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom.png" name="axn_file.axn19" notNull="true" posX="30" posY="0" required="true" rowCount="" sqlTabName="axn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="axn19" widget="ButtonEdit"/>
+        <Edit colName="axl02" columnCount="" fieldId="6" gridHeight="1" gridWidth="17" name="axl02" noEntry="true" posX="41" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="11" table_alias_name="" title="axl02" widget="Edit"/>
+        <Edit colName="axn18" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" name="axn_file.axn18" notNull="true" posX="58" posY="0" precisionDecimal="20" required="true" rowCount="" scaleDecimal="6" sqlTabName="axn_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Balance" widget="Edit"/>
+        <Edit colName="axn20" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="axn_file.axn20" notNull="true" posX="74" posY="0" required="true" rowCount="" sqlTabName="axn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="axn20" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="89" name="gr2404" posX="0" posY="18">
+        <HLine gridWidth="3" name="HLine1" posX="1" posY="0"/>
+        <Label gridHeight="1" gridWidth="5" posX="5" posY="0" text="Rows"/>
+        <Edit colName="cnt" columnCount="" fieldId="9" gridHeight="1" gridWidth="6" name="cnt" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="2" posX="19" posY="0" text="/"/>
+        <Edit colName="cn2" columnCount="" fieldId="10" gridHeight="1" gridWidth="6" name="cn2" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="5" name="HLine2" posX="30" posY="0"/>
+        <Label gridHeight="1" gridWidth="4" posX="35" posY="0" text="Sum"/>
+        <Edit colName="sum_axn18" columnCount="" fieldId="11" gridHeight="1" gridWidth="9" name="sum_axn18" noEntry="true" posX="40" posY="0" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="5" name="HLine3" posX="50" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyAGYAOQBlADcAZABlAGMALQAxADEAYwA1AC0ANAA0ADIAMQAtADkAMgAwADYALQBlADgAOQA4ADkANwBmADQAOAAwAGUAMQB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADQAOQBlADMAMAA3AGUALQA3AGMAYgA1AC0ANAAxADcANQAtAGIAOAAyAGYALQAzADUAOABmADMAMABiADMANQA5AGIAMgB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGIAYQA3ADEANgA0AGYALQBkADYAMwA2AC0ANAA4AGYANAAtAGEAOAA3ADkALQA4ADUAZQBhADAAYwBhADEAYwA2AGQANgB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADAAZgBhADAAZQA5AGQALQBlADgAZgA5AC0ANAA5ADIAZQAtAGIAOAAxAGEALQBhADMAYwBkAGYANgA4ADIAOQAzADgAMgB9QBQAAAAAAABAY2AAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGUANwAxAGIAMAA4ADcALQA0ADAAOQBlAC0ANAA5ADgANQAtAGIAOQBhAGYALQAzADIAZAA3ADcAYQA1ADQAMQA4ADEANAB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewAwADIAZAAxADMAOABkAGQALQA2ADcAYQA4AC0ANAAwAGMAYwAtAGEANAA4ADkALQBkAGUANwBjADIAYgA0ADQANAAxADcANAB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewA2AGYAOABhADcAZgBlADUALQBiADMAYgBkAC0ANAAwADMAZgAtAGEAMABhADkALQAzADkAZAA1AGYANwBkADkAYwBjADEANwB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGQAMwBlADIAZQAwAGIALQA4ADEAMwAzAC0ANAAzADMAYgAtAGIAYwAyADgALQBiADcAMgAyAGQAOAA5AGMAOAAxADQANgB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADYAZQBkAGQANQAyADQALQBhADcANwBlAC0ANAAzAGYAYQAtAGIANQA5ADkALQBkADAAYgA0AGUANQAxADMAYQAxAGMANAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADcAMAA5AGMAYQAwAGEALQA5AGIAYwBhAC0ANABkAGMANQAtAGEANwBhADkALQBiADkANAAxAGEAMABlADgAZQBjAGIAYQB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGEAYQA1AGIAOQA5ADUALQBlAGIAYQAxAC0ANABhAGUAYgAtAGEAOQBhAGYALQA5ADMAMwBkAGIAOAAyADQAYwBlADMAOQB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGIAMgAzADIAZAA1AGIALQBhADQAOQA1AC0ANAAxADAANgAtADgAYwAyAGIALQA2ADMAOQAwAGEAZgAxAGIAZAA0ADQAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADcAMQBiADMAMAAwADAALQA5AGMAMwAyAC0ANAAzAGMAZQAtADgAMgAzAGYALQA1ADkAOQBhAGUANABkADAAYwBhAGQAMQB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADcAMgA1ADQAYQAyAGEALQAxAGYAZgA3AC0ANABlADQAZQAtAGEAOABjAGIALQA5ADcAMwA1AGYAMAA1AGYAZgAwAGUANAB9QBQAAAAAAABAY2AAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

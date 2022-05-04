@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{bf6006b9-0000-4000-89ff-d15bd3d53cba}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{643d354f-0000-4000-893b-70a19661ec95}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="nmd01" sqlTabName="" table_alias_name="" uid="{65ce4d12-0000-4000-a61b-ee7517ecc6ec}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="nmd07" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{0d1fc061-0000-4000-a65f-bc439dcbebda}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="nmd03" sqlTabName="" table_alias_name="" uid="{d5e4fea4-0000-4000-9cb5-55649cbe3f11}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="nmd31" sqlTabName="" table_alias_name="" uid="{b6b250d1-0000-4000-a7be-e86735f086dd}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="nna021" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{68d701e8-0000-4000-b306-325db3143f32}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="nna03" sqlTabName="" table_alias_name="" uid="{b0374f77-0000-4000-b708-f6190f32892e}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{a3a65617-0000-4000-b53c-9b026dcc4326}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="72" name="anmr181" spacing="normal" text="anmr181">
+    <VBox gridHeight="14" gridWidth="70" name="vb1" posX="0" posY="0" splitter="">
+      <Grid gridHeight="10" gridWidth="70" lstrcomment="false" name="gr1" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="69" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Drawing Slip No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Drawing Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nmd07" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+        </Group>
+        <Group gridHeight="6" gridWidth="69" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="4" text="INPUT">
+          <Label posX="1" posY="1" text="Bank No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="nmd03" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Check Book No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" justify="" name="nmd31" posX="22" posY="2" rowCount="" sizePolicy="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Date of Note Taken"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nna021" posX="22" posY="3" repeat="false" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="4" text="Initial Check No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nna03" posX="22" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="70" lstrcomment="false" name="gr2" posX="0" posY="11">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

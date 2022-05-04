@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{59ff4c0f-0000-4000-9513-c12e6a58bf6c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_odt" order="" uid="{010f3ad4-0000-4000-9cbb-a942e5dcf0f8}" where="">
+    <RecordField colName="odt04" fieldIdRef="1" fieldType="TABLE_COLUMN" name="odt_file.odt04" sqlTabName="odt_file" sqlType="VARCHAR" table_alias_name="" uid="{6c9a595a-0000-4000-b1a4-ec7488a7ba9c}"/>
+    <RecordField colName="" fieldIdRef="2" name="tqa02_b" sqlTabName="" table_alias_name="" uid="{facff36c-0000-4000-81c1-a4288d206fc7}"/>
+    <RecordField colName="odt05" defaultValue="0" fieldIdRef="3" fieldType="TABLE_COLUMN" name="odt_file.odt05" sqlTabName="odt_file" sqlType="DECIMAL" table_alias_name="" uid="{fd617470-0000-4000-942b-06c169706f56}"/>
+    <RecordField colName="odt06" defaultValue="0" fieldIdRef="4" fieldType="TABLE_COLUMN" name="odt_file.odt06" sqlTabName="odt_file" sqlType="DECIMAL" table_alias_name="" uid="{62048de8-0000-4000-8f2d-a0484f6aadfc}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5a2509f4-0000-4000-b246-1f9aab861d2b}" where="">
+    <RecordField colName="odt01" fieldIdRef="7" fieldType="TABLE_COLUMN" name="odt_file.odt01" sqlTabName="odt_file" sqlType="VARCHAR" table_alias_name="" uid="{82b6edce-0000-4000-9b1c-7f87a8f92878}"/>
+    <RecordField colName="odt02" fieldIdRef="10" fieldType="TABLE_COLUMN" name="odt_file.odt02" sqlTabName="odt_file" sqlType="VARCHAR" table_alias_name="" uid="{0ca8744c-0000-4000-8295-dc82aaa51f08}"/>
+    <RecordField colName="odt07" fieldIdRef="6" fieldType="TABLE_COLUMN" name="odt_file.odt07" sqlTabName="odt_file" sqlType="VARCHAR" table_alias_name="" uid="{e493fc62-0000-4000-bbba-e7c5d5150a75}"/>
+    <RecordField colName="odt03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="odt_file.odt03" sqlTabName="odt_file" sqlType="VARCHAR" table_alias_name="" uid="{5ad2239e-0000-4000-b7c6-257a8490cbb6}"/>
+    <RecordField colName="" fieldIdRef="9" name="tqa02" sqlTabName="" table_alias_name="" uid="{4b7b9caa-0000-4000-8324-c3e0d301c40a}"/>
+    <RecordField colName="" fieldIdRef="5" name="idx" sqlTabName="" table_alias_name="" uid="{465b6dcd-0000-4000-8777-c5fa160e62dc}"/>
+    <RecordField colName="" fieldIdRef="11" name="cnt" sqlTabName="" table_alias_name="" uid="{3720b36a-0000-4000-8885-ed305f04a5ac}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="97" name="Form" text="Form">
+    <VBox gridHeight="18" gridWidth="83" name="VBox1" posX="3" posY="2">
+      <Folder gridHeight="6" gridWidth="83" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Basic Data">
+          <Grid gridHeight="5" gridWidth="72" name="Grid1" posX="0" posY="0">
+            <Label posX="6" posY="0" text="Struct No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odt01" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom.png" name="odt_file.odt01" notNull="true" posX="27" posY="0" required="true" rowCount="" sqlTabName="odt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+            <Label posX="6" posY="1" text="Struct Description"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odt02" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" name="odt_file.odt02" posX="27" posY="1" rowCount="" sqlTabName="odt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="formonly.Edit1" widget="Edit"/>
+            <Label posX="6" posY="2" text="Coding Type"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odt07" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom.png" name="odt_file.odt07" notNull="true" posX="27" posY="2" required="true" rowCount="" sqlTabName="odt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+            <Label posX="6" posY="3" text="Superior Type"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odt03" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom.png" name="odt_file.odt03" notNull="true" posX="27" posY="3" rowCount="" sqlTabName="odt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="formonly.ButtonEdit1" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="15" name="tqa02" noEntry="true" posX="49" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="formonly.Edit1" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="6" gridWidth="83" name="s_odt" posX="0" posY="7" tag="s_odt" totalRows="5">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odt04" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom.png" name="odt_file.odt04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="odt_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Category" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="8" name="tqa02_b" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Category Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odt05" columnCount="" defaultValue="0" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="odt_file.odt05" posX="16" posY="0" rowCount="" sqlTabName="odt_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Rate%" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odt06" columnCount="" defaultValue="0" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="odt_file.odt06" posX="24" posY="0" rowCount="" sqlTabName="odt_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Quantity" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="83" name="Grid2" posX="0" posY="13">
+        <HLine gridWidth="5" name="HLine1" posX="2" posY="1"/>
+        <Label posX="9" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" name="idx" noEntry="true" posX="15" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="formonly.Edit1" widget="Edit"/>
+        <Label posX="27" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="10" name="cnt" noEntry="true" posX="30" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="formonly.Edit1" widget="Edit"/>
+        <HLine gridWidth="6" name="HLine2" posX="42" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA2AGMAOQBhADUAOQA1AGEALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMQBhADQALQBlAGMANwA0ADgAOABhADcAYgBhADkAYwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADIAYgA2AGUAZABjAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYgAxAGMALQA3AGYAOAA3AGEAOABmADkAMgA4ADcAOAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGEAYwBmAGYAMwA2AGMALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMQBjADEALQBhADQAMgA4ADgAZAAyADAANgBmAGMANwB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADcAMgAwAGIAMwA2AGEALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOAA4ADUALQBlAGQAMwAwADUAZgAwADQAYQA1AGEAYwB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGMAYQA4ADcANAA0AGMALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMgA5ADUALQBkAGMAOAAyAGEAYQBhADUAMQBmADAAOAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADQAOQAzAGYAYwA2ADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYgBiAGEALQBlADcAYwA1AGQANQAxADUAMABhADcANQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGIANwBiADkAYwBhAGEALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMwAyADQALQBjADMAZQAwAGQAMwAwADEAYwA0ADAAYQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADIAMAA0ADgAZABlADgALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZgAyAGQALQBhADAANAA4ADQAZgA2AGEAYQBkAGYAYwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGEAZAAyADIAMwA5AGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwBjADYALQAyADUANwBhADgANAA5ADAAYwBiAGIANgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGEAMgA1ADAAOQBmADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgA0ADYALQAxAGYAOQBhAGEAYgA4ADYAMQBkADIAYgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADEAMABmADMAYQBkADQALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwBiAGIALQBhADkANAAyAGUANQBkAGMAZgAwAGYAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADYANQBiADYAZABjAGQALQAwADAAMAAwAC0ANAAwADAAMAAtADgANwA3ADcALQBjADUAZgBhADEANgAwAGUANgAyAGQAYwB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGQANgAxADcANAA3ADAALQAwADAAMAAwAC0ANAAwADAAMAAtADkANAAyAGIALQAwADYAYwAxADYAOQA3ADAANgBmADUANgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

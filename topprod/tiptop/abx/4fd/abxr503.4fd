@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{90027bae-0000-4000-bde7-790a47964592}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{781ca5d7-0000-4000-896e-6e042222e794}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bze01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{584b28a2-0000-4000-a708-78cdb747fab7}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="bze02" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{12637c78-0000-4000-a0cf-9ed87c18d468}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="bzf03" sqlTabName="" table_alias_name="" uid="{241f43db-0000-4000-990f-86c0a2748a6a}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="bzb03" sqlTabName="" table_alias_name="" uid="{ceae49e9-0000-4000-9341-be6f96d9d53d}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="bzb04" sqlTabName="" table_alias_name="" uid="{bf489cdd-0000-4000-aa1a-57c883704389}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="year" sqlTabName="" table_alias_name="" uid="{36c0708e-0000-4000-9773-714cce202781}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="s" sqlTabName="" table_alias_name="" uid="{31a424ee-0000-4000-ae53-d1c5997a8d4f}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="c" sqlTabName="" table_alias_name="" uid="{1060548c-0000-4000-a1f9-df6d41b51dfc}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="49" name="abxr503" spacing="normal" text="abxr503">
+    <VBox gridHeight="15" gridWidth="47" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="13" gridWidth="47" lstrcomment="false" name="gr1179" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="46" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Inventory S/N Used"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Qry bze01" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="bze01" posX="26" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Inventory Taking Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="bze02" posX="26" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Machine Equipment No"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Qry bzf03" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="bzf03" posX="26" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="4" text="Keeping Department"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Qry Keeping Department No." fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="bzb03" posX="26" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="5" text="Keeper"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Qry Keeper No." fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="bzb04" posX="26" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="5" gridWidth="46" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="7" text="INPUT">
+          <Label posX="1" posY="1" text="Inventory Taking Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="year" posX="26" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="1" lstrcomment="false" lstrtext="false" lstrtitle="false" name="s" notNull="true" posX="2" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Next Page By Department" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="1" lstrcomment="false" lstrtext="false" lstrtitle="false" name="c" notNull="true" posX="2" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Print Inventory Qty Y OR N" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8362fbed-0000-4000-8f9b-d8cba74bc34c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_cxi" order="" uid="{e116f924-0000-4000-b413-debfd6f5f77d}" where="">
+    <RecordField colName="cxi01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cxi_file.cxi01" sqlTabName="cxi_file" sqlType="VARCHAR" table_alias_name="" uid="{0bd8a2d7-0000-4000-a3ae-323d49a3e553}"/>
+    <RecordField colName="" fieldIdRef="2" name="gem02" sqlTabName="" table_alias_name="" uid="{4dc99664-0000-4000-b943-38ed7de6467d}"/>
+    <RecordField colName="cxi02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="cxi_file.cxi02" sqlTabName="cxi_file" sqlType="VARCHAR" table_alias_name="" uid="{10fcbd82-0000-4000-b0ce-f8e4e80c7ce2}"/>
+    <RecordField colName="" fieldIdRef="4" name="azf03" sqlTabName="" table_alias_name="" uid="{07081cc7-0000-4000-a18b-584d7f099d0d}"/>
+    <RecordField colName="cxi03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="cxi_file.cxi03" sqlTabName="cxi_file" sqlType="VARCHAR" table_alias_name="" uid="{d196fa23-0000-4000-bcd5-f70a308bab12}"/>
+    <RecordField colName="cxi04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="cxi_file.cxi04" sqlTabName="cxi_file" sqlType="VARCHAR" table_alias_name="" uid="{29cbb763-0000-4000-924d-25e668e74477}"/>
+    <RecordField colName="" fieldIdRef="7" name="aag02" sqlTabName="" table_alias_name="" uid="{0891f4af-0000-4000-8cb2-ffb28e24e41a}"/>
+    <RecordField colName="cxi041" fieldIdRef="8" fieldType="TABLE_COLUMN" name="cxi_file.cxi041" sqlTabName="cxi_file" sqlType="VARCHAR" table_alias_name="" uid="{4eb07f0c-0000-4000-b1f5-47f986fc931e}"/>
+    <RecordField colName="" fieldIdRef="9" name="aag021" sqlTabName="" table_alias_name="" uid="{ecbb56da-0000-4000-a43e-b39c30db604d}"/>
+    <RecordField colName="cxi05" fieldIdRef="10" fieldType="TABLE_COLUMN" name="cxi_file.cxi05" sqlTabName="cxi_file" sqlType="VARCHAR" table_alias_name="" uid="{8ab59e57-0000-4000-a3e1-ac84e7d0ea83}"/>
+    <RecordField colName="" fieldIdRef="11" name="gem02_5" sqlTabName="" table_alias_name="" uid="{b0c3bc1a-0000-4000-8963-28c402b18798}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6e9d3999-0000-4000-8d78-13c256ec74c3}" where="">
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{83aed1a4-0000-4000-8106-0861b1afa906}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="274" name="axci101" spacing="normal" text="axci101">
+    <Folder gridHeight="14" gridWidth="272" lstrcomment="false" name="pc350" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <Table gridHeight="12" gridWidth="270" lstrcomment="false" name="s_cxi" posX="0" posY="0" totalRows="10">
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cxi01" columnCount="" comment="&lt;^P&gt;Qry Department" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="cxi_file.cxi01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="cxi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Department Code" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="gem02" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Department Name" widget="Edit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cxi02" columnCount="" comment="&lt;^P&gt;Qry Reason Code" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="cxi_file.cxi02" notNull="true" posX="32" posY="0" required="true" rowCount="" sqlTabName="cxi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Reason Code" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="azf03" noEntry="true" posX="44" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Description" widget="Edit"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cxi03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="Misc Receipt, Misc Issue, No Type, Combination, Dismantle" lstrcomment="false" lstrtitle="false" name="cxi_file.cxi03" notNull="true" posX="60" posY="0" required="true" rowCount="" sqlTabName="cxi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Doc Cls." widget="ComboBox">
+            <Item lstrtext="false" name="1" text="Misc Receipt"/>
+            <Item lstrtext="false" name="2" text="Misc Issue"/>
+            <Item lstrtext="false" name="3" text="No Type"/>
+            <Item lstrtext="false" name="4" text="Combination"/>
+            <Item lstrtext="false" name="5" text="Dismantle"/>
+          </ComboBox>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cxi04" columnCount="" comment="&lt;^P&gt;Qry Account" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="cxi_file.cxi04" notNull="true" posX="69" posY="0" required="true" rowCount="" sqlTabName="cxi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Account Code" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="93" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Account Name" widget="Edit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cxi041" columnCount="" comment="&lt;^P&gt;Qry Account" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="cxi_file.cxi041" notNull="true" posX="143" posY="0" required="true" rowCount="" sqlTabName="cxi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Account Code 2" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag021" noEntry="true" posX="167" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Account Name 2" widget="Edit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cxi05" columnCount="" comment="&lt;^P&gt;Qry Department" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="cxi_file.cxi05" notNull="true" posX="217" posY="0" required="true" rowCount="" sqlTabName="cxi_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Department Code Of Cost" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="gem02_5" noEntry="true" posX="241" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Department Name" widget="Edit"/>
+        </Table>
+      </Page>
+      <Page lstrtext="false" name="info" text="Info">
+        <Grid gridHeight="4" gridWidth="40" lstrcomment="false" name="gr1457" posX="0" posY="0">
+          <Group gridHeight="3" gridWidth="39" lstrcomment="false" lstrtext="false" name="grpinfo" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Data Detail Counts"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

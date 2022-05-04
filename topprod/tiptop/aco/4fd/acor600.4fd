@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{20bd0b5c-0000-4000-bad2-bfb7923037cd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c0256af0-0000-4000-8188-e0a1f5639ce7}" where="">
+    <RecordField colName="cnm01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cnm_file.cnm01" sqlTabName="cnm_file" sqlType="VARCHAR" table_alias_name="" uid="{617f9f03-0000-4000-bcad-c0ed12506df6}"/>
+    <RecordField colName="cnm02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cnm_file.cnm02" sqlTabName="cnm_file" sqlType="DATE" table_alias_name="" uid="{c2c60c2b-0000-4000-ba24-0598422464dc}"/>
+    <RecordField colName="cnm04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="cnm_file.cnm04" sqlTabName="cnm_file" sqlType="VARCHAR" table_alias_name="" uid="{cae99669-0000-4000-b95a-04626af70317}"/>
+    <RecordField colName="cnm05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="cnm_file.cnm05" sqlTabName="cnm_file" sqlType="VARCHAR" table_alias_name="" uid="{116b79ac-0000-4000-a01f-005a7bc89206}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="choice" sqlTabName="" table_alias_name="" uid="{e6977e4e-0000-4000-84af-ff62f39623b6}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5b8dc595-0000-4000-a4c4-89bc594350a3}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ca0cf234-0000-4000-ad7f-2e8bc4a3c306}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="70" name="acor600" spacing="normal" text="acor600">
+    <VBox gridHeight="17" gridWidth="69" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="69" lstrcomment="false" name="gr1440" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Application No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cnm01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnm_file.cnm01" posX="22" posY="1" rowCount="" sqlTabName="cnm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Applying Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cnm02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnm_file.cnm02" posX="22" posY="2" rowCount="" sqlTabName="cnm_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Transfer Type"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cnm04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnm_file.cnm04" posX="22" posY="3" rowCount="" sqlTabName="cnm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Register Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cnm05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cnm_file.cnm05" posX="22" posY="4" rowCount="" sqlTabName="cnm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="6" gridWidth="69" lstrcomment="false" lstrtext="false" name="group02" posX="0" posY="8" text="Input">
+        <Grid gridHeight="4" gridWidth="67" lstrcomment="false" name="gr1441" posX="1" posY="1">
+          <Group gridHeight="3" gridWidth="32" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="0">
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="28" items="Confirmed, UnConfirmed, All " lstrcomment="false" lstrtitle="false" name="choice" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Confirmed"/>
+              <Item lstrtext="" name="2" text="UnConfirmed"/>
+              <Item lstrtext="" name="3" text="All "/>
+            </RadioGroup>
+          </Group>
+          <Group gridHeight="3" gridWidth="33" lstrcomment="false" lstrtext="false" name="group04" posX="34" posY="0">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Convert HS Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="69" lstrcomment="false" name="gr1442" posX="0" posY="14">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

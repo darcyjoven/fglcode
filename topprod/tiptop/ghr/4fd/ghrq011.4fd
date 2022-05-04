@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="21e00" name="ManagedForm" uid="{f348d3d1-cc6d-48b9-87e4-58b28413ebdc}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_hrca" order="" uid="{d8467d80-b7e2-46d0-9db6-0f30d4ec78c8}" where="">
+    <RecordField colName="" fieldIdRef="1" name="hrca02_m" sqlTabName="" table_alias_name="" uid="{8e5f7198-dd85-4470-9f9a-37c755a1cb82}"/>
+    <RecordField colName="" fieldIdRef="2" name="hrca14" sqlTabName="" table_alias_name="" uid="{69b626cc-7efe-4efb-966f-22906d4d1551}"/>
+    <RecordField colName="" fieldIdRef="3" name="hrca15" sqlTabName="" table_alias_name="" uid="{cf07ac8d-cd4b-449a-af20-2273dc7eff5c}"/>
+    <RecordField colName="" fieldIdRef="4" name="hrca03" sqlTabName="" table_alias_name="" uid="{c7483893-4aaa-4186-b205-919ca7beb0c2}"/>
+    <RecordField colName="" fieldIdRef="5" name="hrca04_m" sqlTabName="" table_alias_name="" uid="{65eb4825-203e-4017-90e9-f3bcae56e44e}"/>
+    <RecordField colName="" fieldIdRef="6" name="hrbo03" sqlTabName="" table_alias_name="" uid="{598164a7-3ba7-45fe-b8f3-0d28f5e21976}"/>
+    <RecordField colName="" fieldIdRef="11" name="hrca05_m" sqlTabName="" table_alias_name="" uid="{e57edd26-2414-4902-ab11-a260e63b9a2c}"/>
+    <RecordField colName="" fieldIdRef="14" name="hrbp03" sqlTabName="" table_alias_name="" uid="{3672b125-db97-499e-b430-96a88924cfd1}"/>
+    <RecordField colName="" fieldIdRef="7" name="hrca11" sqlTabName="" table_alias_name="" uid="{f35b959f-acfa-457c-a2fb-85d3efdea8d2}"/>
+    <RecordField colName="" fieldIdRef="8" name="hrca12" sqlTabName="" table_alias_name="" uid="{4a1a72d3-f401-48a1-8bb2-8bb7c41006a0}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f8dd0e4d-5854-4728-ab53-da00f69a3058}" where="">
+    <RecordField colName="" fieldIdRef="9" name="date" sqlTabName="" table_alias_name="" uid="{28dd7016-b513-4aac-ad40-015c601d6ca0}"/>
+    <RecordField colName="" fieldIdRef="10" name="hrca04" sqlTabName="" table_alias_name="" uid="{9d3d1d36-fd59-40b5-ae0f-43f282ffa185}"/>
+    <RecordField colName="" fieldIdRef="12" name="hrca02" sqlTabName="" table_alias_name="" uid="{640c419b-1a9c-465c-83e0-d814a01f0829}"/>
+    <RecordField colName="" fieldIdRef="13" name="hrca05" sqlTabName="" table_alias_name="" uid="{5010b08a-77ee-4558-8669-01585710554b}"/>
+    <RecordField colName="" fieldIdRef="15" name="cnt" sqlTabName="" table_alias_name="" uid="{8e112365-f0da-44da-b091-493132fedf24}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="138" name="Form" text="Form">
+    <VBox gridHeight="21" gridWidth="103" name="VBox1" posX="2" posY="0">
+      <Folder gridHeight="9" gridWidth="103" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Page1">
+          <Grid gridHeight="6" gridWidth="101" name="Grid1" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="8" justify="right" name="Label1" posX="1" posY="1" text="Label1"/>
+            <DateEdit colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="15" name="date" notNull="true" posX="10" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="9" table_alias_name="" title="DateEdit1" widget="DateEdit"/>
+            <Label gridHeight="1" gridWidth="10" name="Label5" posX="27" posY="1" text=""/>
+            <Label gridHeight="1" gridWidth="8" justify="right" name="Label3" posX="45" posY="1" text="Label3"/>
+            <ButtonEdit action="controlp" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="10" image="zoom" name="hrca04" posX="54" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="10" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            <Label gridHeight="1" gridWidth="8" justify="right" name="Label2" posX="1" posY="3" text="Label2"/>
+            <ComboBox colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="15" items="Text, Text, Text, Text" name="hrca02" noEntry="false" notNull="true" posX="10" posY="3" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="11" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Text"/>
+              <Item lstrtext="false" name="2" text="Text"/>
+              <Item lstrtext="false" name="3" text="Text"/>
+              <Item lstrtext="false" name="4" text="Text"/>
+            </ComboBox>
+            <Label gridHeight="1" gridWidth="10" name="Label6" posX="27" posY="3" text=""/>
+            <Label gridHeight="1" gridWidth="8" justify="right" name="Label4" posX="45" posY="3" text="Label4"/>
+            <ButtonEdit action="controlp" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="10" image="zoom" name="hrca05" posX="54" posY="3" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="12" table_alias_name="" title="ButtonEdit2" widget="ButtonEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="103" name="Table1" posX="0" posY="10" totalRows="5">
+        <ComboBox colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="8" items="Text, Text, Text, Text" name="hrca02_m" posX="0" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="1" table_alias_name="" title="hrca02_1" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Text"/>
+          <Item lstrtext="false" name="2" text="Text"/>
+          <Item lstrtext="false" name="3" text="Text"/>
+          <Item lstrtext="false" name="4" text="Text"/>
+        </ComboBox>
+        <Edit colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="8" name="hrca14" posX="8" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="2" table_alias_name="" title="hrca14" widget="Edit"/>
+        <Edit colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="8" name="hrca15" posX="16" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="3" table_alias_name="" title="hrca15" widget="Edit"/>
+        <ComboBox colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="8" items="Text, Text" name="hrca03" posX="24" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" title="hrca03" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Text"/>
+          <Item lstrtext="false" name="2" text="Text"/>
+        </ComboBox>
+        <Edit colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="8" name="hrca04_m" posX="32" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" title="hrca04_1" widget="Edit"/>
+        <Edit colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="8" name="hrbo03" posX="40" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" title="hrbo03" widget="Edit"/>
+        <Edit colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="8" name="hrca05_m" posX="48" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="14" table_alias_name="" title="hrca05_1" widget="Edit"/>
+        <Edit colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="8" name="hrbp03" posX="56" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="15" table_alias_name="" title="hrbp03" widget="Edit"/>
+        <DateEdit colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="8" name="hrca11" posX="64" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="7" table_alias_name="" title="hrca11" widget="DateEdit"/>
+        <DateEdit colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="8" name="hrca12" posX="72" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="8" table_alias_name="" title="hrca12" widget="DateEdit"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="103" name="Grid2" posX="0" posY="17">
+        <HLine gridWidth="10" name="HLine1" posX="3" posY="1"/>
+        <Label gridHeight="1" gridWidth="7" name="Label7" posX="14" posY="1" text="Label7"/>
+        <Edit colName="" columnCount="" fieldId="15" gridHeight="1" gridWidth="8" name="cnt" posX="22" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Edit1" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine2" posX="31" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

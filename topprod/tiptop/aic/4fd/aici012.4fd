@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{61acbf0c-0000-4000-8899-aaae4a663ee1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_icl" order="" uid="{1fce0778-0000-4000-a9e3-4b96bff44e1d}" where="">
+    <RecordField colName="icl02" defaultValue="1" fieldIdRef="3" fieldType="TABLE_COLUMN" name="icl_file.icl02" sqlTabName="icl_file" sqlType="VARCHAR" table_alias_name="" uid="{d618157a-0000-4000-8483-13cd9656e1e6}"/>
+    <RecordField colName="icl03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="icl_file.icl03" sqlTabName="icl_file" sqlType="VARCHAR" table_alias_name="" uid="{99e20507-0000-4000-a0fc-96c4bc746699}"/>
+    <RecordField colName="icl04" defaultValue="N" fieldIdRef="5" fieldType="TABLE_COLUMN" name="icl_file.icl04" sqlTabName="icl_file" sqlType="VARCHAR" table_alias_name="" uid="{5653b0d2-0000-4000-8190-eb6f7976b88f}"/>
+    <RecordField colName="icl05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="icl_file.icl05" sqlTabName="icl_file" sqlType="VARCHAR" table_alias_name="" uid="{b4178cc7-0000-4000-a624-082cf29f8ccc}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{01ccd090-0000-4000-8c56-77a7a7685522}" where="">
+    <RecordField colName="icl01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="icl_file.icl01" sqlTabName="icl_file" sqlType="VARCHAR" table_alias_name="" uid="{9ba95e14-0000-4000-a960-c9caf689645b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ima02" sqlTabName="" table_alias_name="" uid="{d3bbc3f3-0000-4000-b149-16a097d9bc61}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{59cd3c0c-0000-4000-95b0-3f3b1d60f466}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{a363c1f7-0000-4000-bff6-f2a17b67a68c}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="107" lstrtext="false" name="aici012" spacing="normal" text="aici012">
+    <VBox gridHeight="21" gridWidth="103" name="vb6" posX="1" posY="0">
+      <Folder gridHeight="4" gridWidth="103" lstrcomment="false" name="pc6" posX="0" posY="1">
+        <Page name="Page8" text="Main">
+          <Grid gridHeight="2" gridWidth="66" lstrcomment="false" name="gr1273" posX="1" posY="0">
+            <Label posX="1" posY="0" text="Item No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icl01" columnCount="" comment="&lt;^P&gt;Qry Item No." fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="icl_file.icl01" notNull="true" posX="13" posY="0" required="true" rowCount="" sqlTabName="icl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="45" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="13" gridWidth="103" name="s_icl" posX="0" posY="5" totalRows="11">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icl02" colorCondition="black" columnCount="" defaultValue="1" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="1.face, 2.back, 3.face remark, 4.back remark" lstrcomment="false" lstrtitle="false" name="icl_file.icl02" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="icl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Type" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="1.face"/>
+          <Item lstrtext="false" name="2" text="2.back"/>
+          <Item lstrtext="false" name="3" text="3.face remark"/>
+          <Item lstrtext="false" name="4" text="4.back remark"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icl03" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="icl_file.icl03" notNull="true" posX="11" posY="0" rowCount="" sqlTabName="icl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="No." widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icl04" columnCount="" defaultValue="N" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="icl_file.icl04" notNull="true" posX="17" posY="0" rowCount="" sqlTabName="icl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Date Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icl05" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="icl_file.icl05" posX="30" posY="0" rowCount="" sqlTabName="icl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Remark" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="103" lstrcomment="false" name="gr4" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl3" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

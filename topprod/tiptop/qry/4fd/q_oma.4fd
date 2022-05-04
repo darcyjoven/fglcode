@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ead4aff7-0000-4000-9472-ab0eb8edc545}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oma" order="" uid="{c3e2e0b9-0000-4000-81bd-e0108929c4f8}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{ec598705-0000-4000-981b-919ce8be8082}"/>
+    <RecordField colName="oma01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oma_file.oma01" sqlTabName="oma_file" sqlType="VARCHAR" table_alias_name="" uid="{d092bfc4-0000-4000-a0a5-c60a92d2125d}"/>
+    <RecordField colName="oma02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oma_file.oma02" sqlTabName="oma_file" sqlType="DATE" table_alias_name="" uid="{49dc1d91-0000-4000-8b07-4a7d14717fc1}"/>
+    <RecordField colName="oma54t" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oma_file.oma54t" sqlTabName="oma_file" sqlType="DECIMAL" table_alias_name="" uid="{2610a92e-0000-4000-b842-bce6459b236f}"/>
+    <RecordField colName="oma56t" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oma_file.oma56t" sqlTabName="oma_file" sqlType="DECIMAL" table_alias_name="" uid="{b002d20d-0000-4000-b0d2-5092c83a9e74}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="89" name="q_oma" spacing="normal" text="Query Accounts Receivable">
+    <Grid gridHeight="13" gridWidth="87" lstrcomment="false" name="gr3819" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="86" lstrcomment="false" name="s_oma" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="oma_file.oma01" noEntry="true" posX="5" posY="0" rowCount="" sqlTabName="oma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Accounts Amount" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="oma_file.oma02" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="oma_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Account Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma54t" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="oma_file.oma54t" noEntry="true" notNull="true" posX="34" posY="0" required="true" rowCount="" sqlTabName="oma_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Original Currency Amount" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oma56t" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oma_file.oma56t" noEntry="true" notNull="true" posX="59" posY="0" required="true" rowCount="" sqlTabName="oma_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Home Currency Amount" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

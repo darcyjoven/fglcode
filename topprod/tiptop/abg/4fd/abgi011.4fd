@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{bde6e732-0000-4000-bb62-d2105440fb3e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bgl" order="" uid="{4b116670-0000-4000-8fa1-a6c9e8bb23ec}" where="">
+    <RecordField colName="bgl03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="bgl_file.bgl03" sqlTabName="bgl_file" sqlType="SMALLINT" table_alias_name="" uid="{a0abae0a-0000-4000-9c65-13b97e59049d}"/>
+    <RecordField colName="bgl05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="bgl_file.bgl05" sqlTabName="bgl_file" sqlType="DECIMAL" table_alias_name="" uid="{b7c7f1c5-0000-4000-a25e-f1061f085977}"/>
+    <RecordField colName="bgl06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="bgl_file.bgl06" sqlTabName="bgl_file" sqlType="DECIMAL" table_alias_name="" uid="{d226c2d3-0000-4000-8ca6-923f61a09e5b}"/>
+    <RecordField colName="bgl07" fieldIdRef="9" fieldType="TABLE_COLUMN" name="bgl_file.bgl07" sqlTabName="bgl_file" sqlType="DECIMAL" table_alias_name="" uid="{82712c52-0000-4000-b3d9-4c5ce5e01cad}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3402b3cc-0000-4000-9bf6-f24ad78ac099}" where="">
+    <RecordField colName="bgl01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bgl_file.bgl01" sqlTabName="bgl_file" sqlType="VARCHAR" table_alias_name="" uid="{b2d331b9-0000-4000-b473-4f76713a7562}"/>
+    <RecordField colName="bgl02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bgl_file.bgl02" sqlTabName="bgl_file" sqlType="SMALLINT" table_alias_name="" uid="{33c111f9-0000-4000-9a29-aecd788baf22}"/>
+    <RecordField colName="bgl04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bgl_file.bgl04" sqlTabName="bgl_file" sqlType="VARCHAR" table_alias_name="" uid="{dc6b105a-0000-4000-9677-66cdbdfd8698}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="gem02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{cafa7118-0000-4000-9a16-55069d1130ed}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9eacdd58-0000-4000-893b-4626822856fc}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{7f3e6fac-0000-4000-ad89-8fff6099859c}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="77" name="abgi011" spacing="normal" text="abgi011">
+    <VBox gridHeight="21" gridWidth="74" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="74" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="3" gridWidth="46" lstrcomment="false" name="gr594" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Version"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgl01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bgl_file.bgl01" posX="22" posY="0" rowCount="" sqlTabName="bgl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgl02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bgl_file.bgl02" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="bgl_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Department"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgl04" columnCount="" comment="&lt;^P&gt;Qry Department No." fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="bgl_file.bgl04" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="bgl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gem02" noEntry="true" posX="35" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="74" lstrcomment="false" name="s_bgl" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgl03" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="bgl_file.bgl03" posX="0" posY="0" rowCount="" sqlTabName="bgl_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Month" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgl05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bgl_file.bgl05" posX="8" posY="0" rowCount="" sqlTabName="bgl_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Total Labor" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgl06" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bgl_file.bgl06" posX="28" posY="0" rowCount="" sqlTabName="bgl_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Total Overhead" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bgl07" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bgl_file.bgl07" posX="48" posY="0" rowCount="" sqlTabName="bgl_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Total Process" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="74" lstrcomment="false" name="gr595" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl156" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl157" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

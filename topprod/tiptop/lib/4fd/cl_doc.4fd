@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{807f7f35-0000-4000-b588-5edf0e0a9d5f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_doc" order="" uid="{9316870c-0000-4000-9006-b28dd6da14b2}" where="">
+    <RecordField colName="" fieldIdRef="1" name="a06" sqlTabName="" table_alias_name="" uid="{02150722-0000-4000-9fca-6c3c0113cc2f}"/>
+    <RecordField colName="" fieldIdRef="9" name="b02" sqlTabName="" table_alias_name="" uid="{f8999fcc-0000-4000-87e2-c352dc1cdfd9}"/>
+    <RecordField colName="" fieldIdRef="10" name="b05" sqlTabName="" table_alias_name="" uid="{37c39c1c-0000-4000-ad04-1c7a0f994371}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7e550860-0000-4000-b19e-3b051f55da1e}" where="">
+    <RecordField colName="gcb02" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gcb_file.gcb02" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{f0e48ca1-0000-4000-aec0-ccd8ed49e11a}"/>
+    <RecordField colName="gcb03" fieldIdRef="12" fieldType="TABLE_COLUMN" name="gcb_file.gcb03" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{81bf9326-0000-4000-bb39-4f5334a2d555}"/>
+    <RecordField colName="gcb04" fieldIdRef="13" fieldType="TABLE_COLUMN" name="gcb_file.gcb04" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{d8cc1eef-0000-4000-ad7c-ca340fbd851f}"/>
+    <RecordField colName="gcb05" fieldIdRef="14" fieldType="TABLE_COLUMN" name="gcb_file.gcb05" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{bbeaf63a-0000-4000-93b9-3f077128b3cf}"/>
+    <RecordField colName="gcb06" fieldIdRef="15" fieldType="TABLE_COLUMN" name="gcb_file.gcb06" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{76b98902-0000-4000-b8c4-5b06aba3e4ed}"/>
+    <RecordField colName="gcb11" fieldIdRef="16" fieldType="TABLE_COLUMN" name="gcb_file.gcb11" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{c253ff7b-0000-4000-a527-7907ea115859}"/>
+    <RecordField colName="gcb12" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gcb_file.gcb12" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{2df71c97-0000-4000-9c15-c261b694e4f0}"/>
+    <RecordField colName="gcb13" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gcb_file.gcb13" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{06426883-0000-4000-9e7c-32d6747a5cbb}"/>
+    <RecordField colName="gcb14" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gcb_file.gcb14" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{bdea172a-0000-4000-a6f7-79f7e4383f8f}"/>
+    <RecordField colName="gcb15" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gcb_file.gcb15" sqlTabName="gcb_file" sqlType="DATE" table_alias_name="" uid="{d51902b2-0000-4000-acc5-ed11a48bbb3a}"/>
+    <RecordField colName="gcb16" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gcb_file.gcb16" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{41d2bdfa-0000-4000-a3e4-ba93ab3ed12b}"/>
+    <RecordField colName="gcb17" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gcb_file.gcb17" sqlTabName="gcb_file" sqlType="VARCHAR" table_alias_name="" uid="{d7f58722-0000-4000-bb03-b874cf603398}"/>
+    <RecordField colName="gcb18" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gcb_file.gcb18" sqlTabName="gcb_file" sqlType="DATE" table_alias_name="" uid="{311c5204-0000-4000-9f70-b79e403a6a25}"/>
+  </Record>
+  <Form gridHeight="30" gridWidth="79" name="cl_doc" spacing="normal" text="Document Reference">
+    <VBox gridHeight="30" gridWidth="76" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="9" gridWidth="76" lstrcomment="false" name="pc842" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Browser">
+          <Table gridHeight="7" gridWidth="57" lstrcomment="false" name="s_doc" posX="0" posY="0" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="a06" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="14" items="Document, Hyper Link, Memo" lstrcomment="false" lstrtitle="false" name="b02" notNull="true" posX="3" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Document Type" widget="ComboBox">
+              <Item name="DOC" text="Document"/>
+              <Item name="URL" text="Hyper Link"/>
+              <Item name="TXT" text="Memo"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="35" lstrcomment="false" lstrtitle="false" name="b05" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Document Description" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Folder gridHeight="19" gridWidth="76" lstrcomment="false" name="pc843" posX="0" posY="10">
+        <Page lstrtext="false" name="page02" text="Detail">
+          <Grid gridHeight="17" gridWidth="74" lstrcomment="false" name="gr3666" posX="0" posY="0">
+            <Group gridHeight="8" gridWidth="22" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Information">
+              <Label posX="1" posY="1" text="Type"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb02" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Document, Hyper Link, Memo" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb02" notNull="true" posX="10" posY="1" required="true" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="" name="DOC" text="Document"/>
+                <Item lstrtext="" name="URL" text="Hyper Link"/>
+                <Item lstrtext="" name="TXT" text="Memo"/>
+              </ComboBox>
+              <Label posX="1" posY="2" text="Part"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb03" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb03" noEntry="true" notNull="true" posX="10" posY="2" required="true" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Version"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb04" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb04" noEntry="true" notNull="true" posX="10" posY="3" required="true" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="8" gridWidth="50" lstrcomment="false" lstrtext="false" name="group02" posX="24" posY="0" text="Description">
+              <Label posX="1" posY="1" text="Short"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb05" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb05" notNull="true" posX="8" posY="1" required="true" rowCount="" scroll="true" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Long"/>
+              <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb06" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="5" gridWidth="40" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb06" posX="8" posY="2" rowCount="" scrollBars="both" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" stretch="NONE" tabIndex="8" table_alias_name="" widget="TextEdit"/>
+            </Group>
+            <Group gridHeight="3" gridWidth="22" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="8" text="Read Permission">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb11" columnCount="" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Owner, Group, All" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb11" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="U" text="Owner"/>
+                <Item lstrtext="" name="G" text="Group"/>
+                <Item lstrtext="" name="O" text="All"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="3" gridWidth="50" lstrcomment="false" lstrtext="false" name="group04" posX="24" posY="8" text="Write Permission">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb12" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Owner, Group, All" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb12" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="U" text="Owner"/>
+                <Item lstrtext="" name="G" text="Group"/>
+                <Item lstrtext="" name="O" text="All"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="5" gridWidth="22" lstrcomment="false" lstrtext="false" name="group05" posX="1" posY="11" text="Create By">
+              <Label posX="1" posY="1" text="User"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb13" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb13" noEntry="true" posX="8" posY="1" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Group"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb14" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb14" noEntry="true" posX="8" posY="2" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Date"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb15" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb15" noEntry="true" posX="8" posY="3" rowCount="" sqlTabName="gcb_file" sqlType="DATE" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="5" gridWidth="50" lstrcomment="false" lstrtext="false" name="group06" posX="24" posY="11" text="Last Modify">
+              <Label posX="1" posY="1" text="User"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb16" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb16" noEntry="true" posX="8" posY="1" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Group"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb17" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb17" noEntry="true" posX="8" posY="2" rowCount="" sqlTabName="gcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Date"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcb18" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="gcb_file.gcb18" noEntry="true" posX="8" posY="3" rowCount="" sqlTabName="gcb_file" sqlType="DATE" stepX="" stepY="" tabIndex="16" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2153b2cb-0000-4000-aa0c-707b42d5c715}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rtl" order="" uid="{9fcc3f5a-0000-4000-a166-023457aa5ffa}" where="">
+    <RecordField colName="rtl02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="rtl_file.rtl02" sqlTabName="rtl_file" sqlType="SMALLINT" table_alias_name="" uid="{3b3e6430-0000-4000-9ee4-44025a401361}"/>
+    <RecordField colName="rtl03" fieldIdRef="10" fieldType="TABLE_COLUMN" name="rtl_file.rtl03" sqlTabName="rtl_file" sqlType="VARCHAR" table_alias_name="" uid="{eea5b2f9-0000-4000-96e9-9a0832510f95}"/>
+    <RecordField colName="" fieldIdRef="11" name="rtl03_desc" sqlTabName="" table_alias_name="" uid="{fb95a5ab-0000-4000-8bb9-522c30e80e6a}"/>
+    <RecordField colName="rtl07" fieldIdRef="12" fieldType="TABLE_COLUMN" name="rtl_file.rtl07" sqlTabName="rtl_file" sqlType="VARCHAR" table_alias_name="" uid="{b283af0a-0000-4000-8986-8fdd929a8544}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="rtl07_desc" sqlTabName="" table_alias_name="" uid="{ba712725-0000-4000-ab78-d3de0258f921}"/>
+    <RecordField colName="rtl04" fieldIdRef="14" fieldType="TABLE_COLUMN" name="rtl_file.rtl04" sqlTabName="rtl_file" sqlType="VARCHAR" table_alias_name="" uid="{d97563d8-0000-4000-94a6-c98d179b6ca0}"/>
+    <RecordField colName="rtl05" fieldIdRef="15" fieldType="TABLE_COLUMN" name="rtl_file.rtl05" sqlTabName="rtl_file" sqlType="VARCHAR" table_alias_name="" uid="{bbf79d48-0000-4000-b717-b0aad32d9886}"/>
+    <RecordField colName="" fieldIdRef="2" name="rtl05_desc" sqlTabName="" table_alias_name="" uid="{3d790a69-0000-4000-90c3-91a0236235cc}"/>
+    <RecordField colName="rtl06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rtl_file.rtl06" sqlTabName="rtl_file" sqlType="DECIMAL" table_alias_name="" uid="{301ebd7b-0000-4000-a88a-20cd63f277a1}"/>
+    <RecordField colName="rtlacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="rtl_file.rtlacti" sqlTabName="rtl_file" sqlType="VARCHAR" table_alias_name="" uid="{a4abd089-0000-4000-9549-efc8d8097877}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b2eb3de9-0000-4000-b7c6-2b2f33411c08}" where="">
+    <RecordField colName="rtl01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rtl_file.rtl01" sqlTabName="rtl_file" sqlType="VARCHAR" table_alias_name="" uid="{4129f0bf-0000-4000-bcb6-d8e514a7d35d}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="rtl01_desc" sqlTabName="" table_alias_name="" uid="{cc70cd7a-0000-4000-9dbd-b76585a80fdc}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="idx" sqlTabName="" table_alias_name="" uid="{30ee9e55-0000-4000-9f7a-63827b41ce46}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{70e223d7-0000-4000-9268-093259c5e3ca}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{fdf40954-0000-4000-9607-b4556dfff485}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="200" lstrtext="false" name="arti150" spacing="normal" text="arti150">
+    <VBox gridHeight="22" gridWidth="166" name="vb2" posX="3" posY="0">
+      <Folder gridHeight="9" gridWidth="166" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page name="Page1" text="Basic Data&#10;">
+          <Grid gridHeight="6" gridWidth="77" lstrcomment="false" name="gr1" posX="1" posY="1">
+            <Label posX="5" posY="1" text="Org.Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtl01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" name="rtl_file.rtl01" notNull="true" posX="14" posY="1" required="true" rowCount="" sqlTabName="rtl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" name="rtl01_desc" noEntry="true" posX="30" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="166" name="s_rtl" posX="0" posY="10" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtl02" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rtl_file.rtl02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="rtl_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Line NO." widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtl03" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rtl_file.rtl03" notNull="true" posX="8" posY="0" required="true" rowCount="" sqlTabName="rtl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Trans.Org.Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="11" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="rtl03_desc" noEntry="true" posX="23" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Trans.Org.Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtl07" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rtl_file.rtl07" notNull="true" posX="53" posY="0" rowCount="" sqlTabName="rtl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" title="Type" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rtl07_desc" noEntry="true" posX="68" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Type Name" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtl04" colorCondition="black" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" items="Transfer Price, Sales Price" lstrcomment="false" lstrtitle="false" name="rtl_file.rtl04" notNull="true" posX="88" posY="0" rowCount="" sqlTabName="rtl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Price Type" widget="ComboBox">
+          <Item lstrtext="false" name="2" text="Transfer Price"/>
+          <Item lstrtext="false" name="3" text="Sales Price"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtl05" colorCondition="black" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rtl_file.rtl05" noEntry="true" notNull="true" posX="94" posY="0" rowCount="" sqlTabName="rtl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Price Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="rtl05_desc" noEntry="true" posX="109" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Price Name&#10;" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtl06" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rtl_file.rtl06" notNull="true" posX="139" posY="0" rowCount="" sqlTabName="rtl_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Adjust.Ratio" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rtlacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rtl_file.rtlacti" notNull="true" posX="147" posY="0" rowCount="" sqlTabName="rtl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Acti" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="166" lstrcomment="false" name="gr15" posX="0" posY="17">
+        <HLine gridWidth="6" name="hl12" posX="2" posY="1"/>
+        <Label posX="9" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" name="idx" noEntry="true" posX="14" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <Label posX="23" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="cnt" noEntry="true" posX="25" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="3" name="hl14" posX="37" posY="1"/>
+        <Label posX="41" posY="1" text="Items"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" name="cn2" posX="47" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="8" name="hl13" posX="56" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

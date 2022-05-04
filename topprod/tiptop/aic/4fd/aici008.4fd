@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7822a1be-0000-4000-b80a-8eab2d75ce5a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_icg" order="" uid="{6c3bc4dd-0000-4000-bf18-208676d35c9e}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="icg03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e85b2590-0000-4000-8a85-208752161b41}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="pmc03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d3219bda-0000-4000-94a8-e56fa6587c40}"/>
+    <RecordField colName="icg02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="icg_file.icg02" sqlTabName="icg_file" sqlType="VARCHAR" table_alias_name="" uid="{446073a9-0000-4000-8858-a14e6399c6fc}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="10" fieldType="NON_DATABASE" name="icg16" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{8c536557-0000-4000-b7de-5a0607d41c01}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="icg17" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3c0a9e2a-0000-4000-a3e3-a85619f108cb}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="icg18" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2d44b4d5-0000-4000-b88e-0b64b1c63513}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="icg19" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0aa8b9f4-0000-4000-8d72-a63fed10d914}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="icg20" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{57802493-0000-4000-a88f-8aef7d96edd5}"/>
+    <RecordField colName="" defaultValue="0" fieldIdRef="3" fieldType="NON_DATABASE" name="icg21" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{77f0dea8-0000-4000-b754-507618ed4cef}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b8b74194-0000-4000-97af-71db05ba4954}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="icg01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{57601aa7-0000-4000-91ea-13b3937e591b}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="ima02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{8a52a799-0000-4000-98cb-41a6a1a86e45}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{88aa8711-0000-4000-8d7c-a57a17af3206}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{1201dd21-0000-4000-bbae-a21a6ada4f8c}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="211" lstrtext="false" name="aici008" spacing="normal" text="aici008">
+    <VBox gridHeight="21" gridWidth="207" name="vb2" posX="1" posY="0">
+      <Folder gridHeight="5" gridWidth="207" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page name="Page3" text="Main">
+          <Grid gridHeight="4" gridWidth="78" lstrcomment="false" name="gr1" posX="0" posY="0">
+            <Label posX="1" posY="1" text="Item No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" image="zoom.png" lstrcomment="false" name="icg01" notNull="true" posX="15" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Item Desc."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" name="ima02" noEntry="true" posX="15" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="12" gridWidth="207" lstrcomment="false" name="gr3" posX="0" posY="6">
+        <Table gridHeight="12" gridWidth="205" name="tb1" posX="1" posY="0" totalRows="10">
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" image="zoom.png" lstrcomment="false" lstrtitle="false" name="icg03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Vendor" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pmc03" noEntry="true" posX="12" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Abbreviations" widget="Edit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="icg02" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" lstrtitle="false" name="icg_file.icg02" notNull="true" posX="32" posY="0" rowCount="" sqlTabName="icg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Operation No." widget="ButtonEdit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="icg16" notNull="true" posX="47" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Default Vendor" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="icg17" posX="64" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Invalid Date" widget="DateEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="icg18" posX="84" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Tray Plate Specifications" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="icg19" posX="114" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Cut Through Mode" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="icg20" posX="144" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Cutting Way" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" defaultValue="0" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="icg21" notNull="true" posX="174" posY="0" required="true" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="D/S HOLDING YIELD (%)" widget="Edit"/>
+        </Table>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="207" lstrcomment="false" name="gr3_" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1" posX="0" posY="1"/>
+        <Label posX="10" posY="1" text="Count"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" lstrcomment="false" name="cnt" noEntry="true" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <Label posX="25" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" lstrcomment="false" name="cn2" noEntry="true" posX="28" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="36" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

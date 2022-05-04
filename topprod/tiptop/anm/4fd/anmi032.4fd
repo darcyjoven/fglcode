@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{feffb077-0000-4000-a2b2-9369807e39f1}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nmc" order="" uid="{32eecf94-0000-4000-98fd-c03f027831a5}" where="">
+    <RecordField colName="nmc01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nmc_file.nmc01" sqlTabName="nmc_file" sqlType="VARCHAR" table_alias_name="" uid="{8185a8d7-0000-4000-a5f1-d84df8becd70}"/>
+    <RecordField colName="nmc02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nmc_file.nmc02" sqlTabName="nmc_file" sqlType="VARCHAR" table_alias_name="" uid="{7ba3f17a-0000-4000-ab7f-2692274fb511}"/>
+    <RecordField colName="nmc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nmc_file.nmc03" sqlTabName="nmc_file" sqlType="VARCHAR" table_alias_name="" uid="{0cc23e43-0000-4000-9b7c-d021ff9ae642}"/>
+    <RecordField colName="nmc04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nmc_file.nmc04" sqlTabName="nmc_file" sqlType="VARCHAR" table_alias_name="" uid="{432c0801-0000-4000-aec4-d3701d809143}"/>
+    <RecordField colName="nmc041" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nmc_file.nmc041" sqlTabName="nmc_file" sqlType="VARCHAR" table_alias_name="" uid="{17c9d812-0000-4000-ad11-bd19c75f2160}"/>
+    <RecordField colName="nmc05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="nmc_file.nmc05" sqlTabName="nmc_file" sqlType="VARCHAR" table_alias_name="" uid="{365b08e0-0000-4000-a910-d3a573ef76f9}"/>
+    <RecordField colName="nmcacti" fieldIdRef="7" fieldType="TABLE_COLUMN" name="nmc_file.nmcacti" sqlTabName="nmc_file" sqlType="VARCHAR" table_alias_name="" uid="{c58ff260-0000-4000-8462-70d54165228d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ae63de92-0000-4000-a68d-5de77c64cd3d}" where="">
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{6516fe03-0000-4000-891f-2be11d02755a}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="131" name="anmi032" spacing="normal" text="anmi032">
+    <VBox gridHeight="18" gridWidth="128" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="128" lstrcomment="false" name="pc743" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="126" lstrcomment="false" name="s_nmc" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmc01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="nmc_file.nmc01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="D/W Trans.Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmc02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="nmc_file.nmc02" posX="15" posY="0" rowCount="" sqlTabName="nmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Trans# Desc." widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmc03" columnCount="" comment="1:Deposit 2:Withdraw" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Deposit, Withdraw" lstrcomment="false" lstrtitle="false" name="nmc_file.nmc03" notNull="true" posX="28" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="nmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="D/W" widget="ComboBox">
+              <Item name="1" text="Deposit"/>
+              <Item name="2" text="Withdraw"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmc04" columnCount="" comment="&lt;^P&gt; Qry Account      " fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" image="zoom" lstrcomment="false" lstrtitle="false" name="nmc_file.nmc04" posX="38" posY="0" rowCount="" sqlTabName="nmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Default Counterpart Acct." widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmc041" columnCount="" comment="&lt;^P&gt; Qry Account      " fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" image="zoom" lstrcomment="false" lstrtitle="false" name="nmc_file.nmc041" posX="64" posY="0" rowCount="" sqlTabName="nmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Default Counterpart Acct2" widget="ButtonEdit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmc05" columnCount="" comment="&lt;^P&gt; Qry Cash Variation Code" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" lstrcomment="false" lstrtitle="false" name="nmc_file.nmc05" posX="90" posY="0" rowCount="" sqlTabName="nmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Def.Cash Variable Cd." widget="ButtonEdit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmcacti" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="nmc_file.nmcacti" notNull="true" posX="112" posY="0" required="true" rowCount="" sqlTabName="nmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="128" lstrcomment="false" name="gr4022" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1261" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1262" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

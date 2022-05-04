@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b5cce419-9307-437a-9580-f184f12c658c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tic" order="" uid="{746f9fab-e366-4d0e-b1b8-4bfed78dced5}" where="">
+    <RecordField colName="tic04" fieldIdRef="8" fieldType="TABLE_COLUMN" name="tic_file.tic04" sqlTabName="tic_file" sqlType="VARCHAR" table_alias_name="" uid="{23f474de-d013-41f2-81c9-e03bd512bdcf}"/>
+    <RecordField colName="tic05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="tic_file.tic05" sqlTabName="tic_file" sqlType="SMALLINT" table_alias_name="" uid="{f56574f0-fa33-45e8-8556-388843aeb1cf}"/>
+    <RecordField colName="tic06" fieldIdRef="10" fieldType="TABLE_COLUMN" name="tic_file.tic06" sqlTabName="tic_file" sqlType="VARCHAR" table_alias_name="" uid="{39b7f5b5-656f-4acc-adca-0c39bd973ac3}"/>
+    <RecordField colName="tic08" fieldIdRef="13" fieldType="TABLE_COLUMN" name="tic_file.tic08" sqlTabName="tic_file" sqlType="VARCHAR" table_alias_name="" uid="{f8bc0806-bc7b-4d0f-b52f-38000d48dd62}"/>
+    <RecordField colName="tic07f" fieldIdRef="12" fieldType="TABLE_COLUMN" name="tic_file.tic07f" sqlTabName="tic_file" sqlType="DECIMAL" table_alias_name="" uid="{e66bbfed-2559-4d64-8c54-4bdd3206e0ec}"/>
+    <RecordField colName="tic07" fieldIdRef="11" fieldType="TABLE_COLUMN" name="tic_file.tic07" sqlTabName="tic_file" sqlType="DECIMAL" table_alias_name="" uid="{139fd95f-28f0-4e96-8fd9-a058c8d05ec8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2d35eb7f-0add-4462-b0f2-6de668f91dc3}" where="">
+    <RecordField colName="tic01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="tic_file.tic01" sqlTabName="tic_file" sqlType="SMALLINT" table_alias_name="" uid="{67252ec5-bf3e-4851-b18c-135930bf7a2e}"/>
+    <RecordField colName="tic02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="tic_file.tic02" sqlTabName="tic_file" sqlType="SMALLINT" table_alias_name="" uid="{1420a381-f764-49ea-97eb-d534e4e8089d}"/>
+    <RecordField colName="tic03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="tic_file.tic03" sqlTabName="tic_file" sqlType="VARCHAR" table_alias_name="" uid="{171089a9-e5c9-43b8-af1a-2c67a0282136}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="105" name="anmt300_flows" text="anmt300_flows">
+    <Folder gridHeight="20" gridWidth="105" name="pc2" posX="0" posY="0">
+      <Page name="page01" text="Main">
+        <VBox gridHeight="19" gridWidth="102" name="VBox1" posX="1" posY="0">
+          <Grid gridHeight="9" gridWidth="102" name="gr4437" posX="0" posY="1">
+            <Label posX="4" posY="1" text="Year"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="tic_file.tic01" notNull="true" posX="33" posY="1" rowCount="" sqlTabName="tic_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="tic_file.tic01" widget="DateEdit"/>
+            <Label posX="58" posY="1" text="Month"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="tic_file.tic02" notNull="true" posX="75" posY="1" rowCount="" sqlTabName="tic_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="tic_file.tic02" widget="DateEdit"/>
+            <Label posX="4" posY="3" text="Debit/Credit Balance"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Debit Balance, Credit Balance" name="tic_file.tic03" notNull="true" posX="33" posY="3" rowCount="" sqlTabName="tic_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="tic_file.tic03" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Debit Balance"/>
+              <Item lstrtext="false" name="2" text="Credit Balance"/>
+            </ComboBox>
+          </Grid>
+          <Table gridHeight="8" gridWidth="102" name="s_tic" posX="0" posY="10" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic04" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="tic_file.tic04" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="tic_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Line#" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic05" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="tic_file.tic05" notNull="true" posX="20" posY="0" rowCount="" sqlTabName="tic_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Line No." widget="Edit"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic06" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" image="zoom" name="tic_file.tic06" notNull="true" posX="22" posY="0" rowCount="" sqlTabName="tic_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Cash Variation Code" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic08" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="tic_file.tic08" notNull="true" posX="28" posY="0" rowCount="" sqlTabName="tic_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Affilliate" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic07f" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="8" gridWidth="23" name="tic_file.tic07f" notNull="true" posX="43" posY="0" rowCount="" sqlTabName="tic_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Debit O. Amount" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tic07" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="8" gridWidth="25" name="tic_file.tic07" notNull="true" posX="66" posY="0" rowCount="" sqlTabName="tic_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Debit H. Amount" widget="Edit"/>
+          </Table>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADMAZgA0ADcANABkAGUALQBkADAAMQAzAC0ANAAxAGYAMgAtADgAMQBjADkALQBlADAAMwBiAGQANQAxADIAYgBkAGMAZgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADcAMgA1ADIAZQBjADUALQBiAGYAMwBlAC0ANAA4ADUAMQAtAGIAMQA4AGMALQAxADMANQA5ADMAMABiAGYANwBhADIAZQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADcAMQAwADgAOQBhADkALQBlADUAYwA5AC0ANAAzAGIAOAAtAGEAZgAxAGEALQAyAGMANgA3AGEAMAAyADgAMgAxADMANgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADQANgBmADkAZgBhAGIALQBlADMANgA2AC0ANABkADAAZQAtAGIAMQBiADgALQA0AGIAZgBlAGQANwA4AGQAYwBlAGQANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGQAMwA1AGUAYgA3AGYALQAwAGEAZABkAC0ANAA0ADYAMgAtAGIAMABmADIALQA2AGQAZQA2ADYAOABmADkAMQBkAGMAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADUANgA1ADcANABmADAALQBmAGEAMwAzAC0ANAA1AGUAOAAtADgANQA1ADYALQAzADgAOAA4ADQAMwBhAGUAYgAxAGMAZgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADQAMgAwAGEAMwA4ADEALQBmADcANgA0AC0ANAA5AGUAYQAtADkANwBlAGIALQBkADUAMwA0AGUANABlADgAMAA4ADkAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADYANgBiAGIAZgBlAGQALQAyADUANQA5AC0ANABkADYANAAtADgAYwA1ADQALQA0AGIAZABkADMAMgAwADYAZQAwAGUAYwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADMAOQBmAGQAOQA1AGYALQAyADgAZgAwAC0ANABlADkANgAtADgAZgBkADkALQBhADAANQA4AGMAOABkADAANQBlAGMAOAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADkAYgA3AGYANQBiADUALQA2ADUANgBmAC0ANABhAGMAYwAtAGEAZABjAGEALQAwAGMAMwA5AGIAZAA5ADcAMwBhAGMAMwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADgAYgBjADAAOAAwADYALQBiAGMANwBiAC0ANABkADAAZgAtAGIANQAyAGYALQAzADgAMAAwADAAZAA0ADgAZABkADYAMgB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

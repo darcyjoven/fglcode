@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{261070d8-0000-4000-9dd1-410b3210038f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{47ce8d33-0000-4000-a519-008a3f8b8321}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="filename" sqlTabName="" table_alias_name="" uid="{cff9fa15-0000-4000-96e3-f29171cf0c1b}"/>
+    <RecordField colName="azp03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="azp_file.azp03" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{c62972cf-0000-4000-8314-ae4d170a7005}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="encode" sqlTabName="" table_alias_name="" uid="{099ae28e-0000-4000-9bc6-730bfc169a1c}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="username" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{f92566da-0000-4000-a832-86e5e976b535}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="passwd1" sqlTabName="" table_alias_name="" uid="{9b9b4a18-0000-4000-92d4-b96920660c28}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="passwd2" sqlTabName="" table_alias_name="" uid="{c77c0a08-0000-4000-9b55-8741e2ce7ab4}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" lstrtext="false" name="aooi901_fp" spacing="normal" text="aooi901_fp">
+    <Grid gridHeight="12" gridWidth="65" lstrcomment="false" name="gr1" posX="2" posY="1">
+      <Label posX="1" posY="1" text="Filename of FGLPROFILE"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="37" lstrcomment="false" name="filename" noEntry="true" posX="25" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      <Label posX="1" posY="2" text="Database ID"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp03" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="37" lstrcomment="false" name="azp_file.azp03" posX="25" posY="2" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+      <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtext="false" name="encode" noEntry="true" notNull="true" posX="25" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Password Encoding" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      <HLine gridWidth="63" name="hl1" posX="1" posY="4"/>
+      <Label posX="1" posY="6" text="Database Login Username"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" comment="Modify need in FGLPROFILE" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" lstrcomment="false" name="username" notNull="true" posX="33" posY="6" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+      <Label posX="1" posY="8" text="New Database Login Password"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" invisible="true" lstrcomment="false" name="passwd1" notNull="true" posX="33" posY="8" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+      <Label posX="1" posY="9" text="Retype Database Login Password"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" invisible="true" lstrcomment="false" name="passwd2" notNull="true" posX="33" posY="9" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+    </Grid>
+  </Form>
+</ManagedForm>

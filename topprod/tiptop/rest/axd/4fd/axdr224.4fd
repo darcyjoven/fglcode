@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="64" lstrtoalltitle="false" lstrtoallitem="false" database_name="formonly" spacing="normal" CHECKSUM="40204" posX="0" height="12" posY="0" percommentheader="" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdr224" defaultspacing="true" text="axdr224" lstrtoalltext="false" percommentlayout="GRID
+GRID
+VBOX
+LAYOUT
+" gstVersion="11401" >
+ <VBox width="62" posX="0" height="10" posY="0" >
+  <Grid width="61" posX="0" height="9" posY="0" lstrcomment="false" hidden="--------" fontPitch="default" scroll="false" >
+   <Group width="60" lstrtext="false" gridWidth="60" posX="1" height="3" posY="0" lstrcomment="false" hidden="--------" name="group01" fontPitch="default" gridHeight="3" text="QBE" gridChildrenInParent="--------" >
+    <Text width="8" lstrtext="false" gridWidth="8" posX="1" height="1" posY="1" sizePolicy="initial" name="" text="Item No." />
+    <FormField colName="obc01" sqlTabName="formonly" fieldId="0" name="formonly.obc01" fieldtype="FORM_ONLY" >
+     <ButtonEdit width="20" case="NONE" gridWidth="20" invisible="--------" notNull="--------" posX="22" image="zoom" height="1" posY="1" action="controlp" lstrcomment="false" autoNext="--------" imagetype="Select File" hidden="--------" verify="--------" tabIndex="1" sizePolicy="initial" zeroFill="--------" name="obc01" lstrtitle="false" reverse="--------" fontPitch="default" color="black" century="R" required="--------" noEntry="--------" scroll="--------" />
+    </FormField>
+   </Group>
+   <Group width="60" lstrtext="false" gridWidth="60" posX="1" height="5" posY="3" lstrcomment="false" hidden="--------" name="group02" fontPitch="default" gridHeight="5" text="INPUT" gridChildrenInParent="--------" >
+    <Text width="16" lstrtext="false" gridWidth="16" posX="1" height="1" posY="1" sizePolicy="initial" name="" text="Scheduled Period" />
+    <FormField colName="a" sqlTabName="formonly" fieldId="1" name="formonly.a" fieldtype="FORM_ONLY" >
+     <ComboBox width="10" comment="Please insert 1/2/3" case="NONE" gridWidth="10" notNull="true" posX="22" height="1" posY="1" lstrcomment="false" hidden="--------" tabIndex="2" sizePolicy="initial" name="a" lstrtitle="false" fontPitch="default" color="black" century="R" queryEditable="true" required="true" noEntry="--------" >
+      <Item name="1" text="YY+MM" />
+      <Item name="2" text="YY+WK" />
+      <Item name="3" text="YY+MM+10DAY" />
+     </ComboBox>
+    </FormField>
+    <Text width="12" lstrtext="false" gridWidth="12" posX="1" height="1" posY="2" sizePolicy="initial" name="" text="Period Scope" />
+    <FormField colName="bdate" sqlTabName="formonly" fieldId="2" name="formonly.bdate" fieldtype="FORM_ONLY" >
+     <DateEdit width="10" gridWidth="10" notNull="--------" posX="22" height="1" posY="2" lstrcomment="false" autoNext="--------" hidden="--------" tabIndex="3" sizePolicy="initial" name="bdate" data_type="DATE" lstrtitle="false" fontPitch="default" color="black" century="R" required="--------" noEntry="--------" />
+    </FormField>
+    <Text width="1" lstrtext="false" gridWidth="1" posX="33" height="1" posY="2" sizePolicy="initial" name="" text="-" />
+    <FormField colName="edate" sqlTabName="formonly" fieldId="3" name="formonly.edate" fieldtype="FORM_ONLY" >
+     <DateEdit width="10" gridWidth="10" notNull="--------" posX="35" height="1" posY="2" lstrcomment="false" autoNext="--------" hidden="--------" tabIndex="4" sizePolicy="initial" name="edate" data_type="DATE" lstrtitle="false" fontPitch="default" color="black" century="R" required="--------" noEntry="--------" />
+    </FormField>
+    <FormField colName="b" sqlTabName="formonly" fieldId="4" name="formonly.b" fieldtype="FORM_ONLY" >
+     <CheckBox width="20" lstrtext="false" gridWidth="20" notNull="true" posX="22" height="1" posY="3" lstrcomment="false" hidden="--------" tabIndex="5" sizePolicy="initial" name="b" data_type="VARCHAR" lstrtitle="false" valueUnchecked="N" fontPitch="default" text="NEW PAGE BY ITEM NO.?" required="true" noEntry="--------" valueChecked="Y" />
+    </FormField>
+   </Group>
+  </Grid>
+  <Grid width="27" posX="0" height="1" posY="9" lstrcomment="false" hidden="--------" fontPitch="default" scroll="false" >
+   <FormField colName="more" sqlTabName="formonly" fieldId="5" name="formonly.more" fieldtype="FORM_ONLY" >
+    <CheckBox width="24" lstrtext="false" gridWidth="24" notNull="true" posX="2" height="1" posY="0" lstrcomment="false" hidden="--------" tabIndex="6" sizePolicy="initial" name="more" data_type="VARCHAR" lstrtitle="false" valueUnchecked="N" fontPitch="default" text="Other condition to print" required="true" noEntry="--------" valueChecked="Y" />
+   </FormField>
+  </Grid>
+ </VBox>
+</Form>
+

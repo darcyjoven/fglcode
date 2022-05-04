@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2e6a5acd-0000-4000-8d76-3a0f1b670c11}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gcg" order="" uid="{55bedde9-0000-4000-aa51-7ee71892adb4}" where="">
+    <RecordField colName="gcg06" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gcg_file.gcg06" sqlTabName="gcg_file" sqlType="VARCHAR" table_alias_name="" uid="{94172d09-0000-4000-944a-f0a72276a8a8}"/>
+    <RecordField colName="" fieldIdRef="10" name="gaz03" sqlTabName="" table_alias_name="" uid="{6bf1c2ad-0000-4000-8f06-38e638f8eff9}"/>
+    <RecordField colName="gcg08" fieldIdRef="11" fieldType="TABLE_COLUMN" name="gcg_file.gcg08" sqlTabName="gcg_file" sqlType="VARCHAR" table_alias_name="" uid="{579c4b32-0000-4000-b955-a37bd6b51a87}"/>
+    <RecordField colName="gcg07" fieldIdRef="12" fieldType="TABLE_COLUMN" name="gcg_file.gcg07" sqlTabName="gcg_file" sqlType="VARCHAR" table_alias_name="" uid="{70f59f51-0000-4000-8e43-582d74f384e8}"/>
+    <RecordField colName="gcg09" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gcg_file.gcg09" sqlTabName="gcg_file" sqlType="VARCHAR" table_alias_name="" uid="{99bfce9f-0000-4000-a3fd-265405ab8258}"/>
+    <RecordField colName="gcg10" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gcg_file.gcg10" sqlTabName="gcg_file" sqlType="VARCHAR" table_alias_name="" uid="{2372160c-0000-4000-abe8-ab04797ed11a}"/>
+    <RecordField colName="gcg11" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gcg_file.gcg11" sqlTabName="gcg_file" sqlType="VARCHAR" table_alias_name="" uid="{f74ae264-0000-4000-b6a2-41b73cd24a65}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3e41d2d1-0000-4000-ace2-02f0b5a725c7}" where="">
+    <RecordField colName="gcf01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gcf_file.gcf01" sqlTabName="gcf_file" sqlType="VARCHAR" table_alias_name="" uid="{8919ab57-0000-4000-96a7-cce6c8b7b891}"/>
+    <RecordField colName="gcf03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gcf_file.gcf03" sqlTabName="gcf_file" sqlType="VARCHAR" table_alias_name="" uid="{f8426f56-0000-4000-960d-202f5469ccbf}"/>
+    <RecordField colName="gcf04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gcf_file.gcf04" sqlTabName="gcf_file" sqlType="VARCHAR" table_alias_name="" uid="{63fb480b-0000-4000-aa72-74e0b6db1cde}"/>
+    <RecordField colName="gcf02" defaultValue="S" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gcf_file.gcf02" sqlTabName="gcf_file" sqlType="VARCHAR" table_alias_name="" uid="{0434970f-0000-4000-ad50-e9bd44cd0bf3}"/>
+    <RecordField colName="gcf05" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gcf_file.gcf05" sqlTabName="gcf_file" sqlType="VARCHAR" table_alias_name="" uid="{18a1e0d7-0000-4000-9566-485ed2c1c2e6}"/>
+  </Record>
+  <Form gridHeight="34" gridWidth="146" name="p_zbo" spacing="normal" text="V-Point Express Report Relation Config">
+    <VBox gridHeight="34" gridWidth="143" name="vb2" posX="0" posY="0">
+      <Group gridHeight="20" gridWidth="143" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="1" text="V-Point Station">
+        <VBox gridHeight="18" gridWidth="140" name="vb1" posX="1" posY="1">
+          <Grid gridHeight="9" gridWidth="140" lstrcomment="false" name="gr3108" posX="0" posY="1">
+            <Group gridHeight="8" gridWidth="67" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="V-Point Express Standard Station">
+              <Label posX="1" posY="1" text="Tiptop Plant NO ."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcf01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gcf_file.gcf01" noEntry="true" notNull="true" posX="37" posY="1" required="true" rowCount="" sqlTabName="gcf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="V-Point Express station IP address"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcf03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gcf_file.gcf03" noEntry="true" notNull="true" posX="37" posY="2" required="true" rowCount="" sqlTabName="gcf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="V-Point Express station name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcf04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gcf_file.gcf04" noEntry="true" notNull="true" posX="37" posY="3" required="true" rowCount="" sqlTabName="gcf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+          <HBox gridHeight="7" gridWidth="140" name="hb1" posX="0" posY="10">
+            <Grid gridHeight="7" gridWidth="68" lstrcomment="false" name="gr3109" posX="2" posY="0">
+              <Group gridHeight="6" gridWidth="67" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="0">
+                <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcf02" columnCount="" defaultValue="S" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="63" items="Standard BI Station, Exception BI Station" lstrcomment="false" lstrtitle="false" name="gcf_file.gcf02" noEntry="true" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="gcf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+                  <Item lstrtext="" name="S" text="Standard BI Station"/>
+                  <Item lstrtext="" name="E" text="Exception BI Station"/>
+                </RadioGroup>
+              </Group>
+            </Grid>
+            <Grid gridHeight="7" gridWidth="68" lstrcomment="false" name="gr3110" posX="70" posY="0">
+              <Group gridHeight="6" gridWidth="67" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="0">
+                <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcf05" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="63" items="Repository Oracle, Repository SQL, Repository Informix" lstrcomment="false" lstrtitle="false" name="gcf_file.gcf05" noEntry="true" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="gcf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="RadioGroup">
+                  <Item lstrtext="" name="0" text="Repository Oracle"/>
+                  <Item lstrtext="" name="1" text="Repository SQL"/>
+                  <Item lstrtext="" name="2" text="Repository Informix"/>
+                </RadioGroup>
+              </Group>
+            </Grid>
+          </HBox>
+        </VBox>
+      </Group>
+      <Table gridHeight="12" gridWidth="143" lstrcomment="false" name="s_gcg" posX="0" posY="21" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcg06" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="gcg_file.gcg06" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gcg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Program" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Programme Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcg08" colorCondition="black" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom.png" lstrcomment="false" lstrtitle="false" name="gcg_file.gcg08" posX="46" posY="0" rowCount="" sqlTabName="gcg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Report ID" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcg07" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="27" lstrcomment="false" lstrtitle="false" name="gcg_file.gcg07" noEntry="true" posX="59" posY="0" rowCount="" sqlTabName="gcg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Prt Report Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcg09" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" hidden="true" image="zoom" lstrcomment="false" lstrtitle="false" name="gcg_file.gcg09" posX="86" posY="0" required="true" rowCount="" sqlTabName="gcg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Button Report Name" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcg10" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" hidden="true" lstrcomment="false" lstrtitle="false" name="gcg_file.gcg10" noEntry="true" posX="107" posY="0" rowCount="" sqlTabName="gcg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Buttion Rep ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gcg11" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="gcg_file.gcg11" noEntry="true" posX="122" posY="0" rowCount="" sqlTabName="gcg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Report Type" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

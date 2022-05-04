@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ec969528-0000-4000-8e80-148b6fd53ae0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tables" order="" uid="{8979b7ab-0000-4000-85cf-05f20f00dc1d}" where="">
+    <RecordField colName="" fieldIdRef="5" name="zr02" sqlTabName="" table_alias_name="" uid="{a2d4813e-0000-4000-bb53-49161dd7e4d3}"/>
+    <RecordField colName="" fieldIdRef="6" name="gat03" sqlTabName="" table_alias_name="" uid="{0baa3f75-0000-4000-9e53-5c7fc28710bf}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="prog" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{738da091-0000-4000-8892-a6edf045b44a}"/>
+    <RecordField colName="" fieldIdRef="8" name="gaz03" sqlTabName="" table_alias_name="" uid="{6f0ac7fd-0000-4000-bf30-24e2e630f958}"/>
+    <RecordField colName="" fieldIdRef="9" name="txt" sqlTabName="" table_alias_name="" uid="{ff4142d2-0000-4000-b5d8-cfa6b057b60a}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1a4e1854-0000-4000-8884-0cd6a4b99a07}" where="">
+    <RecordField colName="gev01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gev_file.gev01" sqlTabName="gev_file" sqlType="VARCHAR" table_alias_name="" uid="{32a5be73-0000-4000-83ba-4f63e642f745}"/>
+    <RecordField colName="gev04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gev_file.gev04" sqlTabName="gev_file" sqlType="VARCHAR" table_alias_name="" uid="{3fee124c-0000-4000-9b60-8b22e6d0f852}"/>
+    <RecordField colName="geu02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="geu_file.geu02" sqlTabName="geu_file" sqlType="VARCHAR" table_alias_name="" uid="{c62868a5-0000-4000-b3ce-a750dd3a721a}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="file" sqlTabName="" table_alias_name="" uid="{5e7b8274-0000-4000-99d1-3d1b5332262f}"/>
+  </Record>
+  <Form gridHeight="35" gridWidth="133" name="aoop605" spacing="normal" text="aoop605">
+    <VBox gridHeight="32" gridWidth="128" name="vb7" posX="5" posY="0">
+      <Folder gridHeight="6" gridWidth="128" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="98" lstrcomment="false" name="gr3" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Data Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gev01" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Basic Data, Item, BOM, ECN, Customer, Vendor, Account, Price" lstrcomment="false" name="gev_file.gev01" notNull="true" posX="14" posY="0" required="true" rowCount="" sqlTabName="gev_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Basic Data"/>
+              <Item lstrtext="false" name="1" text="Item"/>
+              <Item lstrtext="false" name="2" text="BOM"/>
+              <Item lstrtext="false" name="3" text="ECN"/>
+              <Item lstrtext="false" name="4" text="Customer"/>
+              <Item lstrtext="false" name="5" text="Vendor"/>
+              <Item lstrtext="false" name="6" text="Account"/>
+              <Item lstrtext="false" name="7" text="Price"/>
+            </ComboBox>
+            <Label posX="1" posY="1" text="Data Center"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gev04" colorCondition="black" columnCount="" comment="&lt;^P&gt;Qry of Data Center No." fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom.png" lstrcomment="false" name="gev_file.gev04" notNull="true" posX="14" posY="1" required="true" rowCount="" sqlTabName="gev_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geu02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" name="geu_file.geu02" posX="30" posY="1" rowCount="" sqlTabName="geu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="File"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtitle="false" name="file" notNull="true" posX="14" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Button gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" name="browse" posX="58" posY="2" tabIndex="" text="Browse"/>
+            <Button gridHeight="1" gridWidth="14" lstrcomment="false" lstrtext="false" name="add_body" posX="69" posY="2" tabIndex="" text="Add To Body"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="128" lstrcomment="false" name="s_tables" posX="0" posY="7" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="zr02" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Table Id" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtitle="false" name="gat03" noEntry="true" posX="12" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Table Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="prog" noEntry="true" posX="43" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Program Id" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="56" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Program Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="txt" posX="85" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Upload File" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="12" gridWidth="128" lstrcomment="false" name="gr7" posX="0" posY="19">
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="0" text=" "/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02" posX="1" posY="1" text="File Sample:c:/tiptop/aooi030_gem_file_0.txt"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02_1" posX="1" posY="2" text="prog name: aooi030  table name: gem_file    data type:0.basic data"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02_4" posX="1" posY="3" text="Notice:"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02_2" posX="1" posY="4" text="Item:ima_file/imc_file/smd_file/imaicd_file"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02_3" posX="1" posY="5" text="BOM:bma_file/bmb_file/bmc_file/bmd_file/bmt_file/bml_file/boa_file/bob_file"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02_5" posX="1" posY="6" text="ECN:bmx_file/bmy_file/bmz_file/bmf_file/bmg_file/bmw_file"/>
+        <Label gridHeight="1" gridWidth="114" lstrcomment="false" lstrtext="false" name="dummy02_6" posX="1" posY="7" text="Customer:occ_file/ocd_file/oce_file/oci_file/ocj_file/tql_file/tqk_file/tqo_file/tqm_file/tqn_file/pov_file/occg_file"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02_7" posX="1" posY="8" text="Vendor:pmc_file/pnp_file/pmf_file/pmd_file/pov_file/pmg_file"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02_8" posX="1" posY="9" text="Account:aag_file or giu_file"/>
+        <Label gridHeight="1" gridWidth="90" lstrcomment="false" lstrtext="false" name="dummy02_9" posX="1" posY="10" text="Price:tqm_file/tqn_file"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

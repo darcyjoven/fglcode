@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{65cef116-0000-4000-a0cd-4142ce51ecb4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{1b7cb5aa-0000-4000-8a6f-a7aab435dd42}" where="">
+    <RecordField colName="zaa01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zaa_file.zaa01" sqlTabName="zaa_file" sqlType="VARCHAR" table_alias_name="" uid="{69156082-0000-4000-9bf5-8c47422cdd74}"/>
+    <RecordField colName="zaa14" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zaa_file.zaa14" sqlTabName="zaa_file" sqlType="VARCHAR" table_alias_name="" uid="{a725781d-0000-4000-8978-e3377b881b84}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="zaa14_len" sqlTabName="" table_alias_name="" uid="{c6fbf965-0000-4000-b97d-d9cfec7f9c34}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="57" name="p_suggzaa" spacing="normal" text="p_suggzaa">
+    <VBox gridHeight="11" gridWidth="57" name="VBox1" posX="0" posY="0">
+      <HBox gridHeight="9" gridWidth="57" name="HBox1" posX="0" posY="1">
+        <Grid gridHeight="9" gridWidth="53" lstrcomment="false" name="gr3287" posX="2" posY="0">
+          <Group gridHeight="8" gridWidth="52" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Program ID"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="zaa01" columnCount="" comment="KEYField,No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="zaa_file.zaa01" posX="15" posY="1" rowCount="" scroll="true" sqlTabName="zaa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Attribut"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaa14" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Item No., P/N, Spec" lstrcomment="false" lstrtitle="false" name="zaa_file.zaa14" notNull="true" posX="15" posY="2" required="true" rowCount="" sqlTabName="zaa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="N" text="Item No."/>
+              <Item lstrtext="" name="S" text="P/N"/>
+              <Item lstrtext="" name="T" text="Spec"/>
+            </ComboBox>
+            <Label posX="1" posY="3" text="Suggest Len"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="zaa14_len" posX="15" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="2" posY="4" text="     "/>
+            <Label gridHeight="1" gridWidth="48" lstrcomment="false" lstrtext="false" name="dummy01" posX="2" posY="5" text="Notice:Config field length of item no does not match [20,30,40],"/>
+            <Label gridHeight="1" gridWidth="48" lstrcomment="false" lstrtext="false" name="dummy02" posX="2" posY="6" text="       system will not automatic adjust suggest width, please check report format by oneself!"/>
+          </Group>
+        </Grid>
+      </HBox>
+    </VBox>
+  </Form>
+</ManagedForm>

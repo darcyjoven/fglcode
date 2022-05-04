@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{86cfb4a4-0000-4000-bacb-b15ff37b36cd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nnf" order="" uid="{037b2559-0000-4000-a8d6-e27710daecf1}" where="">
+    <RecordField colName="nnf02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nnf_file.nnf02" sqlTabName="nnf_file" sqlType="SMALLINT" table_alias_name="" uid="{b3c6c8f9-0000-4000-9345-8e59668e84af}"/>
+    <RecordField colName="nnf08" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nnf_file.nnf08" sqlTabName="nnf_file" sqlType="VARCHAR" table_alias_name="" uid="{3e6012b4-0000-4000-8292-026c57809f10}"/>
+    <RecordField colName="nnf03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nnf_file.nnf03" sqlTabName="nnf_file" sqlType="DATE" table_alias_name="" uid="{4eb5e0e6-0000-4000-ada8-7af794902b36}"/>
+    <RecordField colName="nnf04f" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nnf_file.nnf04f" sqlTabName="nnf_file" sqlType="DECIMAL" table_alias_name="" uid="{1ce28d98-0000-4000-b6dc-97ac96911c20}"/>
+    <RecordField colName="nnf04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="nnf_file.nnf04" sqlTabName="nnf_file" sqlType="DECIMAL" table_alias_name="" uid="{f605d2fc-0000-4000-ab05-0c2d263c16f5}"/>
+    <RecordField colName="nnf05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="nnf_file.nnf05" sqlTabName="nnf_file" sqlType="VARCHAR" table_alias_name="" uid="{43bee7f4-0000-4000-864f-1313d64776ca}"/>
+    <RecordField colName="nnf06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="nnf_file.nnf06" sqlTabName="nnf_file" sqlType="VARCHAR" table_alias_name="" uid="{14666c8c-0000-4000-ac6e-eef985476eec}"/>
+    <RecordField colName="" fieldIdRef="9" name="nmd02" sqlTabName="" table_alias_name="" uid="{2348767c-0000-4000-b17a-2c05dfc9cd25}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e05e85a7-0000-4000-93f9-8469db552c88}" where="">
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="nnf04f_t" sqlTabName="" table_alias_name="" uid="{f8398c9f-0000-4000-baec-41f43b5703b4}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="nnf04_t" sqlTabName="" table_alias_name="" uid="{5c6bf11e-0000-4000-bfbb-8913102b78a0}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="123" name="anmt7101" spacing="normal" text="Generate Note Payable">
+    <VBox gridHeight="18" gridWidth="120" name="VBox1" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="120" lstrcomment="false" name="s_nnf" posX="0" posY="1" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnf02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="nnf_file.nnf02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nnf_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Line#" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnf08" columnCount="" comment="1.Check 2.Commercial Paper " fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" items="Check, Commercial Paper" lstrcomment="false" lstrtitle="false" name="nnf_file.nnf08" posX="6" posY="0" queryEditable="true" rowCount="" sqlTabName="nnf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Check/Commercial" widget="ComboBox">
+          <Item name="1" text="Check"/>
+          <Item name="2" text="Commercial Paper"/>
+        </ComboBox>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnf03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nnf_file.nnf03" posX="23" posY="0" rowCount="" sqlTabName="nnf_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Due Date" widget="DateEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnf04f" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nnf_file.nnf04f" posX="33" posY="0" rowCount="" sqlTabName="nnf_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="O.C Amt" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnf04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nnf_file.nnf04" notNull="true" posX="53" posY="0" required="true" rowCount="" sqlTabName="nnf_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="H.C Amt" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnf05" columnCount="" comment="&lt;^P&gt;Qry Bank    " fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="nnf_file.nnf05" posX="73" posY="0" rowCount="" sqlTabName="nnf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Paying Bank" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnf06" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="nnf_file.nnf06" noEntry="true" posX="85" posY="0" rowCount="" sqlTabName="nnf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Drawing Slip#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="nmd02" noEntry="true" posX="100" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Note No." widget="Edit"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="120" lstrcomment="false" name="gr4536" posX="0" posY="13">
+        <Group gridHeight="3" gridWidth="34" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="O.C Amt Total">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="nnf04f_t" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="32" lstrcomment="false" lstrtext="false" name="group02" posX="37" posY="0" text="H.C Amt Total">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="nnf04_t" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{5f6ede86-0000-4000-bf68-c94fdb817c82}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nmg" order="" uid="{b002b824-0000-4000-9a4e-1bbfbcac9370}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{c03a038f-0000-4000-8cee-1c2733318be3}"/>
+    <RecordField colName="nmg00" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nmg_file.nmg00" sqlTabName="nmg_file" sqlType="VARCHAR" table_alias_name="" uid="{426f2e46-0000-4000-95f0-61cd3ef32198}"/>
+    <RecordField colName="npk01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="npk_file.npk01" sqlTabName="npk_file" sqlType="SMALLINT" table_alias_name="" uid="{e0cbeba6-0000-4000-972b-64bb598f4a9d}"/>
+    <RecordField colName="nmg05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nmg_file.nmg05" sqlTabName="nmg_file" sqlType="DECIMAL" table_alias_name="" uid="{e57b1768-0000-4000-8a9b-25e6fb482dbb}"/>
+    <RecordField colName="nmg06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nmg_file.nmg06" sqlTabName="nmg_file" sqlType="DECIMAL" table_alias_name="" uid="{620abc20-0000-4000-867f-72d6191d0adc}"/>
+    <RecordField colName="npk02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="npk_file.npk02" sqlTabName="npk_file" sqlType="VARCHAR" table_alias_name="" uid="{580e1dc0-0000-4000-bd30-03d1a2b4caf3}"/>
+    <RecordField colName="npk04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="npk_file.npk04" sqlTabName="npk_file" sqlType="VARCHAR" table_alias_name="" uid="{e0bfa013-0000-4000-be4e-2efe026724e8}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="97" name="q_oma" spacing="normal" text="Query Accounts Receivable">
+    <Grid gridHeight="14" gridWidth="95" lstrcomment="false" name="gr3819" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="94" lstrcomment="false" name="s_nmg" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmg00" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="nmg_file.nmg00" posX="5" posY="0" rowCount="" sqlTabName="nmg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Transaction No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npk01" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="npk_file.npk01" posX="22" posY="0" rowCount="" sqlTabName="npk_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Currency" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmg05" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="nmg_file.nmg05" posX="32" posY="0" rowCount="" sqlTabName="nmg_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Trans. Curr." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmg06" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="nmg_file.nmg06" posX="47" posY="0" rowCount="" sqlTabName="nmg_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Local Curr." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npk02" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="npk_file.npk02" posX="59" posY="0" rowCount="" sqlTabName="npk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Cash Code" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npk04" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrtitle="false" name="npk_file.npk04" posX="70" posY="0" rowCount="" sqlTabName="npk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Bank Code" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d85a963e-0000-4000-af7a-5fb5451ef722}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8c4ab8e7-0000-4000-98a2-ef49f13a8d98}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="only_one" sqlTabName="" table_alias_name="" uid="{419d4d28-0000-4000-b1a2-d00638a9d8e9}"/>
+    <RecordField colName="cor01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cor_file.cor01" sqlTabName="cor_file" sqlType="VARCHAR" table_alias_name="" uid="{21031c86-0000-4000-8174-1dbc7c270ec0}"/>
+    <RecordField colName="cor03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="cor_file.cor03" sqlTabName="cor_file" sqlType="DATE" table_alias_name="" uid="{62fa2be2-0000-4000-ab3c-25951e16f4ed}"/>
+    <RecordField colName="cor07" fieldIdRef="4" fieldType="TABLE_COLUMN" name="cor_file.cor07" sqlTabName="cor_file" sqlType="VARCHAR" table_alias_name="" uid="{f7cf9df8-0000-4000-ae4c-7dc1f8917458}"/>
+    <RecordField colName="cor06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="cor_file.cor06" sqlTabName="cor_file" sqlType="VARCHAR" table_alias_name="" uid="{af51d1e0-0000-4000-a32f-231ce462cfdd}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="59" name="acoi510_y" spacing="normal" text="acoi510_y">
+    <Grid gridHeight="10" gridWidth="58" lstrcomment="false" name="gr1296" posX="0" posY="0">
+      <Group gridHeight="3" gridWidth="57" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Confirm Condition">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="53" items="Confirm this Accounts only, According to QBE Condition" lstrcomment="false" lstrtitle="false" name="only_one" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+          <Item lstrtext="" name="1" text="Confirm this Accounts only"/>
+          <Item lstrtext="" name="2" text="According to QBE Condition"/>
+        </RadioGroup>
+      </Group>
+      <Group gridHeight="6" gridWidth="57" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="QBE">
+        <Label posX="1" posY="1" text="Document No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cor01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cor_file.cor01" posX="22" posY="1" rowCount="" sqlTabName="cor_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Document Date"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cor03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="cor_file.cor03" posX="22" posY="2" rowCount="" sqlTabName="cor_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="3" text="Vender No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cor07" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cor_file.cor07" posX="22" posY="3" rowCount="" sqlTabName="cor_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="4" text="Customs No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cor06" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cor_file.cor06" posX="22" posY="4" rowCount="" sqlTabName="cor_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

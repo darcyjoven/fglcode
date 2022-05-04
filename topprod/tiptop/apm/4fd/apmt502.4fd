@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f88055ff-0000-4000-b45b-424e8a555bbe}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pmo" order="" uid="{ddddef9b-0000-4000-ad7c-38f39366b02c}" where="">
+    <RecordField colName="pmo04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmo_file.pmo04" sqlTabName="pmo_file" sqlType="VARCHAR" table_alias_name="" uid="{3ccbb046-0000-4000-8ab3-366606acba71}"/>
+    <RecordField colName="pmo05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmo_file.pmo05" sqlTabName="pmo_file" sqlType="SMALLINT" table_alias_name="" uid="{312be30c-0000-4000-8372-efd45a419944}"/>
+    <RecordField colName="pmo06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pmo_file.pmo06" sqlTabName="pmo_file" sqlType="VARCHAR" table_alias_name="" uid="{a9df9e07-0000-4000-9b30-977b34a43811}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b060fedc-0000-4000-a14a-8e6de5c85c80}" where="">
+    <RecordField colName="pmo01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmo_file.pmo01" sqlTabName="pmo_file" sqlType="VARCHAR" table_alias_name="" uid="{b0ed0b3d-0000-4000-b00b-8b5ce70e5bff}"/>
+    <RecordField colName="pmo03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmo_file.pmo03" sqlTabName="pmo_file" sqlType="SMALLINT" table_alias_name="" uid="{428db565-0000-4000-afb0-43e1644974c8}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{ef03e49f-0000-4000-9170-1843afbfae6a}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{fac179bf-0000-4000-966b-2dc0c91da051}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="85" name="apmt502" spacing="normal" text="apmt502">
+    <VBox gridHeight="19" gridWidth="82" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="3" gridWidth="82" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="39" lstrcomment="false" name="gr5278" posX="0" posY="0">
+            <Label posX="1" posY="0" text="P/O No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmo01" columnCount="" comment="Key Field, No Blank/Repeated!    " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="pmo_file.pmo01" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="pmo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmo03" columnCount="" comment="Field and [P/O No. ] Combined as Key Field, 0:Head Description" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmo_file.pmo03" notNull="true" posX="28" posY="0" required="true" rowCount="" sqlTabName="pmo_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="82" lstrcomment="false" name="s_pmo" posX="0" posY="4" totalRows="10">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmo04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="Print Location:Before, Print Location:After" lstrcomment="false" lstrtitle="false" name="pmo_file.pmo04" notNull="true" posX="0" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="pmo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Location" widget="ComboBox">
+          <Item name="0" text="Print Location:Before"/>
+          <Item name="1" text="Print Location:After"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmo05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="pmo_file.pmo05" notNull="true" posX="9" posY="0" required="true" rowCount="" sqlTabName="pmo_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmo06" columnCount="" comment="^PQry Freq Special Desc" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="pmo_file.pmo06" notNull="true" posX="17" posY="0" required="true" rowCount="" sqlTabName="pmo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Description" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="82" lstrcomment="false" name="gr5279" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl1677" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1678" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

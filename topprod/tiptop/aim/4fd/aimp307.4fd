@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{edac39f4-0000-4000-bd93-61c3379ac16b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_imp" order="" uid="{4ddee2f0-0000-4000-a695-e685773c2d95}" where="">
+    <RecordField colName="" fieldIdRef="8" name="sure" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{22960abd-0000-4000-9197-a14c7cc6135d}"/>
+    <RecordField colName="imp02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="imp_file.imp02" sqlTabName="imp_file" sqlType="SMALLINT" table_alias_name="" uid="{496ff10b-0000-4000-b1ec-35f8f6da91b3}"/>
+    <RecordField colName="imp03" fieldIdRef="10" fieldType="TABLE_COLUMN" name="imp_file.imp03" sqlTabName="imp_file" sqlType="VARCHAR" table_alias_name="" uid="{37720566-0000-4000-9638-f54c10cb4ffa}"/>
+    <RecordField colName="" fieldIdRef="11" name="imp07_d" sqlTabName="" table_alias_name="" uid="{21dae1b8-0000-4000-a936-f11af3a883ec}"/>
+    <RecordField colName="" fieldIdRef="2" name="qty" sqlTabName="" table_alias_name="" uid="{a52450c5-0000-4000-b1de-2d66412a9387}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ede554ad-0000-4000-9151-138e9bba5572}" where="">
+    <RecordField colName="imo01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="imo_file.imo01" sqlTabName="imo_file" sqlType="VARCHAR" table_alias_name="" uid="{e054196e-0000-4000-87e7-1ff61c6a6665}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="imo03" sqlTabName="" table_alias_name="" uid="{4067f75f-0000-4000-ae27-5a2ddc0b3693}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="imo04" sqlTabName="" table_alias_name="" uid="{59eb79b6-0000-4000-bdba-92166e0cfd0f}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="a" sqlTabName="" table_alias_name="" uid="{a83e6103-0000-4000-8692-8690629c8db9}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="y" sqlTabName="" table_alias_name="" uid="{7e9795b2-0000-4000-b7bd-609dc496959f}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{b0173e8d-0000-4000-9d82-7c8b9b7f90eb}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="85" name="aimp307" spacing="normal" text="aimp307">
+    <VBox gridHeight="25" gridWidth="82" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="9" gridWidth="82" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="7" gridWidth="81" lstrcomment="false" name="gr3070" posX="0" posY="0">
+            <Group gridHeight="3" gridWidth="80" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="BR #"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imo01" columnCount="" comment="Enter a BR No. to Open   &lt;^P&gt; Qry BR no." fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="imo_file.imo01" posX="14" posY="1" rowCount="" sqlTabName="imo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="35" posY="1" text="Vend.Cd"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imo03" noEntry="true" posX="56" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="imo04" noEntry="true" posX="68" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="3" gridWidth="40" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3">
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Setting BR been open" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+            <Group gridHeight="3" gridWidth="40" lstrcomment="false" lstrtext="false" name="group03" posX="41" posY="3">
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtext="false" lstrtitle="false" name="y" notNull="true" posX="6" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Display open data" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="82" lstrcomment="false" name="s_imp" posX="0" posY="10" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="yellow" columnCount="" fieldId="8" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="sure" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Sure" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imp02" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="imp_file.imp02" posX="5" posY="0" rowCount="" sqlTabName="imp_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Ln #" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="imp03" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="imp_file.imp03" posX="10" posY="0" rowCount="" sqlTabName="imp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Item #" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="imp07_d" posX="31" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Cur Sts" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="qty" posX="49" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Qty of no Rapid" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="82" lstrcomment="false" name="gr3071" posX="0" posY="22">
+        <HLine gridWidth="10" name="hl911" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl912" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

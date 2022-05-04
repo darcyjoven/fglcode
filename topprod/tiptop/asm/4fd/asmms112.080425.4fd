@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{031eecdc-0000-4000-9608-157e8f67fc04}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e159cce9-0000-4000-a55e-5478caf1dff1}" where="">
+    <RecordField colName="sma30" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sma_file.sma30" sqlTabName="sma_file" sqlType="DATE" table_alias_name="" uid="{9e22991c-0000-4000-869d-8d5fe4852f2c}"/>
+    <RecordField colName="sma51" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sma_file.sma51" sqlTabName="sma_file" sqlType="SMALLINT" table_alias_name="" uid="{bfee0093-0000-4000-999a-05d918be60be}"/>
+    <RecordField colName="sma52" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sma_file.sma52" sqlTabName="sma_file" sqlType="SMALLINT" table_alias_name="" uid="{ec71dec5-0000-4000-9859-e9f59ddb2eed}"/>
+    <RecordField colName="sma53" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sma_file.sma53" sqlTabName="sma_file" sqlType="DATE" table_alias_name="" uid="{91a73e08-0000-4000-990e-f0da28d97c1e}"/>
+    <RecordField colName="sma54" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sma_file.sma54" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{0cdc5e0c-0000-4000-9020-ede8686157c2}"/>
+    <RecordField colName="sma58" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sma_file.sma58" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{5346aa5d-0000-4000-8a20-02e489cd663a}"/>
+    <RecordField colName="sma59" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sma_file.sma59" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{99f4bce5-0000-4000-b3d8-701cb12701c2}"/>
+    <RecordField colName="sma79" fieldIdRef="8" fieldType="TABLE_COLUMN" name="sma_file.sma79" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{7da06868-0000-4000-9134-0d96861d7cd6}"/>
+    <RecordField colName="sma901" fieldIdRef="9" fieldType="TABLE_COLUMN" name="sma_file.sma901" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{aac0a706-0000-4000-8763-4f30a6269f9e}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="76" name="asms112" spacing="normal" text="asms112">
+    <VBox gridHeight="20" gridWidth="73" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="18" gridWidth="73" lstrcomment="false" name="pc194" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="16" gridWidth="72" lstrcomment="false" name="gr907" posX="0" posY="0">
+            <Group gridHeight="7" gridWidth="71" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Current System Working Day"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma30" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="sma_file.sma30" notNull="true" posX="38" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="DateEdit"/>
+              <Label posX="1" posY="2" text="Current Doc Enter Accounting Year"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma51" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="sma_file.sma51" notNull="true" posX="38" posY="2" required="true" rowCount="" sqlTabName="sma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Current Doc Enter Accounting Period"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma52" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="sma_file.sma52" notNull="true" posX="38" posY="3" required="true" rowCount="" sqlTabName="sma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="4" text="Cost Accounting Locking Date"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma53" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="sma_file.sma53" notNull="true" posX="38" posY="4" required="true" rowCount="" sqlTabName="sma_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="68" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="5" text="NOTE:Document date must be &gt; Closing Date,&lt;= current YY and period"/>
+            </Group>
+            <Group gridHeight="8" gridWidth="71" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="7">
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma54" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="54" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sma_file.sma54" noEntry="true" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Use Routing?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma58" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="54" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sma_file.sma58" noEntry="true" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Use Cost Structure?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma59" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="54" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sma_file.sma59" noEntry="true" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Use Work Station Calendar?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma79" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="54" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sma_file.sma79" noEntry="true" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Activate ABX?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma901" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="54" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sma_file.sma901" noEntry="true" notNull="true" posX="1" posY="5" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Connect with APS Module" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+</ManagedForm>

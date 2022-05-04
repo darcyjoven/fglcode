@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{bbc84a12-0000-4000-91bd-b9a646d08f7f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pox" order="" uid="{1d1d1efc-0000-4000-833a-9a43ddb9b0cc}" where="">
+    <RecordField colName="pox04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pox_file.pox04" sqlTabName="pox_file" sqlType="SMALLINT" table_alias_name="" uid="{8c5ce5d0-0000-4000-97c2-89e1e8fb9c13}"/>
+    <RecordField colName="" fieldIdRef="7" name="poy03" sqlTabName="" table_alias_name="" uid="{7503a024-0000-4000-ae20-c72f5734e441}"/>
+    <RecordField colName="" fieldIdRef="8" name="pmc03" sqlTabName="" table_alias_name="" uid="{119f3c5d-0000-4000-b60a-66a80a773e96}"/>
+    <RecordField colName="pox05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="pox_file.pox05" sqlTabName="pox_file" sqlType="VARCHAR" table_alias_name="" uid="{b3399628-0000-4000-a927-19d84b32e6a7}"/>
+    <RecordField colName="pox06" fieldIdRef="10" fieldType="TABLE_COLUMN" name="pox_file.pox06" sqlTabName="pox_file" sqlType="DECIMAL" table_alias_name="" uid="{89b27f01-0000-4000-8a0b-7ca64f57f26e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ebb9b2b0-0000-4000-ab38-ad1db83e404c}" where="">
+    <RecordField colName="pox01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pox_file.pox01" sqlTabName="pox_file" sqlType="VARCHAR" table_alias_name="" uid="{9ea8dfc7-0000-4000-a930-b83216ad6d91}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="poz02" sqlTabName="" table_alias_name="" uid="{1eada025-0000-4000-ae55-6f0d61eba208}"/>
+    <RecordField colName="pox02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pox_file.pox02" sqlTabName="pox_file" sqlType="DATE" table_alias_name="" uid="{66939175-0000-4000-affb-455081971cfd}"/>
+    <RecordField colName="pox03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pox_file.pox03" sqlTabName="pox_file" sqlType="VARCHAR" table_alias_name="" uid="{b80e21b0-0000-4000-ac6b-8a60c6d08542}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{e372cb97-0000-4000-b2d6-2fae702092bd}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="78" name="apmi001" spacing="normal" text="apmi001">
+    <VBox gridHeight="22" gridWidth="75" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="75" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="53" lstrcomment="false" name="gr4801" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Flow Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pox01" columnCount="" comment="Enter Code,No Blank. &lt;^P&gt;Qry Flow Code" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pox_file.pox01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="pox_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="1" text="Description"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="poz02" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Effective Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pox02" columnCount="" comment="Enter this Pricing Effective Date" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pox_file.pox02" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="pox_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="3" text="Pricing Base"/>
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pox03" columnCount="" comment="1 &quot;Source Plant&quot;  2 &quot;By Upstream Vender&quot;                                  3,&quot;End Plant&quot; 4,&quot;By Downstream Vender&quot;" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Source Plant, By Upstream Vender, End Plant, By Downstream Vender" lstrcomment="false" lstrtitle="false" name="pox_file.pox03" posX="22" posY="3" rowCount="" sqlTabName="pox_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="Source Plant"/>
+              <Item lstrtext="" name="2" text="By Upstream Vender"/>
+              <Item lstrtext="" name="3" text="End Plant"/>
+              <Item lstrtext="" name="4" text="By Downstream Vender"/>
+            </RadioGroup>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="75" lstrcomment="false" name="s_pox" posX="0" posY="7" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pox04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="pox_file.pox04" noEntry="true" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="pox_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Flow No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="poy03" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Downstream Vender" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="pmc03" noEntry="true" posX="27" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Abbreviation" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pox05" columnCount="" comment="1:by Ratio 2:By Transfer Unit Price 3:0 if Unit Price =0, or same as 2:" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="By Ratio, By Transfer Unit Price, 0 if Unit Price =0, or same as 2:" lstrcomment="false" lstrtitle="false" name="pox_file.pox05" notNull="true" posX="40" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="pox_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Pricing Method" widget="ComboBox">
+          <Item name="1" text="By Ratio"/>
+          <Item name="2" text="By Transfer Unit Price"/>
+          <Item name="3" text="0 if Unit Price =0, or same as 2:"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pox06" columnCount="" comment="Enter Percentage" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="pox_file.pox06" posX="55" posY="0" rowCount="" sqlTabName="pox_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Pricing Ratio" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="75" lstrcomment="false" name="gr4802" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl1531" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1532" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

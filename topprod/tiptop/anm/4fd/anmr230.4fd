@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{cc87aa81-0000-4000-9c19-ab650385e911}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2c78ace6-0000-4000-ae11-6579abc1405c}" where="">
+    <RecordField colName="nme14" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nme_file.nme14" sqlTabName="nme_file" sqlType="VARCHAR" table_alias_name="" uid="{6cd9ce09-0000-4000-901b-5ca355b5089e}"/>
+    <RecordField colName="nme15" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nme_file.nme15" sqlTabName="nme_file" sqlType="VARCHAR" table_alias_name="" uid="{3f2a40db-0000-4000-b694-f4d7f30b377b}"/>
+    <RecordField colName="nme01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nme_file.nme01" sqlTabName="nme_file" sqlType="VARCHAR" table_alias_name="" uid="{ec907c29-0000-4000-ae18-91efef1b8d09}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{7e2c191b-0000-4000-a26a-74ceb2ec3938}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{e497e1b7-0000-4000-997c-430c1e3d9c38}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="s1" sqlTabName="" table_alias_name="" uid="{a04bd35b-0000-4000-b772-c79c146e84e5}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="s2" sqlTabName="" table_alias_name="" uid="{699f1946-0000-4000-b8a0-3ff7ef98b6ab}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="t1" sqlTabName="" table_alias_name="" uid="{586a1710-0000-4000-b891-b3be078e7c71}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="t2" sqlTabName="" table_alias_name="" uid="{8c884f2d-0000-4000-aff3-24ea2fbf07ff}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{555a856e-0000-4000-adad-21ec36565366}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="73" name="anmr230" spacing="normal" text="anmr230">
+    <VBox gridHeight="23" gridWidth="72" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="8" gridWidth="72" lstrcomment="false" lstrtext="false" name="Group1" posX="0" posY="1">
+        <Grid gridHeight="6" gridWidth="70" lstrcomment="false" name="Grid1" posX="1" posY="1">
+          <Group gridHeight="5" gridWidth="69" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+            <Label posX="1" posY="1" text="Cash Variation Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nme14" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nme_file.nme14" posX="22" posY="1" rowCount="" sqlTabName="nme_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Department"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nme15" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nme_file.nme15" posX="22" posY="2" rowCount="" sqlTabName="nme_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Bank No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nme01" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nme_file.nme01" posX="22" posY="3" rowCount="" sqlTabName="nme_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </Group>
+      <Group gridHeight="11" gridWidth="72" lstrcomment="false" lstrtext="false" name="Group2" posX="0" posY="9" text="INPUT">
+        <Grid gridHeight="9" gridWidth="70" lstrcomment="false" name="Grid2" posX="1" posY="1">
+          <Group gridHeight="4" gridWidth="69" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Initial Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bdate" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="2" text="Ending Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="edate" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+          </Group>
+          <Group gridHeight="4" gridWidth="69" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="4" text="Sequence">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" items="Cash Variation, Department, Bank No." lstrcomment="false" lstrtitle="false" name="s1" posX="2" posY="1" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ComboBox">
+              <Item name="1" text="Cash Variation"/>
+              <Item name="2" text="Department"/>
+              <Item name="3" text="Bank No."/>
+            </ComboBox>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" items="Cash Variation, Department, Bank No." lstrcomment="false" lstrtitle="false" name="s2" posX="24" posY="1" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox">
+              <Item name="1" text="Cash Variation"/>
+              <Item name="2" text="Department"/>
+              <Item name="3" text="Bank No."/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" lstrtitle="false" name="t1" notNull="true" posX="2" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Next Page" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" lstrtitle="false" name="t2" notNull="true" posX="24" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Next Page" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="72" lstrcomment="false" name="Grid3" posX="0" posY="20">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="Dept Summary" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

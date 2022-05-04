@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0f7df4b3-0000-4000-acdb-aed74a8bdd6e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bmb" order="" uid="{659dd56f-0000-4000-964b-a131753c1f19}" where="">
+    <RecordField colName="" fieldIdRef="3" name="bmb02" sqlTabName="" table_alias_name="" uid="{d59d2fb9-0000-4000-a054-451dcbcea68a}"/>
+    <RecordField colName="bmb03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bmb_file.bmb03" sqlTabName="bmb_file" sqlType="VARCHAR" table_alias_name="" uid="{07cf67d3-0000-4000-982e-9c620ac505c0}"/>
+    <RecordField colName="" fieldIdRef="5" name="ima02_b" sqlTabName="" table_alias_name="" uid="{7b43e74e-0000-4000-97f9-559c5b1c80ce}"/>
+    <RecordField colName="bmb06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="bmb_file.bmb06" sqlTabName="bmb_file" sqlType="DECIMAL" table_alias_name="" uid="{ce0ff583-0000-4000-82d6-fb7fd444566c}"/>
+    <RecordField colName="bmb08" fieldIdRef="7" fieldType="TABLE_COLUMN" name="bmb_file.bmb08" sqlTabName="bmb_file" sqlType="DECIMAL" table_alias_name="" uid="{8498d01b-0000-4000-8ac0-c9a5f8111ff8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{525db388-0000-4000-acb5-c85035cf8101}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="bma01" sqlTabName="" table_alias_name="" uid="{e171ab89-0000-4000-b29b-c8366534e050}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ima02" sqlTabName="" table_alias_name="" uid="{9ad5d3aa-0000-4000-b046-2ac84e7630ef}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="89" name="abmi600_2" spacing="normal" text="abmi600_2">
+    <VBox gridHeight="16" gridWidth="86" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="86" lstrcomment="false" name="gr742" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Part Number"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="bma01" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="86" lstrcomment="false" name="s_bmb" posX="0" posY="3" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bmb02" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Line#" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmb03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="bmb_file.bmb03" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="bmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Component Part No" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02_b" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Part Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmb06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bmb_file.bmb06" posX="60" posY="0" rowCount="" sqlTabName="bmb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="QPA" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmb08" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="bmb_file.bmb08" posX="70" posY="0" rowCount="" sqlTabName="bmb_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Wastg.%" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

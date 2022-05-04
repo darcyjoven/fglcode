@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4476d96e-0000-4000-9adc-bcc1f87372df}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_sko" order="" uid="{1cdd63d6-0000-4000-97c3-545115f8e7d6}" where="">
+    <RecordField colName="sko02" fieldIdRef="15" fieldType="TABLE_COLUMN" name="sko_file.sko02" sqlTabName="sko_file" sqlType="VARCHAR" table_alias_name="" uid="{2faa473c-0000-4000-bf1d-c5c1ed89f05b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="skl02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d3ba5ea0-0000-4000-9054-804465373b5c}"/>
+    <RecordField colName="sko03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sko_file.sko03" sqlTabName="sko_file" sqlType="DECIMAL" table_alias_name="" uid="{10baf8f1-0000-4000-b13d-c4d76e06eaa7}"/>
+    <RecordField colName="sko04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sko_file.sko04" sqlTabName="sko_file" sqlType="DATE" table_alias_name="" uid="{26d3cd88-0000-4000-b612-644e85e90bba}"/>
+    <RecordField colName="sko05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sko_file.sko05" sqlTabName="sko_file" sqlType="DATE" table_alias_name="" uid="{174108ad-0000-4000-a08a-32d833d06680}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{abcd4411-0000-4000-9acb-9b098e8f61a3}" where="">
+    <RecordField colName="skn01" fieldIdRef="8" fieldType="TABLE_COLUMN" name="skn_file.skn01" sqlTabName="skn_file" sqlType="VARCHAR" table_alias_name="" uid="{7eeb8f53-0000-4000-be5e-bfe3b6e66dce}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="imgmksg" sqlTabName="" table_alias_name="" uid="{8401587b-0000-4000-8e4c-9a5c5a9752f7}"/>
+    <RecordField colName="skn02" fieldIdRef="9" fieldType="TABLE_ALIAS" name="tableAlias1.skn02" sqlTabName="skn_file" sqlType="VARCHAR" table_alias_name="tableAlias1" uid="{8f209482-0000-4000-bb09-d166313a0527}"/>
+    <RecordField colName="sknuser" fieldIdRef="10" fieldType="TABLE_COLUMN" name="skn_file.sknuser" sqlTabName="skn_file" sqlType="VARCHAR" table_alias_name="" uid="{dd219fc8-0000-4000-a174-f9798173f4c0}"/>
+    <RecordField colName="sknmodu" fieldIdRef="11" fieldType="TABLE_COLUMN" name="skn_file.sknmodu" sqlTabName="skn_file" sqlType="VARCHAR" table_alias_name="" uid="{1b9d3a9c-0000-4000-88e0-141a9bbf514b}"/>
+    <RecordField colName="sknacti" fieldIdRef="12" fieldType="TABLE_COLUMN" name="skn_file.sknacti" sqlTabName="skn_file" sqlType="VARCHAR" table_alias_name="" uid="{f0c6a5b8-0000-4000-a517-4a605c974b37}"/>
+    <RecordField colName="skngrup" fieldIdRef="13" fieldType="TABLE_COLUMN" name="skn_file.skngrup" sqlTabName="skn_file" sqlType="VARCHAR" table_alias_name="" uid="{83c58ac1-0000-4000-983e-1f82ae6477a8}"/>
+    <RecordField colName="skndate" fieldIdRef="14" fieldType="TABLE_COLUMN" name="skn_file.skndate" sqlTabName="skn_file" sqlType="DATE" table_alias_name="" uid="{846004cc-0000-4000-acfc-135a067f6bbd}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{33349cd4-0000-4000-996a-6b6fe32759d7}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{69a45245-0000-4000-8507-f6fd559756e2}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="123" lstrtext="false" name="aski004" spacing="normal" text="aski004">
+    <VBox gridHeight="23" gridWidth="105" name="vb2" posX="1" posY="1">
+      <Folder gridHeight="7" gridWidth="105" lstrcomment="false" name="pc3" posX="0" posY="1">
+        <Page name="Page4" text="Main">
+          <Grid gridHeight="3" gridWidth="85" lstrcomment="false" name="gr10" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Labor No"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skn01" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom.png" lstrcomment="false" name="skn_file.skn01" notNull="true" posX="20" posY="0" required="true" rowCount="" sqlTabName="skn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="ButtonEdit"/>
+            <FFImage aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="2" gridWidth="8" lstrcomment="false" name="imgmksg" posX="48" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFImage"/>
+            <Label posX="1" posY="1" text="Confirmation Code"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skn02" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="19" items="Un Confirmed, Confirmation Code" lstrcomment="false" name="tableAlias1.skn02" notNull="true" posX="20" posY="1" rowCount="" sqlTabName="skn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="14" table_alias_name="tableAlias1" widget="ComboBox">
+              <Item lstrtext="false" name="N" text="Un Confirmed"/>
+              <Item lstrtext="false" name="Y" text="Confirmation Code"/>
+            </ComboBox>
+          </Grid>
+        </Page>
+        <Page name="Page5" text="Info">
+          <Grid gridHeight="4" gridWidth="103" lstrcomment="false" name="gr10_" posX="1" posY="0">
+            <Label posX="1" posY="0" text="Record Owner"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sknuser" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="skn_file.sknuser" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="skn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            <Label posX="31" posY="0" text="Last Modified by"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sknmodu" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="skn_file.sknmodu" noEntry="true" posX="51" posY="0" rowCount="" sqlTabName="skn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+            <Label posX="64" posY="0" text="Data Valid Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="sknacti" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="skn_file.sknacti" noEntry="true" posX="82" posY="0" rowCount="" sqlTabName="skn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Department"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skngrup" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="skn_file.skngrup" noEntry="true" posX="16" posY="1" rowCount="" sqlTabName="skn_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+            <Label posX="31" posY="1" text="Create/Modify Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skndate" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="skn_file.skndate" noEntry="true" posX="51" posY="1" rowCount="" sqlTabName="skn_file" sqlType="DATE" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="DateEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="105" name="s_sko" posX="0" posY="8" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sko02" colorCondition="black" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" lstrtitle="false" name="sko_file.sko02" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="sko_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Group No." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="skl02" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Group Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sko03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="sko_file.sko03" notNull="true" posX="31" posY="0" rowCount="" sqlTabName="sko_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Estimate quantity" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sko04" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="sko_file.sko04" notNull="true" posX="50" posY="0" rowCount="" sqlTabName="sko_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Begins Date" widget="DateEdit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sko05" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="sko_file.sko05" posX="64" posY="0" rowCount="" sqlTabName="sko_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Finishes Date" widget="DateEdit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="105" lstrcomment="false" name="gr12" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl7" posX="0" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl8" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

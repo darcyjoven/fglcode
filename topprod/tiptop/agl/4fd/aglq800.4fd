@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c7de8c7f-0000-4000-9e4f-f486bf60c43b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aba" order="" uid="{26591435-0000-4000-aa73-71b238f8f8c9}" where="">
+    <RecordField colName="aba01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aba_file.aba01" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{fe103a8c-0000-4000-9ec2-9eb8e39cf240}"/>
+    <RecordField colName="aba02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aba_file.aba02" sqlTabName="aba_file" sqlType="DATE" table_alias_name="" uid="{e6a8b444-0000-4000-9601-a6c133813834}"/>
+    <RecordField colName="aba06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aba_file.aba06" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{5c80a348-0000-4000-9657-b5b6e8c2d5ad}"/>
+    <RecordField colName="aba20" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aba_file.aba20" sqlTabName="aba_file" sqlType="VARCHAR" table_alias_name="" uid="{c8f99b31-0000-4000-9258-a9498d6fa3f6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="tree" order="" uid="{09d299c2-0000-4000-a71b-f7fcf88062de}" where="">
+    <RecordField colName="" fieldIdRef="5" name="name" sqlTabName="" table_alias_name="" uid="{79e2176d-0000-4000-9f13-f6abcdf15583}"/>
+    <RecordField colName="" fieldIdRef="6" name="pid" sqlTabName="" table_alias_name="" uid="{788ff3cd-0000-4000-b125-ca92fb95bc1a}"/>
+    <RecordField colName="" fieldIdRef="7" name="id" sqlTabName="" table_alias_name="" uid="{f20f7e2a-0000-4000-bfb7-3d563c435bb8}"/>
+    <RecordField colName="" fieldIdRef="8" name="has_children" sqlTabName="" table_alias_name="" uid="{673981f8-0000-4000-9788-cb0b99add616}"/>
+    <RecordField colName="" fieldIdRef="9" name="expanded" sqlTabName="" table_alias_name="" uid="{f5d62b58-0000-4000-b2dc-e8c1e58faddf}"/>
+    <RecordField colName="" fieldIdRef="10" name="level" sqlTabName="" table_alias_name="" uid="{e0571f96-0000-4000-b859-8f873d80e272}"/>
+    <RecordField colName="" fieldIdRef="11" name="path" sqlTabName="" table_alias_name="" uid="{95f169a9-0000-4000-b91f-97f48f10762f}"/>
+    <RecordField colName="" fieldIdRef="12" name="treekey1" sqlTabName="" table_alias_name="" uid="{3a9796b7-0000-4000-b5ac-903110bfe0ba}"/>
+    <RecordField colName="" fieldIdRef="13" name="treekey2" sqlTabName="" table_alias_name="" uid="{2ee3928e-0000-4000-960b-ef7fc3fabc49}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9870c02b-0000-4000-b198-8141f923f166}" where="">
+    <RecordField colName="" fieldIdRef="14" name="cnt" sqlTabName="" table_alias_name="" uid="{e955fa37-0000-4000-8937-5e81cc7c89bc}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="79" name="aglq800" text="aglq800">
+    <VBox gridHeight="14" gridWidth="74" name="VBox1" posX="2" posY="0">
+      <Grid gridHeight="9" gridWidth="74" name="grid_tree" posX="0" posY="1">
+        <Table gridHeight="9" gridWidth="47" name="s_aba" posX="1" posY="0" totalRows="5">
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" name="aba_file.aba01" notNull="true" posX="0" posY="0" rowCount="" scroll="true" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Voucher NO." widget="ButtonEdit"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="aba_file.aba02" posX="10" posY="0" rowCount="" sqlTabName="aba_file" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Voucher Date" widget="DateEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba06" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="aba_file.aba06" notNull="true" posX="20" posY="0" rowCount="" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Source Code" widget="Edit"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aba20" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Open, Approved, Approving, Approving Return, Cancel" name="aba_file.aba20" noEntry="true" notNull="true" posX="30" posY="0" required="true" rowCount="" sqlTabName="aba_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Status Code" widget="ComboBox">
+            <Item lstrtext="false" name="0" text="Open"/>
+            <Item lstrtext="false" name="1" text="Approved"/>
+            <Item lstrtext="false" name="S" text="Approving"/>
+            <Item lstrtext="false" name="R" text="Approving Return"/>
+            <Item lstrtext="false" name="W" text="Cancel"/>
+          </ComboBox>
+        </Table>
+        <Tree expandedColumn="expanded" gridHeight="9" gridWidth="24" idColumn="id" imageCollapsed="folder" imageExpanded="open" imageLeaf="file" isNodeColumn="has_children" name="Tree1" parentIdColumn="pid" posX="48" posY="0" totalRows="5">
+          <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="18" name="name" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" widget="FFLabel"/>
+          <Phantom colName="" fieldId="6" name="pid" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          <Phantom colName="" fieldId="7" name="id" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          <Phantom colName="" fieldId="8" name="has_children" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          <Phantom colName="" fieldId="9" name="expanded" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          <Phantom colName="" fieldId="10" name="level" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          <Phantom colName="" fieldId="11" name="path" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          <Phantom colName="" fieldId="12" name="treekey1" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+          <Phantom colName="" fieldId="13" name="treekey2" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+        </Tree>
+      </Grid>
+      <Grid gridHeight="3" gridWidth="74" name="Grid1" posX="0" posY="10">
+        <HLine gridWidth="10" name="HLine1" posX="1" posY="1"/>
+        <Label gridHeight="1" gridWidth="4" name="Label1" posX="12" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="6" name="cnt" noEntry="true" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="formonly.Edit1" widget="Edit"/>
+        <HLine gridWidth="10" name="HLine2" posX="24" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

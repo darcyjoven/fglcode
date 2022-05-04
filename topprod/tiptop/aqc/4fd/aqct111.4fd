@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f905b51d-0000-4000-a054-6b36c71d2484}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_qcu" order="" uid="{a00bea0d-0000-4000-b18e-eee47d0746af}" where="">
+    <RecordField colName="qcu03" fieldIdRef="9" fieldType="TABLE_COLUMN" name="qcu_file.qcu03" sqlTabName="qcu_file" sqlType="SMALLINT" table_alias_name="" uid="{165dcdbc-0000-4000-94c3-a4dd8c6e9829}"/>
+    <RecordField colName="" fieldIdRef="10" name="item" sqlTabName="" table_alias_name="" uid="{9c060448-0000-4000-b45a-6d4c2f986861}"/>
+    <RecordField colName="" fieldIdRef="11" name="azf03" sqlTabName="" table_alias_name="" uid="{f00d1d9d-0000-4000-85ae-a8578c2ec845}"/>
+    <RecordField colName="qcuicd01" fieldIdRef="12" fieldType="TABLE_COLUMN" name="qcu_file.qcuicd01" sqlTabName="qcu_file" sqlType="VARCHAR" table_alias_name="" uid="{97f391f2-0000-4000-89fd-a1683545974e}"/>
+    <RecordField colName="qcuicd02" fieldIdRef="13" fieldType="TABLE_COLUMN" name="qcu_file.qcuicd02" sqlTabName="qcu_file" sqlType="VARCHAR" table_alias_name="" uid="{a83bd249-0000-4000-8d89-79f3a96d4e04}"/>
+    <RecordField colName="" fieldIdRef="14" fieldType="NON_DATABASE" name="icd03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{8be43cf2-0000-4000-aa70-debed19f4808}"/>
+    <RecordField colName="qcu04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="qcu_file.qcu04" sqlTabName="qcu_file" sqlType="VARCHAR" table_alias_name="" uid="{ccf12208-0000-4000-84ca-382c8346ad9c}"/>
+    <RecordField colName="" fieldIdRef="3" name="qce03" sqlTabName="" table_alias_name="" uid="{dbf6c3f3-0000-4000-8ea2-f37f03343aac}"/>
+    <RecordField colName="qcu05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="qcu_file.qcu05" sqlTabName="qcu_file" sqlType="DECIMAL" table_alias_name="" uid="{585343e4-0000-4000-84eb-f6a87dc67dd2}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5828ce5c-0000-4000-af8b-01098ca4c063}" where="">
+    <RecordField colName="qcu01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="qcu_file.qcu01" sqlTabName="qcu_file" sqlType="VARCHAR" table_alias_name="" uid="{b05767a6-0000-4000-a554-b3bcb60140f5}"/>
+    <RecordField colName="qcu02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="qcu_file.qcu02" sqlTabName="qcu_file" sqlType="SMALLINT" table_alias_name="" uid="{3c871458-0000-4000-8616-3763ed7aa764}"/>
+    <RecordField colName="qcu021" fieldIdRef="8" fieldType="TABLE_COLUMN" name="qcu_file.qcu021" sqlTabName="qcu_file" sqlType="SMALLINT" table_alias_name="" uid="{2711c1d6-0000-4000-8080-9c6610139b60}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{b13d4ecf-0000-4000-8c40-82c3684b61f0}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{faa58bbe-0000-4000-afeb-9f512c081dfc}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="126" name="aqct111" spacing="normal" text="aqct111">
+    <VBox gridHeight="24" gridWidth="120" name="vb2_" posX="2" posY="0">
+      <Folder gridHeight="8" gridWidth="120" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="6" gridWidth="56" lstrcomment="false" name="gr193" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="55" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Receipt#"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcu01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="qcu_file.qcu01" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="qcu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Line No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcu02" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="qcu_file.qcu02" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="qcu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Lot QC Sequence"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcu021" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="qcu_file.qcu021" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="qcu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="120" lstrcomment="false" name="s_qcu" posX="0" posY="9" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcu03" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="qcu_file.qcu03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="qcu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Line#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="item" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="QC Items" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="azf03" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="QC Desc" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcuicd01" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom.png" lstrcomment="false" lstrtitle="false" name="qcu_file.qcuicd01" posX="25" posY="0" rowCount="" sqlTabName="qcu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Wafer Mark" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcuicd02" colorCondition="black" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom.png" lstrcomment="false" lstrtitle="false" name="qcu_file.qcuicd02" posX="35" posY="0" rowCount="" sqlTabName="qcu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="Inspect Area" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="icd03" noEntry="true" posX="47" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" title="Inspect Area Desc" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcu04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="qcu_file.qcu04" notNull="true" posX="64" posY="0" required="true" rowCount="" sqlTabName="qcu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="No-Good Cause" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="qce03" noEntry="true" posX="78" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Description" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcu05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="qcu_file.qcu05" noEntry="true" posX="102" posY="0" rowCount="" sqlTabName="qcu_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Qty" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="120" lstrcomment="false" name="gr194" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl96" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl97" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{811fbedb-0000-4000-9a2c-8b3cc10ce115}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bf" order="" uid="{03b8b098-0000-4000-b070-c55d06d5d6d9}" where="">
+    <RecordField colName="" fieldIdRef="1" name="user" sqlTabName="" table_alias_name="" uid="{ebfe0bc9-0000-4000-9a8a-902765005d72}"/>
+    <RecordField colName="gah01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gah_file.gah01" sqlTabName="gah_file" sqlType="VARCHAR" table_alias_name="" uid="{b684bbfe-0000-4000-8377-5ab7a103c1cf}"/>
+    <RecordField colName="gah04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gah_file.gah04" sqlTabName="gah_file" sqlType="VARCHAR" table_alias_name="" uid="{24f327f2-0000-4000-819e-0d4bc9384cb9}"/>
+    <RecordField colName="gah07" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gah_file.gah07" sqlTabName="gah_file" sqlType="VARCHAR" table_alias_name="" uid="{455b2210-0000-4000-95dd-8a49b7efbd94}"/>
+    <RecordField colName="gah08" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gah_file.gah08" sqlTabName="gah_file" sqlType="DATE" table_alias_name="" uid="{7a93ece9-0000-4000-ae7c-63ca9462c52e}"/>
+    <RecordField colName="gah09" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gah_file.gah09" sqlTabName="gah_file" sqlType="DATE" table_alias_name="" uid="{84843bbf-0000-4000-a636-e31d52c6db82}"/>
+    <RecordField colName="" fieldIdRef="7" name="bt" sqlTabName="" table_alias_name="" uid="{878c2efe-0000-4000-8339-3ad5313bfe02}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="120" name="p_noneproc" spacing="normal" text="p_noneproc">
+    <Grid gridHeight="13" gridWidth="118" lstrcomment="false" name="gr3235" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="117" lstrcomment="false" name="s_bf" posX="1" posY="0" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="user" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Employee" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gah01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="gah_file.gah01" posX="10" posY="0" rowCount="" sqlTabName="gah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Message No." widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gah04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Emergency, Importance, General, Notice, Record" lstrcomment="false" lstrtitle="false" name="gah_file.gah04" posX="31" posY="0" queryEditable="true" rowCount="" sqlTabName="gah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Level" widget="ComboBox">
+          <Item name="A" text="Emergency"/>
+          <Item name="B" text="Importance"/>
+          <Item name="C" text="General"/>
+          <Item name="D" text="Notice"/>
+          <Item name="E" text="Record"/>
+        </ComboBox>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gah07" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="gah_file.gah07" posX="41" posY="0" rowCount="" sqlTabName="gah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Document No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gah08" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="gah_file.gah08" posX="54" posY="0" rowCount="" sqlTabName="gah_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Message" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gah09" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gah_file.gah09" posX="84" posY="0" rowCount="" sqlTabName="gah_file" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Load Action" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bt" posX="96" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Behind Time" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

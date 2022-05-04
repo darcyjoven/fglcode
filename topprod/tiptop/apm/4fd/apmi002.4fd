@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{72ad6ec6-0000-4000-93f7-30f945f85094}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pow" order="" uid="{25e20b47-0000-4000-b69e-fe9415b30850}" where="">
+    <RecordField colName="pow05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="pow_file.pow05" sqlTabName="pow_file" sqlType="VARCHAR" table_alias_name="" uid="{89976e82-0000-4000-9d6b-5de9417c6b7d}"/>
+    <RecordField colName="pow06" fieldIdRef="10" fieldType="TABLE_COLUMN" name="pow_file.pow06" sqlTabName="pow_file" sqlType="DECIMAL" table_alias_name="" uid="{8f5d1970-0000-4000-899d-a70b1b7640a0}"/>
+    <RecordField colName="powuser" fieldIdRef="11" fieldType="TABLE_COLUMN" name="pow_file.powuser" sqlTabName="pow_file" sqlType="VARCHAR" table_alias_name="" uid="{b79479d2-0000-4000-8671-dc9be224374d}"/>
+    <RecordField colName="powgrup" fieldIdRef="12" fieldType="TABLE_COLUMN" name="pow_file.powgrup" sqlTabName="pow_file" sqlType="VARCHAR" table_alias_name="" uid="{595aeab7-0000-4000-af0b-ba0c3f8791b1}"/>
+    <RecordField colName="powmodu" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pow_file.powmodu" sqlTabName="pow_file" sqlType="VARCHAR" table_alias_name="" uid="{6a93bcfc-0000-4000-a783-c76bc9026e9b}"/>
+    <RecordField colName="powdate" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pow_file.powdate" sqlTabName="pow_file" sqlType="DATE" table_alias_name="" uid="{47e22fc7-0000-4000-a0da-3e2982748101}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7cb3710c-0000-4000-980b-27605729818b}" where="">
+    <RecordField colName="pow01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pow_file.pow01" sqlTabName="pow_file" sqlType="VARCHAR" table_alias_name="" uid="{0b289e08-0000-4000-97f9-3d9ea3dabc99}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="poz02" sqlTabName="" table_alias_name="" uid="{b400c7c9-0000-4000-b282-02acadb238cd}"/>
+    <RecordField colName="pow02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pow_file.pow02" sqlTabName="pow_file" sqlType="DATE" table_alias_name="" uid="{bf02eba4-0000-4000-8b64-ce542545b78f}"/>
+    <RecordField colName="pow03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pow_file.pow03" sqlTabName="pow_file" sqlType="VARCHAR" table_alias_name="" uid="{4297f7bd-0000-4000-8f5a-80aeaba7e31b}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="curr" sqlTabName="" table_alias_name="" uid="{ebb4cb82-0000-4000-b60a-0662484e0b05}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{c6643030-0000-4000-8708-b672f327383f}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="91" name="apmi002" spacing="normal" text="apmi002">
+    <VBox gridHeight="23" gridWidth="88" name="vb1" posX="0" posY="0" splitter="">
+      <Folder gridHeight="7" gridWidth="88" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="5" gridWidth="54" lstrcomment="false" name="gr4803" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Flow Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pow01" columnCount="" comment="Enter Code, No Blank &lt;^P&gt;Qry Flow Code" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pow_file.pow01" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="pow_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="1" text="Description"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="poz02" noEntry="true" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Effective Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pow02" columnCount="" comment="Enter U/P Effective Date" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pow_file.pow02" notNull="true" posX="23" posY="2" required="true" rowCount="" sqlTabName="pow_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="3" text="Plant No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pow03" columnCount="" comment="Enter Plant # Using this U/P &lt;^P&gt;Qry Plant # of Flow Code" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pow_file.pow03" notNull="true" posX="23" posY="3" required="true" rowCount="" sqlTabName="pow_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="4" text="Currency"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="curr" noEntry="true" posX="23" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="88" lstrcomment="false" name="s_pow" posX="0" posY="8" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pow05" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="C:\Program Files\FourJs\gdc\pics\zoom.png" lstrcomment="false" lstrtitle="false" name="pow_file.pow05" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="pow_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Item No. QBE" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pow06" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pow_file.pow06" posX="20" posY="0" rowCount="" sqlTabName="pow_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="U/P" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="powuser" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pow_file.powuser" noEntry="true" posX="40" posY="0" rowCount="" sqlTabName="pow_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Owner" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="powgrup" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="pow_file.powgrup" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="pow_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Dept." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="powmodu" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="pow_file.powmodu" noEntry="true" posX="57" posY="0" rowCount="" sqlTabName="pow_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Modified By" widget="Edit"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="powdate" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="pow_file.powdate" noEntry="true" posX="69" posY="0" rowCount="" sqlTabName="pow_file" sqlType="DATE" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Date Modify" widget="DateEdit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="88" lstrcomment="false" name="gr4804" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl1533" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1534" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

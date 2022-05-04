@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{98ab432e-0000-4000-a207-c816ff5c149a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{4b719feb-0000-4000-bef4-4b0fd9b69b4b}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="only_one" sqlTabName="" table_alias_name="" uid="{b2e179b0-0000-4000-a1c6-dec28bf06698}"/>
+    <RecordField colName="aqe01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aqe_file.aqe01" sqlTabName="aqe_file" sqlType="VARCHAR" table_alias_name="" uid="{b30a32d6-0000-4000-a5f8-9e602bdb0ed3}"/>
+    <RecordField colName="aqe02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aqe_file.aqe02" sqlTabName="aqe_file" sqlType="DATE" table_alias_name="" uid="{378e4c91-0000-4000-804c-556b4ee5932f}"/>
+    <RecordField colName="aqe04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aqe_file.aqe04" sqlTabName="aqe_file" sqlType="VARCHAR" table_alias_name="" uid="{dbe59173-0000-4000-859f-c6618241e0ab}"/>
+    <RecordField colName="aqe05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="aqe_file.aqe05" sqlTabName="aqe_file" sqlType="VARCHAR" table_alias_name="" uid="{135ee3e7-0000-4000-a403-46e6d5c4c977}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="l_amt" sqlTabName="" sqlType="DECIMAL" table_alias_name="" uid="{50d260b6-0000-4000-a6c2-c6664cf593dc}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="50" name="axrt600_6" spacing="normal" text="Confirm">
+    <Grid gridHeight="14" gridWidth="48" lstrcomment="false" name="gr136" posX="0" posY="0">
+      <Group gridHeight="3" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Confirm Condition">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="39" items="Confirm this Accounts only, Confirm by QBE Condition" lstrcomment="false" lstrtitle="false" name="only_one" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+          <Item lstrtext="" name="1" text="Confirm this Accounts only"/>
+          <Item lstrtext="" name="2" text="Confirm by QBE Condition"/>
+        </RadioGroup>
+      </Group>
+      <Group gridHeight="6" gridWidth="44" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="Enter Accounts Condition to Confirm:">
+        <Label posX="1" posY="1" text="Receive Slip# QBE"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aqe01" columnCount="" comment="&lt;^P&gt; Qry Details " fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="aqe_file.aqe01" notNull="true" posX="26" posY="1" required="true" rowCount="" sqlTabName="aqe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Receive Date QBE"/>
+        <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aqe02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="aqe_file.aqe02" posX="26" posY="2" rowCount="" sqlTabName="aqe_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+        <Label posX="1" posY="3" text="Account Employee QBE"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aqe04" columnCount="" comment="&lt;^P&gt; Qry Details " fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="aqe_file.aqe04" posX="26" posY="3" rowCount="" sqlTabName="aqe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="4" text="Accounts Department QBE"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aqe05" columnCount="" comment="&lt;^P&gt; Qry Details " fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="aqe_file.aqe05" posX="26" posY="4" rowCount="" sqlTabName="aqe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+      </Group>
+      <Group gridHeight="4" gridWidth="47" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="9">
+        <Label posX="1" posY="1" text="Confirmed Total Payment"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="l_amt" posX="26" posY="1" rowCount="" sqlTabName="" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

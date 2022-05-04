@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{4ec3576d-0000-4000-b21a-cf1df51aa45f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_msv" order="" uid="{ea9d14d4-0000-4000-9776-1fe44d524f3d}" where="">
+    <RecordField colName="" fieldIdRef="3" name="msv031" sqlTabName="" table_alias_name="" uid="{06285b62-0000-4000-b3ce-6c70a4b26ba6}"/>
+    <RecordField colName="" fieldIdRef="4" name="plantname" sqlTabName="" table_alias_name="" uid="{1d68d487-0000-4000-a6a9-977ccf70efeb}"/>
+    <RecordField colName="" fieldIdRef="5" name="msv032" sqlTabName="" table_alias_name="" uid="{9dedd82f-0000-4000-8e4e-9b20c1f55c1a}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{cf346f41-0000-4000-85ab-efb909d11422}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="msu000" sqlTabName="" table_alias_name="" uid="{ba594e21-0000-4000-a05e-cbd352cb477f}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="po_days" sqlTabName="" table_alias_name="" uid="{924ae72e-0000-4000-b2bd-558fe1d0b8e1}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="75" name="amrp600" spacing="normal" text="amrp600">
+    <VBox gridHeight="18" gridWidth="73" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="4" gridWidth="73" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="1">
+        <Grid gridHeight="2" gridWidth="71" lstrcomment="false" name="gr3879" posX="1" posY="1">
+          <Label posX="1" posY="0" text="Version Number"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="msu000" notNull="true" posX="60" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="1" text="PR/PO Delivery in advance allowed (Reschedule) Adjust Days"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="0:No Advance Delivery Date -1:Advance days by Item Master" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="po_days" posX="60" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        </Grid>
+      </Group>
+      <Table gridHeight="12" gridWidth="73" lstrcomment="false" name="s_msv" posX="0" posY="5" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Qry Plant Code" fieldId="3" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="msv031" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Plant No." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="plantname" noEntry="true" posX="11" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Plant Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Qry Sub-Plant MRP Version" fieldId="5" gridHeight="1" gridWidth="21" image="zoom" lstrcomment="false" lstrtitle="false" name="msv032" notNull="true" posX="34" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="MRP Version" widget="ButtonEdit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{4ffaecc5-b44a-4eab-8d85-c87481e1be77}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="lrd_file" name="s_lrd" order="" uid="{4b2de591-fe8e-420f-bf1e-624f7669eadc}" where="">
+    <RecordField colName="lrd02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="lrd_file.lrd02" sqlTabName="lrd_file" sqlType="VARCHAR" table_alias_name="" uid="{49dc0c0e-fd0f-4130-9f4c-1dc1a71cbf97}" uniqueQueryKey="false"/>
+    <RecordField colName="azp02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="azp_file.azp02" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{eec435af-7b4e-49fa-b1f2-ad5e4d8d1278}" uniqueQueryKey="false"/>
+    <RecordField colName="lrdacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="lrd_file.lrdacti" sqlTabName="lrd_file" sqlType="VARCHAR" table_alias_name="" uid="{7fb12654-3dc0-452e-aadc-58bd2abb47f3}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e3947ad3-2bfd-4fe7-b178-a00e6671a791}" where="">
+    <RecordField colName="" fieldIdRef="4" name="cnt_a" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d406ff28-ed5c-498f-81cf-f50005cdf130}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="89" name="Form" text="Form">
+    <VBox gridHeight="19" gridWidth="64" name="VBox1" posX="1" posY="0">
+      <Folder gridHeight="15" gridWidth="64" name="folder" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Table gridHeight="13" gridWidth="56" name="s_lrd" posX="1" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lrd02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom" name="lrd_file.lrd02" notNull="true" posX="0" posY="0" rowCount="" scroll="true" sqlTabName="lrd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Store No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="azp_file.azp02" noEntry="true" posX="17" posY="0" rowCount="" scroll="true" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Name of store" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="lrdacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="lrd_file.lrdacti" notNull="true" posX="47" posY="0" rowCount="" sqlTabName="lrd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Actived" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="64" name="Grid1" posX="0" posY="16">
+        <HLine gridWidth="8" name="HLine1" posX="2" posY="1"/>
+        <Label posX="12" posY="1" text="item"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="5" name="cnt_a" posX="17" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Edit1" widget="Edit"/>
+        <HLine gridWidth="8" name="HLine2" posX="23" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0ADkAZABjADAAYwAwAGUALQBmAGQAMABmAC0ANAAxADMAMAAtADkAZgA0AGMALQAxAGQAYwAxAGEANwAxAGMAYgBmADkANwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADQAMAA2AGYAZgAyADgALQBlAGQANQBjAC0ANAA5ADgAZgAtADgAMQBjAGYALQBmADUAMAAwADAANQBjAGQAZgAxADMAMAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADMAOQA0ADcAYQBkADMALQAyAGIAZgBkAC0ANABmAGUANwAtAGIAMQA3ADgALQBhADAAMABlADYANgA3ADEAYQA3ADkAMQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGUAYwA0ADMANQBhAGYALQA3AGIANABlAC0ANAA5AGYAYQAtAGIAMQBmADIALQBhAGQANQBlADQAZAA4AGQAMQAyADcAOAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGIAMgBkAGUANQA5ADEALQBmAGUAOABlAC0ANAAyADAAZgAtAGIAZgAxAGUALQA2ADIANABmADcANgA2ADkAZQBhAGQAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGYAYgAxADIANgA1ADQALQAzAGQAYwAwAC0ANAA1ADIAZQAtAGEAYQBkAGMALQA1ADgAYgBkADIAYQBiAGIANAA3AGYAMwB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

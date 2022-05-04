@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f8a813f7-0000-4000-8a61-899e2aa0bf0b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zta_schema" order="" uid="{c3aca013-0000-4000-a9bd-4711471aa1e6}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="sch01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{394138ac-0000-4000-bc12-b672cc147c1b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="sch02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{4568a8fd-0000-4000-89f9-52a6ae80627e}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="sch03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{fab5aa8e-0000-4000-9ff4-8f3250ba2c4c}"/>
+    <RecordField colName="" fieldIdRef="5" name="sch04" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5a84edb0-0000-4000-9c7e-3b08008653b2}"/>
+    <RecordField colName="" fieldIdRef="6" name="sch05" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9d171205-0000-4000-aafc-1a4b78203a57}"/>
+    <RecordField colName="" fieldIdRef="7" name="sch06" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{792aa6f5-0000-4000-bdc5-c4995e3bf861}"/>
+    <RecordField colName="" fieldIdRef="8" name="sch07" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ec56283a-0000-4000-971c-8ad5c4e16302}"/>
+    <RecordField colName="" fieldIdRef="9" name="sch08" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{03220655-0000-4000-853f-41eaa9a8fbf8}"/>
+    <RecordField colName="" fieldIdRef="10" name="sch09" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{20b2a316-0000-4000-9f4b-cf96768f109f}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zta_diff" order="" uid="{c6c24218-0000-4000-8b59-a2b481f4dfee}" where="">
+    <RecordField colName="" fieldIdRef="4" name="diff01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{5e1b2d42-0000-4000-bb75-0b808db9fd8a}"/>
+    <RecordField colName="" fieldIdRef="11" name="diff02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{fdf18d48-0000-4000-ab92-f85f48241ec7}"/>
+    <RecordField colName="" fieldIdRef="13" name="diff03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{34ad8628-0000-4000-a497-3eaeccfa9faf}"/>
+    <RecordField colName="" fieldIdRef="12" name="diff04" sqlTabName="" sqlType="STRING" table_alias_name="" uid="{4ee51fad-0000-4000-bb58-53ff1f586611}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_db_diff" order="" uid="{a06659ef-0000-4000-93a3-876ab3e06202}" where="">
+    <RecordField colName="" fieldIdRef="14" name="db01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{cb8121d1-0000-4000-9720-c1d1e79a3f69}"/>
+    <RecordField colName="" fieldIdRef="15" name="db02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{09615d82-0000-4000-8087-e4a984032985}"/>
+    <RecordField colName="" fieldIdRef="16" name="db03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{71f8d4fd-0000-4000-9562-6f42410638f6}"/>
+    <RecordField colName="" fieldIdRef="17" name="db04" sqlTabName="" sqlType="STRING" table_alias_name="" uid="{c3c94a89-0000-4000-a63d-828d3ff63bc5}"/>
+  </Record>
+  <Form gridHeight="35" gridWidth="91" name="p_check_schema" spacing="normal" text="p_check_schema">
+    <VBox gridHeight="35" gridWidth="89" name="vb3" posX="0" posY="0" splitter="">
+      <Folder gridHeight="33" gridWidth="89" lstrcomment="false" name="pc831" posX="0" posY="1">
+        <Page action="zta_detail" lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="30" gridWidth="87" name="Grid1" posX="1" posY="1">
+            <Label gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="dummy01"/>
+            <Table gridHeight="12" gridWidth="85" lstrcomment="false" name="s_zta_schema" posX="1" posY="2" totalRows="10">
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" name="sch01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="chk DB" widget="Edit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="sch02" notNull="true" posX="5" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="is entity" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" name="sch03" posX="9" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="finance DB" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="7" name="sch04" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="table cnt" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="12" name="sch05" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="synonym ds cnt" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="14" name="sch06" posX="32" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="synonym finance cnt" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="15" name="sch07" posX="46" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="synonym entity cnt" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="8" name="sch08" posX="61" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="view cnt" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="6" name="sch09" posX="69" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="total" widget="Edit"/>
+            </Table>
+            <Label gridHeight="1" gridWidth="12" lstrcomment="false" lstrtext="false" name="dummy02" posX="1" posY="18" text="dummy02"/>
+            <Table gridHeight="11" gridWidth="85" lstrcomment="false" name="s_zta_diff" posX="1" posY="19" totalRows="10">
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="7" name="diff01" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="chk DB" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="20" name="diff02" posX="7" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="chk type" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="5" justify="center" lstrcomment="false" lstrtitle="false" name="diff03" posX="27" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="diff cnt" widget="Edit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="40" name="diff04" posX="32" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="table name" widget="Edit"/>
+            </Table>
+          </Grid>
+        </Page>
+        <Page action="db_detail" lstrtext="false" name="page02" text="Page02">
+          <Table gridHeight="11" gridWidth="85" lstrcomment="false" name="s_db_diff" posX="1" posY="1" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" gridHeight="1" gridWidth="7" name="db01" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="chk DB" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" gridHeight="1" gridWidth="20" name="db02" posX="7" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="chk type" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" gridHeight="1" gridWidth="5" justify="center" lstrcomment="false" lstrtitle="false" name="db03" posX="27" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="diff cnt" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="17" gridHeight="1" gridWidth="40" name="db04" posX="32" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="table name" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+</ManagedForm>

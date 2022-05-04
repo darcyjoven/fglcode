@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="172" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="59373" spacing="normal" posX="0" percommentheader="" height="22" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="apsi200" defaultspacing="true" text="apsi200" gstVersion="11401" percommentlayout="GRID
+PAGE
+FOLDER
+TABLE
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="169" posX="0" posY="0" height="7" lstrcomment="false" name="pc1047" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" >
+    <Grid width="53" posX="0" posY="0" height="5" lstrcomment="false" hidden="--------" name="gr5429" fontPitch="default" scroll="false" >
+     <Group width="53" lstrtext="false" gridWidth="53" posX="0" posY="0" height="4" lstrcomment="false" hidden="--------" name="group01" fontPitch="default" gridHeight="4" gridChildrenInParent="--------" >
+      <Text width="15" lstrtext="false" gridWidth="15" posX="1" posY="1" height="1" sizePolicy="initial" name="text18275" text="Master Item No." />
+      <FormField colName="out_pid" fieldId="0" sqlTabName="formonly" name="formonly.out_pid" fieldtype="FORM_ONLY" >
+       <Edit width="30" case="NONE" invisible="--------" gridWidth="30" notNull="--------" posX="22" formfieldname="formfield0" posY="1" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="1" zeroFill="--------" reverse="--------" lstrtitle="false" name="out_pid" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+      </FormField>
+      <Text width="15" lstrtext="false" gridWidth="15" posX="1" posY="2" height="1" sizePolicy="initial" name="text18276" text="Master Item S/P" />
+      <FormField colName="ima02" fieldId="1" sqlTabName="formonly" name="formonly.ima02" fieldtype="FORM_ONLY" >
+       <Edit width="30" case="NONE" invisible="--------" gridWidth="30" notNull="--------" posX="22" formfieldname="formfield1" posY="2" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="2" zeroFill="--------" reverse="--------" lstrtitle="false" name="ima02" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+      </FormField>
+     </Group>
+    </Grid>
+   </Page>
+  </PageControl>
+  <Table width="169" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="7" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_aps" fontPitch="default" tabName="s_aps" unsortableColumns="--------" tabName1="s_aps" >
+   <TableColumn width="7" lstrtext="false" height="1" colName="seq_txt" unsortable="--------" fieldId="2" sqlTabName="formonly" tabIndex="3" unsizable="--------" unhidable="--------" unmovable="--------" name="seq_txt" text="Ln No." >
+    <Edit width="7" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+   <TableColumn width="30" lstrtext="false" height="1" colName="in_pid" unsortable="--------" fieldId="3" sqlTabName="formonly" tabIndex="4" unsizable="--------" unhidable="--------" unmovable="--------" name="in_pid" text="Component No." >
+    <Edit width="30" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </TableColumn>
+   <TableColumn width="9" lstrtext="false" sqlDBName="ds" height="1" colName="p_aprio" unsortable="--------" fieldId="4" sqlTabName="aps_bmb" tabIndex="5" unsizable="--------" unhidable="--------" unmovable="--------" name="p_aprio" fieldtype="TABLE_COLUMN" text="Priority" >
+    <Edit width="9" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+   </TableColumn>
+   <TableColumn width="15" lstrtext="false" sqlDBName="ds" height="1" colName="g_acode" unsortable="--------" fieldId="5" sqlTabName="aps_bmb" tabIndex="6" unsizable="--------" unhidable="--------" unmovable="--------" name="g_acode" fieldtype="TABLE_COLUMN" text="Group Sub Code" >
+    <Edit width="15" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+   </TableColumn>
+   <TableColumn width="13" lstrtext="false" sqlDBName="ds" height="1" colName="is_used" unsortable="--------" fieldId="6" sqlTabName="aps_bmb" tabIndex="7" unsizable="--------" unhidable="--------" unmovable="--------" name="is_used" fieldtype="TABLE_COLUMN" text="Used Up Part" >
+    <ComboBox width="13" case="NONE" comment="0/1(If Inventory Been Used-up, No Longer Purchase)" notNull="--------" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" queryEditable="true" >
+     <Item name="0" text="False" />
+     <Item name="1" text="True" />
+    </ComboBox>
+   </TableColumn>
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="is_sub_p" unsortable="--------" fieldId="7" sqlTabName="aps_bmb" tabIndex="8" unsizable="--------" unhidable="--------" unmovable="--------" name="is_sub_p" fieldtype="TABLE_COLUMN" text="Subsitute Part Is Issue" >
+    <ComboBox width="14" case="NONE" comment="0/1(when 1?an not be mix part)" notNull="--------" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" queryEditable="true" >
+     <Item name="0" text="General SUB" />
+     <Item name="1" text="Total SUB" />
+    </ComboBox>
+   </TableColumn>
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="is_issue" unsortable="--------" fieldId="8" sqlTabName="aps_bmb" tabIndex="9" unsizable="--------" unhidable="--------" unmovable="--------" name="is_issue" fieldtype="TABLE_COLUMN" >
+    <ComboBox width="14" case="NONE" comment="0/1" notNull="--------" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" queryEditable="true" >
+     <Item name="0" text="General Demand" />
+     <Item name="1" text="No Item Expand Demand" />
+    </ComboBox>
+   </TableColumn>
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="is_cnsn" unsortable="--------" fieldId="9" sqlTabName="aps_bmb" tabIndex="10" unsizable="--------" unhidable="--------" unmovable="--------" name="is_cnsn" fieldtype="TABLE_COLUMN" text="Is Cnsn" >
+    <ComboBox width="14" case="NONE" comment="0/1" notNull="--------" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" queryEditable="true" >
+     <Item name="0" text="False" />
+     <Item name="1" text="True" />
+    </ComboBox>
+   </TableColumn>
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="is_altod" unsortable="--------" fieldId="10" sqlTabName="aps_bmb" tabIndex="11" unsizable="--------" unhidable="--------" unmovable="--------" name="is_altod" fieldtype="TABLE_COLUMN" text="Is Altod" >
+    <ComboBox width="14" case="NONE" comment="0/1" notNull="--------" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" queryEditable="true" >
+     <Item name="0" text="False" />
+     <Item name="1" text="True" />
+    </ComboBox>
+   </TableColumn>
+   <TableColumn width="12" lstrtext="false" sqlDBName="ds" height="1" colName="cret_typ" unsortable="--------" fieldId="11" sqlTabName="aps_bmb" tabIndex="12" unsizable="--------" unhidable="--------" unmovable="--------" name="cret_typ" fieldtype="TABLE_COLUMN" text="Create Type" >
+    <ComboBox width="12" case="NONE" comment="0/1" notNull="--------" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" noEntry="--------" required="--------" queryEditable="true" >
+     <Item name="0" text="For Master Item" />
+     <Item name="1" text="For Alt Ratio" />
+    </ComboBox>
+   </TableColumn>
+   <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="al_ratio" unsortable="--------" fieldId="12" sqlTabName="aps_bmb" tabIndex="13" unsizable="--------" unhidable="--------" unmovable="--------" name="al_ratio" fieldtype="TABLE_COLUMN" text="Alt Ratio" >
+    <Edit width="14" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="DECIMAL" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+   </TableColumn>
+  </Table>
+  <Grid width="169" posX="0" posY="19" height="1" lstrcomment="false" hidden="--------" name="gr5430" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl1731" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="12" posY="0" height="1" sizePolicy="initial" name="text18277" text="Rows" />
+   <FormField colName="cnt" fieldId="13" sqlTabName="formonly" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="18" formfieldname="formfield2" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="14" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cnt" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <Text width="1" lstrtext="false" gridWidth="1" posX="26" posY="0" height="1" sizePolicy="initial" name="text18278" text="/" />
+   <FormField colName="cn2" fieldId="14" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="29" formfieldname="formfield3" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="15" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="37" posY="0" height="1" name="hl1732" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_aps" fromTable="true" tableKey="tb740" >
+  <Link colName="formonly.seq_txt" fromTable="true" colKey="Col7426" />
+  <Link colName="formonly.in_pid" fromTable="true" colKey="Col7427" />
+  <Link colName="aps_bmb.p_aprio" fromTable="true" colKey="Col7428" />
+  <Link colName="aps_bmb.g_acode" fromTable="true" colKey="Col7429" />
+  <Link colName="aps_bmb.is_used" fromTable="true" colKey="Col7430" />
+  <Link colName="aps_bmb.is_sub_p" fromTable="true" colKey="Col7431" />
+  <Link colName="aps_bmb.is_issue" fromTable="true" colKey="Col7432" />
+  <Link colName="aps_bmb.is_cnsn" fromTable="true" colKey="Col7433" />
+  <Link colName="aps_bmb.is_altod" fromTable="true" colKey="Col7434" />
+  <Link colName="aps_bmb.cret_typ" fromTable="true" colKey="Col7435" />
+  <Link colName="aps_bmb.al_ratio" fromTable="true" colKey="Col7436" />
+ </RecordView>
+</Form>
+

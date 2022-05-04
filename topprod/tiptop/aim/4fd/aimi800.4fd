@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8a2dad4a-0000-4000-9fee-5d9889a41ef0}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c3eb4c07-0000-4000-864a-d1fae7499ead}" where="">
+    <RecordField colName="pib01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pib_file.pib01" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{5613c134-0000-4000-b2c0-9a0177376c37}"/>
+    <RecordField colName="pib02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pib_file.pib02" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{01aca579-0000-4000-8f13-d3482174fd74}"/>
+    <RecordField colName="pib03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pib_file.pib03" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{6f56c65b-0000-4000-a435-45a049c2668f}"/>
+    <RecordField colName="pib04" fieldIdRef="8" fieldType="TABLE_COLUMN" name="pib_file.pib04" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{579020ba-0000-4000-924c-a0334f82ae59}"/>
+    <RecordField colName="pib05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="pib_file.pib05" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{aa95e754-0000-4000-98af-39b20ecd5eb8}"/>
+    <RecordField colName="pibuser" fieldIdRef="10" fieldType="TABLE_COLUMN" name="pib_file.pibuser" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{b8666941-0000-4000-91df-1e775d6ee709}"/>
+    <RecordField colName="pibmodu" fieldIdRef="11" fieldType="TABLE_COLUMN" name="pib_file.pibmodu" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{58c33875-0000-4000-b492-273191db8f0e}"/>
+    <RecordField colName="pibacti" fieldIdRef="12" fieldType="TABLE_COLUMN" name="pib_file.pibacti" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{13031841-0000-4000-93ae-f70af93d2950}"/>
+    <RecordField colName="pibgrup" fieldIdRef="13" fieldType="TABLE_COLUMN" name="pib_file.pibgrup" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{4693f3d1-0000-4000-9e42-f1d26071500a}"/>
+    <RecordField colName="pibdate" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pib_file.pibdate" sqlTabName="pib_file" sqlType="DATE" table_alias_name="" uid="{524cdcaf-0000-4000-9d99-26238ffa9f12}"/>
+    <RecordField colName="piboriu" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pib_file.piboriu" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{bce0293f-0000-4000-b927-6c89c8111240}"/>
+    <RecordField colName="piborig" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pib_file.piborig" sqlTabName="pib_file" sqlType="VARCHAR" table_alias_name="" uid="{5ced5742-0000-4000-b388-5aaf4ca1a2d3}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{00830a54-0000-4000-ab9c-5082d64301e0}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="104" name="aimi800" spacing="normal" text="aimi800">
+    <VBox gridHeight="11" gridWidth="101" name="vb3" posX="1" posY="0">
+      <Folder gridHeight="7" gridWidth="101" lstrcomment="false" name="pc560" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="5" gridWidth="66" lstrcomment="false" name="gr3063" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Inventory Taking Label"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pib01" columnCount="" comment="Assign Add/Query [Label Type]" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.pib01" notNull="true" posX="25" posY="0" required="true" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Memo Description"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pib02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtitle="false" name="pib_file.pib02" posX="25" posY="1" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Current Serial number"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pib03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.pib03" posX="25" posY="2" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Generation Method"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pib04" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Auto Produce, User Import" lstrcomment="false" lstrtitle="false" name="pib_file.pib04" noEntry="true" posX="25" posY="3" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="Auto Produce"/>
+              <Item lstrtext="" name="2" text="User Import"/>
+            </ComboBox>
+            <Label posX="1" posY="4" text="type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pib05" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="1, 2, 3, 4, 5, 6" lstrcomment="false" name="pib_file.pib05" notNull="true" posX="26" posY="4" required="true" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="1"/>
+              <Item lstrtext="false" name="2" text="2"/>
+              <Item lstrtext="false" name="3" text="3"/>
+              <Item lstrtext="false" name="4" text="4"/>
+              <Item lstrtext="false" name="5" text="5"/>
+              <Item lstrtext="false" name="6" text="6"/>
+            </ComboBox>
+          </Grid>
+        </Page>
+        <Page lstrtext="false" name="info" text="Info">
+          <Grid gridHeight="4" gridWidth="99" lstrcomment="false" name="gr3064" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Record Owner"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pibuser" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.pibuser" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="34" posY="0" text="Last Modified by"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pibmodu" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.pibmodu" noEntry="true" posX="55" posY="0" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="67" posY="0" text="Data Valid Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="pibacti" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.pibacti" noEntry="true" posX="88" posY="0" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Department"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pibgrup" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.pibgrup" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            <Label posX="34" posY="1" text="Create/Modify Date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pibdate" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.pibdate" noEntry="true" posX="55" posY="1" rowCount="" sqlTabName="pib_file" sqlType="DATE" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="2" text="Record Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="piboriu" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.piboriu" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="501" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Dept Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="piborig" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pib_file.piborig" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="pib_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="502" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="101" lstrcomment="false" name="gr3065" posX="0" posY="8">
+        <HLine gridWidth="10" name="hl907" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl908" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

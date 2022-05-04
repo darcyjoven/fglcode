@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="150" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="17697" spacing="normal" posX="0" percommentheader="" height="17" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdi010" defaultspacing="true" text="axdi010" gstVersion="11401" percommentlayout="TABLE
+PAGE
+FOLDER
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="147" posX="0" posY="0" height="14" lstrcomment="false" name="pc394" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" >
+    <Table width="145" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="0" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_adz" fontPitch="default" tabName="s_adz" unsortableColumns="--------" tabName1="s_adz" >
+     <TableColumn width="6" lstrtext="false" sqlDBName="ds" height="1" colName="adzslip" unsortable="--------" fieldId="0" sqlTabName="adz_file" tabIndex="1" unsizable="--------" unhidable="--------" unmovable="--------" name="adzslip" fieldtype="TABLE_COLUMN" text="Slip" >
+      <Edit width="6" case="UPPER" comment="KEY Field, No Blank/Repeated! &lt;^O>Copy Previous Record! &lt;^Y>User Authorization &lt;^U>Dept Authorization " invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+     </TableColumn>
+     <TableColumn width="20" lstrtext="false" sqlDBName="ds" height="1" colName="adzdesc" unsortable="--------" fieldId="1" sqlTabName="adz_file" tabIndex="2" unsizable="--------" unhidable="--------" unmovable="--------" name="adzdesc" fieldtype="TABLE_COLUMN" text="Description" >
+      <Edit width="20" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </TableColumn>
+     <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="adzauno" unsortable="--------" fieldId="2" sqlTabName="adz_file" tabIndex="3" unsizable="--------" unhidable="--------" unmovable="--------" name="adzauno" fieldtype="TABLE_COLUMN" text="Auto Number" >
+      <CheckBox width="14" lstrtext="false" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="" valueChecked="Y" />
+     </TableColumn>
+     <TableColumn width="15" lstrtext="false" sqlDBName="ds" height="1" colName="adzconf" unsortable="--------" fieldId="3" sqlTabName="adz_file" tabIndex="4" unsizable="--------" unhidable="--------" unmovable="--------" name="adzconf" fieldtype="TABLE_COLUMN" text="Auto Confirm" >
+      <CheckBox width="15" lstrtext="false" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="" valueChecked="Y" />
+     </TableColumn>
+     <TableColumn width="12" lstrtext="false" sqlDBName="ds" height="1" colName="adzprnt" unsortable="--------" fieldId="4" sqlTabName="adz_file" tabIndex="5" unsizable="--------" unhidable="--------" unmovable="--------" name="adzprnt" fieldtype="TABLE_COLUMN" text="Print Now" >
+      <CheckBox width="12" lstrtext="false" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="" valueChecked="Y" />
+     </TableColumn>
+     <TableColumn width="16" lstrtext="false" sqlDBName="ds" height="1" colName="adzdmy6" unsortable="--------" fieldId="5" sqlTabName="adz_file" tabIndex="6" unsizable="--------" unhidable="--------" unmovable="--------" name="adzdmy6" fieldtype="TABLE_COLUMN" text="Number Method" >
+      <ComboBox width="16" case="NONE" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" noEntry="--------" queryEditable="--------" required="true" >
+       <Item name="1" text="Serial Number" />
+       <Item name="2" text="By Year and Month" />
+       <Item name="3" text="By Year and Week" />
+       <Item name="4" text="By Year,Month and Day" />
+      </ComboBox>
+     </TableColumn>
+     <TableColumn width="11" lstrtext="false" sqlDBName="ds" height="1" colName="adztype" unsortable="--------" fieldId="6" sqlTabName="adz_file" tabIndex="7" unsizable="--------" unhidable="--------" unmovable="--------" name="adztype" fieldtype="TABLE_COLUMN" text="Property" >
+      <ComboBox width="11" case="NONE" comment="No Blank  , Enter 10 11 12 13 14 15 16 17 18 19 20" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" noEntry="--------" required="true" queryEditable="true" >
+       <Item name="10" text="Trsf Appl(Inner)" />
+       <Item name="11" text="Trsf Appl(Outer)" />
+       <Item name="12" text="Trsf Appl(Out-Ret)" />
+       <Item name="13" text="Trsf-out(Inner)" />
+       <Item name="14" text="Trsf-out(Outer)" />
+       <Item name="15" text="Trsf-out(Out-Ret)" />
+       <Item name="16" text="Trsf-in(Inner)" />
+       <Item name="17" text="Trsf-in(Outer)" />
+       <Item name="18" text="Trsf-in(Out-Ret)" />
+       <Item name="19" text="Vehicle Dispatch" />
+       <Item name="20" text="Customer Inventory" />
+      </ComboBox>
+     </TableColumn>
+     <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="adz11" unsortable="--------" fieldId="7" sqlTabName="adz_file" tabIndex="8" unsizable="--------" unhidable="--------" unmovable="--------" name="adz11" fieldtype="TABLE_COLUMN" text="Affect Idle" >
+      <CheckBox width="14" lstrtext="false" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="" valueChecked="Y" />
+     </TableColumn>
+     <TableColumn width="11" lstrtext="false" sqlDBName="ds" height="1" colName="adzapr" unsortable="--------" fieldId="8" sqlTabName="adz_file" tabIndex="9" unsizable="--------" unhidable="--------" unmovable="--------" name="adzapr" fieldtype="TABLE_COLUMN" text="Approve?" >
+      <CheckBox width="11" lstrtext="false" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="" valueChecked="Y" />
+     </TableColumn>
+     <TableColumn width="14" lstrtext="false" sqlDBName="ds" height="1" colName="adzsign" unsortable="--------" fieldId="9" sqlTabName="adz_file" tabIndex="10" unsizable="--------" unhidable="--------" unmovable="--------" name="adzsign" fieldtype="TABLE_COLUMN" text="Approve level" >
+      <ButtonEdit width="14" case="NONE" comment="&lt;^P>Qry Approval Level" invisible="--------" notNull="--------" image="zoom" height="1" action="controlp" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" imagetype="Select File" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </TableColumn>
+    </Table>
+   </Page>
+  </PageControl>
+  <Grid width="147" posX="0" posY="14" height="1" lstrcomment="false" hidden="--------" name="gr1830" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl623" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" posY="0" height="1" sizePolicy="initial" name="text6520" text="Rows" />
+   <FormField colName="cn2" fieldId="10" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="17" formfieldname="formfield0" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="11" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="25" posY="0" height="1" name="hl624" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_adz" fromTable="true" tableKey="tb320" >
+  <Link colName="adz_file.adzslip" fromTable="true" colKey="Col3327" />
+  <Link colName="adz_file.adzdesc" fromTable="true" colKey="Col3328" />
+  <Link colName="adz_file.adzauno" fromTable="true" colKey="Col3329" />
+  <Link colName="adz_file.adzconf" fromTable="true" colKey="Col3330" />
+  <Link colName="adz_file.adzprnt" fromTable="true" colKey="Col3331" />
+  <Link colName="adz_file.adzdmy6" fromTable="true" colKey="Col3332" />
+  <Link colName="adz_file.adztype" fromTable="true" colKey="Col3333" />
+  <Link colName="adz_file.adz11" fromTable="true" colKey="Col3334" />
+  <Link colName="adz_file.adzapr" fromTable="true" colKey="Col3335" />
+  <Link colName="adz_file.adzsign" fromTable="true" colKey="Col3336" />
+ </RecordView>
+</Form>
+

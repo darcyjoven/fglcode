@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8c6fba1d-0000-4000-8145-71b5de3c1568}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_atp" order="" uid="{b9487ad1-0000-4000-af8e-f0748d3cd625}" where="">
+    <RecordField colName="atp03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="atp_file.atp03" sqlTabName="atp_file" sqlType="INTEGER" table_alias_name="" uid="{569edb73-0000-4000-bded-9ef378990202}"/>
+    <RecordField colName="atp09" fieldIdRef="9" fieldType="TABLE_COLUMN" name="atp_file.atp09" sqlTabName="atp_file" sqlType="VARCHAR" table_alias_name="" uid="{4edd74a5-5531-440c-a03c-dfed95147420}"/>
+    <RecordField colName="atp10" fieldIdRef="10" fieldType="TABLE_COLUMN" name="atp_file.atp10" sqlTabName="atp_file" sqlType="VARCHAR" table_alias_name="" uid="{9172ff4d-698e-4da4-bc12-6b508827040e}"/>
+    <RecordField colName="atp04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="atp_file.atp04" sqlTabName="atp_file" sqlType="VARCHAR" table_alias_name="" uid="{210e192c-0000-4000-9c77-ae81a22a7753}"/>
+    <RecordField colName="atp05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="atp_file.atp05" sqlTabName="atp_file" sqlType="VARCHAR" table_alias_name="" uid="{03eb6bed-0000-4000-8914-2e1af93ad121}"/>
+    <RecordField colName="atp11" fieldIdRef="11" fieldType="TABLE_COLUMN" name="atp_file.atp11" sqlTabName="atp_file" sqlType="SMALLINT" table_alias_name="" uid="{bcccad81-a376-4ba8-b4b0-0aad540cb693}"/>
+    <RecordField colName="atp12" fieldIdRef="12" fieldType="TABLE_COLUMN" name="atp_file.atp12" sqlTabName="atp_file" sqlType="VARCHAR" table_alias_name="" uid="{b1080342-469f-442a-aa70-1f5787aac3a7}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e16fe6f8-0000-4000-8db3-d3aad789582d}" where="">
+    <RecordField colName="atp01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="atp_file.atp01" sqlTabName="atp_file" sqlType="VARCHAR" table_alias_name="" uid="{5a629d56-0000-4000-be25-465c823f2977}"/>
+    <RecordField colName="atp02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="atp_file.atp02" sqlTabName="atp_file" sqlType="VARCHAR" table_alias_name="" uid="{96828e5e-0000-4000-bd38-9759acf10dc9}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{0c20a634-0000-4000-b69c-fd98f3b3893d}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{4869ca48-0000-4000-a3f8-0ea362f401c8}"/>
+    <RecordField colName="atp00" fieldIdRef="8" fieldType="TABLE_COLUMN" name="atp_file.atp00" sqlTabName="atp_file" sqlType="VARCHAR" table_alias_name="" uid="{0474323c-ef73-41ed-8740-facc32cebafc}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="115" name="ggli603" spacing="normal" text="ggli603">
+    <VBox gridHeight="22" gridWidth="103" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="103" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="57" lstrcomment="false" name="gr2337" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Report #"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="atp_file.atp01" notNull="true" posX="15" posY="0" required="true" rowCount="" sqlTabName="atp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Account No"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp00" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="atp_file.atp00" notNull="true" posX="15" posY="1" required="true" rowCount="" sqlTabName="atp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Edit1" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Report Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="atp_file.atp02" posX="15" posY="2" rowCount="" sqlTabName="atp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="103" lstrcomment="false" name="s_atp" posX="0" posY="7" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="atp_file.atp03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="atp_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Ln#" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp09" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="0, 1, 2, 3, 4, 5, 6, 7" name="atp_file.atp09" posX="4" posY="0" rowCount="" sqlTabName="atp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Print code" widget="ComboBox">
+          <Item lstrtext="false" name="0" text="0"/>
+          <Item lstrtext="false" name="1" text="1"/>
+          <Item lstrtext="false" name="2" text="2"/>
+          <Item lstrtext="false" name="3" text="3"/>
+          <Item lstrtext="false" name="4" text="4"/>
+          <Item lstrtext="false" name="5" text="5"/>
+          <Item lstrtext="false" name="6" text="6"/>
+          <Item lstrtext="false" name="7" text="7"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp10" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="0, 1, 2, 3" name="atp_file.atp10" posX="18" posY="0" rowCount="" sqlTabName="atp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Source" widget="ComboBox">
+          <Item lstrtext="false" name="0" text="0"/>
+          <Item lstrtext="false" name="1" text="1"/>
+          <Item lstrtext="false" name="2" text="2"/>
+          <Item lstrtext="false" name="3" text="3"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp04" columnCount="" comment="&lt;^P&gt;Query Group No. Data" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="atp_file.atp04" notNull="" posX="29" posY="0" required="" rowCount="" sqlTabName="atp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Group Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="atp_file.atp05" posX="41" posY="0" rowCount="" sqlTabName="atp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Description" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp11" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="atp_file.atp11" posX="71" posY="0" rowCount="" sqlTabName="atp_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Spaces" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="atp12" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="0, 1, 2, 3" name="atp_file.atp12" posX="79" posY="0" rowCount="" sqlTabName="atp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Information to source" widget="ComboBox">
+          <Item lstrtext="false" name="0" text="0"/>
+          <Item lstrtext="false" name="1" text="1"/>
+          <Item lstrtext="false" name="2" text="2"/>
+          <Item lstrtext="false" name="3" text="3"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="2" gridWidth="103" lstrcomment="false" name="gr2338" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl698" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl699" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAwADMAZQBiADYAYgBlAGQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOQAxADQALQAyAGUAMQBhAGYAOQAzAGEAZAAxADIAMQB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADgANgA5AGMAYQA0ADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMwBmADgALQAwAGUAYQAzADYAMgBmADQAMAAxAGMAOAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADEANwAyAGYAZgA0AGQALQA2ADkAOABlAC0ANABkAGEANAAtAGIAYwAxADIALQA2AGIANQAwADgAOAAyADcAMAA0ADAAZQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADEAMABlADEAOQAyAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwA3ADcALQBhAGUAOAAxAGEAMgAyAGEANwA3ADUAMwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADYAOAAyADgAZQA1AGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZAAzADgALQA5ADcANQA5AGEAYwBmADEAMABkAGMAOQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGMAYwBjAGEAZAA4ADEALQBhADMANwA2AC0ANABiAGEAOAAtAGIANABiADAALQAwAGEAYQBkADUANAAwAGMAYgA2ADkAMwB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADYAOQBlAGQAYgA3ADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZABlAGQALQA5AGUAZgAzADcAOAA5ADkAMAAyADAAMgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGMAMgAwAGEANgAzADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANgA5AGMALQBmAGQAOQA4AGYAMwBiADMAOAA5ADMAZAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADQANwA0ADMAMgAzAGMALQBlAGYANwAzAC0ANAAxAGUAZAAtADgANwA0ADAALQBmAGEAYwBjADMAMgBjAGUAYgBhAGYAYwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADEAMAA4ADAAMwA0ADIALQA0ADYAOQBmAC0ANAA0ADIAYQAtAGEAYQA3ADAALQAxAGYANQA3ADgANwBhAGEAYwAzAGEANwB9QBQAAAAAAABAY4AAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGEANgAyADkAZAA1ADYALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZQAyADUALQA0ADYANQBjADgAMgAzAGYAMgA5ADcANwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADkANAA4ADcAYQBkADEALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZgA4AGUALQBmADAANwA0ADgAZAAzAGMAZAA2ADIANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADEANgBmAGUANgBmADgALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZABiADMALQBkADMAYQBhAGQANwA4ADkANQA4ADIAZAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGUAZABkADcANABhADUALQA1ADUAMwAxAC0ANAA0ADAAYwAtAGEAMAAzAGMALQBkAGYAZQBkADkANQAxADQANwA0ADIAMAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

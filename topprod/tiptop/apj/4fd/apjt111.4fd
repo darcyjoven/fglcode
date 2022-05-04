@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9bb6e196-0000-4000-9efd-47cfe9158a3d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pjc" order="" uid="{7495798a-0000-4000-897c-c151e0e438d5}" where="">
+    <RecordField colName="pjc02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pjc_file.pjc02" sqlTabName="pjc_file" sqlType="SMALLINT" table_alias_name="" uid="{936945a1-0000-4000-946b-8399eb601f09}"/>
+    <RecordField colName="pjc03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pjc_file.pjc03" sqlTabName="pjc_file" sqlType="VARCHAR" table_alias_name="" uid="{8c546cd8-0000-4000-bc16-d83925a5d441}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{538a5288-0000-4000-9e0b-d271a573d5e1}" where="">
+    <RecordField colName="pjb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pjb_file.pjb01" sqlTabName="pjb_file" sqlType="VARCHAR" table_alias_name="" uid="{64817ce6-0000-4000-b0f9-6d54004446ad}"/>
+    <RecordField colName="pja02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pja_file.pja02" sqlTabName="pja_file" sqlType="VARCHAR" table_alias_name="" uid="{6ae5ab81-0000-4000-84c7-1470c5450532}"/>
+    <RecordField colName="pjc01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pjc_file.pjc01" sqlTabName="pjc_file" sqlType="VARCHAR" table_alias_name="" uid="{e9d9c9c8-0000-4000-8884-5df7ff4ecc2f}"/>
+    <RecordField colName="pjb03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pjb_file.pjb03" sqlTabName="pjb_file" sqlType="VARCHAR" table_alias_name="" uid="{6459f581-0000-4000-8882-2f68b7e2f27f}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{852d7953-0000-4000-ab28-6434703fb07d}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="140" lstrtext="false" name="apjt111" spacing="normal" text="apjt111">
+    <VBox gridHeight="21" gridWidth="76" name="vb4" posX="10" posY="1">
+      <Folder gridHeight="10" gridWidth="76" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Basic Data">
+          <Grid gridHeight="7" gridWidth="66" lstrcomment="false" name="gr4" posX="1" posY="1">
+            <Label posX="4" posY="1" text="Project No"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjb01" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" name="pjb_file.pjb01" posX="18" posY="1" rowCount="" sqlTabName="pjb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pja02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" name="pja_file.pja02" posX="37" posY="1" rowCount="" sqlTabName="pja_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="4" posY="3" text="WBS No"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjc01" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom.png" lstrcomment="false" name="pjc_file.pjc01" notNull="true" posX="18" posY="3" rowCount="" sqlTabName="pjc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="4" posY="5" text="WBS Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjb03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="35" lstrcomment="false" name="pjb_file.pjb03" posX="18" posY="5" rowCount="" sqlTabName="pjb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="76" name="s_pjc" posX="0" posY="11" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjc02" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="pjc_file.pjc02" notNull="true" posX="0" posY="0" rowCount="" sqlTabName="pjc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Order" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjc03" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="pjc_file.pjc03" notNull="true" posX="15" posY="0" rowCount="" sqlTabName="pjc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Instruction" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="76" lstrcomment="false" name="gr6" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl4" posX="3" posY="1"/>
+        <Label posX="13" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="cn2" posX="19" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl7" posX="30" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="ManagedForm" uid="{499b5d29-30b2-4912-bc32-1be4c7d3418c}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bdb01046-1202-4921-9ff6-0ce1a1b0c9a7}" where="">
+    <RecordField colName="axa01" fieldIdRef="0" name="axa01" sqlTabName="formonly" table_alias_name="" uid="{0d03af8b-3e26-48dd-a03d-414abec5cad8}"/>
+    <RecordField colName="axa02" fieldIdRef="1" name="axa02" sqlTabName="formonly" table_alias_name="" uid="{336cbdef-30f4-431e-9361-cdcc49348697}"/>
+    <RecordField colName="aaa04" fieldIdRef="2" name="aaa04" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{e785529d-53d0-4b0f-9414-87f9dcf2139c}"/>
+    <RecordField colName="aaa05" fieldIdRef="3" name="aaa05" sqlTabName="formonly" sqlType="SMALLINT" table_alias_name="" uid="{12e67d0f-d99c-4795-b33a-56dfe439f9a5}"/>
+    <RecordField colName="aaz641" fieldIdRef="4" name="aaz641" sqlTabName="formonly" table_alias_name="" uid="{fabb1782-b733-451c-8fab-4f5d2e552f16}"/>
+    <RecordField colName="g_bgjob" fieldIdRef="5" name="g_bgjob" sqlTabName="formonly" table_alias_name="" uid="{b745d462-9607-497d-8779-fc85fc12e039}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="44" name="aglp003" text="aglp003">
+    <VBox gridHeight="11" gridWidth="44" name="vb8" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="44" name="gr2476" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="41" name="group01" posX="3" posY="0" text="INPUT">
+          <Label gridHeight="1" gridWidth="9" posX="1" posY="1" text="Group No."/>
+          <ButtonEdit action="controlp" colName="axa01" columnCount="" fieldId="0" gridHeight="1" gridWidth="14" image="zoom" name="axa01" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="14" posX="1" posY="2" text="Parent Company"/>
+          <ButtonEdit action="controlp" colName="axa02" columnCount="" fieldId="1" gridHeight="1" gridWidth="14" image="zoom" name="axa02" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+          <Label gridHeight="1" gridWidth="18" posX="1" posY="3" text="Carry forward Year"/>
+          <Edit colName="aaa04" columnCount="" fieldId="2" gridHeight="1" gridWidth="14" name="aaa04" notNull="true" posX="22" posY="3" required="true" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="6" posX="1" posY="4" text="Period"/>
+          <Edit colName="aaa05" columnCount="" fieldId="3" gridHeight="1" gridWidth="14" name="aaa05" noEntry="true" notNull="true" posX="22" posY="4" required="true" rowCount="" sqlTabName="formonly" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="8" posX="1" posY="5" text="Book No."/>
+          <Edit colName="aaz641" columnCount="" fieldId="4" gridHeight="1" gridWidth="14" name="aaz641" noEntry="true" posX="22" posY="5" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="44" name="gr2477" posX="0" posY="8">
+        <CheckBox colName="g_bgjob" columnCount="" fieldId="5" gridHeight="1" gridWidth="40" name="g_bgjob" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="formonly" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiAGQAYgAwADEAMAA0ADYALQAxADIAMAAyAC0ANAA5ADIAMQAtADkAZgBmADYALQAwAGMAZQAxAGEAMQBiADAAYwA5AGEANwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGEAYgBiADEANwA4ADIALQBiADcAMwAzAC0ANAA1ADEAYwAtADgAZgBhAGIALQA0AGYANQBkADIAZQA1ADUAMgBmADEANgB9QBQAAAAAAABAYEAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADcANAA1AGQANAA2ADIALQA5ADYAMAA3AC0ANAA5ADcAZAAtADgANwA3ADkALQBmAGMAOAA1AGYAYwAxADIAZQAwADMAOQB9QBQAAAAAAABAY2AAAAAAAAAAAAAAAAAAAQAAAEwAewAxADIAZQA2ADcAZAAwAGYALQBkADkAOQBjAC0ANAA3ADkANQAtAGIAMwAzAGEALQA1ADYAZABmAGUANAAzADkAZgA5AGEANQB9QBQAAAAAAABAWkAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADMANgBjAGIAZABlAGYALQAzADAAZgA0AC0ANAAzADEAZQAtADkAMwA2ADEALQBjAGQAYwBjADQAOQAzADQAOAA2ADkANwB9QBQAAAAAAABAS4AAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGQAMAAzAGEAZgA4AGIALQAzAGUAMgA2AC0ANAA4AGQAZAAtAGEAMAAzAGQALQA0ADEANABhAGIAZQBjADUAYwBhAGQAOAB9QBQAAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADcAOAA1ADUAMgA5AGQALQA1ADMAZAAwAC0ANABiADAAZgAtADkANAAxADQALQA4ADcAZgA5AGQAYwBmADIAMQAzADkAYwB9QBQAAAAAAABAVAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

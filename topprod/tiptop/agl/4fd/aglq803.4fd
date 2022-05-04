@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{73387b5b-0000-4000-8801-64ade0230942}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aed" order="" uid="{8d846f8d-0000-4000-8d93-def473156f83}" where="">
+    <RecordField colName="" fieldIdRef="2" name="seq" sqlTabName="" table_alias_name="" uid="{22283a52-0000-4000-aba0-3acd756bb83e}"/>
+    <RecordField colName="aed05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aed_file.aed05" precisionDecimal="20" scaleDecimal="6" sqlTabName="aed_file" sqlType="DECIMAL" table_alias_name="" uid="{f65399d0-0000-4000-b8d2-d1bd52e610cc}"/>
+    <RecordField colName="aed06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="aed_file.aed06" precisionDecimal="20" scaleDecimal="6" sqlTabName="aed_file" sqlType="DECIMAL" table_alias_name="" uid="{f8f7f625-0000-4000-8470-bee3107656b7}"/>
+    <RecordField colName="" fieldIdRef="5" name="summ" sqlTabName="" table_alias_name="" uid="{aaaa67ed-0000-4000-9f8b-9d59d2441b68}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{05d5b6c0-0000-4000-91bf-10a057a5a749}" where="">
+    <RecordField colName="aed00" fieldIdRef="10" fieldType="TABLE_COLUMN" name="aed_file.aed00" sqlTabName="aed_file" sqlType="VARCHAR" table_alias_name="" uid="{e6cc57b2-0000-4000-a079-600578193cf3}"/>
+    <RecordField colName="aed01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aed_file.aed01" sqlTabName="aed_file" sqlType="VARCHAR" table_alias_name="" uid="{f33a77d1-0000-4000-8dc4-bd8dad5c834f}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="aag02" sqlTabName="" table_alias_name="" uid="{82e7eeaa-0000-4000-9766-a4da884e44c5}"/>
+    <RecordField colName="aed03" fieldIdRef="9" fieldType="TABLE_COLUMN" name="aed_file.aed03" sqlTabName="aed_file" sqlType="SMALLINT" table_alias_name="" uid="{874a40c4-0000-4000-b7ce-dc133805c45e}"/>
+    <RecordField colName="aed011" fieldIdRef="11" fieldType="TABLE_COLUMN" name="aed_file.aed011" sqlTabName="aed_file" sqlType="VARCHAR" table_alias_name="" uid="{f386ae23-0000-4000-a216-9e4e07c01772}"/>
+    <RecordField colName="aed012" fieldIdRef="12" fieldType="TABLE_COLUMN" name="aed_file.aed012" sqlTabName="aed_file" sqlType="VARCHAR" table_alias_name="" uid="{a47418c6-0000-4000-8a1b-d0f5ddfd2649}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="ahe02" sqlTabName="" table_alias_name="" uid="{c8dd2329-0000-4000-9e4e-8d32bb5b7d49}"/>
+    <RecordField colName="aed02" fieldIdRef="14" fieldType="TABLE_COLUMN" name="aed_file.aed02" sqlTabName="aed_file" sqlType="VARCHAR" table_alias_name="" uid="{c8f206c5-0000-4000-85ea-04d341ab8c9c}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="aee04" sqlTabName="" table_alias_name="" uid="{af2ac68b-0000-4000-a7cc-cc3329f54e57}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{0f39056c-0000-4000-a488-b326c973a822}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{eeda20d5-0000-4000-9b5c-a2db95813963}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="134" name="aglq803" spacing="normal" text="aglq803">
+    <VBox gridHeight="22" gridWidth="130" name="vb5" posX="1" posY="0">
+      <Folder gridHeight="6" gridWidth="130" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <HBox gridHeight="4" gridWidth="129" name="hb5" posX="1" posY="0">
+            <Grid gridHeight="4" gridWidth="72" lstrcomment="false" name="gr2554" posX="2" posY="0">
+              <Label posX="1" posY="0" text="Book No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aed00" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="C:\Program Files\FourJs\gdc\pics\zoom.png" lstrcomment="false" name="aed_file.aed00" notNull="true" posX="22" posY="0" rowCount="" sqlTabName="aed_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="1" text="Account #"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aed01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="aed_file.aed01" posX="22" posY="1" rowCount="" sqlTabName="aed_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Account Name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="49" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Year"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aed03" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="aed_file.aed03" posX="22" posY="3" rowCount="" sqlTabName="aed_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            </Grid>
+            <Grid gridHeight="4" gridWidth="53" lstrcomment="false" name="gr2555" posX="74" posY="0">
+              <Label posX="1" posY="0" text="Trans.Code"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aed011" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="aed_file.aed011" posX="22" posY="0" rowCount="" sqlTabName="aed_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="1" text="Transaction Type"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aed012" columnCount="" comment="&lt;^P&gt;Qry Transaction Type" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="aed_file.aed012" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="aed_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="ahe02" noEntry="true" posX="34" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Transaction Value"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aed02" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="aed_file.aed02" posX="22" posY="2" rowCount="" sqlTabName="aed_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Transaction Desc"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="29" lstrcomment="false" lstrtitle="false" name="aee04" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </HBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="130" lstrcomment="false" name="s_aed" posX="0" posY="7" totalRows="10" unsortableColumns="true">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="seq" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Period" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aed05" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="aed_file.aed05" noEntry="true" posX="7" posY="0" precisionDecimal="20" rowCount="" scaleDecimal="6" sqlTabName="aed_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Debit Transaction Amt" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aed06" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="aed_file.aed06" noEntry="true" posX="29" posY="0" precisionDecimal="20" rowCount="" scaleDecimal="6" sqlTabName="aed_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Credit Transaction Amt" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="summ" noEntry="true" posX="52" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Balance" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="130" lstrcomment="false" name="gr2556" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl815" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl816" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADQANwA0ADEAOABjADYALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYQAxAGIALQBkADAAZgA1AGQAZABmAGQAMgA2ADQAOQB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGYAMgBhAGMANgA4AGIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANwBjAGMALQBjAGMAMwAzADIAOQBmADUANABlADUANwB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGEAYQBhADYANwBlAGQALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZgA4AGIALQA5AGQANQA5AGQAMgA0ADQAMQBiADYAOAB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADMAOAA2AGEAZQAyADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMgAxADYALQA5AGUANABlADAANwBjADAAMQA3ADcAMgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGYAMwA5ADAANQA2AGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANAA4ADgALQBiADMAMgA2AGMAOQA3ADMAYQA4ADIAMgB9QCQAAAAAAABAbWAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGQAOAA0ADYAZgA4AGQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZAA5ADMALQBkAGUAZgA0ADcAMwAxADUANgBmADgAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADIAZQA3AGUAZQBhAGEALQAwADAAMAAwAC0ANAAwADAAMAAtADkANwA2ADYALQBhADQAZABhADgAOAA0AGUANAA0AGMANQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADgAZgA3AGYANgAyADUALQAwADAAMAAwAC0ANAAwADAAMAAtADgANAA3ADAALQBiAGUAZQAzADEAMAA3ADYANQA2AGIANwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADYANQAzADkAOQBkADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOABkADIALQBkADEAYgBkADUAMgBlADYAMQAwAGMAYwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADMAMwBhADcANwBkADEALQAwADAAMAAwAC0ANAAwADAAMAAtADgAZABjADQALQBiAGQAOABkAGEAZAA1AGMAOAAzADQAZgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADgAZgAyADAANgBjADUALQAwADAAMAAwAC0ANAAwADAAMAAtADgANQBlAGEALQAwADQAZAAzADQAMQBhAGIAOABjADkAYwB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewBlADYAYwBjADUANwBiADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMAA3ADkALQA2ADAAMAA1ADcAOAAxADkAMwBjAGYAMwB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADcANABhADQAMABjADQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANwBjAGUALQBkAGMAMQAzADMAOAAwADUAYwA0ADUAZQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADUAZAA1AGIANgBjADAALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMQBiAGYALQAxADAAYQAwADUANwBhADUAYQA3ADQAOQB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADgAZABkADIAMwAyADkALQAwADAAMAAwAC0ANAAwADAAMAAtADkAZQA0AGUALQA4AGQAMwAyAGIAYgA1AGIANwBkADQAOQB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewBlAGUAZABhADIAMABkADUALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYgA1AGMALQBhADIAZABiADkANQA4ADEAMwA5ADYAMwB9QCQAAAAAAABAcBAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADIAMgA4ADMAYQA1ADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYgBhADAALQAzAGEAYwBkADcANQA2AGIAYgA4ADMAZQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

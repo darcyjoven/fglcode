@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="ManagedForm" uid="{6e5734a4-9d46-4662-b9f4-dfabda82c6fe}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7606f095-19a7-422b-acf6-23d3683b5035}" where="">
+    <RecordField colName="" fieldIdRef="1" name="b_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{064aa485-e6db-412b-9067-840e98b8d163}"/>
+    <RecordField colName="" fieldIdRef="2" name="e_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{1e295eb6-b522-40e0-a1e2-729bef78ee32}"/>
+    <RecordField colName="" fieldIdRef="3" name="type" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{adf369f0-6db5-43ec-9059-636515ae759c}"/>
+    <RecordField colName="" fieldIdRef="4" name="l_str" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{cf870c8f-d026-4b48-87d9-d307ab883d71}"/>
+    <RecordField colName="" fieldIdRef="5" name="hrat03" sqlTabName="" table_alias_name="" uid="{1aa28def-77ae-48d8-b918-8ffc9e4e093f}"/>
+    <RecordField colName="" fieldIdRef="6" name="hrat03_name" sqlTabName="" table_alias_name="" uid="{58707b0f-946f-4957-9738-7232fe07a69a}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Record1" order="" uid="{d6510aa0-6f67-461b-987e-4d2b06d83e37}" where=""/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_hrck" order="" uid="{256a18c9-6995-47c0-b76b-cc45336a12b7}" where=""/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_hrat" order="" uid="{b3da80e5-b041-4e23-9df3-70c3eed53b3b}" where=""/>
+  <Form gridHeight="10" gridWidth="80" name="Form" text="Form">
+    <VBox gridHeight="9" gridWidth="54" name="VBox3" posX="5" posY="0">
+      <Folder gridHeight="7" gridWidth="54" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Page1">
+          <Grid gridHeight="5" gridWidth="50" name="Grid3" posX="0" posY="0">
+            <Label posX="2" posY="1" text="b_date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="14" name="b_date" notNull="true" posX="9" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" title="DateEdit1" widget="DateEdit"/>
+            <Label posX="24" posY="1" text="e_date"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="12" name="e_date" notNull="true" posX="32" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" title="DateEdit1" widget="DateEdit"/>
+            <Label posX="2" posY="2" text="hrat03"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="14" image="zoom" name="hrat03" posX="9" posY="2" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="20" name="hrat03_name" posX="24" posY="2" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Edit1" widget="Edit"/>
+            <Label posX="2" posY="3" text="type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="14" items="1, 3, 2" name="type" notNull="true" posX="9" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="DateEdit1" widget="ComboBox">
+              <Item lstrtext="true" name="1" text="1"/>
+              <Item lstrtext="true" name="2" text="2"/>
+              <Item lstrtext="true" name="3" text="3"/>
+            </ComboBox>
+            <Label posX="24" posY="3" text="l_str"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="12" image="zoom" name="l_str" posX="32" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="DateEdit1" widget="ButtonEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhAGQAZgAzADYAOQBmADAALQA2AGQAYgA1AC0ANAAzAGUAYwAtADkAMAA1ADkALQA2ADMANgA1ADEANQBhAGUANwA1ADkAYwB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADMAZABhADgAMABlADUALQBiADAANAAxAC0ANABlADIAMwAtADkAZABmADMALQA3ADAAYwAzAGUAZQBkADUAMwBiADMAYgB9QHPwAAAAAADAKAAAAAAAAD9QYk3S8an8AQAAAEwAewA1ADgANwAwADcAYgAwAGYALQA5ADQANgBmAC0ANAA5ADUANwAtADkANwAzADgALQA3ADIAMwAyAGYAZQAwADcAYQA2ADkAYQB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADYAMAA2AGYAMAA5ADUALQAxADkAYQA3AC0ANAAyADIAYgAtAGEAYwBmADYALQAyADMAZAAzADYAOAAzAGIANQAwADMANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGEAYQAyADgAZABlAGYALQA3ADcAYQBlAC0ANAA4AGQAOAAtAGIAOQAxADgALQA4AGYAZgBjADkAZQA0AGUAMAA5ADMAZgB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAyADUANgBhADEAOABjADkALQA2ADkAOQA1AC0ANAA3AGMAMAAtAGIANwA2AGIALQBjAGMANAA1ADMAMwA2AGEAMQAyAGIANwB9QF3AAAAAAADAIgAAAAAAAD9gYk3S8an8AQAAAEwAewBkADYANQAxADAAYQBhADAALQA2AGYANgA3AC0ANAA2ADEAYgAtADkAOAA3AGUALQA0AGQAMgBiADAANgBkADgAMwBlADMANwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADYANABhAGEANAA4ADUALQBlADYAZABiAC0ANAAxADIAYgAtADkAMAA2ADcALQA4ADQAMABlADkAOABiADgAZAAxADYAMwB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGUAMgA5ADUAZQBiADYALQBiADUAMgAyAC0ANAAwAGUAMAAtAGEAMQBlADIALQA3ADIAOQBiAGUAZgA3ADgAZQBlADMAMgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYAOAA3ADAAYwA4AGYALQBkADAAMgA2AC0ANABiADQAOAAtADgANwBkADkALQBkADMAMAA3AGEAYgA4ADgAMwBkADcAMQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

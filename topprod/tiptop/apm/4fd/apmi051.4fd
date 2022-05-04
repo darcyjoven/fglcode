@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2edbb9c0-0000-4000-8528-57e79e99d0ac}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_pnw" order="" uid="{18384f9a-0000-4000-ae93-609326b88bdc}" where="">
+    <RecordField colName="pnw02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pnw_file.pnw02" sqlTabName="pnw_file" sqlType="VARCHAR" table_alias_name="" uid="{ec626438-0000-4000-aa8d-17983aeee0bf}"/>
+    <RecordField colName="" fieldIdRef="6" name="azp02_1" sqlTabName="" table_alias_name="" uid="{216744e6-0000-4000-a40a-95f094a5709e}"/>
+    <RecordField colName="pnw03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pnw_file.pnw03" sqlTabName="pnw_file" sqlType="VARCHAR" table_alias_name="" uid="{2116628a-0000-4000-a522-eb972a009a2d}"/>
+    <RecordField colName="" fieldIdRef="8" name="azp02_2" sqlTabName="" table_alias_name="" uid="{f1136027-0000-4000-9321-c730add24cf8}"/>
+    <RecordField colName="pnw04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="pnw_file.pnw04" sqlTabName="pnw_file" sqlType="VARCHAR" table_alias_name="" uid="{5ac8155b-0000-4000-ad8a-a32d0b9f5bc7}"/>
+    <RecordField colName="pnw05" fieldIdRef="10" fieldType="TABLE_COLUMN" name="pnw_file.pnw05" sqlTabName="pnw_file" sqlType="VARCHAR" table_alias_name="" uid="{932680e2-0000-4000-9003-caf8ed8a4d89}"/>
+    <RecordField colName="pnw06" fieldIdRef="11" fieldType="TABLE_COLUMN" name="pnw_file.pnw06" sqlTabName="pnw_file" sqlType="SMALLINT" table_alias_name="" uid="{633adf10-0000-4000-b56e-159c398260ba}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{cf7d905b-0000-4000-b0ce-53e9910dcb4c}" where="">
+    <RecordField colName="pnw01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pnw_file.pnw01" sqlTabName="pnw_file" sqlType="VARCHAR" table_alias_name="" uid="{40452bcf-0000-4000-b368-0822d2742e10}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="geu02" sqlTabName="" table_alias_name="" uid="{29c86d97-0000-4000-89aa-6d1f96a1189a}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{33c0557b-0000-4000-9b2b-577ab239d6ad}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{61d9fd5c-0000-4000-afb6-a3b3b9897424}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="106" name="apmi051" spacing="normal" text="apmi051">
+    <VBox gridHeight="21" gridWidth="103" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="103" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="4" gridWidth="47" name="VBox2" posX="0" posY="0">
+            <Grid gridHeight="2" gridWidth="47" lstrcomment="false" name="gr4814" posX="0" posY="1">
+              <Label posX="1" posY="0" text="Purchase Center"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pnw01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pnw_file.pnw01" notNull="true" posX="23" posY="0" required="true" rowCount="" sqlTabName="pnw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="geu02" noEntry="true" posX="35" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="103" lstrcomment="false" name="s_pnw" posX="0" posY="6" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pnw02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="pnw_file.pnw02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="pnw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Transfer-out Plant" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="azp02_1" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Plant Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pnw03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom" lstrcomment="false" lstrtitle="false" name="pnw_file.pnw03" notNull="true" posX="32" posY="0" required="true" rowCount="" sqlTabName="pnw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Transfer-in Plant" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="azp02_2" noEntry="true" posX="51" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Plant Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pnw04" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="pnw_file.pnw04" notNull="true" posX="63" posY="0" required="true" rowCount="" sqlTabName="pnw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="P/O Note" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pnw05" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="pnw_file.pnw05" notNull="true" posX="73" posY="0" required="true" rowCount="" sqlTabName="pnw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Transfer Flow" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pnw06" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="pnw_file.pnw06" notNull="true" posX="88" posY="0" required="true" rowCount="" sqlTabName="pnw_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Days" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="103" lstrcomment="false" name="gr4815" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1543" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1544" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

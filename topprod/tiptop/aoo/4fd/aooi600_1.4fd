@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{be290424-0000-4000-be47-b85726e47cfc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gev" order="" uid="{acb00b07-0000-4000-921c-c15020d7d43f}" where="">
+    <RecordField colName="gev01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gev_file.gev01" sqlTabName="gev_file" sqlType="VARCHAR" table_alias_name="" uid="{34d0d05e-0000-4000-9c01-ab9413d57183}"/>
+    <RecordField colName="gev02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gev_file.gev02" sqlTabName="gev_file" sqlType="VARCHAR" table_alias_name="" uid="{ccefb51f-0000-4000-bb9c-64b3201d0815}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="73" name="aooi600_1" spacing="normal" text="aooi600_1">
+    <Folder gridHeight="14" gridWidth="70" lstrcomment="false" name="pc859" posX="1" posY="0">
+      <Page lstrtext="false" name="page01" text="Common Data">
+        <Table gridHeight="12" gridWidth="51" lstrcomment="false" name="s_gev" posX="0" posY="0" totalRows="10">
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gev01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" items="Basic Data, Item, BOM, ECN, Customer, Vendor, Account, Price" lstrcomment="false" lstrtitle="false" name="gev_file.gev01" notNull="true" posX="0" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="gev_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Data Type" widget="ComboBox">
+            <Item lstrtext="false" name="0" text="Basic Data"/>
+            <Item lstrtext="false" name="1" text="Item"/>
+            <Item lstrtext="false" name="2" text="BOM"/>
+            <Item lstrtext="false" name="3" text="ECN"/>
+            <Item lstrtext="false" name="4" text="Customer"/>
+            <Item lstrtext="false" name="5" text="Vendor"/>
+            <Item lstrtext="false" name="6" text="Account"/>
+            <Item lstrtext="false" name="7" text="Price"/>
+          </ComboBox>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gev02" columnCount="" comment="KEY Field, No Blank/Repeated!, &lt;^P&gt;Qry Logestic" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="gev_file.gev02" notNull="true" posX="17" posY="0" required="true" rowCount="" sqlTabName="gev_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Logestic" widget="ButtonEdit"/>
+        </Table>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

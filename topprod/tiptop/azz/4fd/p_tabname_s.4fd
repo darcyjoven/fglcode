@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3687a868-0000-4000-9052-cf5b48115747}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5ba50f91-0000-4000-8380-c2b69308ff2b}" where="">
+    <RecordField colName="gat01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gat_file.gat01" sqlTabName="gat_file" sqlType="VARCHAR" table_alias_name="" uid="{e39422f5-0000-4000-8977-440a26dbc2ca}"/>
+    <RecordField colName="gat03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gat_file.gat03" sqlTabName="gat_file" sqlType="VARCHAR" table_alias_name="" uid="{c068446d-0000-4000-b114-03c799abbd1a}"/>
+    <RecordField colName="gat06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gat_file.gat06" sqlTabName="gat_file" sqlType="VARCHAR" table_alias_name="" uid="{8cdb5539-0000-4000-b6c8-6da2128c23ad}"/>
+    <RecordField colName="gat07" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gat_file.gat07" sqlTabName="gat_file" sqlType="VARCHAR" table_alias_name="" uid="{1487a288-0000-4000-8265-bf1ec38a6bf6}"/>
+  </Record>
+  <Form gridHeight="10" gridWidth="48" name="p_tabname_s" spacing="normal" text="p_tabname_s">
+    <Grid gridHeight="8" gridWidth="47" lstrcomment="false" name="gr3292" posX="0" posY="0">
+      <Group gridHeight="7" gridWidth="46" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+        <Label posX="1" posY="1" text="Table ID"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gat01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gat_file.gat01" noEntry="true" posX="25" posY="1" rowCount="" sqlTabName="gat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Table Description"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gat03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gat_file.gat03" noEntry="true" posX="25" posY="2" rowCount="" sqlTabName="gat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="3" text="          "/>
+        <Label posX="1" posY="4" text="Table Belong Module ID"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gat06" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="" lstrcomment="false" lstrtitle="false" name="gat_file.gat06" notNull="true" posX="25" posY="4" queryEditable="true" required="true" rowCount="" sqlTabName="gat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox"/>
+        <Label posX="1" posY="5" text="Table Been Using As"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gat07" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Parameter File, Master File, Tranaction File, Status File, Basis File, System File" lstrcomment="false" lstrtitle="false" name="gat_file.gat07" notNull="true" posX="25" posY="5" queryEditable="true" required="true" rowCount="" sqlTabName="gat_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="" name="P" text="Parameter File"/>
+          <Item lstrtext="" name="M" text="Master File"/>
+          <Item lstrtext="" name="T" text="Tranaction File"/>
+          <Item lstrtext="" name="S" text="Status File"/>
+          <Item lstrtext="" name="B" text="Basis File"/>
+          <Item lstrtext="" name="Z" text="System File"/>
+        </ComboBox>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

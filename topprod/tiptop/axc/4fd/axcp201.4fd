@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{869ecf71-442e-42d7-a32b-8d8068ce6f07}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="cfb_file" name="Record1" order="" uid="{83c5e333-dc09-4290-870e-e35d5e2f4de0}" where="">
+    <RecordField colName="cfb07" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cfb_file.cfb07" sqlTabName="cfb_file" sqlType="VARCHAR" table_alias_name="" uid="{cb8b57a0-9063-4a46-9cef-9b70408f8f31}" uniqueQueryKey="false"/>
+    <RecordField colName="cfb11" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cfb_file.cfb11" sqlTabName="cfb_file" sqlType="VARCHAR" table_alias_name="" uid="{b3e359ba-6b69-486f-808d-baeeb83150fe}" uniqueQueryKey="false"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e145236c-7223-4c57-9a16-027829823eec}" where="">
+    <RecordField colName="" fieldIdRef="3" name="yy" sqlTabName="" table_alias_name="" uid="{157edbfe-d39b-4535-9668-da1cf01d793c}"/>
+    <RecordField colName="" fieldIdRef="4" name="mm" sqlTabName="" table_alias_name="" uid="{c0299d67-a5af-4214-9c86-4f51862ca5d7}"/>
+    <RecordField colName="" defaultValue="N" fieldIdRef="5" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{039db3a2-35f7-4f59-a010-df4d90582085}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="46" name="Form" text="Form">
+    <Folder gridHeight="13" gridWidth="43" name="Folder1" posX="2" posY="0">
+      <Page name="Page01" text="Main">
+        <VBox gridHeight="12" gridWidth="42" name="VBox1" posX="0" posY="0">
+          <Group gridHeight="4" gridWidth="42" name="Group01" posX="0" posY="1" text="QBE">
+            <Grid gridHeight="2" gridWidth="38" name="ds1" posX="1" posY="1">
+              <Label gridHeight="1" gridWidth="7" name="cfb07" posX="1" posY="0" text="cfb07"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cfb07" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" image="zoom.png" name="cfb_file.cfb07" posX="9" posY="0" rowCount="" scroll="true" sqlTabName="cfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="cfb07" widget="ButtonEdit"/>
+              <Label gridHeight="1" gridWidth="7" name="cfb11" posX="1" posY="1" text="cfb11"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cfb11" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" image="zoom.png" name="cfb_file.cfb11" posX="9" posY="1" rowCount="" scroll="true" sqlTabName="cfb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="cfb11" widget="ButtonEdit"/>
+            </Grid>
+          </Group>
+          <Group gridHeight="4" gridWidth="42" name="Group1" posX="0" posY="5" text="Group1">
+            <Grid gridHeight="2" gridWidth="22" name="Grid1" posX="1" posY="1">
+              <Label gridHeight="1" gridWidth="7" name="yy" posX="1" posY="0" text="yy"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="10" name="yy" notNull="true" posX="9" posY="0" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Edit1" widget="Edit"/>
+              <Label gridHeight="1" gridWidth="7" name="mm" posX="1" posY="1" text="mm"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="10" name="mm" notNull="true" posX="9" posY="1" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Edit2" widget="Edit"/>
+            </Grid>
+          </Group>
+          <Grid gridHeight="2" gridWidth="42" name="Grid2" posX="0" posY="9">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="N" fieldId="5" gridHeight="1" gridWidth="32" name="g_bgjob" notNull="true" posX="1" posY="0" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" text="CheckBox1" title="CheckBox1" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA4ADMAYwA1AGUAMwAzADMALQBkAGMAMAA5AC0ANAAyADkAMAAtADgANwAwAGUALQBlADMANQBkADUAZQAyAGYANABkAGUAMAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADMAZQAzADUAOQBiAGEALQA2AGIANgA5AC0ANAA4ADYAZgAtADgAMAA4AGQALQBiAGEAZQBlAGIAOAAzADEANQAwAGYAZQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGIAOABiADUANwBhADAALQA5ADAANgAzAC0ANABhADQANgAtADkAYwBlAGYALQA5AGIANwAwADQAMAA4AGYAOABmADMAMQB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADUANwBlAGQAYgBmAGUALQBkADMAOQBiAC0ANAA1ADMANQAtADkANgA2ADgALQBkAGEAMQBjAGYAMAAxAGQANwA5ADMAYwB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADAAMgA5ADkAZAA2ADcALQBhADUAYQBmAC0ANAAyADEANAAtADkAYwA4ADYALQA0AGYANQAxADgANgAyAGMAYQA1AGQANwB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADEANAA1ADIAMwA2AGMALQA3ADIAMgAzAC0ANABjADUANwAtADkAYQAxADYALQAwADIANwA4ADIAOQA4ADIAMwBlAGUAYwB9QDQAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADMAOQBkAGIAMwBhADIALQAzADUAZgA3AC0ANABmADUAOQAtAGEAMAAxADAALQBkAGYANABkADkAMAA1ADgAMgAwADgANQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

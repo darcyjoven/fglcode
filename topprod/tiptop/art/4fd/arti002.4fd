@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2a1a3af0-f5e4-4cd7-86ac-8a092639d1f9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rzb" order="" uid="{5d39f0d6-db57-4ef1-9250-f52f7968c0cf}" where="">
+    <RecordField colName="rzb02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="rzb_file.rzb02" sqlTabName="rzb_file" sqlType="VARCHAR" table_alias_name="" uid="{85daecd5-7144-490a-ad37-7414ad739b96}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="azw08" sqlTabName="" table_alias_name="" uid="{d5a2ae48-3a7c-4ee8-9efb-497535843c6d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8224e137-b1ee-419c-a6af-9c3ef6480b3f}" where="">
+    <RecordField colName="rza03" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rza_file.rza03" sqlTabName="rza_file" sqlType="VARCHAR" table_alias_name="" uid="{eb2c153f-846d-46cd-a6d8-1263364102da}"/>
+    <RecordField colName="rza04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rza_file.rza04" sqlTabName="rza_file" sqlType="VARCHAR" table_alias_name="" uid="{56ffd730-d7b7-4750-8c27-356b5f77d832}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="rza04_desc" sqlTabName="" table_alias_name="" uid="{3dc83822-a50c-4164-a93a-993cfdbb4f0b}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{97bf634f-a8c9-4bc3-8d40-d31e08f855bc}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{5b21c5b0-7f9e-4ffb-b6c7-055bad3e87a6}"/>
+    <RecordField colName="rza01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rza_file.rza01" sqlTabName="rza_file" sqlType="VARCHAR" table_alias_name="" uid="{c6ac018e-6d39-48f1-8c7c-9bb4445f1042}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="156" name="Form2" text="arti002">
+    <VBox gridHeight="19" gridWidth="100" name="VBox1" posX="1" posY="1">
+      <Folder gridHeight="8" gridWidth="100" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Grid gridHeight="7" gridWidth="98" lstrcomment="false" name="gr1" posX="0" posY="0">
+            <Label posX="2" posY="1" text="rza01"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rza01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom.png" name="rza_file.rza01" notNull="true" posX="9" posY="1" required="true" rowCount="" sqlTabName="rza_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            <Label posX="2" posY="2" text="rza03"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rza03" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" items="rza03_1, rza03_2" lstrcomment="false" name="rza_file.rza03" noEntry="false" notNull="false" posX="9" posY="2" required="false" rowCount="" sqlTabName="rza_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="rza03_1"/>
+              <Item lstrtext="false" name="2" text="rza03_2"/>
+            </ComboBox>
+            <Label posX="2" posY="3" text="rza04"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rza04" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom.png" lstrcomment="false" name="rza_file.rza04" notNull="false" posX="9" posY="3" required="false" rowCount="" sqlTabName="rza_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" name="rza04_desc" noEntry="true" posX="32" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="6" gridWidth="100" name="s_rzb" posX="0" posY="9" totalRows="5">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rzb02" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom.png" lstrcomment="false" lstrtitle="false" name="rzb_file.rzb02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="rzb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="rzb02" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" name="azw08" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="azw08" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="3" gridWidth="100" lstrcomment="false" name="gr5384" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl71" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl72" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlAGIAMgBjADEANQAzAGYALQA4ADQANgBkAC0ANAA2AGMAZAAtAGEANgBkADgALQAxADIANgAzADMANgA0ADEAMAAyAGQAYQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGQAMwA5AGYAMABkADYALQBkAGIANQA3AC0ANABlAGYAMQAtADkAMgA1ADAALQBmADUAMgBmADcAOQA2ADgAYwAwAGMAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADYAYQBjADAAMQA4AGUALQA2AGQAMwA5AC0ANAA4AGYAMQAtADgAYwA3AGMALQA5AGIAYgA0ADQANAA1AGYAMQAwADQAMgB9QBQAAAAAAABAYMAAAAAAAD9ok3S8an76AQAAAEwAewA5ADcAYgBmADYAMwA0AGYALQBhADgAYwA5AC0ANABiAGMAMwAtADgAZAA0ADAALQBkADMAMQBlADAAOABmADgANQA1AGIAYwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGQAYwA4ADMAOAAyADIALQBhADUAMABjAC0ANAAxADYANAAtAGEAOQAzAGEALQA5ADkAMwBjAGYAZABiAGIANABmADAAYgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADUAYQAyAGEAZQA0ADgALQAzAGEANwBjAC0ANABlAGUAOAAtADkAZQBmAGIALQA0ADkANwA1ADMANQA4ADQAMwBjADYAZAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADUAZABhAGUAYwBkADUALQA3ADEANAA0AC0ANAA5ADAAYQAtAGEAZAAzADcALQA3ADQAMQA0AGEAZAA3ADMAOQBiADkANgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADYAZgBmAGQANwAzADAALQBkADcAYgA3AC0ANAA3ADUAMAAtADgAYwAyADcALQAzADUANgBiADUAZgA3ADcAZAA4ADMAMgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA1AGIAMgAxAGMANQBiADAALQA3AGYAOQBlAC0ANABmAGYAYgAtAGIANgBjADcALQAwADUANQBiAGEAZAAzAGUAOAA3AGEANgB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADIAMgA0AGUAMQAzADcALQBiADEAZQBlAC0ANAAxADkAYwAtAGEANgBhAGYALQA5AGMAMwBlAGYANgA0ADgAMABiADMAZgB9AAAAAAAAAAAAAAAAAAAAAD9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

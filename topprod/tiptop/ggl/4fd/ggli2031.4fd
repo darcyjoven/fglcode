@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e54b1bad-58d9-430e-a9e5-c1525cb9c58e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ast" order="" uid="{fc1a9395-eea5-4782-8262-28baa09c77c7}" where="">
+    <RecordField colName="ast03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ast_file.ast03" sqlTabName="ast_file" sqlType="VARCHAR" table_alias_name="" uid="{0fa4a78e-06db-4263-8ad6-acc776fad952}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="aag02" sqlTabName="" table_alias_name="" uid="{8c63a23d-3d67-4b43-a8b4-8a66ed48d50e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{27b41f0c-64ab-47f2-83d6-cfcd70119f04}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="asq01" sqlTabName="" table_alias_name="" uid="{371e2315-ff6f-4b96-b563-97682b6159cb}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{cd5a2773-7a76-4d5c-aa11-b97c3f9879b3}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{01e3fdcb-51cc-4a7c-afd5-80549378a01d}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="57" name="ggli2031" spacing="normal" text="ggli2031">
+    <VBox gridHeight="21" gridWidth="55" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="4" gridWidth="55" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="QBE">
+          <Grid gridHeight="2" gridWidth="42" lstrcomment="false" name="gr989" posX="0" posY="0">
+            <Label posX="2" posY="0" text="Source Account"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Query Account No." fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="asq01" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Group gridHeight="13" gridWidth="55" lstrcomment="false" lstrtext="false" name="gb1884" posX="0" posY="5">
+        <ScrollGrid gridHeight="11" gridWidth="53" lstrcomment="false" name="gr2621" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="24" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="Source Acc."/>
+          <Label gridHeight="1" gridWidth="24" lstrcomment="false" lstrtext="false" name="dummy02" posX="28" posY="1" text="Acc. Descript"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ast03" columnCount="1" comment="&lt;^P&gt; Query Account No." fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom" lstrcomment="false" lstrtitle="false" name="ast_file.ast03" posX="1" posY="2" repeat="true" rowCount="8" sqlTabName="ast_file" sqlType="VARCHAR" stepX="28" stepY="0" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="1" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="28" posY="2" repeat="true" rowCount="8" sqlTabName="" sqlType="CHAR" stepX="28" stepY="0" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </ScrollGrid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="55" lstrcomment="false" name="gr2404" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA4AGMANgAzAGEAMgAzAGQALQAzAGQANgA3AC0ANABiADQAMwAtAGEAOABiADQALQA4AGEANgA2AGUAZAA0ADgAZAA1ADAAZQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADEAZQAzAGYAZABjAGIALQA1ADEAYwBjAC0ANABhADcAYwAtAGEAZgBkADUALQA4ADAANQA0ADkAMwA3ADgAYQAwADEAZAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADcAYgA0ADEAZgAwAGMALQA2ADQAYQBiAC0ANAA3AGYAMgAtADgAMwBkADYALQBjAGYAYwBkADcAMAAxADEAOQBmADAANAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGQANQBhADIANwA3ADMALQA3AGEANwA2AC0ANABkADUAYwAtAGEAYQAxADEALQBiADkANwBjADMAZgA5ADgANwA5AGIAMwB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGYAYQA0AGEANwA4AGUALQAwADYAZABiAC0ANAAyADYAMwAtADgAYQBkADYALQBhAGMAYwA3ADcANgBmAGEAZAA5ADUAMgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGMAMQBhADkAMwA5ADUALQBlAGUAYQA1AC0ANAA3ADgAMgAtADgAMgA2ADIALQAyADgAYgBhAGEAMAA5AGMANwA3AGMANwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADcAMQBlADIAMwAxADUALQBmAGYANgBmAC0ANABiADkANgAtAGIANQA2ADMALQA5ADcANgA4ADIAYgA2ADEANQA5AGMAYgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

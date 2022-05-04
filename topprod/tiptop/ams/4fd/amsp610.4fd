@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{58332db5-0000-4000-a5b5-e6b42ec17946}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{861d4b9f-0000-4000-b36d-1a1f64bef630}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="rpf01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{14793fe5-0000-4000-8c1f-1a70b443165f}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="rqa02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1a23ed8a-0000-4000-ae29-68990563677e}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{5eaa9b7c-0000-4000-bf64-325947222c9f}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{e2650514-0000-4000-960c-6c42f77f53fc}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="c" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{665f529a-0000-4000-b1d8-c7c49e5bb3c3}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="b" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{746425bf-0000-4000-bcea-b134528ad2dd}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{67167e22-0000-4000-90d5-695334d7d235}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{71cbe1cb-0000-4000-b19a-dc56f0f7ea01}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="69" name="amsp610" spacing="normal" text="amsp610">
+    <VBox gridHeight="17" gridWidth="67" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="67" lstrcomment="false" name="gr3947" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="47" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Resource No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rpf01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="10" gridWidth="67" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="6" text="INPUT">
+        <VBox gridHeight="8" gridWidth="65" name="VBox2" posX="1" posY="1">
+          <Grid gridHeight="4" gridWidth="65" lstrcomment="false" name="gr3948" posX="0" posY="1">
+            <Label posX="1" posY="0" text="Version"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rqa02" posX="25" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Date Range"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bdate" notNull="true" posX="25" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="edate" notNull="true" posX="37" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+            <Label posX="1" posY="2" text="Time Bucket Method"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="By Time Bucket No., Day, Week, 10-Day, Month" lstrcomment="false" lstrtitle="false" name="c" notNull="true" posX="25" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="By Time Bucket No."/>
+              <Item lstrtext="" name="2" text="Day"/>
+              <Item lstrtext="" name="3" text="Week"/>
+              <Item lstrtext="" name="4" text="10-Day"/>
+              <Item lstrtext="" name="5" text="Month"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt; Qry Time Bucket Code" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="b" notNull="true" posX="37" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtext="false" lstrtitle="false" name="a" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Exist, Re-Generate?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+          <Grid gridHeight="2" gridWidth="65" lstrcomment="false" name="gr3949" posX="0" posY="5">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="62" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

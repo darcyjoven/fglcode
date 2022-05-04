@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{e0e40502-0000-4000-bf3b-c07e3b766b75}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oab" order="" uid="{558ea2db-0000-4000-bd82-76b594c8b21b}" where="">
+    <RecordField colName="oab01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oab_file.oab01" sqlTabName="oab_file" sqlType="VARCHAR" table_alias_name="" uid="{568aad16-0000-4000-a367-afb532685ca1}"/>
+    <RecordField colName="oab02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oab_file.oab02" sqlTabName="oab_file" sqlType="VARCHAR" table_alias_name="" uid="{cde471cd-0000-4000-9703-ebc0eabd4728}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8c482969-0000-4000-8a55-7cfbff9d6a7b}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{10fc0f1c-0000-4000-b959-53349e584b96}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="38" name="axmi020" spacing="normal" text="axmi020">
+    <VBox gridHeight="18" gridWidth="35" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="35" lstrcomment="false" name="pc438" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="33" lstrcomment="false" name="s_oab" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oab01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="oab_file.oab01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="oab_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sales Class Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oab02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="oab_file.oab02" posX="18" posY="0" rowCount="" sqlTabName="oab_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Class Name" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="35" lstrcomment="false" name="gr1990" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl715" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl716" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

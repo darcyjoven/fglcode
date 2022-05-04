@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{42fead5d-0000-4000-ac1f-fd28736078d7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c29ffec7-0000-4000-9151-4b5d188fad65}" where="">
+    <RecordField colName="vmf01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vmf_file.vmf01" sqlTabName="vmf_file" sqlType="VARCHAR" table_alias_name="" uid="{9c38cc58-0000-4000-b921-300c6ce1de65}"/>
+    <RecordField colName="vmf06" defaultValue="0" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vmf_file.vmf06" sqlTabName="vmf_file" sqlType="VARCHAR" table_alias_name="" uid="{94e5ad67-0000-4000-9628-9303b96ae89c}"/>
+    <RecordField colName="vmf07" defaultValue="0" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vmf_file.vmf07" sqlTabName="vmf_file" sqlType="VARCHAR" table_alias_name="" uid="{e6b09f79-0000-4000-8674-04e297227e56}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{485b12be-0000-4000-9481-c61e69f9e52c}"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="59" name="apsi305" spacing="normal" text="apsi305">
+    <VBox gridHeight="12" gridWidth="56" name="vb2" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="56" lstrcomment="false" name="pc1049" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="6" gridWidth="55" lstrcomment="false" name="gr5432" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="54" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Warehouse No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmf01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="vmf_file.vmf01" noEntry="true" notNull="true" posX="20" posY="1" required="true" rowCount="" sqlTabName="vmf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="IsCustPart"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmf06" colorCondition="black" columnCount="" defaultValue="0" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="False, True" lstrcomment="false" name="vmf_file.vmf06" notNull="true" posX="20" posY="2" required="true" rowCount="" sqlTabName="vmf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="False"/>
+                <Item lstrtext="false" name="1" text="True"/>
+              </ComboBox>
+              <Label posX="1" posY="3" text="vmf07"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmf07" colorCondition="black" columnCount="" defaultValue="0" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="N, Y" lstrcomment="false" name="vmf_file.vmf07" notNull="true" posX="20" posY="3" required="true" rowCount="" sqlTabName="vmf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="0" text="N"/>
+                <Item lstrtext="false" name="1" text="Y"/>
+              </ComboBox>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="56" lstrcomment="false" name="gr5433" posX="0" posY="9">
+        <HLine gridWidth="10" name="hl1733" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1734" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

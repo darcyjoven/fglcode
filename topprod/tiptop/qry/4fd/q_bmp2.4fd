@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{b592ee72-307f-4675-847a-3f18a079de69}">
+  <AGSettings>
+    <DynamicProperties version="2">
+      <DynamicProperty dynamicContent="dstFieldsContent" editorInfo="isDynamic:true" initialValue="" isDefaultInherited="false" isHidden="false" label="primaryFields" name="primaryFields" readOnly="false" type="FIELDS"/>
+      <DynamicProperty dynamicContent="srcFieldsContent" editorInfo="isDynamic:true" initialValue="" isDefaultInherited="false" isHidden="false" label="foreignFields" name="foreignFields" readOnly="false" type="FIELDS"/>
+      <DynamicPropertyGroup collapsed="false" description="Relation properties group" label="Relation user properties" name="relations" properties="foreignFields;primaryFields"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="BR/Relation" properties="primaryFields;foreignFields"/>
+    </NodeInfos>
+  </AGSettings>
+  <Record active="true" additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="ima_file" name="s_ima" order="" uid="{f8a1db3e-2287-4a31-bd23-0fdcc8727a7d}" where="">
+    <RecordField colName="" fieldIdRef="6" name="check" sqlTabName="" table_alias_name="" uid="{682e261b-063e-4134-943e-9590274128b0}"/>
+    <RecordField colName="ima01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ima_file.ima01" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{c07ddde0-ee52-4f3d-be9e-8d33fb46d228}" uniqueQueryKey="false"/>
+    <RecordField colName="ima02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ima_file.ima02" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{328495e2-cddf-4fc0-bc15-947941d699c0}" uniqueQueryKey="false"/>
+    <RecordField colName="ima05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ima_file.ima05" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{86a864f3-13e1-42cd-b81c-030b9c895021}" uniqueQueryKey="false"/>
+    <RecordField colName="ima06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ima_file.ima06" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{83414f88-d653-4388-a7b6-35c57193d9b3}" uniqueQueryKey="false"/>
+    <RecordField colName="ima08" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ima_file.ima08" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{2d5ff676-92aa-4490-ba67-ac9d2de8a389}" uniqueQueryKey="false"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="110" name="q_bmp2" text="Form">
+    <Table gridHeight="12" gridWidth="109" name="s_ima" posX="1" posY="1" totalRows="10">
+      <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="2" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="ima_file.ima01" noEntry="true" posX="2" posY="0" rowCount="" scroll="true" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ima01" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="ima_file.ima02" noEntry="true" posX="32" posY="0" rowCount="" scroll="true" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="ima02" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima05" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="ima_file.ima05" noEntry="true" posX="62" posY="0" rowCount="" scroll="true" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="ima05" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima06" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="ima_file.ima06" noEntry="true" posX="72" posY="0" rowCount="" scroll="true" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="ima06" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima08" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" name="ima_file.ima08" noEntry="true" posX="82" posY="0" rowCount="" scroll="true" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="ima08" widget="Edit"/>
+    </Table>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA2ADgAMgBlADIANgAxAGIALQAwADYAMwBlAC0ANAAxADMANAAtADkANAAzAGUALQA5ADUAOQAwADIANwA0ADEAMgA4AGIAMAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADMANAAxADQAZgA4ADgALQBkADYANQAzAC0ANAAzADgAOAAtAGEANwBiADYALQAzADUAYwA1ADcAMQA5ADMAZAA5AGIAMwB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADYAYQA4ADYANABmADMALQAxADMAZQAxAC0ANAAyAGMAZAAtAGIAOAAxAGMALQAwADMAMABiADkAYwA4ADkANQAwADIAMQB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADAANwBkAGQAZABlADAALQBlAGUANQAyAC0ANABmADMAZAAtAGIAZQA5AGUALQA4AGQAMwAzAGYAYgA0ADYAZAAyADIAOAB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGQANQBmAGYANgA3ADYALQA5ADIAYQBhAC0ANAA0ADkAMAAtAGIAYQA2ADcALQBhAGMAOQBkADIAZABlADgAYQAzADgAOQB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADgAYQAxAGQAYgAzAGUALQAyADIAOAA3AC0ANABhADMAMQAtAGIAZAAyADMALQAwAGYAZABjAGMAOAA3ADIANwBhADcAZAB9AAAAAAAAAAAAAAAAAAAAAD9QYk3S8an8AQAAAEwAewAzADIAOAA0ADkANQBlADIALQBjAGQAZABmAC0ANABmAGMAMAAtAGIAYwAxADUALQA5ADQANwA5ADQAMQBkADYAOQA5AGMAMAB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

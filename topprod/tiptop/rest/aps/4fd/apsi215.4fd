@@ -1,0 +1,72 @@
+<Form width="59" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="29643" spacing="normal" posX="0" percommentheader="" height="18" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" fourSTFile="" name="apsi215" defaultspacing="true" text="apsi215" gstVersion="11401" percommentlayout="GRID
+PAGE
+FOLDER
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" browserStatus="true" >
+ <VBox tag="" posX="1" posY="0" hidden="--------" style="" name="vb3" >
+  <PageControl width="56" posX="1" posY="0" height="15" lstrcomment="false" name="pc4" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" browserStatus="true" >
+    <Grid width="54" posX="0" posY="0" height="13" lstrcomment="false" hidden="--------" name="gr7" fontPitch="default" scroll="false" >
+     <Group width="52" lstrtext="false" gridWidth="52" posX="0" posY="0" height="12" lstrcomment="false" hrecindex="-1" hidden="--------" name="group01" fontPitch="default" gridHeight="17" browserStatus="true" gridChildrenInParent="--------" >
+      <Text width="7" lstrtext="false" gridWidth="8" posX="1" posY="1" height="1" hrecindex="-1" sizePolicy="initial" name="text1" text="Part Id" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="pid" fieldId="0" sqlTabName="aps_sim" name="pid" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" invisible="--------" gridWidth="20" notNull="true" posX="25" posY="1" height="1" formfieldname="formfield0" length="32" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="1" zeroFill="--------" data_type="VARCHAR" reverse="--------" lstrtitle="false" name="pid" century="R" color="black" fontPitch="default" scroll="--------" required="true" noEntry="true" />
+      </FormField>
+      <Text width="11" lstrtext="false" gridWidth="12" posX="1" posY="2" height="1" hrecindex="-1" sizePolicy="initial" name="text6" text="Supplier Id" />
+      <Text width="12" lstrtext="false" gridWidth="12" posX="1" posY="3" height="1" hrecindex="-1" sizePolicy="initial" name="text26" text="Max Lot Size" />
+      <Text width="13" lstrtext="false" gridWidth="12" posX="1" posY="4" height="1" hrecindex="-1" sizePolicy="initial" name="text27" text="Var Lead Time" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="var_lt" fieldId="5" sqlTabName="aps_sim" name="var_lt" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" justify="none" invisible="--------" notNull="--------" posX="25" formfieldname="formfield5" height="1" posY="4" lstrcomment="false" autoNext="--------" length="21" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="5" data_type="DECIMAL" reverse="--------" name="var_lt" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+      <Text width="8" lstrtext="false" gridWidth="12" posX="1" posY="5" height="1" hrecindex="-1" sizePolicy="initial" name="text28" text="Base Qty" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="base_qty" fieldId="5" sqlTabName="aps_sim" name="base_qty" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" justify="none" invisible="--------" notNull="--------" posX="25" formfieldname="formfield5" height="1" posY="5" length="21" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="6" data_type="DECIMAL" reverse="--------" name="base_qty" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+      <Text width="18" lstrtext="false" gridWidth="12" posX="1" posY="6" height="1" hrecindex="-1" sizePolicy="initial" name="text29" text="Is Lastqty Combine" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="sup_id" sqlTabName="aps_sim" fieldId="5" name="sup_id" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" justify="none" invisible="--------" notNull="true" posX="25" posY="2" height="1" formfieldname="formfield5" autoNext="--------" lstrcomment="false" colorCondition="black" hidden="--------" verify="--------" tabIndex="2" sizePolicy="initial" name="sup_id" reverse="--------" data_type="VARCHAR" fontPitch="default" color="black" century="R" required="true" noEntry="true" scroll="--------" />
+      </FormField>
+      <FormField sqlDBName="ds" hrecindex="-1" colName="max_lot" sqlTabName="aps_sim" fieldId="5" name="max_lot" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" justify="none" invisible="--------" notNull="--------" posX="25" posY="3" height="1" formfieldname="formfield5" autoNext="--------" lstrcomment="false" colorCondition="black" hidden="--------" verify="--------" tabIndex="4" sizePolicy="initial" name="max_lot" reverse="--------" data_type="DECIMAL" fontPitch="default" color="black" century="R" required="--------" noEntry="--------" scroll="--------" />
+      </FormField>
+      <FormField sqlDBName="ds" hrecindex="-1" colName="lst_cmb" sqlTabName="aps_sim" fieldId="5" name="lst_cmb" fieldtype="TABLE_COLUMN" >
+       <ComboBox width="20" case="NONE" notNull="--------" posX="25" posY="6" height="1" formfieldname="formfield5" lstrcomment="false" colorCondition="black" hidden="--------" tabIndex="7" sizePolicy="initial" name="lst_cmb" data_type="DECIMAL" fontPitch="default" color="black" required="--------" noEntry="--------" queryEditable="--------" scroll="--------" >
+        <Item lstrtext="false" name="0" text="False" />
+        <Item lstrtext="false" name="1" text="True" />
+       </ComboBox>
+      </FormField>
+      <Text width="21" lstrtext="false" gridWidth="12" posX="1" posY="7" height="1" hrecindex="-1" sizePolicy="initial" name="text8" text="LastQty Combine Limit" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="lst_cblm" fieldId="5" sqlTabName="aps_sim" name="lst_cblm" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" justify="none" invisible="--------" notNull="--------" posX="25" formfieldname="formfield5" height="1" posY="7" length="21" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="8" data_type="DECIMAL" reverse="--------" name="lst_cblm" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+      <Text width="15" lstrtext="false" gridWidth="12" posX="1" posY="8" height="1" hrecindex="-1" sizePolicy="initial" name="text9" text="Lot Sizing Rule" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="lot_rule" sqlTabName="aps_sim" fieldId="5" name="lot_rule" fieldtype="TABLE_COLUMN" >
+       <ComboBox width="20" case="NONE" notNull="--------" posX="25" posY="8" height="1" formfieldname="formfield5" lstrcomment="false" colorCondition="black" hidden="--------" tabIndex="9" sizePolicy="initial" name="lot_rule" data_type="DECIMAL" fontPitch="default" color="black" required="--------" noEntry="--------" queryEditable="--------" scroll="--------" >
+        <Item lstrtext="false" name="0" text="Lot-for-Lot" />
+        <Item lstrtext="false" name="1" text="Generally" />
+       </ComboBox>
+      </FormField>
+      <Text width="16" lstrtext="false" gridWidth="12" posX="1" posY="9" height="1" hrecindex="-1" sizePolicy="initial" name="text10" text="Sfixed Lead Time" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="sfx_lt" fieldId="5" sqlTabName="aps_sim" name="sfx_lt" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" justify="none" invisible="--------" notNull="--------" posX="25" formfieldname="formfield5" height="1" posY="9" length="21" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="10" data_type="DECIMAL" reverse="--------" name="sfx_lt" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+      <Text width="14" lstrtext="false" gridWidth="12" posX="1" posY="10" height="1" hrecindex="-1" sizePolicy="initial" name="text11" text="Svar Lead Time" />
+      <FormField sqlDBName="ds" hrecindex="-1" colName="svr_lt" fieldId="5" sqlTabName="aps_sim" name="svr_lt" fieldtype="TABLE_COLUMN" >
+       <Edit width="20" case="NONE" justify="none" invisible="--------" notNull="--------" posX="25" formfieldname="formfield5" height="1" posY="10" length="21" lstrcomment="false" autoNext="--------" colorCondition="black" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="11" data_type="DECIMAL" reverse="--------" name="svr_lt" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+      </FormField>
+     </Group>
+    </Grid>
+   </Page>
+  </PageControl>
+  <Grid width="56" posX="1" posY="15" height="1" lstrcomment="false" hidden="--------" name="gr8" fontPitch="default" scroll="false" browserStatus="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl7" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" posY="0" height="1" sizePolicy="initial" name="text66" text="Rows" />
+   <FormField colName="cnt" fieldId="15" sqlTabName="formonly" name="formonly.cnt" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="17" posY="0" height="1" formfieldname="formfield15" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="3" zeroFill="--------" reverse="--------" lstrtitle="false" name="cnt" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="25" posY="0" height="1" name="hl8" />
+  </Grid>
+ </VBox>
+</Form>

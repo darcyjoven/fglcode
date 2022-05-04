@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f84057c9-0000-4000-9165-d52bbbfbb8e6}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gbd" order="" uid="{30558f15-0000-4000-818b-2019ab567e91}" where="">
+    <RecordField colName="gbd01" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gbd_file.gbd01" sqlTabName="gbd_file" sqlType="VARCHAR" table_alias_name="" uid="{a01a2e06-0000-4000-bfb0-1354e820c2ef}"/>
+    <RecordField colName="gbd04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gbd_file.gbd04" sqlTabName="gbd_file" sqlType="VARCHAR" table_alias_name="" uid="{87ec7f93-0000-4000-b615-2c839031f442}"/>
+    <RecordField colName="" fieldIdRef="7" name="choice" sqlTabName="" table_alias_name="" uid="{c9f2782f-0000-4000-8b89-9ddade8e3c38}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d22bc449-0000-4000-a0a8-9404a9685d90}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="zy01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{fe33bacf-0000-4000-92b2-d808e326d5c7}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="finish" sqlTabName="" table_alias_name="" uid="{857367a6-0000-4000-ba93-dd341a5c303f}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{e1137a34-0000-4000-b0e9-f583fbd38b62}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="66" name="p_zy_batch" spacing="normal" text="p_zy_batch">
+    <VBox gridHeight="25" gridWidth="63" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="63" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="7" gridWidth="59" lstrcomment="false" name="gr3053" posX="0" posY="0">
+            <Group gridHeight="6" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Authorization Category Code"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="This Field &amp; Program # are Key, No Blank/Repeated!  &lt;^P&gt;Qry Authorization Category" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="zy01" notNull="true" posX="37" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="56" lstrcomment="false" lstrtext="false" lstrtitle="false" name="finish" noEntry="true" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" text="This Data Has Been Finished." valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="63" lstrcomment="false" name="s_gbd" posX="0" posY="9" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbd01" columnCount="" comment="&lt;^P&gt; Query Action ID" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="gbd_file.gbd01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gbd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Action ID" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbd04" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="gbd_file.gbd04" noEntry="true" posX="12" posY="0" rowCount="" sqlTabName="gbd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Action Name" widget="Edit"/>
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="29" items="Add, Remove" lstrcomment="false" lstrtitle="false" name="choice" notNull="true" orientation="horizontal" posX="29" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Add or Delete" widget="RadioGroup">
+          <Item name="Y" text="Add"/>
+          <Item name="N" text="Remove"/>
+        </RadioGroup>
+      </Table>
+      <Grid gridHeight="4" gridWidth="63" lstrcomment="false" name="gr3054" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl1040" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1041" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

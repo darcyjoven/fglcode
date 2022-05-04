@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{13851bc1-0000-4000-bcc5-deee72de57b6}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_vmb" order="" uid="{db7bd916-0000-4000-b5e4-432e9e7f6eea}" where="">
+    <RecordField colName="vmb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vmb_file.vmb01" sqlTabName="vmb_file" sqlType="VARCHAR" table_alias_name="" uid="{c6223e66-0000-4000-960b-255ac5c7b224}"/>
+    <RecordField colName="vmb02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vmb_file.vmb02" sqlTabName="vmb_file" sqlType="DATE" table_alias_name="" uid="{36b653ea-0000-4000-b244-43be13443698}"/>
+    <RecordField colName="vmb03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vmb_file.vmb03" sqlTabName="vmb_file" sqlType="VARCHAR" table_alias_name="" uid="{c5439c06-0000-4000-862d-38b7fe79923e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{466d13ca-0000-4000-bcb4-5f3acad31220}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d3871373-0000-4000-ab45-b25d06adfe1b}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="61" name="apsi301" spacing="normal" text="apsi301">
+    <Folder gridHeight="14" gridWidth="59" lstrcomment="false" name="pc1044" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Page01">
+        <Table gridHeight="12" gridWidth="57" lstrcomment="false" name="s_vmb" posX="0" posY="0" totalRows="10">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="vmb_file.vmb01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="vmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Day Calendar NO." widget="Edit"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmb02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="vmb_file.vmb02" notNull="true" posX="20" posY="0" required="true" rowCount="" sqlTabName="vmb_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Date" widget="DateEdit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vmb03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="vmb_file.vmb03" posX="32" posY="0" rowCount="" sqlTabName="vmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Work Model" widget="ButtonEdit"/>
+        </Table>
+      </Page>
+      <Page lstrtext="false" name="info" text="Info">
+        <Grid gridHeight="4" gridWidth="33" lstrcomment="false" name="gr5425" posX="0" posY="0">
+          <Group gridHeight="3" gridWidth="32" lstrcomment="false" lstrtext="false" name="grpinfo" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Detail Counts"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="21" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

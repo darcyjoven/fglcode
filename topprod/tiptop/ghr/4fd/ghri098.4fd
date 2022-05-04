@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="ManagedForm" uid="{024f899e-a3d5-4380-ac83-28feaa4d35d5}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="page01" order="" uid="{bc3063c1-fec2-4134-99a0-d38228c5c30a}" where="">
+    <RecordField colName="imz02" fieldIdRef="4" name="hrea00" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{0a8ae2b1-b8ec-4308-9584-8c5ff5132bb4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="page02" order="" uid="{9e88f639-8461-4860-9464-95dd70f2505f}" where="">
+    <RecordField colName="imauser" fieldIdRef="16" fieldType="NON_DATABASE" name="hreaacti" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{6e868a2f-d949-4d30-9189-8611c45ef62d}"/>
+    <RecordField colName="imamodu" fieldIdRef="17" fieldType="NON_DATABASE" name="hreaoriu" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{751af61a-8857-4a90-9205-2a5a9a8140a2}"/>
+    <RecordField colName="imaacti" fieldIdRef="18" fieldType="NON_DATABASE" name="hreaorig" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{0a592bf5-4ca0-45d8-b0c2-bd9010163e7f}"/>
+    <RecordField colName="imagrup" fieldIdRef="19" fieldType="NON_DATABASE" name="hreauser" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{c6be2609-3cec-42af-b09f-1a2780758379}"/>
+    <RecordField colName="imadate" fieldIdRef="20" fieldType="NON_DATABASE" name="hreadate" sqlTabName="ima_file" sqlType="DATE" table_alias_name="" uid="{f228853c-197f-49c4-a12d-67fda04d39c9}"/>
+    <RecordField colName="imaoriu" fieldIdRef="21" fieldType="NON_DATABASE" name="hreagrup" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{e53dd31c-68c9-4b97-bc4c-cce5e10841fb}"/>
+    <RecordField colName="imaorig" fieldIdRef="22" fieldType="NON_DATABASE" name="hreamodu" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{78723589-8df3-4c8a-bf1f-3bee867f7d21}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_hrea" order="" uid="{62b84863-501f-481b-9899-a55f54b5212c}" where="">
+    <RecordField colName="" fieldIdRef="9" name="hrea01" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{b9e03cc9-7537-4fe4-8d0a-844e888ee94a}"/>
+    <RecordField colName="" fieldIdRef="11" name="hrag07" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{98ae1bc8-7fe9-4a88-b4ae-16339406a358}"/>
+    <RecordField colName="" fieldIdRef="12" name="hrea02" sqlTabName="" sqlType="NUMERIC" table_alias_name="" uid="{95dbdaec-c00b-409d-a2a1-47adc1fa532d}"/>
+    <RecordField colName="" fieldIdRef="13" name="hrdk03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ea0fa020-3de5-4670-9295-504eea7a6edb}"/>
+    <RecordField colName="" fieldIdRef="1" name="hrea03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{16cf9021-50de-4494-bb50-5d9a48dbc477}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="106" lstrtext="true" name="ghri098" spacing="normal" text="ghri098">
+    <VBox gridHeight="21" gridWidth="102" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="102" name="pc10" posX="0" posY="1">
+        <Page lstrtext="true" name="page01" text="page01">
+          <Grid gridHeight="5" gridWidth="52" name="gr39" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="6" posX="2" posY="1" text="hrea00"/>
+            <ComboBox colName="imz02" columnCount="" fieldId="4" gridHeight="1" gridWidth="14" items="" name="hrea00" posX="10" posY="1" rowCount="" sqlTabName="formonly" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox"/>
+          </Grid>
+        </Page>
+        <Page lstrtext="true" name="page02" text="page02">
+          <Grid gridHeight="5" gridWidth="81" name="gr40" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="8" posX="1" posY="1" text="hreaacti"/>
+            <Edit colName="imauser" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="hreaacti" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="8" posX="35" posY="1" text="hreadate"/>
+            <DateEdit colName="imadate" columnCount="" fieldId="20" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="hreadate" noEntry="true" posX="50" posY="1" rowCount="" sqlTabName="ima_file" sqlType="DATE" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="DateEdit"/>
+            <Label gridHeight="1" gridWidth="8" posX="1" posY="2" text="hreauser"/>
+            <Edit colName="imagrup" columnCount="" fieldId="19" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="hreauser" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="8" posX="35" posY="2" text="hreaoriu"/>
+            <Edit colName="imamodu" columnCount="" fieldId="17" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="hreaoriu" noEntry="true" posX="50" posY="2" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="8" posX="1" posY="3" text="hreagrup"/>
+            <Edit colName="imaoriu" columnCount="" fieldId="21" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="hreagrup" noEntry="true" posX="22" posY="3" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="8" posX="35" posY="3" text="hreaorig"/>
+            <Edit case="upper" colName="imaacti" columnCount="" fieldId="18" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="hreaorig" noEntry="true" posX="50" posY="3" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="8" posX="1" posY="4" text="hreamodu"/>
+            <Edit colName="imaorig" columnCount="" fieldId="22" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="hreamodu" noEntry="true" posX="22" posY="4" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="11" gridWidth="102" name="s_hrea" posX="0" posY="9" totalRows="9">
+        <ButtonEdit action="controlp" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="13" image="zoom" name="hrea01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="hrea01" widget="ButtonEdit"/>
+        <Edit colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="14" name="hrag07" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="hrag07" widget="Edit"/>
+        <ButtonEdit action="controlp" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="14" image="zoom" name="hrea02" notNull="true" posX="27" posY="0" required="true" rowCount="" sqlTabName="" sqlType="NUMERIC" stepX="" stepY="" tabIndex="11" table_alias_name="" title="hrea02" widget="ButtonEdit"/>
+        <Edit colName="" columnCount="" fieldId="13" gridHeight="1" gridWidth="14" name="hrdk03" noEntry="true" posX="41" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="hrdk03" widget="Edit"/>
+        <TextEdit colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="13" name="hrea03" posX="55" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="hrea03" widget="TextEdit"/>
+      </Table>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

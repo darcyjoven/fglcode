@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{cef63d73-0000-4000-9838-061a556b3455}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bmb" order="" uid="{35e40552-0000-4000-9532-7184a02b0241}" where="">
+    <RecordField colName="" fieldIdRef="2" name="check" sqlTabName="" table_alias_name="" uid="{a7e86748-0000-4000-9e20-959fa5a8fd0f}"/>
+    <RecordField colName="bmb02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bmb_file.bmb02" sqlTabName="bmb_file" sqlType="SMALLINT" table_alias_name="" uid="{5c159199-0000-4000-a830-9604f02521bc}"/>
+    <RecordField colName="bmb03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bmb_file.bmb03" sqlTabName="bmb_file" sqlType="VARCHAR" table_alias_name="" uid="{736f7884-0000-4000-a633-99a2a71659b3}"/>
+    <RecordField colName="bmb04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="bmb_file.bmb04" sqlTabName="bmb_file" sqlType="DATE" table_alias_name="" uid="{e07dacc5-0000-4000-849e-35260d2046ff}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{cfbd7e15-0000-4000-ada4-37e201183fed}" where="">
+    <RecordField colName="bmb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bmb_file.bmb01" sqlTabName="bmb_file" sqlType="VARCHAR" table_alias_name="" uid="{0f53dda5-0000-4000-8531-b2367c075336}"/>
+  </Record>
+  <Form gridHeight="16" gridWidth="60" name="q_bmb1" spacing="normal" text="Query Line No.">
+    <VBox gridHeight="16" gridWidth="57" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="57" lstrcomment="false" name="gr3737" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Master Item No."/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bmb_file.bmb01" noEntry="true" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="bmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="57" lstrcomment="false" name="s_bmb" posX="0" posY="3" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmb02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="bmb_file.bmb02" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="bmb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmb03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bmb_file.bmb03" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="bmb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Component No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bmb04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" lstrcomment="false" lstrtitle="false" name="bmb_file.bmb04" noEntry="true" posX="37" posY="0" rowCount="" sqlTabName="bmb_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Effective Date" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

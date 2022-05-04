@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{329b58ba-0000-4000-9356-0230d0a2a134}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ofq" order="" uid="{845c062a-0000-4000-8409-8acf0d21a8ed}" where="">
+    <RecordField colName="ofq01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ofq_file.ofq01" sqlTabName="ofq_file" sqlType="VARCHAR" table_alias_name="" uid="{a1c16fa2-0000-4000-8710-2424a4d30ede}"/>
+    <RecordField colName="ofq02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ofq_file.ofq02" sqlTabName="ofq_file" sqlType="VARCHAR" table_alias_name="" uid="{929c48e4-0000-4000-b420-364608e02889}"/>
+    <RecordField colName="ofqacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ofq_file.ofqacti" sqlTabName="ofq_file" sqlType="VARCHAR" table_alias_name="" uid="{c336bad9-0000-4000-9268-ca8ef96e1d69}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8cee501c-0000-4000-9381-a99f0185d136}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3d8e156f-0000-4000-9672-74ebf826e231}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="57" name="axmi700" spacing="normal" text="axmi700">
+    <VBox gridHeight="18" gridWidth="54" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="54" lstrcomment="false" name="pc504" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="52" lstrcomment="false" name="s_ofq" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ofq01" columnCount="" comment="KEY Field, No Blank/Repeated! &lt;^O&gt;Copy Previous Record!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ofq_file.ofq01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="ofq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Potential Cust Src" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ofq02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ofq_file.ofq02" posX="20" posY="0" rowCount="" sqlTabName="ofq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ofqacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="ofq_file.ofqacti" posX="40" posY="0" rowCount="" sqlTabName="ofq_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="54" lstrcomment="false" name="gr2132" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl815" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="cnt2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="11" name="hl816" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

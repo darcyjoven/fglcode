@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{d4e48058-0000-4000-9e62-97f292a0d8aa}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bf4008d3-0000-4000-98b4-d91fb37e5556}" where="">
+    <RecordField colName="" defaultValue="1" fieldIdRef="4" fieldType="NON_DATABASE" name="sfb02" sqlTabName="" table_alias_name="" uid="{fc64c8fb-0000-4000-9d8f-b71aa1fc1eb7}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="slip" sqlTabName="" table_alias_name="" uid="{1877867c-0000-4000-b95e-89547715a1ba}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="b_date" sqlTabName="" table_alias_name="" uid="{534f369c-0000-4000-96bf-207e896856fc}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="e_date" sqlTabName="" table_alias_name="" uid="{4886f8bd-0000-4000-b878-7a30e9471a2d}"/>
+    <RecordField colName="" defaultValue="Y" fieldIdRef="5" fieldType="NON_DATABASE" name="open_sw" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{976024e0-0000-4000-bf90-c093e4aedafb}"/>
+  </Record>
+  <Form gridHeight="9" gridWidth="51" lstrtext="false" name="axmp200a" spacing="normal" text="axmp200a">
+    <Grid gridHeight="7" gridWidth="49" lstrcomment="false" name="gr3" posX="2" posY="1">
+      <Label posX="1" posY="1" text="WO TYPE"/>
+      <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" defaultValue="1" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" items="General WO, Rework WO, Sub. Order, Rework Sub. WO, Disassembly WO, Forecast WO, Sampling WO" lstrcomment="false" name="sfb02" notNull="true" posX="15" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+        <Item lstrtext="false" name="1" text="General WO"/>
+        <Item lstrtext="false" name="5" text="Rework WO"/>
+        <Item lstrtext="false" name="7" text="Sub. Order"/>
+        <Item lstrtext="false" name="8" text="Rework Sub. WO"/>
+        <Item lstrtext="false" name="11" text="Disassembly WO"/>
+        <Item lstrtext="false" name="13" text="Forecast WO"/>
+        <Item lstrtext="false" name="15" text="Sampling WO"/>
+      </ComboBox>
+      <Label posX="1" posY="2" text="Cate No."/>
+      <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" name="slip" notNull="true" posX="15" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+      <Label posX="1" posY="3" text="b_date"/>
+      <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" name="b_date" notNull="true" posX="15" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+      <Label posX="1" posY="4" text="e_date"/>
+      <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" name="e_date" notNull="true" posX="15" posY="4" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+      <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" defaultValue="Y" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="46" lstrcomment="false" lstrtext="false" name="open_sw" notNull="true" posX="1" posY="5" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Auto. Issue Invoice after AR Confirmation?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+    </Grid>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{b3039218-0000-4000-b19d-aa8e63ccf471}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_log" order="" uid="{e2a6f742-0000-4000-9301-5e5692f84c15}" where="">
+    <RecordField colName="" fieldIdRef="2" name="log_name" sqlTabName="" table_alias_name="" uid="{46266d9c-0000-4000-9d73-0a1abd38c459}"/>
+    <RecordField colName="" fieldIdRef="3" name="exe_date" sqlTabName="" table_alias_name="" uid="{016acfe2-0000-4000-9482-2475597da20b}"/>
+    <RecordField colName="" fieldIdRef="4" name="exe_user" sqlTabName="" table_alias_name="" uid="{5f1cd31b-0000-4000-89bb-1326491a86df}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{988f271b-0000-4000-998c-bcd55bdb2d7b}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="exe_prog" sqlTabName="" table_alias_name="" uid="{1de86f00-0000-4000-ae62-ea5fc9fcc27c}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{5e1d31b5-0000-4000-bc94-191bb92b7383}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="57" name="p_zz_readlog" spacing="normal" text="Log List">
+    <VBox gridHeight="18" gridWidth="54" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="2" gridWidth="54" lstrcomment="false" name="greid01" posX="0" posY="1">
+        <Label posX="1" posY="0" text="Program"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="18" lstrcomment="false" lstrtitle="false" name="exe_prog" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+      </Grid>
+      <Table gridHeight="12" gridWidth="54" lstrcomment="false" name="s_log" posX="0" posY="3" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="log_name" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="File Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="exe_date" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="exe_user" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="User" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="54" lstrcomment="false" name="gr3033" posX="0" posY="15">
+        <Label posX="1" posY="0" text="Row Counts"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

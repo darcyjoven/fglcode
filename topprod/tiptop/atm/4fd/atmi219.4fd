@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f0c5c8d1-0000-4000-b4e3-7579e37307ad}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_tqh" order="" uid="{1628776b-0000-4000-9d59-3befcb536965}" where="">
+    <RecordField colName="tqh02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="tqh_file.tqh02" sqlTabName="tqh_file" sqlType="VARCHAR" table_alias_name="" uid="{c1c911a4-0000-4000-aed9-35e36ae900ef}"/>
+    <RecordField colName="" fieldIdRef="4" name="tqa021" sqlTabName="" table_alias_name="" uid="{d010ea32-0000-4000-919f-fdd79e1521c7}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bf40f149-0000-4000-ac7f-c15d62cce4d6}" where="">
+    <RecordField colName="tqh01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="tqh_file.tqh01" sqlTabName="tqh_file" sqlType="VARCHAR" table_alias_name="" uid="{1733d319-0000-4000-a20d-a97a4c53219b}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="tqa02" sqlTabName="" table_alias_name="" uid="{519fe64e-0000-4000-8e8f-761210fc77cc}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{41d9328f-0000-4000-8bef-a8cefc6a3887}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{7d137300-0000-4000-afce-9d867a598273}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="82" name="atmi219" spacing="normal" text="atmi219">
+    <VBox gridHeight="19" gridWidth="79" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="3" gridWidth="79" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="77" lstrcomment="false" name="gr1305" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Credit Code"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tqh01" columnCount="" comment="&lt;^P&gt;Query Credit Code" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="tqh_file.tqh01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="tqh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="45" posY="0" text="Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tqa02" noEntry="true" posX="56" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="79" lstrcomment="false" name="s_tqh" posX="0" posY="4" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="tqh02" columnCount="" comment="&lt;^P&gt;Query Code" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="tqh_file.tqh02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="tqh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Credit code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tqa021" noEntry="true" posX="20" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Description" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="79" lstrcomment="false" name="gr1306" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl399" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl400" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

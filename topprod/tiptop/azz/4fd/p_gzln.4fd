@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{bf6f4925-0000-4000-9910-b4ac70acba6b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gzln" order="" uid="{a1144bcb-0000-4000-828b-462e86efa5b2}" where="">
+    <RecordField colName="gzln02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gzln_file.gzln02" sqlTabName="gzln_file" sqlType="SMALLINT" table_alias_name="" uid="{58320224-0000-4000-8d9e-775ebce0e46d}"/>
+    <RecordField colName="gzln03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gzln_file.gzln03" sqlTabName="gzln_file" sqlType="VARCHAR" table_alias_name="" uid="{3da211e8-0000-4000-9f37-ac0358905863}"/>
+    <RecordField colName="gzln04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gzln_file.gzln04" sqlTabName="gzln_file" sqlType="VARCHAR" table_alias_name="" uid="{04c70c5d-0000-4000-a53b-f57a4871a955}"/>
+    <RecordField colName="gzln05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gzln_file.gzln05" sqlTabName="gzln_file" sqlType="VARCHAR" table_alias_name="" uid="{83d686d5-0000-4000-9c6f-5980a95d510c}"/>
+    <RecordField colName="gzln06" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gzln_file.gzln06" sqlTabName="gzln_file" sqlType="VARCHAR" table_alias_name="" uid="{fbf2eb2b-0000-4000-899a-5f7644ab95db}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e0d59c4a-0000-4000-8164-68ae0c1c412c}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{a108fea7-0000-4000-a377-9830a2e63d04}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="76" name="p_gzln" spacing="normal" text="p_gzln">
+    <Folder gridHeight="22" gridWidth="74" lstrcomment="false" name="pc751" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Page01">
+        <VBox gridHeight="21" gridWidth="72" name="VBox1" posX="0" posY="0">
+          <Table gridHeight="12" gridWidth="72" lstrcomment="false" name="s_gzln" posX="0" posY="1" totalRows="10" wantFixedPageSize="true">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gzln02" columnCount="" comment="No Blank!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="gzln_file.gzln02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gzln_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Line" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="gzln03" columnCount="" comment="No Blank!" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="gzln_file.gzln03" posX="5" posY="0" rowCount="" sqlTabName="gzln_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Module" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gzln04" columnCount="" comment="No Blank! Enter 4gl,per,sql,link,za,4ad,4tm," fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="gzln_file.gzln04" posX="12" posY="0" rowCount="" sqlTabName="gzln_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Menu" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gzln05" columnCount="" comment="No Blank!" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" lstrcomment="false" lstrtitle="false" name="gzln_file.gzln05" posX="19" posY="0" rowCount="" sqlTabName="gzln_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Program Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gzln06" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="gzln_file.gzln06" posX="38" posY="0" rowCount="" sqlTabName="gzln_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Memo" widget="Edit"/>
+          </Table>
+          <Group gridHeight="5" gridWidth="72" lstrcomment="false" lstrtext="false" name="group01" posX="0" posY="13" text="memo">
+            <Grid gridHeight="3" gridWidth="64" lstrcomment="false" name="gr3209" posX="1" posY="1">
+              <Label gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" name="dummy01" posX="3" posY="0" style="fixedFont" text="Maintain program,   input &quot;4gl&quot; in menu, Ex. &quot;cim&quot; &quot;4gl&quot; &quot;cimi100.4gl&quot;, include &quot;4ad&quot;,&quot;4tm&quot; file and UI data when pack."/>
+              <Label gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" name="dummy02" posX="3" posY="1" style="fixedFont" text="Maintain form,      input &quot;per&quot; or &quot;4fd&quot; in menu, Ex. &quot;cim&quot; &quot;4fd&quot; &quot;cimi100.4fd&quot;  or  &quot;cim&quot; &quot;per&quot; &quot;cimi100.per&quot;."/>
+              <Label gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" name="dummy03" posX="3" posY="2" style="fixedFont" text="                    Whether &quot;per&quot; or &quot;4fd&quot;, include two file when pack."/>
+            </Grid>
+          </Group>
+          <Grid gridHeight="2" gridWidth="72" lstrcomment="false" name="gr3210" posX="0" posY="18">
+            <HLine gridWidth="10" name="hl1130" posX="1" posY="0"/>
+            <Label posX="12" posY="0" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <HLine gridWidth="10" name="hl1131" posX="26" posY="0"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

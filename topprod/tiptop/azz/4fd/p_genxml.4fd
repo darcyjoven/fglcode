@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{c9aa2525-0000-4000-b76c-f00318cb2613}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_xml" order="" uid="{6dc282ce-0000-4000-af7e-ff6e77b2ca57}" where="">
+    <RecordField colName="" fieldIdRef="4" name="xml01" sqlTabName="" table_alias_name="" uid="{436cfe84-0000-4000-b821-e7c726790d03}"/>
+    <RecordField colName="" fieldIdRef="5" name="xml02" sqlTabName="" table_alias_name="" uid="{48b11c18-0000-4000-8d2c-a0f2c4ff5ac4}"/>
+    <RecordField colName="" fieldIdRef="6" name="xml03" sqlTabName="" table_alias_name="" uid="{e6d35fe7-0000-4000-b55d-b37996960ad8}"/>
+    <RecordField colName="" fieldIdRef="7" name="xml04" sqlTabName="" table_alias_name="" uid="{396f235b-0000-4000-845c-a35612fee88e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d700bd68-0000-4000-98d3-76395773c256}" where="">
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="xmlname" sqlTabName="" table_alias_name="" uid="{18ff7f10-0000-4000-9d42-02d1b28cfc41}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="gaz03" sqlTabName="" table_alias_name="" uid="{631793df-0000-4000-8933-12931a62c00f}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="xmlsql" sqlTabName="" table_alias_name="" uid="{6c542670-0000-4000-a00f-f503b5791434}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="out" sqlTabName="" table_alias_name="" uid="{061948e6-0000-4000-b136-c5fe52bca65f}"/>
+  </Record>
+  <Form gridHeight="48" gridWidth="80" lstrtext="false" name="p_genxml" spacing="normal" text="p_xsd">
+    <VBox gridHeight="47" gridWidth="79" name="vb6" posX="1" posY="1">
+      <Group gridHeight="26" gridWidth="79" lstrcomment="false" lstrtext="false" name="gb2" posX="0" posY="1">
+        <VBox gridHeight="24" gridWidth="77" name="vb5" posX="1" posY="1">
+          <Grid gridHeight="10" gridWidth="77" lstrcomment="false" name="gr3" posX="0" posY="1">
+            <Label posX="1" posY="1" text="Program Code"/>
+            <ButtonEdit action="CONTROLP" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" image="zoom.png" lstrcomment="false" name="xmlname" notNull="true" posX="15" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="38" lstrcomment="false" name="gaz03" noEntry="true" posX="36" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="6" gridWidth="73" lstrcomment="false" name="xmlsql" posX="1" posY="3" rowCount="" scrollBars="both" sizePolicy="fixed" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="both" tabIndex="2" table_alias_name="" widget="TextEdit"/>
+          </Grid>
+          <Table gridHeight="12" gridWidth="77" name="tb5" posX="0" posY="11" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="xml01" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Column ID" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="xml02" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Type" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="xml03" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Length" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" comment="Date format, Enter: &quot;2007-01-01&quot;" fieldId="7" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="xml04" posX="40" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Default" widget="Edit"/>
+          </Table>
+        </VBox>
+      </Group>
+      <Group gridHeight="19" gridWidth="79" lstrcomment="false" lstrtext="false" name="gb1" posX="0" posY="27" text="View XML Format ">
+        <Grid gridHeight="17" gridWidth="76" lstrcomment="false" name="gr2" posX="1" posY="1">
+          <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="15" gridWidth="73" lstrcomment="false" name="out" posX="1" posY="1" rowCount="" scrollBars="both" sizePolicy="fixed" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="both" tabIndex="1" table_alias_name="" widget="TextEdit"/>
+        </Grid>
+      </Group>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{5c4d0077-0000-4000-9dba-fbde1e490abc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9dd78a5d-0000-4000-ab35-b2174b66aa6c}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="only_one" sqlTabName="" table_alias_name="" uid="{59329526-0000-4000-91a1-de6b1fac2871}"/>
+    <RecordField colName="nnm01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nnm_file.nnm01" sqlTabName="nnm_file" sqlType="VARCHAR" table_alias_name="" uid="{8d8a6396-0000-4000-8517-9f3ca466a94b}"/>
+    <RecordField colName="nnm05" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nnm_file.nnm05" sqlTabName="nnm_file" sqlType="DATE" table_alias_name="" uid="{23acd66d-0000-4000-b769-12c18101e3f1}"/>
+    <RecordField colName="nnm06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nnm_file.nnm06" sqlTabName="nnm_file" sqlType="DATE" table_alias_name="" uid="{d66b8ee5-0000-4000-961f-0a6e7926a0f5}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="48" name="anmt7303" spacing="normal" text="Generate Entry">
+    <VBox gridHeight="12" gridWidth="46" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="10" gridWidth="46" lstrcomment="false" name="gr4552" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="45" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Condition">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" items="Generate this Accounts only, Generate by QBE Condition" lstrcomment="false" lstrtitle="false" name="only_one" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="" name="1" text="Generate this Accounts only"/>
+            <Item lstrtext="" name="2" text="Generate by QBE Condition"/>
+          </RadioGroup>
+        </Group>
+        <Group gridHeight="6" gridWidth="45" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="QBE">
+          <Label gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" name="dummy" posX="1" posY="1" text="Enter Accounts Condition to generate entry sheet:"/>
+          <Label posX="1" posY="2" text="Document No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnm01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nnm_file.nnm01" posX="22" posY="2" rowCount="" sqlTabName="nnm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Note Received Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnm05" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nnm_file.nnm05" posX="22" posY="3" rowCount="" sqlTabName="nnm_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="4" text="Due date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnm06" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nnm_file.nnm06" posX="22" posY="4" rowCount="" sqlTabName="nnm_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

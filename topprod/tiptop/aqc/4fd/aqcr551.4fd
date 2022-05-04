@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{60e52be2-0000-4000-952d-6f17cdfa45fd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d9040ca4-0000-4000-9449-a0160806466a}" where="">
+    <RecordField colName="qcm021" fieldIdRef="1" fieldType="TABLE_COLUMN" name="qcm_file.qcm021" sqlTabName="qcm_file" sqlType="VARCHAR" table_alias_name="" uid="{c3c60fb9-0000-4000-bfaf-4776a6ebd965}"/>
+    <RecordField colName="qcm03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="qcm_file.qcm03" sqlTabName="qcm_file" sqlType="VARCHAR" table_alias_name="" uid="{63c6bedc-0000-4000-82e3-20b3eb459649}"/>
+    <RecordField colName="qcm02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="qcm_file.qcm02" sqlTabName="qcm_file" sqlType="VARCHAR" table_alias_name="" uid="{b58766c4-0000-4000-8816-dc6fb6f3d532}"/>
+    <RecordField colName="qcu04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="qcu_file.qcu04" sqlTabName="qcu_file" sqlType="VARCHAR" table_alias_name="" uid="{d710fda6-0000-4000-b62a-805c00efcb2a}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{f07631b1-0000-4000-aeaa-5c9f617325ce}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{9b455790-0000-4000-8dde-0bbc8cdcabf5}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{4aea74ec-0000-4000-acac-247ccecc965d}"/>
+  </Record>
+  <Form gridHeight="14" gridWidth="73" name="aqcr551" spacing="normal" text="aqcr551">
+    <VBox gridHeight="14" gridWidth="71" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="10" gridWidth="71" lstrcomment="false" name="gr165" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="70" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Product No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcm021" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="qcm_file.qcm021" posX="22" posY="1" rowCount="" sqlTabName="qcm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Run Card"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcm03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="qcm_file.qcm03" posX="22" posY="2" rowCount="" sqlTabName="qcm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Work/Order No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcm02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="qcm_file.qcm02" posX="22" posY="3" rowCount="" sqlTabName="qcm_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="No-Good Cause"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="qcu04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="qcu_file.qcu04" posX="22" posY="4" rowCount="" sqlTabName="qcu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="70" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="6" text="INPUT">
+          <Label posX="1" posY="1" text="Date Range"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="bdate" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+          <Label posX="36" posY="1" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="edate" posX="39" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="71" lstrcomment="false" name="gr166" posX="0" posY="11">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="41" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

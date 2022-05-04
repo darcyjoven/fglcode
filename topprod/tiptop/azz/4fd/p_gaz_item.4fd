@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0b0f18a1-0000-4000-9543-1eaa0b6f4a1a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="sub_gaz" order="" uid="{c553d30b-0000-4000-af52-46222a5cc1d4}" where="">
+    <RecordField colName="gaz02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gaz_file.gaz02" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{f9b78e26-0000-4000-935a-2dab6932fb2e}"/>
+    <RecordField colName="gaz03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{8666acf5-0000-4000-9a18-f24e44132c25}"/>
+    <RecordField colName="gaz06" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gaz_file.gaz06" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{7f96433a-0000-4000-9812-0b7a945c2993}"/>
+    <RecordField colName="gaz05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gaz_file.gaz05" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{16e607f5-0000-4000-9b66-18e20da3dbdc}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{840273dd-0000-4000-b0f1-f56ec094a015}" where="">
+    <RecordField colName="gaz01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gaz_file.gaz01" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{ec26a3e8-0000-4000-9f3f-fda19a2fcd28}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="105" name="p_gaz_item" spacing="normal" text="p_gaz_item">
+    <VBox gridHeight="13" gridWidth="103" name="vb96" posX="0" posY="0" splitter="">
+      <Grid gridHeight="4" gridWidth="103" lstrcomment="false" name="gr3203" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="49" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Program ID"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz01" noEntry="true" posX="19" posY="1" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="7" gridWidth="103" lstrcomment="false" name="sub_gaz" posX="0" posY="5" totalRows="5">
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" items="" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Lang" widget="ComboBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="39" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz03" posX="5" posY="0" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Program Name Description" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz06" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="45" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz06" posX="44" posY="0" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Report Title" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gaz_file.gaz05" notNull="true" posX="89" posY="0" required="true" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Customized" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

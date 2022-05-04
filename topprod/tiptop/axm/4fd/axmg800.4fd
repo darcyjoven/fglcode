@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{56282a22-0000-4000-b731-475e73832e23}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f021b92e-0000-4000-8824-a84698abcfd3}" where="">
+    <RecordField colName="oep01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oep_file.oep01" sqlTabName="oep_file" sqlType="VARCHAR" table_alias_name="" uid="{1acc2f5c-0000-4000-a438-5f5d77ac219e}"/>
+    <RecordField colName="oep04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oep_file.oep04" sqlTabName="oep_file" sqlType="DATE" table_alias_name="" uid="{50af6b7f-0000-4000-bffd-f1c9149a5efa}"/>
+    <RecordField colName="oep02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oep_file.oep02" sqlTabName="oep_file" sqlType="SMALLINT" table_alias_name="" uid="{b0318304-0000-4000-ab2e-1be4aa330bfe}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="a" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2378b877-0000-4000-93b4-fcda35eae844}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="d" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{085d85fe-0000-4000-80b1-715de9de27d8}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{585c8fdb-0000-4000-9771-60c2b8ddd896}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="49" name="axmr800" spacing="normal" text="axmr800">
+    <VBox gridHeight="20" gridWidth="47" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="5" gridWidth="47" lstrcomment="false" name="Grid1" posX="0" posY="1">
+        <Group gridHeight="5" gridWidth="46" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Change Nt No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oep01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oep_file.oep01" posX="23" posY="1" rowCount="" sqlTabName="oep_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Change Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oep04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oep_file.oep04" posX="23" posY="2" rowCount="" sqlTabName="oep_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="3" text="Change Ver"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oep02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oep_file.oep02" posX="23" posY="3" rowCount="" sqlTabName="oep_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Group gridHeight="10" gridWidth="47" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="6" text="INPUT">
+        <VBox gridHeight="8" gridWidth="45" name="VBox2" posX="1" posY="1">
+          <Grid gridHeight="3" gridWidth="45" lstrcomment="false" name="Grid2" posX="0" posY="1">
+            <Group gridHeight="3" gridWidth="44" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0" text="Print Data">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="21" items="Unconfirmed, Confirmed, All" lstrcomment="false" lstrtitle="false" name="a" posX="2" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="RadioGroup">
+                <Item name="1" text="Unconfirmed"/>
+                <Item name="2" text="Confirmed"/>
+                <Item name="3" text="All"/>
+              </RadioGroup>
+            </Group>
+          </Grid>
+          <Grid gridHeight="3" gridWidth="45" lstrcomment="false" name="Grid3" posX="0" posY="4">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtext="false" lstrtitle="false" name="d" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Print CUST ITEM NO." valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Group>
+      <Grid gridHeight="3" gridWidth="47" lstrcomment="false" name="Grid4" posX="0" posY="16">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{dac0ab04-0000-4000-a4e6-22ac16aa1241}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gbl" order="" uid="{f5606f53-0000-4000-aa2a-33279e48bfc0}" where="">
+    <RecordField colName="gbl02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gbl_file.gbl02" sqlTabName="gbl_file" sqlType="VARCHAR" table_alias_name="" uid="{5d29785e-0000-4000-974c-6b7dcb3961cd}"/>
+    <RecordField colName="gbd04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gbd_file.gbd04" sqlTabName="gbd_file" sqlType="VARCHAR" table_alias_name="" uid="{628e1a1c-0000-4000-948c-4c65bc4d8cb8}"/>
+    <RecordField colName="gbl03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gbl_file.gbl03" sqlTabName="gbl_file" sqlType="VARCHAR" table_alias_name="" uid="{77984202-0000-4000-87c1-0ea3aa932cbf}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{184b9980-0000-4000-927e-c2706d302832}" where="">
+    <RecordField colName="gbl01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gbl_file.gbl01" sqlTabName="gbl_file" sqlType="VARCHAR" table_alias_name="" uid="{32577c7f-0000-4000-9201-43e6f790111e}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="gaz03" sqlTabName="" table_alias_name="" uid="{0d18f3e9-0000-4000-a13e-0861d74c5973}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{31bcb421-0000-4000-95d6-786cb82400ae}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{53312b86-0000-4000-be13-7c29e00cf97d}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="88" name="p_auth_as" spacing="normal" text="p_auth_as">
+    <VBox gridHeight="23" gridWidth="85" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="85" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="5" gridWidth="84" lstrcomment="false" name="gr3150" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="83" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Program">
+              <Label posX="1" posY="1" text="Program ID"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbl01" columnCount="" comment="Key Value" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gbl_file.gbl01" notNull="true" posX="18" posY="1" required="true" rowCount="" sqlTabName="gbl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Program Name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="18" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="85" lstrcomment="false" name="s_gbl" posX="0" posY="8" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbl02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="gbl_file.gbl02" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gbl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Action ID" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbd04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="gbd_file.gbd04" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="gbd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Action Description" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbl03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" items="Modify, Delete" lstrcomment="false" lstrtitle="false" name="gbl_file.gbl03" notNull="true" posX="40" posY="0" required="true" rowCount="" sqlTabName="gbl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Auth. Regards As" widget="ComboBox">
+          <Item name="M" text="Modify"/>
+          <Item name="D" text="Delete"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="2" gridWidth="85" lstrcomment="false" name="gr3151" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl1098" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1099" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

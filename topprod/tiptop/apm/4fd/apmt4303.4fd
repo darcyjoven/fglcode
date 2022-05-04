@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{07423888-0000-4000-87d3-1ad068a856b8}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_wpbc" order="" uid="{16f1ccbc-0000-4000-afa1-b322a6fbe047}" where="">
+    <RecordField colName="wpbc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="wpbc_file.wpbc03" sqlTabName="wpbc_file" sqlType="VARCHAR" table_alias_name="" uid="{86439cfc-0000-4000-b2f0-f1dc4fe2706a}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="pmc03" sqlTabName="" table_alias_name="" uid="{124d20e6-0000-4000-957b-8f9debb53690}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2a9ac122-0000-4000-adee-bff12f3418be}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="wpbc01" sqlTabName="" table_alias_name="" uid="{39d9d7e5-0000-4000-98ea-ba9d7a97ca15}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="wpbc02" sqlTabName="" table_alias_name="" uid="{ed32a171-0000-4000-82ff-55e45873ac5d}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="Form4" text="apmt4303">
+    <VBox gridHeight="16" gridWidth="78" name="vb2" posX="0" posY="1">
+      <Folder gridHeight="7" gridWidth="78" lstrcomment="false" name="pc3" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Grid gridHeight="5" gridWidth="72" lstrcomment="false" name="gr5" posX="0" posY="0">
+            <Label posX="2" posY="1" text="Materials no."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" name="wpbc01" noEntry="true" posX="19" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label posX="2" posY="3" text="Demand date"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="16" lstrcomment="false" name="wpbc02" noEntry="true" posX="19" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="78" name="s_wpbc" posX="0" posY="8" totalRows="5">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wpbc03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" image="zoom.png" lstrcomment="false" lstrtitle="false" name="wpbc_file.wpbc03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="wpbc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="wpbc03" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="pmc03" noEntry="true" posX="8" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="pmc03" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

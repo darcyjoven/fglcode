@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ab4d6728-0000-4000-8ab2-ad2896b0eb29}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_amb" order="" uid="{5dda726d-0000-4000-b365-3c8c237bb9c6}" where="">
+    <RecordField colName="amb03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="amb_file.amb03" sqlTabName="amb_file" sqlType="VARCHAR" table_alias_name="" uid="{dac9a6dd-0000-4000-bba8-94c36011eed3}"/>
+    <RecordField colName="amb04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="amb_file.amb04" sqlTabName="amb_file" sqlType="VARCHAR" table_alias_name="" uid="{d1233a3b-0000-4000-9a97-206056b68903}"/>
+    <RecordField colName="amb05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="amb_file.amb05" sqlTabName="amb_file" sqlType="INTEGER" table_alias_name="" uid="{59d11449-0000-4000-bf03-ebc8ace08efb}"/>
+    <RecordField colName="amb06" fieldIdRef="7" fieldType="TABLE_COLUMN" name="amb_file.amb06" sqlTabName="amb_file" sqlType="INTEGER" table_alias_name="" uid="{df90d140-0000-4000-996a-a122253574fd}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{06d5b459-0000-4000-9201-e6371f89a68e}" where="">
+    <RecordField colName="amb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="amb_file.amb01" sqlTabName="amb_file" sqlType="SMALLINT" table_alias_name="" uid="{15aaba48-0000-4000-8ea8-f1e015dd3a20}"/>
+    <RecordField colName="amb02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="amb_file.amb02" sqlTabName="amb_file" sqlType="SMALLINT" table_alias_name="" uid="{dbf48bbb-0000-4000-b0ef-e56b1e6b0037}"/>
+    <RecordField colName="amb07" fieldIdRef="3" fieldType="TABLE_COLUMN" name="amb_file.amb07" sqlTabName="amb_file" sqlType="SMALLINT" table_alias_name="" uid="{1b737bdf-0000-4000-9615-6f046c91a213}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{6f9596db-0000-4000-980d-261ccee88a5a}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{b5789453-0000-4000-8d74-52522e37a3bb}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="51" name="amdi010" spacing="normal" text="amdi010">
+    <VBox gridHeight="20" gridWidth="48" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="4" gridWidth="48" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="46" lstrcomment="false" name="gr3667" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="amb_file.amb01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="amb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Month"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amb02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="amb_file.amb02" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="amb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="33" posY="1" text="~"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amb07" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="amb_file.amb07" notNull="true" posX="35" posY="1" required="true" rowCount="" sqlTabName="amb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="48" lstrcomment="false" name="s_amb" posX="0" posY="5" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amb03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="amb_file.amb03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="amb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Word Track" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amb04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="amb_file.amb04" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="amb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Format" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amb05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="amb_file.amb05" posX="18" posY="0" rowCount="" sqlTabName="amb_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Initial No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="amb06" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="amb_file.amb06" posX="30" posY="0" rowCount="" sqlTabName="amb_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Ending No." widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="48" lstrcomment="false" name="gr3668" posX="0" posY="17">
+        <HLine gridWidth="10" name="hl1153" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1154" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

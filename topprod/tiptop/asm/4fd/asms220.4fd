@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6f529eb5-0000-4000-8160-93b787779050}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3a1d9b8b-0000-4000-baab-dc49d0863687}" where="">
+    <RecordField colName="sma47" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sma_file.sma47" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{074e1ce9-0000-4000-ac2f-7d8ac081b75a}"/>
+    <RecordField colName="sma49" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sma_file.sma49" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{719a9f41-0000-4000-a164-cc14fa5286a9}"/>
+    <RecordField colName="sma13" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sma_file.sma13" sqlTabName="sma_file" sqlType="DECIMAL" table_alias_name="" uid="{989afe2e-0000-4000-903f-eee46ddab1e8}"/>
+    <RecordField colName="sma14" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sma_file.sma14" sqlTabName="sma_file" sqlType="DECIMAL" table_alias_name="" uid="{28528cf8-0000-4000-9b12-addfd4e92eec}"/>
+    <RecordField colName="sma15" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sma_file.sma15" sqlTabName="sma_file" sqlType="SMALLINT" table_alias_name="" uid="{e1da1714-0000-4000-8fa8-835a363d72ae}"/>
+    <RecordField colName="sma16" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sma_file.sma16" sqlTabName="sma_file" sqlType="SMALLINT" table_alias_name="" uid="{a2c9c0a1-0000-4000-a844-f72366831a99}"/>
+    <RecordField colName="sma17" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sma_file.sma17" sqlTabName="sma_file" sqlType="SMALLINT" table_alias_name="" uid="{eda33aeb-0000-4000-8a87-e18a84562a4c}"/>
+    <RecordField colName="sma48" fieldIdRef="8" fieldType="TABLE_COLUMN" name="sma_file.sma48" sqlTabName="sma_file" sqlType="SMALLINT" table_alias_name="" uid="{718b88ec-0000-4000-898d-4a677a487266}"/>
+  </Record>
+  <Form gridHeight="30" gridWidth="60" name="asms220" spacing="normal" text="asms220">
+    <VBox gridHeight="29" gridWidth="57" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="27" gridWidth="57" lstrcomment="false" name="pc209" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="25" gridWidth="56" lstrcomment="false" name="gr929" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="55" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Item Inventory ABC Class Calculation Method Setting">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma47" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="35" items="by Passed Amount Used, By Standard Cost, By Current Cost" lstrcomment="false" lstrtitle="false" name="sma_file.sma47" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="by Passed Amount Used"/>
+                <Item lstrtext="" name="3" text="By Standard Cost"/>
+                <Item lstrtext="" name="4" text="By Current Cost"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="5" gridWidth="55" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5" text="Standard Setting">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma49" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="35" items="by Group Code, All Items" lstrcomment="false" lstrtitle="false" name="sma_file.sma49" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="by Group Code"/>
+                <Item lstrtext="" name="2" text="All Items"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="55" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="10" text="% Distribution">
+              <Label posX="1" posY="1" text="A Class Inventory %"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma13" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sma_file.sma13" posX="22" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="B Class Inventory %"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma14" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sma_file.sma14" posX="22" posY="2" required="true" rowCount="" sqlTabName="sma_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="5" gridWidth="55" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="14" text="Cycle Inventory Taking Suggested Days">
+              <Label posX="1" posY="1" text="A Class Inventory"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma15" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sma_file.sma15" posX="22" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="B Class Inventory"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma16" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sma_file.sma16" posX="22" posY="2" required="true" rowCount="" sqlTabName="sma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="C Class Inventory"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma17" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sma_file.sma17" posX="22" posY="3" required="true" rowCount="" sqlTabName="sma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            </Group>
+            <Group gridHeight="5" gridWidth="55" lstrcomment="false" lstrtext="false" name="group05" posX="1" posY="19">
+              <Label posX="1" posY="1" text="Calcalating Periods Setting"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma48" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sma_file.sma48" posX="30" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+</ManagedForm>

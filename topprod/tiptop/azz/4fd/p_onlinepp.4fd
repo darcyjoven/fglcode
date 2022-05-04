@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{00281e21-0000-4000-996a-1f1ecb4ce069}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gbo" order="" uid="{2936728e-0000-4000-8424-578702fbd51e}" where="">
+    <RecordField colName="gbo01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gbo_file.gbo01" sqlTabName="gbo_file" sqlType="VARCHAR" table_alias_name="" uid="{e9d1d523-0000-4000-8451-c32d803cd1e0}"/>
+    <RecordField colName="" fieldIdRef="2" name="gem02" sqlTabName="" table_alias_name="" uid="{ad225e97-0000-4000-a90e-3fe5f0aecdaa}"/>
+    <RecordField colName="gbo04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gbo_file.gbo04" sqlTabName="gbo_file" sqlType="VARCHAR" table_alias_name="" uid="{931d8dd0-0000-4000-b3de-4d124bbc3e3e}"/>
+    <RecordField colName="gbo02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gbo_file.gbo02" sqlTabName="gbo_file" sqlType="VARCHAR" table_alias_name="" uid="{7860545c-0000-4000-8cbc-35b252e7a96b}"/>
+    <RecordField colName="gbo03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gbo_file.gbo03" sqlTabName="gbo_file" sqlType="INTEGER" table_alias_name="" uid="{7e8916f8-0000-4000-891e-2963158010da}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{13a1aa0d-0000-4000-add3-d0eb6fdc89cf}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{7aa94a2e-0000-4000-a525-f64388389d78}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="106" name="p_onlinepp" spacing="normal" text="p_onlinepp">
+    <VBox gridHeight="18" gridWidth="105" name="vb8" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="105" lstrcomment="false" name="pc756" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="103" lstrcomment="false" name="s_gbo" posX="0" posY="0" totalRows="10">
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbo01" columnCount="" comment="&lt;^P&gt;Qry Department No." fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="gbo_file.gbo01" noEntry="true" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gbo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Department No." widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="gem02" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Department Abbreviate" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbo04" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" items="Department, Department Group" lstrcomment="false" lstrtitle="false" name="gbo_file.gbo04" noEntry="true" posX="37" posY="0" rowCount="" sqlTabName="gbo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Type" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Department"/>
+              <Item lstrtext="false" name="2" text="Department Group"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbo02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gbo_file.gbo02" notNull="true" posX="55" posY="0" required="true" rowCount="" sqlTabName="gbo_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Online People Limit" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gbo03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="gbo_file.gbo03" posX="75" posY="0" rowCount="" sqlTabName="gbo_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Count" widget="Edit"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="105" lstrcomment="false" name="gr3236" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl1146" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1147" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{52249210-c108-4910-aca1-1c52ce87e90a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{066e4010-7a82-445e-a2aa-5081f36c8cec}" where="">
+    <RecordField colName="gge01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gge_file.gge01" sqlTabName="gge_file" sqlType="VARCHAR" table_alias_name="" uid="{3ade5ff8-e76f-428d-b330-577264c8e652}"/>
+    <RecordField colName="gge02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gge_file.gge02" sqlTabName="gge_file" sqlType="VARCHAR" table_alias_name="" uid="{17360459-7d1f-4353-876b-54a936b292d9}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="indx" sqlTabName="" sqlType="CHAR" table_alias_name="" uid="{1d75851b-f5ea-4d2d-9190-4a476094edf5}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{80008ee5-89ff-4862-81bc-e10243f85ad2}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="CHAR" table_alias_name="" uid="{0ea88181-7574-4d76-b02a-ea9c6b8b4985}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="gge_file" name="s_gge" order="" uid="{19034904-0c56-4c52-a6ad-070128920ffa}" where="">
+    <RecordField colName="gge03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gge_file.gge03" sqlTabName="gge_file" sqlType="SMALLINT" table_alias_name="" uid="{cc3ac3aa-ca51-414e-829f-129655976db2}" uniqueQueryKey="false"/>
+    <RecordField colName="gge04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gge_file.gge04" sqlTabName="gge_file" sqlType="VARCHAR" table_alias_name="" uid="{d406cb48-8a4d-463b-8704-db471f9dde7b}" uniqueQueryKey="false"/>
+    <RecordField colName="gge05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gge_file.gge05" sqlTabName="gge_file" sqlType="VARCHAR" table_alias_name="" uid="{f46a772d-2d9f-48cc-9874-0f3384dd2a05}" uniqueQueryKey="false"/>
+    <RecordField colName="ggd02" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ggd_file.ggd02" sqlTabName="ggd_file" sqlType="VARCHAR" table_alias_name="" uid="{166e3dc6-40cf-4eb2-aaaf-b29369deb661}"/>
+    <RecordField colName="gge06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gge_file.gge06" sqlTabName="gge_file" sqlType="VARCHAR" table_alias_name="" uid="{da928df7-6b66-41ed-8573-7ef618bd732d}" uniqueQueryKey="false"/>
+    <RecordField colName="azf03" fieldIdRef="9" fieldType="TABLE_COLUMN" name="azf_file.azf03" sqlTabName="azf_file" sqlType="VARCHAR" table_alias_name="" uid="{36759d0c-efb3-479b-881e-088554ef3888}"/>
+    <RecordField colName="ggeacti" defaultValue="Y" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gge_file.ggeacti" sqlTabName="gge_file" sqlType="VARCHAR" table_alias_name="" uid="{df5364e0-00f7-4f15-847e-0a4ac12eb100}" uniqueQueryKey="false"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="144" name="Form" text="Form">
+    <VBox gridHeight="16" gridWidth="133" name="VBox1" posX="2" posY="0">
+      <Folder gridHeight="5" gridWidth="133" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Page1">
+          <Grid gridHeight="4" gridWidth="128" name="Grid1" posX="1" posY="0">
+            <Label posX="2" posY="1" text="Mould Numbers"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gge01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" image="zoom" name="gge_file.gge01" notNull="true" posX="18" posY="1" required="true" rowCount="" sqlTabName="gge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="ButtonEdit1" widget="ButtonEdit"/>
+            <Label posX="53" posY="1" text="explain"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gge02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="3" gridWidth="60" name="gge_file.gge02" posX="64" posY="1" rowCount="" sqlTabName="gge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Edit1" widget="TextEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="7" gridWidth="133" name="ds1" posX="0" posY="6" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gge03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="gge_file.gge03" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gge_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Serial number" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gge04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="0, 1" name="gge_file.gge04" notNull="true" posX="15" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="outbound/warehousing" widget="ComboBox">
+          <Item lstrtext="false" name="0" text="0"/>
+          <Item lstrtext="false" name="1" text="1"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gge05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="gge_file.gge05" notNull="true" posX="30" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Different dynamic category" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ggd02" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" name="ggd_file.ggd02" noEntry="true" posX="45" posY="0" rowCount="" sqlTabName="ggd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Category description" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gge06" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="gge_file.gge06" notNull="true" posX="70" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Reason code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azf03" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" name="azf_file.azf03" noEntry="true" posX="85" posY="0" rowCount="" sqlTabName="azf_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Reason code description" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ggeacti" columnCount="" defaultValue="Y" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="gge_file.ggeacti" notNull="true" posX="110" posY="0" required="true" rowCount="" sqlTabName="gge_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="" title="Effective code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="133" name="Grid2" posX="0" posY="13">
+        <HLine gridWidth="12" name="HLine1" posX="3" posY="1"/>
+        <Label posX="18" posY="1" text="rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" name="indx" posX="24" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Edit1" widget="Edit"/>
+        <Label posX="29" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" name="cnt" posX="31" posY="1" rowCount="" sqlTabName="" sqlType="INTEGER" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Edit2" widget="Edit"/>
+        <HLine gridWidth="7" name="HLine2" posX="38" posY="1"/>
+        <Label posX="48" posY="1" text="details"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" name="cn2" posX="58" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Edit3" widget="Edit"/>
+        <HLine gridWidth="13" name="HLine3" posX="66" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzADYANwA1ADkAZAAwAGMALQBlAGYAYgAzAC0ANAA3ADkAYgAtADgAOAAxAGUALQAwADgAOAA1ADUANABlAGYAMwA4ADgAOAB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGQANwA1ADgANQAxAGIALQBmADUAZQBhAC0ANABkADIAZAAtADkAMQA5ADAALQA0AGEANAA3ADYAMAA5ADQAZQBkAGYANQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGEAOQAyADgAZABmADcALQA2AGIANgA2AC0ANAAxAGUAZAAtADgANQA3ADMALQA3AGUAZgA2ADEAOABiAGQANwAzADIAZAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGUAYQA4ADgAMQA4ADEALQA3ADUANwA0AC0ANABkADcANgAtAGIAMAAyAGEALQBlAGEAOQBjADYAYgA4AGIANAA5ADgANQB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGMAMwBhAGMAMwBhAGEALQBjAGEANQAxAC0ANAAxADQAZQAtADgAMgA5AGYALQAxADIAOQA2ADUANQA5ADcANgBkAGIAMgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADQANgBhADcANwAyAGQALQAyAGQAOQBmAC0ANAA4AGMAYwAtADkAOAA3ADQALQAwAGYAMwAzADgANABkAGQAMgBhADAANQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGEAZABlADUAZgBmADgALQBlADcANgBmAC0ANAAyADgAZAAtAGIAMwAzADAALQA1ADcANwAyADYANABjADgAZQA2ADUAMgB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADYANgBlADMAZABjADYALQA0ADAAYwBmAC0ANABlAGIAMgAtAGEAYQBhAGYALQBiADIAOQAzADYAOQBkAGUAYgA2ADYAMQB9QCQAAAAAAABAWcAAAAAAAD9gYk3S8an8AQAAAEwAewA4ADAAMAAwADgAZQBlADUALQA4ADkAZgBmAC0ANAA4ADYAMgAtADgAMQBiAGMALQBlADEAMAAyADQAMwBmADgANQBhAGQAMgB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewBkAGYANQAzADYANABlADAALQAwADAAZgA3AC0ANABmADEANQAtADgANAA3AGUALQAwAGEANABhAGMAMQAyAGUAYgAxADAAMAB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADYANgBlADQAMAAxADAALQA3AGEAOAAyAC0ANAA0ADUAZQAtAGEAMgBhAGEALQA1ADAAOAAxAGYAMwA2AGMAOABjAGUAYwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADkAMAAzADQAOQAwADQALQAwAGMANQA2AC0ANABjADUAMgAtAGEANgBhAGQALQAwADcAMAAxADIAOAA5ADIAMABmAGYAYQB9QHMAAAAAAABALgAAAAAAAD9QYk3S8an8AQAAAEwAewBkADQAMAA2AGMAYgA0ADgALQA4AGEANABkAC0ANAA2ADMAYgAtADgANwAwADQALQBkAGIANAA3ADEAZgA5AGQAZABlADcAYgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADcAMwA2ADAANAA1ADkALQA3AGQAMQBmAC0ANAAzADUAMwAtADgANwA2AGIALQA1ADQAYQA5ADMANgBiADIAOQAyAGQAOQB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

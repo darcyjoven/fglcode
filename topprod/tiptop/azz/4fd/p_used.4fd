@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{04aaffe4-0000-4000-8c29-5d7996083aa3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zu" order="" uid="{6055ba58-0000-4000-8fdf-2e9fd51e73e4}" where="">
+    <RecordField colName="zu02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="zu_file.zu02" sqlTabName="zu_file" sqlType="DATE" table_alias_name="" uid="{f8e19ad5-0000-4000-a0f9-e425179554e5}"/>
+    <RecordField colName="zu03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="zu_file.zu03" sqlTabName="zu_file" sqlType="VARCHAR" table_alias_name="" uid="{4743f7ec-0000-4000-a32d-daee8613da5e}"/>
+    <RecordField colName="zu04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="zu_file.zu04" sqlTabName="zu_file" sqlType="VARCHAR" table_alias_name="" uid="{4264c96b-0000-4000-b8e7-da04265baaf1}"/>
+    <RecordField colName="zu05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="zu_file.zu05" sqlTabName="zu_file" sqlType="DECIMAL" table_alias_name="" uid="{46a0cadb-0000-4000-ba3b-8784576859ce}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fe7b5203-0000-4000-80f4-548457710add}" where="">
+    <RecordField colName="zu01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zu_file.zu01" sqlTabName="zu_file" sqlType="VARCHAR" table_alias_name="" uid="{c9c07963-0000-4000-9f8c-71fcbdc8c1e5}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="gaz03" sqlTabName="" table_alias_name="" uid="{a666fab9-0000-4000-a52b-d42eff0347b8}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{17e2497f-0000-4000-a0a5-0f0fedd50654}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{0f94856b-0000-4000-9585-842a34353590}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="71" name="p_used" spacing="normal" text="p_used">
+    <VBox gridHeight="24" gridWidth="68" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="68" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="5" gridWidth="41" lstrcomment="false" name="gr3140" posX="0" posY="0">
+            <Group gridHeight="4" gridWidth="40" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Program ID"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zu01" columnCount="" comment="Key Value" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="zu_file.zu01" notNull="true" posX="19" posY="1" required="true" rowCount="" sqlTabName="zu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Program Name"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="19" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="13" gridWidth="68" lstrcomment="false" name="s_zu" posX="0" posY="8" totalRows="11">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zu02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="zu_file.zu02" notNull="true" posX="0" posY="0" required="true" rowCount="" scroll="true" sqlTabName="zu_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zu03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="zu_file.zu03" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="zu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Time" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zu04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="zu_file.zu04" posX="22" posY="0" rowCount="" sqlTabName="zu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="User ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zu05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="zu_file.zu05" posX="37" posY="0" rowCount="" sqlTabName="zu_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Minutes" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="68" lstrcomment="false" name="gr3141" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl1090" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1091" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

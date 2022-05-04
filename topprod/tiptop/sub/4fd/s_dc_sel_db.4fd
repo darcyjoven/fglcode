@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{28fbddb8-0000-4000-b6a8-f051b970ca5e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_azp" order="" uid="{bcec2c7c-0000-4000-bb31-84af52ef4833}" where="">
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="sel" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9710e6ad-0000-4000-98b9-4eb26882f601}"/>
+    <RecordField colName="azp01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="azp_file.azp01" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{88c750cd-0000-4000-bbcc-1a81c8cf5e15}"/>
+    <RecordField colName="azp02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="azp_file.azp02" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{edf1a5e8-0000-4000-99f6-8a89e9e680e4}"/>
+    <RecordField colName="azp03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="azp_file.azp03" sqlTabName="azp_file" sqlType="VARCHAR" table_alias_name="" uid="{f5810418-0000-4000-b697-13c8714d799b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e8df8902-0000-4000-a112-d50faef7db22}" where="">
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="gev04" sqlTabName="" table_alias_name="" uid="{743a3a57-0000-4000-b4b7-a5d21e3d3ea8}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="geu02" sqlTabName="" table_alias_name="" uid="{eeab0655-0000-4000-98c7-3be9e7fca0a5}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="133" name="s_dc_sel_db" spacing="normal" text="s_dc_sel_db">
+    <Folder gridHeight="18" gridWidth="75" lstrcomment="false" name="folder01" posX="8" posY="0">
+      <Page lstrtext="false" name="page01" text="Select Carry Logestic">
+        <VBox gridHeight="16" gridWidth="74" name="vb1" posX="1" posY="0">
+          <Grid gridHeight="2" gridWidth="74" lstrcomment="false" name="gr5_1" posX="0" posY="1">
+            <Label posX="1" posY="0" text="Data Center"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="17" lstrcomment="false" name="gev04" posX="15" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" lstrcomment="false" name="geu02" posX="34" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+          </Grid>
+          <Table gridHeight="12" gridWidth="74" lstrcomment="false" name="s_azp" posX="0" posY="3" totalRows="10">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="sel" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp01" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" image="zoom.png" lstrcomment="false" lstrtitle="false" name="azp_file.azp01" posX="6" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Logestic Id" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp02" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="azp_file.azp02" noEntry="true" posX="25" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Logestic Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azp03" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="azp_file.azp03" noEntry="true" posX="55" posY="0" rowCount="" sqlTabName="azp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="DB Id" widget="Edit"/>
+          </Table>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

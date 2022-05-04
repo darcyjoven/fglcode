@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{38af4277-0000-4000-829e-20b93dc05673}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zaz" order="" uid="{2df3f873-0000-4000-a14b-334f627e50fd}" where="">
+    <RecordField colName="zaz03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="zaz_file.zaz03" sqlTabName="zaz_file" sqlType="VARCHAR" table_alias_name="" uid="{f29520ab-0000-4000-9982-3e9ad170cde8}"/>
+    <RecordField colName="" fieldIdRef="9" name="gaz03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{a4984880-0000-4000-9f34-6130047e8f0b}"/>
+    <RecordField colName="zaz04" fieldIdRef="10" fieldType="TABLE_COLUMN" name="zaz_file.zaz04" sqlTabName="zaz_file" sqlType="VARCHAR" table_alias_name="" uid="{3fbdb091-0000-4000-a114-843150af5b03}"/>
+    <RecordField colName="zaz07" fieldIdRef="11" fieldType="TABLE_COLUMN" name="zaz_file.zaz07" sqlTabName="zaz_file" sqlType="VARCHAR" table_alias_name="" uid="{85824b36-0000-4000-8d7a-6b2f643facdd}"/>
+    <RecordField colName="zaz05" fieldIdRef="12" fieldType="TABLE_COLUMN" name="zaz_file.zaz05" sqlTabName="zaz_file" sqlType="VARCHAR" table_alias_name="" uid="{e541b307-0000-4000-8866-5915cf94c2bf}"/>
+    <RecordField colName="zaz06" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zaz_file.zaz06" sqlTabName="zaz_file" sqlType="VARCHAR" table_alias_name="" uid="{e4183953-0000-4000-b79a-8f107758b98e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{04a4e8a9-0000-4000-ba74-f17723540617}" where="">
+    <RecordField colName="zaz01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zaz_file.zaz01" sqlTabName="zaz_file" sqlType="VARCHAR" table_alias_name="" uid="{2f8b6752-0000-4000-ac17-2634f27c5cb5}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="zx02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9b0619d5-0000-4000-a442-aaa7e105defd}"/>
+    <RecordField colName="zaz02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="zaz_file.zaz02" sqlTabName="zaz_file" sqlType="VARCHAR" table_alias_name="" uid="{33380d72-0000-4000-b777-9216494a7e64}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="zw02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{81df0aa8-0000-4000-b4d7-dc0e5fd4f364}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{967577af-0000-4000-a73f-1350b367daaa}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{ee547afe-0000-4000-9633-cd33b1e344b9}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="156" name="p_vprint" spacing="normal" text="p_vprint">
+    <VBox gridHeight="26" gridWidth="153" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="9" gridWidth="153" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="7" gridWidth="81" lstrcomment="false" name="gr1" posX="0" posY="0">
+            <Group gridHeight="6" gridWidth="80" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="User ID"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaz01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="zaz_file.zaz01" notNull="true" posX="16" posY="1" required="true" rowCount="" sqlTabName="zaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="zx02" noEntry="true" posX="31" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Category Code"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaz02" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="zaz_file.zaz02" notNull="true" posX="16" posY="2" required="true" rowCount="" sqlTabName="zaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="zw02" noEntry="true" posX="31" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="153" lstrcomment="false" name="tb1" posX="0" posY="10" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="zaz03" columnCount="" comment="KEYField,No Blank/Repeated!" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="zaz_file.zaz03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="zaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Program ID" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="12" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Program Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaz04" columnCount="" comment="KEYField,No Blank/Repeated!" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="zaz_file.zaz04" notNull="true" posX="42" posY="0" required="true" rowCount="" sqlTabName="zaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Report Template" widget="ButtonEdit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaz07" columnCount="" comment="Print Immediately and Auto close window." fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtext="false" lstrtitle="false" name="zaz_file.zaz07" notNull="true" posX="62" posY="0" required="true" rowCount="" sqlTabName="zaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Print Immediately" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaz05" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="zaz_file.zaz05" posX="77" posY="0" rowCount="" sqlTabName="zaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Printer Name" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zaz06" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="39" items="Standard Print(A4:78 Letter:80 US SF:132 A3:162), ET code Compact Print(A4:117 Letter:125 US SF:204 A3:243), ET code Compact Print(A4:156 Letter:165 US SF:272 A3:324), ET code Compact Print(A4:234 Letter:250 US SF:408 A3:486)" lstrcomment="false" lstrtitle="false" name="zaz_file.zaz06" posX="107" posY="0" queryEditable="true" rowCount="" sqlTabName="zaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Compact Print Option" widget="ComboBox">
+          <Item name="0" text="Standard Print(A4:78 Letter:80 US SF:132 A3:162)"/>
+          <Item name="1" text="ET code Compact Print(A4:117 Letter:125 US SF:204 A3:243)"/>
+          <Item name="2" text="ET code Compact Print(A4:156 Letter:165 US SF:272 A3:324)"/>
+          <Item name="3" text="ET code Compact Print(A4:234 Letter:250 US SF:408 A3:486)"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="3" gridWidth="153" lstrcomment="false" name="gr3" posX="0" posY="22">
+        <HLine gridWidth="10" name="hl1" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

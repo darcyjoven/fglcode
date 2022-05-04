@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{7bcd585e-0000-4000-8dfd-65689e1995b3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6bbf6020-0000-4000-8ed7-0681c9e1bc9d}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="year" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9a5126dc-0000-4000-a076-fb7a40ba0b74}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="month" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{c27b0f71-0000-4000-9431-45ffcb8f5eae}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="sw1" sqlTabName="" table_alias_name="" uid="{b0d9313b-0000-4000-b805-c8b44c8946a0}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="sw2" sqlTabName="" table_alias_name="" uid="{2bdd5a93-0000-4000-95a2-0ca841023ba1}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="sw3" sqlTabName="" table_alias_name="" uid="{5ba1034a-0000-4000-b16c-32b345753b34}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{b2274f31-0000-4000-8d71-71e68e9e1130}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="61" name="asdp120" spacing="normal" text="asdp120">
+    <VBox gridHeight="11" gridWidth="59" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="59" lstrcomment="false" name="gr372" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+          <Label posX="1" posY="1" text="Monthly Closing YY/MM"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="year" notNull="true" posX="24" posY="1" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="29" posY="1" text="/"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="2" lstrcomment="false" lstrtitle="false" name="month" notNull="true" posX="31" posY="1" required="true" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="52" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sw1" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Clear Data, C/f Last Period Balance" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="52" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sw2" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Summarize Current MM Wtdw/Ret/St-in Data" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="52" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sw3" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Summarize Monthly Statistics Data" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="59" lstrcomment="false" name="gr373" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

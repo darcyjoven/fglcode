@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f0d067bb-0000-4000-8e73-c92c0f46537d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{23df25f9-0000-4000-b4b1-51530bf3fdce}" where="">
+    <RecordField colName="sma80" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sma_file.sma80" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{c22bb799-0000-4000-a082-79ea2cc6a541}"/>
+    <RecordField colName="sma43" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sma_file.sma43" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{40136463-0000-4000-b43b-f59ead8d79b1}"/>
+    <RecordField colName="sma81" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sma_file.sma81" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{2678f849-0000-4000-bea9-598e150ad8a0}"/>
+    <RecordField colName="sma86" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sma_file.sma86" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{1b0ea7ed-0000-4000-b70b-06cfb7ea4901}"/>
+    <RecordField colName="sma87" fieldIdRef="7" fieldType="TABLE_COLUMN" name="sma_file.sma87" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{6840091b-0000-4000-8702-0ef833caeb7a}"/>
+    <RecordField colName="sma82" fieldIdRef="8" fieldType="TABLE_COLUMN" name="sma_file.sma82" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{054c3b4b-0000-4000-bfaf-2329f4369834}"/>
+    <RecordField colName="sma889" fieldIdRef="9" fieldType="TABLE_COLUMN" name="sma_file.sma889" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{9e2fb820-0000-4000-9d98-f112b0b7f11b}"/>
+    <RecordField colName="sma23" fieldIdRef="10" fieldType="TABLE_COLUMN" name="sma_file.sma23" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{9b6e77eb-0000-4000-8cc2-d47eebaf5c2d}"/>
+    <RecordField colName="sma89" fieldIdRef="11" fieldType="TABLE_COLUMN" name="sma_file.sma89" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{2aadda29-0000-4000-a18a-c6d67380f9bb}"/>
+    <RecordField colName="sma891" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sma_file.sma891" sqlTabName="sma_file" sqlType="VARCHAR" table_alias_name="" uid="{c5feb201-0000-4000-9fd2-a62de57fae39}"/>
+    <RecordField colName="sma20" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sma_file.sma20" sqlTabName="sma_file" sqlType="SMALLINT" table_alias_name="" uid="{bc5742c7-0000-4000-b4e2-05c727e7117f}"/>
+  </Record>
+  <Form gridHeight="31" gridWidth="89" name="asms120" spacing="normal" text="asms120">
+    <VBox gridHeight="30" gridWidth="86" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="28" gridWidth="86" lstrcomment="false" name="pc195" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="26" gridWidth="85" lstrcomment="false" name="gr908" posX="0" posY="0">
+            <Group gridHeight="6" gridWidth="42" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="W/O Work Hour Entering Method">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma80" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" items="W/O Hours, Workstation Work Hour, Operator W/O,machine W/O Work Hour, W/O Operator,Machine Hours" lstrcomment="false" lstrtitle="false" name="sma_file.sma80" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="W/O Hours"/>
+                <Item lstrtext="" name="2" text="Workstation Work Hour"/>
+                <Item lstrtext="" name="3" text="Operator W/O,machine W/O Work Hour"/>
+                <Item lstrtext="" name="4" text="W/O Operator,Machine Hours"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="6" gridWidth="42" lstrcomment="false" lstrtext="false" name="group06" posX="43" posY="0" text="Inventory Costing Method">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma43" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="34" items="First In First Out, Last In First Out, Weighted Average, Monthly Weighted Average Method" lstrcomment="false" lstrtitle="false" name="sma_file.sma43" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="First In First Out"/>
+                <Item lstrtext="" name="2" text="Last In First Out"/>
+                <Item lstrtext="" name="3" text="Weighted Average"/>
+                <Item lstrtext="" name="4" text="Monthly Weighted Average Method"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="42" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="6" text="Minute Displayed by Hour">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma81" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="29" items="Percentage, 60Minute" lstrcomment="false" lstrtitle="false" name="sma_file.sma81" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Percentage"/>
+                <Item lstrtext="" name="2" text="60Minute"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="42" lstrcomment="false" lstrtext="false" name="group07" posX="43" posY="6">
+              <Label posX="1" posY="1" text="Book No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma86" columnCount="" comment="No Blank Field" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="sma_file.sma86" notNull="true" posX="22" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Plant# where G/L is"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma87" columnCount="" comment="No Blank Field" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="sma_file.sma87" notNull="true" posX="22" posY="2" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+            </Group>
+            <Group gridHeight="4" gridWidth="42" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="10" text="Indirect Material Costing Method">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma82" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="29" items="By Item Master Rate Setting, By BOM QPA" lstrcomment="false" lstrtitle="false" name="sma_file.sma82" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="By Item Master Rate Setting"/>
+                <Item lstrtext="" name="2" text="By BOM QPA"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="42" lstrcomment="false" lstrtext="false" name="group09" posX="43" posY="10" text="Lower Cost Market Rule(L.C.M.)rule">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma889" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="31" items="Record by Record, By Category, By Total" lstrcomment="false" lstrtitle="false" name="sma_file.sma889" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Record by Record"/>
+                <Item lstrtext="" name="2" text="By Category"/>
+                <Item lstrtext="" name="3" text="By Total"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="42" lstrcomment="false" lstrtext="false" name="group04" posX="1" posY="14" text="Labor Costing Method">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma23" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="29" items="Use Cost Center, Used Work Center, Routing, By Item Setting" lstrcomment="false" lstrtitle="false" name="sma_file.sma23" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Use Cost Center"/>
+                <Item lstrtext="" name="2" text="Used Work Center, Routing"/>
+                <Item lstrtext="" name="3" text="By Item Setting"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="11" gridWidth="42" lstrcomment="false" lstrtext="false" name="group10" posX="43" posY="14" text="Cost Accounting Method">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma89" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="31" items="Job Cost, Process Costing" lstrcomment="false" lstrtitle="false" name="sma_file.sma89" posX="1" posY="1" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Job Cost"/>
+                <Item lstrtext="" name="2" text="Process Costing"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="7" gridWidth="42" lstrcomment="false" lstrtext="false" name="group05" posX="1" posY="18">
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma891" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sma_file.sma891" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="sma_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="Set End of Period Equivalent WIP Qty?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <Label posX="1" posY="2" text="Overdue Data Keeping Periods"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sma20" columnCount="" comment="No Blank Field" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="sma_file.sma20" notNull="true" posX="30" posY="2" required="true" rowCount="" sqlTabName="sma_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </Form>
+</ManagedForm>

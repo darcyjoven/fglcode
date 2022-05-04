@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{ee6112a9-0000-4000-a72c-e0acfd660214}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{529493d0-0000-4000-924f-1ac4128be067}" where="">
+    <RecordField colName="pja01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pja_file.pja01" sqlTabName="pja_file" sqlType="VARCHAR" table_alias_name="" uid="{03fff285-0000-4000-bd33-994dc419c681}"/>
+    <RecordField colName="pjb02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pjb_file.pjb02" sqlTabName="pjb_file" sqlType="VARCHAR" table_alias_name="" uid="{035edf02-0000-4000-89d3-e3b7d715a60f}"/>
+    <RecordField colName="pja05" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pja_file.pja05" sqlTabName="pja_file" sqlType="DATE" table_alias_name="" uid="{ac35e90c-0000-4000-a609-1d88bbe82abc}"/>
+    <RecordField colName="pja09" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pja_file.pja09" sqlTabName="pja_file" sqlType="VARCHAR" table_alias_name="" uid="{fccc9c74-0000-4000-8fa2-0d220c7fb0b6}"/>
+    <RecordField colName="pja08" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pja_file.pja08" sqlTabName="pja_file" sqlType="VARCHAR" table_alias_name="" uid="{5e276d97-0000-4000-8b61-6e901325ae3b}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{ebf1bddf-0000-4000-aef1-81cc43a3c09b}"/>
+  </Record>
+  <Form gridHeight="13" gridWidth="56" name="apjr300" spacing="normal" text="apjr300">
+    <VBox gridHeight="12" gridWidth="50" name="vb5" posX="3" posY="1">
+      <Grid gridHeight="8" gridWidth="50" lstrcomment="false" name="gr4672" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="49" lstrcomment="false" lstrtext="false" name="grpqbe" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Project NO."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pja01" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" lstrcomment="false" name="pja_file.pja01" posX="22" posY="1" rowCount="" sqlTabName="pja_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="WBS No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pjb02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" lstrcomment="false" name="pjb_file.pjb02" posX="22" posY="2" rowCount="" sqlTabName="pjb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Project Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pja05" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="pja_file.pja05" posX="22" posY="3" rowCount="" sqlTabName="pja_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="4" text="Department NO."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pja09" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" lstrcomment="false" name="pja_file.pja09" posX="22" posY="4" rowCount="" sqlTabName="pja_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="5" text="Employee NO."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pja08" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" lstrcomment="false" name="pja_file.pja08" posX="22" posY="5" rowCount="" sqlTabName="pja_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="50" lstrcomment="false" name="gr4673" posX="0" posY="9">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="37" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{4932c840-0000-4000-9464-21cb2621e275}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{81473ec0-0000-4000-ad82-f07f8e8b1d4f}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="page_length" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d08bf76b-0000-4000-bdfb-d1e0011c54d8}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="b_page" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3c373002-0000-4000-b15b-a9088c872270}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="c" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d44430d3-0000-4000-be21-02d9e7d098a1}"/>
+  </Record>
+  <Form gridHeight="10" gridWidth="36" name="cl_prt_2" spacing="normal" text="cl_prt_2">
+    <Grid gridHeight="8" gridWidth="35" lstrcomment="false" name="Grid1" posX="0" posY="0">
+      <Group gridHeight="4" gridWidth="34" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+        <Label posX="1" posY="1" text="Rows/Page"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="page_length" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="2" text="Pages to Remove/Keep"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="b_page" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+      </Group>
+      <Group gridHeight="3" gridWidth="34" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="4" text="Cutting">
+        <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="31" items="Remove Front Pages, Remve Last Pages, Keep Front Pages, Keep Last Pages" lstrcomment="false" lstrtitle="false" name="c" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+          <Item name="1" text="Remove Front Pages"/>
+          <Item name="2" text="Remve Last Pages"/>
+          <Item name="3" text="Keep Front Pages"/>
+          <Item name="4" text="Keep Last Pages"/>
+        </RadioGroup>
+      </Group>
+    </Grid>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{468f27c7-0000-4000-969b-30c5ca0b6b0f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zzd" order="" uid="{87666d92-0000-4000-ab68-62d8266a163a}" where="">
+    <RecordField colName="zzd01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zzd_file.zzd01" sqlTabName="zzd_file" sqlType="VARCHAR" table_alias_name="" uid="{507697a9-0000-4000-9001-a7a6d42cf55c}"/>
+    <RecordField colName="zzd02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zzd_file.zzd02" sqlTabName="zzd_file" sqlType="VARCHAR" table_alias_name="" uid="{a4378cf1-0000-4000-b111-0cf23164a93e}"/>
+    <RecordField colName="zzdacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="zzd_file.zzdacti" sqlTabName="zzd_file" sqlType="VARCHAR" table_alias_name="" uid="{1bad3597-0000-4000-8941-4e0f078f57fe}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{aec15f97-0000-4000-9b2f-e3ad0d8f401c}" where="">
+    <RecordField colName="" fieldIdRef="5" name="memo" sqlTabName="" table_alias_name="" uid="{fc3dbf39-0000-4000-b956-132065bd2b81}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{91460b8f-0000-4000-8132-e4a21deb9086}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="76" name="p_zzd" spacing="normal" text="p_zzd">
+    <Folder gridHeight="16" gridWidth="74" lstrcomment="false" name="pc697" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="15" gridWidth="72" name="VBox1" posX="0" posY="0">
+          <Grid gridHeight="2" gridWidth="72" name="Grid1" posX="0" posY="1">
+            <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="10" name="memo" posX="1" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" title="formonly.FFLabel1" widget="FFLabel"/>
+          </Grid>
+          <Table gridHeight="11" gridWidth="72" lstrcomment="false" name="s_zzd" posX="0" posY="3" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zzd01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtitle="false" name="zzd_file.zzd01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="zzd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="English" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zzd02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="31" lstrcomment="false" lstrtitle="false" name="zzd_file.zzd02" posX="31" posY="0" rowCount="" sqlTabName="zzd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Chinese" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zzdacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="zzd_file.zzdacti" notNull="true" posX="62" posY="0" required="true" rowCount="" sqlTabName="zzd_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </VBox>
+      </Page>
+      <Page lstrtext="false" name="info" text="Info">
+        <Grid gridHeight="4" gridWidth="34" lstrcomment="false" name="gr3029" posX="0" posY="0">
+          <Group gridHeight="3" gridWidth="33" lstrcomment="false" lstrtext="false" name="grpinfo" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Data Detail Counts"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b7f46348-1bd5-4e2f-897b-400b55dd5905}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gfe" order="" uid="{47d4009b-1ea4-4b1e-a70f-a081c824849f}" where="">
+    <RecordField colName="gfe01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gfe_file.gfe01" sqlTabName="gfe_file" sqlType="VARCHAR" table_alias_name="" uid="{809eeacc-c404-41bf-a64b-e5a5e8c2e82a}"/>
+    <RecordField colName="gfe02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gfe_file.gfe02" sqlTabName="gfe_file" sqlType="VARCHAR" table_alias_name="" uid="{8666e335-7093-4e7a-ad95-40bc0bc59a11}"/>
+    <RecordField colName="gfe03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gfe_file.gfe03" sqlTabName="gfe_file" sqlType="SMALLINT" table_alias_name="" uid="{a0924dc1-5197-49d2-b27c-af0e4ce16bd5}"/>
+    <RecordField colName="gfeacti" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gfe_file.gfeacti" sqlTabName="gfe_file" sqlType="VARCHAR" table_alias_name="" uid="{3bcb247c-f254-4e67-aea7-093f4595de17}"/>
+    <RecordField colName="gfepos" defaultValue="N" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gfe_file.gfepos" sqlTabName="gfe_file" sqlType="VARCHAR" table_alias_name="" uid="{25878c39-fd35-4bac-bf75-8f9846ff459d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{49e28cd5-b8cb-458b-a4ce-96ad3a70db99}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{88d7b0ec-5a56-46ca-9149-d06be4f16317}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="62" name="aooi101" spacing="normal" text="aooi101">
+    <VBox gridHeight="18" gridWidth="57" name="vb6" posX="1" posY="0">
+      <Folder gridHeight="13" gridWidth="57" lstrcomment="false" name="pc839" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="56" lstrcomment="false" name="s_gfe" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfe01" columnCount="" comment="Enter Unit to Add/Query                 " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="gfe_file.gfe01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gfe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Unit" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfe02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gfe_file.gfe02" posX="7" posY="0" rowCount="" sqlTabName="gfe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfe03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="gfe_file.gfe03" posX="19" posY="0" rowCount="" sqlTabName="gfe_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Decimal Digits" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfeacti" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gfe_file.gfeacti" notNull="true" posX="34" posY="0" required="true" rowCount="" sqlTabName="gfe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfepos" colorCondition="black" columnCount="" defaultValue="N" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Add-No passed, Modify-No passed, Passed, Text, Text" lstrcomment="false" name="gfe_file.gfepos" noEntry="true" notNull="true" posX="39" posY="0" rowCount="" sqlTabName="gfe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="POS?" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="Add-No passed"/>
+              <Item lstrtext="false" name="2" text="Modify-No passed"/>
+              <Item lstrtext="false" name="3" text="Passed"/>
+              <Item lstrtext="false" name="4" text="Text"/>
+              <Item lstrtext="false" name="5" text="Text"/>
+            </ComboBox>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="57" lstrcomment="false" name="gr4628" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl1436" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1437" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0ADcAZAA0ADAAMAA5AGIALQAxAGUAYQA0AC0ANABiADEAZQAtAGEANwAwAGYALQBhADAAOAAxAGMAOAAyADQAOAA0ADkAZgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAzAGIAYwBiADIANAA3AGMALQBmADIANQA0AC0ANABlADYANwAtAGEAZQBhADcALQAwADkAMwBmADQANQA5ADUAZABlADEANwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADAAOQAyADQAZABjADEALQA1ADEAOQA3AC0ANAA5AGQAMgAtAGIAMgA3AGMALQBhAGYAMABlADQAYwBlADEANgBiAGQANQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADUAOAA3ADgAYwAzADkALQBmAGQAMwA1AC0ANABiAGEAYwAtAGIAZgA3ADUALQA4AGYAOQA4ADQANgBmAGYANAA1ADkAZAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADgAZAA3AGIAMABlAGMALQA1AGEANQA2AC0ANAA2AGMAYQAtADkAMQA0ADkALQBkADAANgBiAGUANABmADEANgAzADEANwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADAAOQBlAGUAYQBjAGMALQBjADQAMAA0AC0ANAAxAGIAZgAtAGEANgA0AGIALQBlADUAYQA1AGUAOABjADIAZQA4ADIAYQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADkAZQAyADgAYwBkADUALQBiADgAYwBiAC0ANAA1ADgAYgAtAGEANABjAGUALQA5ADYAYQBkADMAYQA3ADAAZABiADkAOQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADYANgA2AGUAMwAzADUALQA3ADAAOQAzAC0ANABlADcAYQAtAGEAZAA5ADUALQA0ADAAYgBjADAAYgBjADUAOQBhADEAMQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

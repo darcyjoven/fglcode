@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{5e2cc335-0000-4000-842d-029db8289e8d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ef323eb3-0000-4000-a82a-ded5f100a74a}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="ima01" sqlTabName="" table_alias_name="" uid="{84cec306-0000-4000-8105-794d0e54f991}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="ima57" sqlTabName="" table_alias_name="" uid="{408aa959-0000-4000-ae00-b78f3f821804}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ima12" sqlTabName="" table_alias_name="" uid="{9ddbffd5-0000-4000-880f-29ee54225625}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="ccc02" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{59f8701d-0000-4000-a5cd-1e6838f0f385}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="ccc03" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{5bb775d0-0000-4000-958c-789271efb5e9}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="type" sqlTabName="" table_alias_name="" uid="{9bd4190a-0000-4000-a84c-2900a23534f0}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="itemx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{8cbf2ce2-0000-4000-a5c1-b829091dcdbc}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{828125ee-0000-4000-944b-55d50133979e}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="92" name="axcr370" spacing="normal" text="axcr370">
+    <VBox gridHeight="15" gridWidth="91" name="vb4" posX="1" posY="0">
+      <Grid gridHeight="11" gridWidth="91" lstrcomment="false" name="gr21" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="89" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Item No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;P&gt;" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="ima01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="45" posY="1" text="Cost Levels"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima57" posX="66" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Cost Group"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="ima12" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="6" gridWidth="88" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="4" text="INPUT">
+          <Label posX="1" posY="1" text="Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="No Blank Field" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="ccc02" posX="33" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Period"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="2" lstrcomment="false" lstrtitle="false" name="ccc03" posX="33" posY="2" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Cost Calculation Method"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" items="Monthly Weighted Unit Cost, FIFO Cost, Identify Manually-Batch Cost, Identify Manually-Item Cost, Identify Manually-Store Profit Center" lstrcomment="false" name="type" notNull="true" posX="33" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="Monthly Weighted Unit Cost"/>
+            <Item lstrtext="false" name="2" text="FIFO Cost"/>
+            <Item lstrtext="false" name="3" text="Identify Manually-Batch Cost"/>
+            <Item lstrtext="false" name="4" text="Identify Manually-Item Cost"/>
+            <Item lstrtext="false" name="5" text="Identify Manually-Store Profit Center"/>
+          </ComboBox>
+          <Label posX="1" posY="4" text="Select Checking Item"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="" colName="" colorCondition="black" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="32" items="All, Cros-Ck Inv.Cost, Cros-Ck WIP Cost, Crs-Ck WIP-Compo Cost, CM with Misc Wtdw.Amt but no Qty, Bal.Qt=0,but Bal.Amt!=0, Cur.MM Bal.Qt(-), CM Total Bal.Amt (-), CM Mat. Bal.Amt (-), CM Lbr. Bal.Amt (-), CM Ovhd. Bal.Cost(-), CM Prcs.Cost Bal(-), CM Other Cost Bal(-), CM Avg.U/P (-), CM Tr-o &gt; LM Bal. +CM Input, WIP Cost(Compo)EoP Amt (-)!, Diff.Amt &gt; 5 OR &lt; -5, M.Itm Qt=0,but(BoP+Input)Amt&lt;&gt; 0, CM BoP Amt &lt;&gt; LM EoP Amt, CM with Hour but no W/O or Clsd, EoP Qty &lt; 0, CM Bal.Qty &lt;&gt; MFG EoP Qty, Input&lt;&gt;Issuing !!, CM with Rework Wtdw.Qt but no Amt, CM with Misc Wtdw.Qt but no Amt, WIP Trsf-o Amt (-), Itm# w/o Prod.Cate, MFG RC/DN Deductd Unconf, AXR Delivery Nt Unconf, AAP Fore.Pur Unallo &amp; Unconf" name="itemx" posX="33" posY="4" queryEditable="" rowCount="" scroll="" sizePolicy="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ComboBox">
+            <Item lstrtext="false" name="0" text="All"/>
+            <Item lstrtext="false" name="-88" text="Cros-Ck Inv.Cost"/>
+            <Item lstrtext="false" name="-77" text="Cros-Ck WIP Cost"/>
+            <Item lstrtext="false" name="-66" text="Crs-Ck WIP-Compo Cost"/>
+            <Item lstrtext="false" name="-12" text="CM with Misc Wtdw.Amt but no Qty"/>
+            <Item lstrtext="false" name="-13" text="Bal.Qt=0,but Bal.Amt!=0"/>
+            <Item lstrtext="false" name="-14" text="Cur.MM Bal.Qt(-)"/>
+            <Item lstrtext="false" name="-15" text="CM Total Bal.Amt (-)"/>
+            <Item lstrtext="false" name="-16" text="CM Mat. Bal.Amt (-)"/>
+            <Item lstrtext="false" name="-17" text="CM Lbr. Bal.Amt (-)"/>
+            <Item lstrtext="false" name="-18" text="CM Ovhd. Bal.Cost(-)"/>
+            <Item lstrtext="false" name="-19" text="CM Prcs.Cost Bal(-)"/>
+            <Item lstrtext="false" name="-20" text="CM Other Cost Bal(-)"/>
+            <Item lstrtext="false" name="-24" text="CM Avg.U/P (-)"/>
+            <Item lstrtext="false" name="20" text="CM Tr-o &gt; LM Bal. +CM Input"/>
+            <Item lstrtext="false" name="25" text="WIP Cost(Compo)EoP Amt (-)!"/>
+            <Item lstrtext="false" name="-21" text="Diff.Amt &gt; 5 OR &lt; -5"/>
+            <Item lstrtext="false" name="35" text="M.Itm Qt=0,but(BoP+Input)Amt&lt;&gt; 0"/>
+            <Item lstrtext="false" name="-22" text="CM BoP Amt &lt;&gt; LM EoP Amt"/>
+            <Item lstrtext="false" name="45" text="CM with Hour but no W/O or Clsd"/>
+            <Item lstrtext="false" name="50" text="EoP Qty &lt; 0"/>
+            <Item lstrtext="false" name="-23" text="CM Bal.Qty &lt;&gt; MFG EoP Qty"/>
+            <Item lstrtext="false" name="-09" text="Input&lt;&gt;Issuing !!"/>
+            <Item lstrtext="false" name="-10" text="CM with Rework Wtdw.Qt but no Amt"/>
+            <Item lstrtext="false" name="-11" text="CM with Misc Wtdw.Qt but no Amt"/>
+            <Item lstrtext="false" name="41" text="WIP Trsf-o Amt (-)"/>
+            <Item lstrtext="false" name="51" text="Itm# w/o Prod.Cate"/>
+            <Item lstrtext="false" name="52" text="MFG RC/DN Deductd Unconf"/>
+            <Item lstrtext="false" name="53" text="AXR Delivery Nt Unconf"/>
+            <Item lstrtext="false" name="54" text="AAP Fore.Pur Unallo &amp; Unconf"/>
+          </ComboBox>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="91" lstrcomment="false" name="gr22" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="68" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

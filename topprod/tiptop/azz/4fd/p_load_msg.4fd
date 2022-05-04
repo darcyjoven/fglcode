@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{77dbd3a6-0000-4000-b8cd-a24d03c6e3f3}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ee6d70ae-0000-4000-90c5-dc58625ed32d}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="display_msg" sqlTabName="" table_alias_name="" uid="{0bc41597-0000-4000-a581-3e4062beca49}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="input_msg" sqlTabName="" table_alias_name="" uid="{983af69e-0000-4000-b756-1b8b5ff861c4}"/>
+    <RecordField colName="gar02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gar_file.gar02" sqlTabName="gar_file" sqlType="VARCHAR" table_alias_name="" uid="{bbae645c-0000-4000-9fc8-7eecb1d93614}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="zx02" sqlTabName="" table_alias_name="" uid="{a5edf245-0000-4000-9690-5e6b2bd55e11}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="66" name="p_load_msg" spacing="normal" text="p_load_msg">
+    <VBox gridHeight="21" gridWidth="64" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="13" gridWidth="64" lstrcomment="false" lstrtext="false" name="gb2351" posX="0" posY="1">
+        <Grid gridHeight="11" gridWidth="62" lstrcomment="false" name="gr3223" posX="1" posY="1">
+          <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="10" gridWidth="60" lstrcomment="false" lstrtitle="false" name="display_msg" posX="1" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="both" tabIndex="1" table_alias_name="" widget="TextEdit"/>
+          <Button gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="history" posX="1" posY="10" tabIndex="" text="History"/>
+          <Button gridHeight="1" gridWidth="11" image="prev" lstrcomment="false" lstrtext="false" name="prevdata" posX="35" posY="10" tabIndex="" text="Previous"/>
+          <Button gridHeight="1" gridWidth="11" image="next" lstrcomment="false" lstrtext="false" name="nextdata" posX="50" posY="10" tabIndex="" text="Next"/>
+        </Grid>
+      </Group>
+      <Grid gridHeight="6" gridWidth="64" lstrcomment="false" name="gr3224" posX="0" posY="14">
+        <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="5" gridWidth="59" lstrcomment="false" lstrtitle="false" name="input_msg" posX="1" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" stretch="both" tabIndex="2" table_alias_name="" widget="TextEdit"/>
+        <Label posX="1" posY="5" text="Send to"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gar02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="gar_file.gar02" notNull="true" posX="11" posY="5" required="true" rowCount="" scroll="true" sqlTabName="gar_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="zx02" noEntry="true" posX="25" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Button gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" name="send" posX="40" posY="5" tabIndex="" text="Send"/>
+        <Button gridHeight="1" gridWidth="9" lstrcomment="false" lstrtext="false" name="exit" posX="51" posY="5" tabIndex="" text="Exit"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

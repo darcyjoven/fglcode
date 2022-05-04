@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{62b3db42-0000-4000-be54-99c26f036590}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bwsj" order="" uid="{8073107d-0000-4000-89cf-a2f46f285efe}" where="">
+    <RecordField colName="" fieldIdRef="5" name="bwsj06" sqlTabName="" table_alias_name="" uid="{c235bd85-0000-4000-ad43-26e99654f2bd}"/>
+    <RecordField colName="" fieldIdRef="6" name="bwsj04" sqlTabName="" table_alias_name="" uid="{289d8e25-0000-4000-83cb-b8a08486c283}"/>
+    <RecordField colName="" fieldIdRef="7" name="bwsj02" sqlTabName="" table_alias_name="" uid="{81c2dc62-0000-4000-a42c-c515b7e20e3c}"/>
+    <RecordField colName="" fieldIdRef="8" name="bwsj03" sqlTabName="" table_alias_name="" uid="{51e6c2fe-0000-4000-a3ea-8d2407caa832}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bac4fff5-0000-4000-9022-ef7228c474bb}" where="">
+    <RecordField colName="wsj06" fieldIdRef="1" fieldType="TABLE_COLUMN" name="wsj_file.wsj06" sqlTabName="wsj_file" sqlType="VARCHAR" table_alias_name="" uid="{e3d5fb03-0000-4000-b7ad-70582b9adc59}"/>
+    <RecordField colName="wsj04" fieldIdRef="2" fieldType="TABLE_COLUMN" name="wsj_file.wsj04" sqlTabName="wsj_file" sqlType="VARCHAR" table_alias_name="" uid="{e260dc1c-0000-4000-9f1e-b846fc2811e9}"/>
+    <RecordField colName="wsj02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="wsj_file.wsj02" sqlTabName="wsj_file" sqlType="VARCHAR" table_alias_name="" uid="{219d75f3-0000-4000-8ca1-da30e59b2cc4}"/>
+    <RecordField colName="wsj03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="wsj_file.wsj03" sqlTabName="wsj_file" sqlType="VARCHAR" table_alias_name="" uid="{ca164474-0000-4000-bd25-af730a33b46d}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="103" name="aws_efcfg_exc" spacing="normal" text="EF Exception Station Config">
+    <VBox gridHeight="18" gridWidth="100" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="9" gridWidth="100" lstrcomment="false" name="gr1412" posX="0" posY="1">
+        <Group gridHeight="8" gridWidth="82" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Exception Station Setting">
+          <Label posX="1" posY="1" text="Plant No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsj06" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" lstrcomment="false" lstrtitle="false" name="wsj_file.wsj06" notNull="true" posX="30" posY="1" required="true" rowCount="" sqlTabName="wsj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="EasyFlow station name"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsj04" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="wsj_file.wsj04" notNull="true" posX="30" posY="2" required="true" rowCount="" sqlTabName="wsj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="EasyFlow station IP address"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsj02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="wsj_file.wsj02" notNull="true" posX="30" posY="3" required="true" rowCount="" sqlTabName="wsj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="EasyFlow SOAP Services URL"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="wsj03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="wsj_file.wsj03" notNull="true" posX="30" posY="4" required="true" rowCount="" scroll="true" sqlTabName="wsj_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Table gridHeight="7" gridWidth="100" lstrcomment="false" name="s_bwsj" posX="0" posY="10" totalRows="5">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="bwsj06" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Plant No. Station name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bwsj04" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="bwsj02" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="IP address" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="bwsj03" noEntry="true" posX="44" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="SOAP Services URL" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

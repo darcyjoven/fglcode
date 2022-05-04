@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6b82df28-0000-4000-b572-e07322b735ae}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gdx" order="" uid="{e317db2b-0000-4000-8111-ff576bcbc2e1}" where="">
+    <RecordField colName="gdx03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gdx_file.gdx03" sqlTabName="gdx_file" sqlType="VARCHAR" table_alias_name="" uid="{a97bcc5b-0000-4000-8987-64fc7f66c86c}"/>
+    <RecordField colName="gdx02" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gdx_file.gdx02" sqlTabName="gdx_file" sqlType="SMALLINT" table_alias_name="" uid="{3793d342-0000-4000-a19c-d56125ba4068}"/>
+    <RecordField colName="gdx04" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gdx_file.gdx04" sqlTabName="gdx_file" sqlType="VARCHAR" table_alias_name="" uid="{8d1cdcb8-0000-4000-ab20-728b8d5d14b6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{7865e25f-0000-4000-94ca-5e47d75dd488}" where="">
+    <RecordField colName="gdx01" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gdx_file.gdx01" sqlTabName="gdx_file" sqlType="VARCHAR" table_alias_name="" uid="{22e81f92-0000-4000-94d8-5d7d69055cc2}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{631c260c-0000-4000-8ae5-8be22b68de5a}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{532a821d-0000-4000-b28f-72de49a31241}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="134" name="Form2" text="p_cr_apr">
+    <VBox gridHeight="24" gridWidth="133" name="vb3" posX="1" posY="0">
+      <Folder gridHeight="4" gridWidth="133" lstrcomment="false" name="pc2" posX="0" posY="1">
+        <Page name="BasicData" text="Basic Data">
+          <Grid gridHeight="3" gridWidth="120" lstrcomment="false" name="gr7" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Doc. Type No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdx01" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" justify="" name="gdx_file.gdx01" posX="15" posY="1" rowCount="" sizePolicy="" sqlTabName="gdx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <HBox gridHeight="14" gridWidth="133" name="hb4" posX="0" posY="5">
+        <Grid gridHeight="14" gridWidth="112" lstrcomment="false" name="gr6" posX="2" posY="0">
+          <Table gridHeight="12" gridWidth="111" name="s_gdx" posX="1" posY="1" totalRows="10">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdx03" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="" lstrcomment="false" lstrtitle="false" name="gdx_file.gdx03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gdx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="gdx03" widget="ComboBox"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdx02" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="gdx_file.gdx02" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="gdx_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="gdx02" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gdx04" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="36" lstrcomment="false" lstrtitle="false" name="gdx_file.gdx04" notNull="true" posX="19" posY="0" required="true" rowCount="" sqlTabName="gdx_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="gdx04" widget="Edit"/>
+          </Table>
+        </Grid>
+        <Grid gridHeight="14" gridWidth="17" lstrcomment="false" name="gr6017" posX="114" posY="0">
+          <Button gridHeight="1" gridWidth="4" image="arrup" lstrcomment="false" lstrtext="false" name="up" posX="1" posY="1" tabIndex=""/>
+          <Label posX="1" posY="3" text="  "/>
+          <Button gridHeight="1" gridWidth="4" image="arrdown" lstrcomment="false" lstrtext="false" name="down" posX="1" posY="5" tabIndex=""/>
+        </Grid>
+      </HBox>
+      <Grid gridHeight="4" gridWidth="133" lstrcomment="false" name="gr10" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl1150" posX="0" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="25" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="28" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1151" posX="36" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADMAMQA3AGQAYgAyAGIALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMQAxADEALQBmAGYANQA3ADYAYgBjAGIAYwAyAGUAMQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADIAZQA4ADEAZgA5ADIALQAwADAAMAAwAC0ANAAwADAAMAAtADkANABkADgALQA1AGQANwBkADYAOQAwADUANQBjAGMAMgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADMAMgBhADgAMgAxAGQALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAMgA4AGYALQA3ADIAZABlADQAOQBhADMAMQAyADQAMQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBhADkANwBiAGMAYwA1AGIALQAwADAAMAAwAC0ANAAwADAAMAAtADgAOQA4ADcALQA2ADQAZgBjADcAZgA2ADYAYwA4ADYAYwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADMAMQBjADIANgAwAGMALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYQBlADUALQA4AGIAZQAyADIAYgA2ADgAZABlADUAYQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGQAMQBjAGQAYwBiADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYgAyADAALQA3ADIAOABiADgAZAA1AGQAMQA0AGIANgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADcAOQAzAGQAMwA0ADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAMQA5AGMALQBkADUANgAxADIANQBiAGEANAAwADYAOAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADgANgA1AGUAMgA1AGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkANABjAGEALQA1AGUANAA3AGQANwA1AGQAZAA0ADgAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

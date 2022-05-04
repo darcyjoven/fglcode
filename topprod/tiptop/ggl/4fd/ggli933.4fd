@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{78e2a33c-ad51-4d23-91a1-202ed781bcb4}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_giv" order="" uid="{93d4019e-b3f6-4c9d-9f74-9be602f32fb0}" where="">
+    <RecordField colName="giv02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="giv_file.giv02" sqlTabName="giv_file" sqlType="VARCHAR" table_alias_name="" uid="{20127578-cefa-41a3-9122-a9f7ae4c9705}"/>
+    <RecordField colName="aag02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aag_file.aag02" sqlTabName="aag_file" sqlType="VARCHAR" table_alias_name="" uid="{24891d70-4510-4eb5-ad35-4a17f19a8b1c}"/>
+    <RecordField colName="giv03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="giv_file.giv03" sqlTabName="giv_file" sqlType="VARCHAR" table_alias_name="" uid="{2d1cd6fc-717c-4a8f-8139-109d0e00b3e5}"/>
+    <RecordField colName="giv04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="giv_file.giv04" sqlTabName="giv_file" sqlType="VARCHAR" table_alias_name="" uid="{65118266-75a4-4fd8-8906-d63c88fa0404}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gir" order="" uid="{f5f140d5-95b9-47b4-9670-6312048dddf9}" where="">
+    <RecordField colName="giv01" fieldIdRef="11" fieldType="TABLE_COLUMN" name="giv_file.giv01" sqlTabName="giv_file" sqlType="VARCHAR" table_alias_name="" uid="{1f7e3515-f7b8-4d5f-b83e-d36dc23c0c10}"/>
+    <RecordField colName="gir02" fieldIdRef="12" fieldType="TABLE_COLUMN" name="gir_file.gir02" sqlTabName="gir_file" sqlType="VARCHAR" table_alias_name="" uid="{771282c4-01a7-432c-8646-1a04749d747b}"/>
+    <RecordField colName="gir03" fieldIdRef="13" fieldType="TABLE_COLUMN" name="gir_file.gir03" sqlTabName="gir_file" sqlType="VARCHAR" table_alias_name="" uid="{047d6c1e-119c-476a-9196-43e6e0f4417a}"/>
+    <RecordField colName="gir04" fieldIdRef="14" fieldType="TABLE_COLUMN" name="gir_file.gir04" sqlTabName="gir_file" sqlType="VARCHAR" table_alias_name="" uid="{13969efe-9f0e-4d3e-91ba-24712ab1a6bc}"/>
+    <RecordField colName="gir05" fieldIdRef="15" fieldType="TABLE_COLUMN" name="gir_file.gir05" sqlTabName="gir_file" sqlType="SMALLINT" table_alias_name="" uid="{487abf25-6ba1-4a99-ab05-2fe18ae64e87}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{49719af1-1bbe-4a7a-b492-cc4f009a101d}" where="">
+    <RecordField colName="giv00" fieldIdRef="1" fieldType="TABLE_COLUMN" name="giv_file.giv00" sqlTabName="giv_file" sqlType="VARCHAR" table_alias_name="" uid="{89e42868-1b38-4ead-9940-710de2346c88}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{7b9a3d6b-4d59-4830-8aa5-a4f1e4cce94a}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d3a4e617-3dda-43a7-a83a-e04fbd9b853f}"/>
+  </Record>
+  <Form gridHeight="32" gridWidth="105" name="ggli933" spacing="normal" text="ggli933">
+    <VBox gridHeight="32" gridWidth="102" name="VBox1" posX="1" posY="0">
+      <Folder gridHeight="5" gridWidth="102" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="3" gridWidth="46" lstrcomment="false" name="gr2466" posX="0" posY="0">
+            <Label posX="1" posY="1" text="Book No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="giv00" columnCount="" comment="&lt;^P&gt;Query Group Code" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="giv_file.giv00" posX="22" posY="1" rowCount="" sqlTabName="giv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ButtonEdit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="102" lstrcomment="false" name="s_gir" posX="0" posY="6" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="giv01" colorCondition="black" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="giv_file.giv01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="giv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Group Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gir02" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="gir_file.gir02" posX="11" posY="0" rowCount="" sqlTabName="gir_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Description" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gir03" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Business Activity, Investment, Financial Activity, Beginning Of Period Amount, End Of Period Amount" lstrcomment="false" lstrtitle="false" name="gir_file.gir03" notNull="true" posX="36" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="gir_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Var.Class" widget="ComboBox">
+          <Item name="1" text="Business Activity"/>
+          <Item name="2" text="Investment"/>
+          <Item name="3" text="Financial Activity"/>
+          <Item name="4" text="Beginning Of Period Amount"/>
+          <Item name="5" text="End Of Period Amount"/>
+        </ComboBox>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gir04" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gir_file.gir04" notNull="true" posX="46" posY="0" required="true" rowCount="" sqlTabName="gir_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Combin" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gir05" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="gir_file.gir05" posX="53" posY="0" rowCount="" sqlTabName="gir_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Line" widget="Edit"/>
+      </Table>
+      <Table gridHeight="11" gridWidth="102" lstrcomment="false" name="s_giv" posX="0" posY="18" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="giv02" columnCount="" comment="&lt;^P&gt;Qry Account # " fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" image="zoom" lstrcomment="false" lstrtitle="false" name="giv_file.giv02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="giv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Account No." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aag02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag_file.aag02" noEntry="true" posX="26" posY="0" rowCount="" sqlTabName="aag_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Account Title" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="giv03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Total(+), Total(-)" lstrcomment="false" lstrtitle="false" name="giv_file.giv03" notNull="true" posX="76" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="giv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Add/Deduct" widget="ComboBox">
+          <Item name="+" text="Total(+)"/>
+          <Item name="-" text="Total(-)"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="giv04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" items="Variation, Beginning of Period, End of Period, Manually, Debit Transaction, Credit Transaction" lstrcomment="false" lstrtitle="false" name="giv_file.giv04" notNull="true" posX="87" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="giv_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Tran.Type" widget="ComboBox">
+          <Item name="1" text="Variation"/>
+          <Item name="2" text="Beginning of Period"/>
+          <Item name="3" text="End of Period"/>
+          <Item name="4" text="Manually"/>
+          <Item name="5" text="Debit Transaction"/>
+          <Item name="6" text="Credit Transaction"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="2" gridWidth="102" lstrcomment="false" name="gr2467" posX="0" posY="29">
+        <HLine gridWidth="10" name="hl787" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl788" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA5ADMAZAA0ADAAMQA5AGUALQBiADMAZgA2AC0ANABjADkAZAAtADkAZgA3ADQALQA5AGIAZQA2ADAAMgBmADMAMgBmAGIAMAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGQAMQBjAGQANgBmAGMALQA3ADEANwBjAC0ANABhADgAZgAtADgAMQAzADkALQAxADAAOQBkADAAZQAwADAAYgAzAGUANQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAxAGYANwBlADMANQAxADUALQBmADcAYgA4AC0ANABkADUAZgAtAGIAOAAzAGUALQBkADMANgBkAGMAMgAzAGMAMABjADEAMAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADQAOAA5ADEAZAA3ADAALQA0ADUAMQAwAC0ANABlAGIANQAtAGEAZAAzADUALQA0AGEAMQA3AGYAMQA5AGEAOABiADEAYwB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADgANwBhAGIAZgAyADUALQA2AGIAYQAxAC0ANABhADkAOQAtAGEAYgAwADUALQAyAGYAZQAxADgAYQBlADYANABlADgANwB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewA4ADkAZQA0ADIAOAA2ADgALQAxAGIAMwA4AC0ANABlAGEAZAAtADkAOQA0ADAALQA3ADEAMABkAGUAMgAzADQANgBjADgAOAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADMAYQA0AGUANgAxADcALQAzAGQAZABhAC0ANAAzAGEANwAtAGEAOAAzAGEALQBlADAANABmAGIAZAA5AGIAOAA1ADMAZgB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADAAMQAyADcANQA3ADgALQBjAGUAZgBhAC0ANAAxAGEAMwAtADkAMQAyADIALQBhADkAZgA3AGEAZQA0AGMAOQA3ADAANQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGIAOQBhADMAZAA2AGIALQA0AGQANQA5AC0ANAA4ADMAMAAtADgAYQBhADUALQBhADQAZgAxAGUANABjAGMAZQA5ADQAYQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADMAOQA2ADkAZQBmAGUALQA5AGYAMABlAC0ANABkADMAZQAtADkAMQBiAGEALQAyADQANwAxADIAYQBiADEAYQA2AGIAYwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADcAMQAyADgAMgBjADQALQAwADEAYQA3AC0ANAAzADIAYwAtADgANgA0ADYALQAxAGEAMAA0ADcANAA5AGQANwA0ADcAYgB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAwADQANwBkADYAYwAxAGUALQAxADEAOQBjAC0ANAA3ADYAYQAtADkAMQA5ADYALQA0ADMAZQA2AGUAMABmADQANAAxADcAYQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADUAMQAxADgAMgA2ADYALQA3ADUAYQA0AC0ANABmAGQAOAAtADgAOQAwADYALQBkADYAMwBjADgAOABmAGEAMAA0ADAANAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADUAZgAxADQAMABkADUALQA5ADUAYgA5AC0ANAA3AGIANAAtADkANgA3ADAALQA2ADMAMQAyADAANAA4AGQAZABkAGYAOQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADkANwAxADkAYQBmADEALQAxAGIAYgBlAC0ANABhADcAYQAtAGIANAA5ADIALQBjAGMANABmADAAMAA5AGEAMQAwADEAZAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

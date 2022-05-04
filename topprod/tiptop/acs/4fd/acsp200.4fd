@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7217c0d7-0000-4000-9552-475d3d8b867c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d630e5c8-0000-4000-b9e5-d4de0d1dc179}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="effectiv" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{e34af100-0000-4000-b16b-0bd892c8ddd4}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="version" sqlTabName="" table_alias_name="" uid="{70162253-0000-4000-ac27-751433cf6cae}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="x" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3062323f-0000-4000-84d1-76982359c855}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="free_stock" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{bcb83e73-0000-4000-bea0-29a9e2852e91}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="lab_bud" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{9a14d645-0000-4000-8f25-35d4ba686b65}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="e" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c292033a-0000-4000-926c-59f843fd22de}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="i" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{ace13582-0000-4000-93f6-c8cce033cbd5}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="f" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{54654c7a-0000-4000-87a3-a2e940e665bd}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{416ca328-0000-4000-91d1-bb4fdee7fae4}"/>
+  </Record>
+  <Form gridHeight="20" gridWidth="70" name="acsp200" spacing="normal" text="acsp200">
+    <Folder gridHeight="20" gridWidth="68" lstrcomment="false" name="pc240" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="INPUT">
+        <VBox gridHeight="19" gridWidth="66" name="VBox1" posX="0" posY="0">
+          <Grid gridHeight="15" gridWidth="66" lstrcomment="false" name="gr1543" posX="0" posY="1">
+            <Group gridHeight="5" gridWidth="58" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Expiry Date"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="effectiv" posX="32" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Simulation Version"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="0, 1, 2, 3, 4, 5, 6, 7, 8, 9" lstrcomment="false" lstrtitle="false" name="version" notNull="true" posX="32" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="" name="0" text="0"/>
+                <Item lstrtext="" name="1" text="1"/>
+                <Item lstrtext="" name="2" text="2"/>
+                <Item lstrtext="" name="3" text="3"/>
+                <Item lstrtext="" name="4" text="4"/>
+                <Item lstrtext="" name="5" text="5"/>
+                <Item lstrtext="" name="6" text="6"/>
+                <Item lstrtext="" name="7" text="7"/>
+                <Item lstrtext="" name="8" text="8"/>
+                <Item lstrtext="" name="9" text="9"/>
+              </ComboBox>
+              <Label gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="dummy01" posX="44" posY="2" text="(0~9)"/>
+              <Label posX="1" posY="3" text="Backflush Running Environment"/>
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="24" items="Others Allowed, Others NO" lstrcomment="false" lstrtitle="false" name="x" posX="32" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="1" text="Others Allowed"/>
+                <Item lstrtext="" name="2" text="Others NO"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="9" gridWidth="65" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="5">
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="57" lstrcomment="false" lstrtext="false" lstrtitle="false" name="free_stock" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Including Mass Mat. And MISC Item?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="57" lstrcomment="false" lstrtext="false" lstrtitle="false" name="lab_bud" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Clear Labor/Ovhead of Purd And MISC Item?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="57" lstrcomment="false" lstrtext="false" lstrtitle="false" name="e" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Include Wastage Ratio?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+              <Label posX="1" posY="5" text="Description"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="i" posX="14" posY="5" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="57" lstrcomment="false" lstrtext="false" lstrtitle="false" name="f" notNull="true" posX="1" posY="7" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Print Cost Variation Report" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+          </Grid>
+          <Grid gridHeight="2" gridWidth="66" lstrcomment="false" name="gr1544" posX="0" posY="16">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Background job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

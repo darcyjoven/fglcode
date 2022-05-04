@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form width="64" lstrtoalltitle="false" lstrtoallitem="false" database_name="ds" CHECKSUM="63746" spacing="normal" posX="0" percommentheader="" height="17" posY="0" percommentinstruction="" percommentattribute="" lstrtoallcomment="false" percommentschema="" name="axdi108" defaultspacing="true" text="axdi108" gstVersion="11401" percommentlayout="TABLE
+PAGE
+FOLDER
+GRID
+VBOX
+LAYOUT
+" lstrtoalltext="false" >
+ <VBox tag="" posX="0" posY="0" hidden="" style="" name="" >
+  <PageControl width="61" posX="0" posY="0" height="14" lstrcomment="false" name="pc1554" >
+   <Page lstrtext="false" hidden="--------" imagetype="Image as URL" name="page01" fontPitch="default" text="Page01" >
+    <Table width="59" wantFixedPageSize="--------" unhidableColumns="--------" posX="0" posY="0" height="12" lstrcomment="false" unmovableColumns="--------" unsizableColumns="--------" hidden="--------" totalRows="10" name="s_obs" fontPitch="default" tabName="s_obs" unsortableColumns="--------" tabName1="s_obs" >
+     <TableColumn width="18" lstrtext="false" sqlDBName="ds" height="1" colName="obs01" unsortable="--------" fieldId="0" sqlTabName="obs_file" tabIndex="1" unsizable="--------" unhidable="--------" unmovable="--------" name="obs01" fieldtype="TABLE_COLUMN" text="Vehicle Brand" >
+      <Edit width="18" case="NONE" comment="KEY Field, No Blank/Repeated! &lt;^O>Copy Previous Record! " invisible="--------" notNull="true" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="true" />
+     </TableColumn>
+     <TableColumn width="30" lstrtext="false" sqlDBName="ds" height="1" colName="obs02" unsortable="--------" fieldId="1" sqlTabName="obs_file" tabIndex="2" unsizable="--------" unhidable="--------" unmovable="--------" name="obs02" fieldtype="TABLE_COLUMN" text="Description" >
+      <Edit width="30" case="NONE" invisible="--------" notNull="--------" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="VARCHAR" century="R" color="black" fontPitch="default" scroll="--------" noEntry="--------" required="--------" />
+     </TableColumn>
+     <TableColumn width="6" lstrtext="false" sqlDBName="ds" height="1" colName="obsacti" unsortable="--------" fieldId="2" sqlTabName="obs_file" tabIndex="3" unsizable="--------" unhidable="--------" unmovable="--------" name="obsacti" fieldtype="TABLE_COLUMN" text="Valid?" >
+      <CheckBox width="6" lstrtext="false" notNull="true" height="1" lstrcomment="false" hidden="--------" sizePolicy="initial" lstrtitle="false" data_type="VARCHAR" fontPitch="default" valueUnchecked="N" noEntry="--------" required="true" text="" valueChecked="Y" />
+     </TableColumn>
+    </Table>
+   </Page>
+  </PageControl>
+  <Grid width="61" posX="0" posY="14" height="1" lstrcomment="false" hidden="--------" name="gr7743" fontPitch="default" scroll="false" >
+   <HLine width="10" gridWidth="10" posX="1" posY="0" height="1" name="hl2525" />
+   <Text width="4" lstrtext="false" gridWidth="4" posX="11" posY="0" height="1" sizePolicy="initial" name="text26353" text="Rows" />
+   <FormField colName="cn2" fieldId="3" sqlTabName="formonly" name="formonly.cn2" fieldtype="FORM_ONLY" >
+    <Edit width="6" case="NONE" invisible="--------" gridWidth="6" notNull="--------" posX="17" formfieldname="formfield0" posY="0" height="1" autoNext="--------" lstrcomment="false" verify="--------" hidden="--------" sizePolicy="initial" tabIndex="4" zeroFill="--------" reverse="--------" lstrtitle="false" data_type="SMALLINT" name="cn2" century="R" color="black" fontPitch="default" scroll="--------" required="--------" noEntry="true" />
+   </FormField>
+   <HLine width="10" gridWidth="10" posX="25" posY="0" height="1" name="hl2526" />
+  </Grid>
+ </VBox>
+ <RecordView SRType="default" name="s_obs" fromTable="true" tableKey="tb1113" >
+  <Link colName="obs_file.obs01" fromTable="true" colKey="Col11076" />
+  <Link colName="obs_file.obs02" fromTable="true" colKey="Col11077" />
+  <Link colName="obs_file.obsacti" fromTable="true" colKey="Col11078" />
+ </RecordView>
+</Form>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="21e00" name="Root" uid="{5b46ffe5-0000-4000-b17c-cedaf836cd31}">
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rxy" order="" uid="{30469376-0000-4000-a045-9ad82c339430}" where="">
+    <RecordField colName="rxy02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rxy_file.rxy02" sqlTabName="rxy_file" sqlType="SMALLINT" table_alias_name="" uid="{2b953dca-0000-4000-936b-f70a6eb670aa}"/>
+    <RecordField colName="rxy06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rxy_file.rxy06" sqlTabName="rxy_file" sqlType="VARCHAR" table_alias_name="" uid="{eca452de-0000-4000-ade8-7f9a0bc4404e}"/>
+    <RecordField colName="rxy09" fieldIdRef="4" fieldType="TABLE_COLUMN" name="rxy_file.rxy09" sqlTabName="rxy_file" sqlType="DECIMAL" table_alias_name="" uid="{be7d55cd-0000-4000-a8ef-3ce70f0f9730}"/>
+    <RecordField colName="rxy10" fieldIdRef="5" fieldType="TABLE_COLUMN" name="rxy_file.rxy10" sqlTabName="rxy_file" sqlType="DATE" table_alias_name="" uid="{c003ff4e-0000-4000-9ed6-48b1bdf09cb3}"/>
+    <RecordField colName="rxy11" fieldIdRef="6" fieldType="TABLE_COLUMN" name="rxy_file.rxy11" sqlTabName="rxy_file" sqlType="VARCHAR" table_alias_name="" uid="{8bd82833-0000-4000-8429-51c0188364ef}"/>
+    <RecordField colName="rxy05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="rxy_file.rxy05" sqlTabName="rxy_file" sqlType="DECIMAL" table_alias_name="" uid="{6047f3eb-0000-4000-aaac-d80b5d7fca19}"/>
+    <RecordField colName="rxy17" fieldIdRef="8" fieldType="TABLE_COLUMN" name="rxy_file.rxy17" sqlTabName="rxy_file" sqlType="DECIMAL" table_alias_name="" uid="{47719f00-0000-4000-bd4b-19638654486e}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{3f359d9a-0000-4000-8415-0615c8293696}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="amt" sqlTabName="" table_alias_name="" uid="{612895fa-0000-4000-a665-6d9816cd8c90}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="idx" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{8aa55aff-0000-4000-a2b5-aab39dbd171a}"/>
+  </Record>
+  <Form gridHeight="29" gridWidth="151" lstrtext="false" name="almt6103" spacing="normal" text="almt6103">
+    <VBox gridHeight="17" gridWidth="112" name="vb5" posX="0" posY="1" splitter="">
+      <Folder gridHeight="5" gridWidth="112" lstrcomment="false" name="pc5" posX="0" posY="1">
+        <Page name="Main" text="Main">
+          <Grid gridHeight="4" gridWidth="112" lstrcomment="false" name="gr9" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="15" posX="1" posY="1" text="Receivable bala"/>
+            <Edit colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" name="amt" noEntry="true" posX="20" posY="1" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="6" gridWidth="112" name="s_rxy" posX="0" posY="6" totalRows="5">
+        <Edit colName="rxy02" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="rxy_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="rxy02" widget="Edit"/>
+        <Edit colName="rxy06" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy06" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="rxy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="rxy06" widget="Edit"/>
+        <Edit colName="rxy09" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy09" notNull="true" posX="18" posY="0" required="true" rowCount="" sqlTabName="rxy_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="2" table_alias_name="" title="rxy09" widget="Edit"/>
+        <DateEdit colName="rxy10" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy10" notNull="true" posX="26" posY="0" required="true" rowCount="" sqlTabName="rxy_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="rxy10" widget="DateEdit"/>
+        <Edit colName="rxy11" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy11" notNull="true" posX="34" posY="0" required="true" rowCount="" sqlTabName="rxy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="rxy11" widget="Edit"/>
+        <Edit colName="rxy05" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="rxy_file.rxy05" noEntry="true" posX="42" posY="0" rowCount="" sqlTabName="rxy_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="rxy05" widget="Edit"/>
+        <Edit colName="rxy17" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" name="rxy_file.rxy17" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="rxy_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="rxy17" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="4" gridWidth="112" lstrcomment="false" name="gr10" posX="0" posY="12">
+        <HLine gridWidth="10" name="hl10" posX="1" posY="0"/>
+        <Label gridHeight="1" gridWidth="4" posX="11" posY="0" text="Rows"/>
+        <Edit colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="idx" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl11" posX="23" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

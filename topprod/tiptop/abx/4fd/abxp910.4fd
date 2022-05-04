@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{730ca3e5-0000-4000-8c85-2744c51381c9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c4623804-0000-4000-b30c-16686714791a}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="g_yy" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{85d49394-0000-4000-891c-ec2171ace544}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_begin" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{f0426d8a-0000-4000-9e86-1abf6a9b717b}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="g_end" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{d969fd84-0000-4000-aa78-0c06a58791df}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="g_step1" sqlTabName="" table_alias_name="" uid="{3ba2e851-0000-4000-95a8-d13dc1166ec9}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="g_step11" sqlTabName="" table_alias_name="" uid="{be484067-0000-4000-af2d-48b62ad2bd8f}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="g_step2" sqlTabName="" table_alias_name="" uid="{bd22866b-0000-4000-b893-e64f973f3fd0}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="g_step5" sqlTabName="" table_alias_name="" uid="{d0f1adae-0000-4000-99cf-05848bc55237}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="g_step6" sqlTabName="" table_alias_name="" uid="{573714aa-0000-4000-a94d-cbecd4cb1448}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="g_step3" sqlTabName="" table_alias_name="" uid="{7a1f9588-0000-4000-aaed-f24c0f947724}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="g_step7" sqlTabName="" table_alias_name="" uid="{b88d6e9d-0000-4000-8af4-2818226a1dd5}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="g_step4" sqlTabName="" table_alias_name="" uid="{6e324ee9-0000-4000-a220-a47ac0744291}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{5b995e97-0000-4000-ba9b-7fe1e8d53607}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="72" name="abxp910" spacing="normal" text="abxp910">
+    <VBox gridHeight="19" gridWidth="71" name="VBox1" posX="0" posY="0">
+      <Group gridHeight="15" gridWidth="71" lstrcomment="false" lstrtext="false" name="g01" posX="0" posY="1" text="INPUT">
+        <Grid gridHeight="13" gridWidth="69" lstrcomment="false" name="gr1087" posX="1" posY="1">
+          <Label posX="2" posY="0" text="Closing Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="g_yy" posX="23" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="2" posY="1" text="Closing Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="g_begin" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+          <Label posX="34" posY="1" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="g_end" posX="36" posY="1" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+          <Group gridHeight="10" gridWidth="68" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="2">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_step1" notNull="true" posX="1" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Delete All Current Year Closing Data(Exclusive Stock)" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_step11" notNull="true" posX="1" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Delete All Stock Year Closing Data" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_step2" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Carry forward Last Year Balance to Current Year Beginning" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_step5" notNull="true" posX="1" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Statistic Year Sale, Scrap, Sent-out" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_step6" notNull="true" posX="1" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" text="Yearly Sales, Scrap, Sent-out Equivalence" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_step3" notNull="true" posX="1" posY="6" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" text="Inventory Equivalent Statistics(Finish Product,Semi-Product,Mat)" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_step7" notNull="true" posX="1" posY="7" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" text="Generate Bonded Material Closing Report" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="66" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_step4" notNull="true" posX="1" posY="8" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" text="Generate all Items Yearly Engineering Change Period Data" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Group>
+        </Grid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="71" lstrcomment="false" name="gr1088" posX="0" posY="16">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

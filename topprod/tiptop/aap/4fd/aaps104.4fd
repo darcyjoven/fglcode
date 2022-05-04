@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4271a588-0000-4000-8125-fc4c1963477a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{d6cbfcc2-0000-4000-8e85-ff998bfefeb5}" where="">
+    <RecordField colName="apz43" fieldIdRef="1" fieldType="TABLE_COLUMN" name="apz_file.apz43" sqlTabName="apz_file" sqlType="VARCHAR" table_alias_name="" uid="{e3b3d858-0000-4000-ae5e-b803459fa1e9}"/>
+    <RecordField colName="apz44" fieldIdRef="2" fieldType="TABLE_COLUMN" name="apz_file.apz44" sqlTabName="apz_file" sqlType="VARCHAR" table_alias_name="" uid="{152c0b86-0000-4000-a74b-b5ad3c2e5129}"/>
+    <RecordField colName="apz52" fieldIdRef="3" fieldType="TABLE_COLUMN" name="apz_file.apz52" sqlTabName="apz_file" sqlType="VARCHAR" table_alias_name="" uid="{3dc753d3-0000-4000-8acb-27ded30be6f1}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="62" name="aaps104" spacing="normal" text="aaps104">
+    <Folder gridHeight="17" gridWidth="60" lstrcomment="false" name="Folder1" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="16" gridWidth="58" name="VBox1" posX="0" posY="0">
+          <Grid gridHeight="14" gridWidth="58" lstrcomment="false" name="Grid1" posX="0" posY="1">
+            <Group gridHeight="4" gridWidth="57" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label gridHeight="1" gridWidth="38" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="A/P Voucher Memo Format"/>
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apz43" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" items="Blank, Vender, Vender+Invoice/Accounts #" lstrcomment="false" lstrtitle="false" name="apz_file.apz43" posX="2" posY="2" rowCount="" sqlTabName="apz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+                <Item name="0" text="Blank"/>
+                <Item name="1" text="Vender"/>
+                <Item name="2" text="Vender+Invoice/Accounts #"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="4" gridWidth="57" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="4">
+              <Label gridHeight="1" gridWidth="38" lstrcomment="false" lstrtext="false" name="dummy02" posX="1" posY="1" text="Payment/Contra Voucher Memo Format"/>
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apz44" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" items="Blank, Vender, Vender+Note Due" lstrcomment="false" lstrtitle="false" name="apz_file.apz44" posX="2" posY="2" rowCount="" sqlTabName="apz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+                <Item name="0" text="Blank"/>
+                <Item name="1" text="Vender"/>
+                <Item name="2" text="Vender+Note Due"/>
+              </RadioGroup>
+            </Group>
+            <Group gridHeight="5" gridWidth="57" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="8">
+              <Label gridHeight="1" gridWidth="38" lstrcomment="false" lstrtext="false" name="dummy03" posX="1" posY="1" text="Credit Acct Type When Pay Demand Note"/>
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="apz52" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" items="Notes Payable, Cash In Bank" lstrcomment="false" lstrtitle="false" name="apz_file.apz52" posX="2" posY="2" rowCount="" sqlTabName="apz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="RadioGroup">
+                <Item name="1" text="Notes Payable"/>
+                <Item name="2" text="Cash In Bank"/>
+              </RadioGroup>
+            </Group>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

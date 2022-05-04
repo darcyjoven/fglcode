@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{716041ab-0000-4000-bc70-19df2878d26f}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nnu" order="" uid="{0b41bfdc-0000-4000-b2e7-8895bc3a001f}" where="">
+    <RecordField colName="nnu02" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nnu_file.nnu02" sqlTabName="nnu_file" sqlType="SMALLINT" table_alias_name="" uid="{7b42f831-0000-4000-bcc7-105a3197df38}"/>
+    <RecordField colName="nnu03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nnu_file.nnu03" sqlTabName="nnu_file" sqlType="VARCHAR" table_alias_name="" uid="{044c5d9b-0000-4000-a68c-2af0ad76b583}"/>
+    <RecordField colName="nnu04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nnu_file.nnu04" sqlTabName="nnu_file" sqlType="VARCHAR" table_alias_name="" uid="{6d97d237-0000-4000-a623-ccfb9dbfa2dc}"/>
+    <RecordField colName="nnu05" fieldIdRef="6" fieldType="TABLE_COLUMN" name="nnu_file.nnu05" sqlTabName="nnu_file" sqlType="VARCHAR" table_alias_name="" uid="{8b7aabcc-0000-4000-9de3-b1893e3e9eff}"/>
+    <RecordField colName="nnu06" fieldIdRef="7" fieldType="TABLE_COLUMN" name="nnu_file.nnu06" sqlTabName="nnu_file" sqlType="VARCHAR" table_alias_name="" uid="{c6cfa04e-0000-4000-9b98-989715b14ecf}"/>
+    <RecordField colName="nnu07" fieldIdRef="8" fieldType="TABLE_COLUMN" name="nnu_file.nnu07" sqlTabName="nnu_file" sqlType="SMALLINT" table_alias_name="" uid="{2550f65d-0000-4000-987f-b71b77c5e41c}"/>
+    <RecordField colName="nnu08" fieldIdRef="9" fieldType="TABLE_COLUMN" name="nnu_file.nnu08" sqlTabName="nnu_file" sqlType="DECIMAL" table_alias_name="" uid="{d1823dc7-0000-4000-bb39-2a0d0318c5f0}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{228a9402-0000-4000-96ec-caeb2341a2d1}" where="">
+    <RecordField colName="nnu01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nnu_file.nnu01" sqlTabName="nnu_file" sqlType="VARCHAR" table_alias_name="" uid="{a45e78b3-0000-4000-a823-1c488eb1360d}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9f99de2a-0000-4000-9ace-624bc9e2deff}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{21ca25e3-0000-4000-835c-d03fa12fb35c}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="123" name="anmt704" spacing="normal" text="anmt704">
+    <VBox gridHeight="21" gridWidth="120" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="120" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="4" gridWidth="41" name="VBox2" posX="0" posY="0">
+            <Grid gridHeight="2" gridWidth="41" lstrcomment="false" name="gr4527" posX="0" posY="1">
+              <Label posX="1" posY="0" text="Document No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnu01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="nnu_file.nnu01" posX="23" posY="0" rowCount="" sqlTabName="nnu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="120" lstrcomment="false" name="s_nnu" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnu02" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="nnu_file.nnu02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nnu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Line#" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnu03" columnCount="" comment="&lt;^P&gt;Investment Type" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="nnu_file.nnu03" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="nnu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Inves. Type" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnu04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="nnu_file.nnu04" posX="18" posY="0" rowCount="" sqlTabName="nnu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Investment Object" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnu05" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="nnu_file.nnu05" notNull="true" posX="48" posY="0" required="true" rowCount="" sqlTabName="nnu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Bills No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnu06" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nnu_file.nnu06" noEntry="true" posX="63" posY="0" rowCount="" sqlTabName="nnu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Bills Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnu07" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="nnu_file.nnu07" notNull="true" posX="83" posY="0" required="true" rowCount="" sqlTabName="nnu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Pages" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnu08" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="nnu_file.nnu08" notNull="true" posX="91" posY="0" required="true" rowCount="" sqlTabName="nnu_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Face Value" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="120" lstrcomment="false" name="gr4528" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1381" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1382" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

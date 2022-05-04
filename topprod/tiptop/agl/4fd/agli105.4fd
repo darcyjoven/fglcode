@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{2740ced2-0000-4000-bd11-085e3ded0b6e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_aad" order="" uid="{17e8620b-0000-4000-a4a2-d78047332caa}" where="">
+    <RecordField colName="aad01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="aad_file.aad01" sqlTabName="aad_file" sqlType="VARCHAR" table_alias_name="" uid="{75589eef-0000-4000-ad64-002d00248e83}"/>
+    <RecordField colName="aad02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="aad_file.aad02" sqlTabName="aad_file" sqlType="VARCHAR" table_alias_name="" uid="{e668e11f-0000-4000-aba9-c237eec6157e}"/>
+    <RecordField colName="aadacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="aad_file.aadacti" sqlTabName="aad_file" sqlType="VARCHAR" table_alias_name="" uid="{a3d44cb6-0000-4000-aa6d-c1f3b4316b79}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{600ba0cc-0000-4000-b567-949990becc58}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{af275df4-0000-4000-90f1-992fddf260ab}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="51" name="agli105" spacing="normal" text="agli105">
+    <VBox gridHeight="18" gridWidth="48" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="48" lstrcomment="false" name="pc446" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="46" lstrcomment="false" name="s_aad" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aad01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="aad_file.aad01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="aad_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Memo#" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aad02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="aad_file.aad02" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="aad_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Memo" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="aadacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="aad_file.aadacti" notNull="true" posX="36" posY="0" required="true" rowCount="" sqlTabName="aad_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="48" lstrcomment="false" name="gr2375" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl725" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl726" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

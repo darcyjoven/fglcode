@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{cead1555-0000-4000-83b2-be2ff6d7c68b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_rmk" order="" uid="{877c8d16-0000-4000-ab26-28fa4bc42cae}" where="">
+    <RecordField colName="rmk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="rmk_file.rmk01" sqlTabName="rmk_file" sqlType="VARCHAR" table_alias_name="" uid="{0f9a4d1b-0000-4000-aef7-9e51b02c5a63}"/>
+    <RecordField colName="rmk02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="rmk_file.rmk02" sqlTabName="rmk_file" sqlType="VARCHAR" table_alias_name="" uid="{8905be3b-0000-4000-9a17-bdd6be3206d2}"/>
+    <RecordField colName="rmk03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="rmk_file.rmk03" sqlTabName="rmk_file" sqlType="VARCHAR" table_alias_name="" uid="{bea4c0b8-0000-4000-acea-1d6f9aefc0bb}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{2c0d98c0-0000-4000-8d46-c8cc7660ddc4}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{05710aec-0000-4000-9066-c8760d873bbc}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="41" name="armi020" spacing="normal" text="armi020">
+    <Folder gridHeight="17" gridWidth="39" lstrcomment="false" name="pc64" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="16" gridWidth="37" name="VBox1" posX="0" posY="0">
+          <Table gridHeight="12" gridWidth="37" lstrcomment="false" name="s_rmk" posX="0" posY="1" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rmk01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="rmk_file.rmk01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="rmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="D/RCd" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rmk02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="rmk_file.rmk02" posX="6" posY="0" rowCount="" sqlTabName="rmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Desc" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="rmk03" columnCount="" comment="1.DEFECT 2.REPAIR" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" items="DEFECT, REPAIR" lstrcomment="false" lstrtitle="false" name="rmk_file.rmk03" posX="26" posY="0" rowCount="" sqlTabName="rmk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Code" widget="ComboBox">
+              <Item name="1" text="DEFECT"/>
+              <Item name="2" text="REPAIR"/>
+            </ComboBox>
+          </Table>
+          <Grid gridHeight="2" gridWidth="37" lstrcomment="false" name="gr231" posX="0" posY="13">
+            <HLine gridWidth="10" name="hl122" posX="1" posY="0"/>
+            <Label posX="12" posY="0" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <HLine gridWidth="10" name="hl123" posX="26" posY="0"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d7a16040-0000-4000-b81f-ddba6dcc3b93}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_fcc" order="" uid="{91f5744b-0000-4000-8018-de020dc64ed8}" where="">
+    <RecordField colName="" fieldIdRef="12" name="sure" sqlTabName="" table_alias_name="" uid="{174116bf-0000-4000-a473-c934b214171d}"/>
+    <RecordField colName="fcc02" fieldIdRef="13" fieldType="TABLE_COLUMN" name="fcc_file.fcc02" sqlTabName="fcc_file" sqlType="SMALLINT" table_alias_name="" uid="{39e9dde9-0000-4000-8ad5-dcef7d53dbd1}"/>
+    <RecordField colName="fcc03" fieldIdRef="14" fieldType="TABLE_COLUMN" name="fcc_file.fcc03" sqlTabName="fcc_file" sqlType="VARCHAR" table_alias_name="" uid="{7928ddc1-0000-4000-845e-c4db591160e5}"/>
+    <RecordField colName="fcc031" fieldIdRef="2" fieldType="TABLE_COLUMN" name="fcc_file.fcc031" sqlTabName="fcc_file" sqlType="VARCHAR" table_alias_name="" uid="{88e4a06a-0000-4000-9092-34b17ccd618d}"/>
+    <RecordField colName="fcc06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="fcc_file.fcc06" sqlTabName="fcc_file" sqlType="VARCHAR" table_alias_name="" uid="{59eb12b6-0000-4000-9970-6441eaf73e0e}"/>
+    <RecordField colName="fcc13" fieldIdRef="4" fieldType="TABLE_COLUMN" name="fcc_file.fcc13" sqlTabName="fcc_file" sqlType="DECIMAL" table_alias_name="" uid="{219b94a0-0000-4000-b465-677ef2e5f102}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e21101d0-0000-4000-a44b-1703aff28aa5}" where="">
+    <RecordField colName="fcb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="fcb_file.fcb01" sqlTabName="fcb_file" sqlType="VARCHAR" table_alias_name="" uid="{726b961a-0000-4000-9767-1e9b88579a96}"/>
+    <RecordField colName="fcb02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="fcb_file.fcb02" sqlTabName="fcb_file" sqlType="DATE" table_alias_name="" uid="{063b01ff-0000-4000-a776-914ab0407a25}"/>
+    <RecordField colName="fcb03" fieldIdRef="8" fieldType="TABLE_COLUMN" name="fcb_file.fcb03" sqlTabName="fcb_file" sqlType="DATE" table_alias_name="" uid="{b6086f2a-0000-4000-9aa0-b9d6a7d16818}"/>
+    <RecordField colName="fcb05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="fcb_file.fcb05" sqlTabName="fcb_file" sqlType="DATE" table_alias_name="" uid="{06f068f4-0000-4000-a284-4ecdb8111274}"/>
+    <RecordField colName="fcb04" fieldIdRef="10" fieldType="TABLE_COLUMN" name="fcb_file.fcb04" sqlTabName="fcb_file" sqlType="VARCHAR" table_alias_name="" uid="{f2fcf4e2-0000-4000-9d2f-e08c79045ac4}"/>
+    <RecordField colName="fcb06" fieldIdRef="11" fieldType="TABLE_COLUMN" name="fcb_file.fcb06" sqlTabName="fcb_file" sqlType="VARCHAR" table_alias_name="" uid="{70bf8722-0000-4000-9617-d14c4d9e76e3}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{7bcaff11-0000-4000-8323-30a5e5ac99c2}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" table_alias_name="" uid="{9c3db3b8-0000-4000-85b0-d216bb13abb1}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="125" name="afap710" spacing="normal" text="afap710">
+    <VBox gridHeight="21" gridWidth="124" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="124" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <HBox gridHeight="3" gridWidth="124" name="HBox1" posX="0" posY="0">
+            <Grid gridHeight="3" gridWidth="41" lstrcomment="false" name="gr1944" posX="2" posY="0">
+              <Label posX="1" posY="0" text="Application No."/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcb01" columnCount="" comment="&lt;^P&gt;Qry Credit Application" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="fcb_file.fcb01" posX="22" posY="0" rowCount="" sqlTabName="fcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="1" text="Applying Date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcb02" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="fcb_file.fcb02" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="fcb_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+            </Grid>
+            <Grid gridHeight="3" gridWidth="36" lstrcomment="false" name="gr1945" posX="43" posY="0">
+              <Label posX="1" posY="0" text="Author. Appr. Date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcb03" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="fcb_file.fcb03" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="fcb_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="DateEdit"/>
+              <Label posX="1" posY="1" text="IRA Approval Date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcb05" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="fcb_file.fcb05" notNull="true" posX="22" posY="1" rowCount="" sqlTabName="fcb_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+            </Grid>
+            <Grid gridHeight="3" gridWidth="43" lstrcomment="false" name="gr1946" posX="79" posY="0">
+              <Label posX="1" posY="0" text="Author. Appr. No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcb04" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fcb_file.fcb04" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="fcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="1" text="IRA Approval No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcb06" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="fcb_file.fcb06" notNull="true" posX="22" posY="1" rowCount="" sqlTabName="fcb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </HBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="124" lstrcomment="false" name="s_fcc" posX="0" posY="6" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="sure" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Appr" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcc02" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="fcc_file.fcc02" noEntry="true" posX="7" posY="0" rowCount="" sqlTabName="fcc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Line No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcc03" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="fcc_file.fcc03" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="fcc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Property No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcc031" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="fcc_file.fcc031" noEntry="true" posX="33" posY="0" rowCount="" sqlTabName="fcc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Add No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcc06" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="fcc_file.fcc06" noEntry="true" posX="43" posY="0" rowCount="" sqlTabName="fcc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="English Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="fcc13" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="fcc_file.fcc13" posX="73" posY="0" rowCount="" sqlTabName="fcc_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Cost" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="124" lstrcomment="false" name="gr1947" posX="0" posY="18">
+        <Button comment="Comment for button Select all" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" name="seleall" posX="2" posY="0" tabIndex=""/>
+        <HLine gridWidth="10" name="hl611" posX="1" posY="1"/>
+        <Label posX="12" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="13" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="1" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl612" posX="37" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

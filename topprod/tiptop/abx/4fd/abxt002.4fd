@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{b5d5f401-0000-4000-ae0d-7aec5538b997}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6252b001-0000-4000-aac0-45f1387916f1}" where="">
+    <RecordField colName="bwg011" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bwg_file.bwg011" sqlTabName="bwg_file" sqlType="SMALLINT" table_alias_name="" uid="{10da0532-0000-4000-a35c-19861e61b343}"/>
+    <RecordField colName="bwg00" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bwg_file.bwg00" sqlTabName="bwg_file" sqlType="VARCHAR" table_alias_name="" uid="{2c776d1f-0000-4000-9de2-d71832b18c3d}"/>
+    <RecordField colName="bwg04" fieldIdRef="5" fieldType="TABLE_COLUMN" name="bwg_file.bwg04" sqlTabName="bwg_file" sqlType="VARCHAR" table_alias_name="" uid="{0162d83d-0000-4000-88c1-4b94ae095e9f}"/>
+    <RecordField colName="ima15" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ima_file.ima15" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{c47a9e6f-0000-4000-80e5-d0e757029c84}"/>
+    <RecordField colName="ima02" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ima_file.ima02" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{1b3d8783-0000-4000-8d97-ae0ffe1eae2b}"/>
+    <RecordField colName="ima021" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ima_file.ima021" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{23f4d3b3-0000-4000-a49e-b19c00d8683d}"/>
+    <RecordField colName="ima1916" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ima_file.ima1916" sqlTabName="ima_file" sqlType="VARCHAR" table_alias_name="" uid="{fdbe2025-0000-4000-a428-c6bcc79ab715}"/>
+    <RecordField colName="bxe02" fieldIdRef="10" fieldType="TABLE_COLUMN" name="bxe_file.bxe02" sqlTabName="bxe_file" sqlType="VARCHAR" table_alias_name="" uid="{50759b6b-0000-4000-9ae3-214247b2060b}"/>
+    <RecordField colName="bxe03" fieldIdRef="11" fieldType="TABLE_COLUMN" name="bxe_file.bxe03" sqlTabName="bxe_file" sqlType="VARCHAR" table_alias_name="" uid="{549fc203-0000-4000-bed7-2dac826f9d36}"/>
+    <RecordField colName="bwg05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bwg_file.bwg05" sqlTabName="bwg_file" sqlType="DECIMAL" table_alias_name="" uid="{5b8392d8-0000-4000-b487-b02e04fe77bc}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d74477bf-0000-4000-8beb-67ba67885193}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="83" name="abxt002" spacing="normal" text="abxt002">
+    <VBox gridHeight="15" gridWidth="80" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="11" gridWidth="80" lstrcomment="false" name="pc177" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="9" gridWidth="78" lstrcomment="false" name="gr1227" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Year"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwg011" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="bwg_file.bwg011" notNull="true" posX="18" posY="0" required="true" rowCount="" sqlTabName="bwg_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwg00" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="Local Sales, Export, Retire, Sent" lstrcomment="false" lstrtitle="false" name="bwg_file.bwg00" posX="18" posY="1" rowCount="" sqlTabName="bwg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="L" text="Local Sales"/>
+              <Item lstrtext="" name="F" text="Export"/>
+              <Item lstrtext="" name="S" text="Retire"/>
+              <Item lstrtext="" name="T" text="Sent"/>
+            </ComboBox>
+            <Label posX="1" posY="2" text="Item No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwg04" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="bwg_file.bwg04" noEntry="true" posX="18" posY="2" rowCount="" sqlTabName="bwg_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima15" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtext="false" lstrtitle="false" name="ima_file.ima15" noEntry="true" notNull="true" posX="57" posY="2" required="true" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" text="Bonded ?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <Label posX="1" posY="3" text="Desc"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima02" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima_file.ima02" noEntry="true" posX="18" posY="3" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="Spec"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima021" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima_file.ima021" noEntry="true" posX="18" posY="4" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="5" text="Bond GP Code"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ima1916" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="28" lstrcomment="false" lstrtitle="false" name="ima_file.ima1916" noEntry="true" posX="18" posY="5" rowCount="" sqlTabName="ima_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="6" text="Bond GP Desc"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bxe02" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="bxe_file.bxe02" noEntry="true" posX="18" posY="6" rowCount="" sqlTabName="bxe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="7" text="Bond GP Spec"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bxe03" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" lstrcomment="false" lstrtitle="false" name="bxe_file.bxe03" noEntry="true" posX="18" posY="7" rowCount="" sqlTabName="bxe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="8" text="Equivelant Qty"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bwg05" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bwg_file.bwg05" posX="18" posY="8" rowCount="" sqlTabName="bwg_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="80" lstrcomment="false" name="gr1228" posX="0" posY="12">
+        <HLine gridWidth="10" name="hl325" posX="2" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl326" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

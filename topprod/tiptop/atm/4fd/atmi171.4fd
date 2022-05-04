@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{9a4bcbee-0000-4000-9836-81a00575a4e2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_obp" order="" uid="{fca65517-0000-4000-bd66-1cf1834c42a4}" where="">
+    <RecordField colName="obp02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="obp_file.obp02" sqlTabName="obp_file" sqlType="VARCHAR" table_alias_name="" uid="{079eaaf3-0000-4000-9460-3ab53b664840}"/>
+    <RecordField colName="" fieldIdRef="6" name="oac02" sqlTabName="" table_alias_name="" uid="{421ac2bf-0000-4000-8269-8d755694e3e0}"/>
+    <RecordField colName="obp03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="obp_file.obp03" sqlTabName="obp_file" sqlType="VARCHAR" table_alias_name="" uid="{25e782c5-0000-4000-bca1-8169271d0685}"/>
+    <RecordField colName="" fieldIdRef="8" name="oac02a" sqlTabName="" table_alias_name="" uid="{6782bed9-0000-4000-8133-27bfaeaf7108}"/>
+    <RecordField colName="obp04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="obp_file.obp04" sqlTabName="obp_file" sqlType="DECIMAL" table_alias_name="" uid="{be353cdd-0000-4000-9b27-7c63196c912b}"/>
+    <RecordField colName="obp05" fieldIdRef="10" fieldType="TABLE_COLUMN" name="obp_file.obp05" sqlTabName="obp_file" sqlType="VARCHAR" table_alias_name="" uid="{2c0cb93d-0000-4000-a279-f6c93deca31b}"/>
+    <RecordField colName="obp06" fieldIdRef="11" fieldType="TABLE_COLUMN" name="obp_file.obp06" sqlTabName="obp_file" sqlType="DECIMAL" table_alias_name="" uid="{45b5db73-0000-4000-b81e-2eb5212c75fa}"/>
+    <RecordField colName="obp07" fieldIdRef="2" fieldType="TABLE_COLUMN" name="obp_file.obp07" sqlTabName="obp_file" sqlType="DECIMAL" table_alias_name="" uid="{7ab62e85-0000-4000-8df3-167e74a6e866}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{5d564182-0000-4000-9dc6-aa5c12314304}" where="">
+    <RecordField colName="obp01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="obp_file.obp01" sqlTabName="obp_file" sqlType="VARCHAR" table_alias_name="" uid="{6aab8c09-0000-4000-ad53-73af8329c582}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="obm02" sqlTabName="" table_alias_name="" uid="{d24272c2-0000-4000-924a-f4c37c4d7427}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3ed84be2-0000-4000-ab48-451e5ccff5d3}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="165" name="atmi171" spacing="normal" text="atmi171">
+    <VBox gridHeight="19" gridWidth="162" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="3" gridWidth="162" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="55" lstrcomment="false" name="gr1387" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Shipping Method No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obp01" columnCount="" comment="KEY Field,No Blank/Repeated!,&lt;^P&gt;Qry Detail" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="obp_file.obp01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="obp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="obm02" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="162" lstrcomment="false" name="s_obp" posX="0" posY="4" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obp02" columnCount="" comment="&lt;^P&gt;Qry Detail" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" image="zoom" lstrcomment="false" lstrtitle="false" name="obp_file.obp02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="obp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Init Transfer Site" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oac02" noEntry="true" posX="22" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obp03" columnCount="" comment="&lt;^P&gt;Qry Detail" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="obp_file.obp03" notNull="true" posX="42" posY="0" required="true" rowCount="" sqlTabName="obp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Dest Transfer Site" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oac02a" noEntry="true" posX="65" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Name" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obp04" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="obp_file.obp04" notNull="true" posX="85" posY="0" required="true" rowCount="" sqlTabName="obp_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Day Used" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obp05" columnCount="" comment="&lt;^P&gt;Qry Detail" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="obp_file.obp05" notNull="true" posX="97" posY="0" required="true" rowCount="" sqlTabName="obp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Currency" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obp06" columnCount="" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="obp_file.obp06" notNull="true" posX="108" posY="0" required="true" rowCount="" sqlTabName="obp_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Unit Shipping Cost" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obp07" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" lstrcomment="false" lstrtitle="false" name="obp_file.obp07" notNull="true" posX="129" posY="0" required="true" rowCount="" sqlTabName="obp_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Unit Shipp Cost(Return)" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="162" lstrcomment="false" name="gr1388" posX="0" posY="16">
+        <HLine gridWidth="10" name="hl472" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl473" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

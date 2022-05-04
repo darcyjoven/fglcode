@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{d55db667-0000-4000-91b5-6a3b9ae53d19}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bol" order="" uid="{80b5a3ff-0000-4000-9597-ea67fa16d933}" where="">
+    <RecordField colName="bol01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bol_file.bol01" sqlTabName="bol_file" sqlType="VARCHAR" table_alias_name="" uid="{57b91d47-0000-4000-8a7c-7dcf066833e9}"/>
+    <RecordField colName="bol02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bol_file.bol02" sqlTabName="bol_file" sqlType="VARCHAR" table_alias_name="" uid="{4fbab106-0000-4000-ace7-a85d2cfba627}"/>
+    <RecordField colName="bol03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bol_file.bol03" sqlTabName="bol_file" sqlType="VARCHAR" table_alias_name="" uid="{5ffc9180-0000-4000-b0ea-b0ebf80b6e29}"/>
+    <RecordField colName="bol04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="bol_file.bol04" sqlTabName="bol_file" sqlType="VARCHAR" table_alias_name="" uid="{6952aef5-0000-4000-865b-baa89011359c}"/>
+    <RecordField colName="bolacti" fieldIdRef="5" fieldType="TABLE_COLUMN" name="bol_file.bolacti" sqlTabName="bol_file" sqlType="VARCHAR" table_alias_name="" uid="{9e74961f-0000-4000-9dba-7c0137b1ac49}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{6bcf9ab8-0000-4000-9f3b-7488ccbc3bbf}" where="">
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{df78adf1-0000-4000-b1b5-035e483dd1f5}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="143" name="abmi111" spacing="normal" text="abmi111">
+    <Folder gridHeight="17" gridWidth="82" lstrcomment="false" name="pc1231" posX="0" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="16" gridWidth="81" name="vb5" posX="0" posY="0">
+          <Table gridHeight="12" gridWidth="81" lstrcomment="false" name="s_bol" posX="0" posY="1" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bol01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bol_file.bol01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="bol_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Location code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bol02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bol_file.bol02" notNull="true" posX="10" posY="0" required="true" rowCount="" sqlTabName="bol_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Location site" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bol03" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="bol_file.bol03" notNull="true" posX="30" posY="0" required="true" rowCount="" sqlTabName="bol_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="English site" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bol04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="-Horizontal, -Straight" lstrcomment="false" lstrtitle="false" name="bol_file.bol04" notNull="true" posX="50" posY="0" required="true" rowCount="" sqlTabName="bol_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Location Nature " widget="ComboBox">
+              <Item lstrtext="false" name="1" text="-Horizontal"/>
+              <Item lstrtext="false" name="2" text="-Straight"/>
+            </ComboBox>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bolacti" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bol_file.bolacti" notNull="true" posX="60" posY="0" required="true" rowCount="" sqlTabName="bol_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Validity?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+          <Grid gridHeight="2" gridWidth="81" lstrcomment="false" name="gr6168" posX="0" posY="13">
+            <HLine gridWidth="10" name="hl2025" posX="1" posY="0"/>
+            <Label posX="12" posY="0" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+            <HLine gridWidth="10" name="hl2026" posX="26" posY="0"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

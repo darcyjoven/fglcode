@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7899d354-0000-4000-8142-9894fa4ec0db}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_vly" order="" uid="{05338604-0000-4000-955d-688d7eb92702}" where="">
+    <RecordField colName="vly01" fieldIdRef="8" fieldType="TABLE_COLUMN" name="vly_file.vly01" sqlTabName="vly_file" sqlType="VARCHAR" table_alias_name="" uid="{1e7d237e-0000-4000-a610-a2df901681db}"/>
+    <RecordField colName="" fieldIdRef="9" name="vly02" sqlTabName="" table_alias_name="" uid="{3fb01ebc-0000-4000-be33-0e7783186f9f}"/>
+    <RecordField colName="vly03" fieldIdRef="10" fieldType="TABLE_COLUMN" name="vly_file.vly03" sqlTabName="vly_file" sqlType="VARCHAR" table_alias_name="" uid="{d2749af3-0000-4000-a548-f35883b9fb5c}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="vly10" sqlTabName="" table_alias_name="" uid="{15935e16-0000-4000-9f93-978c180a3a23}"/>
+    <RecordField colName="vly04" fieldIdRef="12" fieldType="TABLE_COLUMN" name="vly_file.vly04" sqlTabName="vly_file" sqlType="VARCHAR" table_alias_name="" uid="{05f7f752-0000-4000-acee-d282a65fd828}"/>
+    <RecordField colName="vly05" fieldIdRef="13" fieldType="TABLE_COLUMN" name="vly_file.vly05" sqlTabName="vly_file" sqlType="VARCHAR" table_alias_name="" uid="{46228590-0000-4000-87fd-60fef0326274}"/>
+    <RecordField colName="vly08" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vly_file.vly08" sqlTabName="vly_file" sqlType="VARCHAR" table_alias_name="" uid="{0659f9f5-0000-4000-a707-93fb902e1284}"/>
+    <RecordField colName="vly09" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vly_file.vly09" sqlTabName="vly_file" sqlType="SMALLINT" table_alias_name="" uid="{ecadde65-0000-4000-81fc-a118802dd475}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fcd86ffc-0000-4000-8490-80fd954567af}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="vly06" sqlTabName="" table_alias_name="" uid="{0070a194-0000-4000-9b16-ddc3ffa94f06}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="azp02" sqlTabName="" table_alias_name="" uid="{eedc1642-0000-4000-af95-f35ecacda867}"/>
+    <RecordField colName="vly07" fieldIdRef="7" fieldType="TABLE_COLUMN" name="vly_file.vly07" sqlTabName="vly_file" sqlType="VARCHAR" table_alias_name="" uid="{d4e11bd8-0000-4000-a2c9-2f0460468780}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{bd88b165-0000-4000-951a-3f9205e6aa65}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{994089b0-0000-4000-a39c-e27959a670bb}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="119" name="apss300" spacing="normal" text="apss300">
+    <VBox gridHeight="22" gridWidth="111" name="vb2" posX="0" posY="0">
+      <Grid gridHeight="18" gridWidth="111" lstrcomment="false" name="gr5444" posX="0" posY="1">
+        <Group gridHeight="4" gridWidth="82" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Basic Data">
+          <Label posX="1" posY="1" text="TIPTOP Data Base Code"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" name="vly06" noEntry="true" posX="30" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" name="azp02" noEntry="true" posX="52" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="TIPTOP DataBase Name/SID"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vly07" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom.png" lstrcomment="false" name="vly_file.vly07" notNull="true" posX="30" posY="2" required="true" rowCount="" sqlTabName="vly_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Table gridHeight="12" gridWidth="109" name="s_vly" posX="2" posY="5" totalRows="10">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vly01" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="vly_file.vly01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="vly_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="APS Version" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="9" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="vly02" noEntry="true" posX="9" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="vly02" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vly03" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="vly_file.vly03" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="vly_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" title="vly03" widget="Edit"/>
+          <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Not created, Creating, Created, Deleting" lstrcomment="false" lstrtitle="false" name="vly10" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="vly10" widget="ComboBox">
+            <Item lstrtext="false" name="1" text="Not created"/>
+            <Item lstrtext="false" name="2" text="Creating"/>
+            <Item lstrtext="false" name="3" text="Created"/>
+            <Item lstrtext="false" name="4" text="Deleting"/>
+          </ComboBox>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vly04" colorCondition="black" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="vly_file.vly04" notNull="true" posX="39" posY="0" required="true" rowCount="" sqlTabName="vly_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="APS Data Base Code" widget="Edit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vly05" colorCondition="black" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" image="zoom.png" lstrcomment="false" lstrtitle="false" name="vly_file.vly05" notNull="true" posX="52" posY="0" required="true" rowCount="" sqlTabName="vly_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="APS DataBase Name/SID" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vly08" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="vly_file.vly08" notNull="true" posX="76" posY="0" required="true" rowCount="" sqlTabName="vly_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="vly08" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vly09" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="vly_file.vly09" notNull="true" posX="83" posY="0" required="true" rowCount="" sqlTabName="vly_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" title="APS Server Port" widget="Edit"/>
+        </Table>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="111" lstrcomment="false" name="gr881" posX="0" posY="19">
+        <HLine gridWidth="10" name="hl267" posX="1" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl268" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

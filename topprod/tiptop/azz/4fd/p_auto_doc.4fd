@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{34c90d1d-0000-4000-ba2b-b8bcd9a19e02}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gfa" order="" uid="{dc0350e6-0000-4000-a7ea-d823cbd41765}" where="">
+    <RecordField colName="gfa01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="gfa_file.gfa01" sqlTabName="gfa_file" sqlType="VARCHAR" table_alias_name="" uid="{18cad3bf-0000-4000-a272-1f01336e47ce}"/>
+    <RecordField colName="gfa02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="gfa_file.gfa02" sqlTabName="gfa_file" sqlType="VARCHAR" table_alias_name="" uid="{15f71653-0000-4000-a11e-fb26f71a2639}"/>
+    <RecordField colName="" fieldIdRef="6" name="desc" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{45479d98-0000-4000-a530-c6aa6af18a29}"/>
+    <RecordField colName="gfa03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gfa_file.gfa03" sqlTabName="gfa_file" sqlType="VARCHAR" table_alias_name="" uid="{26fddf52-0000-4000-bbe4-7f2cc881f5b3}"/>
+    <RecordField colName="" fieldIdRef="8" name="zz02" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{92372e90-0000-4000-bb60-d61ebec2d705}"/>
+    <RecordField colName="gfa04" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gfa_file.gfa04" sqlTabName="gfa_file" sqlType="VARCHAR" table_alias_name="" uid="{fcf6e02d-0000-4000-8bb4-600fdf2120ed}"/>
+    <RecordField colName="gfa05" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gfa_file.gfa05" sqlTabName="gfa_file" sqlType="VARCHAR" table_alias_name="" uid="{c3c03750-0000-4000-9cee-586e3070d360}"/>
+    <RecordField colName="" fieldIdRef="11" name="desc2" sqlTabName="" table_alias_name="" uid="{f21055ec-0000-4000-acfc-c5d69d0a5708}"/>
+    <RecordField colName="gfa06" fieldIdRef="12" fieldType="TABLE_COLUMN" name="gfa_file.gfa06" sqlTabName="gfa_file" sqlType="VARCHAR" table_alias_name="" uid="{8a086141-0000-4000-83cc-55d681960a44}"/>
+    <RecordField colName="gfa07" fieldIdRef="2" fieldType="TABLE_COLUMN" name="gfa_file.gfa07" sqlTabName="gfa_file" sqlType="VARCHAR" table_alias_name="" uid="{cc676e59-0000-4000-b634-a7b5234ef2b4}"/>
+    <RecordField colName="gfaacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gfa_file.gfaacti" sqlTabName="gfa_file" sqlType="VARCHAR" table_alias_name="" uid="{80e46e8c-0000-4000-a7f9-f3bf33c1f044}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{bdf85bfd-0000-4000-83d0-3a0b5105a1ae}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{30980e1a-0000-4000-8363-29c0868a4085}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="115" name="p_auto_doc" spacing="normal" text="p_auto_doc">
+    <VBox gridHeight="18" gridWidth="112" name="vb2" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="112" lstrcomment="false" name="pc708" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="110" lstrcomment="false" name="s_gfa" posX="0" posY="0" totalRows="10">
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfa01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="Sales Order, Delivery Advice, Purchase Requisite" lstrcomment="false" lstrtitle="false" name="gfa_file.gfa01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="gfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Document Property" widget="ComboBox">
+              <Item name="1" text="Sales Order"/>
+              <Item name="2" text="Delivery Advice"/>
+              <Item name="3" text="Purchase Requisite"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfa02" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" image="zoom" lstrcomment="false" lstrtitle="false" name="gfa_file.gfa02" notNull="true" posX="12" posY="0" required="true" rowCount="" scroll="true" sqlTabName="gfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Doc" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="desc" noEntry="true" posX="21" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Cate Desc" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfa03" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="apmt420, apmt540, asfi301, axmt610, axmt620" lstrcomment="false" lstrtitle="false" name="gfa_file.gfa03" notNull="true" posX="32" posY="0" required="true" rowCount="" sqlTabName="gfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Auto Generate Task" widget="ComboBox">
+              <Item name="apmt420" text="apmt420"/>
+              <Item name="apmt540" text="apmt540"/>
+              <Item name="asfi301" text="asfi301"/>
+              <Item name="axmt610" text="axmt610"/>
+              <Item name="axmt620" text="axmt620"/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="8" lstrcomment="false" lstrtitle="false" name="zz02" noEntry="true" posX="40" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Task Name" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfa04" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Auto Gen, Ask Gen" lstrcomment="false" lstrtitle="false" name="gfa_file.gfa04" notNull="true" posX="48" posY="0" required="true" rowCount="" sqlTabName="gfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Generation Method" widget="ComboBox">
+              <Item name="1" text="Auto Gen"/>
+              <Item name="2" text="Ask Gen"/>
+            </ComboBox>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfa05" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="gfa_file.gfa05" notNull="true" posX="58" posY="0" required="true" rowCount="" sqlTabName="gfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Auto Gen Doc" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="desc2" noEntry="true" posX="68" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Gen Cate Desc" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfa06" columnCount="" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gfa_file.gfa06" notNull="true" posX="78" posY="0" required="true" rowCount="" sqlTabName="gfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="12" table_alias_name="" title="Auto Conf" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfa07" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gfa_file.gfa07" notNull="true" posX="85" posY="0" required="true" rowCount="" sqlTabName="gfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Connect p_flow?" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gfaacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gfa_file.gfaacti" notNull="true" posX="92" posY="0" required="true" rowCount="" sqlTabName="gfa_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="112" lstrcomment="false" name="gr3067" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl3" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl4" posX="26" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

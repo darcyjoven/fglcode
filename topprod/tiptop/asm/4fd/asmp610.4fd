@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c9ff9437-0000-4000-bcd0-271a2a49038c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{0f62a2ac-0000-4000-9613-cbeff84fbef5}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="yy1" sqlTabName="" table_alias_name="" uid="{269cddcd-0000-4000-8bd1-d4df8800d7ea}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="m1" sqlTabName="" table_alias_name="" uid="{1d6f61ef-0000-4000-b34b-142f8e539871}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="yy2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{714060c1-0000-4000-80dd-24deb8ede619}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="m2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{b75d53d1-0000-4000-8122-6051332a5365}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{44bccb08-0000-4000-a0d8-0f7926116baf}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="47" name="asmp610" spacing="normal" text="asmp610">
+    <VBox gridHeight="11" gridWidth="45" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="45" lstrcomment="false" name="gr880" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="INPUT">
+          <Label posX="1" posY="1" text="Current YY/MM is"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="yy1" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="m1" noEntry="true" posX="29" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Update"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="yy2" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="3" lstrcomment="false" lstrtitle="false" name="m2" posX="29" posY="2" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="       "/>
+          <Label gridHeight="1" gridWidth="42" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="4" text="NOTE:Whole task is a Tran., beware Long Tranx."/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="45" lstrcomment="false" name="gr881" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="33" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

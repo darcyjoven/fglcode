@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="ManagedForm" uid="{2b50747e-9515-4df4-abee-b71f2f143ca2}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="nah_file" name="s_nah" order="" uid="{2b544bf6-8b8a-434d-b55c-974d245762a8}" where="">
+    <RecordField colName="nah04" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nah_file.nah04" sqlTabName="nah_file" sqlType="VARCHAR" table_alias_name="" uid="{36281ed9-ef9e-45f4-bedc-88ec86449a86}" uniqueQueryKey="false"/>
+    <RecordField colName="nah02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nah_file.nah02" sqlTabName="nah_file" sqlType="VARCHAR" table_alias_name="" uid="{f6ffef57-a50a-467e-b043-957d450ffbc7}" uniqueQueryKey="false"/>
+    <RecordField colName="nmu01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nmu_file.nmu01" sqlTabName="nmu_file" sqlType="DATE" table_alias_name="" uid="{2e6ed289-c2bb-4ad2-acea-d9f5d3ece930}" uniqueQueryKey="false"/>
+    <RecordField colName="nmu05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="nmu_file.nmu05" sqlTabName="nmu_file" sqlType="VARCHAR" table_alias_name="" uid="{af32ea31-96ab-4250-89c1-d0a714c58aed}" uniqueQueryKey="false"/>
+    <RecordField colName="nmu09" fieldIdRef="5" fieldType="TABLE_COLUMN" name="nmu_file.nmu09" sqlTabName="nmu_file" sqlType="SMALLINT" table_alias_name="" uid="{5f719dbd-015d-41a8-b400-97a1644a6ffd}" uniqueQueryKey="false"/>
+    <RecordField colName="nmu10" fieldIdRef="6" fieldType="TABLE_COLUMN" name="nmu_file.nmu10" sqlTabName="nmu_file" sqlType="DECIMAL" table_alias_name="" uid="{64211b2c-7714-4992-bd56-a4921e20fc08}" uniqueQueryKey="false"/>
+  </Record>
+  <Form gridHeight="12" gridWidth="126" name="Form" text="Form">
+    <Table gridHeight="6" gridWidth="112" name="ds1" posX="1" posY="1" totalRows="5">
+      <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nah04" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Auto, Hand" name="nah_file.nah04" posX="0" posY="0" rowCount="" scroll="true" sqlTabName="nah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="nah04" widget="ComboBox">
+        <Item lstrtext="false" name="1" text="Auto"/>
+        <Item lstrtext="false" name="2" text="Hand"/>
+      </ComboBox>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nah02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="nah_file.nah02" notNull="true" posX="10" posY="0" rowCount="" scroll="true" sqlTabName="nah_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="nah02" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmu01" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="nmu_file.nmu01" notNull="true" posX="30" posY="0" rowCount="" scroll="true" sqlTabName="nmu_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="nmu01" widget="Edit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmu05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="nmu_file.nmu05" posX="40" posY="0" rowCount="" scroll="true" sqlTabName="nmu_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="nmu05" widget="Edit"/>
+      <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmu09" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="shou, fu" name="nmu_file.nmu09" posX="70" posY="0" rowCount="" scroll="true" sqlTabName="nmu_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" title="nmu09" widget="ComboBox">
+        <Item lstrtext="false" name="1" text="shou"/>
+        <Item lstrtext="false" name="-1" text="fu"/>
+      </ComboBox>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nmu10" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" name="nmu_file.nmu10" posX="83" posY="0" precisionDecimal="20" rowCount="" scaleDecimal="6" scroll="true" sqlTabName="nmu_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="nmu10" widget="Edit"/>
+    </Table>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA1AGYANwAxADkAZABiAGQALQAwADEANQBkAC0ANAAxAGEAOAAtAGIANAAwADAALQA5ADcAYQAxADYANAA0AGEANgBmAGYAZAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGUANgBlAGQAMgA4ADkALQBjADIAYgBiAC0ANABhAGQAMgAtAGEAYwBlAGEALQBkADkAZgA1AGQAMwBlAGMAZQA5ADMAMAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBhAGYAMwAyAGUAYQAzADEALQA5ADYAYQBiAC0ANAAyADUAMAAtADgAOQBjADEALQBkADAAYQA3ADEANABjADUAOABhAGUAZAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADYAZgBmAGUAZgA1ADcALQBhADUAMABhAC0ANAA2ADcAZQAtAGIAMAA0ADMALQA5ADUANwBkADQANQAwAGYAZgBiAGMANwB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGIANQA0ADQAYgBmADYALQA4AGIAOABhAC0ANAAzADQAZAAtAGIANQA1AGMALQA5ADcANABkADIANAA1ADcANgAyAGEAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADQAMgAxADEAYgAyAGMALQA3ADcAMQA0AC0ANAA5ADkAMgAtAGIAZAA1ADYALQBhADQAOQAyADEAZQAyADAAZgBjADAAOAB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAzADYAMgA4ADEAZQBkADkALQBlAGYAOQBlAC0ANAA1AGYANAAtAGIAZQBkAGMALQA4ADgAZQBjADgANgA0ADQAOQBhADgANgB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

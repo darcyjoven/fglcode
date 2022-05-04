@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{de7de4e9-3d03-4929-8ae2-88745e416b7b}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{73895116-8c28-4c00-85fe-63e44393527c}" where="">
+    <RecordField colName="npp00" fieldIdRef="1" fieldType="TABLE_COLUMN" name="npp_file.npp00" sqlTabName="npp_file" sqlType="SMALLINT" table_alias_name="" uid="{0ac66a5f-94ad-49de-a994-ef4d9f6e53ab}"/>
+    <RecordField colName="npp01" fieldIdRef="8" fieldType="TABLE_COLUMN" name="npp_file.npp01" sqlTabName="npp_file" sqlType="VARCHAR" table_alias_name="" uid="{d9bd63e2-aa81-4621-8318-b08e71b4c93e}"/>
+    <RecordField colName="npp011" fieldIdRef="9" fieldType="TABLE_COLUMN" name="npp_file.npp011" sqlTabName="npp_file" sqlType="SMALLINT" table_alias_name="" uid="{b7a34243-7e20-465a-8753-c869bc875cbb}"/>
+    <RecordField colName="npp02" fieldIdRef="10" fieldType="TABLE_COLUMN" name="npp_file.npp02" sqlTabName="npp_file" sqlType="DATE" table_alias_name="" uid="{20c6de4c-7ed0-4931-9504-c898369475ad}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="b_user" sqlTabName="" table_alias_name="" uid="{faf1a261-9af8-4188-bbd8-36afa0d2cd31}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="e_user" sqlTabName="" table_alias_name="" uid="{deabde87-6f50-45a8-a9cd-beded2683e67}"/>
+    <RecordField colName="" fieldIdRef="13" fieldType="NON_DATABASE" name="p_plant" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2837a497-8e7d-4b76-bb39-40627a3390ae}"/>
+    <RecordField colName="" fieldIdRef="14" fieldType="NON_DATABASE" name="p_bookno" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{29120845-3541-42bd-92c7-0b8ef183d6f1}"/>
+    <RecordField colName="" fieldIdRef="15" fieldType="NON_DATABASE" name="gl_no" sqlTabName="" table_alias_name="" uid="{1eb106cd-6a44-4db2-8445-468ad15fa9cf}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="p_bookno1" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3c734459-a0af-44cd-bdaa-7e1605551190}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="gl_no1" sqlTabName="" table_alias_name="" uid="{6d937e0b-563a-4a63-baea-fede3e9fb356}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="gl_date" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{cfb05689-32a9-43b7-af63-1e2d46d8f385}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="gl_tran" sqlTabName="" table_alias_name="" uid="{8df13b2a-9a55-4607-8ebc-4bec4ea5b78c}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="gl_seq" sqlTabName="" table_alias_name="" uid="{9c35881b-274b-4718-a339-c535ebecb092}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="g_bgjob" sqlTabName="" table_alias_name="" uid="{15280c1c-2cfb-4b22-ae10-81c6a9750c98}"/>
+  </Record>
+  <Form gridHeight="30" gridWidth="82" name="afap202" spacing="normal" text="afap202">
+    <Folder gridHeight="29" gridWidth="73" lstrcomment="false" name="pc354" posX="4" posY="0">
+      <Page lstrtext="false" name="page01" text="Main">
+        <VBox gridHeight="27" gridWidth="64" name="VBox1" posX="2" posY="0">
+          <Grid gridHeight="23" gridWidth="64" lstrcomment="false" name="gr1910" posX="0" posY="1">
+            <Group gridHeight="6" gridWidth="49" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="1" text="QBE:System(FA)">
+              <Label posX="1" posY="1" text="Asset Category"/>
+              <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npp00" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Capitalization, Transfer, Sale, Retire, Charge off, Improve, Revaluate, Adjust, Depreciation, Interest Capitalization, Insurance, Deduction Preparation, Category Trans." lstrcomment="false" lstrtitle="false" name="npp_file.npp00" posX="22" posY="1" queryEditable="true" rowCount="" sqlTabName="npp_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ComboBox">
+                <Item lstrtext="false" name="1" text="Capitalization"/>
+                <Item lstrtext="false" name="2" text="Transfer"/>
+                <Item lstrtext="false" name="4" text="Sale"/>
+                <Item lstrtext="false" name="5" text="Retire"/>
+                <Item lstrtext="false" name="6" text="Charge off"/>
+                <Item lstrtext="false" name="7" text="Improve"/>
+                <Item lstrtext="false" name="8" text="Revaluate"/>
+                <Item lstrtext="false" name="9" text="Adjust"/>
+                <Item lstrtext="false" name="10" text="Depreciation"/>
+                <Item lstrtext="false" name="11" text="Interest Capitalization"/>
+                <Item lstrtext="false" name="12" text="Insurance"/>
+                <Item lstrtext="false" name="13" text="Deduction Preparation"/>
+                <Item lstrtext="false" name="14" text="Category Trans."/>
+              </ComboBox>
+              <Label posX="1" posY="2" text="Document No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npp01" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npp_file.npp01" posX="22" posY="2" rowCount="" sqlTabName="npp_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="Serial No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npp011" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npp_file.npp011" posX="22" posY="3" rowCount="" sqlTabName="npp_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="4" text="Date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="npp02" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="npp_file.npp02" posX="22" posY="4" rowCount="" sqlTabName="npp_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+            </Group>
+            <Group gridHeight="10" gridWidth="49" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="7" text="Input">
+              <Label posX="1" posY="1" text="Enter user QBE"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="b_user" posX="24" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+              <Label posX="35" posY="1" text="-"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="e_user" posX="37" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="2" text="Gen. Ledger Plant No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="p_plant" posX="24" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="3" text="General Ledger No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="p_bookno" posX="24" posY="3" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="4" text="Gen. Ledger Voc. Type"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Documents " fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gl_no" notNull="true" posX="24" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="5" text="General Ledger No.2"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="p_bookno1" posX="24" posY="5" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+              <Label posX="1" posY="6" text="Gen. Ledger Voc. Type2"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Documents " fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="gl_no1" notNull="true" posX="24" posY="6" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="7" text="Gen. Ledger Voc. Date"/>
+              <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="gl_date" notNull="true" posX="24" posY="7" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="12" table_alias_name="" widget="DateEdit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="43" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gl_tran" notNull="true" posX="1" posY="8" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="13" table_alias_name="" text="Carry Memo" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+            <Group gridHeight="5" gridWidth="49" lstrcomment="false" lstrtext="false" name="group03" posX="1" posY="17" text="Data Option">
+              <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="3" gridWidth="43" items="All, By Document Number, By Date" lstrcomment="false" lstrtitle="false" name="gl_seq" posX="1" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="14" table_alias_name="" widget="RadioGroup">
+                <Item lstrtext="" name="0" text="All"/>
+                <Item lstrtext="" name="1" text="By Document Number"/>
+                <Item lstrtext="" name="2" text="By Date"/>
+              </RadioGroup>
+            </Group>
+          </Grid>
+          <Grid gridHeight="2" gridWidth="64" lstrcomment="false" name="gr1911" posX="0" posY="24">
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="61" lstrcomment="false" lstrtext="false" lstrtitle="false" name="g_bgjob" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" text="Background Job" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>

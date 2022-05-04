@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{522d2762-0000-4000-b124-d81c3877d36a}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_nnb" order="" uid="{142eda6d-0000-4000-8d41-83375d7157a6}" where="">
+    <RecordField colName="nnb03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="nnb_file.nnb03" sqlTabName="nnb_file" sqlType="SMALLINT" table_alias_name="" uid="{b53dae4c-0000-4000-96e9-6884f8ef6305}"/>
+    <RecordField colName="nnb04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="nnb_file.nnb04" sqlTabName="nnb_file" sqlType="VARCHAR" table_alias_name="" uid="{c62c7303-0000-4000-9216-463beda70f59}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{e77b1ff4-0000-4000-a3e6-cbef1b00431c}" where="">
+    <RecordField colName="nnb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="nnb_file.nnb01" sqlTabName="nnb_file" sqlType="VARCHAR" table_alias_name="" uid="{f148de5c-0000-4000-89b2-4139df1bba5b}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cnt" sqlTabName="" table_alias_name="" uid="{9ba613d2-0000-4000-9efa-c6da8fb5c61d}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{263644cc-0000-4000-9974-45ebff50924a}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="72" name="anmt700" spacing="normal" text="anmt700">
+    <VBox gridHeight="21" gridWidth="69" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="69" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <VBox gridHeight="4" gridWidth="40" name="VBox2" posX="0" posY="0">
+            <Grid gridHeight="2" gridWidth="40" lstrcomment="false" name="gr4519" posX="0" posY="1">
+              <Label posX="1" posY="0" text="Related Doc No."/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnb01" columnCount="" comment="Key Field, No Blank/Repeated!    " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtitle="false" name="nnb_file.nnb01" posX="22" posY="0" rowCount="" sqlTabName="nnb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            </Grid>
+          </VBox>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="69" lstrcomment="false" name="s_nnb" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnb03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="nnb_file.nnb03" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="nnb_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Ln#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="nnb04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtitle="false" name="nnb_file.nnb04" notNull="true" posX="5" posY="0" required="true" rowCount="" sqlTabName="nnb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Description" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="69" lstrcomment="false" name="gr4520" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl1373" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1374" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

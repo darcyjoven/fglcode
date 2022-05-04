@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{4836b5c8-0000-4000-87c7-c3b6cf893620}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_obk" order="" uid="{6a913326-0000-4000-88fd-85dbcd6d503b}" where="">
+    <RecordField colName="obk02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="obk_file.obk02" sqlTabName="obk_file" sqlType="VARCHAR" table_alias_name="" uid="{9c05aa40-0000-4000-8139-7a54e1f65321}"/>
+    <RecordField colName="" fieldIdRef="7" name="occ02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{e9de0fc1-0000-4000-95ff-99d1566048d2}"/>
+    <RecordField colName="" fieldIdRef="8" name="obk11" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{8220d33e-0000-4000-963d-863f85cce320}"/>
+    <RecordField colName="" fieldIdRef="9" name="obk12" sqlTabName="" table_alias_name="" uid="{3bcacbba-0000-4000-be50-c1cf5559a5fa}"/>
+    <RecordField colName="" fieldIdRef="10" name="obk13" sqlTabName="" table_alias_name="" uid="{1e394423-0000-4000-b71b-8900b608dfaf}"/>
+    <RecordField colName="" fieldIdRef="11" name="obk14" sqlTabName="" table_alias_name="" uid="{e9e3fbd3-0000-4000-94cf-b0a425d17f3b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9fc7170f-0000-4000-9626-fbeb2b964d8b}" where="">
+    <RecordField colName="obk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="obk_file.obk01" sqlTabName="obk_file" sqlType="VARCHAR" table_alias_name="" uid="{09cd338b-0000-4000-a944-d4eade30cf47}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="ima02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{c26958e5-0000-4000-a4b9-7b225f6c461c}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="ima021" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3d010526-0000-4000-8c89-de885afab9fe}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{4da62144-0000-4000-9126-9190897feff7}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{312109a2-0000-4000-8f71-39b1319455eb}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="77" name="aqci150" spacing="normal" text="aqci150">
+    <VBox gridHeight="21" gridWidth="74" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="5" gridWidth="74" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="3" gridWidth="53" lstrcomment="false" name="gr16" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Item No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obk01" columnCount="" comment="Key Field, No Blank  " fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" image="zoom" lstrcomment="false" lstrtitle="false" name="obk_file.obk01" notNull="true" posX="22" posY="0" required="true" rowCount="" sqlTabName="obk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="1" text="Part Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Specification"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima021" noEntry="true" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="74" lstrcomment="false" name="s_obk" posX="0" posY="6" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="obk02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" image="zoom" lstrcomment="false" lstrtitle="false" name="obk_file.obk02" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="obk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Customer NO." widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtitle="false" name="occ02" noEntry="true" posX="13" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Customer Abbreviation" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="obk11" notNull="true" posX="35" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="QC" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" gridHeight="1" gridWidth="10" items="Normal QC, Strict QC, Reduced-Qty QC" lstrcomment="false" lstrtitle="false" name="obk12" posX="42" posY="0" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="QC Degree" widget="ComboBox">
+          <Item name="N" text="Normal QC"/>
+          <Item name="T" text="Strict QC"/>
+          <Item name="R" text="Reduced-Qty QC"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" gridHeight="1" gridWidth="9" items="General, Special" lstrcomment="false" lstrtitle="false" name="obk13" posX="52" posY="0" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="QC Class" widget="ComboBox">
+          <Item name="1" text="General"/>
+          <Item name="2" text="Special"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="11" gridHeight="1" gridWidth="5" items="Level1, Level2, Level3, Level4" lstrcomment="false" lstrtitle="false" name="obk14" posX="61" posY="0" queryEditable="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Level" widget="ComboBox">
+          <Item name="1" text="Level1"/>
+          <Item name="2" text="Level2"/>
+          <Item name="3" text="Level3"/>
+          <Item name="4" text="Level4"/>
+        </ComboBox>
+      </Table>
+      <Grid gridHeight="2" gridWidth="74" lstrcomment="false" name="gr17" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl13" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl14" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

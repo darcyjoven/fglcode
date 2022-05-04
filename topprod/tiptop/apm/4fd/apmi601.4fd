@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{778385cd-0000-4000-b0e6-56e94f0cf720}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{43bf7eca-0000-4000-b777-41321d6697d5}" where="">
+    <RecordField colName="pmc906" fieldIdRef="1" fieldType="TABLE_COLUMN" name="pmc_file.pmc906" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{4dc3282f-0000-4000-a8a2-0c9750d60146}"/>
+    <RecordField colName="pmc905" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pmc_file.pmc905" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{5f4570d5-0000-4000-aebf-36311890cac7}"/>
+    <RecordField colName="pmc907" fieldIdRef="3" fieldType="TABLE_COLUMN" name="pmc_file.pmc907" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{6f8bffd1-0000-4000-afd7-3bf4810e0dc8}"/>
+    <RecordField colName="pmc18" fieldIdRef="4" fieldType="TABLE_COLUMN" name="pmc_file.pmc18" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{8b7d1af6-0000-4000-90a1-4795f5decdf3}"/>
+    <RecordField colName="pmc19" fieldIdRef="5" fieldType="TABLE_COLUMN" name="pmc_file.pmc19" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{bdf1c950-0000-4000-b186-3773b8d7ccdf}"/>
+    <RecordField colName="pmc20" fieldIdRef="6" fieldType="TABLE_COLUMN" name="pmc_file.pmc20" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{f787bdaa-0000-4000-ada3-cc7e6aee7630}"/>
+    <RecordField colName="pmc21" fieldIdRef="7" fieldType="TABLE_COLUMN" name="pmc_file.pmc21" sqlTabName="pmc_file" sqlType="VARCHAR" table_alias_name="" uid="{76835108-0000-4000-9cba-5d2288561842}"/>
+  </Record>
+  <Form gridHeight="23" gridWidth="62" name="apmi601" spacing="normal" text="apmi601">
+    <Group gridHeight="22" gridWidth="47" lstrcomment="false" lstrtext="false" name="gb3489" posX="0" posY="0">
+      <VBox gridHeight="20" gridWidth="45" name="VBox1" posX="1" posY="1">
+        <Grid gridHeight="10" gridWidth="45" lstrcomment="false" name="gr4866" posX="0" posY="1">
+          <Group gridHeight="10" gridWidth="44" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+            <Label posX="1" posY="1" text="QC Degree"/>
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc906" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="3" gridWidth="27" items="Normal, Strict, Reduce-Qty" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc906" notNull="true" posX="13" posY="1" required="true" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="N" text="Normal"/>
+              <Item lstrtext="" name="T" text="Strict"/>
+              <Item lstrtext="" name="R" text="Reduce-Qty"/>
+            </RadioGroup>
+            <Label posX="1" posY="5" text="QC Class"/>
+            <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc905" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="2" gridWidth="27" items="General, Special" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc905" notNull="true" posX="13" posY="5" required="true" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="RadioGroup">
+              <Item lstrtext="" name="1" text="General"/>
+              <Item lstrtext="" name="2" text="Special"/>
+            </RadioGroup>
+            <Label posX="1" posY="8" text="LEVEL"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc907" columnCount="" comment="General:1/2/3   Special:1/2/3/4" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" items="1, 2, 3, 4" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc907" notNull="true" posX="13" posY="8" queryEditable="true" required="true" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="1" text="1"/>
+              <Item lstrtext="" name="2" text="2"/>
+              <Item lstrtext="" name="3" text="3"/>
+              <Item lstrtext="" name="4" text="4"/>
+            </ComboBox>
+          </Group>
+        </Grid>
+        <Grid gridHeight="8" gridWidth="45" lstrcomment="false" name="gr4867" posX="0" posY="11">
+          <Group gridHeight="6" gridWidth="34" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="0">
+            <Label posX="1" posY="1" text="ABC Level"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc18" columnCount="" comment="Please Enter A/B/C" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="A, B, C" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc18" notNull="true" posX="22" posY="1" queryEditable="true" required="true" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="" name="A" text="A"/>
+              <Item lstrtext="" name="B" text="B"/>
+              <Item lstrtext="" name="C" text="C"/>
+            </ComboBox>
+            <Label posX="1" posY="2" text="Delivery Class"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc19" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc19" posX="22" posY="2" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Quality Grade"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc20" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc20" posX="22" posY="3" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="Price Level"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="pmc21" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="pmc_file.pmc21" posX="22" posY="4" rowCount="" sqlTabName="pmc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          </Group>
+        </Grid>
+      </VBox>
+    </Group>
+  </Form>
+</ManagedForm>

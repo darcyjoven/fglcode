@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="" gstVersion="22800" name="Root" uid="{f7cf37ab-0000-4000-90cf-5aeff59f653c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{525fef5c-0000-4000-bd74-8569ad7f4778}" where="">
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cay11" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{8d04f1f0-0000-4000-9372-b44e52c79e88}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="yy" sqlTabName="" table_alias_name="" uid="{7abe662f-0000-4000-9c04-f36cedfed696}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="mm" sqlTabName="" table_alias_name="" uid="{163797be-0000-4000-80a7-3e86015e2bce}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cay00" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2a08f59d-0000-4000-80f4-f8f70dca7843}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cay09" sqlTabName="" table_alias_name="" uid="{f84a3ca9-0000-4000-bccc-a9e30ee16f5d}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cay10" sqlTabName="" table_alias_name="" uid="{e2f4421c-0000-4000-ad2f-51d6fae776bc}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="cay08" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{13e30e09-0000-4000-ab50-e9f045d5bba2}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cay12" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2487e5e0-0000-4000-a995-f80f5f5b26dc}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="gem01" sqlTabName="" table_alias_name="" uid="{c5fb32f0-0000-4000-b491-c3f334c76926}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="aag01" sqlTabName="" table_alias_name="" uid="{695e8ce0-0000-4000-b80a-8fe8ab26d718}"/>
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="cay04" sqlTabName="" sqlType="CHAR" table_alias_name="" uid="{4b2b6bbe-fe42-4fc3-b451-71437711ecfc}"/>
+  </Record>
+  <Form gridHeight="22" gridWidth="138" name="axci001_g" spacing="normal" text="axci001_g">
+    <Grid gridHeight="15" gridWidth="77" lstrcomment="false" name="gr1439" posX="1" posY="0">
+      <Group gridHeight="8" gridWidth="71" lstrcomment="false" lstrtext="false" name="gb4" posX="2" posY="0" text="Input">
+        <Label posX="1" posY="1" text="Book No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" image="zoom.png" justify="" name="cay11" notNull="true" posX="25" posY="1" repeat="false" required="true" rowCount="" sizePolicy="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Year/Month"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="yy" notNull="true" posX="25" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="mm" notNull="true" posX="37" posY="2" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+        <Label posX="1" posY="3" text="Apportionment Category"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="Labor, Overhead 1, Overhead 2, Overhead 3, Overhead 4, Overhead 5" lstrcomment="false" lstrtitle="false" name="cay00" notNull="true" posX="25" posY="3" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Labor"/>
+          <Item lstrtext="false" name="2" text="Overhead 1"/>
+          <Item lstrtext="false" name="3" text="Overhead 2"/>
+          <Item lstrtext="false" name="4" text="Overhead 3"/>
+          <Item lstrtext="false" name="5" text="Overhead 4"/>
+          <Item lstrtext="false" name="6" text="Overhead 5"/>
+        </ComboBox>
+        <Label posX="1" posY="4" text="App. Rate Source"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" items="Manually Maintain, Account Balance, Approximate Qty, Qty, Input Hours, Actual Machine Hours, Standard Labor Hours Input, Standard Machine Hours Input" lstrcomment="false" lstrtitle="false" name="cay09" notNull="true" posX="25" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Manually Maintain"/>
+          <Item lstrtext="false" name="2" text="Account Balance"/>
+          <Item lstrtext="false" name="3" text="Approximate Qty"/>
+          <Item lstrtext="false" name="4" text="Qty"/>
+          <Item lstrtext="false" name="5" text="Input Hours"/>
+          <Item lstrtext="false" name="6" text="Actual Machine Hours"/>
+          <Item lstrtext="false" name="7" text="Standard Labor Hours Input"/>
+          <Item lstrtext="false" name="8" text="Standard Machine Hours Input"/>
+        </ComboBox>
+        <Label posX="37" posY="4" text="App. Source Acc No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Account" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="cay10" notNull="true" posX="58" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="5" text="Department Attribute"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="Direct Department, Indirect Department" lstrcomment="false" lstrtitle="false" name="cay08" notNull="true" posX="25" posY="5" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="" name="A" text="Direct Department"/>
+          <Item lstrtext="" name="B" text="Indirect Department"/>
+        </ComboBox>
+        <Label posX="1" posY="6" text="Allocation Method"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="Actual Labor Hours, Standard Labor Hours, Standard Machine Hours, Output Qty * Distribution Ratio, Actual Machine Hours" lstrcomment="false" lstrtitle="false" name="cay12" notNull="true" posX="25" posY="6" repeat="false" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Actual Labor Hours"/>
+          <Item lstrtext="false" name="2" text="Standard Labor Hours"/>
+          <Item lstrtext="false" name="3" text="Standard Machine Hours"/>
+          <Item lstrtext="false" name="4" text="Output Qty * Distribution Ratio"/>
+          <Item lstrtext="false" name="5" text="Actual Machine Hours"/>
+        </ComboBox>
+      </Group>
+      <Group gridHeight="5" gridWidth="71" lstrcomment="false" lstrtext="false" name="gb6" posX="2" posY="9" text="Construct">
+        <Label posX="1" posY="1" text="Department No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Account" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="gem01" posX="20" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="2" text="Account No."/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="&lt;^P&gt;Qry Account" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="aag01" posX="20" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ButtonEdit"/>
+        <Label posX="1" posY="3" text="Cost Center"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" comment="" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="cay04" posX="20" posY="3" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="ButtonEdit"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0AGIAMgBiADYAYgBiAGUALQBmAGUANAAyAC0ANABmAGMAMwAtAGIANAA1ADEALQA3ADEANAAzADcANwAxADEAZQBjAGYAYwB9QCQAAAAAAABAcBAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADgANABhADMAYwBhADkALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAYwBjAGMALQBhADkAZQAzADAAZQBlADEANgBmADUAZAB9QCQAAAAAAABAX0AAAAAAAAAAAAAAAAAAAQAAAEwAewAxADMAZQAzADAAZQAwADkALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYgA1ADAALQBlADkAZgAwADQANQBkADUAYgBiAGEAMgB9QCQAAAAAAABAZSAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADkANQBlADgAYwBlADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAOAAwAGEALQA4AGYAZQA4AGEAYgAyADYAZAA3ADEAOAB9QCQAAAAAAABAbWAAAAAAAAAAAAAAAAAAAQAAAEwAewAyAGEAMAA4AGYANQA5AGQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMABmADQALQBmADgAZgA3ADAAZABjAGEANwA4ADQAMwB9QCQAAAAAAABAWcAAAAAAAAAAAAAAAAAAAQAAAEwAewA4AGQAMAA0AGYAMQBmADAALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMwA3ADIALQBiADQANABlADUAMgBjADcAOQBlADgAOAB9QCQAAAAAAABAQoAAAAAAAAAAAAAAAAAAAQAAAEwAewBlADIAZgA0ADQAMgAxAGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZAAyAGYALQA1ADEAZAA2AGYAYQBlADcANwA2AGIAYwB9QCQAAAAAAABAYmAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADYAMwA3ADkANwBiAGUALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMABhADcALQAzAGUAOAA2ADAAMQA1AGUAMgBiAGMAZQB9QCQAAAAAAABAVEAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADQAOAA3AGUANQBlADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAOQA5ADUALQBmADgAMABmADUAZgA1AGIAMgA2AGQAYwB9QCQAAAAAAABAZ+AAAAAAAAAAAAAAAAAAAQAAAEwAewA3AGEAYgBlADYANgAyAGYALQAwADAAMAAwAC0ANAAwADAAMAAtADkAYwAwADQALQBmADMANgBjAGUAZABmAGUAZAA2ADkANgB9QCQAAAAAAABATYAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADUAZgBiADMAMgBmADAALQAwADAAMAAwAC0ANAAwADAAMAAtAGIANAA5ADEALQBjADMAZgAzADMANABjADcANgA5ADIANgB9QCQAAAAAAABAaqAAAAAAAAAAAAAAAAAAAQAAAEwAewA1ADIANQBmAGUAZgA1AGMALQAwADAAMAAwAC0ANAAwADAAMAAtAGIAZAA3ADQALQA4ADUANgA5AGEAZAA3AGYANAA3ADcAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

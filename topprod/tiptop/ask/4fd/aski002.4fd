@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a9fdf1f0-0000-4000-973e-05f8a13d6f31}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_skk" order="" uid="{fbc30727-0000-4000-aa32-72c73385d06f}" where="">
+    <RecordField colName="skk02" fieldIdRef="5" fieldType="TABLE_COLUMN" name="skk_file.skk02" sqlTabName="skk_file" sqlType="SMALLINT" table_alias_name="" uid="{38631d6b-0000-4000-ae51-6a99776fbcfb}"/>
+    <RecordField colName="skk03" fieldIdRef="6" fieldType="TABLE_COLUMN" name="skk_file.skk03" sqlTabName="skk_file" sqlType="SMALLINT" table_alias_name="" uid="{6045ec16-0000-4000-b6e3-b080e9f20190}"/>
+    <RecordField colName="skk05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="skk_file.skk05" sqlTabName="skk_file" sqlType="DECIMAL" table_alias_name="" uid="{b467a76e-0000-4000-8399-38ed13f7865a}"/>
+    <RecordField colName="skk06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="skk_file.skk06" sqlTabName="skk_file" sqlType="VARCHAR" table_alias_name="" uid="{be82dd25-0000-4000-8193-4db3094db2c3}"/>
+    <RecordField colName="skkacti" fieldIdRef="9" fieldType="TABLE_COLUMN" name="skk_file.skkacti" sqlTabName="skk_file" sqlType="VARCHAR" table_alias_name="" uid="{d96aa0d9-0000-4000-8761-1f94ecc3e536}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{b8246895-0000-4000-9a0c-abc56a09086a}" where="">
+    <RecordField colName="skk01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="skk_file.skk01" sqlTabName="skk_file" sqlType="VARCHAR" table_alias_name="" uid="{6f02214e-0000-4000-aa04-957a3cceeea5}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="gem02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{fabc2768-0000-4000-932d-63eaa79e088e}"/>
+    <RecordField colName="skk04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="skk_file.skk04" sqlTabName="skk_file" sqlType="VARCHAR" table_alias_name="" uid="{48cb3f2e-0000-4000-9edb-3659fd0aa7e8}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{bfa2a55d-0000-4000-bec4-1620197cb866}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{465a079a-0000-4000-932a-9934e66712ec}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="144" name="aski002" spacing="normal" text="aski002">
+    <VBox gridHeight="21" gridWidth="141" name="vb1" posX="1" posY="0">
+      <Folder gridHeight="5" gridWidth="141" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="3" gridWidth="124" lstrcomment="false" name="gr6425" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Department No."/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skk01" columnCount="" comment="&lt;^Y&gt;Create department No." fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" image="zoom" lstrcomment="false" lstrtitle="false" name="skk_file.skk01" notNull="true" posX="21" posY="0" required="true" rowCount="" sqlTabName="skk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="41" posY="0" text="Department Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="42" lstrcomment="false" lstrtitle="false" name="gem02" noEntry="true" posX="62" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skk04" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="up to snuff, unconventionality" lstrcomment="false" name="skk_file.skk04" notNull="true" posX="21" posY="1" required="true" rowCount="" sqlTabName="skk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="1" text="up to snuff"/>
+              <Item lstrtext="false" name="2" text="unconventionality"/>
+            </ComboBox>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="141" lstrcomment="false" name="s_skk" posX="0" posY="6" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skk02" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" lstrcomment="false" lstrtitle="false" name="skk_file.skk02" posX="0" posY="0" rowCount="" sqlTabName="skk_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Year" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skk03" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="skk_file.skk03" notNull="true" posX="9" posY="0" required="true" rowCount="" sqlTabName="skk_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Month" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skk05" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" lstrtitle="false" name="skk_file.skk05" notNull="true" posX="30" posY="0" required="true" rowCount="" sqlTabName="skk_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Coefficient" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skk06" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" lstrcomment="false" name="skk_file.skk06" posX="51" posY="0" rowCount="" sqlTabName="skk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Explain" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="skkacti" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="skk_file.skkacti" posX="72" posY="0" rowCount="" sqlTabName="skk_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Availability" valueChecked="Y" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="141" lstrcomment="false" name="gr6426" posX="0" posY="18">
+        <HLine gridWidth="10" name="hl2091" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl2092" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

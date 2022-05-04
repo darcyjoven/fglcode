@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{a1b70e24-0000-4000-980f-8c85d8fcf1bc}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_bhe" order="" uid="{436c28bc-0000-4000-b1f1-40310d83e678}" where="">
+    <RecordField colName="bhe01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="bhe_file.bhe01" sqlTabName="bhe_file" sqlType="VARCHAR" table_alias_name="" uid="{d5020778-0000-4000-a9df-6a9e687bf498}"/>
+    <RecordField colName="bhe06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="bhe_file.bhe06" sqlTabName="bhe_file" sqlType="VARCHAR" table_alias_name="" uid="{4122cdc3-0000-4000-bb6f-8fd7295fb12b}"/>
+    <RecordField colName="" fieldIdRef="4" name="aag02" sqlTabName="" table_alias_name="" uid="{802f6542-0000-4000-9ee1-29216ed951b7}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{fff16057-0000-4000-8738-6de1aed1cb61}" where="">
+    <RecordField colName="bhe00" fieldIdRef="1" fieldType="TABLE_COLUMN" name="bhe_file.bhe00" sqlTabName="bhe_file" sqlType="VARCHAR" table_alias_name="" uid="{8c6cf89f-0000-4000-a51b-16083f4ac818}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="86" name="abgi301" spacing="normal" text="abgi301">
+    <VBox gridHeight="17" gridWidth="83" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="3" gridWidth="83" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="2" gridWidth="22" lstrcomment="false" name="gr619" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Customer"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bhe00" columnCount="" comment="2.Customer" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bhe_file.bhe00" notNull="true" posX="11" posY="0" required="true" rowCount="" sqlTabName="bhe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="83" lstrcomment="false" name="s_bhe" posX="0" posY="4" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bhe01" columnCount="" comment="&lt;^P&gt;Qry Details" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="bhe_file.bhe01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="bhe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Customer No." widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="bhe06" columnCount="" comment="&lt;^P&gt;Qry Account" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" lstrtitle="false" name="bhe_file.bhe06" notNull="true" posX="17" posY="0" required="true" rowCount="" sqlTabName="bhe_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Account" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="1" gridWidth="50" lstrcomment="false" lstrtitle="false" name="aag02" noEntry="true" posX="28" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Account Name" widget="Edit"/>
+      </Table>
+    </VBox>
+  </Form>
+</ManagedForm>

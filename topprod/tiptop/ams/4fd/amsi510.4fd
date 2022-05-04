@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0585d03a-0000-4000-b75c-70ea0f096320}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_mps" order="" uid="{3d9e10d8-0000-4000-af94-3ec48dfd9759}" where="">
+    <RecordField colName="mps00" fieldIdRef="4" fieldType="TABLE_COLUMN" name="mps_file.mps00" sqlTabName="mps_file" sqlType="INTEGER" table_alias_name="" uid="{cbf6236a-0000-4000-a038-cd18c909c65a}"/>
+    <RecordField colName="mps03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="mps_file.mps03" sqlTabName="mps_file" sqlType="DATE" table_alias_name="" uid="{df85b5a5-0000-4000-a59d-1a3807943a16}"/>
+    <RecordField colName="mps09" fieldIdRef="6" fieldType="TABLE_COLUMN" name="mps_file.mps09" sqlTabName="mps_file" sqlType="DECIMAL" table_alias_name="" uid="{22d0b15c-0000-4000-b150-e8794aabebb3}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{645926fe-0000-4000-950d-bde5d009aa79}" where="">
+    <RecordField colName="mps_v" fieldIdRef="1" fieldType="TABLE_COLUMN" name="mps_file.mps_v" sqlTabName="mps_file" sqlType="VARCHAR" table_alias_name="" uid="{be015c15-0000-4000-bec6-b6da91271333}"/>
+    <RecordField colName="mps01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="mps_file.mps01" sqlTabName="mps_file" sqlType="VARCHAR" table_alias_name="" uid="{3dcdc9c9-0000-4000-b492-ecb7c4205399}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ima02" sqlTabName="" table_alias_name="" uid="{0d370f5b-0000-4000-9cbe-00045ac8963b}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{19bc00ab-0000-4000-b6c9-8295819e8de6}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3c53a8b3-0000-4000-a05e-a1ba22d3cb0c}"/>
+  </Record>
+  <Form gridHeight="32" gridWidth="90" name="amsi510" spacing="normal" text="amsi510">
+    <VBox gridHeight="32" gridWidth="87" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="6" gridWidth="87" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="4" gridWidth="85" lstrcomment="false" name="gr3932" posX="0" posY="0">
+            <Label gridHeight="1" gridWidth="30" lstrcomment="false" lstrtext="false" name="dummy01" posX="2" posY="0"/>
+            <Label posX="1" posY="1" text="Version"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mps_v" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="mps_file.mps_v" posX="22" posY="1" rowCount="" sqlTabName="mps_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="2" text="Item No."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mps01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="mps_file.mps01" posX="22" posY="2" rowCount="" sqlTabName="mps_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ima02" noEntry="true" posX="54" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="30" lstrcomment="false" lstrtext="false" name="dummy02" posX="2" posY="3"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="22" gridWidth="87" lstrcomment="false" name="s_mps" posX="0" posY="7" totalRows="20">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mps00" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="mps_file.mps00" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="mps_file" sqlType="INTEGER" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Seq#" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mps03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="mps_file.mps03" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="mps_file" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Time Bucket Day" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mps09" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="mps_file.mps09" posX="27" posY="0" rowCount="" sqlTabName="mps_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="6" table_alias_name="" title="PLM/PLP" widget="Edit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="87" lstrcomment="false" name="gr3933" posX="0" posY="29">
+        <HLine gridWidth="10" name="hl1225" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="27" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1226" posX="38" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

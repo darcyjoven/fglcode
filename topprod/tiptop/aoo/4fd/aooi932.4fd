@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{32ed75fa-0000-4000-aab8-137f462285f9}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="tree" order="" uid="{cb54b419-0000-4000-8931-774e30f88c53}" where="">
+    <RecordField colName="" fieldIdRef="0" fieldType="NON_DATABASE" name="name" sqlTabName="" table_alias_name="" uid="{b554dd4f-0000-4000-ba0b-f636eab3b7af}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="pid" sqlTabName="" table_alias_name="" uid="{aa6a4fda-0000-4000-93b2-c0ee05b3348d}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="id" sqlTabName="" table_alias_name="" uid="{30bcdda1-0000-4000-97fe-8d54da40f909}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="has_children" sqlTabName="" table_alias_name="" uid="{2339ccb8-0000-4000-b43a-f5f7129f8a2a}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="expanded" sqlTabName="" table_alias_name="" uid="{398dd3e0-0000-4000-8422-58a11ffe47a2}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="level" sqlTabName="" table_alias_name="" uid="{903f0b05-0000-4000-8de2-ac59c075641b}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="azp02_t" sqlTabName="" table_alias_name="" uid="{b0770bbe-0000-4000-810e-d8f2811dc17e}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="azw02" sqlTabName="" table_alias_name="" uid="{181cd1d0-0000-4000-bfb8-768f39ed063c}"/>
+    <RecordField colName="" fieldIdRef="18" name="path" sqlTabName="" table_alias_name="" uid="{c1fedbac-0000-4000-9054-c82a8ad58091}"/>
+    <RecordField colName="" fieldIdRef="19" name="treekey1" sqlTabName="" table_alias_name="" uid="{2d6d02ec-0000-4000-aad7-d8a065b065d4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_azw" order="" uid="{e69298d9-0000-4000-b092-8ab6835992b8}" where="">
+    <RecordField colName="azw01" fieldIdRef="11" fieldType="TABLE_COLUMN" name="azw_file.azw01" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{8e9066e8-0000-4000-b04e-6021ed82a318}"/>
+    <RecordField colName="" fieldIdRef="12" fieldType="NON_DATABASE" name="azp02" sqlTabName="" table_alias_name="" uid="{62f69739-0000-4000-a44c-c78f74d9ff3d}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="azw02n" sqlTabName="" table_alias_name="" uid="{464ed117-0000-4000-b236-b1b03a05b2a8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_azwe" order="" uid="{c7a6297b-0000-4000-ad23-0e3c2792d257}" where="">
+    <RecordField colName="azwe01" fieldIdRef="13" fieldType="TABLE_COLUMN" name="azwe_file.azwe01" sqlTabName="azwe_file" sqlType="VARCHAR" table_alias_name="" uid="{ab172389-0000-4000-919e-56fa75f8d190}"/>
+    <RecordField colName="azwe02" fieldIdRef="14" fieldType="TABLE_COLUMN" name="azwe_file.azwe02" sqlTabName="azwe_file" sqlType="VARCHAR" table_alias_name="" uid="{f133a911-0000-4000-8aa2-e54c25ad22a8}"/>
+    <RecordField colName="azwc02" fieldIdRef="15" fieldType="TABLE_COLUMN" name="azwc_file.azwc02" sqlTabName="azwc_file" sqlType="VARCHAR" table_alias_name="" uid="{5f8f230f-0000-4000-ae9d-d2b5870ee3c8}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{8828622b-0000-4000-be63-fb5fb66407bd}" where="">
+    <RecordField colName="azw07" fieldIdRef="9" fieldType="TABLE_COLUMN" name="azw_file.azw07" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{d223ab39-0000-4000-a945-ce261af61335}"/>
+    <RecordField colName="" fieldIdRef="10" fieldType="NON_DATABASE" name="azp02n" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{0114afba-0000-4000-89fa-a31ee5ef7690}"/>
+    <RecordField colName="" fieldIdRef="16" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{3d888e5a-0000-4000-a4aa-b99c966a62a5}"/>
+    <RecordField colName="" fieldIdRef="17" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9c9fdb71-0000-4000-adf5-aabe787aa688}"/>
+  </Record>
+  <Form gridHeight="28" gridWidth="117" name="aooi932" text="aooi932">
+    <Folder gridHeight="25" gridWidth="111" name="folder01" posX="0" posY="1">
+      <Page name="page01" text="Plant">
+        <VBox gridHeight="23" gridWidth="106" name="VBox2" posX="1" posY="0">
+          <HBox gridHeight="14" gridWidth="106" name="HBox1" posX="0" posY="1">
+            <Tree expandedColumn="expanded" gridHeight="14" gridWidth="30" idColumn="id" imageCollapsed="folder_i932" imageExpanded="folder_i932" imageLeaf="leaf_i932" isNodeColumn="has_children" name="Tree1" parentIdColumn="pid" posX="2" posY="0" totalRows="10" width="21">
+              <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="0" fieldType="NON_DATABASE" gridHeight="1" gridWidth="19" name="name" posX="0" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" table_alias_name="" title="PlantTree" unsortable="true" widget="FFLabel"/>
+              <Phantom colName="" fieldId="1" fieldType="NON_DATABASE" name="pid" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              <Phantom colName="" fieldId="2" fieldType="NON_DATABASE" name="id" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              <Phantom colName="" fieldId="4" fieldType="NON_DATABASE" name="has_children" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              <Phantom colName="" fieldId="3" fieldType="NON_DATABASE" name="expanded" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              <Phantom colName="" fieldId="5" fieldType="NON_DATABASE" name="level" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              <Phantom colName="" fieldId="18" name="path" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              <Phantom colName="" fieldId="19" name="treekey1" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              <Phantom colName="" fieldId="6" fieldType="NON_DATABASE" name="azp02_t" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              <Phantom colName="" fieldId="7" fieldType="NON_DATABASE" name="azw02" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+            </Tree>
+            <Grid gridHeight="14" gridWidth="30" name="gr6" posX="32" posY="0">
+              <Button gridHeight="1" gridWidth="7" image="next2" name="addchild" posX="1" posY="1" tabIndex="17"/>
+            </Grid>
+            <VBox gridHeight="14" gridWidth="42" name="VBox1" posX="62" posY="0">
+              <Grid gridHeight="2" gridWidth="42" name="gr2387" posX="0" posY="1">
+                <Label gridHeight="1" gridWidth="13" name="Label1" posX="1" posY="0" text="Logistics Code"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azw07" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="azw_file.azw07" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="12" name="Label2" posX="1" posY="1" text="Logestic Name"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" name="azp02n" noEntry="true" posX="18" posY="1" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+              </Grid>
+              <Table gridHeight="4" gridWidth="42" name="s_azw" posX="0" posY="3" totalRows="3">
+                <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azw01" columnCount="" comment="&lt;^P&gt;Query Department" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" name="azw_file.azw01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Sub-Dept." widget="ButtonEdit"/>
+                <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="8" name="azp02" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Desc." widget="Edit"/>
+                <Phantom colName="" fieldId="8" fieldType="NON_DATABASE" name="azw02n" sqlTabName="" sqlType="CHAR" table_alias_name="" widget="Phantom"/>
+              </Table>
+              <HBox gridHeight="6" gridWidth="42" name="hb5" posX="0" posY="7">
+                <Table gridHeight="6" gridWidth="28" name="tb6" posX="2" posY="0" totalRows="5">
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azwe01" columnCount="" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="azwe_file.azwe01" posX="0" posY="0" rowCount="" sqlTabName="azwe_file" sqlType="VARCHAR" stepX="" stepY="" table_alias_name="" title="Table Name" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azwe02" columnCount="" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="azwe_file.azwe02" posX="8" posY="0" rowCount="" sqlTabName="azwe_file" sqlType="VARCHAR" stepX="" stepY="" table_alias_name="" title="Data Group" widget="FFLabel"/>
+                  <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azwc02" columnCount="" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="azwc_file.azwc02" posX="16" posY="0" rowCount="" sqlTabName="azwc_file" sqlType="VARCHAR" stepX="" stepY="" table_alias_name="" title="Data Group Desc." widget="FFLabel"/>
+                </Table>
+                <Grid gridHeight="6" gridWidth="10" name="gr10" posX="30" posY="0">
+                  <Button gridHeight="1" gridWidth="9" name="adj_gup" posX="1" posY="1" tabIndex="19" text="Adjust Data Group"/>
+                </Grid>
+              </HBox>
+            </VBox>
+          </HBox>
+          <Grid gridHeight="7" gridWidth="106" name="gr2388" posX="0" posY="15">
+            <HLine gridWidth="10" name="HLine1" posX="2" posY="0"/>
+            <Label gridHeight="1" gridWidth="4" name="Label3" posX="13" posY="0" text="Rows"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" name="cnt" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="1" name="Label4" posX="27" posY="0" text="/"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="17" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" name="cn2" noEntry="true" posX="30" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <HLine gridWidth="10" name="HLine2" posX="38" posY="0"/>
+          </Grid>
+        </VBox>
+      </Page>
+    </Folder>
+  </Form>
+</ManagedForm>

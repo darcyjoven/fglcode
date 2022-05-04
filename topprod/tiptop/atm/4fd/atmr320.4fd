@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{8d1892cc-0000-4000-ad1e-b15e9401e99e}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9c10943c-0000-4000-b07a-4e161d8cd23f}" where="">
+    <RecordField colName="oea1015" fieldIdRef="1" fieldType="TABLE_COLUMN" name="oea_file.oea1015" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{a8c0671a-0000-4000-bf47-90cb8a90b3c9}"/>
+    <RecordField colName="oea03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oea_file.oea03" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{4de82a3f-0000-4000-a0fb-29273f878ff4}"/>
+    <RecordField colName="oea032" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oea_file.oea032" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{c0e0f810-0000-4000-a0f2-0a284b67f134}"/>
+    <RecordField colName="oea04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oea_file.oea04" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{1a16e2fe-0000-4000-9c74-28ecec8e6544}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="bdate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{9c72ce06-0000-4000-bacf-17f809d40329}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="edate" sqlTabName="" sqlType="DATE" table_alias_name="" uid="{fdd4a931-0000-4000-ad27-387fb67ce9bd}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{2e9d4e15-0000-4000-b494-bcabb43ba3ba}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="54" name="atmr320" spacing="normal" text="atmr320">
+    <VBox gridHeight="15" gridWidth="51" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="11" gridWidth="51" lstrcomment="false" name="gr1173" posX="0" posY="1">
+        <Group gridHeight="6" gridWidth="50" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Agent Cust"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea1015" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="oea_file.oea1015" posX="17" posY="1" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="2" text="Customer #"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea03" columnCount="" comment="&lt;^P&gt;Qry Details &lt;^Y&gt;Customer" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="oea_file.oea03" posX="17" posY="2" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="1" posY="3" text="Customer Abbr."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea032" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="oea_file.oea032" posX="17" posY="3" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Shipping Cust"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea04" columnCount="" comment="&lt;^P&gt;Qry Details &lt;^Y&gt;Customer" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" image="zoom" lstrcomment="false" lstrtitle="false" name="oea_file.oea04" posX="17" posY="4" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+        </Group>
+        <Group gridHeight="4" gridWidth="50" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="6" text="INPUT">
+          <Label posX="1" posY="1" text="Order Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="bdate" notNull="true" posX="17" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="DateEdit"/>
+          <Label posX="28" posY="1" text="-"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="edate" notNull="true" posX="30" posY="1" required="true" rowCount="" sqlTabName="" sqlType="DATE" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="DateEdit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="51" lstrcomment="false" name="gr1174" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Other conditionto print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

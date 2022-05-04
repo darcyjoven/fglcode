@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{07d29f17-0000-4000-9c26-8223c8370020}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_oea" order="" uid="{e95510b6-0000-4000-b028-75f28da517e3}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{54449982-0000-4000-b7a8-32d5b0adde76}"/>
+    <RecordField colName="oea01" fieldIdRef="2" fieldType="TABLE_COLUMN" name="oea_file.oea01" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{b0a0b4dd-0000-4000-ae2e-48f8a8cad224}"/>
+    <RecordField colName="oea00" fieldIdRef="3" fieldType="TABLE_COLUMN" name="oea_file.oea00" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{231058d9-0000-4000-80b8-f5a0b96f9345}"/>
+    <RecordField colName="oea02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="oea_file.oea02" sqlTabName="oea_file" sqlType="DATE" table_alias_name="" uid="{150beeb0-0000-4000-82af-67b573f12b08}"/>
+    <RecordField colName="oea032" fieldIdRef="5" fieldType="TABLE_COLUMN" name="oea_file.oea032" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{3cc73f4c-0000-4000-b7e4-50442faa6dba}"/>
+    <RecordField colName="oea14" fieldIdRef="6" fieldType="TABLE_COLUMN" name="oea_file.oea14" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{a53b8bc0-0000-4000-8cb3-748d95ce0911}"/>
+    <RecordField colName="oea10" fieldIdRef="7" fieldType="TABLE_COLUMN" name="oea_file.oea10" sqlTabName="oea_file" sqlType="VARCHAR" table_alias_name="" uid="{b5f18dcd-0000-4000-9dca-f08819925bef}"/>
+    <RecordField colName="" fieldIdRef="8" name="oeb04" sqlTabName="" table_alias_name="" uid="{3b9b645e-0000-4000-af54-f7ef7917822f}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="216" name="q_oea" spacing="normal" text="Query Order">
+    <Grid gridHeight="13" gridWidth="215" lstrcomment="false" name="gr3808" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="214" lstrcomment="false" name="s_oea" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea01" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="oea_file.oea01" noEntry="true" posX="6" posY="0" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Order No." widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea00" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="oea_file.oea00" noEntry="true" posX="23" posY="0" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Property" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="oea_file.oea02" noEntry="true" posX="34" posY="0" rowCount="" sqlTabName="oea_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Order Date" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea032" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="oea_file.oea032" noEntry="true" posX="47" posY="0" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Accounts Customer" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea14" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="oea_file.oea14" noEntry="true" posX="67" posY="0" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Salesman" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="oea10" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" name="oea_file.oea10" noEntry="true" posX="78" posY="0" rowCount="" sqlTabName="oea_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Customer Order" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" gridHeight="1" gridWidth="97" lstrcomment="false" lstrtitle="false" name="oeb04" noEntry="true" posX="108" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Order Product" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3b6a427d-0000-4000-955d-141c7e6ab968}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zay" order="" uid="{7637f29e-0000-4000-a1f5-358224e7bbd1}" where="">
+    <RecordField colName="zay04" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zay_file.zay04" sqlTabName="zay_file" sqlType="VARCHAR" table_alias_name="" uid="{d0b2a922-0000-4000-9a5f-ba6ff6248b7e}"/>
+    <RecordField colName="zay05" fieldIdRef="2" fieldType="TABLE_COLUMN" name="zay_file.zay05" sqlTabName="zay_file" sqlType="VARCHAR" table_alias_name="tableAlias1" uid="{11b9539d-0000-4000-b519-5e18b7383053}"/>
+    <RecordField colName="zay06" fieldIdRef="3" fieldType="TABLE_COLUMN" name="zay_file.zay06" sqlTabName="zay_file" sqlType="VARCHAR" table_alias_name="" uid="{2368fa3c-0000-4000-81ea-92df64deaed1}"/>
+    <RecordField colName="zay07" fieldIdRef="4" fieldType="TABLE_COLUMN" name="zay_file.zay07" sqlTabName="zay_file" sqlType="VARCHAR" table_alias_name="" uid="{bbfeee4b-0000-4000-adb9-a100b88b5701}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="memo" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{853a9cb0-0000-4000-bfa7-8c36a65e8957}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="106" lstrtext="false" name="p_query_replace" spacing="normal" text="p_query_replace">
+    <Table gridHeight="12" gridWidth="104" name="tb6" posX="1" posY="1" totalRows="10">
+      <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zay04" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Single, Other" lstrcomment="false" lstrtitle="false" name="zay_file.zay04" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="zay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Replace Item" widget="ComboBox">
+        <Item lstrtext="false" name="1" text="Single"/>
+        <Item lstrtext="false" name="2" text="Other"/>
+      </ComboBox>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zay05" colorCondition="black" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="zay_file.zay05" posX="10" posY="0" rowCount="" sqlTabName="zay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="tableAlias1" title="Old Value" widget="Edit"/>
+      <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zay06" colorCondition="black" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Static, p_ze" lstrcomment="false" lstrtitle="false" name="zay_file.zay06" notNull="true" posX="25" posY="0" required="true" rowCount="" sqlTabName="zay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Type" widget="ComboBox">
+        <Item lstrtext="false" name="1" text="Static"/>
+        <Item lstrtext="false" name="2" text="p_ze"/>
+      </ComboBox>
+      <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zay07" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom.png" lstrcomment="false" lstrtitle="false" name="zay_file.zay07" posX="35" posY="0" rowCount="" sqlTabName="zay_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Replace Value" widget="ButtonEdit"/>
+      <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="40" lstrcomment="false" name="memo" noEntry="true" posX="50" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Memo" widget="Edit"/>
+    </Table>
+  </Form>
+</ManagedForm>

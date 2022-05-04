@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{063b1b31-6a12-4ae8-a507-217862aa5a30}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_geh" order="" uid="{92b6339f-646c-437c-8eb8-a0ace490a551}" where="">
+    <RecordField colName="geh01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="geh_file.geh01" sqlTabName="geh_file" sqlType="VARCHAR" table_alias_name="" uid="{0a9c039c-1b51-4e2e-8e43-7b9bee3b44e0}"/>
+    <RecordField colName="geh02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="geh_file.geh02" sqlTabName="geh_file" sqlType="VARCHAR" table_alias_name="" uid="{c19d62f9-fc10-4dbb-938a-0842cb4156f8}"/>
+    <RecordField colName="geh04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="geh_file.geh04" sqlTabName="geh_file" sqlType="VARCHAR" table_alias_name="" uid="{f3e73ca7-e326-4f9b-8d8e-ebc55deab6f5}"/>
+    <RecordField colName="geh03" fieldIdRef="4" fieldType="TABLE_COLUMN" name="geh_file.geh03" sqlTabName="geh_file" sqlType="VARCHAR" table_alias_name="" uid="{d5deb5aa-cd72-4c98-ab02-ddbd38292f8d}"/>
+    <RecordField colName="geh05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="geh_file.geh05" sqlTabName="geh_file" sqlType="VARCHAR" table_alias_name="" uid="{e06f0006-3f54-4e2e-9fae-e925e36a83fd}"/>
+    <RecordField colName="gehacti" fieldIdRef="6" fieldType="TABLE_COLUMN" name="geh_file.gehacti" sqlTabName="geh_file" sqlType="VARCHAR" table_alias_name="" uid="{74240f70-9bb5-438c-86cb-6572cc6ed842}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f4febd23-6337-44b9-a90b-630e8d94e769}" where="">
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{d4200e54-d54a-4ca4-b149-98b3c8090043}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="84" name="aooi401" spacing="normal" text="aooi401">
+    <VBox gridHeight="18" gridWidth="81" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="13" gridWidth="81" lstrcomment="false" name="pc851" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Table gridHeight="12" gridWidth="79" lstrcomment="false" name="s_geh" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geh01" columnCount="" comment="KEY Field, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="geh_file.geh01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="geh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Property" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geh02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="geh_file.geh02" posX="10" posY="0" rowCount="" sqlTabName="geh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Description" widget="Edit"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geh04" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="Item No., Customer No., Supplier No., Fixed Asset No., Lot No., Serial No., Bar Code, Membership No, Site Numbers&#10;, Booth Numbers&#10;, Merchant code&#10;, Warehouse numbers, Order packing slip, abat630, Barcode batch number-Materials and parts, Barcode batch number-work order, Package No." lstrcomment="false" lstrtitle="false" name="geh_file.geh04" notNull="true" posX="30" posY="0" queryEditable="true" required="true" rowCount="" sqlTabName="geh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Category" widget="ComboBox">
+              <Item name="1" text="Item No."/>
+              <Item name="2" text="Customer No."/>
+              <Item name="3" text="Supplier No."/>
+              <Item name="4" text="Fixed Asset No."/>
+              <Item name="5" text="Lot No."/>
+              <Item name="6" text="Serial No."/>
+              <Item name="7" text="Bar Code"/>
+              <Item lstrtext="true" name="8" text="Membership No"/>
+              <Item lstrtext="false" name="9" text="Site Numbers&#10;"/>
+              <Item lstrtext="false" name="A" text="Booth Numbers&#10;"/>
+              <Item lstrtext="false" name="B" text="Merchant code&#10;"/>
+              <Item lstrtext="false" name="C" text="Warehouse numbers"/>
+              <Item lstrtext="false" name="D" text="Order packing slip"/>
+              <Item lstrtext="false" name="E" text="abat630"/>
+              <Item lstrtext="false" name="F" text="Barcode batch number-Materials and parts"/>
+              <Item lstrtext="false" name="G" text="Barcode batch number-work order"/>
+              <Item lstrtext="false" name="H" text="Package No."/>
+            </ComboBox>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geh03" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="geh_file.geh03" noEntry="true" notNull="true" posX="40" posY="0" rowCount="" sqlTabName="geh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Table Name" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="geh05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="geh_file.geh05" noEntry="true" notNull="true" posX="52" posY="0" rowCount="" sqlTabName="geh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Index(KEY)" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gehacti" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="geh_file.gehacti" notNull="true" posX="64" posY="0" required="true" rowCount="" sqlTabName="geh_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="3" gridWidth="81" lstrcomment="false" name="gr4648" posX="0" posY="14">
+        <HLine gridWidth="10" name="hl1456" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1457" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADAANgBmADAAMAAwADYALQAzAGYANQA0AC0ANABlADIAZQAtADkAZgBhAGUALQBlADkAMgA1AGUAMwA2AGEAOAAzAGYAZAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADEAOQBkADYAMgBmADkALQBmAGMAMQAwAC0ANABkAGIAYgAtADkAMwA4AGEALQAwADgANAAyAGMAYgA0ADEANQA2AGYAOAB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADUAZABlAGIANQBhAGEALQBjAGQANwAyAC0ANABjADkAOAAtAGEAYgAwADIALQBkAGQAYgBkADMAOAAyADkAMgBmADgAZAB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGEAOQBjADAAMwA5AGMALQAxAGIANQAxAC0ANABlADIAZQAtADgAZQA0ADMALQA3AGIAOQBiAGUAZQAzAGIANAA0AGUAMAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADMAZQA3ADMAYwBhADcALQBlADMAMgA2AC0ANABmADkAYgAtADgAZAA4AGUALQBlAGIAYwA1ADUAZABlAGEAYgA2AGYANQB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewBmADQAZgBlAGIAZAAyADMALQA2ADMAMwA3AC0ANAA0AGIAOQAtAGEAOQAwAGIALQA2ADMAMABlADgAZAA5ADQAZQA3ADYAOQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA3ADQAMgA0ADAAZgA3ADAALQA5AGIAYgA1AC0ANAAzADgAYwAtADgANgBjAGIALQA2ADUANwAyAGMAYwA2AGUAZAA4ADQAMgB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADQAMgAwADAAZQA1ADQALQBkADUANABhAC0ANABjAGEANAAtAGIAMQA0ADkALQA5ADgAYgAzAGMAOAAwADkAMAAwADQAMwB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA5ADIAYgA2ADMAMwA5AGYALQA2ADQANgBjAC0ANAAzADcAYwAtADgAZQBiADgALQBhADAAYQBjAGUANAA5ADAAYQA1ADUAMQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

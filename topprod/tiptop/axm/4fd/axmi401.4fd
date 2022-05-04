@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f24311c3-0000-4000-b408-3fc731519931}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_odl" order="" uid="{274a1f03-0000-4000-af2a-8169726a1518}" where="">
+    <RecordField colName="odl01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="odl_file.odl01" sqlTabName="odl_file" sqlType="VARCHAR" table_alias_name="" uid="{0aa4999e-0000-4000-8a2c-78d319d61cd0}"/>
+    <RecordField colName="odl02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="odl_file.odl02" sqlTabName="odl_file" sqlType="VARCHAR" table_alias_name="" uid="{c3770c6d-0000-4000-803e-5881ef3c35ea}"/>
+    <RecordField colName="odl03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="odl_file.odl03" sqlTabName="odl_file" sqlType="DATE" table_alias_name="" uid="{cc802fe8-0000-4000-acb8-264ffa0dbb44}"/>
+    <RecordField colName="odl04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="odl_file.odl04" sqlTabName="odl_file" sqlType="DATE" table_alias_name="" uid="{9c8adca2-0000-4000-812d-9c20fc50a373}"/>
+    <RecordField colName="odl05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="odl_file.odl05" sqlTabName="odl_file" sqlType="VARCHAR" table_alias_name="" uid="{4dc02dc8-0000-4000-9154-2689f2c4bda8}"/>
+    <RecordField colName="odlacti" defaultValue="Y" fieldIdRef="6" fieldType="TABLE_COLUMN" name="odl_file.odlacti" sqlTabName="odl_file" sqlType="VARCHAR" table_alias_name="" uid="{c6696ba6-0000-4000-871b-faf396e2969b}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{60320222-0000-4000-ac9e-25ccdec269f1}" where="">
+    <RecordField colName="" fieldIdRef="7" name="cnt" sqlTabName="" table_alias_name="" uid="{10d99b3e-0000-4000-a529-62247a3552a5}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="164" name="axmi401" text="axmi401">
+    <VBox gridHeight="21" gridWidth="113" name="VBox1" posX="2" posY="0">
+      <Folder gridHeight="11" gridWidth="113" name="Folder1" posX="0" posY="1">
+        <Page name="Page1" text="Basic Data">
+          <Table gridHeight="10" gridWidth="97" name="s_odl" posX="1" posY="0" totalRows="5">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odl01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="19" name="odl_file.odl01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="odl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Subcription No" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odl02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="odl_file.odl02" posX="19" posY="0" rowCount="" sqlTabName="odl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Subcription Name" widget="Edit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odl03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" name="odl_file.odl03" notNull="true" posX="39" posY="0" rowCount="" sqlTabName="odl_file" sqlType="DATE" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Start Date" widget="DateEdit"/>
+            <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odl04" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" name="odl_file.odl04" notNull="true" posX="53" posY="0" rowCount="" sqlTabName="odl_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Final Date" widget="DateEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odl05" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="odl_file.odl05" posX="66" posY="0" rowCount="" sqlTabName="odl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Remark" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="odlacti" columnCount="" defaultValue="Y" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="odl_file.odlacti" notNull="true" posX="78" posY="0" required="true" rowCount="" sqlTabName="odl_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Valid Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="8" gridWidth="113" name="Grid1" posX="0" posY="12">
+        <HLine gridWidth="5" name="HLine1" posX="1" posY="1"/>
+        <Label gridHeight="1" gridWidth="6" name="Label1" posX="8" posY="1" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" gridHeight="1" gridWidth="8" name="cnt" posX="16" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="formonly.Edit7" widget="Edit"/>
+        <HLine gridWidth="6" name="HLine2" posX="26" posY="1"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADcANABhADEAZgAwADMALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAZgAyAGEALQA4ADEANgA5ADcAMgA2AGEAMQA1ADEAOAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewAwAGEAYQA0ADkAOQA5AGUALQAwADAAMAAwAC0ANAAwADAAMAAtADgAYQAyAGMALQA3ADgAZAAzADEAOQBkADYAMQBjAGQAMAB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADAAMwAyADAAMgAyADIALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYwA5AGUALQAyADUAYwBjAGQAZQBjADIANgA5AGYAMQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADMANwA3ADAAYwA2AGQALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMAAzAGUALQA1ADgAOAAxAGUAZgAzAGMAMwA1AGUAYQB9QBQAAAAAAABARwAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGMAOAAwADIAZgBlADgALQAwADAAMAAwAC0ANAAwADAAMAAtAGEAYwBiADgALQAyADYANABmAGYAYQAwAGQAYgBiADQANAB9QBQAAAAAAABAUQAAAAAAAAAAAAAAAAAAAQAAAEwAewA5AGMAOABhAGQAYwBhADIALQAwADAAMAAwAC0ANAAwADAAMAAtADgAMQAyAGQALQA5AGMAMgAwAGYAYwA1ADAAYQAzADcAMwB9QBQAAAAAAABAVoAAAAAAAAAAAAAAAAAAAQAAAEwAewA0AGQAYwAwADIAZABjADgALQAwADAAMAAwAC0ANAAwADAAMAAtADkAMQA1ADQALQAyADYAOAA5AGYAMgBjADQAYgBkAGEAOAB9QBQAAAAAAABAXAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADYANgA5ADYAYgBhADYALQAwADAAMAAwAC0ANAAwADAAMAAtADgANwAxAGIALQBmAGEAZgAzADkANgBlADIAOQA2ADkAYgB9QBQAAAAAAABAYMAAAAAAAAAAAAAAAAAAAQAAAEwAewAxADAAZAA5ADkAYgAzAGUALQAwADAAMAAwAC0ANAAwADAAMAAtAGEANQAyADkALQA2ADIAMgA0ADcAYQAzADUANQAyAGEANQB9QBQAAAAAAABAOAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

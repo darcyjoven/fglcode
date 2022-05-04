@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{dd3639c7-0000-4000-ad99-dc1d5f29e908}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{45b393c9-0000-4000-95c3-b2251d36851c}" where="">
+    <RecordField colName="coc04" fieldIdRef="1" fieldType="TABLE_COLUMN" name="coc_file.coc04" sqlTabName="coc_file" sqlType="VARCHAR" table_alias_name="" uid="{e68306bd-0000-4000-bd77-31c71dda34ca}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="coc10" sqlTabName="" table_alias_name="" uid="{a2cf3a08-0000-4000-84eb-01340777d811}"/>
+    <RecordField colName="coc03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="coc_file.coc03" sqlTabName="coc_file" sqlType="VARCHAR" table_alias_name="" uid="{66514a7e-0000-4000-b7bd-96421164d1ed}"/>
+    <RecordField colName="coc05" fieldIdRef="4" fieldType="TABLE_COLUMN" name="coc_file.coc05" sqlTabName="coc_file" sqlType="DATE" table_alias_name="" uid="{2dbac2dd-0000-4000-8e07-26767bf27b9b}"/>
+    <RecordField colName="cod03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="cod_file.cod03" sqlTabName="cod_file" sqlType="VARCHAR" table_alias_name="" uid="{0e3f984e-0000-4000-ad44-9386134ac9e2}"/>
+    <RecordField colName="" fieldIdRef="6" fieldType="NON_DATABASE" name="y" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{be0042e7-0000-4000-a36d-99e8b295895e}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="more" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1bc38e2b-0000-4000-aedf-a4d5bdf325c4}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="69" name="acor710" spacing="normal" text="acor710">
+    <VBox gridHeight="15" gridWidth="67" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="11" gridWidth="67" lstrcomment="false" name="gr1445" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="66" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Bonded No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coc04" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coc_file.coc04" posX="22" posY="1" rowCount="" sqlTabName="coc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="2" text="Customs No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coc10" posX="22" posY="2" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="3" text="Register Book No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coc03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coc_file.coc03" posX="22" posY="3" rowCount="" sqlTabName="coc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="4" text="Expiry Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="coc05" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="coc_file.coc05" posX="22" posY="4" rowCount="" sqlTabName="coc_file" sqlType="DATE" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="DateEdit"/>
+          <Label posX="1" posY="5" text="Goods No."/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="cod03" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="cod_file.cod03" posX="22" posY="5" rowCount="" sqlTabName="cod_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="64" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="7" text="Input">
+          <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="y" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" text="Convert HS Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="67" lstrcomment="false" name="gr1446" posX="0" posY="12">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="60" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="2" posY="0" required="true" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

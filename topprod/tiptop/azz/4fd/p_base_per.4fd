@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{6a71b5d6-0000-4000-b5db-909dd9477ceb}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_gax" order="" uid="{a6f28c4f-0000-4000-8d7b-7f7f4fa19d59}" where="">
+    <RecordField colName="gax02" fieldIdRef="6" fieldType="TABLE_COLUMN" name="gax_file.gax02" sqlTabName="gax_file" sqlType="VARCHAR" table_alias_name="" uid="{fbc1d97c-0000-4000-87e5-1589a5409ed9}"/>
+    <RecordField colName="gae04" fieldIdRef="7" fieldType="TABLE_COLUMN" name="gae_file.gae04" sqlTabName="gae_file" sqlType="VARCHAR" table_alias_name="" uid="{45a9a625-0000-4000-b7ec-1d5fe24d6548}"/>
+    <RecordField colName="gax04" fieldIdRef="8" fieldType="TABLE_COLUMN" name="gax_file.gax04" sqlTabName="gax_file" sqlType="VARCHAR" table_alias_name="" uid="{684bf764-0000-4000-be59-ac287962f8cb}"/>
+    <RecordField colName="gax05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="gax_file.gax05" sqlTabName="gax_file" sqlType="VARCHAR" table_alias_name="" uid="{961cb71a-0000-4000-8adc-da57c689c5da}"/>
+    <RecordField colName="gax03" fieldIdRef="10" fieldType="TABLE_COLUMN" name="gax_file.gax03" sqlTabName="gax_file" sqlType="VARCHAR" table_alias_name="" uid="{181bc477-0000-4000-942b-6271963d3dc4}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{964ef076-0000-4000-a1c8-c3d49c6e4c38}" where="">
+    <RecordField colName="gax01" fieldIdRef="4" fieldType="TABLE_COLUMN" name="gax_file.gax01" sqlTabName="gax_file" sqlType="VARCHAR" table_alias_name="" uid="{df3bfa5f-0000-4000-8249-4404fd6cd6cf}"/>
+    <RecordField colName="gaz03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="gaz_file.gaz03" sqlTabName="gaz_file" sqlType="VARCHAR" table_alias_name="" uid="{30528c43-0000-4000-951c-e5ecc5087f14}"/>
+    <RecordField colName="smb03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="smb_file.smb03" sqlTabName="smb_file" sqlType="VARCHAR" table_alias_name="" uid="{7dc64b83-0000-4000-82ae-6e2e707e7408}"/>
+    <RecordField colName="zz011" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zz_file.zz011" sqlTabName="zz_file" sqlType="VARCHAR" table_alias_name="" uid="{3a58b94a-0000-4000-be50-4a636277e9ae}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{1fb3630e-0000-4000-8b48-dce86f069f13}"/>
+  </Record>
+  <Form gridHeight="26" gridWidth="98" name="p_base_per" spacing="normal" text="p_base_per">
+    <VBox gridHeight="23" gridWidth="81" name="vb2_" posX="1" posY="0">
+      <Folder gridHeight="7" gridWidth="81" lstrcomment="false" name="pc1" posX="0" posY="1">
+        <Page name="Page1" text="Basic Data">
+          <Grid gridHeight="5" gridWidth="56" lstrcomment="false" name="gr3" posX="1" posY="0">
+            <Label posX="1" posY="1" text="Program ID"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gax01" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" image="zoom" lstrcomment="false" lstrtitle="false" name="gax_file.gax01" notNull="true" posX="16" posY="1" required="true" rowCount="" sqlTabName="gax_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="1" posY="2" text="Program Name"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gaz03" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="32" lstrcomment="false" lstrtitle="false" name="gaz_file.gaz03" noEntry="true" posX="16" posY="2" rowCount="" sqlTabName="gaz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="3" text="Industry"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="smb03" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" name="smb_file.smb03" noEntry="true" posX="16" posY="3" rowCount="" sqlTabName="smb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="4" text="Module"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zz011" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" lstrcomment="false" name="zz_file.zz011" noEntry="true" posX="16" posY="4" rowCount="" sqlTabName="zz_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="Edit"/>
+            <Label colorCondition="black" gridHeight="1" gridWidth="22" lstrcomment="false" lstrtext="false" name="dummy01" posX="31" posY="4" text="Defined in &quot;Program Data(p_zz)&quot;"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="81" lstrcomment="false" name="s_gax" posX="0" posY="8" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gax02" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="gax_file.gax02" posX="0" posY="0" rowCount="" scroll="true" sqlTabName="gax_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="PER ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gae04" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="37" lstrcomment="false" lstrtitle="false" name="gae_file.gae04" noEntry="true" posX="15" posY="0" rowCount="" sqlTabName="gae_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="PER Description" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gax04" columnCount="" comment="Generates Field Descriptions in Online help file Automatically." fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gax_file.gax04" notNull="true" posX="52" posY="0" required="true" rowCount="" sqlTabName="gax_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Show Descriptions" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gax05" columnCount="" comment="Checked If it is a Customerized File" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="gax_file.gax05" posX="59" posY="0" rowCount="" sqlTabName="gax_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Customerized File" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="gax03" columnCount="" comment="Checked if it&apos;s a Existed File" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtext="false" lstrtitle="false" name="gax_file.gax03" notNull="true" posX="66" posY="0" required="true" rowCount="" sqlTabName="gax_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Existed" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="81" lstrcomment="false" name="gr3156" posX="0" posY="20">
+        <HLine gridWidth="10" name="hl1102" posX="1" posY="0"/>
+        <Label posX="11" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="17" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1103" posX="25" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

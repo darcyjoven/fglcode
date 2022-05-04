@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{884c86b7-0000-4000-9909-f41bc5730efd}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_zy" order="" uid="{bad93a7e-0000-4000-98f3-bcd2ba3a0e6c}" where="">
+    <RecordField colName="zy02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="zy_file.zy02" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{7d04ecd0-0000-4000-b7df-cc8b0b4f32b0}"/>
+    <RecordField colName="" fieldIdRef="5" name="gaz03" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{69c0028b-0000-4000-8925-2dd07fa35fa1}"/>
+    <RecordField colName="zy06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="zy_file.zy06" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{adbe950a-0000-4000-9aca-c9a6f95c2ff3}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ef5a6ca7-0000-4000-b475-137cf8d0e05c}" where="">
+    <RecordField colName="zy01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="zy_file.zy01" sqlTabName="zy_file" sqlType="VARCHAR" table_alias_name="" uid="{b6b50334-0000-4000-9e8f-610a1584bbc1}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="zw02" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{d5d97a81-0000-4000-981e-b4c188287158}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="zwacti" sqlTabName="" table_alias_name="" uid="{504eb2d9-0000-4000-a1ec-d5afa4a4cfd3}"/>
+    <RecordField colName="" fieldIdRef="7" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{43893185-0000-4000-b168-6ee85611e309}"/>
+    <RecordField colName="" fieldIdRef="8" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{cecd3348-0000-4000-bfb0-936ca9a8171d}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="84" name="p_zy2" spacing="normal" text="p_zy2">
+    <VBox gridHeight="24" gridWidth="81" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="8" gridWidth="81" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="6" gridWidth="51" lstrcomment="false" name="gr3048" posX="0" posY="0">
+            <Group gridHeight="5" gridWidth="50" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0">
+              <Label posX="1" posY="1" text="Authorization Category Code"/>
+              <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy01" columnCount="" comment="This Field &amp; Program # are Key, No Blank/Repeated!" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="zy_file.zy01" posX="37" posY="1" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+              <Label posX="1" posY="2" text="Authorization Category Description"/>
+              <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="zw02" noEntry="true" posX="37" posY="2" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+              <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="48" lstrcomment="false" lstrtext="false" lstrtitle="false" name="zwacti" noEntry="true" notNull="true" posX="1" posY="3" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="This Authorization Category Code is Active" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+            </Group>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="81" lstrcomment="false" name="s_zy" posX="0" posY="9" totalRows="10">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="zy02" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" lstrcomment="false" lstrtitle="false" name="zy_file.zy02" noEntry="true" posX="0" posY="0" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Program ID" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="gaz03" noEntry="true" posX="12" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Program Name" widget="Edit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="zy06" columnCount="" comment="Enter 1LTDX.., None Confined if Blank! " fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="34" image="zoom" lstrcomment="false" lstrtitle="false" name="zy_file.zy06" posX="42" posY="0" rowCount="" sqlTabName="zy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Available Printing Method" widget="ButtonEdit"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="81" lstrcomment="false" name="gr3049" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl1038" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1039" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

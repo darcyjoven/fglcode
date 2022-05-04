@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f43d2105-0000-4000-9951-b3c50506bdeb}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_vnc" order="" uid="{f4a5c128-0000-4000-b8b0-5e42811b0b30}" where="">
+    <RecordField colName="" fieldIdRef="11" fieldType="NON_DATABASE" name="Date" sqlTabName="" sqlType="INTEGER" table_alias_name="" uid="{fafbfdb0-0000-4000-ac2e-8f0a49e730d0}"/>
+    <RecordField colName="vnc031" fieldIdRef="12" fieldType="TABLE_COLUMN" name="vnc_file.vnc031" sqlTabName="vnc_file" sqlType="VARCHAR" table_alias_name="" uid="{32dc1e3b-0000-4000-a575-396eb171ff99}"/>
+    <RecordField colName="vnc041" fieldIdRef="13" fieldType="TABLE_COLUMN" name="vnc_file.vnc041" sqlTabName="vnc_file" sqlType="VARCHAR" table_alias_name="" uid="{8dff0c24-0000-4000-8fde-1d2f6b00bd4a}"/>
+    <RecordField colName="vnc03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="vnc_file.vnc03" sqlTabName="vnc_file" sqlType="VARCHAR" table_alias_name="" uid="{ab8c6cff-0000-4000-9272-9a6802f9c637}"/>
+    <RecordField colName="vnc04" fieldIdRef="3" fieldType="TABLE_COLUMN" name="vnc_file.vnc04" sqlTabName="vnc_file" sqlType="VARCHAR" table_alias_name="" uid="{409c8d1e-0000-4000-90e9-dcf75fff13f6}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="contflg" sqlTabName="" table_alias_name="" uid="{fffa720f-0000-4000-a9ac-c4e348d45502}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{0225c51b-0000-4000-bad6-14c5db7f1be9}" where="">
+    <RecordField colName="vnc06" fieldIdRef="7" fieldType="TABLE_COLUMN" name="vnc_file.vnc06" sqlTabName="vnc_file" sqlType="DECIMAL" table_alias_name="" uid="{ad74f1c8-0000-4000-9928-262e172473ee}"/>
+    <RecordField colName="vnc07" fieldIdRef="8" fieldType="TABLE_COLUMN" name="vnc_file.vnc07" sqlTabName="vnc_file" sqlType="DECIMAL" table_alias_name="" uid="{1de6fc58-0000-4000-9b27-1913542b8cb6}"/>
+    <RecordField colName="vnc08" fieldIdRef="9" fieldType="TABLE_COLUMN" name="vnc_file.vnc08" sqlTabName="vnc_file" sqlType="DECIMAL" table_alias_name="" uid="{8d55ac48-0000-4000-8eef-e731c712f9ec}"/>
+    <RecordField colName="vnc01" fieldIdRef="10" fieldType="TABLE_COLUMN" name="vnc_file.vnc01" sqlTabName="vnc_file" sqlType="VARCHAR" table_alias_name="" uid="{bb4772d2-0000-4000-8059-387affa041ed}"/>
+    <RecordField colName="vnc09" fieldIdRef="1" fieldType="TABLE_COLUMN" name="vnc_file.vnc09" sqlTabName="vnc_file" sqlType="SMALLINT" table_alias_name="" uid="{d4f16d6c-0000-4000-b6f7-6d756abca4ea}"/>
+    <RecordField colName="vnc10" fieldIdRef="6" fieldType="TABLE_COLUMN" name="vnc_file.vnc10" sqlTabName="vnc_file" sqlType="SMALLINT" table_alias_name="" uid="{dd796c47-0000-4000-b5fa-bbaed0851a18}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{9587f4d0-0000-4000-bd4e-f79ad74a46d0}"/>
+  </Record>
+  <Form gridHeight="46" gridWidth="120" name="apsi328" spacing="normal" text="apsi328">
+    <VBox gridHeight="46" gridWidth="119" name="vb2_" posX="0" posY="0">
+      <Folder gridHeight="7" gridWidth="119" lstrcomment="false" name="pc1087" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="5" gridWidth="115" lstrcomment="false" name="grid01" posX="0" posY="0">
+            <Label posX="2" posY="1" text="Sub-contract"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc06" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Not Outsource, Outsource" lstrcomment="false" name="vnc_file.vnc06" posX="20" posY="1" rowCount="" sqlTabName="vnc_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Not Outsource"/>
+              <Item lstrtext="false" name="1" text="Outsource"/>
+            </ComboBox>
+            <Label posX="45" posY="1" text="Resource Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc07" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" items="Product Line, Machine, Outsource Factory" lstrcomment="false" name="vnc_file.vnc07" posX="59" posY="1" rowCount="" sqlTabName="vnc_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Product Line"/>
+              <Item lstrtext="false" name="1" text="Machine"/>
+              <Item lstrtext="false" name="2" text="Outsource Factory"/>
+            </ComboBox>
+            <Label posX="2" posY="2" text="Overtime Type"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc08" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" items="Overtime, Repair" lstrcomment="false" name="vnc_file.vnc08" notNull="true" posX="20" posY="2" required="true" rowCount="" sqlTabName="vnc_file" sqlType="DECIMAL" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ComboBox">
+              <Item lstrtext="false" name="0" text="Overtime"/>
+              <Item lstrtext="false" name="1" text="Repair"/>
+            </ComboBox>
+            <Label posX="45" posY="2" text="Reource No"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc01" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" name="vnc_file.vnc01" posX="59" posY="2" rowCount="" sqlTabName="vnc_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="2" posY="3" text="year/month"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc09" colorCondition="black" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" lstrcomment="false" name="vnc_file.vnc09" posX="20" posY="3" rowCount="" sqlTabName="vnc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc10" colorCondition="black" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" lstrcomment="false" name="vnc_file.vnc10" posX="31" posY="3" rowCount="" sqlTabName="vnc_file" sqlType="SMALLINT" stepX="" stepY="" tabIndex="7" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Group gridHeight="35" gridWidth="119" lstrcomment="false" lstrtext="false" name="gb2" posX="0" posY="8">
+        <ScrollGrid gridHeight="33" gridWidth="111" lstrcomment="false" name="gr5535" posX="1" posY="1">
+          <Label gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="dummy01" posX="1" posY="1" text="Mon"/>
+          <Label gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="dummy02" posX="17" posY="1" text="Tue"/>
+          <Label gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="dummy03" posX="32" posY="1" text="Wed"/>
+          <Label gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="dummy04" posX="47" posY="1" text="Thu"/>
+          <Label gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="dummy05" posX="62" posY="1" text="Fri"/>
+          <Label gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="dummy06" posX="77" posY="1" text="Sat"/>
+          <Label gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" name="dummy07" posX="92" posY="1" text="Sun"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="7" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="3" lstrcomment="false" name="Date" noEntry="true" posX="2" posY="2" repeat="true" rowCount="6" sqlTabName="" sqlType="INTEGER" stepX="12" stepY="4" tabIndex="8" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" color="red" colorCondition="black" columnCount="7" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="1" lstrcomment="false" name="contflg" noEntry="true" posX="6" posY="2" repeat="true" rowCount="6" sqlTabName="" sqlType="CHAR" stepX="14" stepY="4" tabIndex="13" table_alias_name="" widget="Edit"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc031" colorCondition="black" columnCount="7" fieldId="12" fieldType="TABLE_COLUMN" format="XX:XX:XX" gridHeight="1" gridWidth="11" image="zoom" lstrcomment="false" name="vnc_file.vnc031" picture="XX:XX:XX" posX="2" posY="3" repeat="true" rowCount="6" sqlTabName="vnc_file" sqlType="VARCHAR" stepX="4" stepY="4" tabIndex="9" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc041" colorCondition="black" columnCount="7" fieldId="13" fieldType="TABLE_COLUMN" format="XX:XX:XX" gridHeight="1" gridWidth="11" lstrcomment="false" name="vnc_file.vnc041" picture="XX:XX:XX" posX="2" posY="4" repeat="true" rowCount="6" sqlTabName="vnc_file" sqlType="VARCHAR" stepX="4" stepY="4" tabIndex="10" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc03" colorCondition="black" columnCount="7" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" name="vnc_file.vnc03" posX="2" posY="5" repeat="true" rowCount="6" sqlTabName="vnc_file" sqlType="VARCHAR" stepX="4" stepY="4" tabIndex="11" table_alias_name="" widget="Edit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vnc04" colorCondition="black" columnCount="7" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" name="vnc_file.vnc04" posX="2" posY="6" repeat="true" rowCount="6" sqlTabName="vnc_file" sqlType="VARCHAR" stepX="4" stepY="4" tabIndex="12" table_alias_name="" widget="Edit"/>
+        </ScrollGrid>
+      </Group>
+      <Grid gridHeight="2" gridWidth="119" lstrcomment="false" name="gr5537" posX="0" posY="43">
+        <HLine gridWidth="10" name="hl1808" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="7" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1809" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

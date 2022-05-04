@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{7b7df5eb-0000-4000-8189-22da906a8132}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_osy" order="" uid="{9b31041d-0000-4000-8528-04cf72173499}" where="">
+    <RecordField colName="" fieldIdRef="1" name="check" sqlTabName="" table_alias_name="" uid="{652ee12a-0000-4000-8ceb-c47519c31005}"/>
+    <RecordField colName="osyslip" fieldIdRef="2" fieldType="TABLE_COLUMN" name="osy_file.osyslip" sqlTabName="osy_file" sqlType="VARCHAR" table_alias_name="" uid="{7a2b7952-0000-4000-8598-79bdace013e4}"/>
+    <RecordField colName="osydesc" fieldIdRef="3" fieldType="TABLE_COLUMN" name="osy_file.osydesc" sqlTabName="osy_file" sqlType="VARCHAR" table_alias_name="" uid="{ccfe5d4f-0000-4000-a0b7-e9526e1dce3f}"/>
+    <RecordField colName="osyauno" fieldIdRef="4" fieldType="TABLE_COLUMN" name="osy_file.osyauno" sqlTabName="osy_file" sqlType="VARCHAR" table_alias_name="" uid="{8a04dcda-0000-4000-846d-91883d4b7665}"/>
+    <RecordField colName="osydmy1" fieldIdRef="5" fieldType="TABLE_COLUMN" name="osy_file.osydmy1" sqlTabName="osy_file" sqlType="VARCHAR" table_alias_name="" uid="{7f63ed27-0000-4000-99ab-d33e14634b8e}"/>
+    <RecordField colName="osytype" fieldIdRef="6" fieldType="TABLE_COLUMN" name="osy_file.osytype" sqlTabName="osy_file" sqlType="VARCHAR" table_alias_name="" uid="{850a3764-0000-4000-bff0-bbcb8aa71607}"/>
+  </Record>
+  <Form gridHeight="15" gridWidth="85" name="q_osy" spacing="normal" text="Qry Document Type">
+    <Grid gridHeight="13" gridWidth="83" lstrcomment="false" name="gr3824" posX="0" posY="0">
+      <Table gridHeight="12" gridWidth="82" lstrcomment="false" name="s_osy" posX="1" posY="0" totalRows="10">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtext="false" lstrtitle="false" name="check" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sel" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="osyslip" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" lstrcomment="false" lstrtitle="false" name="osy_file.osyslip" notNull="true" posX="6" posY="0" required="true" rowCount="" sqlTabName="osy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Document" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="osydesc" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="osy_file.osydesc" notNull="true" posX="17" posY="0" required="true" rowCount="" sqlTabName="osy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Document Name" widget="Edit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="osyauno" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" lstrcomment="false" lstrtext="false" lstrtitle="false" name="osy_file.osyauno" notNull="true" posX="37" posY="0" required="true" rowCount="" sqlTabName="osy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" title="Automatic No." valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="osydmy1" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" items="Serial Number, By Year and Month, By Year and Week, By Year,Month and Day" lstrcomment="false" lstrtitle="false" name="osy_file.osydmy1" posX="53" posY="0" queryEditable="true" rowCount="" sqlTabName="osy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="No. Method" widget="ComboBox">
+          <Item name="1" text="Serial Number"/>
+          <Item name="2" text="By Year and Month"/>
+          <Item name="3" text="By Year and Week"/>
+          <Item name="4" text="By Year,Month and Day"/>
+        </ComboBox>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="osytype" columnCount="" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" items="Order, Delivery" lstrcomment="false" lstrtitle="false" name="osy_file.osytype" posX="66" posY="0" queryEditable="true" rowCount="" sqlTabName="osy_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Property" widget="ComboBox">
+          <Item name="1" text="Order"/>
+          <Item name="2" text="Delivery"/>
+        </ComboBox>
+      </Table>
+    </Grid>
+  </Form>
+</ManagedForm>

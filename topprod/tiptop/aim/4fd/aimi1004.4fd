@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{0ee48bfc-0000-4000-99ad-f3d88523d55c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{4ab3b3c1-0000-4000-8aa5-fef1ba9ea94e}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="choice" sqlTabName="" table_alias_name="" uid="{87bbcf89-0000-4000-bc5d-0ab522b7170d}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="old" sqlTabName="" table_alias_name="" uid="{960e9b40-0000-4000-bc40-6c97175cb0a9}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="gen02_1" sqlTabName="" table_alias_name="" uid="{f970126c-0000-4000-b2ed-f2cd2e35d3e3}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="new" sqlTabName="" table_alias_name="" uid="{119856b0-0000-4000-a22e-8875ba906090}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="gen02_2" sqlTabName="" table_alias_name="" uid="{41e5ba4a-0000-4000-af01-83ba47725b82}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="51" name="aimi1004" spacing="normal" text="aimi1004">
+    <VBox gridHeight="10" gridWidth="49" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="8" gridWidth="49" lstrcomment="false" name="gr2908" posX="0" posY="1">
+        <Group gridHeight="7" gridWidth="48" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="Update Person">
+          <RadioGroup aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="44" items="Buyer, Warehouse Keeper, Planner" lstrcomment="false" lstrtitle="false" name="choice" notNull="true" posX="2" posY="1" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="RadioGroup">
+            <Item lstrtext="" name="1" text="Buyer"/>
+            <Item lstrtext="" name="2" text="Warehouse Keeper"/>
+            <Item lstrtext="" name="3" text="Planner"/>
+          </RadioGroup>
+          <Label posX="1" posY="4" text="OLD"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="old" notNull="true" posX="6" posY="4" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="gen02_1" noEntry="true" posX="20" posY="4" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="1" posY="5" text="NEW"/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" lstrtitle="false" name="new" notNull="true" posX="6" posY="5" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="gen02_2" noEntry="true" posX="20" posY="5" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

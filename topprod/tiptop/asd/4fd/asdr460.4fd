@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{c30f2123-0000-4000-84d7-da0d3a0e732d}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{67969b50-0000-4000-8a12-d2be3692ca82}" where="">
+    <RecordField colName="tta02" fieldIdRef="1" fieldType="TABLE_COLUMN" name="tta_file.tta02" sqlTabName="tta_file" sqlType="VARCHAR" table_alias_name="" uid="{746eaf26-0000-4000-b142-908f4f1d7188}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="year" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{425791fd-0000-4000-b33c-049a6990d84a}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{65fda548-0000-4000-a215-f03f2779fb4b}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="91" name="asdr460" spacing="normal" text="asdr460">
+    <VBox gridHeight="11" gridWidth="89" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="89" lstrcomment="false" name="gr450" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="88" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Product Class"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="tta02" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="tta_file.tta02" posX="22" posY="1" rowCount="" sqlTabName="tta_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="88" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="INPUT">
+          <Label posX="1" posY="1" text="Select Data Year"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" lstrcomment="false" lstrtitle="false" name="year" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="89" lstrcomment="false" name="gr451" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="33" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

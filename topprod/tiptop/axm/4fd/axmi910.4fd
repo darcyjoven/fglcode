@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{3c68118b-0000-4000-ac5c-38a455de7b01}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="s_ozb" order="" uid="{a461d778-0000-4000-bf1d-684aa1957518}" where="">
+    <RecordField colName="ozb01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ozb_file.ozb01" sqlTabName="ozb_file" sqlType="VARCHAR" table_alias_name="" uid="{d54522be-0000-4000-a96f-986be7a839da}"/>
+    <RecordField colName="ozb02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ozb_file.ozb02" sqlTabName="ozb_file" sqlType="VARCHAR" table_alias_name="" uid="{e540f112-0000-4000-8f2f-1630a01de187}"/>
+    <RecordField colName="ozbacti" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ozb_file.ozbacti" sqlTabName="ozb_file" sqlType="VARCHAR" table_alias_name="" uid="{745de823-0000-4000-92ed-f635e42a4ff6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{9410641c-0000-4000-91ef-faf8e6330336}" where="">
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{2fea6a25-0000-4000-a51e-af3a73ce7abb}"/>
+  </Record>
+  <Form gridHeight="18" gridWidth="75" name="axmi910" spacing="normal" text="axmi910">
+    <VBox gridHeight="18" gridWidth="72" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="14" gridWidth="72" lstrcomment="false" name="pc515" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Table gridHeight="12" gridWidth="70" lstrcomment="false" name="s_ozb" posX="0" posY="0" totalRows="10">
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ozb01" columnCount="" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" lstrcomment="false" lstrtitle="false" name="ozb_file.ozb01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="ozb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" title="Sea Transportantion Code" widget="Edit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ozb02" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" lstrcomment="false" lstrtitle="false" name="ozb_file.ozb02" notNull="true" posX="25" posY="0" required="true" rowCount="" sqlTabName="ozb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Sea Transportantion Desc" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="ozbacti" columnCount="" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtext="false" lstrtitle="false" name="ozb_file.ozbacti" notNull="true" posX="55" posY="0" required="true" rowCount="" sqlTabName="ozb_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" title="Valid" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          </Table>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="72" lstrcomment="false" name="gr2163" posX="0" posY="15">
+        <HLine gridWidth="10" name="hl829" posX="2" posY="0"/>
+        <Label posX="13" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="19" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl830" posX="27" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

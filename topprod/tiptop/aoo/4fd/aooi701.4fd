@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{04d45634-0000-4000-ac45-281094df5e0c}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="tb2" order="" uid="{c2813046-0000-4000-8634-6791d892566c}" where="">
+    <RecordField colName="azw01" fieldIdRef="5" fieldType="TABLE_COLUMN" name="azw_file.azw01" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{24d6b12c-0000-4000-8a0f-337712deddea}"/>
+    <RecordField colName="" fieldIdRef="6" name="azp02" sqlTabName="" table_alias_name="" uid="{44c8730f-0000-4000-a397-b2b5abcd5787}"/>
+    <RecordField colName="azw03" fieldIdRef="7" fieldType="TABLE_COLUMN" name="azw_file.azw03" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{23153cf2-0000-4000-96ba-bef48615f702}"/>
+    <RecordField colName="azw04" fieldIdRef="8" fieldType="TABLE_COLUMN" name="azw_file.azw04" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{50491537-0000-4000-87a4-d4b78227a048}"/>
+    <RecordField colName="azw05" fieldIdRef="9" fieldType="TABLE_COLUMN" name="azw_file.azw05" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{147f201a-0000-4000-b5aa-6706fb111bd5}"/>
+    <RecordField colName="azw06" fieldIdRef="10" fieldType="TABLE_COLUMN" name="azw_file.azw06" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{17a3c234-0000-4000-ba4e-931349a2a51e}"/>
+    <RecordField colName="azwacti" defaultValue="N" fieldIdRef="11" fieldType="TABLE_COLUMN" name="azw_file.azwacti" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{89a67efa-0000-4000-8c44-2de63f4f757d}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{c9dc1b3b-0000-4000-bf72-c780ad438913}" where="">
+    <RecordField colName="azw02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="azw_file.azw02" sqlTabName="azw_file" sqlType="VARCHAR" table_alias_name="" uid="{0f707fa5-0000-4000-80ef-c109df507c34}"/>
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="azt02" sqlTabName="" table_alias_name="" uid="{9198c741-0000-4000-9bf9-3c731c09a7cd}"/>
+    <RecordField colName="" fieldIdRef="2" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{2ed53df2-0000-4000-b604-0b2328a251ce}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="cn2" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{95c362fa-0000-4000-94c0-b29ac203660f}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="123" name="aooi701" spacing="normal" text="aooi701">
+    <VBox gridHeight="24" gridWidth="120" name="vb2" posX="1" posY="0">
+      <Folder gridHeight="8" gridWidth="120" lstrcomment="false" name="folder01" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Page01">
+          <Grid gridHeight="3" gridWidth="64" lstrcomment="false" name="gr3257" posX="0" posY="0">
+            <Label posX="1" posY="1" text="Corporate No. Belonged"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azw02" colorCondition="black" columnCount="" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" image="zoom" lstrcomment="false" name="azw_file.azw02" notNull="true" posX="26" posY="1" required="true" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="ButtonEdit"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" lstrcomment="false" name="azt02" noEntry="true" posX="40" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Table gridHeight="12" gridWidth="120" name="tb2" posX="0" posY="9" totalRows="10">
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azw01" colorCondition="black" columnCount="" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" image="zoom" lstrcomment="false" lstrtitle="false" name="azw_file.azw01" notNull="true" posX="0" posY="0" required="true" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" title="Logistics Code" widget="ButtonEdit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" colorCondition="black" columnCount="" fieldId="6" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="azp02" noEntry="true" posX="16" posY="0" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" title="Logestic Name" widget="Edit"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azw03" colorCondition="black" columnCount="" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="" lstrcomment="false" lstrtitle="false" name="azw_file.azw03" posX="31" posY="0" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="Industry" widget="ComboBox"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azw04" colorCondition="black" columnCount="" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="16" items="Manufacturing, Retail, Distribution" lstrcomment="false" lstrtitle="false" name="azw_file.azw04" posX="41" posY="0" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="8" table_alias_name="" title="Industry Type" widget="ComboBox">
+          <Item lstrtext="false" name="1" text="Manufacturing"/>
+          <Item lstrtext="false" name="2" text="Retail"/>
+          <Item lstrtext="false" name="3" text="Distribution"/>
+        </ComboBox>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azw05" colorCondition="black" columnCount="" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="21" image="zoom" lstrcomment="false" lstrtitle="false" name="azw_file.azw05" notNull="true" posX="57" posY="0" required="true" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" title="Transaction Data DB" widget="ButtonEdit"/>
+        <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azw06" colorCondition="black" columnCount="" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" image="zoom" lstrcomment="false" lstrtitle="false" name="azw_file.azw06" noEntry="true" posX="78" posY="0" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" title="Base Data DB" widget="ButtonEdit"/>
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="azwacti" columnCount="" defaultValue="N" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="17" lstrcomment="false" lstrtitle="false" name="azw_file.azwacti" notNull="true" posX="92" posY="0" rowCount="" sqlTabName="azw_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="11" table_alias_name="" title="Data Valid Code" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+      <Grid gridHeight="2" gridWidth="120" lstrcomment="false" name="gr3258" posX="0" posY="21">
+        <HLine gridWidth="10" name="hl1150" posX="1" posY="0"/>
+        <Label posX="12" posY="0" text="Rows"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="18" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label posX="26" posY="0" text="/"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="6" lstrcomment="false" lstrtitle="false" name="cn2" noEntry="true" posX="29" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="10" name="hl1151" posX="37" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>

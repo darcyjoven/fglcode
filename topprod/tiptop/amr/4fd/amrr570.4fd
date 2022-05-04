@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{05eb6b25-0000-4000-8e42-e38f865fa7b7}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{f6a33de9-0000-4000-af35-46750a5a9cec}" where="">
+    <RecordField colName="" fieldIdRef="1" fieldType="NON_DATABASE" name="mss01" sqlTabName="" table_alias_name="" uid="{744ed088-0000-4000-b66e-fe228ad12fea}"/>
+    <RecordField colName="mss03" fieldIdRef="2" fieldType="TABLE_COLUMN" name="mss_file.mss03" sqlTabName="mss_file" sqlType="DATE" table_alias_name="" uid="{a83cd9d5-0000-4000-8066-dc31d38cdcc5}"/>
+    <RecordField colName="" fieldIdRef="3" fieldType="NON_DATABASE" name="ver_no1" sqlTabName="" table_alias_name="" uid="{729ff7f0-0000-4000-b67c-b7ed21cb178e}"/>
+    <RecordField colName="" fieldIdRef="4" fieldType="NON_DATABASE" name="ver_no2" sqlTabName="" table_alias_name="" uid="{3238acc3-0000-4000-8e12-281d9830db51}"/>
+    <RecordField colName="" fieldIdRef="5" fieldType="NON_DATABASE" name="more" sqlTabName="" table_alias_name="" uid="{0cdf8286-0000-4000-8965-51c9ccde0e29}"/>
+  </Record>
+  <Form gridHeight="11" gridWidth="91" name="amrr570" spacing="normal" text="amrr570">
+    <VBox gridHeight="11" gridWidth="89" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="7" gridWidth="89" lstrcomment="false" name="gr3828" posX="0" posY="1">
+        <Group gridHeight="3" gridWidth="88" lstrcomment="false" lstrtext="false" name="group01" posX="1" posY="0" text="QBE">
+          <Label posX="1" posY="1" text="Item No."/>
+          <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="20" image="zoom" lstrcomment="false" lstrtitle="false" name="mss01" posX="22" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+          <Label posX="45" posY="1" text="Date"/>
+          <DateEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="mss03" columnCount="" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstrcomment="false" lstrtitle="false" name="mss_file.mss03" posX="66" posY="1" rowCount="" sqlTabName="mss_file" sqlType="DATE" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="DateEdit"/>
+        </Group>
+        <Group gridHeight="3" gridWidth="88" lstrcomment="false" lstrtext="false" name="group02" posX="1" posY="3" text="INPUT">
+          <Label posX="1" posY="1" text="Version"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ver_no1" posX="10" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="3" table_alias_name="" widget="Edit"/>
+          <Label posX="21" posY="1" text="/"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="10" lstrcomment="false" lstrtitle="false" name="ver_no2" posX="23" posY="1" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="Edit"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="2" gridWidth="89" lstrcomment="false" name="gr3829" posX="0" posY="8">
+        <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="65" lstrcomment="false" lstrtext="false" lstrtitle="false" name="more" notNull="true" posX="1" posY="0" required="true" rowCount="" sqlTabName="" sqlType="CHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" text="Other codition to print" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Grid>
+    </VBox>
+  </Form>
+</ManagedForm>
