@@ -591,7 +591,7 @@ DEFINE   l_n                     LIKE type_file.num5
                                 imaud06,imaud07,imaud08,imaud09,imaud10,
                                 imaud11,imaud12,imaud13,imaud14,imaud15,
                                 imauser,imagrup,imamodu,imadate,imaacti,
-                                imaoriu,imaorig,imaud19,imaud20    #TQC-C20059 add
+                                imaoriu,imaorig,imaud19,imaud20,imaud23,imaud24    #TQC-C20059 add
          BEFORE CONSTRUCT
             CALL cl_qbe_init()
 #No.FUN-A50011 ------begin------
@@ -1042,7 +1042,7 @@ FUNCTION i100_menu()
       ON ACTION upd_ima25
          LET g_action_choice="upd_ima25"
          IF cl_chk_act_auth() THEN
-            #CALL i100_upd_ima25()   #mark by sx211105
+            CALL i100_upd_ima25()
          END IF
       #end---add by jixf 160804
       
@@ -1290,6 +1290,8 @@ FUNCTION i100_menu()
            #endadd
             CALL i100sub_y_chk(g_ima.ima01)
             IF g_success = 'Y' THEN
+                UPDATE ima_file SET imaud07 = (SELECT CONCAT(CONCAT(imaud23,'*'),imaud24) from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
+                UPDATE ima_file SET imaud19 = (SELECT imaud23*imaud24/imaud10 from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
                 IF cl_confirm('aap-222') THEN 
                     CALL i100sub_y_chk(g_ima.ima01) #CHI-C30107 add
                     IF g_success = 'Y' THEN  #CHI-C30107 add 
@@ -1618,7 +1620,7 @@ FUNCTION i100_i(p_cmd)
         g_ima.ima156,g_ima.ima157,g_ima.ima158,       #FUN-A80150 add
         g_ima.imaud01,g_ima.imaud02,g_ima.imaud03,g_ima.imaud04,g_ima.imaud05,
         g_ima.imaud06,g_ima.imaud07,g_ima.imaud08,g_ima.imaud09,g_ima.imaud10,
-        g_ima.imaud11,g_ima.imaud12,g_ima.imaud13,g_ima.imaud14,g_ima.imaud15,g_ima.imaud19,g_ima.imaud20
+        g_ima.imaud11,g_ima.imaud12,g_ima.imaud13,g_ima.imaud14,g_ima.imaud15,g_ima.imaud19,g_ima.imaud20,g_ima.imaud23,g_ima.imaud24
         WITHOUT DEFAULTS
  
         BEFORE INPUT
@@ -2687,6 +2689,10 @@ FUNCTION i100_i(p_cmd)
            IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
         AFTER FIELD imaud20
            IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
+        AFTER FIELD imaud23
+           IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
+        AFTER FIELD imaud24
+           IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
  
         AFTER INPUT  #判斷必要欄位之值是否有值,若無則反白顯示,並要求重新輸入
            LET g_ima.imauser = s_get_data_owner("ima_file") #FUN-C10039
@@ -3365,7 +3371,7 @@ FUNCTION i100_show()
                    ,g_ima.ima151,                              #No.FUN-810016
                    g_ima.ima156,g_ima.ima157,g_ima.ima158,     #FUN-A80150 add
                    g_ima.ima159       #FUN-B50096
-                   ,g_ima.ima928,g_ima.ima929,g_ima.imaud19,g_ima.imaud20  #TQC-B90236--add
+                   ,g_ima.ima928,g_ima.ima929,g_ima.imaud19,g_ima.imaud20,g_ima.imaud23,g_ima.imaud24   #TQC-B90236--add
  
 #No.FUN-A50011 -----begin-----
 #No.FUN-A50011 -----end-----
@@ -8137,7 +8143,7 @@ FUNCTION i100_b_menu()
       WHEN  "upd_ima25"
          LET g_action_choice="upd_ima25"
          IF cl_chk_act_auth() THEN
-            #CALL i100_upd_ima25()   #mark by sx211105
+            CALL i100_upd_ima25()
          END IF 
 
 
@@ -8255,7 +8261,7 @@ FUNCTION i100_b_menu()
         #tianry add 
         WHEN  "upd_ima25"
          IF cl_chk_act_auth() THEN
-            #CALL i100_upd_ima25()   #mark by sx211105
+            CALL i100_upd_ima25()
          END IF
  
         WHEN "help"
