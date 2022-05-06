@@ -3928,6 +3928,7 @@ FUNCTION i100_set_no_entry(p_cmd)
    DEFINE l_imaag   LIKE ima_file.imaag    #MOD-C30270 add
    DEFINE l_cnt     LIKE type_file.num5    #FUN-C90075
  
+   CALL cl_set_comp_entry("imaud19",FALSE) #darcy:2022/05/06 add
    IF p_cmd = 'u' AND g_chkey = 'N' AND ( NOT g_before_input_done ) THEN
       #CALL cl_set_comp_entry("ima01,ima940,ima941,ima151,imaag",FALSE)  #MOD-BB0157
        CALL cl_set_comp_entry("ima01",FALSE)  #MOD-BB0157
