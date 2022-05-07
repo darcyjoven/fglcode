@@ -223,6 +223,7 @@ FUNCTION q001_b1_fill(p_wc2)
      WHERE (apa_file.apa00='11' or apa_file.apa00='21') AND apa_file.apa01=apb_file.apb01    #add by hehw 210312
       AND apb34='Y' 
       AND aa.apb21=apb_file.apb21 and aa.apb22=apb_file.apb22 
+      AND apa_file.apa41 = 'Y' #darcy:2022/05/07 add 排除未审核项
     #GROUP BY apa00,apb_file.apb21,apb_file.apb22   #mark by hehw 210312
      GROUP BY apa_file.apa00,apb_file.apb21,apb_file.apb22   #add by hehw 210312
      INTO TEMP bb
