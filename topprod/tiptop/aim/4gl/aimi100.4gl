@@ -1291,7 +1291,7 @@ FUNCTION i100_menu()
             CALL i100sub_y_chk(g_ima.ima01)
             IF g_success = 'Y' THEN
                 UPDATE ima_file SET imaud07 = (SELECT CONCAT(CONCAT(imaud23,'*'),imaud24) from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
-                UPDATE ima_file SET imaud19 = (SELECT imaud23*imaud24/imaud10 from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
+                UPDATE ima_file SET imaud19 = (SELECT imaud23/1000*imaud24/1000/imaud10 from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
                 IF cl_confirm('aap-222') THEN 
                     CALL i100sub_y_chk(g_ima.ima01) #CHI-C30107 add
                     IF g_success = 'Y' THEN  #CHI-C30107 add 
@@ -7493,6 +7493,10 @@ FUNCTION i100_u_upd()
    END IF
    IF cl_null(g_ima.ima35) THEN LET g_ima.ima35 = ' ' END IF   #MOD-A90173 add
    IF cl_null(g_ima.ima36) THEN LET g_ima.ima36 = ' ' END IF   #MOD-A90173 add
+   #darcy:2022/05/07 add s--- 
+   SELECT CONCAT(CONCAT(g_ima.imaud23,'*'),g_ima.imaud24) into g_ima.imaud07 from dual 
+   LET g_ima.imaud19 = g_ima.imaud23 /1000 * g_ima.imaud24 / 1000 / g_ima.imaud10
+   #darcy:2022/05/07 add e---
    IF cl_null(g_ima01_t) THEN  #FUN-AC0072
       UPDATE ima_file SET ima_file.* = g_ima.*   # 更新DB
        WHERE ima01 = g_ima.ima01             # COLAUTH?
@@ -7588,6 +7592,7 @@ FUNCTION i100_u_upd()
          END IF #TQC-8B0011  ADD
       END IF
    END IF
+   CALL i100_show() #darcy:2022/05/07 add:---
    #IF g_u_flag='1' THEN RETURN FALSE ELSE RETURN TRUE END IF   #FUN-870101 add #FUN-9A0056 mark
    IF g_success = 'N' THEN RETURN FALSE ELSE RETURN TRUE END IF   #FUN-9A0056 add
 END FUNCTION
