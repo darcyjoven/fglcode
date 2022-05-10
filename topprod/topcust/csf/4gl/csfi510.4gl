@@ -4115,6 +4115,7 @@ FUNCTION i510_g_b1() 		# 依套數發料/退料(When sfp06=1/6)
   DEFINE l_bmd07        LIKE bmd_file.bmd07     #TQC-C30067 add
   DEFINE l_bmd10        LIKE bmd_file.bmd10     #TQC-C30067 add
   DEFINE l_sum_tc_sff05   LIKE tc_sff_file.tc_sff05  #tianry add 161122
+  define l_sfa05        like sfa_file.sfa05  #darcy:2022/05/10 add
   LET l_sql = "SELECT sfa_file.*,ima108 FROM sfa_file, ima_file",
               " WHERE sfa01='",b_tc_sfe.tc_sfe02,"'",                        #tianry add 'S'
               "   AND sfa26 IN ('0','1','2','3','4','5','T','7','8','9','A')",    #bugno:7111 add '5T'  #FUN-A20037 add '7,8' #TQC-C20443 add ,'9' 'A'
@@ -4155,6 +4156,16 @@ FUNCTION i510_g_b1() 		# 依套數發料/退料(When sfp06=1/6)
     SELECT SUM(tc_sff05) INTO l_sum_tc_sff05 FROM tc_sff_file,tc_sfd_file 
     WHERE tc_sff01=tc_sfd01 AND tc_sfd04!='X' AND tc_sfd01!=g_tc_sfd.tc_sfd01 AND tc_sff03=g_sfa.sfa01
     AND tc_sff04=g_sfa.sfa03 AND tc_sff07=g_sfa.sfa08 
+    #darcy:2022/05/10 s---
+    # 判断尾单数量要算上已经取替代的情况
+    # 如果变更数量的情况下
+    if g_action_choice = "alteration" then
+      select sum(sfa05) into l_sfa05 from sfa_file where sfa01 = b_tc_sfe.tc_sfe02
+         and sfa27 =  g_sfa.sfa27  and sfa08 = g_sfa.sfa08
+         and sfa26 in ('U','T')  and sfa03 != g_sfa.sfa03
+      let g_sfa.sfa05 = g_sfa.sfa05 + l_sfa05  
+    end if
+    #darcy:2022/05/10 e---
     IF cl_null(l_sum_tc_sff05) THEN LET  l_sum_tc_sff05=0 END IF 
     IF issue_qty> g_sfa.sfa05-l_sum_tc_sff05   AND g_sfa.sfa05!=0  AND g_sfa.sfa26!='4'  THEN
        LET issue_qty=g_sfa.sfa05-l_sum_tc_sff05
