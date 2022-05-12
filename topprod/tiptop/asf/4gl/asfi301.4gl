@@ -9126,6 +9126,7 @@ FUNCTION i301_s()
            SELECT sfa05 INTO new[i].new_qty4 FROM sfa_file
             WHERE sfa01=g_sfb.sfb01 AND sfa03=new[i].new_part
               AND sfa012 = old_sfa012 AND sfa013 = old_sfa013   #FUN-A50066
+              and sfa08 = old_sfa08 #darcy:2022/05/12 add
            IF cl_null(new[i].new_qty4) THEN LET new[i].new_qty4=0 END IF
         LET i = i + 1
         IF i > g_max_rec THEN        #No:8600
