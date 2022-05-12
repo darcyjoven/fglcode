@@ -287,11 +287,16 @@ DEFINE
       LET g_cnt=1                                      #總選取筆數
       LET g_rec_b = 0
       LET l_cnt=0                                      #MOD-890185 add
+      DELETE FROM csfr013_table #darcy:2022/05/12
       FOREACH p401_curs INTO l_sfb[g_cnt].*            #逐筆抓出
          IF SQLCA.sqlcode THEN                         #有問題
             CALL cl_err('FOREACH:',SQLCA.sqlcode,1)
             EXIT FOREACH
          END IF
+
+         #darcy:2022/05/12 s---
+         INSERT INTO csfr013_table VALUES (l_sfb[g_cnt].sfb01)
+         #darcy:2022/05/12 e---
          
         IF l_sfb[g_cnt].sfb04 = '8' THEN CONTINUE FOREACH END IF #add by cathree 20210813
          
@@ -433,6 +438,7 @@ FUNCTION p401_sure()
           l_allow_delete  LIKE type_file.num5          #No.FUN-680121 SMALLINT
 
    DEFINE l_sfe04         LIKE sfe_file.sfe04
+   DEFINE l_cmd           STRING  #darcy:2022/05/12
 
    MESSAGE ''
 
@@ -541,6 +547,12 @@ FUNCTION p401_sure()
       #add by cathree 20210805
       ON ACTION exporttoexcel
          CALL cl_export_to_excel(ui.Interface.getRootNode(),base.TypeInfo.create(l_sfb),'','')
+
+      #darcy:2022/05/12 s---
+      ON ACTION output
+         LET l_cmd = "p_query 'csfr013'"
+         CALL cl_cmdrun_wait(l_cmd)
+      #darcy:2022/05/12 e--- 
 
       AFTER ROW
          IF INT_FLAG THEN
