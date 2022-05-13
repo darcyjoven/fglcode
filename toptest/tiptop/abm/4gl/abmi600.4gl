@@ -1235,9 +1235,9 @@ FUNCTION i600_menu()
          WHEN "confirm"
             IF cl_chk_act_auth() THEN
                #FUN-A70134---mod---str----
-
                #CALL i600_confirm()
                 CALL i600sub_y_chk(g_bma.bma01,g_bma.bma06)
+               UPDATE ima_file  SET imaud19 = (SELECT bmb06 FROM bmb_file WHERE ima01 = bmb01 and ima01 = g_bma.bma01 AND bmbud02 = '#1') where exists (SELECT 1 FROM bmb_file WHERE ima01 = bmb01 and ima01 = g_bma.bma01 AND bmbud02 = '#1')
 
               select imaud10,imaud07 into l_imaud10,l_imaud07 from ima_file where ima01=g_bma.bma01 
 
@@ -6084,12 +6084,20 @@ FUNCTION i600_copy_new()
       RETURN
    END IF
    CALL i600_copy_cur(ans_2,new_no)
-   # BEGIN WORK 
+   BEGIN WORK 
    CALL i600_copy_item(old_no,old_bma06,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
       # RETURNING g_succ 
-
+   if g_success != 'Y' then
+      rollback work
+      return 
+   end if
+   
    CALL i600_copy_bom(old_no,old_bma06,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
-   # COMMIT WORK
+   if g_success = 'Y' then
+      COMMIT WORK
+   else
+      rollback work
+   end if 
 END FUNCTION
 # 旧BOM复制为新BOM
 FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
@@ -6125,6 +6133,7 @@ FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,a
       # NEXT FIELD new_no 
       LET g_success = 'N' 
       ROLLBACK WORK
+      return
    END IF 
    SELECT count(1) INTO g_cnt FROM bma_file WHERE bma01 = old_no and bma06 = old_bma06 AND bmaacti='Y'
    IF g_cnt=0 THEN 
@@ -6132,6 +6141,7 @@ FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,a
       # NEXT FIELD new_no 
       LET g_success = 'N' 
       ROLLBACK WORK
+      return
    END IF
 
    # 检查半成品料件是否建立 
@@ -6139,23 +6149,29 @@ FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,a
    IF STATUS THEN
       CALL cl_err("i600_bom_rep_e",STATUS,1)
       ROLLBACK WORK
+      return
    END IF
    FOREACH i600_bom_rep_d INTO l_bmb03,l_bmb03_new
       IF STATUS THEN
          CALL cl_err("i600_bom_rep_d",STATUS,1)
          ROLLBACK WORK
+         return
       END IF  
       # 1. 检查ima是否建立
       select count(1) into g_cnt from ima_file where ima01 =l_bmb03_new and imaacti='Y'
       IF g_cnt = 0 THEN 
+         let g_success = 'N'
          CALL cl_err(l_bmb03_new,'cbm-010',0)
          ROLLBACK WORK
+         return
       END IF
       # 2. 检查bmb是否已建立
       SELECT count(1) INTO g_cnt FROM bma_file WHERE bma01 = l_bmb03_new and bma06 = new_bma06
       IF g_cnt >=1 THEN
+         let g_success = 'N'
          CALL cl_err(l_bmb03_new,'cbm-009',0)
          ROLLBACK WORK
+         return
       END IF 
 
    END FOREACH 
@@ -6328,6 +6344,7 @@ FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,a
       IF STATUS THEN 
          CALL cl_err("i600_bom_bmc_upd","!",1)
          ROLLBACK WORK
+         return
       END IF
       LET g_cnt=SQLCA.SQLERRD[3]
       MESSAGE '(',g_cnt USING '##&',') ROW of (',new_no,') O.K'
@@ -6381,6 +6398,7 @@ FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,a
       IF STATUS THEN 
          CALL cl_err("i600_bom_bmt_upd","!",1)
          ROLLBACK WORK
+         return
       END IF
 
       LET g_cnt=SQLCA.SQLERRD[3]
@@ -6426,6 +6444,7 @@ FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,a
       IF STATUS THEN 
          CALL cl_err("i600_bom_bml_upd","!",1)
          ROLLBACK WORK
+         return
       END IF
       LET g_cnt=SQLCA.SQLERRD[3]
       MESSAGE '(',g_cnt USING '##&',') ROW of (',new_no,') O.K'
@@ -6591,6 +6610,7 @@ FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,a
            MESSAGE 'INSERT O.K, INSERT MDM O.K'
          WHEN 2  #呼叫 MDM 失敗
            ROLLBACK WORK
+         return
       END CASE
    END FOREACH
 #-------------------- 復制固定屬性  (bmv_file) ------------------------------
