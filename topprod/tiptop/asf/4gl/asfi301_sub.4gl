@@ -4325,6 +4325,12 @@ DEFINE l_oeb12_d          LIKE oeb_file.oeb12  #add by darcy 2022年3月11日
           #add by darcy2022-03-11 14:04:40 s---
           SELECT oeb12 INTO l_oeb12_d FROM oeb_file WHERE oeb01 = l_sfb22 AND oeb03 = l_sfb221
           LET l_sfb08_1 = IIF(l_sfb08_1>l_oeb12_d,l_oeb12_d,l_sfb08_1)
+          #darcy:2022/05/13 s---
+          #如果原工单数量小于工单数量,还原的时候,要还原原工单数量
+          if l_sfb.sfbud08 < l_sfb08_1 then 
+            let l_sfb08_1 = l_sfb.sfbud08
+          end if
+          #darcy:2022/05/13 e---
           #add by darcy2022-03-11 14:04:40 e---
           
           UPDATE oeb_file SET oebud07 = (oebud07 -l_sfb08_1),
@@ -4353,6 +4359,12 @@ DEFINE l_oeb12_d          LIKE oeb_file.oeb12  #add by darcy 2022年3月11日
           SELECT oeb12 INTO l_oeb12_d FROM oeb_file WHERE oeb01 = l_sfb22 AND oeb03 = l_sfb221
           LET l_sfb08_1 = IIF(l_sfb08_1>l_oeb12_d,l_oeb12_d,l_sfb08_1)
           #add by darcy2022-03-11 14:04:40 e---
+          #darcy:2022/05/13 s---
+          #如果原工单数量小于工单数量,还原的时候,要还原原工单数量
+          if l_sfb.sfbud08 < l_sfb08_1 then 
+            let l_sfb08_1 = l_sfb.sfbud08
+          end if
+          #darcy:2022/05/13 e---
           #UPDATE oeb_file SET oebud07 = (oebud07 +l_sfb08_1),                 #mark by hehw 210324
           #                    oebud09 = nvl(oebud09-l_sfb08_1,l_sfb08_1)      #mark by hehw 210324
           UPDATE oeb_file SET oebud07 = nvl((oebud07 + l_sfb08_1),l_sfb08_1),   #add by hehw 210324
@@ -4613,7 +4625,8 @@ DEFINE l_ima562_1     LIKE ima_file.ima562
 DEFINE l_oeb12_d      LIKE oeb_file.oeb12 #add by darcy 220311
 
   #FUN-B70008---add----str---
-   SELECT sfb222 INTO g_sfb.sfb222
+   #SELECT sfb222 INTO g_sfb.sfb222  #darcy:2022/05/13 mark
+   SELECT sfb222,sfbud08 INTO g_sfb.sfb222,g_sfb.sfbud08  #darcy:2022/05/13 add
      FROM sfb_file
     WHERE sfb01 = p_sfb01
 
@@ -4664,6 +4677,12 @@ DEFINE l_oeb12_d      LIKE oeb_file.oeb12 #add by darcy 220311
           SELECT oeb12 INTO l_oeb12_d FROM oeb_file WHERE oeb01 = l_sfb22 AND oeb03 = l_sfb221
           LET l_sfb08_1 = IIF(l_sfb08_1>l_oeb12_d,l_oeb12_d,l_sfb08_1)
           #add by darcy2022-03-11 14:04:40 e---
+          #darcy:2022/05/13 s---
+          #已工单原数量为主
+          if l_sfb08_1 > g_sfb.sfbud08 then
+            let l_sfb08_1 = g_sfb.sfbud08
+          end if
+          #darcy:2022/05/13 e---
           UPDATE oeb_file SET oebud07 = (oebud07 -l_sfb08_1),
                               oebud09 = nvl(oebud09+l_sfb08_1,l_sfb08_1)   #add by guanyao160614
            WHERE oeb01 = l_sfb22
