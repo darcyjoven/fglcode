@@ -66,13 +66,12 @@ func upload(filePath string) string {
 		//2.1下载远程到本地
 		//1.备份远程到本地
 		err = exec.Command("scp", "tiptop@192.168.1.19:"+remotePath+fileName, path+bakfileName).Run()
-		if err != nil {
-			return "2.1 备份远程到本地,执行失败！  "
-		}
-		//2.2上传备份到远程
-		err = exec.Command("scp", path+bakfileName, "tiptop@192.168.1.19:"+remotePath).Run()
-		if err != nil {
-			return "2.2 本地上传原文件和.bak文件到远程失败！  "
+		if err == nil {
+			//2.2上传备份到远程
+			err = exec.Command("scp", path+bakfileName, "tiptop@192.168.1.19:"+remotePath).Run()
+			if err != nil {
+				return "2.2 本地上传原文件和.bak文件到远程失败！  "
+			}
 		}
 	}
 	//3 上传文件到远程
@@ -83,7 +82,7 @@ func upload(filePath string) string {
 	//4. 本地删除.bak文件
 	err = os.Remove(path + bakfileName)
 	if err != nil {
-		return "4 本地删除.bak文件!失败  "
+		//return "4 本地删除.bak文件!失败  "
 	}
 
 	return fmt.Sprintf("%s、%s上传成功，目录为%s。", fileName, bakfileName, remotePath)
