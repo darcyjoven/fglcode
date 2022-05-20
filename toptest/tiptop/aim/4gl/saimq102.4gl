@@ -162,6 +162,7 @@ DEFINE tm     RECORD
                  atp_qty    LIKE type_file.num15_3,   ###GP5.2  #NO.FUN-A20044
                  img_q      LIKE type_file.num15_3,   #add by huanglf170314
                  sfe_c      LIKE type_file.num15_3    #add by donghy170420 超领未扣帐数量
+                 ,sfa_xiaban LIKE type_file.num15_3  #darcy:2022/05/20 add
                  
               END RECORD,
        g_img  DYNAMIC ARRAY OF RECORD
@@ -967,6 +968,9 @@ FUNCTION q102_show2()
    DEFINE l_sfa_q1        LIKE type_file.num15_3    #tianry add 161201
    DEFINE l_sfs05         LIKE sfs_file.sfs05 
    DEFINE l_img10         LIKE img_file.img10   #add by huanglf170314
+   DEFINE l_a1            LIKE img_file.img10
+   DEFINE l_a2            LIKE img_file.img10
+   DEFINE l_all            LIKE img_file.img10
    DEFINE s1              LIKE img_file.img10
    #add by liyjf190226 str要考虑单位之间的转换
    DEFINE l_ima63         LIKE ima_file.ima63
@@ -976,6 +980,7 @@ FUNCTION q102_show2()
     #add by liyjf190226 end要考虑单位之间的转换 
    DEFINE l_smc03         LIKE smc_file.smc03  #add by zhangsba190904
    DEFINE l_smc04         LIKE smc_file.smc04  #add by zhangsba190904
+   DEFINE l_sfbud12       LIKE sfb_file.sfbud12 #darcy:2022/05/20 下版数量
     
    #-->受訂量
    MESSAGE " (1)Wait..."
@@ -997,6 +1002,7 @@ FUNCTION q102_show2()
 #    END IF                       #TQC-A40009 
 
     LET l_sql = "SELECT sfa_file.*",
+                " ,sfbud12 ", #darcy:2022/05/20
                 "  FROM sfb_file,sfa_file",
                 " WHERE sfa03 = '",g_ima.ima01,"'",
                 "   AND sfb01 = sfa01",
@@ -1005,7 +1011,7 @@ FUNCTION q102_show2()
                 "   AND sfb02 != '15'"
    PREPARE q102_sum_pre FROM l_sql
    DECLARE q102_sum CURSOR FOR q102_sum_pre 
-   FOREACH q102_sum INTO lr_sfa.*
+   FOREACH q102_sum INTO lr_sfa.*,l_sfbud12  #darcy:2022/05/20 add l_sfbud12
       CALL s_shortqty(lr_sfa.sfa01,lr_sfa.sfa03,lr_sfa.sfa08,
                       lr_sfa.sfa12,lr_sfa.sfa27,
                       lr_sfa.sfa012,lr_sfa.sfa013)  #FUN-A50066 #TQC-A80005
@@ -1029,6 +1035,12 @@ FUNCTION q102_show2()
     #      LET g_ima.sfa_q1= g_ima.sfa_q1 + ((lr_sfa.sfa05-lr_sfa.sfa06-lr_sfa.sfa065+lr_sfa.sfa063-l_sfs05+l_rvv17)*lr_sfa.sfa13)  #MOD-C70286 add +l_rvv17  #liuyya mark  170624
           LET g_ima.sfa_q1= g_ima.sfa_q1 + ((lr_sfa.sfa05-lr_sfa.sfa06-lr_sfa.sfa065+lr_sfa.sfa063+l_rvv17)*lr_sfa.sfa13)   #liuyya add  170624
           LET g_ima.sfa_q2= g_ima.sfa_q2 + (g_short_qty * lr_sfa.sfa13)
+          #darcy:2022/05/20 s---
+          if l_sfbud12 > 0 then
+          #去掉下版数量部分
+            let g_ima.sfa_xiaban = g_ima.sfa_xiaban + lr_sfa.sfa161 * l_sfbud12
+          end if
+          #darcy:2022/05/20 e---
          
       END IF          #tianry mark  161201
  #   IF (lr_sfa.sfa05 > (lr_sfa.sfa06 + lr_sfa.sfa065 - lr_sfa.sfa063 ) OR g_short_qty > 0) THEN
@@ -1073,7 +1085,7 @@ FUNCTION q102_show2()
    #END IF
    #mark by zhangsba190904---e   
    ##add by liyjf190226 end 
-   DISPLAY BY NAME g_ima.sfa_q1,g_ima.sfa_q2
+   DISPLAY BY NAME g_ima.sfa_q1,g_ima.sfa_q2,g_ima.sfa_xiaban #darcy:2022/05/20 add sfa_xiaban
    #-->請購量
    MESSAGE " (3)Wait..."
    SELECT SUM((pml20-pml21)*pml09) INTO g_ima.pml_q
@@ -1206,15 +1218,32 @@ FUNCTION q102_show2()
 
   #-->超领未扣帐数量
   MESSAGE " (8)Wait..." 
-  SELECT SUM(sfs05*ima63_fac) INTO g_ima.sfe_c
+  
+  #mark by sunyan 210407---s  谢宇彬要求改为杂项未扣账数量
+  #SELECT SUM(sfs05*ima63_fac) INTO l_a1
+  SELECT NVL(SUM(sfs05*ima63_fac),0) INTO l_a1  #add by zhangzs 210823
      FROM sfs_file,ima_file,sfp_file
     WHERE sfs04=ima01 AND sfs01=sfp01
       AND sfs04 = g_ima.ima01 
       AND sfp06 = '2' AND sfpconf!='X'
       AND sfp04 <> 'Y'   #FUN-5B0069
+  #Mark by sunyan 210407---e
+  #add by sunyan 210407---s
+ # SELECT SUM(inb09*inb08_fac) INTO l_a2
+   SELECT NVL(SUM(inb09*inb08_fac),0) INTO l_a2  #add by zhangzs 210823
+    FROM ina_file,inb_file
+   WHERE ina01 = inb01
+      AND inb04=g_ima.ima01
+      AND inaconf = 'Y' 
+      AND inapost = 'N'
+      AND ina00 in ('1','2')
+   # LET l_all = l_a1 + l_a2
+   LET g_ima.sfe_c = l_a1 + l_a2  #add by zhangzs 210823
+  #add by sunyan 210407---e
    IF SQLCA.sqlcode OR STATUS THEN LET g_ima.sfe_c = 0 END IF
    IF cl_null(g_ima.sfe_c) THEN LET g_ima.sfe_c = 0 END IF
    DISPLAY BY NAME g_ima.sfe_c
+   #DISPLAY l_all TO g_ima.sfe_c
    
 #FUN-AC0074--mark(s) 
 #   #-->出貨備置量
