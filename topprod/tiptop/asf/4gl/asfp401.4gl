@@ -294,9 +294,7 @@ DEFINE
             EXIT FOREACH
          END IF
 
-         #darcy:2022/05/12 s---
-         INSERT INTO csfr013_table VALUES (l_sfb[g_cnt].sfb01)
-         #darcy:2022/05/12 e---
+         
          
         IF l_sfb[g_cnt].sfb04 = '8' THEN CONTINUE FOREACH END IF #add by cathree 20210813
          
@@ -342,6 +340,9 @@ DEFINE
          
          ###yang  update  210706 update end----------------- 
          
+         #darcy:2022/05/12 s---
+         INSERT INTO csfr013_table VALUES (l_sfb[g_cnt].sfb01)
+         #darcy:2022/05/12 e---
          LET g_cnt = g_cnt + 1                        #累加筆數
          IF g_cnt > g_max_rec THEN                    #超過肚量了
             CALL cl_err('','9035',0)
