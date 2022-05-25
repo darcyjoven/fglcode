@@ -85,6 +85,7 @@ DEFINE g_msg     LIKE type_file.chr1000,       #No.FUN-680121 VARCHAR(72)
                   ,sfbud12 LIKE sfb_file.sfbud12,
                   sfbql    LIKE sfb_file.sfb08
                   #add by darcy2022-03-11 16:05:12 e---
+                  ,sfb12    LIKE sfb_file.sfb12  #darcy:2022/05/25 add
                  END RECORD
 DEFINE g_chk     DYNAMIC ARRAY OF RECORD           #FUN-650116 add
                   sure     LIKE type_file.chr1,    #選擇
@@ -243,6 +244,7 @@ DEFINE
                   "' ', sfb01,sfb05,ima02,ima021,sfb08,sfb09,sfb02,sfb04,sfb28,sfb15,sfb82",        #No.FUN-940103 add ima02,ima021  #FUN-D10046 add sfb82
                   #"  FROM sfb_file,ima_file,pmc_file ",                                                #No.FUN-940103  #FUN-D10046 add pmc_file  #MOD-D40119
                   "  ,sfbud12,sfb08-sfb081", #add by darcy 2022年3月11日 
+                  " ,sfb12 ",#darcy:2022/05/25 add
                   "  FROM sfb_file,ima_file ", #MOD-D40119
                  #" WHERE sfb04 != '8' AND (sfb28 != '3' OR sfb28 IS NULL)",                  #MOD-A50165 mark
                  #" WHERE (sfb04 != '8' OR (sfb04 ='8' AND sfb28 != '3' OR sfb28 IS NULL))",  #MOD-A50165     #MOD-AC0372 mark
