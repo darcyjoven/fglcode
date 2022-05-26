@@ -3849,6 +3849,7 @@ DEFINE l_qty1_1_a,l_qty1_2_a,l_qty1_3_a,l_qty1_4_a  LIKE tc_sfe_file.tc_sfe03
       ELSE 
          LET l_qty1=l_qty1_a
       END IF 
+      if l_qty1 >  l_qty1_a then let l_qty1 = l_qty1_a end if #darcy:2022/05/18 add
    END IF 
    #end----add by guanyao160818
    RETURN l_qty1,l_qty2
