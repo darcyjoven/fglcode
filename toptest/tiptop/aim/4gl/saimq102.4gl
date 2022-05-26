@@ -1038,6 +1038,7 @@ FUNCTION q102_show2()
           #darcy:2022/05/20 s---
           if l_sfbud12 > 0 then
           #去掉下版数量部分
+            let g_ima.sfa_xiaban = iif (cl_null(g_ima.sfa_xiaban),0,g_ima.sfa_xiaban)
             let g_ima.sfa_xiaban = g_ima.sfa_xiaban + lr_sfa.sfa161 * l_sfbud12
           end if
           #darcy:2022/05/20 e---
