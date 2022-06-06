@@ -1863,6 +1863,15 @@ FUNCTION i100_copy()
                      --   ecb21=0, -- mark darcy:2022-1-11
                        ecb02=necu02
                       ,ecb012 =necu012  #FUN-A50081
+   # darcy:2022/06/06 add s---
+   if LENGTH(old_no) >=10 and LENGTH(new_no)>=10 then 
+      IF old_no[10,11]='S' OR new_no[10,11]='S' THEN 
+         if old_no[10,11] <> new_no[10,11] then 
+            UPDATE ecb_tmp  SET ecb19=0,ecb21=0
+         end if
+      END IF 
+   end if 
+   # darcy:2022/06/06 add e---
    INSERT INTO ecb_file SELECT * FROM ecb_tmp
    IF STATUS THEN
    CALL cl_err3("ins","ecb_file",new_no,necu02,STATUS,"","ins ecb",1) #FUN-660091
