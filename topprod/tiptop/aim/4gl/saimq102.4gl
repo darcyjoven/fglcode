@@ -996,6 +996,7 @@ FUNCTION q102_show2()
    MESSAGE " (2)Wait..."
    LET g_ima.sfa_q1 = 0          #TQC-A40009 
    LET g_ima.sfa_q2=0            #MOD-B50011
+   let g_ima.sfa_xiaban = 0  #darcy:2022/05/30
    
 #    IF g_ima.sfa_q1 < 0  THEN    #TQC-A40009 
 #       LET g_ima.sfa_q1 = 0      #TQC-A40009     
