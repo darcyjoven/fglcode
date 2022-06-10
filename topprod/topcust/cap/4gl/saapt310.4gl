@@ -802,7 +802,9 @@ DEFINE
            CALL t310_q()
      END CASE
   END IF
- 
+   # if g_user <> 'tiptop' then 
+   #    call cl_set_act_visible("updaterate",false) #darcy:2022/06/10 add
+   # end if
   #設定簽核功能及哪些 action 在簽核狀態時是不可被執行的
   CALL aws_efapp_flowaction("insert, modify, delete, reproduce, detail, query,locale, void, undo_void,  #FUN-D20035 add--undo_void
                              confirm, undo_confirm, easyflow_approval,account_detail,payment_detail,
@@ -1672,7 +1674,12 @@ FUNCTION t310_menu()
             ELSE
                LET g_action_choice = NULL
             END IF
-
+         #darcy:2022/06/10 add s---
+         WHEN "updaterate"
+            IF cl_chk_act_auth() THEN 
+               CALL t310_update_rate() 
+            END IF
+         #darcy:2022/06/10 add e---
 #TQC-AC0409 ------------Begin----------------remark---------- 
          WHEN "payment_detail"
             IF cl_chk_act_auth() THEN
@@ -8104,6 +8111,9 @@ FUNCTION t310_bp(p_ud)
           LET g_action_choice="weiyue"                                       
          EXIT DIALOG
       #end------ add by maoyy20160905
+      ON ACTION updaterate
+         LET g_action_choice = "updaterate"
+         EXIT DIALOG
    END DIALOG
    CALL cl_set_act_visible("accept,cancel", TRUE)
 END FUNCTION
@@ -14398,4 +14408,45 @@ FUNCTION t310_upd_apa(p_cmd)
 END FUNCTION
 #FUN-CB0065--add--end
 
+#darcy:2022/06/10 add s---
+function t310_update_rate()
+   define l_cnt   like type_file.num5
+   define i   like type_file.num5
 
+   select * into g_apf.* from apf_file 
+    where apf01 =  g_apf.apf01
+   
+   if g_apf.apf41 <> 'N' then 
+      call cl_err("单据必须为未审核状态才能更新汇率！","!",1)
+      return
+   end if
+
+   select count(*) into l_cnt from apg_file 
+    where apg01 = g_apf.apf01
+   if l_cnt <= 0 then
+      call cl_err("没有单据可以调整！","!",1)
+      return
+   end if
+   
+   begin work 
+   for i = 1 to l_cnt step 1
+      let l_ac = 1
+      call t310_apg04('a')
+      update apg_file 
+        set apg05 = g_apg[l_ac].apg05
+       where apg01 = g_apf.apf01
+         and apg02 = g_apg[l_ac].apg02
+      if sqlca.sqlcode then 
+         call cl_err("执行失败!",sqlca.sqlcode,1)
+         rollback work
+         return
+      end if
+   end for 
+   CALL t310_b1_tot()
+   commit work
+
+   call t310_b_fill(" 1=1 ")
+
+   MESSAGE "汇率已更新，请检查！"
+end function
+#darcy:2022/06/10 add e---
