@@ -364,6 +364,7 @@ DEFINE g_sfb06         LIKE sfb_file.sfb06          #FUN-A60070
 DEFINE g_sna12a_t      LIKE sna_file.sna12a         #FUN-910088--add--
 DEFINE g_sna27b        LIKE sna_file.sna27b        #TQC-C20403 add
 DEFINE g_multi_sna03b,g_multi_sna08b  STRING                      #FUN-D60056
+define g_multi_sna27b   string  #$darcy:2022/06/15 add
 
 MAIN
 
@@ -6676,7 +6677,7 @@ FUNCTION t803_pop_sna04()
                  #" AND (sfa11 <> 'S' )"               #FUN-9C0040      #CHI-BA0015 mark
 #FUN-D60056 --------------Begin-------------
    CALL short_qty2(1,TRUE,g_sna[l_ac].sna04,g_sna[l_ac].sna03b,li_where,'4')
-        RETURNING g_multi_sna03b,g_multi_sna08b
+        RETURNING g_multi_sna03b,g_multi_sna08b,g_multi_sna27b
    IF NOT cl_null(g_multi_sna03b) THEN
       CALL t803_multi_sna03b()
       CALL t803_b_fill(' 1=1')         #單身
@@ -6784,6 +6785,7 @@ END FUNCTION
 FUNCTION t803_multi_sna03b()
 DEFINE   tok         base.StringTokenizer
 DEFINE   tok1         base.StringTokenizer
+DEFINE   tok2         base.StringTokenizer #darcy:2022/06/15 
 DEFINE   l_sql       STRING
 DEFINE   i           LIKE type_file.num10
 DEFINE   l_plant     LIKE azw_file.azw01
@@ -6795,6 +6797,7 @@ DEFINE   l_sfa29     LIKE sfa_file.sfa29
    CALL s_showmsg_init()
    LET tok = base.StringTokenizer.create(g_multi_sna03b,"|")
    LET tok1 = base.StringTokenizer.create(g_multi_sna08b,"|")
+   LET tok2 = base.StringTokenizer.create(g_multi_sna27b,"|")
    LET i=1
 
    WHILE tok.hasMoreTokens()
@@ -6802,6 +6805,7 @@ DEFINE   l_sfa29     LIKE sfa_file.sfa29
       LET l_sna.sna02 = g_snb.snb02
       LET l_sna.sna03b = tok.nextToken()
       LET l_sna.sna08b = tok1.nextToken()
+      LET l_sna.sna27b = tok2.nextToken() #darcy:2022/06/15 
       LET l_sql="SELECT max(sna04)+1 FROM ",cl_get_target_table(l_plant,'sna_file'),
                 " WHERE sna01 = '",l_sna.sna01,"'",
                 "   AND sna02 = '",l_sna.sna02,"'"
@@ -6819,6 +6823,7 @@ DEFINE   l_sfa29     LIKE sfa_file.sfa29
                 "   AND sfa01 = '",g_snb.snb01,"'",
                 "   AND sfa03 = '",l_sna.sna03b,"'",
                 "   AND sfa08 = '",l_sna.sna08b,"'",
+                "   AND sfa27 = '",l_sna.sna27b,"'",#darcy:2022/06/15
                 " ORDER BY sfb01 "
    PREPARE t803_presna03b FROM l_sql
    EXECUTE t803_presna03b INTO l_sna.sna08b,l_sna.sna12b,l_sna.sna27b,l_sna.sna012b,l_sna.sna013b

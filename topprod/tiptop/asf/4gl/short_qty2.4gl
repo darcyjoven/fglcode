@@ -147,14 +147,14 @@ FUNCTION short_qty2(pi_multi_sel,pi_need_cons,ps_default1,ps_default2,ps_where,p
    CLOSE WINDOW short_qty_qry
    
    IF mi_multi_sel=2 THEN
-      RETURN ms_ret1,ms_ret3 #複選資料只能回傳一個欄位的組合字串.
+      RETURN ms_ret1,ms_ret3,ms_ret5 #複選資料只能回傳一個欄位的組合字串.
       
    END IF 
  
    IF (mi_multi_sel) THEN
-      RETURN ms_ret1,ms_ret3 #複選資料只能回傳一個欄位的組合字串.
+      RETURN ms_ret1,ms_ret3,ms_ret5  #複選資料只能回傳一個欄位的組合字串.
    ELSE
-      RETURN ms_ret1,ms_ret6  #回傳值(也許有多個).  #FUN-A60028 add ms_ret6,ms_ret7
+      RETURN ms_ret1,ms_ret6,ms_ret5   #回傳值(也許有多個).  #FUN-A60028 add ms_ret6,ms_ret7
    END IF
 END FUNCTION
  
@@ -652,6 +652,7 @@ FUNCTION short_qty_qry_accept(pi_sel_index)
    DEFINE   pi_sel_index    LIKE type_file.num10 	#No.FUN-680131 INTEGER
    DEFINE   lsb_multi_sel   base.StringBuffer,
             lsb_multi_sel2   base.StringBuffer,
+            lsb_multi_sel3   base.StringBuffer, #darcy:2022/06/15 add
             li_i            LIKE type_file.num10  	#No.FUN-680131 INTEGER
  
  
@@ -663,6 +664,7 @@ FUNCTION short_qty_qry_accept(pi_sel_index)
    IF (mi_multi_sel) THEN
       LET lsb_multi_sel = base.StringBuffer.create()
       LET lsb_multi_sel2 = base.StringBuffer.create()
+      LET lsb_multi_sel3 = base.StringBuffer.create() #darcy:2022/06/15 add
       
       FOR li_i = 1 TO ma_qty.getLength()
          IF (ma_qty[li_i].check = 'Y') THEN
@@ -670,16 +672,19 @@ FUNCTION short_qty_qry_accept(pi_sel_index)
             #  CALL lsb_multi_sel.append(ma_qty[li_i].sfb01 CLIPPED)          #FUN-D60056 mark
                CALL lsb_multi_sel.append(ma_qty[li_i].sfa03 CLIPPED)          #FUN-D60056
                CALL lsb_multi_sel2.append(ma_qty[li_i].sfa08 CLIPPED)
+               CALL lsb_multi_sel3.append(ma_qty[li_i].sfa27 CLIPPED) #darcy:2022/06/15 add
               # LET ms_ret3 = ma_qty[li_i].sfa08 CLIPPED
             ELSE
             #  CALL lsb_multi_sel.append("|" || ma_qty[li_i].sfb01 CLIPPED)   #FUN-D60056 mark
                CALL lsb_multi_sel.append("|" || ma_qty[li_i].sfa03 CLIPPED)   #FUN-D60056
                CALL lsb_multi_sel2.append(ma_qty[li_i].sfa08 CLIPPED)
+               CALL lsb_multi_sel3.append(ma_qty[li_i].sfa27 CLIPPED) #darcy:2022/06/15 add
             END IF
          END IF    
       END FOR
       # 2003/09/16 by Hiko : 複選狀態只會有一組字串回傳值. 
       LET ms_ret1 = lsb_multi_sel.toString()
+      let ms_ret5 = lsb_multi_sel3.toString() #darcy:2022/06/15
       LET ms_ret3 = lsb_multi_sel2.toString()
    ELSE
       LET ms_ret1 = ma_qty[pi_sel_index].sfb01 CLIPPED
