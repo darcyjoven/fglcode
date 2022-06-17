@@ -2230,6 +2230,20 @@ END FUNCTION
 FUNCTION t001_ins_tmp()
 DEFINE l_sql  STRING 
 DEFINE l_sql1 STRING 
+    #darcy:2022/06/14 s---
+    define l_ac like type_file.num5
+    define l_tsc05 like type_file.num15_3
+    define l_tsc05_1 like type_file.num15_3
+    define l_sgm03  like sgm_file.sgm03
+    define l_imaud10 like ima_file.imaud10
+    define l_shb01   like shb_file.shb01
+    define l_tc_imb04   like tc_imb_file.tc_imb04
+    define l_sgm031      like sgm_file.sgm03
+    define l_sfb05      like sfb_file.sfb05
+    define l_tc_imb10   like tc_imb_file.tc_imb10
+    define l_tc_imb13   like tc_imb_file.tc_imb13
+    #darcy:2022/06/14 e---
+
     DROP TABLE cect001_tmp
     CREATE TEMP TABLE cect001_tmp
      (l_tc_ima01 LIKE tc_ima_file.tc_ima01,
@@ -2258,6 +2272,7 @@ DEFINE l_sql1 STRING
       l_sum11    LIKE tc_shc_file.tc_shc12,   
       l_sum12    LIKE tc_shc_file.tc_shc12,   
       l_sum13    LIKE tc_shc_file.tc_shc12 )
+    
 
 
     LET l_sql ="SELECT '',sgm01,sgm02,sgm03,0,0,sgm04,",
@@ -2424,6 +2439,47 @@ DEFINE l_sql1 STRING
    #UPDATE cect001_tmp set l_sum7=l_sum7-l_sum4
  }  
    UPDATE cect001_tmp SET l_tc_ima01 = g_tc_ima.tc_ima01,l_sum10 = wipqty/l_sum10, l_sum13 = l_sum11/l_sum13
+   #darcy:2022/06/14 s---
+    LET g_sql=" SELECT sgm03,sgm01,wipqty,l_sum10 FROM cect001_tmp  WHERE wipqty!=0"
+    PREPARE t001_pb11 FROM g_sql
+    DECLARE tc_imb_curs11 CURSOR FOR t001_pb11
+    
+    
+
+    CALL g_tc_imb.clear()
+    LET l_ac = 1
+    FOREACH tc_imb_curs11 INTO l_sgm031,l_tc_imb04,l_tc_imb10,l_tc_imb13--g_tc_imb[l_ac].*   #單身 ARRAY 填充
+       IF STATUS THEN CALL cl_err('foreach:',STATUS,1) EXIT FOREACH END IF
+ #      SELECT ecd02 INTO g_tc_imb[l_ac].ecd02 FROM ecd_file WHERE ecd01 = g_tc_imb[l_ac].tc_imb03 
+ #      SELECT ima02,ima021 INTO g_tc_imb[l_ac].ima02,g_tc_imb[l_ac].ima021 FROM ima_file WHERE ima01 = g_tc_imb[l_ac].sfb05 
+       #add by zhangzs 210206 ----s-----  判断 工艺序号 作业编号 LOT单号 在atmt260是否存在过账数据
+       let l_sfb05 = l_tc_imb04[1,12] 
+       select sfb05 into l_sfb05  from sfb_file where sfb01 = l_sfb05 #darcy:2022/06/15 add
+       LET l_tsc05 = 0
+       LET l_tsc05_1 = 0 #add by liy211208 #初始化
+       #LET l_sgm03 = g_tc_imb[l_ac].sgm03 - 10     #mark by sx211230,不能直接取上一个，要看上一个是否报工
+       SELECT MAX(sgm03) INTO l_sgm03 FROM sgm_file WHERE sgm01 =l_tc_imb04 AND ta_sgm06='Y' AND sgm03<l_sgm031 #add by sx211230
+       DECLARE tc_imb10_curs2 CURSOR FOR SELECT shb01 FROM shb_file WHERE shb16 =l_tc_imb04 AND shb06 = l_sgm03 #查询asft730的移转单号
+       FOREACH tc_imb10_curs2 INTO l_shb01  #單身 ARRAY 填充
+          SELECT tsc05 INTO l_tsc05_1 FROM tsc_file WHERE tscud02 = l_shb01 AND tscpost = 'Y'#查詢atmt260符合过账条件的数量
+          IF sqlca.sqlcode = 100 THEN LET l_tsc05_1 = 0 END IF #add by liy211208
+          SELECT imaud10 INTO l_imaud10 FROM  ima_file WHERE ima01 =l_sfb05    #add by sx210313 排板数量
+          IF l_tsc05_1 IS NULL THEN 
+             LET l_tsc05_1 = 0
+          END IF 
+          IF l_imaud10 IS NULL THEN 
+             LET l_imaud10 = 1
+          END IF 
+          #LET l_tsc05 = l_tsc05 + l_tsc05_1 #mark by liy211208
+           LET l_tsc05 = l_tsc05_1 #add by liy211208
+          LET l_tc_imb10 =l_tc_imb10 - l_tsc05
+          LET l_tc_imb13 =l_tc_imb10 / l_imaud10   #PNL数量 
+          UPDATE cect001_tmp SET wipqty =l_tc_imb10 WHERE sgm03 =l_sgm031 AND sgm01 =l_tc_imb04
+          UPDATE cect001_tmp SET l_sum10 =l_tc_imb13 WHERE sgm03 =l_sgm031 AND sgm01 =l_tc_imb04
+       END FOREACH      
+       LET l_ac=l_ac+1 
+    END FOREACH
+   #darcy:2022/06/14 e---
    DELETE FROM cect001_tmp WHERE  wipqty <= 0  
 # and l_sum7 <= 0 and  l_sum11<=0
 END FUNCTION 
