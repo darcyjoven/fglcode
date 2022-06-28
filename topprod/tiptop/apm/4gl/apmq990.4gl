@@ -212,10 +212,16 @@ MAIN
                "rvv39_t.rvv_file.rvv39t,  rvv39t.rvv_file.rvv39t, ",
                "rvv87_rvv23.rvv_file.rvv87,rvv39_apb10.rvv_file.rvv39"  
    LET l_table = cl_prt_temptable('apmq990',g_sql) CLIPPED   # 產生Temp Table
-   IF l_table = -1 THEN
+   IF l_table = -1 THENaf
       RETURN
    END IF                  # Temp Table產生
    ## *** 與 Crystal Reports 串聯段 - <<<< 清除暫存資料 >>>> CR11 *** ## 
+   #darcy:2022/06/17 s---
+   call cl_set_comp_visible(
+      "tot_rvv39,tot_rvv39t,tot_rvv39_t,rvv39_1,rvv39_t_1,rvv39t_1,rvv38,rvv39,rvv39_t_2,rvv39t,rvv39t_2,rvv39_apb10,rvv39_apb24",
+      FALSE
+   )
+   #darcy:2022/06/17 e---
    CALL q990_table()
    CALL q990_q()   
    CALL q990_menu()

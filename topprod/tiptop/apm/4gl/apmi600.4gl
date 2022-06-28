@@ -1452,13 +1452,13 @@ FUNCTION i600_i(p_cmd)
                          CALL cl_getmsg('apm-600',g_lang) RETURNING l_str
                          ERROR l_str,x1,x2
                          IF g_pmc.pmc30 <> '1' THEN    #CHI-AB0033
-                            NEXT FIELD pmc24
+                           #  NEXT FIELD pmc24 #darcy:2022/05/18 mark
                          END IF   #CHI-AB0033
                     WHEN SQLCA.SQLCODE=100
                     WHEN SQLCA.SQLCODE=0
                     OTHERWISE
                          CALL cl_err('sel pmc24:',SQLCA.SQLCODE,0)
-                         NEXT FIELD pmc24
+                        #  NEXT FIELD pmc24 #darcy:2022/05/18 mark
                END CASE
             END IF
             IF g_pmc.pmc01!='EMPL' AND g_pmc.pmc01!='MISC' AND g_pmc.pmc14 <> '3' THEN    #85-09-23 #FUN-D30077 add pmc14

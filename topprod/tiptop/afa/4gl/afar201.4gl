@@ -1128,21 +1128,23 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
            WHERE fan01 = sr.faj02 AND fan02 = sr.faj022
              AND fan03 = tm.yy1 AND fan04 = tm.mm1
              AND fan041 = '1'
+         #darcy:2022/06/20 s---
          #------------------------MOD-C60085-------------------(S)
-          IF (tm.yy1 >= sr.faj57 AND tm.mm1>sr.faj571) THEN
-             SELECT SUM(fan07) INTO l_adj_fan07 FROM fan_file
-              WHERE fan01 = sr.faj02
-                AND fan02 = sr.faj022
-                AND ((fan03 = sr.faj57 AND fan04 > sr.faj571) AND (fan03 = tm.yy1 AND fan04 <= tm.mm1))
-                AND fan041 = '2'
-          END IF
-         #------------------------MOD-C60085-------------------(E)
-          IF tm.yy1 = sr.faj57 AND tm.mm1 = sr.faj571 THEN          #MOD-C60085 add
-             SELECT SUM(fan07) INTO l_adj_fan07 FROM fan_file
-              WHERE fan01 = sr.faj02 AND fan02 = sr.faj022
-                AND fan03 = tm.yy1 AND fan04 = tm.mm1
-                AND fan041 = '2'
-          END IF                                                    #MOD-C60085 add
+         # IF (tm.yy1 >= sr.faj57 AND tm.mm1>sr.faj571) THEN
+         #    SELECT SUM(fan07) INTO l_adj_fan07 FROM fan_file
+         #     WHERE fan01 = sr.faj02
+         #       AND fan02 = sr.faj022
+         #       AND ((fan03 = sr.faj57 AND fan04 > sr.faj571) AND (fan03 = tm.yy1 AND fan04 <= tm.mm1))
+         #       AND fan041 = '2'
+         # END IF
+         ##------------------------MOD-C60085-------------------(E)
+         # IF tm.yy1 = sr.faj57 AND tm.mm1 = sr.faj571 THEN          #MOD-C60085 add
+         #    SELECT SUM(fan07) INTO l_adj_fan07 FROM fan_file
+         #     WHERE fan01 = sr.faj02 AND fan02 = sr.faj022
+         #       AND fan03 = tm.yy1 AND fan04 = tm.mm1
+         #       AND fan041 = '2'
+         # END IF                                                    #MOD-C60085 add
+         #darcy:2022/06/20 e---
       #-------------------------MOD-C30825------------------(S)
        ELSE
           SELECT COUNT(*) INTO l_cnt FROM fbn_file
@@ -1151,24 +1153,25 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
              AND fbn03 = tm.yy1
              AND fbn04 = tm.mm1
              AND fbn041 = '1'
-
-         #------------------------MOD-C60085-------------------(S)
-          IF (tm.yy1 >= sr.faj57 AND tm.mm1>sr.faj571) THEN
-             SELECT SUM(fbn07) INTO l_adj_fan07 FROM fbn_file
-              WHERE fbn01 = sr.faj02
-                AND fbn02 = sr.faj022
-                AND ((fbn03 = sr.faj57 AND fbn04 > sr.faj571) AND (fbn03 = tm.yy1 AND fbn04 <= tm.mm1))
-                AND fbn041 = '2'
-          END IF
-         #------------------------MOD-C60085-------------------(E)
-          IF tm.yy1 = sr.faj57 AND tm.mm1 = sr.faj571 THEN          #MOD-C60085 add
-             SELECT SUM(fbn07) INTO l_adj_fan07 FROM fbn_file
-              WHERE fbn01 = sr.faj02
-                AND fbn02 = sr.faj022
-                AND fbn03 = tm.yy1
-                AND fbn04 = tm.mm1
-                AND fbn041 = '2'
-          END IF                                                    #MOD-C60085 add
+         #darcy:2022/06/20 mark s---
+         ##------------------------MOD-C60085-------------------(S)
+         # IF (tm.yy1 >= sr.faj57 AND tm.mm1>sr.faj571) THEN
+         #    SELECT SUM(fbn07) INTO l_adj_fan07 FROM fbn_file
+         #     WHERE fbn01 = sr.faj02
+         #       AND fbn02 = sr.faj022
+         #       AND ((fbn03 = sr.faj57 AND fbn04 > sr.faj571) AND (fbn03 = tm.yy1 AND fbn04 <= tm.mm1))
+         #       AND fbn041 = '2'
+         # END IF
+         ##------------------------MOD-C60085-------------------(E)
+         # IF tm.yy1 = sr.faj57 AND tm.mm1 = sr.faj571 THEN          #MOD-C60085 add
+         #    SELECT SUM(fbn07) INTO l_adj_fan07 FROM fbn_file
+         #     WHERE fbn01 = sr.faj02
+         #       AND fbn02 = sr.faj022
+         #       AND fbn03 = tm.yy1
+         #       AND fbn04 = tm.mm1
+         #       AND fbn041 = '2'
+         # END IF                                                    #MOD-C60085 add
+         #darcy:2022/06/20 mark e---
        END IF
       #-------------------------MOD-C30825------------------(E)
        IF cl_null(l_adj_fan07) THEN LET l_adj_fan07 = 0 END IF

@@ -168,6 +168,18 @@ MAIN
               "sign_img.type_file.blob ,",      #簽核圖檔   #TQC-C10039
               "sign_show.type_file.chr1,",      #是否顯示簽核資料(Y/N)  #TQC-C10039
               "sign_str.type_file.chr1000"      #簽核字串 #TQC-C10039
+              #darcy:2022/06/27 s---
+              ,",qctt001.qctt_file.qctt04,",
+              "qctt002.qctt_file.qctt04,",
+              "qctt003.qctt_file.qctt04,",
+              "qctt004.qctt_file.qctt04,",
+              "qctt005.qctt_file.qctt04,",
+              "qctt006.qctt_file.qctt04,",
+              "qctt007.qctt_file.qctt04,",
+              "qctt008.qctt_file.qctt04,",
+              "qctt009.qctt_file.qctt04,",
+              "qctt010.qctt_file.qctt04"
+              #darcy:2022/06/27 e---
 
    LET l_table = cl_prt_temptable('aqcr300',g_sql) CLIPPED
    IF l_table = -1 THEN EXIT PROGRAM END IF
@@ -432,7 +444,11 @@ FUNCTION r300()
                     qcs        RECORD LIKE qcs_file.*,
                     qct        RECORD LIKE qct_file.*
                     END RECORD
- 
+   #darcy:2022/06/27 add s---
+   define l_qctt04  LIKE qctt_file.qctt04  
+   define l_cnt     like type_file.num5    
+   define l_qctt    array [10] of DECIMAL(15,3)
+   #darcy:2022/06/27 add e---
      SELECT zo02 INTO g_company FROM zo_file WHERE zo01 = g_rlang
      LOCATE l_img_blob IN MEMORY   #blob初始化   #TQC-C10039
      CALL cl_del_data(l_table)
@@ -450,6 +466,7 @@ FUNCTION r300()
                  "        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,",
                  "        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,",
                  "        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,",
+                 "        ?,?,?,?,?, ?,?,?,?,?, ", #darcy:2022/06/27 add 
                  "        ?, ?, ?, ?, ?, ?, ?)"   ##TQC-C10039  add 4?
      PREPARE insert_prep FROM g_sql
      IF STATUS THEN
@@ -541,6 +558,10 @@ FUNCTION r300()
         WHEN "3" LET g_prog = 'aqcr370'
      END CASE
      LET g_prog = 'aqcr300'   #No.FUN-5C0076
+     #darcy:2022/06/27 s---
+     DECLARE r300_qctt_curs CURSOR FOR  
+         SELECT qctt04 FROM qctt_file WHERE qctt01 =? and qctt02 =? and qctt021=? and qctt03 =?
+     #darcy:2022/06/27 e---
      FOREACH r300_curs1 INTO sr.*
          IF SQLCA.sqlcode != 0 THEN
             CALL cl_err('foreach:',SQLCA.sqlcode,1)
@@ -563,6 +584,18 @@ FUNCTION r300()
          SELECT azf03 INTO l_azf03_1 FROM azf_file WHERE azf01=l_ima109 AND azf02='8'
          SELECT azf03 INTO l_azf03_2 FROM azf_file
             WHERE azf01=sr.qct.qct04 AND azf02='6'
+         #darcy:2022/06/27 s---
+         #测量值
+         let l_cnt =1
+         CALL l_qctt.clear()
+         foreach r300_qctt_curs using sr.qct.qct01,sr.qct.qct02,sr.qct.qct021,sr.qct.qct03
+          into l_qctt[l_cnt]
+            if l_cnt >9 then
+               exit foreach
+            end if
+            let l_cnt = l_cnt + 1
+         end foreach
+         #darcy:2022/06/27 e---
          EXECUTE insert_prep USING sr.qcs.qcs00,sr.qcs.qcs01,sr.qcs.qcs02,sr.qcs.qcs021,sr.qcs.qcs03,sr.qcs.qcs04,
                                    sr.qcs.qcs041,sr.qcs.qcs05,sr.qcs.qcs06,sr.qcs.qcs061,sr.qcs.qcs062,sr.qcs.qcs071,
                                    sr.qcs.qcs072,sr.qcs.qcs081,sr.qcs.qcs082,sr.qcs.qcs09,sr.qcs.qcs091,sr.qcs.qcs10,
@@ -576,6 +609,7 @@ FUNCTION r300()
                                    sr.qct.qct10,sr.qct.qct11,sr.qct.qct12,sr.qct.qct131,sr.qct.qct132,
                                    l_gen02,l_pmc03,l_ima02,l_ima021,l_ima15,l_ima109,l_azf03_1,l_azf03_2,            #No.FUN-850062
                                    "",l_img_blob, "N",""    #TQC-C10039 ADD "",l_img_blob, "N",""
+                                   ,l_qctt[1],l_qctt[2],l_qctt[3],l_qctt[4],l_qctt[5],l_qctt[6],l_qctt[7],l_qctt[8],l_qctt[9],l_qctt[10] #darcy:2022/06/27 add
          DECLARE qao_cur2 CURSOR FOR SELECT qao01,qao03,qao05,qao06 FROM qao_file
                                                 WHERE qao01=sr.qcs.qcs01
                                                   AND qao02=sr.qcs.qcs02
