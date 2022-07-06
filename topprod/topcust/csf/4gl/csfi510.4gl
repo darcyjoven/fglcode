@@ -4157,6 +4157,7 @@ FUNCTION i510_g_b1() 		# 依套數發料/退料(When sfp06=1/6)
     SELECT SUM(tc_sff05) INTO l_sum_tc_sff05 FROM tc_sff_file,tc_sfd_file 
     WHERE tc_sff01=tc_sfd01 AND tc_sfd04!='X' AND tc_sfd01!=g_tc_sfd.tc_sfd01 AND tc_sff03=g_sfa.sfa01
     AND tc_sff04=g_sfa.sfa03 AND tc_sff07=g_sfa.sfa08 
+    and tc_sff27 = g_sfa.sfa27  #darcy:2022/07/06 add
     #darcy:2022/05/10 s---
     # 判断尾单数量要算上已经取替代的情况
     # 如果变更数量的情况下
