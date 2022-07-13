@@ -717,6 +717,11 @@ DEFINE  l_bmb13   LIKE ze_file.ze03             #No.FUN-810014
     LET g_tree_focus_idx = 0     #focus節點index       #FUN-A50010
     LET g_show_flag = 'N'        #FUN-CB0078   add
     LET g_a_flag = 'N'           #FUN-CB0078   add
+    #darcy:2022/03/30 s---
+    #IF g_user <>'tiptop' THEN 
+    #  CALL cl_set_act_visible("confirmp",FALSE)
+    #END IF 
+    #darcy:2022/03/30 s---
 
     CALL cl_set_comp_visible("bmb36,bmb37",g_aza.aza121='Y') #FUN-D10093 add #當aoos010欄位"是否與PLM整合[aza121=Y]"打勾時,才show出bmb36/bmb37欄位
     IF s_industry('slk') THEN
@@ -1228,7 +1233,13 @@ FUNCTION i600_menu()
          #darcy:2022/03/28 s---
          WHEN "confirmp"
             IF cl_chk_act_auth() THEN
-               CALL s_cbmp600(" 1=1 AND bma01 ='"||g_bma.bma01||"' AND bma06 = NVL('"||g_bma.bma06||"',' ') ")
+               IF cl_null(g_bma.bma01) THEN
+                  CALL cl_err("没有需要处理的资料","!",1)
+               ELSE
+                  CALL s_cbmp600(" 1=1 AND bma01 ='"||g_bma.bma01||"' AND bma06 = NVL('"||g_bma.bma06||"',' ') ")
+                  CALL i600sub_refresh(g_bma.bma01,g_bma.bma06) RETURNING g_bma.*
+                  CALL i600_show()
+               END IF
             END IF 
          #darcy:2022/03/28 e---
 
