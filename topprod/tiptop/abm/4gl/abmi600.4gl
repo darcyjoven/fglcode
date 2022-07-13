@@ -1223,6 +1223,13 @@ FUNCTION i600_menu()
                 CALL i600_copy() #ROLLBACK WORK #MOD-530690
                 LET g_bp_flag = "main"
             END IF
+         #darcy:2022/04/27 s---
+         WHEN "reproducep"
+            IF cl_chk_act_auth() THEN
+                CALL i600_copy_new() #ROLLBACK WORK #MOD-530690
+                LET g_bp_flag = "main"
+            END IF
+         #darcy:2022/04/27 e---
          #darcy:2022/03/28 s---
          WHEN "confirmp"
             IF cl_chk_act_auth() THEN
@@ -5470,6 +5477,12 @@ FUNCTION i600_bp(p_ud)
            LET g_action_choice="reproduce"
            EXIT DIALOG
 
+        #darcy:2022/04/27 s---
+        ON ACTION reproducep
+           LET g_action_choice="reproducep"
+           EXIT DIALOG
+        #darcy:2022/04/27 e---
+
        #ON ACTION output                          #TQC-AC0159
        #    LET g_action_choice="output"          #TQC-AC0159
        #    EXIT DIALOG                           #TQC-AC0159
@@ -5985,7 +5998,928 @@ FUNCTION i600c(p_bmb03)                                     #No:TQC-990023 add
    CALL cl_cmdrun(g_cmd)
 
 END FUNCTION
+# 定义cusor
+FUNCTION i600_copy_cur(ans_2,new_no)
+   DEFINE l_sql   STRING
+   DEFINE new_no  LIKE bmb_file.bmb03
+   DEFINE ans_2   LIKE type_file.dat
+   
+   # BOM 遍历
+   LET l_sql = "SELECT bma01,bma06,bmb03,bmb29 FROM bmb_file,bma_file  WHERE bma01 =bmb01 ",
+               " AND bma01 =? and bma06 = ? and bmaacti='Y' " 
+   IF ans_2 IS NOT NULL THEN
+      LET l_sql=l_sql CLIPPED,
+               " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+               " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+   END IF
+   PREPARE i600_bom_pre FROM l_sql
+   DECLARE i600_bom_dlc CURSOR FOR i600_bom_pre 
 
+   # 是否有下阶料
+
+   LET l_sql = "SELECT count(1) FROM bma_file WHERE bma01 = ? and bma06 = ? and bmaacti ='Y' "
+   PREPARE i600_bom_next_d FROM l_sql 
+   
+   # 检查半成品料件
+   drop table j;
+   CREATE TEMP TABLE j (
+      bmb01       varchar(40),
+      bmb03       varchar(40),
+      bmb03_new   varchar(40),
+      bmbcheck    varchar(1)
+   ) 
+   # 将半成品，插入到j表中
+   LET l_sql = " merge into j tablea using ( ", 
+               " SELECT bmb01,bmb03,SUBSTR('",new_no CLIPPED,"',1,9)||SUBSTR(bmb03,10) bmb03_new FROM bmb_file,bma_file",
+               " WHERE bmb01 = ?  and bmaacti ='Y' ",
+               # " AND bmb03 LIKE SUBSTR(bmb01,1,8)||'%'" 
+               " AND bma01 = bmb03 AND bma06 =bmb29"
+   IF ans_2 IS NOT NULL THEN
+      LET l_sql=l_sql CLIPPED,
+               " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+               " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL) "
+   END IF 
+
+   let l_sql = l_sql ," ) tableb on (tablea.bmb03 = tablea.bmb03 and tableb.bmb03_new = tablea.bmb03_new ) ",
+               " when not matched then insert (bmb01,bmb03,bmb03_new,bmbcheck) values (tableb.bmb01,tableb.bmb03,tableb.bmb03_new,'N') "
+   PREPARE i600_bom_rep_e FROM l_sql
+
+   LET l_sql = " SELECT bmb01,bmb03,bmb03_new FROM j where bmbcheck ='N' "
+   PREPARE i600_bom_rep FROM l_sql
+   DECLARE i600_bom_rep_d CURSOR FOR i600_bom_rep
+   
+   # 更新bmc_file 料件
+    
+   LET l_sql =  "UPDATE bmc_file  ",
+                " SET bmc021 = NVL((SELECT bmb03_new FROM j WHERE bmb03 =bmc021),bmc021)",
+                " WHERE bmc01 =? "
+   PREPARE i600_bom_bmc_upd FROM l_sql
+   #更新bmt_file 料件
+   LET l_sql =  "UPDATE bmt_file  ",
+                " SET bmt03 = NVL((SELECT bmb03_new FROM j WHERE bmb03 =bmt03),bmt03)",
+                " WHERE bmt01= ? "
+   PREPARE i600_bom_bmt_upd FROM l_sql
+
+   #更新bmd_file 料件
+   LET l_sql =  "UPDATE bmd_file ",
+                " SET bmd01 = NVL((SELECT bmb03_new FROM j WHERE bmb03 =bmd01),bmd01)",
+                " WHERE bmd08=? "
+   prepare i600_bom_bmd_upd from l_sql
+
+   #更新bmt_file 料件
+   LET l_sql =  "UPDATE bml_file ",
+                " SET bml01 = NVL((SELECT bmb03_new FROM j WHERE bmb03 =bml01),bml01)",
+                " WHERE bml02 = ? "
+   prepare i600_bom_bml_upd from l_sql
+
+
+   DROP TABLE w
+   select * from bmc_file where 1=2 into temp w
+   DROP TABLE w2
+   select * from bmt_file where 1=2 into temp w2
+   DROP TABLE z
+   select * from bml_file where 1=2 into temp z
+   DROP TABLE d
+   select * from bmd_file where 1=2 into temp d
+    DROP TABLE y
+   SELECT * FROM bma_file where 1=2 into temp y
+
+END FUNCTION
+#darcy:2022/04/27 add s---
+# 入口函数
+FUNCTION i600_copy_new()
+   DEFINE new_bma06,old_bma06 LIKE bma_file.bma06 #FUN-550014 add
+   DEFINE new_no,old_no LIKE bma_file.bma01,
+         l_bmb  RECORD LIKE bmb_file.*,
+         l_bmd  RECORD LIKE bmd_file.*,         #No:MOD-980229 add
+         l_bmv  RECORD LIKE bmv_file.*,         #No.FUN-840178
+         ef_date       LIKE type_file.dat,      #No.FUN-680096 DATE,
+         ans_1         LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         ans_2         LIKE type_file.dat,      #No.FUN-680096 DATE,
+         ans_3,ans_4   LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         ans_31,ans_5  LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         l_dir         LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         l_sql         STRING                   #LIKE type_file.chr1000   #No.FUN-680096 VARCHAR(400)  #MOD-6A0145
+   DEFINE l_n          LIKE type_file.num5      #No.FUN-920157
+   DEFINE l_icm  RECORD LIKE icm_file.*         #FUN-980033
+   DEFINE l_tree_arr_curr    LIKE type_file.num5
+   DEFINE l_input       LIKE type_file.chr1
+
+   CALL i600_copy_input() RETURNING old_no,old_bma06,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5,l_input
+   IF NOT l_input THEN 
+      RETURN
+   END IF
+   let new_no = new_no[1,10]
+   CALL i600_copy_cur(ans_2,new_no)
+   # BEGIN WORK 
+   CALL i600_copy_item(old_no,old_bma06,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
+      # RETURNING g_succ 
+   if g_success = 'N' then
+      return
+   end if
+   CALL i600_copy_bom(old_no,old_bma06,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
+   if g_success = 'Y' then
+      COMMIT WORK
+   else 
+      ROLLBACK Work
+   end if 
+END FUNCTION
+# 旧BOM复制为新BOM
+FUNCTION i600_copy_item(old_no,old_bma06,new_no2,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
+   DEFINE new_bma06,old_bma06 LIKE bma_file.bma06 #FUN-550014 add
+   DEFINE new_no,new_no2,old_no LIKE bma_file.bma01,
+         l_bmb  RECORD LIKE bmb_file.*,
+         l_bmd  RECORD LIKE bmd_file.*,         #No:MOD-980229 add
+         l_bmv  RECORD LIKE bmv_file.*,         #No.FUN-840178
+         ef_date       LIKE type_file.dat,      #No.FUN-680096 DATE,
+         ans_1         LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         ans_2         LIKE type_file.dat,      #No.FUN-680096 DATE,
+         ans_3,ans_4   LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         ans_31,ans_5  LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         l_dir         LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         l_sql         STRING                   #LIKE type_file.chr1000   #No.FUN-680096 VARCHAR(400)  #MOD-6A0145
+   DEFINE l_n          LIKE type_file.num5      #No.FUN-920157
+   DEFINE l_icm  RECORD LIKE icm_file.*         #FUN-980033
+   DEFINE l_tree_arr_curr    LIKE type_file.num5
+   DEFINE l_temp       STRING
+   DEFINE l_bmb01,l_bmb03,l_bmb03_new  LIKE bmb_file.bmb03
+
+   #解析新料件编号 s---
+   #AA0014F4AR => AA0014F4BR
+   #KK0002A4BR => KK0002A4BR
+   # 前十位全部被new_no2替换 
+   LET new_no = cl_replace_str(old_no,old_no[1,10],new_no2) 
+   #解析新料件编号 e---
+
+   #检查 s--- 
+   let g_cnt = 0
+   select count(1) into g_cnt from j where bmb01 = old_no  and bmbcheck='Y'
+   #  不需要bma06，因为j中已经是bma06 相同的了。
+   if g_cnt > 0 then
+   #  本次已经建立，不需要再次建立，跳过
+      return
+   end if
+
+   SELECT count(1) INTO g_cnt FROM bma_file WHERE bma01 = new_no and bma06 = new_bma06
+   IF g_cnt>0 THEN 
+      CALL cl_err('bma_file',-239,0) 
+      # NEXT FIELD new_no 
+      LET g_success = 'N' 
+      ROLLBACK WORK
+      return
+   END IF 
+   SELECT count(1) INTO g_cnt FROM bma_file WHERE bma01 = old_no and bma06 = old_bma06 AND bmaacti='Y'
+   IF g_cnt=0 THEN 
+      CALL cl_err('ima_file',100,0) 
+      # NEXT FIELD new_no 
+      LET g_success = 'N' 
+      ROLLBACK WORK
+      return
+   END IF
+
+   # 检查半成品料件是否建立 
+   EXECUTE i600_bom_rep_e USING old_no
+   IF STATUS THEN
+      CALL cl_err("i600_bom_rep_e",STATUS,1)
+      LET g_success = 'N' 
+      ROLLBACK WORK
+      return
+   END IF
+   FOREACH i600_bom_rep_d INTO l_bmb01,l_bmb03,l_bmb03_new
+      IF STATUS THEN
+         CALL cl_err("i600_bom_rep_d",STATUS,1)
+         LET g_success = 'N' 
+         ROLLBACK WORK
+         return
+      END IF  
+      # 1. 检查ima是否建立
+      select count(1) into g_cnt from ima_file where ima01 =l_bmb03_new and imaacti='Y'
+      IF g_cnt = 0 THEN 
+         CALL cl_err(l_bmb03_new,'cbm-010',0)
+         LET g_success = 'N' 
+         ROLLBACK WORK
+         return
+      END IF
+      # 2. 检查bmb是否已建立
+      SELECT count(1) INTO g_cnt FROM bma_file WHERE bma01 = l_bmb03_new and bma06 = new_bma06
+      IF g_cnt >=1 THEN
+         CALL cl_err(l_bmb03_new,'cbm-009',0)
+         LET g_success = 'N' 
+         ROLLBACK WORK
+         return
+      END IF 
+
+   END FOREACH 
+   
+   #检查 e---
+   
+   #說明資料是否復制ans_3
+   IF ans_3 = 'Y' THEN
+      delete from  w
+      LET l_sql = " SELECT bmc_file.* FROM bmc_file,bmb_file ",
+                  " WHERE bmb01 = bmc01 ",
+                  " AND   bmb29 = bmc06 ",  #FUN-550014 add
+                  " AND bmb02 = bmc02   ",
+                  " AND bmb03 = bmc021  ",
+                  " AND bmb04 = bmc03   ",
+                  " AND bmb01=  '",old_no,"'",
+                  " AND bmb29=  '",old_bma06,"'" #FUN-550014 add
+      IF ans_2 IS NOT NULL THEN
+         LET l_sql=l_sql CLIPPED,
+                  " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+                  " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+      END IF
+
+      # LET l_sql = l_sql clipped," INTO TEMP w "
+      let l_sql = "insert into w ",l_sql clipped
+      PREPARE i600_pbmc FROM l_sql
+      EXECUTE i600_pbmc
+      IF SQLCA.sqlcode THEN
+         CALL cl_err3("sel","bmc_file,bmb_file",old_no,old_bma06,SQLCA.sqlcode,"","i600_pbmc",1)  #No.TQC-660046
+         LET g_success = 'N'
+         ROLLBACK WORK
+         RETURN
+      END IF
+   END IF
+
+   #插件位置是否復制ans_31
+   IF ans_31 = 'Y' THEN
+      delete from  w2
+      LET l_sql = " SELECT bmt_file.* FROM bmt_file,bmb_file ",
+                  " WHERE bmb01 = bmt01 ",    #主件
+                  " AND bmb29 = bmt08   ",    #FUN-550014 add
+                  " AND bmb02 = bmt02   ",    #項次
+                  " AND bmb03 = bmt03   ",    #元件
+                  " AND bmb04 = bmt04   ",    #生效日
+                  " AND bmb01=  '",old_no,"'",
+                  " AND bmb29=  '",old_bma06,"'" #FUN-550014 add
+      IF ans_2 IS NOT NULL THEN
+         LET l_sql=l_sql CLIPPED,
+                  " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+                  " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+      END IF
+      # LET l_sql = l_sql clipped," INTO TEMP w2 "
+      let l_sql = "insert into w2 ",l_sql clipped
+      PREPARE i600_pbmt FROM l_sql
+      EXECUTE i600_pbmt
+      IF SQLCA.sqlcode THEN
+         CALL cl_err3("sel","bmt_file,bmb_file",old_no,old_bma06,SQLCA.sqlcode,"","i600_pbmt",1)  #No.TQC-660046
+         LET g_success = 'N'
+         ROLLBACK WORK
+         RETURN
+      END IF
+   END IF
+
+   #元件廠牌資料是否復制ans_4
+   IF ans_4 = 'Y' THEN
+      delete from  z
+      LET l_sql = " SELECT UNIQUE bml_file.* FROM bml_file,bmb_file ",
+                  " WHERE bmb01 = bml02 ",
+                  "   AND bmb03 = bml01 ",
+                  "   AND bmb01= '",old_no,"'"
+      IF ans_2 IS NOT NULL THEN
+         LET l_sql=l_sql CLIPPED,
+                  " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+                  " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+      END IF
+
+      # LET l_sql = l_sql clipped," INTO TEMP z "
+      let l_sql = "insert into z ",l_sql clipped
+      PREPARE i600_pbml FROM l_sql
+      EXECUTE i600_pbml
+      IF SQLCA.sqlcode THEN
+         CALL cl_err3("sel","bml_file,bmb_file",old_no,"",SQLCA.sqlcode,"","i600_pbmt",1)  #No.TQC-660046
+         LET g_success = 'N'
+         ROLLBACK WORK
+         RETURN
+      END IF
+   END IF
+
+   #取替代件是否復制ans_5
+   IF ans_5 = 'Y' THEN
+      delete from  d
+      LET l_sql = " SELECT bmd_file.* FROM bmd_file,bmb_file ",
+                  " WHERE bmb01 = bmd08 ",
+                  "   AND bmb03 = bmd01 ",
+                  "   AND bmb01= '",old_no,"'",
+                  "   AND bmb29= '",old_bma06,"'",        #No:MOD-980049 add
+                  "   AND bmdacti = 'Y'"                                           #CHI-910021
+      IF ans_2 IS NOT NULL THEN
+         LET l_sql=l_sql CLIPPED,
+                  " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+                  " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+      END IF
+      # LET l_sql = l_sql clipped," INTO TEMP d "
+      let l_sql = "insert into d ", l_sql clipped
+      PREPARE i600_pbmd FROM l_sql
+      EXECUTE i600_pbmd
+      IF SQLCA.sqlcode THEN
+         CALL cl_err('i600_pbmd',SQLCA.sqlcode,0)
+         LET g_success = 'N' 
+         ROLLBACK WORK #MOD-650016 add
+         RETURN
+      END IF
+   END IF
+
+   delete from  y
+   insert into y
+   SELECT * FROM bma_file
+    WHERE bma01=old_no
+      AND bma06=old_bma06 #FUN-550014 add
+   #   INTO TEMP y
+   #MOD-A30131 ---end---
+ 
+   LET g_success='Y'
+   IF cl_null(old_bma06) THEN LET old_bma06 = ' ' END IF #FUN-550014 add
+   IF cl_null(new_bma06) THEN LET new_bma06 = ' ' END IF #FUN-550014 add
+
+#-------------------- COPY BODY (bmc_file) ------------------------------
+   #說明資料是否復制ans_3
+   IF ans_3 = 'Y' THEN
+     #MOD-A30131 mark---start---
+     # DROP TABLE w
+     # LET l_sql = " SELECT bmc_file.* FROM bmc_file,bmb_file ",
+     #             " WHERE bmb01 = bmc01 ",
+     #             " AND   bmb29 = bmc06 ",  #FUN-550014 add
+     #             " AND bmb02 = bmc02   ",
+     #             " AND bmb03 = bmc021  ",
+     #             " AND bmb04 = bmc03   ",
+     #             " AND bmb01=  '",old_no,"'",
+     #             " AND bmb29=  '",old_bma06,"'" #FUN-550014 add
+     # IF ans_2 IS NOT NULL THEN
+     #    LET l_sql=l_sql CLIPPED,
+     #             " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+     #             " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+     # END IF
+     #
+     # LET l_sql = l_sql clipped," INTO TEMP w "
+     # PREPARE i600_pbmc FROM l_sql
+     # EXECUTE i600_pbmc
+     # IF SQLCA.sqlcode THEN
+     #    CALL cl_err3("sel","bmc_file,bmb_file",old_no,old_bma06,SQLCA.sqlcode,"","i600_pbmc",1)  #No.TQC-660046
+     #    LET g_success = 'N'
+     #    ROLLBACK WORK
+     #    RETURN
+     # END IF
+     #MOD-A30131 mark---end---
+     #将说明中的下阶料中半成品替换 s---
+     
+     #将说明中的下阶料中半成品替换 e---
+      CASE
+         WHEN ans_1 ='2'
+            UPDATE w SET bmc03 = g_today
+         WHEN ans_1 ='3'
+            UPDATE w SET bmc03 = ef_date
+      END CASE
+
+      
+      UPDATE w SET bmc01=new_no,
+                   bmc06=new_bma06 #FUN-550014 add
+      INSERT INTO bmc_file SELECT * FROM w
+      IF STATUS OR SQLCA.SQLCODE THEN
+         CALL cl_err3("ins","bmc_file",new_no,new_bma06,SQLCA.sqlcode,"","ins bmc",1)  #No.TQC-660046
+         LET g_success = 'N'
+         ROLLBACK WORK
+         RETURN
+      END IF
+      EXECUTE i600_bom_bmc_upd USING new_no
+      IF STATUS THEN 
+         CALL cl_err("i600_bom_bmc_upd","!",1)
+         LET g_success = 'N' 
+         ROLLBACK WORK
+         return
+      END IF
+      LET g_cnt=SQLCA.SQLERRD[3]
+      MESSAGE '(',g_cnt USING '##&',') ROW of (',new_no,') O.K'
+   END IF
+#-------------------- COPY BODY (bmt_file) ------------------------------
+   #插件位置是否復制ans_31
+   IF ans_31 = 'Y' THEN
+     #MOD-A30131 mark---start---
+     # DROP TABLE w2
+     # LET l_sql = " SELECT bmt_file.* FROM bmt_file,bmb_file ",
+     #             " WHERE bmb01 = bmt01 ",    #主件
+     #             " AND bmb29 = bmt08   ",    #FUN-550014 add
+     #             " AND bmb02 = bmt02   ",    #項次
+     #             " AND bmb03 = bmt03   ",    #元件
+     #             " AND bmb04 = bmt04   ",    #生效日
+     #             " AND bmb01=  '",old_no,"'",
+     #             " AND bmb29=  '",old_bma06,"'" #FUN-550014 add
+     # IF ans_2 IS NOT NULL THEN
+     #    LET l_sql=l_sql CLIPPED,
+     #             " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+     #             " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+     # END IF
+     # LET l_sql = l_sql clipped," INTO TEMP w2 "
+     # PREPARE i600_pbmt FROM l_sql
+     # EXECUTE i600_pbmt
+     # IF SQLCA.sqlcode THEN
+     #    CALL cl_err3("sel","bmt_file,bmb_file",old_no,old_bma06,SQLCA.sqlcode,"","i600_pbmt",1)  #No.TQC-660046
+     #    LET g_success = 'N'
+     #    ROLLBACK WORK
+     #    RETURN
+     # END IF
+     #MOD-A30131 mark---end---
+      CASE
+         WHEN ans_1 ='2'
+            UPDATE w2 SET bmt04 = g_today
+         WHEN ans_1 ='3'
+            UPDATE w2 SET bmt04 = ef_date
+      END CASE
+      
+
+      UPDATE w2 SET bmt01=new_no,
+                    bmt08=new_bma06 #FUN-550014 add
+      INSERT INTO bmt_file SELECT * FROM w2
+      IF STATUS OR SQLCA.SQLCODE THEN
+         CALL cl_err3("ins","bmt_file",new_no,new_bma06,SQLCA.sqlcode,"","ins bmt",1)  #No.TQC-660046
+         LET g_success = 'N'
+         ROLLBACK WORK
+         RETURN
+      END IF
+      EXECUTE i600_bom_bmt_upd USING new_no
+      IF STATUS THEN 
+         CALL cl_err("i600_bom_bmt_upd","!",1)
+         LET g_success = 'N' 
+         ROLLBACK WORK
+         return
+      END IF
+
+      LET g_cnt=SQLCA.SQLERRD[3]
+      MESSAGE '(',g_cnt USING '##&',') ROW of (',new_no,') O.K'
+   END IF
+#-------------------- COPY BODY (bml_file) ------------------------------
+   #元件廠牌資料是否復制ans_4
+   IF ans_4 = 'Y' THEN
+     #MOD-A30131 mark---start---
+     # DROP TABLE z
+     # LET l_sql = " SELECT UNIQUE bml_file.* FROM bml_file,bmb_file ",
+     #             " WHERE bmb01 = bml02 ",
+     #             "   AND bmb03 = bml01 ",
+     #             "   AND bmb01= '",old_no,"'"
+     # IF ans_2 IS NOT NULL THEN
+     #    LET l_sql=l_sql CLIPPED,
+     #             " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+     #             " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+     # END IF
+     #
+     # LET l_sql = l_sql clipped," INTO TEMP z "
+     # PREPARE i600_pbml FROM l_sql
+     # EXECUTE i600_pbml
+     # IF SQLCA.sqlcode THEN
+     #    CALL cl_err3("sel","bml_file,bmb_file",old_no,"",SQLCA.sqlcode,"","i600_pbmt",1)  #No.TQC-660046
+     #    LET g_success = 'N'
+     #    ROLLBACK WORK
+     #    RETURN
+     # END IF
+     #MOD-A30131 mark---end---
+
+      
+
+      UPDATE z SET bml02=new_no
+      INSERT INTO bml_file SELECT * FROM z
+      IF STATUS OR SQLCA.SQLCODE THEN
+         CALL cl_err3("ins","bml_file",new_no,"",SQLCA.sqlcode,"","ins bml",1)  #No.TQC-660046
+         LET g_success = 'N'
+         ROLLBACK WORK
+         RETURN
+      END IF
+      EXECUTE i600_bom_bml_upd USING new_no
+      IF STATUS THEN 
+         CALL cl_err("i600_bom_bml_upd","!",1)
+         LET g_success = 'N' 
+         ROLLBACK WORK
+         return
+      END IF
+      LET g_cnt=SQLCA.SQLERRD[3]
+      MESSAGE '(',g_cnt USING '##&',') ROW of (',new_no,') O.K'
+   END IF
+#------------------ COPY (bmd_file) NO:0587 add in 99/10/01 By Kammy--
+   #取替代件是否復制ans_5
+   IF ans_5 = 'Y' THEN
+     #MOD-A30131 mark---start---
+     # DROP TABLE d
+     # LET l_sql = " SELECT bmd_file.* FROM bmd_file,bmb_file ",
+     #             " WHERE bmb01 = bmd08 ",
+     #             "   AND bmb03 = bmd01 ",
+     #             "   AND bmb01= '",old_no,"'",
+     #             "   AND bmb29= '",old_bma06,"'",        #No:MOD-980049 add
+     #             "   AND bmdacti = 'Y'"                                           #CHI-910021
+     # IF ans_2 IS NOT NULL THEN
+     #    LET l_sql=l_sql CLIPPED,
+     #             " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+     #             " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+     # END IF
+     # LET l_sql = l_sql clipped," INTO TEMP d "
+     # PREPARE i600_pbmd FROM l_sql
+     # EXECUTE i600_pbmd
+     # IF SQLCA.sqlcode THEN
+     #    CALL cl_err('i600_pbmd',SQLCA.sqlcode,0)
+     #    ROLLBACK WORK #MOD-650016 add
+     #    RETURN
+     # END IF
+     #MOD-A30131 mark---end---
+
+    IF old_no = new_no AND old_bma06 != new_bma06 THEN  #TQC-610025
+    ELSE                                               #TQC-610025
+      # EXECUTE i600_bom_bmd_upd
+      # IF STATUS THEN 
+      #    CALL cl_err("i600_bom_bmd_upd","!",1)
+      #    ROLLBACK WORK
+      # END IF
+
+      UPDATE d SET bmd08=new_no
+      DECLARE i600_cbmd_new CURSOR FOR SELECT * FROM d
+      FOREACH i600_cbmd_new INTO l_bmd.*
+#MOD-B90133 -- begin --
+         CASE ans_1
+            WHEN '2'   #系統日
+               LET l_bmd.bmd05 = g_today
+            WHEN '3'   #人為輸入
+               LET l_bmd.bmd05 = ef_date
+         END CASE
+#MOD-B90133 -- end -- 
+          SELECT bmb03_new INTO l_bmd.bmd01 FROM j WHERE bmb03 = l_bmd.bmd01
+
+          LET l_bmd.bmdoriu = g_user      #No.FUN-980030 10/01/04
+          LET l_bmd.bmdorig = g_grup      #No.FUN-980030 10/01/04
+          IF cl_null(l_bmd.bmd11) THEN LET l_bmd.bmd11 = 'N' END IF      #TQC-C20131  add
+          INSERT INTO bmd_file VALUES(l_bmd.*)
+          IF STATUS OR SQLCA.SQLCODE THEN
+              IF cl_sql_dup_value(SQLCA.SQLCODE) THEN
+              ELSE
+                 CALL cl_err('ins bmd: ',SQLCA.SQLCODE,1)
+                 LET g_success = 'N'
+                 ROLLBACK WORK
+                 RETURN
+              END IF             #No:MOD-980229 add
+          END IF
+          LET g_cnt=SQLCA.SQLERRD[3]
+          MESSAGE '(',g_cnt USING '##&',') ROW of (',new_no,') O.K'
+      END FOREACH            #No:MOD-980229 add
+   END IF
+   END IF                                             #TQC-610025
+#-------------------- COPY HEAD (bma_file) ------------------------------
+  #MOD-A30131 mark---start---
+  # DROP TABLE y
+  # SELECT * FROM bma_file
+  #  WHERE bma01=old_no
+  #    AND bma06=old_bma06 #FUN-550014 add
+  #   INTO TEMP y
+  #MOD-A30131 mark---end---
+   UPDATE y
+       SET bma01=new_no,     #新的鍵值
+           bma06=new_bma06,  #FUN-550014 add
+           bma05=NULL,       #發放日
+           bmauser=g_user,   #資料所有者
+           bmagrup=g_grup,   #資料所有者所屬群
+           bmamodu=NULL,     #資料修改日期
+           bmadate=g_today,  #資料建立日期
+           bma08  =g_plant,  #No.FUN-7C0010
+           bma09  =0,        #No.FUN-7C0010
+           bma10 = '0',      #開立狀態     #NO.FUN-810014
+           bmaacti='Y'       #有效資料
+   INSERT INTO bma_file SELECT * FROM y
+   IF STATUS OR SQLCA.SQLCODE THEN
+      CALL cl_err('ins bma: ',SQLCA.SQLCODE,1)
+      LET g_success = 'N'
+      ROLLBACK WORK
+      RETURN
+   END IF
+#-------------------- COPY BODY (bmb_file) ------------------------------
+   #DROP TABLE x #MOD-A30131 mark
+   LET l_sql = " SELECT * FROM bmb_file WHERE bmb01='",old_no,"'",
+                                       "  AND bmb29='",old_bma06,"'" #FUN-550014 add
+      IF ans_2 IS NOT NULL THEN
+         LET l_sql=l_sql CLIPPED,
+                  " AND (bmb04 <='",ans_2,"' OR bmb04 IS NULL)",
+                  " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
+      END IF
+   PREPARE i600_pbmb_new FROM l_sql
+   DECLARE i600_cbmb_new CURSOR FOR i600_pbmb_new
+   FOREACH i600_cbmb_new INTO l_bmb.*
+      IF SQLCA.SQLCODE THEN CALL cl_err('sel bmb:',SQLCA.SQLCODE,0)
+         EXIT FOREACH
+      END IF
+      # 替换bmb03 
+      SELECT bmb03_new INTO l_bmb.bmb03  FROM j WHERE bmb03 = l_bmb.bmb03 
+
+      LET l_bmb.bmb01 = new_no
+      LET l_bmb.bmb29 = new_bma06 #FUN-550014 add
+      LET l_bmb.bmb24=null
+      IF ans_1 = '2' THEN LET l_bmb.bmb04 = g_today END IF
+      IF ans_1 = '3' THEN LET l_bmb.bmb04 = ef_date END IF
+      #若有效日期未指定, 且生效日不使用原生效日時, 必須將失效日清null
+      #否則可能產生 生效日 > 失效日之情況
+      IF cl_null(ans_2) AND ans_1 <> '1' THEN
+         LET l_bmb.bmb05=null
+      END IF
+      IF cl_null(l_bmb.bmb28) THEN LET l_bmb.bmb28 = 0 END IF
+      IF ans_31 = 'N' THEN
+          LET l_bmb.bmb13 = NULL
+      END IF
+       LET l_bmb.bmb33 = '0'
+      INSERT INTO bmb_file VALUES(l_bmb.*)
+      IF SQLCA.SQLCODE <> 0 THEN
+         CALL cl_err3("ins","bmb_file",l_bmb.bmb01,l_bmb.bmb02,"mfg-001","","",1)  #No.TQC-660046
+         LET g_success = 'N'
+         EXIT FOREACH
+      END IF
+      IF s_industry('icd')  THEN
+         SELECT COUNT(*) INTO l_n FROM icm_file       #FUN-980033
+          WHERE icm01 = l_bmb.bmb03 AND icm02 = l_bmb.bmb01 #FUN-980033
+         IF l_n = 0 THEN
+            INITIALIZE l_icm.* TO NULL
+            LET l_icm.icm01 = l_bmb.bmb03
+            LET l_icm.icm02 = l_bmb.bmb01
+            LET l_icm.icmacti = 'Y'
+            LET l_icm.icmdate = g_today
+            LET l_icm.icmgrup = g_grup
+            LET l_icm.icmmodu = ''
+            LET l_icm.icmuser = g_user
+            LET l_icm.icmoriu = g_user      #No.FUN-980030 10/01/04
+            LET l_icm.icmorig = g_grup      #No.FUN-980030 10/01/04
+            INSERT INTO icm_file VALUES (l_icm.*)
+           IF SQLCA.sqlcode THEN
+            CALL cl_err3("ins","icm_file",l_bmb.bmb01,l_bmb.bmb03,SQLCA.sqlcode,"","",1)
+            LET g_success = 'N'
+            EXIT FOREACH
+           END IF
+         END IF
+      END IF
+      LET g_wsw03 = l_bmb.bmb01 CLIPPED ,"|",l_bmb.bmb02 CLIPPED
+      CASE aws_mdmdata('bmb_file','insert',g_wsw03,base.TypeInfo.create(l_bmb),'CreateBOMData') #FUN-890113
+         WHEN 0  #無與 MDM 整合
+           MESSAGE 'INSERT O.K'
+         WHEN 1  #呼叫 MDM 成功
+           MESSAGE 'INSERT O.K, INSERT MDM O.K'
+         WHEN 2  #呼叫 MDM 失敗
+           LET g_success = 'N' 
+           ROLLBACK WORK
+           return
+      END CASE
+   END FOREACH
+#-------------------- 復制固定屬性  (bmv_file) ------------------------------
+  IF s_industry('slk') THEN
+   LET l_sql = " SELECT * FROM bmv_file WHERE bmv01='",old_no,"'",
+                                       "  AND bmv03='",old_bma06,"'"
+   PREPARE i600_pbmv_new FROM l_sql
+   DECLARE i600_cbmv_new CURSOR FOR i600_pbmv_new
+   FOREACH i600_cbmv_new INTO l_bmv.*
+      IF SQLCA.SQLCODE THEN CALL cl_err('sel bmv:',SQLCA.SQLCODE,0)
+         EXIT FOREACH
+      END IF
+      LET l_bmv.bmv01 = new_no
+      # 替换bmv02
+      SELECT bmb03_new INTO l_bmv.bmv02 FROM j WHERE bmb03 = l_bmv.bmv02
+      LET l_bmv.bmv03 = new_bma06
+      INSERT INTO bmv_file VALUES(l_bmv.*)
+      IF SQLCA.SQLCODE <> 0 THEN
+         CALL cl_err3("ins","bmv_file",l_bmv.bmv01,l_bmv.bmv02,"mfg-001","","",1)
+         LET g_success = 'N'
+         EXIT FOREACH
+      END IF
+   END FOREACH
+  END IF 
+
+  update j set bmbcheck ='Y'  # 更新成功就将状态更新为Y
+
+END FUNCTION 
+# 输入必要条件
+FUNCTION i600_copy_input()
+   DEFINE new_bma06,old_bma06 LIKE bma_file.bma06 #FUN-550014 add
+   DEFINE new_no,old_no LIKE bma_file.bma01,
+         l_bmb  RECORD LIKE bmb_file.*,
+         l_bmd  RECORD LIKE bmd_file.*,         #No:MOD-980229 add
+         l_bmv  RECORD LIKE bmv_file.*,         #No.FUN-840178
+         ef_date       LIKE type_file.dat,      #No.FUN-680096 DATE,
+         ans_1         LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         ans_2         LIKE type_file.dat,      #No.FUN-680096 DATE,
+         ans_3,ans_4   LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         ans_31,ans_5  LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         l_dir         LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         l_sql         STRING                   #LIKE type_file.chr1000   #No.FUN-680096 VARCHAR(400)  #MOD-6A0145
+   DEFINE l_n          LIKE type_file.num5      #No.FUN-920157
+   DEFINE l_icm  RECORD LIKE icm_file.*         #FUN-980033
+   DEFINE l_tree_arr_curr    LIKE type_file.num5
+   
+   IF s_shut(0) THEN RETURN END IF
+#MOD-B90133 -- begin --
+   IF g_bma.bmaacti = 'N' THEN
+      CALL cl_err('','atm-306',0)
+      RETURN
+   END IF
+#MOD-B90133 -- end --
+
+   LET p_row = 10 LET p_col = 24
+   OPEN WINDOW i600_c_w AT p_row,p_col WITH FORM "abm/42f/abmi600_c"
+    ATTRIBUTE (STYLE = g_win_style CLIPPED) #No.FUN-580092 HCN
+
+   CALL cl_ui_locale("abmi600_c")
+
+    CALL cl_set_comp_visible("old_bma06,new_bma06",g_sma.sma118='Y')
+
+
+   LET old_no   = g_bma.bma01 LET new_no = NULL
+   LET old_bma06= g_bma.bma06
+   IF cl_null(old_bma06) THEN LET old_bma06 = ' ' END IF   #MOD-920012
+   LET new_bma06 = ' ' #FUN-550014
+   LET ans_1  = '1'         LET ans_2  = TODAY
+   LET ans_3  = 'Y'         LET ans_4  = 'Y'
+   LET ans_31 = 'Y'         LET ef_date= NULL
+   LET ans_5  = 'Y'
+   CALL cl_set_head_visible("","YES")             #No.FUN-6B0033
+   INPUT BY NAME old_no,old_bma06,new_no,new_bma06,ans_2,ans_1,ef_date,ans_3,ans_31,ans_4,ans_5 #FUN-550014 add bma06
+               WITHOUT DEFAULTS
+      BEFORE INPUT
+         LET g_before_input_done = FALSE
+         CALL i600_set_entry()
+         CALL i600_set_no_entry()
+         CALL i600_set_required(ans_1)
+         CALL i600_set_no_required(ans_1)
+         LET g_before_input_done = TRUE
+
+      AFTER FIELD old_no
+        IF g_sma.sma118 != 'Y' THEN #FUN-550014 add if 判斷
+            IF NOT cl_null(new_no) THEN
+               CALL s_field_chk(new_no,'2',g_plant,'bma01') RETURNING g_flag2
+               IF g_flag2 = '0' THEN
+                  CALL cl_err(new_no,'aoo-043',1)
+                  NEXT FIELD new_no
+               END IF
+            END IF
+            IF NOT cl_null(old_no) THEN
+                SELECT count(*) INTO g_cnt FROM bma_file WHERE bma01 = old_no
+                                                           AND bma06 = old_bma06 #FUN-550014 add
+                IF g_cnt=0 THEN CALL cl_err('bma_file',100,0) NEXT FIELD old_no END IF
+            END IF
+        END IF
+      AFTER FIELD old_bma06
+        IF cl_null(old_bma06) THEN
+            LET old_bma06 = ' '
+        END IF
+        IF NOT cl_null(old_no) THEN
+            SELECT count(*) INTO g_cnt FROM bma_file WHERE bma01 = old_no
+                                                       AND bma06 = old_bma06 #FUN-550014 add
+            IF g_cnt=0 THEN CALL cl_err('bma_file',100,0) NEXT FIELD old_no END IF
+        END IF
+      AFTER FIELD new_no
+        IF g_sma.sma118 != 'Y' THEN #FUN-550014 add if 判斷
+            IF NOT cl_null(new_no) THEN
+                SELECT count(*) INTO g_cnt FROM bma_file WHERE bma01 = new_no
+                                                           AND bma06 = new_bma06 #FUN-550014 add
+                IF g_cnt>0 THEN CALL cl_err('bma_file',-239,0) NEXT FIELD new_no END IF
+                SELECT count(*) INTO g_cnt FROM ima_file WHERE ima01 = new_no
+                IF g_cnt=0 THEN CALL cl_err('ima_file',100,0) NEXT FIELD new_no END IF
+
+                LET g_errno = ''
+                CALL i600_new_no(new_no)
+                IF NOT cl_null(g_errno) THEN
+                   CALL cl_err(new_no,g_errno,0)
+                   NEXT FIELD new_no
+                END IF
+
+            END IF
+        END IF
+      AFTER FIELD new_bma06
+        IF cl_null(new_bma06) THEN
+            LET new_bma06 = ' '
+        END IF
+        IF NOT cl_null(new_no) THEN
+            SELECT count(*) INTO g_cnt FROM bma_file WHERE bma01 = new_no
+                                                       AND bma06 = new_bma06 #FUN-550014 add
+            IF g_cnt>0 THEN CALL cl_err('bma_file',-239,0) NEXT FIELD new_no END IF
+            SELECT count(*) INTO g_cnt FROM ima_file WHERE ima01 = new_no
+            IF g_cnt=0 THEN CALL cl_err('ima_file',100,0) NEXT FIELD new_no END IF
+            IF LENGTH(new_no) <> LENGTH(old_no) THEN  
+               CALL cl_err(LENGTH(new_no),'cbm-008',0)
+               NEXT FIELD new_no
+            END IF 
+        END IF
+      ON CHANGE ans_1
+        IF ans_1 != '3' THEN
+            CALL i600_set_no_entry()
+            CALL i600_set_no_required(ans_1)
+            LET ef_date = NULL
+        ELSE
+            CALL i600_set_entry()
+            CALL i600_set_required(ans_1)
+        END IF
+      AFTER FIELD ans_1
+        IF NOT cl_null(ans_1) THEN
+            IF ans_1 NOT MATCHES "[123]" THEN NEXT FIELD ans_1 END IF
+        END IF
+
+      AFTER FIELD ans_3
+        IF NOT cl_null(ans_3) THEN
+            IF ans_3 NOT MATCHES "[YN]" THEN NEXT FIELD ans_3 END IF
+        END IF
+
+      AFTER FIELD ans_31
+        IF NOT cl_null(ans_31) THEN
+            IF ans_31 NOT MATCHES "[YN]" THEN NEXT FIELD ans_31 END IF
+        END IF
+
+      AFTER FIELD ans_4
+        IF NOT cl_null(ans_4) THEN
+            IF ans_4 NOT MATCHES "[YN]" THEN NEXT FIELD ans_4 END IF
+        END IF
+
+      AFTER FIELD ans_5
+        IF NOT cl_null(ans_5) THEN
+            IF ans_5 NOT MATCHES "[YN]" THEN NEXT FIELD ans_5 END IF
+        END IF
+      AFTER FIELD ef_date
+        IF cl_null(ef_date) THEN
+            NEXT FIELD ef_date
+        END IF
+
+      ON ACTION CONTROLP
+         CASE
+            WHEN INFIELD(new_no)
+#FUN-AA0059 --Begin--
+             #  CALL cl_init_qry_var()
+             #  LET g_qryparam.form = "q_ima"
+             #  CALL cl_create_qry() RETURNING new_no
+               CALL q_sel_ima(FALSE, "q_ima", "", "", "", "", "", "" ,"",'' )  RETURNING new_no
+#FUN-AA0059 --End--
+               NEXT FIELD new_no
+            OTHERWISE EXIT CASE
+         END CASE
+
+      ON ACTION controlg       #TQC-860021
+         CALL cl_cmdask()      #TQC-860021
+
+      ON IDLE g_idle_seconds
+         CALL cl_on_idle()
+         CONTINUE INPUT
+
+      ON ACTION about          #TQC-860021
+         CALL cl_about()       #TQC-860021
+
+      ON ACTION help           #TQC-860021
+         CALL cl_show_help()   #TQC-860021
+   END INPUT
+   CLOSE WINDOW i600_c_w
+   #TODO: 需要判断推出时机
+   IF INT_FLAG THEN LET INT_FLAG = 0 RETURN '','','','','','','','','','','',FALSE END IF
+   MESSAGE ' COPY.... ' 
+   RETURN  old_no,old_bma06,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5,TRUE
+END FUNCTION
+# 遍历全部结构
+FUNCTION i600_copy_bom(old_no,old_bma06,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
+   DEFINE new_bma06,old_bma06 LIKE bma_file.bma06 #FUN-550014 add
+   DEFINE new_no,old_no LIKE bma_file.bma01,
+         l_bmb  RECORD LIKE bmb_file.*,
+         l_bmd  RECORD LIKE bmd_file.*,         #No:MOD-980229 add
+         l_bmv  RECORD LIKE bmv_file.*,         #No.FUN-840178
+         ef_date       LIKE type_file.dat,      #No.FUN-680096 DATE,
+         ans_1         LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         ans_2         LIKE type_file.dat,      #No.FUN-680096 DATE,
+         ans_3,ans_4   LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         ans_31,ans_5  LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         l_dir         LIKE type_file.chr1,     #No.FUN-680096 VARCHAR(1),
+         l_sql         STRING                   #LIKE type_file.chr1000   #No.FUN-680096 VARCHAR(400)  #MOD-6A0145
+   DEFINE l_n          LIKE type_file.num5      #No.FUN-920157
+   DEFINE l_icm  RECORD LIKE icm_file.*         #FUN-980033
+   DEFINE l_tree_arr_curr    LIKE type_file.num5
+   DEFINE l_copy   DYNAMIC ARRAY OF  RECORD
+               bma01       LIKE bma_file.bma01,
+               bma06       LIKE bma_file.bma06,
+               bmb03       LIKE bmb_file.bmb03,
+               bmb29       LIKE bmb_file.bmb29
+                  #TODO: l_copy
+               END RECORD
+   DEFINE l_i     LIKE type_file.num5
+   LET g_cnt = 1 
+   FOREACH i600_bom_dlc USING old_no,old_bma06 INTO l_copy[g_cnt].*
+      IF STATUS THEN
+
+      END IF
+      LET g_cnt=g_cnt+1
+   END FOREACH
+
+   FOR l_i = 1 TO l_copy.getlength()
+
+      LET g_cnt = 0 
+      EXECUTE i600_bom_next_d USING l_copy[l_i].bmb03,l_copy[l_i].bmb29 INTO g_cnt
+     
+      IF g_cnt > 0 THEN 
+         #TODO: bom->COPY
+         CALL i600_copy_item(l_copy[l_i].bmb03,l_copy[l_i].bmb29,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
+         if g_success ='N' then 
+            return
+         end if
+         #TODO: bom->copy
+         CALL i600_copy_bom(l_copy[l_i].bmb03,l_copy[l_i].bmb29,new_no,new_bma06,ans_1,ans_2,ef_date,ans_3,ans_31,ans_4,ans_5)
+         if g_success ='N' then 
+            return
+         end if
+      END IF
+   END FOR 
+
+END FUNCTION
+#darcy:2022/04/27 add e---
 FUNCTION i600_copy()
    DEFINE new_bma06,old_bma06 LIKE bma_file.bma06 #FUN-550014 add
    DEFINE new_no,old_no LIKE bma_file.bma01,
@@ -6183,8 +7117,8 @@ IF cl_sure(0,0) THEN
       END IF
 
       LET l_sql = l_sql clipped," INTO TEMP w "
-      PREPARE i600_pbmc FROM l_sql
-      EXECUTE i600_pbmc
+      PREPARE i600_pbmc_new FROM l_sql
+      EXECUTE i600_pbmc_new
       IF SQLCA.sqlcode THEN
          CALL cl_err3("sel","bmc_file,bmb_file",old_no,old_bma06,SQLCA.sqlcode,"","i600_pbmc",1)  #No.TQC-660046
          LET g_success = 'N'
@@ -6210,8 +7144,8 @@ IF cl_sure(0,0) THEN
                   " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
       END IF
       LET l_sql = l_sql clipped," INTO TEMP w2 "
-      PREPARE i600_pbmt FROM l_sql
-      EXECUTE i600_pbmt
+      PREPARE i600_pbmt_new FROM l_sql
+      EXECUTE i600_pbmt_new
       IF SQLCA.sqlcode THEN
          CALL cl_err3("sel","bmt_file,bmb_file",old_no,old_bma06,SQLCA.sqlcode,"","i600_pbmt",1)  #No.TQC-660046
          LET g_success = 'N'
@@ -6234,8 +7168,8 @@ IF cl_sure(0,0) THEN
       END IF
 
       LET l_sql = l_sql clipped," INTO TEMP z "
-      PREPARE i600_pbml FROM l_sql
-      EXECUTE i600_pbml
+      PREPARE i600_pbml_new FROM l_sql
+      EXECUTE i600_pbml_new
       IF SQLCA.sqlcode THEN
          CALL cl_err3("sel","bml_file,bmb_file",old_no,"",SQLCA.sqlcode,"","i600_pbmt",1)  #No.TQC-660046
          LET g_success = 'N'
@@ -6259,10 +7193,11 @@ IF cl_sure(0,0) THEN
                   " AND (bmb05 > '",ans_2,"' OR bmb05 IS NULL)"
       END IF
       LET l_sql = l_sql clipped," INTO TEMP d "
-      PREPARE i600_pbmd FROM l_sql
-      EXECUTE i600_pbmd
+      PREPARE i600_pbmd_new FROM l_sql
+      EXECUTE i600_pbmd_new
       IF SQLCA.sqlcode THEN
          CALL cl_err('i600_pbmd',SQLCA.sqlcode,0)
+         LET g_success = 'N' 
          ROLLBACK WORK #MOD-650016 add
          RETURN
       END IF
@@ -9167,6 +10102,8 @@ DEFINE l_imadate  LIKE ima_file.imadate
             CALL cl_on_idle()
             CONTINUE INPUT
  
+#  
+
           ON ACTION about         #MOD-4C0121
              CALL cl_about()      #MOD-4C0121
  
