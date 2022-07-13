@@ -1247,6 +1247,7 @@ FUNCTION s_cbmp600_get_recipient()
                       "w.wang@forewin-sz.com.cn;",     #王委
                       "weixing.li@forewin-sz.com.cn;", #李卫星
                       "lusi.cheng@forewin-sz.com.cn;", #程露思
+                      "mc23@forewin-sz.com.cn;", #孙俊英  darcy:2022/07/12
                       "darcy.li@forewin-sz.com.cn;"
     LET l_reciplist=  "liao.xia@forewin-sz.com.cn;"    #下料
     
