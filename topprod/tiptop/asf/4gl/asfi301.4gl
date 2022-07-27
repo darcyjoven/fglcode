@@ -894,7 +894,6 @@ MAIN
    
       CALL cl_ui_init()
    END IF
-   
    CALL aws_efapp_toolbar()      #建立簽核模式時的 toolbar icon
 #FUN-A50032 mod str ----
 #  CALL aws_efapp_flowaction("insert, modify, delete, detail, query, locale, void, confirm,
@@ -1781,6 +1780,12 @@ DEFINE l_ret        RECORD
              END IF    
           END IF 
 #str----end by huanglf161012
+         #darcy:2022/07/13 s---
+         WHEN "hold"
+            if cl_chk_act_auth() then
+               call asfi301_hold()
+            end if
+         #darcy:2022/07/13 e---
  
          WHEN "confirm"
             IF cl_chk_act_auth() THEN  
@@ -7940,6 +7945,12 @@ FUNCTION i301_bp(p_ud)
       ON ACTION po_bl #批量工单补料
          LET g_action_choice="po_bl"
          EXIT DISPLAY        
+
+      #darcy:2022/07/13 s---
+      ON ACTION hold
+         LET g_action_choice="hold"
+         EXIT DISPLAY
+      #darcy:2022/07/13 e---
  
       &include "qry_string.4gl"
  
@@ -13636,3 +13647,95 @@ FUNCTION i301_upd_sfbdate(p_sfb01)
    END IF 
    RETURN TRUE
 END FUNCTION
+
+#darcy:2022/07/13 s---
+function asfi301_hold ()
+   define tc_sfaa record
+            tc_sfaa01  like type_file.chr30,
+            tc_sfaa02  like type_file.num15_3,
+            tc_sfaa03  like type_file.dat,
+            tc_sfaa04  like type_file.chr1000
+            end record
+   define l_sfb08      like sfb_file.sfb08
+   define l_cnt        like type_file.num5
+   
+   
+   if cl_null(g_sfb.sfb01) then
+      return
+   end if
+
+   open window asfi310i at 1,1 with form "asf/42f/asfi301i"
+                 attribute (style = g_win_style clipped)
+   call cl_ui_init()
+
+   let tc_sfaa.tc_sfaa01 = g_sfb.sfb01
+
+   select tc_sfaa02,tc_sfaa04 into tc_sfaa.tc_sfaa02,tc_sfaa.tc_sfaa04
+     from tc_sfaa_file
+    where tc_sfaa01 = g_sfb.sfb01 and tc_sf
+   
+   if cl_null(tc_sfaa.tc_sfaa02) then
+      let tc_sfaa.tc_sfaa02 = 0
+   end if
+
+   input by name tc_sfaa.tc_sfaa02,tc_sfaa.tc_sfaa04
+   without defaults attributes ( unbuffered )
+
+      on change tc_sfaa02
+         if not cl_null(tc_sfaa.tc_sfaa02) then
+            if tc_sfaa.tc_sfaa02 < 0 then
+               call cl_err("不得小于0","!",1)
+               next field tc_sfaa02
+            end if
+            # 数量不得大于工单数量
+            select sfb08 into l_sfb08 from sfb_file 
+             where sfb01 = g_sfb.sfb01
+            if cl_null(l_sfb08) then let l_sfb08 =0 end if
+            if tc_sfaa.tc_sfaa02>l_sfb08 then
+               call cl_err("不得大于未发数量"||l_sfb08,"!",1)
+               next field tc_sfaa02
+            end if
+         else
+            call cl_err("不可为空","!",1)
+            next field tc_sfaa02
+         end if
+
+      after input
+         if not int_flag then
+            #update tc_sfaa_file s---
+            # 数量不得大于工单数量
+            select count(1) into l_cnt from tc_sfaa_file 
+            where tc_sfaa01 = g_sfb.sfb01
+            if l_cnt > 0 then
+               update tc_sfaa_file 
+               set tc_sfaa02 = tc_sfaa.tc_sfaa02,
+                               tc_sfaa03=g_today,
+                               tc_sfaa04=tc_sfaa.tc_sfaa04,
+                               tc_sfaa05=g_user
+               where tc_sfaa01 = tc_sfaa.tc_sfaa01
+               if sqlca.sqlcode then
+                  call cl_err("tc_sfaa_file upd",sqlca.sqlcode,1)
+                  close window asfi301i
+                  return
+               end if
+            else
+               insert into tc_sfaa_file (tc_sfaa01,tc_sfaa02,tc_sfaa03,tc_sfaa04,tc_sfaa05)
+               values (g_sfb.sfb01,tc_sfaa.tc_sfaa02,g_today,tc_sfaa.tc_sfaa04,g_user)
+               if sqlca.sqlcode then
+                  call cl_err("tc_sfaa_file ins",sqlca.sqlcode,1)
+                  close window asfi301i
+                  return
+               end if
+            end if
+            #update tc_sfaa_file e---
+         end if
+      on action cancel
+         exit input
+   end input
+
+    
+   message ""
+
+   close window asfi310i 
+end function
+#darcy:2022/07/13 e---
