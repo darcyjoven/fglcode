@@ -163,6 +163,7 @@ DEFINE tm     RECORD
                  img_q      LIKE type_file.num15_3,   #add by huanglf170314
                  sfe_c      LIKE type_file.num15_3    #add by donghy170420 超领未扣帐数量
                  ,sfa_xiaban LIKE type_file.num15_3  #darcy:2022/05/20 add
+                 ,sfa_liuzhi LIKE type_file.num15_3  #darcy:2022/05/20 add
                  
               END RECORD,
        g_img  DYNAMIC ARRAY OF RECORD
@@ -981,6 +982,7 @@ FUNCTION q102_show2()
    DEFINE l_smc03         LIKE smc_file.smc03  #add by zhangsba190904
    DEFINE l_smc04         LIKE smc_file.smc04  #add by zhangsba190904
    DEFINE l_sfbud12       LIKE sfb_file.sfbud12 #darcy:2022/05/20 下版数量
+   DEFINE l_tc_sfaa02     LIKE sfb_file.sfbud12 #darcy:2022/05/20 下版数量
     
    #-->受訂量
    MESSAGE " (1)Wait..."
@@ -997,6 +999,7 @@ FUNCTION q102_show2()
    LET g_ima.sfa_q1 = 0          #TQC-A40009 
    LET g_ima.sfa_q2=0            #MOD-B50011
    let g_ima.sfa_xiaban = 0  #darcy:2022/05/30
+   let g_ima.sfa_liuzhi = 0  #darcy:2022/05/30
    
 #    IF g_ima.sfa_q1 < 0  THEN    #TQC-A40009 
 #       LET g_ima.sfa_q1 = 0      #TQC-A40009     
@@ -1045,6 +1048,18 @@ FUNCTION q102_show2()
           #darcy:2022/05/20 e---
          
       END IF          #tianry mark  161201
+      #darcy:2022/07/13 s---
+      select tc_sfaa02 into l_tc_sfaa02 from tc_sfaa_file 
+         where tc_sfaa01 = lr_sfa.sfa01
+      if cl_null(l_tc_sfaa02) then 
+         let l_tc_sfaa02 = 0
+      end if
+
+      let g_ima.sfa_liuzhi = iif (cl_null(g_ima.sfa_liuzhi),0,g_ima.sfa_liuzhi)
+      let g_ima.sfa_liuzhi = g_ima.sfa_liuzhi + lr_sfa.sfa161 * l_tc_sfaa02 * lr_sfa.sfa13
+      let l_tc_sfaa02 = 0
+
+      #darcy:2022/07/13 e---
  #   IF (lr_sfa.sfa05 > (lr_sfa.sfa06 + lr_sfa.sfa065 - lr_sfa.sfa063 ) OR g_short_qty > 0) THEN
  #      LET l_sfa_q1 =(lr_sfa.sfa05 - lr_sfa.sfa06 - lr_sfa.sfa065 +    lr_sfa.sfa063 - lr_sfa.sfa062 ) * lr_sfa.sfa13
  #      IF l_sfa_q1 < 0 THEN
@@ -1066,12 +1081,14 @@ FUNCTION q102_show2()
        LET l_bl = l_smc04/l_smc03
        LET g_ima.sfa_q1= g_ima.sfa_q1*l_bl
        LET g_ima.sfa_xiaban= g_ima.sfa_xiaban*l_bl #darcy:2022/05/20 add 
+       LET g_ima.sfa_liuzhi= g_ima.sfa_liuzhi*l_bl #darcy:2022/05/20 add 
        LET g_ima.sfa_q2= g_ima.sfa_q2*l_bl
       
       #应客户要求，发料单位再统一换算成库存单位g_ima.ima25
        LET l_bl = l_smc03/l_smc04
        LET g_ima.sfa_q1= g_ima.sfa_q1*l_bl
        LET g_ima.sfa_xiaban= g_ima.sfa_xiaban*l_bl #darcy:2022/05/20 add 
+       LET g_ima.sfa_liuzhi= g_ima.sfa_liuzhi*l_bl #darcy:2022/05/20 add 
        LET g_ima.sfa_q2= g_ima.sfa_q2*l_bl
      END IF
    END IF
@@ -1079,6 +1096,7 @@ FUNCTION q102_show2()
       LET l_bl = 1
       LET g_ima.sfa_q1= g_ima.sfa_q1*l_bl
       LET g_ima.sfa_xiaban= g_ima.sfa_xiaban*l_bl #darcy:2022/05/20
+      LET g_ima.sfa_liuzhi= g_ima.sfa_liuzhi*l_bl #darcy:2022/05/20
       LET g_ima.sfa_q2= g_ima.sfa_q2*l_bl
    END IF
    #add by zhangsba190904---e
@@ -1090,7 +1108,7 @@ FUNCTION q102_show2()
    #END IF
    #mark by zhangsba190904---e   
    ##add by liyjf190226 end 
-   DISPLAY BY NAME g_ima.sfa_q1,g_ima.sfa_q2,g_ima.sfa_xiaban #darcy:2022/05/20 add sfa_xiaban
+   DISPLAY BY NAME g_ima.sfa_q1,g_ima.sfa_q2,g_ima.sfa_xiaban,g_ima.sfa_liuzhi #darcy:2022/05/20 add sfa_xiaban 
    #-->請購量
    MESSAGE " (3)Wait..."
    SELECT SUM((pml20-pml21)*pml09) INTO g_ima.pml_q
@@ -1263,6 +1281,7 @@ FUNCTION q102_show2()
    IF g_ima.oeb_q  IS NULL THEN LET g_ima.oeb_q = 0 END IF
    IF g_ima.sfa_q1 IS NULL THEN LET g_ima.sfa_q1 = 0 END IF
    IF g_ima.sfa_xiaban IS NULL THEN LET g_ima.sfa_xiaban = 0 END IF #darcy:2022/05/20 add
+   IF g_ima.sfa_liuzhi IS NULL THEN LET g_ima.sfa_liuzhi = 0 END IF #darcy:2022/05/20 add
    IF g_ima.sfa_q2 IS NULL THEN LET g_ima.sfa_q2 = 0 END IF
    IF g_ima.pml_q  IS NULL THEN LET g_ima.pml_q = 0 END IF
    IF g_ima.pmn_q  IS NULL THEN LET g_ima.pmn_q = 0 END IF
@@ -1274,7 +1293,7 @@ FUNCTION q102_show2()
 #  LET g_ima.atp_qty=g_ima.ima262 - g_ima.oeb_q - g_ima.sfa_q1  #NO.FUN-A20044
 #  LET g_ima.atp_qty=g_avl_stk - g_ima.oeb_q - g_ima.sfa_q1     #NO.FUN-A20044  #FUN-A20048 mark
 #  LET g_ima.atp_qty=g_avl_stk - g_ima.oeb_q - g_ima.sfa_q1 - g_ima.sie_q     #NO.FUN-A20048  mod #MOD-B30496  
-   LET g_ima.atp_qty=g_avl_stk - g_ima.oeb_q - g_ima.sfa_q1  + g_ima.sfa_xiaban                 #MOD-B30496    #darcy:2022/05/20 add g_ima.sfa_xiaban
+   LET g_ima.atp_qty=g_avl_stk - g_ima.oeb_q - g_ima.sfa_q1  + g_ima.sfa_xiaban + g_ima.sfa_liuzhi                 #MOD-B30496    #darcy:2022/05/20 add g_ima.sfa_xiaban
                                   + g_ima.pml_q + g_ima.pmn_q + g_ima.rvb_q
                                   + g_ima.sfb_q1+ g_ima.sfb_q2+ g_ima.qcf_q - g_ima.sfe_c #- g_ima.img_q  #add by huanglf170314 --失效量仍参与运算
     CALL cl_show_fld_cont()                   #No.FUN-550037 hmf
