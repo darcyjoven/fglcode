@@ -1783,9 +1783,19 @@ DEFINE l_ret        RECORD
          #darcy:2022/07/13 s---
          WHEN "hold"
             if cl_chk_act_auth() then
-               call asfi301_hold()
+               call asfi301_hold('1')
+               let g_action_choice = ""
             end if
+
          #darcy:2022/07/13 e---
+
+         #darcy:2022/07/28 add s---
+         when "remark"
+            if cl_chk_act_auth() then
+               call asfi301_hold('2')
+               let g_action_choice=""
+            end if
+         #darcy:2022/07/28 add e---
  
          WHEN "confirm"
             IF cl_chk_act_auth() THEN  
@@ -5436,7 +5446,7 @@ END FUNCTION
  
 FUNCTION i301_show()
    DEFINE l_smydesc LIKE smy_file.smydesc  #MOD-4C0010
- 
+   define l_remark  varchar(2000)  #darcy:2022/07/28 add
     LET g_sfb_t.* = g_sfb.*                #保存單頭舊值
     DISPLAY BY NAME g_sfb.sfboriu,g_sfb.sfborig,
         g_sfb.sfb01,g_sfb.sfb101,g_sfb.sfb44,g_sfb.sfb81,g_sfb.sfb02,g_sfb.sfb39,    #FUN-8C0081 add sfb44
@@ -5479,6 +5489,11 @@ FUNCTION i301_show()
        SELECT smydesc INTO l_smydesc FROM smy_file WHERE smyslip=g_buf
        DISPLAY l_smydesc TO smydesc LET g_buf = NULL
     END IF
+    #darcy:2022/07/28 add s---
+    # 显示备注栏位
+    select tc_sfaa04 into l_remark from tc_sfaa_file where tc_sfaa01= g_sfb.sfb01 and tc_sfaa06='2' #只显示采购单备注
+    display l_remark to remark
+    #darcy:2022/07/28 add e---
     CALL i301_show2()
     CALL i301_pic()  #圖形顯示   #FUN-730012
     CALL i301_b_fill(g_wc2)
@@ -7951,6 +7966,11 @@ FUNCTION i301_bp(p_ud)
          LET g_action_choice="hold"
          EXIT DISPLAY
       #darcy:2022/07/13 e---
+      #darcy:2022/07/28 add s---
+      on action remark
+         let g_action_choice ="remark"
+         exit display
+      #darcy:2022/07/28 add e---
  
       &include "qry_string.4gl"
  
@@ -13649,7 +13669,8 @@ FUNCTION i301_upd_sfbdate(p_sfb01)
 END FUNCTION
 
 #darcy:2022/07/13 s---
-function asfi301_hold ()
+function asfi301_hold (arg)
+   define arg        varchar(1) # 1 留置 2 pr单
    define tc_sfaa record
             tc_sfaa01  like type_file.chr30,
             tc_sfaa02  like type_file.num15_3,
@@ -13672,7 +13693,7 @@ function asfi301_hold ()
 
    select tc_sfaa02,tc_sfaa04 into tc_sfaa.tc_sfaa02,tc_sfaa.tc_sfaa04
      from tc_sfaa_file
-    where tc_sfaa01 = g_sfb.sfb01 and tc_sf
+    where tc_sfaa01 = g_sfb.sfb01 and tc_sfaa06=arg  #留置是1
    
    if cl_null(tc_sfaa.tc_sfaa02) then
       let tc_sfaa.tc_sfaa02 = 0
@@ -13680,6 +13701,11 @@ function asfi301_hold ()
 
    input by name tc_sfaa.tc_sfaa02,tc_sfaa.tc_sfaa04
    without defaults attributes ( unbuffered )
+
+      before input
+         if arg ="2" then
+            call cl_set_comp_visible("tc_sfaa02",false)
+         end if
 
       on change tc_sfaa02
          if not cl_null(tc_sfaa.tc_sfaa02) then
@@ -13705,22 +13731,22 @@ function asfi301_hold ()
             #update tc_sfaa_file s---
             # 数量不得大于工单数量
             select count(1) into l_cnt from tc_sfaa_file 
-            where tc_sfaa01 = g_sfb.sfb01
+            where tc_sfaa01 = g_sfb.sfb01 and tc_sfaa06=arg
             if l_cnt > 0 then
                update tc_sfaa_file 
                set tc_sfaa02 = tc_sfaa.tc_sfaa02,
                                tc_sfaa03=g_today,
                                tc_sfaa04=tc_sfaa.tc_sfaa04,
                                tc_sfaa05=g_user
-               where tc_sfaa01 = tc_sfaa.tc_sfaa01
+               where tc_sfaa01 = tc_sfaa.tc_sfaa01 and tc_sfaa06=arg
                if sqlca.sqlcode then
                   call cl_err("tc_sfaa_file upd",sqlca.sqlcode,1)
                   close window asfi301i
                   return
                end if
             else
-               insert into tc_sfaa_file (tc_sfaa01,tc_sfaa02,tc_sfaa03,tc_sfaa04,tc_sfaa05)
-               values (g_sfb.sfb01,tc_sfaa.tc_sfaa02,g_today,tc_sfaa.tc_sfaa04,g_user)
+               insert into tc_sfaa_file (tc_sfaa01,tc_sfaa02,tc_sfaa03,tc_sfaa04,tc_sfaa05,tc_sfaa06)
+               values (g_sfb.sfb01,tc_sfaa.tc_sfaa02,g_today,tc_sfaa.tc_sfaa04,g_user,arg)
                if sqlca.sqlcode then
                   call cl_err("tc_sfaa_file ins",sqlca.sqlcode,1)
                   close window asfi301i
@@ -13737,5 +13763,6 @@ function asfi301_hold ()
    message ""
 
    close window asfi310i 
+   call i301_show() #darcy:2022/07/28 ad
 end function
 #darcy:2022/07/13 e---
