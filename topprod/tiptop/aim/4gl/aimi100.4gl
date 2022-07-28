@@ -591,7 +591,7 @@ DEFINE   l_n                     LIKE type_file.num5
                                 imaud06,imaud07,imaud08,imaud09,imaud10,
                                 imaud11,imaud12,imaud13,imaud14,imaud15,
                                 imauser,imagrup,imamodu,imadate,imaacti,
-                                imaoriu,imaorig,imaud19,imaud20,imaud23,imaud24    #TQC-C20059 add
+                                imaoriu,imaorig,imaud19,imaud20    #TQC-C20059 add
          BEFORE CONSTRUCT
             CALL cl_qbe_init()
 #No.FUN-A50011 ------begin------
@@ -1042,7 +1042,7 @@ FUNCTION i100_menu()
       ON ACTION upd_ima25
          LET g_action_choice="upd_ima25"
          IF cl_chk_act_auth() THEN
-            CALL i100_upd_ima25()
+            #CALL i100_upd_ima25()   #mark by sx211105
          END IF
       #end---add by jixf 160804
       
@@ -1290,8 +1290,6 @@ FUNCTION i100_menu()
            #endadd
             CALL i100sub_y_chk(g_ima.ima01)
             IF g_success = 'Y' THEN
-                UPDATE ima_file SET imaud07 = (SELECT CONCAT(CONCAT(imaud23,'*'),imaud24) from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
-                UPDATE ima_file SET imaud19 = (SELECT imaud23/1000*imaud24/1000/imaud10 from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
                 IF cl_confirm('aap-222') THEN 
                     CALL i100sub_y_chk(g_ima.ima01) #CHI-C30107 add
                     IF g_success = 'Y' THEN  #CHI-C30107 add 
@@ -1620,7 +1618,7 @@ FUNCTION i100_i(p_cmd)
         g_ima.ima156,g_ima.ima157,g_ima.ima158,       #FUN-A80150 add
         g_ima.imaud01,g_ima.imaud02,g_ima.imaud03,g_ima.imaud04,g_ima.imaud05,
         g_ima.imaud06,g_ima.imaud07,g_ima.imaud08,g_ima.imaud09,g_ima.imaud10,
-        g_ima.imaud11,g_ima.imaud12,g_ima.imaud13,g_ima.imaud14,g_ima.imaud15,g_ima.imaud19,g_ima.imaud20,g_ima.imaud23,g_ima.imaud24
+        g_ima.imaud11,g_ima.imaud12,g_ima.imaud13,g_ima.imaud14,g_ima.imaud15,g_ima.imaud19,g_ima.imaud20
         WITHOUT DEFAULTS
  
         BEFORE INPUT
@@ -2689,10 +2687,6 @@ FUNCTION i100_i(p_cmd)
            IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
         AFTER FIELD imaud20
            IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
-        AFTER FIELD imaud23
-           IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
-        AFTER FIELD imaud24
-           IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
  
         AFTER INPUT  #判斷必要欄位之值是否有值,若無則反白顯示,並要求重新輸入
            LET g_ima.imauser = s_get_data_owner("ima_file") #FUN-C10039
@@ -3371,7 +3365,7 @@ FUNCTION i100_show()
                    ,g_ima.ima151,                              #No.FUN-810016
                    g_ima.ima156,g_ima.ima157,g_ima.ima158,     #FUN-A80150 add
                    g_ima.ima159       #FUN-B50096
-                   ,g_ima.ima928,g_ima.ima929,g_ima.imaud19,g_ima.imaud20,g_ima.imaud23,g_ima.imaud24   #TQC-B90236--add
+                   ,g_ima.ima928,g_ima.ima929,g_ima.imaud19,g_ima.imaud20  #TQC-B90236--add
  
 #No.FUN-A50011 -----begin-----
 #No.FUN-A50011 -----end-----
@@ -3928,7 +3922,6 @@ FUNCTION i100_set_no_entry(p_cmd)
    DEFINE l_imaag   LIKE ima_file.imaag    #MOD-C30270 add
    DEFINE l_cnt     LIKE type_file.num5    #FUN-C90075
  
-   CALL cl_set_comp_entry("imaud19",FALSE) #darcy:2022/05/06 add
    IF p_cmd = 'u' AND g_chkey = 'N' AND ( NOT g_before_input_done ) THEN
       #CALL cl_set_comp_entry("ima01,ima940,ima941,ima151,imaag",FALSE)  #MOD-BB0157
        CALL cl_set_comp_entry("ima01",FALSE)  #MOD-BB0157
@@ -7493,10 +7486,6 @@ FUNCTION i100_u_upd()
    END IF
    IF cl_null(g_ima.ima35) THEN LET g_ima.ima35 = ' ' END IF   #MOD-A90173 add
    IF cl_null(g_ima.ima36) THEN LET g_ima.ima36 = ' ' END IF   #MOD-A90173 add
-   #darcy:2022/05/07 add s--- 
-   SELECT CONCAT(CONCAT(g_ima.imaud23,'*'),g_ima.imaud24) into g_ima.imaud07 from dual 
-   LET g_ima.imaud19 = g_ima.imaud23 /1000 * g_ima.imaud24 / 1000 / g_ima.imaud10
-   #darcy:2022/05/07 add e---
    IF cl_null(g_ima01_t) THEN  #FUN-AC0072
       UPDATE ima_file SET ima_file.* = g_ima.*   # 更新DB
        WHERE ima01 = g_ima.ima01             # COLAUTH?
@@ -7592,7 +7581,6 @@ FUNCTION i100_u_upd()
          END IF #TQC-8B0011  ADD
       END IF
    END IF
-   CALL i100_show() #darcy:2022/05/07 add:---
    #IF g_u_flag='1' THEN RETURN FALSE ELSE RETURN TRUE END IF   #FUN-870101 add #FUN-9A0056 mark
    IF g_success = 'N' THEN RETURN FALSE ELSE RETURN TRUE END IF   #FUN-9A0056 add
 END FUNCTION
@@ -8149,7 +8137,7 @@ FUNCTION i100_b_menu()
       WHEN  "upd_ima25"
          LET g_action_choice="upd_ima25"
          IF cl_chk_act_auth() THEN
-            CALL i100_upd_ima25()
+            #CALL i100_upd_ima25()   #mark by sx211105
          END IF 
 
 
@@ -8267,7 +8255,7 @@ FUNCTION i100_b_menu()
         #tianry add 
         WHEN  "upd_ima25"
          IF cl_chk_act_auth() THEN
-            CALL i100_upd_ima25()
+            #CALL i100_upd_ima25()   #mark by sx211105
          END IF
  
         WHEN "help"
