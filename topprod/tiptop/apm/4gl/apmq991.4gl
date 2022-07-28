@@ -295,6 +295,18 @@ FUNCTION q991_menu()
                END CASE
             END IF
             LET g_action_choice = " "
+         #darcy:2022/07/15 s---
+         when "fastexcel"
+            if cl_chk_act_auth() then
+               case g_action_flag
+                  when 'page1'
+                     call apmq991_fastexcel(1)
+                  when 'page2'
+                     call apmq991_fastexcel(2)
+               end case
+               let g_action_choice = " "
+            end if
+         #darcy:2022/07/15 e---
          WHEN "related_document"  #相關文件
             IF cl_chk_act_auth() THEN
                LET g_doc.column1 = "rvu04"
@@ -330,6 +342,7 @@ FUNCTION q991_b_fill()
          CALL cl_err('foreach:',SQLCA.sqlcode,1)
          EXIT FOREACH
       END IF
+      insert into fast_rvu_excel  values (g_rvu[g_cnt].*) #darcy:2022/07/15
       --SELECT SUM(rvv87),SUM(rvv39_1),SUM(rvv39_t_1),SUM(rvv39t_1)
         --INTO g_rvu[g_cnt].tot_rvv87,g_rvu[g_cnt].tot_rvv39,g_rvu[g_cnt].tot_rvv39_t,g_rvu[g_cnt].tot_rvv39t
         --FROM apmq991_tmp     
@@ -394,7 +407,8 @@ FUNCTION q991_bp(p_ud)
          LET l_ac_t = ARR_CURR()
          IF l_ac1 > 0  THEN
             #CALL q991_detail_fill(l_ac1)#mark by guanyao160907
-            CALL q991_b_fill_1()         #add by guanyao160907
+            # CALL q991_b_fill_1()         #add by guanyao160907
+            #不需要重复查询
             CALL cl_set_comp_visible("page1", FALSE)
             CALL ui.interface.refresh()
             CALL cl_set_comp_visible("page1", TRUE)
@@ -464,6 +478,11 @@ FUNCTION q991_bp(p_ud)
       ON ACTION exporttoexcel
          LET g_action_choice = 'exporttoexcel'
          EXIT DISPLAY
+      #darcy:2022/07/18 s---
+      on action fastexcel
+         let g_action_choice = "fastexcel"
+         exit display
+      #darcy:2022/07/18 e---
 
       ON ACTION related_document 
          LET g_action_choice="related_document"          
@@ -483,7 +502,7 @@ FUNCTION q991_bp2()
    
    LET g_action_flag = 'page2'
    IF g_action_choice = "page2" AND g_flag != '1' THEN
-      CALL q991_b_fill_2()
+      # CALL q991_b_fill_2()  #重复查询  darcy:2022/07/15 mark 
    END IF
    LET g_action_choice = ' '
    LET g_flag = ' '
@@ -547,6 +566,11 @@ FUNCTION q991_bp2()
       ON ACTION exporttoexcel
          LET g_action_choice = 'exporttoexcel'
          EXIT DISPLAY
+      #darcy:2022/07/18 s---
+      on action fastexcel
+         let g_action_choice = "fastexcel"
+         exit display
+      #darcy:2022/07/18 e---
 
       ON ACTION related_document 
          LET g_action_choice="related_document"          
@@ -565,7 +589,10 @@ FUNCTION q991_cs()
    DEFINE  l_cnt           LIKE type_file.num5   
    DEFINE  lc_qbe_sn       LIKE gbm_file.gbm01     
    DEFINE  li_chk_bookno   LIKE type_file.num5
- 
+   define  l_ok            like type_file.chr1 #darcy:2022/07/18 add
+   define  l_sql           string      #darcy:2022/07/18
+   
+   let l_ok = false #darcy:2022/07/18 add
    CLEAR FORM   #清除畫面
    LET g_sum_rvv87 = ''
    LET g_y_rvv39   = ''
@@ -635,6 +662,14 @@ FUNCTION q991_cs()
                DISPLAY g_qryparam.multiret TO rvu07a
                NEXT FIELD rvu07a
          END CASE
+      
+      #darcy:2022/07/18 s---
+      #不显示导出excel
+      on action excelfast
+         let l_ok = true
+         call apmq991_fastexcel_crt_table()
+         accept dialog
+      #darcy:2022/07/18 e---
        
       ON ACTION locale
          CALL cl_show_fld_cont()
@@ -679,6 +714,20 @@ FUNCTION q991_cs()
    END IF
 
    CALL q991()   
+
+   #darcy:2022/07/18 s---
+   if l_ok then
+      let l_sql = "insert into fast_rvv_excel select * from apmq991_tmp"
+      prepare ins_fast_rvu_excel from l_sql
+      execute ins_fast_rvu_excel
+      call apmq991_fastexcel(2)
+      call apmq991_fastexcel_exit()
+      DROP TABLE apmq991_tmp;
+      CLOSE WINDOW q991_w
+      CALL cl_used(g_prog,g_time,2) RETURNING g_time
+      let l_ok = false
+   end if
+   #darcy:2022/07/18 e---
 END FUNCTION 
 
 FUNCTION q991_q() 
@@ -697,6 +746,7 @@ END FUNCTION
 
 FUNCTION q991_show()
    DISPLAY tm.bdate,tm.edate,tm.a,tm.sty TO bdate,edate,a,sty
+   call apmq991_fastexcel_crt_table() #darcy:2022/07/15 add
    CALL q991_b_fill_2()
    CALL q991_b_fill()  
    LET g_action_choice = "page1"
@@ -1150,6 +1200,7 @@ FUNCTION q991_get_sum()
          LET g_rvv[g_cnt].* = g_rvv_excel[g_cnt].*
    #   END IF
       LET l_old = l_pmn78  #add by liyjf181224 
+      insert into fast_rvv_excel values (g_rvv_excel[g_cnt].*) #darcy:2022/07/15 add
       LET g_cnt = g_cnt + 1
    END FOREACH
    
@@ -1406,3 +1457,231 @@ FUNCTION q991_b_fill_1()
    DISPLAY g_rec_b TO FORMONLY.cnt 
 END FUNCTION
 #end----add by guanyao160907
+#darcy:2022/07/15 add s---
+function apmq991_fastexcel(page)
+   define page like type_file.num5
+   define title array [2] of string
+   define err like type_file.chr1
+   define file string
+
+   # create table
+   # call apmq991_fastexcel_crt_table()
+   let title[1] = "账款厂商编号,账款厂商简称,付款厂商编号,付款厂商全称,厂商分类,厂商分类说明,部门编号,部门名称,部门编号,部门名称,总数量,本币税前金额,本币税额,本币含税金额"
+   let title[2] = "账款厂商,厂商简称,付款厂商编号,付款厂商全称,入库日期,入(退)货单号,项次,料号,品名,规格,税率,单位,数量,单价,税前金额,税额,含税金额,币种,汇率,采购单号,采购序号,采购单性质,原币单价,含税单价,原币税前金额,原币税额,原币含税金额,本币税前金额,已请款数量,已请款未税金额,已请款原币未税金额,未请款数量,未请款未税金额,未请款原币未税金额,厂商分类,厂商分类说明,部门编号,部门名称,业务员编号,姓名,样品否,多角贸易流程序号,料件尺寸,排版数,受镀面积,金厚,镍厚,钯厚,铜厚,线速,备注,作业说明,生产说明,PNL量,作业编号"
+   # set title
+   case page 
+      when 1
+         call cs_darcy_set_title("fast_rvu_excel",title[page],"厂商对账单汇总资料") returning err
+         call cs_darcy_excel("fast_rvu_excel",g_prog) returning file,err
+      when 2 
+         # let file = "insert into fast_rvv_excel select * from apmq991_tmp"
+         # prepare ins_fast_rvu_excel from file
+         # execute ins_fast_rvu_excel
+         call cs_darcy_set_title("fast_rvv_excel",title[page],"厂商对账单详细资料") returning err
+         call cs_darcy_excel("fast_rvv_excel",g_prog) returning file,err
+   end case
+   # excel
+end function
+
+function apmq991_fastexcel_crt_table()
+
+   define sql string
+   call apmq991_fastexcel_exit()
+   #  字段参考g_rvu和g_rvv
+   let sql = "create table fast_rvu_excel as ",
+             " SELECT rvu04  rvu04a,",
+             "      rvu05  rvu05a,",
+             "      pmc04  pmc04a,",
+             "      pmc081 pmc081a,",
+             "      pmc02  pmc02a,",
+             "      pmy02  pmy02a,",
+             "      rvu06  rvu06a,",
+             "      gem02  gem02a,",
+             "      rvu07  rvu07a,",
+             "      gen02  gen02a,",
+             "      rvv87  tot_rvv87,",
+             "      rvv39  tot_rvv39,",
+             "      rvv39t tot_rvv39_t,",
+             "      rvv39t tot_rvv39t",
+             " FROM rvu_file, pmc_file, pmy_file, gem_file, gen_file, rvv_file",
+             " WHERE 1 = 2"
+   prepare crt_fast_rvv_excel from sql
+   execute crt_fast_rvv_excel
+
+   let sql =  "create table fast_rvv_excel as ",
+              " SELECT  rvu04      rvu04,",
+              "       rvu05      rvu05,",
+              "       pmc04      pmc04,",
+              "       pmc081     pmc081,",
+              "       rvu03      rvu03,",
+              "       rvu01      rvu01,",
+              "       rvv02      rvv02,",
+              "       rvv31      rvv31,",
+              "       rvv031     rvv031,",
+              "       ima021     ima021,",
+              "       pmm43      pmm43,",
+              "       rvv86      rvv86,",
+              "       rvv87      rvv87,",
+              "       rvv38      rvv38_1,",
+              "       rvv39      rvv39_1,",
+              "       rvv39t     rvv39_t_1,",
+              "       rvv39t     rvv39t_1,",
+              "       pmm22      pmm22,",
+              "       pmm42      pmm42,",
+              "       rvv36      rvv36,",
+              "       rvv37      rvv37,",
+              "       pmm02      pmm02,",
+              "       rvv38      rvv38,",
+              "       rvv38t     rvv38t,",
+              "       rvv39      rvv39,",
+              "       rvv39t     rvv39_t_2,",
+              "       rvv39t     rvv39t,",
+              "       rvv39t     rvv39t_2,",
+              "       rvv23      rvv23,",
+              "       apb10      apb10,",
+              "       apb24      apb24,",
+              "       rvv87      rvv87_rvv23,",
+              "       rvv39      rvv39_apb10,",
+              "       rvv39      rvv39_apb24,",
+              "       pmc02      pmc02,",
+              "       pmy02      pmy02,",
+              "       rvu06      rvu06,",
+              "       gem02      gem02,",
+              "       rvu07      rvu07,",
+              "       gen02      gen02,",
+              "       rvv25      rvv25,",
+              "       rvu99      rvu99,",
+              "       imaud07    imaud07,",
+              "       imaud10    imaud10,",
+              "       tc_ecn04   tc_ecn04,",
+              "       tc_ecn05   tc_ecn05,",
+              "       tc_ecn06   tc_ecn06,",
+              "       tc_ecn07   tc_ecn07,",
+              "       tc_ecnud06 tc_ecnud06,",
+              "       rvvud07    rvvud07,",
+              "       pml06      pml06,",
+              "       ecd02      ecd02,",
+              "       ta_sgm01   ta_sgm01,",
+              "       img10      pnl,",
+              "       tc_ecn02   tc_ecn02",
+              " FROM rvu_file,",
+              "       pmc_file,",
+              "       rvv_file,",
+              "       pmm_file,",
+              "       apb_file,",
+              "       pmy_file,",
+              "       gem_file,",
+              "       gen_file,",
+              "       ima_file,",
+              "       tc_ecn_file,",
+              "       pml_file,",
+              "       ecd_file,",
+              "       sgm_file,",
+              "       img_file",
+              " WHERE 1 = 2"
+
+   prepare crt_fast_rvu_excel from sql
+   execute crt_fast_rvu_excel
+
+   let sql = "alter table fast_rvv_excel modify rvu01 varchar2(20) null"
+   prepare upd_fast_rvu_excel1 from sql
+   execute upd_fast_rvu_excel1
+   let sql = "alter table fast_rvv_excel modify rvv02 number(5) null"
+   prepare upd_fast_rvu_excel2 from sql
+   execute upd_fast_rvu_excel2
+   let sql = "alter table fast_rvv_excel modify pnl number(15,3) null"
+   prepare upd_fast_rvu_excel3 from sql
+   execute upd_fast_rvu_excel3
+   let sql = "alter table fast_rvv_excel modify tc_ecn02 varchar2(15) null "
+   prepare upd_fast_rvu_excel4 from sql
+   execute upd_fast_rvu_excel4
+
+   
+
+   # CREATE TABLE fast_rvu_excel(
+   #    rvu04a      LIKE rvu_file.rvu04,    #账款厂商编号
+   #    rvu05a      LIKE rvu_file.rvu05,    #账款厂商简称
+   #    pmc04a      LIKE pmc_file.pmc04,    #付款厂商编号
+   #    pmc081a     LIKE pmc_file.pmc081,   #付款厂商全称
+   #    pmc02a      LIKE pmc_file.pmc02,    #厂商分类
+   #    pmy02a      LIKE pmy_file.pmy02,    #厂商分类说明
+   #    rvu06a      LIKE rvu_file.rvu06,    #部门编号
+   #    gem02a      LIKE gem_file.gem02,    #部门名称
+   #    rvu07a      LIKE rvu_file.rvu07,    #部门编号
+   #    gen02a      LIKE gen_file.gen02,    #部门名称
+   #    tot_rvv87   LIKE rvv_file.rvv87,    #总数量
+   #    tot_rvv39   LIKE rvv_file.rvv39,    #本币税前金额
+   #    tot_rvv39_t LIKE rvv_file.rvv39t,   #本币税额
+   #    tot_rvv39t  LIKE rvv_file.rvv39t)    #本币含税金额
+   # create  table fast_rvv_excel(
+   #    rvu04       LIKE rvu_file.rvu04,             #账款厂商
+   #    rvu05       LIKE rvu_file.rvu05,             #厂商简称
+   #    pmc04       LIKE pmc_file.pmc04,             #付款厂商编号
+   #    pmc081      LIKE pmc_file.pmc081,            #付款厂商全称
+   #    rvu03       LIKE rvu_file.rvu03,             #入库日期
+   #    rvu01       LIKE rvu_file.rvu01,             #入(退)货单号
+   #    rvv02       LIKE rvv_file.rvv02,             #项次
+   #    rvv31       LIKE rvv_file.rvv31,             #料号
+   #    rvv031      LIKE rvv_file.rvv031,            #品名
+   #    ima021      LIKE ima_file.ima021,            #规格
+   #    pmm43       LIKE pmm_file.pmm43,             #税率
+   #    rvv86       LIKE rvv_file.rvv86,             #单位
+   #    rvv87       LIKE rvv_file.rvv87,             #数量
+   #    rvv38_1     LIKE rvv_file.rvv38,             #单价
+   #    rvv39_1     LIKE rvv_file.rvv39,             #税前金额
+   #    rvv39_t_1   LIKE rvv_file.rvv39t,            #税额
+   #    rvv39t_1    LIKE rvv_file.rvv39t,            #含税金额
+   #    pmm22       LIKE pmm_file.pmm22,             #币种
+   #    pmm42       LIKE pmm_file.pmm42,             #汇率
+   #    rvv36       LIKE rvv_file.rvv36,             #采购单号
+   #    rvv37       LIKE rvv_file.rvv37,             #采购序号
+   #    pmm02       LIKE pmm_file.pmm02,             #采购单性质
+   #    rvv38       LIKE rvv_file.rvv38,             #原币单价
+   #    rvv38t      LIKE rvv_file.rvv38t,            #含税单价
+   #    rvv39       LIKE rvv_file.rvv39,             #原币税前金额
+   #    rvv39_t_2   LIKE rvv_file.rvv39t,            #原币税额
+   #    rvv39t      LIKE rvv_file.rvv39t,            #原币含税金额
+   #    rvv39t_2    LIKE rvv_file.rvv39t,            #本币税前金额
+   #    rvv23       LIKE rvv_file.rvv23,             #已请款数量
+   #    apb10       LIKE apb_file.apb10,             #已请款未税金额
+   #    apb24       LIKE apb_file.apb24,             #已请款原币未税金额
+   #    rvv87_rvv23 LIKE rvv_file.rvv87,             #未请款数量
+   #    rvv39_apb10 LIKE rvv_file.rvv39,             #未请款未税金额
+   #    rvv39_apb24 LIKE rvv_file.rvv39,             #未请款原币未税金额
+   #    pmc02       LIKE pmc_file.pmc02,             #厂商分类
+   #    pmy02       LIKE pmy_file.pmy02,             #厂商分类说明
+   #    rvu06       LIKE rvu_file.rvu06,             #部门编号
+   #    gem02       LIKE gem_file.gem02,             #部门名称
+   #    rvu07       LIKE rvu_file.rvu07,             #业务员编号
+   #    gen02       LIKE gen_file.gen02,             #姓名
+   #    rvv25       LIKE rvv_file.rvv25,             #样品否
+   #    rvu99       LIKE rvu_file.rvu99,             #多角贸易流程序号
+   #    imaud07     LIKE ima_file.imaud07,           #料件尺寸
+   #    imaud10     LIKE ima_file.imaud10,           #排版数
+   #    tc_ecn04    LIKE tc_ecn_file.tc_ecn04,       #受镀面积
+   #    tc_ecn05    LIKE tc_ecn_file.tc_ecn05,       #金厚
+   #    tc_ecn06    LIKE tc_ecn_file.tc_ecn06,       #镍厚
+   #    tc_ecn07    LIKE tc_ecn_file.tc_ecn07,       #钯厚
+   #    tc_ecnud06    LIKE tc_ecn_file.tc_ecnud06,   #铜厚
+   #    tc_ecn08    LIKE tc_ecn_file.tc_ecn08,       #线速
+   #    rvvud07     LIKE rvv_file.rvvud07,           #线速 
+   #    pml06       LIKE pml_file.pml06,             #备注
+   #    ecd02       LIKE ecd_file.ecd02,             #作业说明
+   #    ta_sgm01    LIKE sgm_file.ta_sgm01,          #生产说明
+   #    pnl         LIKE img_file.img10,             #PNL量
+   #    tc_ecn02    LIKE tc_ecn_file.tc_ecn02)        #作业编号
+   
+   {
+      账款厂商	厂商简称	付款厂商编号	付款厂商全称	入库日期	入(退)货单号	项次	料号	品名	规格	税率	单位	数量	单价	税前金额	税额	含税金额	币种	汇率	原币单价	原币税前金额	原币税额	原币含税金额	本币含税金额	厂商分类	厂商分类说明	部门编号	部门名称	业务员编号	姓名	样品否	多角贸易流程序号	已请款数量	已请款未税金额	已请款原币未税金额	未请款数量	未请款未税金额	未请款原币未税金额	含税单价	采购单号	采购单性质	料件尺寸	排版数	受镀面积	金厚	镍厚	钯厚	铜厚	线速	备注	作业说明	生产说明	PNL量	作业编号	采购序号
+
+   }
+
+end function
+
+function apmq991_fastexcel_exit()
+   whenever any error continue
+      drop table fast_rvu_excel
+      drop table fast_rvv_excel
+   whenever any error stop
+end function
+#darcy:2022/07/15 add s---
