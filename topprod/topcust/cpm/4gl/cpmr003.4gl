@@ -352,6 +352,7 @@ LET l_sql="select '','',pmc081,pmm09,pmc11,pmc10,pmd03,pmd02,pmm01,pmm16,pmm04,p
           ",ecd02,ta_sgm01,ta_sgm02,pmnud07,gen02,imaud07,imaud10,pmn01,pmn02", #darcy add 2022年1月13日 
            " from pmm_file left join pmc_file on pmc01 = pmm09 ",
            " left join pmd_file on pmc01 = pmd01 ",
+           " and pmd05='Y' ", #darcy:2022/07/22 add 
            " left join pma_file on pmm20 = pma01 ",
            " LEFT JOIN gen_file ON gen01 = pmm12 ", #darcy add 2022年1月13日
            ",pmn_file left join ima_file on pmn04=ima01",
@@ -359,6 +360,7 @@ LET l_sql="select '','',pmc081,pmm09,pmc11,pmc10,pmd03,pmd02,pmm01,pmm16,pmm04,p
 	        " LEFT JOIN sgm_file ON sgm01 = pmn18 AND sgm04 = pmn78 ", #darcy add 2022年1月13日
            " where ",tm.wc ,
            "   AND pmm01=pmn01 "
+           
         #   " AND pmn16 not in ('9') "
         #   " AND pmn16 not in ('6','7','8','9') "  #add by jixf 160803 排除结案
  
