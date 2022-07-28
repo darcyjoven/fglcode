@@ -56,20 +56,22 @@ DEFINE  l_table2   STRING
 DEFINE  l_table3   STRING
 DEFINE  l_table4   STRING
 DEFINE  l_table5   STRING
+define  g_wc       string #darcy:2022/07/14 add
 MAIN
    OPTIONS
        INPUT NO WRAP
    DEFER INTERRUPT
- 
-   LET g_argv1 = ARG_VAL(1)
-   LET g_towhom = ARG_VAL(2)
-   LET g_rlang = ARG_VAL(3)
-   LET g_bgjob = ARG_VAL(4)
-   LET g_prtway = ARG_VAL(5)
-   LET g_copies = ARG_VAL(6)
-   LET tm.wc    = ARG_VAL(7)
-   LET g_rep_user = ARG_VAL(8)
-   LET g_rep_clas = ARG_VAL(9)
+  
+   LET g_argv1 = ARG_VAL(1) #"1"
+   LET g_towhom = ARG_VAL(2) #""
+   LET g_rlang = ARG_VAL(3) #"2"
+   LET g_bgjob = ARG_VAL(4) #"Y"
+   LET g_prtway = ARG_VAL(5) #"1"
+   LET g_copies = ARG_VAL(6) #"1"
+   LET tm.wc    = ARG_VAL(7) #"1=2"
+   let g_wc = tm.wc #darcy:2022/07/14 add
+   LET g_rep_user = ARG_VAL(8) 
+   LET g_rep_clas = ARG_VAL(9) #"N"
    LET g_template = ARG_VAL(10)
    LET g_rpt_name = ARG_VAL(11)  #No.FUN-7C0078
    CASE g_argv1
@@ -265,6 +267,13 @@ WHILE TRUE
       CONSTRUCT BY NAME tm.wc ON qcs01,qcs021,qcs03,qcs13
          BEFORE CONSTRUCT
              CALL cl_qbe_init()
+             #darcy:2022/07/14 s---
+             if g_argv1 ="1" and not cl_null(g_wc) then
+               let tm.wc = g_wc
+               let g_action_choice = ""
+               exit while
+             end if
+             #darcy:2022/07/14 e---
  
    ON ACTION CONTROLP    #FUN-4B0001
       CASE WHEN INFIELD(qcs01)
@@ -447,7 +456,7 @@ FUNCTION r300()
    #darcy:2022/06/27 add s---
    define l_qctt04  LIKE qctt_file.qctt04  
    define l_cnt     like type_file.num5    
-   define l_qctt    array [10] of DECIMAL(15,3)
+   define l_qctt    array [20] of DECIMAL(15,3)
    #darcy:2022/06/27 add e---
      SELECT zo02 INTO g_company FROM zo_file WHERE zo01 = g_rlang
      LOCATE l_img_blob IN MEMORY   #blob初始化   #TQC-C10039
@@ -521,7 +530,8 @@ FUNCTION r300()
      END IF
  
      LET tm.wc = tm.wc CLIPPED,cl_get_extra_cond('qcsuser', 'qcsgrup')
- 
+      display tm.wc
+      
      CASE g_argv1
          WHEN '1'
            LET l_sql = "SELECT * FROM qcs_file LEFT OUTER JOIN qct_file ", #TQC-590013 add OUTER
@@ -544,7 +554,7 @@ FUNCTION r300()
                        "   AND qcs14 != 'X' ",     #FUN-A50053 add
                        "   AND ", tm.wc CLIPPED
      END CASE
-     PREPARE r300_prepare1 FROM l_sql
+     PREPARE r300_prepare1 FROM  l_sql
      IF SQLCA.sqlcode != 0 THEN
         CALL cl_err('prepare:',SQLCA.sqlcode,1)
         CALL cl_used(g_prog,g_time,2) RETURNING g_time #No.FUN-690121
@@ -559,6 +569,10 @@ FUNCTION r300()
      END CASE
      LET g_prog = 'aqcr300'   #No.FUN-5C0076
      #darcy:2022/06/27 s---
+     display l_sql
+     display "-----"
+     display tm.wc
+     display "-----"
      DECLARE r300_qctt_curs CURSOR FOR  
          SELECT qctt04 FROM qctt_file WHERE qctt01 =? and qctt02 =? and qctt021=? and qctt03 =?
      #darcy:2022/06/27 e---
@@ -587,10 +601,10 @@ FUNCTION r300()
          #darcy:2022/06/27 s---
          #测量值
          let l_cnt =1
-         CALL l_qctt.clear()
+         call l_qctt.clear()
          foreach r300_qctt_curs using sr.qct.qct01,sr.qct.qct02,sr.qct.qct021,sr.qct.qct03
           into l_qctt[l_cnt]
-            if l_cnt >9 then
+            if l_cnt >19 then
                exit foreach
             end if
             let l_cnt = l_cnt + 1
@@ -610,6 +624,24 @@ FUNCTION r300()
                                    l_gen02,l_pmc03,l_ima02,l_ima021,l_ima15,l_ima109,l_azf03_1,l_azf03_2,            #No.FUN-850062
                                    "",l_img_blob, "N",""    #TQC-C10039 ADD "",l_img_blob, "N",""
                                    ,l_qctt[1],l_qctt[2],l_qctt[3],l_qctt[4],l_qctt[5],l_qctt[6],l_qctt[7],l_qctt[8],l_qctt[9],l_qctt[10] #darcy:2022/06/27 add
+         #darcy:2022/07/14 s---
+         if l_cnt > 10 then
+            EXECUTE insert_prep USING sr.qcs.qcs00,sr.qcs.qcs01,sr.qcs.qcs02,sr.qcs.qcs021,sr.qcs.qcs03,sr.qcs.qcs04,
+                                   sr.qcs.qcs041,sr.qcs.qcs05,sr.qcs.qcs06,sr.qcs.qcs061,sr.qcs.qcs062,sr.qcs.qcs071,
+                                   sr.qcs.qcs072,sr.qcs.qcs081,sr.qcs.qcs082,sr.qcs.qcs09,sr.qcs.qcs091,sr.qcs.qcs10,
+                                   sr.qcs.qcs101,sr.qcs.qcs11,sr.qcs.qcs12,sr.qcs.qcs13,sr.qcs.qcs14,sr.qcs.qcs15,
+                                   sr.qcs.qcs16,sr.qcs.qcs17,sr.qcs.qcs18,sr.qcs.qcs19,sr.qcs.qcs20,sr.qcs.qcs21,
+                                   sr.qcs.qcs22,sr.qcs.qcsprno,sr.qcs.qcsacti,sr.qcs.qcsuser,sr.qcs.qcsgrup,sr.qcs.qcsmodu,
+                                   sr.qcs.qcsdate,sr.qcs.qcs30,sr.qcs.qcs31,sr.qcs.qcs32,sr.qcs.qcs33,sr.qcs.qcs34,
+                                   sr.qcs.qcs35,sr.qcs.qcs36,sr.qcs.qcs37,sr.qcs.qcs38,sr.qcs.qcs39,sr.qcs.qcs40,
+                                   sr.qcs.qcs41,sr.qcs.qcsspc,sr.qct.qct01,sr.qct.qct02,sr.qct.qct021,sr.qct.qct03,
+                                   sr.qct.qct04,sr.qct.qct05,sr.qct.qct06,sr.qct.qct07,"",sr.qct.qct09,
+                                   sr.qct.qct10,"",sr.qct.qct12,sr.qct.qct131,sr.qct.qct132,
+                                   l_gen02,l_pmc03,l_ima02,l_ima021,l_ima15,l_ima109,l_azf03_1,"",            #No.FUN-850062
+                                   "",l_img_blob, "N",""    #TQC-C10039 ADD "",l_img_blob, "N",""
+                                   ,l_qctt[11],l_qctt[12],l_qctt[13],l_qctt[14],l_qctt[15],l_qctt[16],l_qctt[17],l_qctt[18],l_qctt[19],l_qctt[20]
+         end if
+         #darcy:2022/07/14 e---
          DECLARE qao_cur2 CURSOR FOR SELECT qao01,qao03,qao05,qao06 FROM qao_file
                                                 WHERE qao01=sr.qcs.qcs01
                                                   AND qao02=sr.qcs.qcs02

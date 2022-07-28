@@ -7656,8 +7656,8 @@ FUNCTION t110_out()
    END CASE
  
    LET l_cmd = l_cmd CLIPPED ,
-               "  ''",
-               " '",g_lang CLIPPED,"' 'Y' '",l_prtway,"' '1'",
+               "  '1' '' ",
+               " '",g_lang CLIPPED,"' 'N' '",l_prtway,"' ",
                " '",l_wc CLIPPED,"' "
    CALL cl_cmdrun(l_cmd)
    ERROR ' '
