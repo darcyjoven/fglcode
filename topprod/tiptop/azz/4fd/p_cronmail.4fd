@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="ds" gstVersion="22800" name="Root" uid="{f027234a-0000-4000-8adc-8a9fec617867}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{eecbe7d9-0000-4000-9023-903eb40212ab}" where="">
+    <RecordField colName="vie01" fieldIdRef="1" fieldType="NON_DATABASE" name="mail" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{3a89f124-0000-4000-bd46-cd3821f2c0fb}"/>
+    <RecordField colName="vie02" fieldIdRef="10" fieldType="NON_DATABASE" name="mailto" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{23e39322-0000-4000-ba86-a3445204e9aa}"/>
+    <RecordField colName="vie03" fieldIdRef="11" fieldType="NON_DATABASE" name="body_content" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{1cf2bb48-0000-4000-adbb-6aa6804886f5}"/>
+    <RecordField colName="vieuser" fieldIdRef="2" fieldType="NON_DATABASE" name="crtuser" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{7a47b949-0000-4000-8d39-a698c18c38a2}"/>
+    <RecordField colName="viegrup" fieldIdRef="5" fieldType="NON_DATABASE" name="crtdate" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{6868dceb-0000-4000-b258-3e5577de5c8c}"/>
+    <RecordField colName="vieoriu" fieldIdRef="7" fieldType="NON_DATABASE" name="moduser" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{dd832ba2-0000-4000-b51c-5854b79576be}"/>
+    <RecordField colName="vieorig" fieldIdRef="8" fieldType="NON_DATABASE" name="moddate" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{14577145-0000-4000-ab7a-c3a967ea3109}"/>
+    <RecordField colName="" fieldIdRef="9" fieldType="NON_DATABASE" name="cnt" sqlTabName="" sqlType="SMALLINT" table_alias_name="" uid="{f0e4053f-0000-4000-8147-fcb4c55096f8}"/>
+    <RecordField colName="vie02" fieldIdRef="12" fieldType="NON_DATABASE" name="mailcc" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{a0772ecd-9b84-4d01-9339-63e83168932d}"/>
+    <RecordField colName="vie02" fieldIdRef="13" fieldType="NON_DATABASE" name="mailbcc" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{d895c0fe-6c07-4fe7-8ccd-43854f27460f}"/>
+    <RecordField colName="vie02" fieldIdRef="14" fieldType="NON_DATABASE" name="subject" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{96ca7207-44ed-4048-b425-07df2083c1b7}"/>
+    <RecordField colName="" fieldIdRef="15" name="todaycheck" sqlTabName="" table_alias_name="" uid="{a35e13e1-925c-44a5-98a5-68e5f30785f6}"/>
+    <RecordField colName="vie02" fieldIdRef="16" fieldType="NON_DATABASE" name="crontab" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{59204011-1e7a-4c97-b9e4-f9569836a02a}"/>
+    <RecordField colName="" defaultValue="text" fieldIdRef="18" name="body_type" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{1f125e78-21ba-4068-9886-c83f01841542}"/>
+    <RecordField colName="vie02" fieldIdRef="3" fieldType="NON_DATABASE" name="tables" sqlTabName="vie_file" sqlType="VARCHAR" table_alias_name="" uid="{3db56023-c11d-4f66-bb68-cc341835fea2}"/>
+    <RecordField colName="" fieldIdRef="4" name="conrablable" sqlTabName="" sqlType="VARCHAR" table_alias_name="" uid="{3cf70277-07f8-466a-bb9d-8a01fde58084}"/>
+  </Record>
+  <Form gridHeight="29" gridWidth="106" name="p_addview" spacing="normal" text="p_addview">
+    <VBox gridHeight="29" gridWidth="106" name="VBox1" posX="0" posY="0">
+      <Folder gridHeight="25" gridWidth="106" lstrcomment="false" name="Folder1" posX="0" posY="1">
+        <Page lstrtext="false" name="page01" text="Main">
+          <Grid gridHeight="23" gridWidth="105" lstrcomment="false" name="Grid1" posX="0" posY="0">
+            <Label posX="2" posY="1" text="Label2"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="vie01" columnCount="" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="23" image="zoom" lstrcomment="false" lstrtitle="false" name="mail" notNull="true" posX="12" posY="1" required="true" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="1" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="2" posY="2" text="Label2"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="vie02" columnCount="" fieldId="14" fieldType="NON_DATABASE" gridHeight="1" gridWidth="64" lstrcomment="false" lstrtitle="false" name="subject" notNull="true" posX="12" posY="2" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="2" table_alias_name="" widget="Edit"/>
+            <CheckBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="15" gridHeight="1" gridWidth="19" name="todaycheck" notNull="true" posX="78" posY="2" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="3" table_alias_name="" text="附上当日日期" title="CheckBox1" widget="CheckBox"/>
+            <Label posX="2" posY="3" text="Label2"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="vie02" columnCount="" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="64" image="zoom" lstrcomment="false" lstrtitle="false" name="mailto" posX="12" posY="3" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="4" table_alias_name="" widget="ButtonEdit"/>
+            <Button gridHeight="1" gridWidth="8" name="addto" posX="78" posY="3" tabIndex="12" text="Button1"/>
+            <Label posX="2" posY="4" text="Label2"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="vie02" columnCount="" fieldId="12" fieldType="NON_DATABASE" gridHeight="1" gridWidth="64" image="zoom" lstrcomment="false" lstrtitle="false" name="mailcc" posX="12" posY="4" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="5" table_alias_name="" widget="ButtonEdit"/>
+            <Button gridHeight="1" gridWidth="8" name="addcc" posX="78" posY="4" tabIndex="13" text="Button2"/>
+            <Label posX="2" posY="5" text="Label2"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="vie02" columnCount="" fieldId="13" fieldType="NON_DATABASE" gridHeight="1" gridWidth="64" image="zoom" lstrcomment="false" lstrtitle="false" name="mailbcc" posX="12" posY="5" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="6" table_alias_name="" widget="ButtonEdit"/>
+            <Button gridHeight="1" gridWidth="8" name="addbcc" posX="78" posY="5" tabIndex="14" text="Button3"/>
+            <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" defaultValue="text" fieldId="18" gridHeight="1" gridWidth="23" items="纯文本, markdown格式, HTML格式" name="body_type" notNull="true" posX="12" posY="6" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="7" table_alias_name="" title="ComboBox1" widget="ComboBox">
+              <Item lstrtext="false" name="text" text="纯文本"/>
+              <Item lstrtext="false" name="markdown" text="markdown格式"/>
+              <Item lstrtext="false" name="html" text="HTML格式"/>
+            </ComboBox>
+            <Label posX="2" posY="7" text="Label2"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vie03" columnCount="" fieldId="11" fieldType="NON_DATABASE" gridHeight="11" gridWidth="79" lstrcomment="false" lstrtitle="false" name="body_content" notNull="false" posX="12" posY="7" required="false" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" stretch="NONE" tabIndex="8" table_alias_name="" widget="TextEdit"/>
+            <Label posX="2" posY="19" text="Label2"/>
+            <ButtonEdit action="controlp" aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="vie02" columnCount="" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="58" image="zoom" lstrcomment="false" lstrtitle="false" name="tables" posX="12" posY="19" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="9" table_alias_name="" widget="ButtonEdit"/>
+            <Label posX="2" posY="20" text="Label2"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="lower" colName="vie02" columnCount="" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="58" lstrcomment="false" lstrtitle="false" name="crontab" posX="12" posY="20" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="10" table_alias_name="" widget="Edit"/>
+            <Label gridHeight="1" gridWidth="13" name="cronstatus" posX="76" posY="20" text=""/>
+            <Label posX="2" posY="21" text="Label2"/>
+            <TextEdit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="4" gridHeight="2" gridWidth="79" name="conrablable" posX="12" posY="21" rowCount="" sqlTabName="" sqlType="VARCHAR" stepX="" stepY="" tabIndex="19" table_alias_name="" title="TextEdit1" widget="TextEdit"/>
+          </Grid>
+        </Page>
+        <Page lstrtext="false" name="info" text="Info">
+          <Grid gridHeight="4" gridWidth="71" lstrcomment="false" name="Grid2" posX="0" posY="0">
+            <Label posX="1" posY="0" text="Record Owner"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vieuser" columnCount="" fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="crtuser" noEntry="true" posX="14" posY="0" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="15" table_alias_name="" widget="Edit"/>
+            <Label posX="29" posY="0" text="Record Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vieoriu" columnCount="" fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="moduser" noEntry="true" posX="42" posY="0" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="17" table_alias_name="" widget="Edit"/>
+            <Label posX="1" posY="1" text="Department"/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="viegrup" columnCount="" fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="13" lstrcomment="false" lstrtitle="false" name="crtdate" noEntry="true" posX="14" posY="1" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="16" table_alias_name="" widget="Edit"/>
+            <Label posX="29" posY="1" text="Dept Orig."/>
+            <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="vieorig" columnCount="" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" lstrcomment="false" lstrtitle="false" name="moddate" noEntry="true" posX="42" posY="1" rowCount="" sqlTabName="vie_file" sqlType="VARCHAR" stepX="" stepY="" tabIndex="18" table_alias_name="" widget="Edit"/>
+          </Grid>
+        </Page>
+      </Folder>
+      <Grid gridHeight="2" gridWidth="106" lstrcomment="false" name="Grid3" posX="0" posY="26">
+        <HLine gridWidth="8" name="HLine1" posX="1" posY="0"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" lstrcomment="false" lstrtitle="false" name="cnt" noEntry="true" posX="10" posY="0" rowCount="" sqlTabName="" sqlType="SMALLINT" stepX="" stepY="" tabIndex="11" table_alias_name="" widget="Edit"/>
+        <HLine gridWidth="8" name="HLine2" posX="16" posY="0"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[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]]>
+  </DiagramLayout>
+</ManagedForm>
