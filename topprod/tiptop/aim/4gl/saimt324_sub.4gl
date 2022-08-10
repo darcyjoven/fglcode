@@ -1296,6 +1296,8 @@ FUNCTION t324sub_t(p_imn,p_imm)
    DEFINE l_cnt         LIKE type_file.num5  
    DEFINE l_ima25       LIKE ima_file.ima25
    #DEV-D30046 --add--end
+   define l_imd10_1,l_imd10_2 like imd_file.imd10 #darcy:2022/08/04 add
+   define l_imm17 like imm_file.imm17 #darcy:2022/08/04 add
 
    CALL cl_msg("update img_file ...")
    IF cl_null(p_imn.imn05) THEN LET p_imn.imn05=' ' END IF
@@ -1332,10 +1334,23 @@ FUNCTION t324sub_t(p_imn,p_imm)
    LET l_qty = p_imn.imn10 * l_factor
    #end MOD-A70117 add
 
+   # darcy:2022/08/04 add s--- 
+   # 原材料仓之间调拨不异动呆滞日期
+   select imd10 into l_imd10_1 from imd_file where imd01 = p_imn.imn04
+   select imd10 into l_imd10_2 from imd_file where imd01 = p_imn.imn04
+   if l_imd10_1=l_imd10_2 then
+      select img37 into l_imm17 from img_file
+       where img01 =p_imn.imn03 and img02 =p_imn.imn04
+         and img03 =p_imn.imn05 and img04= p_imn.imn06
+   else
+      let l_imm17 = p_imm.imm17
+   end if
+   # darcy:2022/08/04 add e--- 
    #-->更新倉庫庫存明細資料
    #CALL s_upimg(p_imn.imn03,p_imn.imn04,p_imn.imn05,p_imn.imn06,-1,p_imn.imn10,p_imm.imm02,  #FUN-8C0084  #MOD-A70117 mark
    #CALL s_upimg(p_imn.imn03,p_imn.imn04,p_imn.imn05,p_imn.imn06,-1,l_qty,p_imm.imm02,  #FUN-8C0084        #MOD-A70117  #FUN-D40053
-   CALL s_upimg(p_imn.imn03,p_imn.imn04,p_imn.imn05,p_imn.imn06,-1,l_qty,p_imm.imm17,  #FUN-D40053
+   # CALL s_upimg(p_imn.imn03,p_imn.imn04,p_imn.imn05,p_imn.imn06,-1,l_qty,p_imm.imm17,  #FUN-D40053 #darcy: mark 20220804 
+    CALL s_upimg(p_imn.imn03,p_imn.imn04,p_imn.imn05,p_imn.imn06,-1,l_qty,l_imm17,  #FUN-D40053 #darcy: add 20220804 
        '','','','',p_imn.imn01,p_imn.imn02,'','','','','','','','','','','','')   #No:FUN-860045
 
    IF g_success = 'N' THEN RETURN 1 END IF
@@ -1406,6 +1421,8 @@ FUNCTION t324sub_t2(p_imn,p_imm)
    DEFINE l_cnt          LIKE type_file.num5  
    DEFINE l_ima25_2      LIKE ima_file.ima25
    #DEV-D30046 --add--end
+   define l_imd10_1,l_imd10_2 like imd_file.imd10 #darcy:2022/08/04 add
+   define l_imm17 like imm_file.imm17 #darcy:2022/08/04 add
 
    LET l_forupd_sql =
        "SELECT img15,img23,img24,img09,img21,img19,img27,",         #MOD-970033 img16 modify img15
@@ -1451,9 +1468,20 @@ FUNCTION t324sub_t2(p_imn,p_imm)
       RETURN 1
    END IF
    LET l_qty = p_imn.imn10 * l_factor
-
+   #darcy:2022/08/08 add s---
+   # 原材料仓之间调拨不异动呆滞日期
+   select imd10 into l_imd10_1 from imd_file where imd01 = p_imn.imn04
+   select imd10 into l_imd10_2 from imd_file where imd01 = p_imn.imn04
+   if l_imd10_1=l_imd10_2 then
+      select img37 into l_imm17 from img_file
+       where img01 =p_imn.imn03 and img02 =p_imn.imn04
+         and img03 =p_imn.imn05 and img04= p_imn.imn06
+   else
+      let l_imm17 = p_imm.imm17
+   end if
+   #darcy:2022/08/08 add e---
    #CALL s_upimg(p_imn.imn03,p_imn.imn15,p_imn.imn16,p_imn.imn17,+1,l_qty,p_imm.imm02,      #FUN-8C0084  #FUN-D40053
-   CALL s_upimg(p_imn.imn03,p_imn.imn15,p_imn.imn16,p_imn.imn17,+1,l_qty,p_imm.imm17,  #FUN-D40053
+   CALL s_upimg(p_imn.imn03,p_imn.imn15,p_imn.imn16,p_imn.imn17,+1,l_qty,l_imm17,  #FUN-D40053 #modify darcy:2022/08/08 
       p_imn.imn03,p_imn.imn15,p_imn.imn16,p_imn.imn17,
       p_imn.imn01,p_imn.imn02,l_img.img09,l_qty,      l_img.img09,
       1,  l_img.img21,1,

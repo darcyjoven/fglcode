@@ -687,7 +687,7 @@ END IF
             SET img10=g_img10_old,   #庫存數量
                 img16=p_date,
                 img17=p_date,        #異動日期
-               #img37=p_date,        #呆滯日期 MOD-B80219  #MOD-C70209 mark
+               img37=p_date,        #呆滯日期 MOD-B80219  #MOD-C70209 mark #remark by darcy:2022/08/08
                 img11=p_qty2
           #No.FUN-8C0084--BEGIN--
           #WHERE img01=p_item AND img02=p_stock AND img03=p_locat AND img04=p_lot
@@ -824,7 +824,7 @@ END IF
             SET img10=g_img10_old,   #庫存數量
                 img14=p_date,
                 img17=p_date,        #異動日期
-               #img37=p_date,        #呆滯日期 MOD-B80219 #MOD-C70209 mark
+                img37=p_date,        #呆滯日期 MOD-B80219 #MOD-C70209 mark #remakr by darcy:2022/08/08
                 img11=p_qty2
          #No.FUN-8C0084--BEGIN--
          #WHERE img01=p_item AND img02=p_stock AND img03=p_locat AND img04=p_lot
@@ -930,7 +930,7 @@ END IF
             SET img10=g_img10_old,   #庫存數量
                 img15=p_date,
                 img17=p_date,        #異動日期
-               #img37=p_date,        #呆滯日期 MOD-B80219 #MOD-C70209 mark
+               img37=p_date,        #呆滯日期 MOD-B80219 #MOD-C70209 mark  #remark by darcy
                 img11=p_qty2
            #No.FUN-8C0084--BEGIN--
            #WHERE img01=p_item AND img02=p_stock AND img03=p_locat AND img04=p_lot
