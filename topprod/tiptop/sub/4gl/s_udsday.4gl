@@ -25,5 +25,6 @@ FUNCTION s_udsday()
   IF l_sw = '0' THEN LET l_day = today END IF 
   IF l_sma30 != l_day  THEN
      UPDATE sma_file SET sma30 = l_day  WHERE sma00 = '0'
+     UPDATE sma_file SET sma51 = YEAR(l_day),sma52 = MONTH(l_day) WHERE sma00 = '0' #darcy:2022/08/01 add
   END IF 
 END FUNCTION
