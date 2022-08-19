@@ -343,6 +343,7 @@ FUNCTION csfr007()
                " FROM sfp_file,sfb_file LEFT JOIN ima_file m ON sfb05=m.ima01,sfa_file,sfs_file LEFT JOIN ima_file n ON sfs04=n.ima01 ",
                # " LEFT JOIN sfq_file ON sfq01 =sfs01 AND sfq02 = sfs03 ",#darcy:2022/04/25 add #darcy:2022/04/26 mark
                " WHERE sfp01=sfs01 AND sfb01=sfa01 AND sfs04=sfa03 AND sfs10=sfa08 ",#str---add by huanglf160823
+               " AND sfs27 = sfa27", #darcy:2022/07/29 add
                "  AND sfs03 = sfb01",
                " AND ",tm.wc,
                " GROUP BY sfp01,sfb08,sfs04,n.ima02,n.ima021,sfa05,sfa06,sfs06,sfsud02,sfs21,sfp06"
@@ -355,6 +356,7 @@ FUNCTION csfr007()
                " FROM sfp_file,sfb_file LEFT JOIN ima_file m ON sfb05=m.ima01,sfa_file,sfe_file LEFT JOIN ima_file n ON sfe07=n.ima01 ",
                # " LEFT JOIN sfq_file ON sfq01 =sfe02 AND sfq02 = sfe01 ", #darcy:2022/04/25 add #darcy:2022/04/26 mark
                " WHERE sfp01=sfe02 AND sfb01=sfa01 AND sfe14=sfa08 AND sfe07=sfa03 ",
+               " AND sfa27 = sfe27 ", #darcy:2022/07/29 add
                " AND sfpconf='Y' AND sfp04='Y' ",
                "  AND sfe01 = sfb01",
                " AND ",tm.wc,
