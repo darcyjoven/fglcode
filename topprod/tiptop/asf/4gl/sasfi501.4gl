@@ -9559,6 +9559,7 @@ DEFINE l_tc_zsa02   LIKE type_file.chr1,
           #   END IF
           ##FUN-D40103 ------End--------
          #TQC-D50124 -------End---------
+               let g_sfs[l_ac].img18 = i501_set_img18(g_sfs[l_ac].sfs04,g_sfs[l_ac].sfs07,g_sfs[l_ac].sfs08,g_sfs[l_ac].sfs09) #darcy:2022/08/10 add
            END IF
 
         AFTER FIELD sfs08
@@ -9587,6 +9588,7 @@ DEFINE l_tc_zsa02   LIKE type_file.chr1,
                  #END CASE
                  #end-----mark by guanyao160714
               END IF
+              let g_sfs[l_ac].img18 = i501_set_img18(g_sfs[l_ac].sfs04,g_sfs[l_ac].sfs07,g_sfs[l_ac].sfs08,g_sfs[l_ac].sfs09) #darcy:2022/08/10 add
            END IF  
 #FUN-BA0050 ----------------End------------------
  
@@ -9601,6 +9603,8 @@ DEFINE l_tc_zsa02   LIKE type_file.chr1,
         
   
     AFTER FIELD sfs09
+
+      let g_sfs[l_ac].img18 = i501_set_img18(g_sfs[l_ac].sfs04,g_sfs[l_ac].sfs07,g_sfs[l_ac].sfs08,g_sfs[l_ac].sfs09) #darcy:2022/08/10 add
 
    #FUN-BA0050 -----------Begin------------
            #str----mark by guanyao160714
@@ -12414,7 +12418,8 @@ FUNCTION i501_b_fill(p_wc2)              #BODY FILL UP
        LET g_sql =
         "SELECT sfs02,sfs26,sfs28,sfs014,sfs03,sfs27,sfs04,ima02,ima021,sfs012,'',sfs013,sfs06,sfs10,(sfa05-sfa065),sfa06,'',",    #FUN-940039 add sfs27,''(欠料量) #FUN-B50059 #CHI-BC0040 add sfs28 , sfs27與sfs04交換   #FUN-C70014 add sfs014
                                                                            #FUN-A60028 add sfs01,'',sfs013
-        "       sfsud02,sfs07,sfs08,sfs09,sfs05,sfsud07,sfs33,sfs34,sfs35,sfs30,sfs31,sfs32,",
+        "       sfsud02,sfs07,sfs08,sfs09,img18,sfs05,sfsud07,sfs33,sfs34,sfs35,sfs30,sfs31,sfs32,", #add darcy:2022/08/10
+      #   "       sfsud02,sfs07,sfs08,sfs09,sfs05,sfsud07,sfs33,sfs34,sfs35,sfs30,sfs31,sfs32,", #darcy: mark 20220810 
         "       sfs21,img10,0,sfs930,'',sfs36,'',sfs37,azf03 ",     #No.MOD-790113 mark sfa07   #FUN-670103 #FUN-950088 add sfs36,'' #FUN-CB0087 add sfs37,azf03
         "       ,sfsud01,sfsud03,sfsud04,sfsud05,",
         "       sfsud06,sfsud08,sfsud09,sfsud10,",
@@ -12437,7 +12442,8 @@ FUNCTION i501_b_fill(p_wc2)              #BODY FILL UP
        LET g_sql =
         "SELECT sfe28,sfe26,sfa28,sfe014,sfe01,sfe27,sfe07,ima02,ima021,sfe012,'',sfe013,sfe17,sfe14,(sfa05-sfa065),sfa06,'',",      #FUN-940039 add '',''(欠料量)  #TQC-9B0049 add sfe27  #FUN-B50059 #CHI-BC0040 add sfa28 , sfe27與sfe07交換 #FUN-C70014 add sfe014
                                                                 #FUN-A60028 add sfe012,'',sfe013
-        "       sfeud02,sfe08,sfe09,sfe10,sfe16,sfeud07,sfe33,sfe34,sfe35,sfe30,sfe31,sfe32,",
+      #   "       sfeud02,sfe08,sfe09,sfe10,sfe16,sfeud07,sfe33,sfe34,sfe35,sfe30,sfe31,sfe32,", #dmarkdarcy:2022/08/10
+        "       sfeud02,sfe08,sfe09,sfe10,img18,sfe16,sfeud07,sfe33,sfe34,sfe35,sfe30,sfe31,sfe32,", #add darcy:2022/08/10
         "       sfe11,img10,'',sfe930,'',sfe36,'',sfe37,azf03 ",    #No.MOD-790113 mark sfa07  #FUN-670103 #FUN-950088 add sfe36,'' #FUN-CB0087 #FUN-D50017 sfe37
         #"       ,'','','','','',", #FUN-CB0043
         #"       '','','','','',",  #FUN-CB0043
@@ -16529,3 +16535,17 @@ FUNCTION i501_get_img_mark(p_img01,p_img02,p_img03,p_img04)
 
 END FUNCTION
 #darcy: add 20220316 e---
+#darcy:2022/08/10 add s---
+function i501_set_img18(p_img01,p_img02,p_img03,p_img04)
+   define p_img01    like img_file.img01
+   define p_img02    like img_file.img02
+   define p_img03    like img_file.img03
+   define p_img04    like img_file.img04
+   define l_img18    like img_file.img18
+
+   select img18 into l_img18 from img_file where img01 = p_img01 and img02 = p_img02 and img03 =p_img03 and img04 =p_img04
+
+   return l_img18
+
+end function
+#darcy:2022/08/10 add e---
