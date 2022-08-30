@@ -182,6 +182,7 @@ MAIN
               "qctt009.qctt_file.qctt04,",
               "qctt010.qctt_file.qctt04"
               #darcy:2022/06/27 e---
+              ,",qcttmark.type_file.chr1000"
 
    LET l_table = cl_prt_temptable('aqcr300',g_sql) CLIPPED
    IF l_table = -1 THEN EXIT PROGRAM END IF
@@ -458,6 +459,10 @@ FUNCTION r300()
    define l_cnt     like type_file.num5    
    define l_qctt    array [20] of DECIMAL(15,3)
    #darcy:2022/06/27 add e---
+   #darcy:2022/08/11 add s---
+   define l_mark    like type_file.chr1000
+   define l_str     string
+   #darcy:2022/08/11 add e---
      SELECT zo02 INTO g_company FROM zo_file WHERE zo01 = g_rlang
      LOCATE l_img_blob IN MEMORY   #blob初始化   #TQC-C10039
      CALL cl_del_data(l_table)
@@ -476,7 +481,7 @@ FUNCTION r300()
                  "        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,",
                  "        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,",
                  "        ?,?,?,?,?, ?,?,?,?,?, ", #darcy:2022/06/27 add 
-                 "        ?, ?, ?, ?, ?, ?, ?)"   ##TQC-C10039  add 4?
+                 "        ?, ?, ?, ?, ?, ?, ? , ?)" #darcy:2022/08/11 add 1 ?   ##TQC-C10039  add 4?
      PREPARE insert_prep FROM g_sql
      IF STATUS THEN
         CALL cl_err('insert_prep:',status,1)
@@ -609,6 +614,25 @@ FUNCTION r300()
             end if
             let l_cnt = l_cnt + 1
          end foreach
+         #darcy:2022/08/11 s---
+         # 测量值范围
+         if not cl_null(sr.qct.qct131) or not cl_null(sr.qct.qct132) then
+            if not cl_null(sr.qct.qct131) then
+               let l_str=sr.qct.qct131,"~"
+            else 
+               let l_str ="∞~"
+            end if
+            if not cl_null(sr.qct.qct132) then
+               let l_str =l_str,sr.qct.qct132
+            else
+               let l_str = l_str,"∞"
+            end if 
+            let l_str = cl_replace_str(l_str,".000","")
+            let l_mark = cl_replace_str(l_str," ","")
+         else
+            let l_mark = ""   
+         end if
+         #darcy:2022/08/11 e---
          #darcy:2022/06/27 e---
          EXECUTE insert_prep USING sr.qcs.qcs00,sr.qcs.qcs01,sr.qcs.qcs02,sr.qcs.qcs021,sr.qcs.qcs03,sr.qcs.qcs04,
                                    sr.qcs.qcs041,sr.qcs.qcs05,sr.qcs.qcs06,sr.qcs.qcs061,sr.qcs.qcs062,sr.qcs.qcs071,
@@ -624,7 +648,8 @@ FUNCTION r300()
                                    l_gen02,l_pmc03,l_ima02,l_ima021,l_ima15,l_ima109,l_azf03_1,l_azf03_2,            #No.FUN-850062
                                    "",l_img_blob, "N",""    #TQC-C10039 ADD "",l_img_blob, "N",""
                                    ,l_qctt[1],l_qctt[2],l_qctt[3],l_qctt[4],l_qctt[5],l_qctt[6],l_qctt[7],l_qctt[8],l_qctt[9],l_qctt[10] #darcy:2022/06/27 add
-         #darcy:2022/07/14 s---
+         #darcy:2022/07/14 s---    
+                                   ,l_mark #darcy:2022/08/11 add 
          if l_cnt > 10 then
             EXECUTE insert_prep USING sr.qcs.qcs00,sr.qcs.qcs01,sr.qcs.qcs02,sr.qcs.qcs021,sr.qcs.qcs03,sr.qcs.qcs04,
                                    sr.qcs.qcs041,sr.qcs.qcs05,sr.qcs.qcs06,sr.qcs.qcs061,sr.qcs.qcs062,sr.qcs.qcs071,
@@ -640,6 +665,7 @@ FUNCTION r300()
                                    l_gen02,l_pmc03,l_ima02,l_ima021,l_ima15,l_ima109,l_azf03_1,"",            #No.FUN-850062
                                    "",l_img_blob, "N",""    #TQC-C10039 ADD "",l_img_blob, "N",""
                                    ,l_qctt[11],l_qctt[12],l_qctt[13],l_qctt[14],l_qctt[15],l_qctt[16],l_qctt[17],l_qctt[18],l_qctt[19],l_qctt[20]
+                                   ,l_mark #darcy:2022/08/11 add 
          end if
          #darcy:2022/07/14 e---
          DECLARE qao_cur2 CURSOR FOR SELECT qao01,qao03,qao05,qao06 FROM qao_file
@@ -665,7 +691,7 @@ FUNCTION r300()
          END FOREACH
  
          DECLARE qcu_cur CURSOR FOR
-            SELECT * FROM qcu_file WHERE qcu01=sr.qct.qct01
+            SELECT * FROM qcu_file WHERE qcu01=sr.qct.qct010
                                      AND qcu02=sr.qct.qct02
                                      AND qcu021=sr.qct.qct021
                                      AND qcu03=sr.qct.qct03
