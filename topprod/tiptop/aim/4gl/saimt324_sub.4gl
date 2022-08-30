@@ -1337,7 +1337,7 @@ FUNCTION t324sub_t(p_imn,p_imm)
    # darcy:2022/08/04 add s--- 
    # 原材料仓之间调拨不异动呆滞日期
    select imd10 into l_imd10_1 from imd_file where imd01 = p_imn.imn04
-   select imd10 into l_imd10_2 from imd_file where imd01 = p_imn.imn04
+   select imd10 into l_imd10_2 from imd_file where imd01 = p_imn.imn15
    if l_imd10_1=l_imd10_2 then
       select img37 into l_imm17 from img_file
        where img01 =p_imn.imn03 and img02 =p_imn.imn04
@@ -1471,7 +1471,7 @@ FUNCTION t324sub_t2(p_imn,p_imm)
    #darcy:2022/08/08 add s---
    # 原材料仓之间调拨不异动呆滞日期
    select imd10 into l_imd10_1 from imd_file where imd01 = p_imn.imn04
-   select imd10 into l_imd10_2 from imd_file where imd01 = p_imn.imn04
+   select imd10 into l_imd10_2 from imd_file where imd01 = p_imn.imn15
    if l_imd10_1=l_imd10_2 then
       select img37 into l_imm17 from img_file
        where img01 =p_imn.imn03 and img02 =p_imn.imn04
