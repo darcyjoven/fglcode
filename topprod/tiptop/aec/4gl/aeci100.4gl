@@ -1869,7 +1869,13 @@ FUNCTION i100_copy()
          if old_no[10,11] <> new_no[10,11] then 
             UPDATE ecb_tmp  SET ecb19=0,ecb21=0
          end if
-      END IF 
+      END IF
+      #darcy:2022/08/24 add s---
+      #大版本才能复制工时
+      if old_no[1,6] <> new_no[1,6] then
+         UPDATE ecb_tmp  SET ecb19=0,ecb21=0
+      end if
+      #darcy:2022/08/24 add e---
    end if 
    # darcy:2022/06/06 add e---
    INSERT INTO ecb_file SELECT * FROM ecb_tmp
