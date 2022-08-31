@@ -286,7 +286,7 @@ FUNCTION custCreateForm_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -501,7 +501,7 @@ FUNCTION custCreateFormRequest_g()
     LET custCreateFormHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL custCreateFormHTTPReq.setMethod("POST")
     CALL custCreateFormHTTPReq.setCharset("UTF-8")
-    CALL custCreateFormHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL custCreateFormHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL custCreateFormHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -781,7 +781,7 @@ FUNCTION custGetApproveLog_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -996,7 +996,7 @@ FUNCTION custGetApproveLogRequest_g()
     LET custGetApproveLogHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL custGetApproveLogHTTPReq.setMethod("POST")
     CALL custGetApproveLogHTTPReq.setCharset("UTF-8")
-    CALL custGetApproveLogHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL custGetApproveLogHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL custGetApproveLogHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -1276,7 +1276,7 @@ FUNCTION getProcessPackage_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -1491,7 +1491,7 @@ FUNCTION getProcessPackageRequest_g()
     LET getProcessPackageHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL getProcessPackageHTTPReq.setMethod("POST")
     CALL getProcessPackageHTTPReq.setCharset("UTF-8")
-    CALL getProcessPackageHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL getProcessPackageHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL getProcessPackageHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -1775,7 +1775,7 @@ FUNCTION removeAbsenceRecord_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -1990,7 +1990,7 @@ FUNCTION removeAbsenceRecordRequest_g()
     LET removeAbsenceRecordHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL removeAbsenceRecordHTTPReq.setMethod("POST")
     CALL removeAbsenceRecordHTTPReq.setCharset("UTF-8")
-    CALL removeAbsenceRecordHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL removeAbsenceRecordHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL removeAbsenceRecordHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -2272,7 +2272,7 @@ FUNCTION updateDefaultSubstitute_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -2487,7 +2487,7 @@ FUNCTION updateDefaultSubstituteRequest_g()
     LET updateDefaultSubstituteHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL updateDefaultSubstituteHTTPReq.setMethod("POST")
     CALL updateDefaultSubstituteHTTPReq.setCharset("UTF-8")
-    CALL updateDefaultSubstituteHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL updateDefaultSubstituteHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL updateDefaultSubstituteHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -2767,7 +2767,7 @@ FUNCTION getProjectsWithOrganizationId_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -2982,7 +2982,7 @@ FUNCTION getProjectsWithOrganizationIdRequest_g()
     LET getProjectsWithOrganizationIdHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL getProjectsWithOrganizationIdHTTPReq.setMethod("POST")
     CALL getProjectsWithOrganizationIdHTTPReq.setCharset("UTF-8")
-    CALL getProjectsWithOrganizationIdHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL getProjectsWithOrganizationIdHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL getProjectsWithOrganizationIdHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -3476,7 +3476,7 @@ FUNCTION fetchOrgUnitOfUserIdRequest_g()
     LET fetchOrgUnitOfUserIdHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchOrgUnitOfUserIdHTTPReq.setMethod("POST")
     CALL fetchOrgUnitOfUserIdHTTPReq.setCharset("UTF-8")
-    CALL fetchOrgUnitOfUserIdHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchOrgUnitOfUserIdHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchOrgUnitOfUserIdHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -3760,7 +3760,7 @@ FUNCTION completeWorkItem_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -3975,7 +3975,7 @@ FUNCTION completeWorkItemRequest_g()
     LET completeWorkItemHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL completeWorkItemHTTPReq.setMethod("POST")
     CALL completeWorkItemHTTPReq.setCharset("UTF-8")
-    CALL completeWorkItemHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL completeWorkItemHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL completeWorkItemHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -4257,7 +4257,7 @@ FUNCTION updateFormValueBySerialNember_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -4472,7 +4472,7 @@ FUNCTION updateFormValueBySerialNemberRequest_g()
     LET updateFormValueBySerialNemberHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL updateFormValueBySerialNemberHTTPReq.setMethod("POST")
     CALL updateFormValueBySerialNemberHTTPReq.setCharset("UTF-8")
-    CALL updateFormValueBySerialNemberHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL updateFormValueBySerialNemberHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL updateFormValueBySerialNemberHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -4754,7 +4754,7 @@ FUNCTION abortProcessForSerialNo_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -4969,7 +4969,7 @@ FUNCTION abortProcessForSerialNoRequest_g()
     LET abortProcessForSerialNoHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL abortProcessForSerialNoHTTPReq.setMethod("POST")
     CALL abortProcessForSerialNoHTTPReq.setCharset("UTF-8")
-    CALL abortProcessForSerialNoHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL abortProcessForSerialNoHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL abortProcessForSerialNoHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -5253,7 +5253,7 @@ FUNCTION terminatedProcessForSerialNo_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -5468,7 +5468,7 @@ FUNCTION terminatedProcessForSerialNoRequest_g()
     LET terminatedProcessForSerialNoHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL terminatedProcessForSerialNoHTTPReq.setMethod("POST")
     CALL terminatedProcessForSerialNoHTTPReq.setCharset("UTF-8")
-    CALL terminatedProcessForSerialNoHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL terminatedProcessForSerialNoHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL terminatedProcessForSerialNoHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -5752,7 +5752,7 @@ FUNCTION assignRelevantDataBySerialNo_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -5967,7 +5967,7 @@ FUNCTION assignRelevantDataBySerialNoRequest_g()
     LET assignRelevantDataBySerialNoHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL assignRelevantDataBySerialNoHTTPReq.setMethod("POST")
     CALL assignRelevantDataBySerialNoHTTPReq.setCharset("UTF-8")
-    CALL assignRelevantDataBySerialNoHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL assignRelevantDataBySerialNoHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL assignRelevantDataBySerialNoHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -6253,7 +6253,7 @@ FUNCTION reexecuteActivity_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -6468,7 +6468,7 @@ FUNCTION reexecuteActivityRequest_g()
     LET reexecuteActivityHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL reexecuteActivityHTTPReq.setMethod("POST")
     CALL reexecuteActivityHTTPReq.setCharset("UTF-8")
-    CALL reexecuteActivityHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL reexecuteActivityHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL reexecuteActivityHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -6752,7 +6752,7 @@ FUNCTION managementChangeWorkItemOwner_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -6967,7 +6967,7 @@ FUNCTION managementChangeWorkItemOwnerRequest_g()
     LET managementChangeWorkItemOwnerHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL managementChangeWorkItemOwnerHTTPReq.setMethod("POST")
     CALL managementChangeWorkItemOwnerHTTPReq.setCharset("UTF-8")
-    CALL managementChangeWorkItemOwnerHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL managementChangeWorkItemOwnerHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL managementChangeWorkItemOwnerHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -7251,7 +7251,7 @@ FUNCTION managementReassignWorkItem_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -7466,7 +7466,7 @@ FUNCTION managementReassignWorkItemRequest_g()
     LET managementReassignWorkItemHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL managementReassignWorkItemHTTPReq.setMethod("POST")
     CALL managementReassignWorkItemHTTPReq.setCharset("UTF-8")
-    CALL managementReassignWorkItemHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL managementReassignWorkItemHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL managementReassignWorkItemHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -7748,7 +7748,7 @@ FUNCTION addCustomParallelActivity_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -7963,7 +7963,7 @@ FUNCTION addCustomParallelActivityRequest_g()
     LET addCustomParallelActivityHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL addCustomParallelActivityHTTPReq.setMethod("POST")
     CALL addCustomParallelActivityHTTPReq.setCharset("UTF-8")
-    CALL addCustomParallelActivityHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL addCustomParallelActivityHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL addCustomParallelActivityHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -8247,7 +8247,7 @@ FUNCTION addCloneSerialActivity_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -8462,7 +8462,7 @@ FUNCTION addCloneSerialActivityRequest_g()
     LET addCloneSerialActivityHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL addCloneSerialActivityHTTPReq.setMethod("POST")
     CALL addCloneSerialActivityHTTPReq.setCharset("UTF-8")
-    CALL addCloneSerialActivityHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL addCloneSerialActivityHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL addCloneSerialActivityHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -8742,7 +8742,7 @@ FUNCTION fetchFullProcInstanceWithSerialNo_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -8957,7 +8957,7 @@ FUNCTION fetchFullProcInstanceWithSerialNoRequest_g()
     LET fetchFullProcInstanceWithSerialNoHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchFullProcInstanceWithSerialNoHTTPReq.setMethod("POST")
     CALL fetchFullProcInstanceWithSerialNoHTTPReq.setCharset("UTF-8")
-    CALL fetchFullProcInstanceWithSerialNoHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchFullProcInstanceWithSerialNoHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchFullProcInstanceWithSerialNoHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -9237,7 +9237,7 @@ FUNCTION fetchUniFormatFormInstanceWithProcOID_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -9452,7 +9452,7 @@ FUNCTION fetchUniFormatFormInstanceWithProcOIDRequest_g()
     LET fetchUniFormatFormInstanceWithProcOIDHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchUniFormatFormInstanceWithProcOIDHTTPReq.setMethod("POST")
     CALL fetchUniFormatFormInstanceWithProcOIDHTTPReq.setCharset("UTF-8")
-    CALL fetchUniFormatFormInstanceWithProcOIDHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchUniFormatFormInstanceWithProcOIDHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchUniFormatFormInstanceWithProcOIDHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -9736,7 +9736,7 @@ FUNCTION fetchProcSNMatchCurrtentPerformer_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -9951,7 +9951,7 @@ FUNCTION fetchProcSNMatchCurrtentPerformerRequest_g()
     LET fetchProcSNMatchCurrtentPerformerHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchProcSNMatchCurrtentPerformerHTTPReq.setMethod("POST")
     CALL fetchProcSNMatchCurrtentPerformerHTTPReq.setCharset("UTF-8")
-    CALL fetchProcSNMatchCurrtentPerformerHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchProcSNMatchCurrtentPerformerHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchProcSNMatchCurrtentPerformerHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -10233,7 +10233,7 @@ FUNCTION increaseViewTimesOfWorkAssignment_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -10448,7 +10448,7 @@ FUNCTION increaseViewTimesOfWorkAssignmentRequest_g()
     LET increaseViewTimesOfWorkAssignmentHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL increaseViewTimesOfWorkAssignmentHTTPReq.setMethod("POST")
     CALL increaseViewTimesOfWorkAssignmentHTTPReq.setCharset("UTF-8")
-    CALL increaseViewTimesOfWorkAssignmentHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL increaseViewTimesOfWorkAssignmentHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL increaseViewTimesOfWorkAssignmentHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -10728,7 +10728,7 @@ FUNCTION fetchUniFormatFormInstanceWithProcSerlNo_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -10943,7 +10943,7 @@ FUNCTION fetchUniFormatFormInstanceWithProcSerlNoRequest_g()
     LET fetchUniFormatFormInstanceWithProcSerlNoHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchUniFormatFormInstanceWithProcSerlNoHTTPReq.setMethod("POST")
     CALL fetchUniFormatFormInstanceWithProcSerlNoHTTPReq.setCharset("UTF-8")
-    CALL fetchUniFormatFormInstanceWithProcSerlNoHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchUniFormatFormInstanceWithProcSerlNoHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchUniFormatFormInstanceWithProcSerlNoHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -11229,7 +11229,7 @@ FUNCTION countWorkingTime_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -11444,7 +11444,7 @@ FUNCTION countWorkingTimeRequest_g()
     LET countWorkingTimeHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL countWorkingTimeHTTPReq.setMethod("POST")
     CALL countWorkingTimeHTTPReq.setCharset("UTF-8")
-    CALL countWorkingTimeHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL countWorkingTimeHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL countWorkingTimeHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -11730,7 +11730,7 @@ FUNCTION fetchDueDate_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -11945,7 +11945,7 @@ FUNCTION fetchDueDateRequest_g()
     LET fetchDueDateHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchDueDateHTTPReq.setMethod("POST")
     CALL fetchDueDateHTTPReq.setCharset("UTF-8")
-    CALL fetchDueDateHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchDueDateHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchDueDateHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -12233,7 +12233,7 @@ FUNCTION findManagerByAppLvl_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -12448,7 +12448,7 @@ FUNCTION findManagerByAppLvlRequest_g()
     LET findManagerByAppLvlHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL findManagerByAppLvlHTTPReq.setMethod("POST")
     CALL findManagerByAppLvlHTTPReq.setCharset("UTF-8")
-    CALL findManagerByAppLvlHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL findManagerByAppLvlHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL findManagerByAppLvlHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -12728,7 +12728,7 @@ FUNCTION reserveNoCmDocument_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -12943,7 +12943,7 @@ FUNCTION reserveNoCmDocumentRequest_g()
     LET reserveNoCmDocumentHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL reserveNoCmDocumentHTTPReq.setMethod("POST")
     CALL reserveNoCmDocumentHTTPReq.setCharset("UTF-8")
-    CALL reserveNoCmDocumentHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL reserveNoCmDocumentHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL reserveNoCmDocumentHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -13225,7 +13225,7 @@ FUNCTION addCustomParallelAndSerialActivity_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -13440,7 +13440,7 @@ FUNCTION addCustomParallelAndSerialActivityRequest_g()
     LET addCustomParallelAndSerialActivityHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL addCustomParallelAndSerialActivityHTTPReq.setMethod("POST")
     CALL addCustomParallelAndSerialActivityHTTPReq.setCharset("UTF-8")
-    CALL addCustomParallelAndSerialActivityHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL addCustomParallelAndSerialActivityHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL addCustomParallelAndSerialActivityHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -13726,7 +13726,7 @@ FUNCTION addCustomParallelAndSerialActivity1_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -13941,7 +13941,7 @@ FUNCTION addCustomParallelAndSerialActivity1Request_g()
     LET addCustomParallelAndSerialActivity1HTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL addCustomParallelAndSerialActivity1HTTPReq.setMethod("POST")
     CALL addCustomParallelAndSerialActivity1HTTPReq.setCharset("UTF-8")
-    CALL addCustomParallelAndSerialActivity1HTTPReq.setHeader("SOAPAction","\"\"")
+    CALL addCustomParallelAndSerialActivity1HTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL addCustomParallelAndSerialActivity1HTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -14218,7 +14218,7 @@ FUNCTION getSysintegrationServer_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -14434,7 +14434,7 @@ FUNCTION getSysintegrationServerRequest_g()
     LET getSysintegrationServerHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL getSysintegrationServerHTTPReq.setMethod("POST")
     CALL getSysintegrationServerHTTPReq.setCharset("UTF-8")
-    CALL getSysintegrationServerHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL getSysintegrationServerHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL getSysintegrationServerHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -14721,7 +14721,7 @@ FUNCTION fetchDefaultSubstituteInfo_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -14936,7 +14936,7 @@ FUNCTION fetchDefaultSubstituteInfoRequest_g()
     LET fetchDefaultSubstituteInfoHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchDefaultSubstituteInfoHTTPReq.setMethod("POST")
     CALL fetchDefaultSubstituteInfoHTTPReq.setCharset("UTF-8")
-    CALL fetchDefaultSubstituteInfoHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchDefaultSubstituteInfoHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchDefaultSubstituteInfoHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -15220,7 +15220,7 @@ FUNCTION fetchDefaultSubstituteInfo1_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -15435,7 +15435,7 @@ FUNCTION fetchDefaultSubstituteInfo1Request_g()
     LET fetchDefaultSubstituteInfo1HTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchDefaultSubstituteInfo1HTTPReq.setMethod("POST")
     CALL fetchDefaultSubstituteInfo1HTTPReq.setCharset("UTF-8")
-    CALL fetchDefaultSubstituteInfo1HTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchDefaultSubstituteInfo1HTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchDefaultSubstituteInfo1HTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -15717,7 +15717,7 @@ FUNCTION getSubstituteState_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -15932,7 +15932,7 @@ FUNCTION getSubstituteStateRequest_g()
     LET getSubstituteStateHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL getSubstituteStateHTTPReq.setMethod("POST")
     CALL getSubstituteStateHTTPReq.setCharset("UTF-8")
-    CALL getSubstituteStateHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL getSubstituteStateHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL getSubstituteStateHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -16212,7 +16212,7 @@ FUNCTION fetchFormInstanceWithProcSerlNo_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -16427,7 +16427,7 @@ FUNCTION fetchFormInstanceWithProcSerlNoRequest_g()
     LET fetchFormInstanceWithProcSerlNoHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchFormInstanceWithProcSerlNoHTTPReq.setMethod("POST")
     CALL fetchFormInstanceWithProcSerlNoHTTPReq.setCharset("UTF-8")
-    CALL fetchFormInstanceWithProcSerlNoHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchFormInstanceWithProcSerlNoHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchFormInstanceWithProcSerlNoHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -16709,7 +16709,7 @@ FUNCTION fetchCanTraceProcSN_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -16924,7 +16924,7 @@ FUNCTION fetchCanTraceProcSNRequest_g()
     LET fetchCanTraceProcSNHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchCanTraceProcSNHTTPReq.setMethod("POST")
     CALL fetchCanTraceProcSNHTTPReq.setCharset("UTF-8")
-    CALL fetchCanTraceProcSNHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchCanTraceProcSNHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchCanTraceProcSNHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -17206,7 +17206,7 @@ FUNCTION isPerformerOfProcessInstance_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -17421,7 +17421,7 @@ FUNCTION isPerformerOfProcessInstanceRequest_g()
     LET isPerformerOfProcessInstanceHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL isPerformerOfProcessInstanceHTTPReq.setMethod("POST")
     CALL isPerformerOfProcessInstanceHTTPReq.setCharset("UTF-8")
-    CALL isPerformerOfProcessInstanceHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL isPerformerOfProcessInstanceHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL isPerformerOfProcessInstanceHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -17701,7 +17701,7 @@ FUNCTION fetchProcInstanceWithSerialNo_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -17916,7 +17916,7 @@ FUNCTION fetchProcInstanceWithSerialNoRequest_g()
     LET fetchProcInstanceWithSerialNoHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchProcInstanceWithSerialNoHTTPReq.setMethod("POST")
     CALL fetchProcInstanceWithSerialNoHTTPReq.setCharset("UTF-8")
-    CALL fetchProcInstanceWithSerialNoHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchProcInstanceWithSerialNoHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchProcInstanceWithSerialNoHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -18198,7 +18198,7 @@ FUNCTION fetchToDoWorkItem_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -18413,7 +18413,7 @@ FUNCTION fetchToDoWorkItemRequest_g()
     LET fetchToDoWorkItemHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchToDoWorkItemHTTPReq.setMethod("POST")
     CALL fetchToDoWorkItemHTTPReq.setCharset("UTF-8")
-    CALL fetchToDoWorkItemHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchToDoWorkItemHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchToDoWorkItemHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -18699,7 +18699,7 @@ FUNCTION fetchProcInstances_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -18914,7 +18914,7 @@ FUNCTION fetchProcInstancesRequest_g()
     LET fetchProcInstancesHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchProcInstancesHTTPReq.setMethod("POST")
     CALL fetchProcInstancesHTTPReq.setCharset("UTF-8")
-    CALL fetchProcInstancesHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchProcInstancesHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchProcInstancesHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -19200,7 +19200,7 @@ FUNCTION fetchClosedProcInstances_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -19415,7 +19415,7 @@ FUNCTION fetchClosedProcInstancesRequest_g()
     LET fetchClosedProcInstancesHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchClosedProcInstancesHTTPReq.setMethod("POST")
     CALL fetchClosedProcInstancesHTTPReq.setCharset("UTF-8")
-    CALL fetchClosedProcInstancesHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchClosedProcInstancesHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchClosedProcInstancesHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -19695,7 +19695,7 @@ FUNCTION fetchFullProcInstanceWithOID_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -19910,7 +19910,7 @@ FUNCTION fetchFullProcInstanceWithOIDRequest_g()
     LET fetchFullProcInstanceWithOIDHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchFullProcInstanceWithOIDHTTPReq.setMethod("POST")
     CALL fetchFullProcInstanceWithOIDHTTPReq.setCharset("UTF-8")
-    CALL fetchFullProcInstanceWithOIDHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchFullProcInstanceWithOIDHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchFullProcInstanceWithOIDHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -20190,7 +20190,7 @@ FUNCTION fetchProcInstanceWithOID_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -20405,7 +20405,7 @@ FUNCTION fetchProcInstanceWithOIDRequest_g()
     LET fetchProcInstanceWithOIDHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchProcInstanceWithOIDHTTPReq.setMethod("POST")
     CALL fetchProcInstanceWithOIDHTTPReq.setCharset("UTF-8")
-    CALL fetchProcInstanceWithOIDHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchProcInstanceWithOIDHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchProcInstanceWithOIDHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -20685,7 +20685,7 @@ FUNCTION fetchFormInstanceWithProcOID_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -20900,7 +20900,7 @@ FUNCTION fetchFormInstanceWithProcOIDRequest_g()
     LET fetchFormInstanceWithProcOIDHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchFormInstanceWithProcOIDHTTPReq.setMethod("POST")
     CALL fetchFormInstanceWithProcOIDHTTPReq.setCharset("UTF-8")
-    CALL fetchFormInstanceWithProcOIDHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchFormInstanceWithProcOIDHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchFormInstanceWithProcOIDHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -21182,7 +21182,7 @@ FUNCTION addCustomActivity_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -21397,7 +21397,7 @@ FUNCTION addCustomActivityRequest_g()
     LET addCustomActivityHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL addCustomActivityHTTPReq.setMethod("POST")
     CALL addCustomActivityHTTPReq.setCharset("UTF-8")
-    CALL addCustomActivityHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL addCustomActivityHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL addCustomActivityHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -21683,7 +21683,7 @@ FUNCTION countWorkingDays_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -21898,7 +21898,7 @@ FUNCTION countWorkingDaysRequest_g()
     LET countWorkingDaysHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL countWorkingDaysHTTPReq.setMethod("POST")
     CALL countWorkingDaysHTTPReq.setCharset("UTF-8")
-    CALL countWorkingDaysHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL countWorkingDaysHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL countWorkingDaysHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -22188,7 +22188,7 @@ FUNCTION invokeProcess_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -22403,7 +22403,7 @@ FUNCTION invokeProcessRequest_g()
     LET invokeProcessHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL invokeProcessHTTPReq.setMethod("POST")
     CALL invokeProcessHTTPReq.setCharset("UTF-8")
-    CALL invokeProcessHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL invokeProcessHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL invokeProcessHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -22689,7 +22689,7 @@ FUNCTION invokeProcess1_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -22904,7 +22904,7 @@ FUNCTION invokeProcess1Request_g()
     LET invokeProcess1HTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL invokeProcess1HTTPReq.setMethod("POST")
     CALL invokeProcess1HTTPReq.setCharset("UTF-8")
-    CALL invokeProcess1HTTPReq.setHeader("SOAPAction","\"\"")
+    CALL invokeProcess1HTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL invokeProcess1HTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -23184,7 +23184,7 @@ FUNCTION bypassActivity_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -23399,7 +23399,7 @@ FUNCTION bypassActivityRequest_g()
     LET bypassActivityHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL bypassActivityHTTPReq.setMethod("POST")
     CALL bypassActivityHTTPReq.setCharset("UTF-8")
-    CALL bypassActivityHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL bypassActivityHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL bypassActivityHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -23681,7 +23681,7 @@ FUNCTION acceptWorkItem_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -23896,7 +23896,7 @@ FUNCTION acceptWorkItemRequest_g()
     LET acceptWorkItemHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL acceptWorkItemHTTPReq.setMethod("POST")
     CALL acceptWorkItemHTTPReq.setCharset("UTF-8")
-    CALL acceptWorkItemHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL acceptWorkItemHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL acceptWorkItemHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -24176,7 +24176,7 @@ FUNCTION findFormOIDsOfProcess_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -24214,7 +24214,6 @@ FUNCTION findFormOIDsOfProcess_g()
       # DOM SOAP REQUEST SERIALIZE
       #
       CALL xml.Serializer.VariableToSoapSection5(findFormOIDsOfProcessRequest,body)
-
       # Send SOAP envelope
       CALL request.doXmlRequest(writer)
     CATCH
@@ -24391,7 +24390,7 @@ FUNCTION findFormOIDsOfProcessRequest_g()
     LET findFormOIDsOfProcessHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL findFormOIDsOfProcessHTTPReq.setMethod("POST")
     CALL findFormOIDsOfProcessHTTPReq.setCharset("UTF-8")
-    CALL findFormOIDsOfProcessHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL findFormOIDsOfProcessHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL findFormOIDsOfProcessHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -24675,7 +24674,7 @@ FUNCTION addUserAbsence_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -24890,7 +24889,7 @@ FUNCTION addUserAbsenceRequest_g()
     LET addUserAbsenceHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL addUserAbsenceHTTPReq.setMethod("POST")
     CALL addUserAbsenceHTTPReq.setCharset("UTF-8")
-    CALL addUserAbsenceHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL addUserAbsenceHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL addUserAbsenceHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -25172,7 +25171,7 @@ FUNCTION fetchFullProcInstanceWithSerialNoShowReferences_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -25387,7 +25386,7 @@ FUNCTION fetchFullProcInstanceWithSerialNoShowReferencesRequest_g()
     LET fetchFullProcInstanceWithSerialNoShowReferencesHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchFullProcInstanceWithSerialNoShowReferencesHTTPReq.setMethod("POST")
     CALL fetchFullProcInstanceWithSerialNoShowReferencesHTTPReq.setCharset("UTF-8")
-    CALL fetchFullProcInstanceWithSerialNoShowReferencesHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchFullProcInstanceWithSerialNoShowReferencesHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchFullProcInstanceWithSerialNoShowReferencesHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -25667,7 +25666,7 @@ FUNCTION fetchProcessAbortOrTerminateComment_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -25882,7 +25881,7 @@ FUNCTION fetchProcessAbortOrTerminateCommentRequest_g()
     LET fetchProcessAbortOrTerminateCommentHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchProcessAbortOrTerminateCommentHTTPReq.setMethod("POST")
     CALL fetchProcessAbortOrTerminateCommentHTTPReq.setCharset("UTF-8")
-    CALL fetchProcessAbortOrTerminateCommentHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchProcessAbortOrTerminateCommentHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchProcessAbortOrTerminateCommentHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -26166,7 +26165,7 @@ FUNCTION fetchProcessContextVariable_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -26381,7 +26380,7 @@ FUNCTION fetchProcessContextVariableRequest_g()
     LET fetchProcessContextVariableHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchProcessContextVariableHTTPReq.setMethod("POST")
     CALL fetchProcessContextVariableHTTPReq.setCharset("UTF-8")
-    CALL fetchProcessContextVariableHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchProcessContextVariableHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchProcessContextVariableHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -26663,7 +26662,7 @@ FUNCTION fetchProcessContextVariable1_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -26878,7 +26877,7 @@ FUNCTION fetchProcessContextVariable1Request_g()
     LET fetchProcessContextVariable1HTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchProcessContextVariable1HTTPReq.setMethod("POST")
     CALL fetchProcessContextVariable1HTTPReq.setCharset("UTF-8")
-    CALL fetchProcessContextVariable1HTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchProcessContextVariable1HTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchProcessContextVariable1HTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -27170,7 +27169,7 @@ FUNCTION invokeProcessByParameterByOrg_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -27385,7 +27384,7 @@ FUNCTION invokeProcessByParameterByOrgRequest_g()
     LET invokeProcessByParameterByOrgHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL invokeProcessByParameterByOrgHTTPReq.setMethod("POST")
     CALL invokeProcessByParameterByOrgHTTPReq.setCharset("UTF-8")
-    CALL invokeProcessByParameterByOrgHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL invokeProcessByParameterByOrgHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL invokeProcessByParameterByOrgHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -27669,7 +27668,7 @@ FUNCTION removeLabelFromNoticeWorkItem_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -27884,7 +27883,7 @@ FUNCTION removeLabelFromNoticeWorkItemRequest_g()
     LET removeLabelFromNoticeWorkItemHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL removeLabelFromNoticeWorkItemHTTPReq.setMethod("POST")
     CALL removeLabelFromNoticeWorkItemHTTPReq.setCharset("UTF-8")
-    CALL removeLabelFromNoticeWorkItemHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL removeLabelFromNoticeWorkItemHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL removeLabelFromNoticeWorkItemHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -28164,7 +28163,7 @@ FUNCTION getFormFieldTemplate_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -28379,7 +28378,7 @@ FUNCTION getFormFieldTemplateRequest_g()
     LET getFormFieldTemplateHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL getFormFieldTemplateHTTPReq.setMethod("POST")
     CALL getFormFieldTemplateHTTPReq.setCharset("UTF-8")
-    CALL getFormFieldTemplateHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL getFormFieldTemplateHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL getFormFieldTemplateHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -28667,7 +28666,7 @@ FUNCTION invokeProcessByOrg_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -28882,7 +28881,7 @@ FUNCTION invokeProcessByOrgRequest_g()
     LET invokeProcessByOrgHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL invokeProcessByOrgHTTPReq.setMethod("POST")
     CALL invokeProcessByOrgHTTPReq.setCharset("UTF-8")
-    CALL invokeProcessByOrgHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL invokeProcessByOrgHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL invokeProcessByOrgHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -29174,7 +29173,7 @@ FUNCTION invokeProcessByOrg1_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -29389,7 +29388,7 @@ FUNCTION invokeProcessByOrg1Request_g()
     LET invokeProcessByOrg1HTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL invokeProcessByOrg1HTTPReq.setMethod("POST")
     CALL invokeProcessByOrg1HTTPReq.setCharset("UTF-8")
-    CALL invokeProcessByOrg1HTTPReq.setHeader("SOAPAction","\"\"")
+    CALL invokeProcessByOrg1HTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL invokeProcessByOrg1HTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -29681,7 +29680,7 @@ FUNCTION invokeProcessAndAddCustAct_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -29896,7 +29895,7 @@ FUNCTION invokeProcessAndAddCustActRequest_g()
     LET invokeProcessAndAddCustActHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL invokeProcessAndAddCustActHTTPReq.setMethod("POST")
     CALL invokeProcessAndAddCustActHTTPReq.setCharset("UTF-8")
-    CALL invokeProcessAndAddCustActHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL invokeProcessAndAddCustActHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL invokeProcessAndAddCustActHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -30190,7 +30189,7 @@ FUNCTION invokeProcessAndAddCustActByOrg_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -30405,7 +30404,7 @@ FUNCTION invokeProcessAndAddCustActByOrgRequest_g()
     LET invokeProcessAndAddCustActByOrgHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL invokeProcessAndAddCustActByOrgHTTPReq.setMethod("POST")
     CALL invokeProcessAndAddCustActByOrgHTTPReq.setCharset("UTF-8")
-    CALL invokeProcessAndAddCustActByOrgHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL invokeProcessAndAddCustActByOrgHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL invokeProcessAndAddCustActByOrgHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -30695,7 +30694,7 @@ FUNCTION invokeProcessByParameter_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -30910,7 +30909,7 @@ FUNCTION invokeProcessByParameterRequest_g()
     LET invokeProcessByParameterHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL invokeProcessByParameterHTTPReq.setMethod("POST")
     CALL invokeProcessByParameterHTTPReq.setCharset("UTF-8")
-    CALL invokeProcessByParameterHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL invokeProcessByParameterHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL invokeProcessByParameterHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -31190,7 +31189,7 @@ FUNCTION importOrganizationData_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -31405,7 +31404,7 @@ FUNCTION importOrganizationDataRequest_g()
     LET importOrganizationDataHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL importOrganizationDataHTTPReq.setMethod("POST")
     CALL importOrganizationDataHTTPReq.setCharset("UTF-8")
-    CALL importOrganizationDataHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL importOrganizationDataHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL importOrganizationDataHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -31691,7 +31690,7 @@ FUNCTION assigneeReassignWorkItem_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -31906,7 +31905,7 @@ FUNCTION assigneeReassignWorkItemRequest_g()
     LET assigneeReassignWorkItemHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL assigneeReassignWorkItemHTTPReq.setMethod("POST")
     CALL assigneeReassignWorkItemHTTPReq.setCharset("UTF-8")
-    CALL assigneeReassignWorkItemHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL assigneeReassignWorkItemHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL assigneeReassignWorkItemHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -32186,7 +32185,7 @@ FUNCTION checkWorkItemState_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -32401,7 +32400,7 @@ FUNCTION checkWorkItemStateRequest_g()
     LET checkWorkItemStateHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL checkWorkItemStateHTTPReq.setMethod("POST")
     CALL checkWorkItemStateHTTPReq.setCharset("UTF-8")
-    CALL checkWorkItemStateHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL checkWorkItemStateHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL checkWorkItemStateHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -32685,7 +32684,7 @@ FUNCTION addLabelToNoticeWorkItem_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -32900,7 +32899,7 @@ FUNCTION addLabelToNoticeWorkItemRequest_g()
     LET addLabelToNoticeWorkItemHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL addLabelToNoticeWorkItemHTTPReq.setMethod("POST")
     CALL addLabelToNoticeWorkItemHTTPReq.setCharset("UTF-8")
-    CALL addLabelToNoticeWorkItemHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL addLabelToNoticeWorkItemHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL addLabelToNoticeWorkItemHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -33184,7 +33183,7 @@ FUNCTION fetchWorkItemCount_g()
     LET request = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL request.setMethod("POST")
     CALL request.setCharset("UTF-8")
-    CALL request.setHeader("SOAPAction","\"\"")
+    CALL request.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL request.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF
@@ -33399,7 +33398,7 @@ FUNCTION fetchWorkItemCountRequest_g()
     LET fetchWorkItemCountHTTPReq = com.HTTPRequest.Create(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Address.Uri)
     CALL fetchWorkItemCountHTTPReq.setMethod("POST")
     CALL fetchWorkItemCountHTTPReq.setCharset("UTF-8")
-    CALL fetchWorkItemCountHTTPReq.setHeader("SOAPAction","\"\"")
+    CALL fetchWorkItemCountHTTPReq.setHeader("SOAPAction","application/soap+xml;charset=utf-8")
     IF PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version IS NOT NULL THEN
       CALL fetchWorkItemCountHTTPReq.setVersion(PLMIntegrationEFGPService_PLMIntegrationEFGPEndpoint.Binding.Version)
     END IF

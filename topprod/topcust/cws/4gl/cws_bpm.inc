@@ -1725,7 +1725,7 @@ DEFINE acceptWorkItemRequest RECORD ATTRIBUTE(XMLSequence,XMLName="acceptWorkIte
 #-------------------------------------------------------------------------------
 
 # VARIABLE : findFormOIDsOfProcessRequest
-DEFINE findFormOIDsOfProcessRequest RECORD ATTRIBUTE(XMLSequence,XMLName="findFormOIDsOfProcessRequest",XMLNamespace="http://webservice.nana.dsc.com/")
+DEFINE findFormOIDsOfProcessRequest RECORD ATTRIBUTE(XMLSequence,XMLName="findFormOIDsOfProcess",XMLNamespace="http://webservice.nana.dsc.com/")
          pProcessPackageId STRING ATTRIBUTE(XMLName="pProcessPackageId",XMLNamespace="")
        END RECORD
 
