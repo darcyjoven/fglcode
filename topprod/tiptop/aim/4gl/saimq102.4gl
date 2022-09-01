@@ -1042,6 +1042,13 @@ FUNCTION q102_show2()
           #darcy:2022/05/20 s---
           if l_sfbud12 > 0 then
           #去掉下版数量部分
+            #darcy:2022/09/01 add s---
+            # 取替代料需要取原料号QPA
+            if lr_sfa.sfa26 = 'S' OR  lr_sfa.sfa26='U' then
+               SELECT sfa161 into lr_sfa.sfa161 from sfa_file
+                where sfa01 = lr_sfa.sfa01 and sfa03 = lr_sfa.sfa27 and sfa08=lr_sfa.sfa08
+            end if
+            #darcy:2022/09/01 add e---
             let g_ima.sfa_xiaban = iif (cl_null(g_ima.sfa_xiaban),0,g_ima.sfa_xiaban)
             let g_ima.sfa_xiaban = g_ima.sfa_xiaban + lr_sfa.sfa161 * l_sfbud12 * lr_sfa.sfa13
           end if
