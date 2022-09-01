@@ -1588,7 +1588,7 @@ DEFINE countWorkingDaysResponse RECORD ATTRIBUTE(XMLSequence,XMLName="countWorki
 #-------------------------------------------------------------------------------
 
 # VARIABLE : invokeProcessRequest
-DEFINE invokeProcessRequest RECORD ATTRIBUTE(XMLSequence,XMLName="invokeProcessRequest",XMLNamespace="http://webservice.nana.dsc.com/")
+DEFINE invokeProcessRequest RECORD ATTRIBUTE(XMLSequence,XMLName="invokeProcess",XMLNamespace="http://webservice.nana.dsc.com/")
          pProcessPackageId STRING ATTRIBUTE(XMLName="pProcessPackageId",XMLNamespace=""),
          pRequesterId STRING ATTRIBUTE(XMLName="pRequesterId",XMLNamespace=""),
          pOrgUnitId STRING ATTRIBUTE(XMLName="pOrgUnitId",XMLNamespace=""),
