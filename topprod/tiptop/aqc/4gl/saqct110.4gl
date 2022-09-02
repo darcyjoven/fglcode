@@ -9195,7 +9195,8 @@ FUNCTION t110_qcs02(p_cmd)                #MOD-C30339   增加p_cmd
           EXIT CASE
    END CASE
  
-   IF g_qcs.qcs00 NOT MATCHES '[2Z56]' THEN   #MOD-870270
+   # IF g_qcs.qcs00 NOT MATCHES '[2Z56]' THEN   #MOD-870270
+   IF g_qcs.qcs00 NOT MATCHES '[Z56]' THEN   #MOD-870270 #darcy:2022/09/02 add
       # 若判斷qcs22=0 才重計會造成先入驗退量後打收貨單時,不會重計l_rvb07s, 造成送驗量不合理也沒控卡
          CALL t110_qcs22() RETURNING l_rvb07s
          #送驗量允許有小數位
