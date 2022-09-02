@@ -106,10 +106,18 @@ function cws_bpm_apmt420(l_pmk01)
                         </bg1>
                     </qgd>]]>" 
     #pSubject 
-    call cimi999_invokProcess(
-        "PKG16582113889266",
-        l_pmk01,
-        l_request
+    # call cimi999_invokProcess(
+    #     "PKG16582113889266",
+    #     l_pmk01,
+    #     l_request
+    # ) returning l_response
+
+    call cws_bpm_invoke_by_go(
+        cws_bpm_set_invoke_request(
+            "PKG16582113889266",
+            l_pmk01,
+            l_request
+        )
     ) returning l_response
     
     #解析回传的资料内容
