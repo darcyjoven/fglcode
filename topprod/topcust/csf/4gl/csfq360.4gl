@@ -1357,7 +1357,7 @@ FUNCTION q360_b_fill2()
    # ecbud02 = 'AAA' 之外的都需要显示
 
    LET l_sql ="INSERT INTO q360_temp select unique ecb01,imaud10,ecb02,ecb03,ecb06,ecb08,eca02,ecb19,ecb21,ecbud02,ecb17
-               FROM q360_temp0 WHERE ecbud02 is null or ( ecbud02 is null and ecbud02 != 'AAA') "
+               FROM q360_temp0 WHERE ecbud02 is null or ( ecbud02 is not null and ecbud02 != 'AAA') "
    PREPARE q360_bahas1 FROM l_sql 
    EXECUTE q360_bahas1
 
