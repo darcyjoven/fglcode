@@ -373,7 +373,7 @@ DEFINE updateFormValueBySerialNemberRequest RECORD ATTRIBUTE(XMLSequence,XMLName
 #-------------------------------------------------------------------------------
 
 # VARIABLE : abortProcessForSerialNoRequest
-DEFINE abortProcessForSerialNoRequest RECORD ATTRIBUTE(XMLSequence,XMLName="abortProcessForSerialNoRequest",XMLNamespace="http://webservice.nana.dsc.com/")
+DEFINE abortProcessForSerialNoRequest RECORD ATTRIBUTE(XMLSequence,XMLName="abortProcessForSerialNo",XMLNamespace="http://webservice.nana.dsc.com/")
          pProcessInstanceSerialNo STRING ATTRIBUTE(XMLName="pProcessInstanceSerialNo",XMLNamespace=""),
          pAbortComment STRING ATTRIBUTE(XMLName="pAbortComment",XMLNamespace="")
        END RECORD
