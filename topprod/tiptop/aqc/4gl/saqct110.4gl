@@ -9195,8 +9195,8 @@ FUNCTION t110_qcs02(p_cmd)                #MOD-C30339   增加p_cmd
           EXIT CASE
    END CASE
  
-   # IF g_qcs.qcs00 NOT MATCHES '[2Z56]' THEN   #MOD-870270
-   IF g_qcs.qcs00 NOT MATCHES '[Z56]' THEN   #MOD-870270 #darcy:2022/09/02 add
+   # IF g_qcs.qcs00 NOT MATCHES '[2Z56]' THEN   #MOD-870270 #markdarcy:2022/09/02
+   IF g_qcs.qcs00 NOT MATCHES '[Z56]' THEN   #MOD-870270 #add darcy:2022/09/02
       # 若判斷qcs22=0 才重計會造成先入驗退量後打收貨單時,不會重計l_rvb07s, 造成送驗量不合理也沒控卡
          CALL t110_qcs22() RETURNING l_rvb07s
          #送驗量允許有小數位
@@ -9630,6 +9630,12 @@ FUNCTION t110_qcs22()
          #收貨量允許有小數位
          SELECT rvb07 INTO l_rvb07s FROM rvb_file
           WHERE rvb01=g_qcs.qcs01 AND rvb02=g_qcs.qcs02
+      #add darcy:2022/09/02 add s---
+      WHEN g_qcs.qcs00 = '2'
+         #收貨量允許有小數位
+         SELECT rvb07 INTO l_rvb07s FROM rvb_file
+          WHERE rvb01=g_qcs.qcs01 AND rvb02=g_qcs.qcs02
+      #add darcy:2022/09/02 add e---
       WHEN g_qcs.qcs00 = 'A' OR g_qcs.qcs00 = 'B'
          SELECT inb16 INTO l_rvb07s #FUN-870040
            FROM inb_file
