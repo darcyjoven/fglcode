@@ -236,3 +236,27 @@ function cws_bpm_set_invoke_request(
     
     return l_request
 end function
+
+# 撤销流程，需要传入单号和bpm单号。
+function cws_bpm_unsign(erp_no,bpm_no)
+    define bpm_no string
+    define erp_no string
+
+    define success like type_file.chr1
+
+    define comment  string
+    define l_gen02  like gen_file.gen02
+    define l_status integer 
+    select gen02 into l_gen02 from gen_file where gen01 = g_user
+
+    let comment = g_user," ",l_gen02,"撤销了单据 by ERP",erp_no
+
+    call abortProcessForSerialNo(bpm_no,comment)
+        returning l_status
+    
+    if l_status ==0 then
+        return true
+    else
+        return false
+    end if
+end function
