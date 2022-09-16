@@ -43,9 +43,11 @@ main
     # call cimi999_insdb()
     # call cimi999_fastexcel() #darcy:2022/08/26
     # call cimi999_bpm() #darcy:2022/08/26 #markdarcy:2022/09/01
-    call cws_bpm_apmt420(arg1) returning success,bpm_no #markdarcy:2022/09/02
-    let success = cws_bpm_unsign(arg1,bpm_no)
+
+    # call cws_bpm_apmt420(arg1) returning success,bpm_no #markdarcy:2022/09/02
+    # let success = cws_bpm_unsign(arg1,bpm_no)
     
+    call cs_ima02("M.IL") returning bpm_no
 end main
 
 function cimi999_fastexcel()
