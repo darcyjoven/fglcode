@@ -77,10 +77,11 @@ MAIN
                "pml21.pml_file.pml21,pml33.pml_file.pml33,pml34.pml_file.pml34,",
                "pml35.pml_file.pml35,pml41.pml_file.pml41,ima021.ima_file.ima021,",
                "l_str2.type_file.chr1000,pmk04.pmk_file.pmk04,gen02.gen_file.gen02"     #TQC-940009 add pmk04,gen02
+               ,",pml06.pml_file.pml06" #darcy:2022/09/05 增加备注栏位
    LET l_table = cl_prt_temptable('apmr411',g_sql) CLIPPED                      
    IF l_table = -1 THEN EXIT PROGRAM END IF
    LET g_sql = "INSERT INTO ",g_cr_db_str CLIPPED,l_table CLIPPED,              
-               " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) "   #TQC-940009 add 2個?      
+               " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,? ,?) "   #TQC-940009 add 2個?      #darcy:2022/09/05 增加一个 ?
    PREPARE insert_prep FROM g_sql                                               
    IF STATUS THEN                                                               
       CALL cl_err('insert_prep:',status,1) EXIT PROGRAM                         
@@ -329,6 +330,7 @@ FUNCTION r411()
                      pml85     LIKE    pml_file.pml85,
                      pmk04     LIKE    pmk_file.pmk04,     #TQC-940009 add
                      pmk12     LIKE    pmk_file.pmk12      #TQC-940009 add
+                     ,pml06    like pml_file.pml06 #darcy:2022/09/05 add
                      END RECORD
      DEFINE l_i,l_cnt          LIKE type_file.num5    #No.FUN-580004  #No.FUN-680136 SMALLINT
      DEFINE l_zaa02            LIKE zaa_file.zaa02    #NO.FUN-580004
@@ -366,6 +368,7 @@ FUNCTION r411()
    # LET l_sql = " SELECT pml01,pml04,ima02,pml41,pml07,pml33,pml20,pml21 ",
      LET l_sql = " SELECT pml01,pml04,pml041,pml41,pml07,pml33,pml34,pml35,pml18,",  #No.TQC-640132
                  "        pml20,pml21,pml80,pml82,pml83,pml85,pmk04,pmk12 ",  #No.FUN-580004      #TQC-940009 add pmk04,pmk12
+                 "        ,pml06", #darcy:2022/09/05 add
                  " FROM pmk_file,pml_file ",
                # " OUTER ima_file ",
                # " WHERE pmk01 = pml01 AND pml04=ima01 ",
@@ -464,6 +467,7 @@ FUNCTION r411()
      EXECUTE insert_prep USING sr.pml01,sr.pml04,sr.pml041,sr.pml07,sr.pml18,
                                sr.pml20,sr.pml21,sr.pml33,sr.pml34,sr.pml35,
                                sr.pml41,l_ima021,l_str2,sr.pmk04,l_gen02      #TQC-940009 add pmk04,gen02
+                               ,sr.pml06 #darcy:2022/09/05 add
 #       OUTPUT TO REPORT r411_rep(sr.*)
 #No.FUN-7C0054---End
      END FOREACH
