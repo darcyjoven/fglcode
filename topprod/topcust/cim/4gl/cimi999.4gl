@@ -43,7 +43,8 @@ main
     # call cimi999_insdb()
     # call cimi999_fastexcel() #darcy:2022/08/26
     # call cimi999_bpm() #darcy:2022/08/26 #markdarcy:2022/09/01
-    call cws_bpm_apmt420(arg1) returning success,bpm_no
+    call cws_bpm_apmt420(arg1) returning success,bpm_no #markdarcy:2022/09/02
+    let success = cws_bpm_unsign(arg1,bpm_no)
     
 end main
 
@@ -581,4 +582,27 @@ function cimi999_invok_by_golang(content)
         return ""
     end try
     return response
+end function
+
+function cimi999_bpm_unsign(l_pmk01,bpm_no)
+    define bpm_no string
+    define l_pmk01 string
+
+    define success like type_file.chr1
+
+    define comment  string
+    define l_gen02  like gen_file.gen02
+    define l_status integer 
+    select gen02 into l_gen02 from gen_file where gen01 = g_user
+
+    let comment = g_user," ",l_gen02,"撤销了单据 by ERP",l_pmk01
+
+    call abortProcessForSerialNo(bpm_no,comment)
+        returning l_status
+    
+    if l_status ==0 then
+        return true
+    else
+        return false
+    end if
 end function
