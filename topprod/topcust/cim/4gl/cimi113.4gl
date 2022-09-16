@@ -282,11 +282,19 @@ FUNCTION i113_menu()
          WHEN "related_document"  #相關文件
               IF cl_chk_act_auth() THEN
                  IF g_tc_cma01 IS NOT NULL THEN
-                 LET g_doc.column1 = "tc_cmb01"
-                 LET g_doc.value1 = g_tc_cma01
-                 CALL cl_doc()
-               END IF
-         END IF
+                  LET g_doc.column1 = "tc_cmb01"
+                  LET g_doc.value1 = g_tc_cma01
+                  CALL cl_doc()
+                  END IF
+            END IF
+         when "confirm"
+            if cl_chk_act_auth() then
+               call i113_confirm("Y")
+            end if
+         when "unconfirm"
+            if cl_chk_act_auth() then
+               call i113_confirm("N")
+            end if
       END CASE
    END WHILE
 END FUNCTION
@@ -459,7 +467,9 @@ FUNCTION i113_i(p_cmd)
    LET l_allow_insert = cl_detail_input_auth("insert")
    LET l_allow_delete = cl_detail_input_auth("delete")
    LET g_before_input_done = FALSE
- 
+
+   let g_success = true
+
    DIALOG ATTRIBUTES(UNBUFFERED,FIELD ORDER FORM)
 
       INPUT BY NAME g_tc_cma.tc_cma01,g_tc_cma.tc_cma03 ATTRIBUTE(WITHOUT DEFAULTS) 
@@ -539,6 +549,7 @@ FUNCTION i113_i(p_cmd)
          #TODO 根据actionchoice 确认update还是insert
             IF i113_input(p_cmd) THEN
                display g_tc_cma.tc_cma02 to tc_cma02
+               continue dialog
             END IF
 
       END INPUT 
@@ -587,10 +598,12 @@ FUNCTION i113_i(p_cmd)
             end if
 
          #NOTE 游标大于当前行数，判断为修改，修改前先重新显示一遍
-            IF g_rec_b >= l_ac THEN
+            if l_ac <= g_rec_b then
+            # IF g_rec_b < l_ac THEN
                LET p_cmd = 'u'
                LET g_tc_cmb_t.* = g_tc_cmb[l_ac].*
          #NOTE 检查单身事务
+               begin work
                OPEN i113_bcl USING g_tc_cma01,g_tc_cma02,g_tc_cmb_t.tc_cmb03
                IF STATUS THEN
                   CALL cl_err("OPEN i113_bcl:", STATUS, 1)
@@ -613,7 +626,7 @@ FUNCTION i113_i(p_cmd)
             next field tc_cmb03
          
          before field tc_cmb03
-            if p_cmd = 'a' then
+            if  g_rec_b < l_ac then
                let l_cnt = 0
                let l_cnt1 = 0
                select max(tc_cmb03),max(tc_cmb04) into l_cnt,l_cnt1 from tc_cmb_file 
@@ -664,7 +677,6 @@ FUNCTION i113_i(p_cmd)
                ROLLBACK WORK
                CANCEL INSERT
             END IF
-
             IF g_success THEN
                MESSAGE 'INSERT O.K'
                LET g_rec_b=g_rec_b+1
@@ -722,7 +734,7 @@ FUNCTION i113_i(p_cmd)
                LET g_success = 'N'
             END IF
 
-            IF g_success = "Y" THEN
+            IF g_success THEN
                MESSAGE 'UPDATE O.K'    
                COMMIT WORK
                CALL i113_b_fill(' 1=1') 
@@ -767,7 +779,7 @@ FUNCTION i113_i(p_cmd)
             END IF
 
          ON ACTION controlo
-         #TODO 复制
+         #TODO 复制 
  
       END INPUT
 
@@ -780,9 +792,9 @@ FUNCTION i113_i(p_cmd)
       AFTER DIALOG
       #TODO nothing
 
-      ON ACTION controlf                  #欄位說明
+      ON ACTION controlf
          CALL cl_set_focus_form(ui.Interface.getRootNode()) RETURNING g_fld_name,g_frm_name
-         CALL cl_fldhelp(g_frm_name,g_fld_name,g_lang) #Add on 040913
+         CALL cl_fldhelp(g_frm_name,g_fld_name,g_lang)
 
       ON IDLE g_idle_seconds
          CALL cl_on_idle()
@@ -799,19 +811,25 @@ FUNCTION i113_i(p_cmd)
       ON ACTION accept 
       #TODO INSERT 
          #INSERT    
-         IF i113_input('u') THEN
+         IF i113_input(p_cmd) THEN
+           let g_action_choice = ""
             EXIT DIALOG
          END IF
 
       ON ACTION cancel 
       #TODO 放弃输入，提交事务
-         MESSAGE ""
+         rollback work
+         let g_action_choice = ""
+         exit DIALOG
 
       ON ACTION close
       #TODO 关掉作业
+         let g_action_choice = ""
+         exit DIALOG
 
       ON ACTION exit #toolbar 離開
       #TODO 关掉作业
+         let g_action_choice = ""
          EXIT DIALOG
  
 
@@ -856,9 +874,18 @@ FUNCTION i113_r()
        LET g_doc.column1 = "tc_cmb01"      #No.FUN-9B0098 10/02/24
        LET g_doc.value1 = g_tc_cma01       #No.FUN-9B0098 10/02/24
        CALL cl_del_doc()                #No.FUN-9B0098 10/02/24
-      DELETE FROM tc_cmb_file WHERE tc_cmb01 = g_tc_cma01 
+
+      delete from tc_cma_file where tc_cma01 = g_tc_cma01 and tc_cma02 = g_tc_cma02
+      if sqlca.sqlcode then
+         call cl_err("delete tc_cma_file",sqlca.sqlcode,1)
+         rollback work
+         return
+      end if
+      DELETE FROM tc_cmb_file WHERE tc_cmb01 = g_tc_cma01 and tc_cmb02 = g_tc_cma02
       IF SQLCA.sqlcode THEN
          CALL cl_err3("del","tc_cmb_file",g_tc_cma01,"",SQLCA.sqlcode,"","BODY DELETE",0)  
+         rollback work
+         return
       ELSE
          CLEAR FORM
          CALL g_tc_cmb.clear()
@@ -1017,7 +1044,7 @@ DEFINE  p_wc1  STRING
     
    END FOREACH
    CALL g_tc_cmb.deleteElement(g_cnt) 
- 
+   let  g_rec_b = g_cnt -1
    DISPLAY g_rec_b TO FORMONLY.cn2  
    LET g_cnt = 0
  
@@ -1119,6 +1146,14 @@ FUNCTION i113_bp(p_ud)
             LET g_action_choice="detail"
             LET l_ac = 1
             EXIT DIALOG
+         
+         on action confirm
+            let g_action_choice="confirm"
+            exit dialog
+
+         on action unconfirm
+            let g_action_choice="unconfirm"
+            exit dialog
    
          ON ACTION output
             LET g_action_choice="output"
@@ -1451,4 +1486,30 @@ function i113_get_tc_cma02(p_tc_cma01)
     end if
 
     return true,l_tc_cma02
+end function
+
+function i113_confirm(flag)
+   define flag varchar(1)
+
+   begin work
+   update tc_cma_file set tc_cma03 = flag where tc_cma01 = g_tc_cma01 and tc_cma02 = g_tc_cma02
+   if sqlca.sqlcode then
+      call cl_err("update tc_cma",sqlca.sqlcode,1)
+      rollback work
+      return
+   end if
+
+   if flag ='Y' then
+      update tc_cma_file set tc_cma03 = flag where tc_cma01 = g_tc_cma01 and tc_cma02 != g_tc_cma02
+      if sqlca.sqlcode then
+         call cl_err("update tc_cma 2",sqlca.sqlcode,1)
+         rollback work
+         return
+      end if
+   end if
+
+   commit work
+   let g_tc_cma.tc_cma03 = flag
+   display flag to tc_cma03
+
 end function
