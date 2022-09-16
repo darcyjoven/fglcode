@@ -24,6 +24,7 @@ define g_cxcq102    DYNAMIC ARRAY OF RECORD
                   OGA011      like OGA_file.OGA011,
                   OGAUD05     like OGA_file.OGAUD05,
                   OGA23       like OGA_file.OGA23,
+                  OGA24       like OGA_file.OGA24,
                   OGA211      like OGA_file.OGA211,
                   OGB03       like OGB_file.OGB03,
                   OGB31       like OGB_file.OGB31,
@@ -36,6 +37,8 @@ define g_cxcq102    DYNAMIC ARRAY OF RECORD
                   OGB13       like OGB_file.OGB13,
                   OGB14       like OGB_file.OGB14,
                   OGB14T      like OGB_file.OGB14T,
+                  OGB14a      like OGB_file.OGB14,
+                  OGB14Ta     like OGB_file.OGB14T,
                   TC_OMB001   like TC_OMB_file.TC_OMB001,
                   TC_OMB002   like TC_OMB_file.TC_OMB002,
                   TC_OMB003   like TC_OMB_file.TC_OMB003,
@@ -80,6 +83,7 @@ define g_cxcq102    DYNAMIC ARRAY OF RECORD
                   OGA011      like OGA_file.OGA011,
                   OGAUD05     like OGA_file.OGAUD05,
                   OGA23       like OGA_file.OGA23,
+                  OGA24       like OGA_file.OGA24,
                   OGA211      like OGA_file.OGA211,
                   OGB03       like OGB_file.OGB03,
                   OGB31       like OGB_file.OGB31,
@@ -92,6 +96,8 @@ define g_cxcq102    DYNAMIC ARRAY OF RECORD
                   OGB13       like OGB_file.OGB13,
                   OGB14       like OGB_file.OGB14,
                   OGB14T      like OGB_file.OGB14T,
+                  OGB14a      like OGB_file.OGB14,
+                  OGB14Ta     like OGB_file.OGB14T,
                   TC_OMB001   like TC_OMB_file.TC_OMB001,
                   TC_OMB002   like TC_OMB_file.TC_OMB002,
                   TC_OMB003   like TC_OMB_file.TC_OMB003,
@@ -322,6 +328,7 @@ FUNCTION q102_b_fill()                  #BODY FILL UP
                      OGA011,
                      ogaud05,
                      OGA23,
+                     OGA24,
                      OGA211,
                      OGB03,
                      OGB31,
@@ -333,7 +340,9 @@ FUNCTION q102_b_fill()                  #BODY FILL UP
                      OGB12,
                      OGB13,
                      OGB14,
-                     OGB14T
+                     OGB14T,
+                     OGB14*oga24,
+                     OGB14T*oea24
                FROM oga_file, ogb_file
                LEFT JOIN oea_file ON oea01 = ogb31
                , ima_file
