@@ -368,7 +368,8 @@ FUNCTION cgapr142()
      LET l_sum_taxf = 0
      #--add by lifang 200422 end# 
 LET l_sql=#"select rvv06,pmc17,rvw18,'','',rvw02,rvw01,pmc081,pmc24,pmc52,rvw11,",  #add rvw18 by liyjf161109 
-          "select rvv06,pmc17,apa01 rvw18,'','',rvw02,rvw01,pmc081,pmc24,pmc52,apa13 rvw11,",  #add rvw18 by liyjf161109   #No.MOD181129 mod
+          #"select rvv06,pmc17,apa01 rvw18,'','',rvw02,rvw01,pmc081,pmc24,pmc52,apa13 rvw11,",  #add rvw18 by liyjf161109   #No.MOD181129 mod #markdarcy:2022/09/08
+          "select rvv06,apa11,apa01 rvw18,'','',rvw02,rvw01,pmc081,pmc24,pmc52,apa13 rvw11,",  #add rvw18 by liyjf161109   #No.MOD181129 mod #add darcy:2022/09/08
                  #"rvw12,'',ima01,",
                  "apa14 rvw12,'',ima01,",   #No.MOD181129 mod
                  "CASE ima01[1,4] WHEN 'MISC' THEN rvv031 ELSE ima02 END CASE,",  #add by guanyao160826
