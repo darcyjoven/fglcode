@@ -20,7 +20,8 @@ TYPE tc_cma RECORD
          tc_cma06    LIKE tc_cma_file.tc_cma06,
          tc_cma07    LIKE tc_cma_file.tc_cma07,
          tc_cma08    LIKE tc_cma_file.tc_cma08,
-         tc_cma09    LIKE tc_cma_file.tc_cma09
+         tc_cma09    LIKE tc_cma_file.tc_cma09,
+         tc_cma10    LIKE tc_cma_file.tc_cma10
     END RECORD
 TYPE tc_cmb RECORD
          tc_cmb03    LIKE tc_cmb_file.tc_cmb03,
@@ -82,7 +83,7 @@ MAIN
    CALL cl_used(g_prog,g_time,1) RETURNING g_time  
 
  
-   LET g_forupd_sql = "SELECT tc_cma01,tc_cma02,tc_cma03,tc_cma04,tc_cma05,tc_cma06,tc_cma07,tc_cma08,tc_cma09",
+   LET g_forupd_sql = "SELECT tc_cma01,tc_cma02,tc_cma03,tc_cma04,tc_cma05,tc_cma06,tc_cma07,tc_cma08,tc_cma09,tc_cma10",
                       "  FROM tc_cma_file WHERE tc_cma01 = ? AND tc_cma02 =? FOR UPDATE"                                                           
    LET g_forupd_sql = cl_forupd_sql(g_forupd_sql)
    DECLARE i113_cl CURSOR FROM g_forupd_sql
@@ -434,7 +435,7 @@ END FUNCTION
  
 #將資料顯示在畫面上
 FUNCTION i113_show()
-   SELECT tc_cma01,imz02,tc_cma02,tc_cma03,tc_cma04,tc_cma05,tc_cma06,tc_cma07,tc_cma08,tc_cma09
+   SELECT tc_cma01,imz02,tc_cma02,tc_cma03,tc_cma04,tc_cma05,tc_cma06,tc_cma07,tc_cma08,tc_cma09,tc_cma10
      INTO g_tc_cma.* FROM tc_cma_file,imz_file
     WHERE tc_cma01 = g_tc_cma01 and tc_cma02 = g_tc_cma02
       and tc_cma01 = imz01
@@ -472,7 +473,7 @@ FUNCTION i113_i(p_cmd)
 
    DIALOG ATTRIBUTES(UNBUFFERED,FIELD ORDER FORM)
 
-      INPUT BY NAME g_tc_cma.tc_cma01,g_tc_cma.tc_cma03 ATTRIBUTE(WITHOUT DEFAULTS) 
+      INPUT BY NAME g_tc_cma.tc_cma01,g_tc_cma.tc_cma03,g_tc_cma.tc_cma10 ATTRIBUTE(WITHOUT DEFAULTS) 
 
          BEFORE INPUT
             MESSAGE "" 
@@ -521,7 +522,7 @@ FUNCTION i113_i(p_cmd)
          BEFORE FIELD tc_cma01
          #TODO 判断是修改还是新增
              IF p_cmd = 'u' THEN
-               NEXT FIELD tc_cma02
+               NEXT FIELD tc_cma10
              END IF
 
          AFTER FIELD tc_cma01 
@@ -1419,9 +1420,9 @@ FUNCTION i113_input(p_cmd)
 
     IF p_cmd='a' AND g_before_input_done = FALSE THEN 
         INSERT INTO tc_cma_file (tc_cma01,tc_cma02,tc_cma03,tc_cma04,tc_cma05,
-                                tc_cma06,tc_cma07,tc_cma08,tc_cma09) 
+                                tc_cma06,tc_cma07,tc_cma08,tc_cma09,tc_cma10) 
         VALUES(g_tc_cma.tc_cma01,g_tc_cma.tc_cma02,g_tc_cma.tc_cma03,g_tc_cma.tc_cma04,g_tc_cma.tc_cma05,
-                g_tc_cma.tc_cma06,g_tc_cma.tc_cma07,g_tc_cma.tc_cma08,g_tc_cma.tc_cma09)
+                g_tc_cma.tc_cma06,g_tc_cma.tc_cma07,g_tc_cma.tc_cma08,g_tc_cma.tc_cma09,g_tc_cma.tc_cma10)
         IF SQLCA.sqlcode THEN
             CALL cl_err("insert into tc_cma_file:",SQLCA.sqlcode,1) 
             ROLLBACK WORK
@@ -1441,8 +1442,10 @@ FUNCTION i113_input(p_cmd)
              tc_cma06 = g_tc_cma.tc_cma06,
              tc_cma07 = g_tc_cma.tc_cma07,
              tc_cma08 = g_tc_cma.tc_cma08,
-             tc_cma09 = g_tc_cma.tc_cma09
+             tc_cma09 = g_tc_cma.tc_cma09,
+             tc_cma10 = g_tc_cma.tc_cma10
        WHERE tc_cma01 = g_tc_cma.tc_cma01
+         and tc_cma02 = g_tc_cma.tc_cma02
 
       IF SQLCA.sqlcode THEN
          CALL cl_err("update tc_cma_file:",SQLCA.sqlcode,1) 
