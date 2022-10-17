@@ -763,17 +763,23 @@ DEFINE l_creator_tag STRING    #FUN-C40086
     #No.FUN-750113 --start--
     LET l_gen01 = l_wse13_value
     LET l_zx01 = l_wse13_value
-    SELECT COUNT(*) INTO l_cnt2 FROM gen_file where gen01=l_gen01
-    IF l_cnt2 > 0 THEN
-        # get dept ID by employee ID
-        SELECT gen03 INTO l_gen03 FROM gen_file where gen01=l_gen01
-        LET l_orgUnitID = l_gen03 CLIPPED
-    ELSE
-        # get dept ID by user ID
-        SELECT zx03 INTO l_zx03 FROM zx_file where zx01=l_zx01
-        LET l_orgUnitID = l_zx03 CLIPPED
-    END IF
-    #No.FUN-750113 --end--
+    #darcy:2022/10/17 add s---
+    # 通过接口获取BPM接口组织架构
+    call cws_bpm_getGem(l_wse13_value) returning l_gen03
+    if cl_null(l_gen03) then
+    #darcy:2022/10/17 add e---
+      SELECT COUNT(*) INTO l_cnt2 FROM gen_file where gen01=l_gen01
+      IF l_cnt2 > 0 THEN
+         # get dept ID by employee ID
+         SELECT gen03 INTO l_gen03 FROM gen_file where gen01=l_gen01
+         LET l_orgUnitID = l_gen03 CLIPPED
+      ELSE
+         # get dept ID by user ID
+         SELECT zx03 INTO l_zx03 FROM zx_file where zx01=l_zx01
+         LET l_orgUnitID = l_zx03 CLIPPED
+      END IF
+      #No.FUN-750113 --end--
+    end if #darcy:2022/10/17 add
  
     #MOD-560007
     IF g_wse04 IS NOT NULL THEN

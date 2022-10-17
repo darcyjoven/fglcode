@@ -96,18 +96,35 @@ function cws_bpm_getOrg(p_user)
             return
         end if
 
-        let OID = cimi999_getRecordfield(responseXml,"OID")
-        let id = cimi999_getRecordfield(responseXml,"id")
-        let name = cimi999_getRecordfield(responseXml,"name")
+        let OID = cws_bpm_getRecordfield(responseXml,"OID")
+        let id = cws_bpm_getRecordfield(responseXml,"id")
+        let name = cws_bpm_getRecordfield(responseXml,"name")
         
-        let orgUnitType = cimi999_selectByXPath(responseXml,"//orgUnitType/value","value")
-        #cimi999_getRecordfield(responseXml,"orgUnitType")
+        let orgUnitType = cws_bpm_selectByXPath(responseXml,"//orgUnitType/value","value")
+        #cws_bpm_getRecordfield(responseXml,"orgUnitType")
 
-        let orgName = cimi999_getRecordfield(responseXml,"orgName")
-        let isMain = cimi999_getRecordfield(responseXml,"isMain")
+        let orgName = cws_bpm_getRecordfield(responseXml,"orgName")
+        let isMain = cws_bpm_getRecordfield(responseXml,"isMain")
 
         return OID,id,name,orgUnitType,orgName,isMain
     end if
+end function
+
+# 获取BPM部门编号
+function cws_bpm_getGem(p_user)
+    define p_user  string
+
+    define OID string
+    define id string
+    define name string
+    define orgUnitType string
+    define orgName string
+    define isMain varchar(10)
+
+    call cws_bpm_getOrg(p_user) 
+        returning OID,id,name,orgUnitType,orgName,isMain
+
+    return id
 end function
 
 # 获取节点值
@@ -136,9 +153,9 @@ end function
 # 遍历获取子节点的值
 # expr "//div/a"
 # 需要测试
-function cws_bpm_selectByXPath(content,expr)
+function cws_bpm_selectByXPath(content,expr,fieldname)
     define content          xml.DomDocument
-    define expr   string
+    define expr,fieldname   string
 
     define values string
 
@@ -146,14 +163,11 @@ function cws_bpm_selectByXPath(content,expr)
     define n1,n2    xml.domnode
 
     let l = content.selectByXPath(expr,NULL)
-    #<invokeProcessReturn xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:type=\"xsd:string\">PKG1658211388926600000040</invokeProcessReturn>
-
     if l.getCount() > 0 then
         let n1 = l.getItem(1)
         let values = n1.toString()
-        let values = cws_bpm_replace_item(values)
-        #let values = cl_replace_str(values,"<"||fieldname||">","")
-        #let values = cl_replace_str(values,"</"||fieldname||">","")
+        let values = cl_replace_str(values,"<"||fieldname||">","")
+        let values = cl_replace_str(values,"</"||fieldname||">","")
     else
         return ""
     end if
