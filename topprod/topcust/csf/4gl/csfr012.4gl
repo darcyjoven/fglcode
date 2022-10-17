@@ -68,11 +68,12 @@ MAIN
              "ecd07.ecd_file.ecd07,",
 
              "eca02.eca_file.eca02"
+             ,",sfe27.sfe_file.sfe27" #darcy:2022/10/11 add
 
    LET  l_table = cl_prt_temptable('csfr012',g_sql) CLIPPED
    IF l_table=-1 THEN EXIT PROGRAM END IF
    LET g_sql = "INSERT INTO ",g_cr_db_str CLIPPED,l_table CLIPPED,
-               " VALUES(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?)"  
+               " VALUES(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?)"  
    PREPARE insert_prep FROM g_sql
    IF STATUS THEN
       CALL cl_err('insert_prep:',status,1) EXIT PROGRAM
@@ -306,7 +307,8 @@ FUNCTION csfr012()
              ecd02      LIKE ecd_file.ecd02,
              ecd07      LIKE ecd_file.ecd07,
              
-             eca02      LIKE eca_file.eca02
+             eca02      LIKE eca_file.eca02,
+             sfe27      like sfe_file.sfe27   #darcy:2022/10/11 add
              
                     END RECORD
    DEFINE l_cnt     LIKE type_file.num5  
@@ -320,6 +322,7 @@ FUNCTION csfr012()
      LET tm.wc = tm.wc CLIPPED 
      LET l_sql=" SELECT tc_sfd01,tc_sff03,0,sfb05,m.ima02,m.ima021, m.imaud07,m.imaud10, sfb08,sfb22,tc_sff02,tc_sff04,n.ima02,   n.ima021,sfa05,sfa06,0,tc_sff05, ",
                " tc_sff06,tc_sffud02,'',tc_sff08,'',tc_sfd06,tc_sff07,'','','' ",   #add tc_sfd06 by guanyao160826
+               " ,tc_sff27 ", #darcy:2022/10/11 add
                " FROM tc_sfd_file,sfb_file LEFT JOIN ima_file m ON sfb05=m.ima01,sfa_file,tc_sff_file LEFT JOIN ima_file n ON tc_sff04=n.ima01 ",
                " WHERE tc_sfd01=tc_sff01 AND sfb01=sfa01 AND tc_sff04=sfa03 AND tc_sff07=sfa08 ",#str---add by huanglf160823
                "  AND tc_sff03 = sfb01",
@@ -354,7 +357,11 @@ FUNCTION csfr012()
         #SELECT tc_sfe03 INTO l_tc_sfe03 FROM tc_sfe_file   #tianry mark  没看明白这段累加的意义
         # WHERE tc_sfe02 = sr.tc_sfe02  
         #   AND tc_sfe01 = sr.tc_sfd01
-          
+        #darcy:2022/10/17 add s---
+        if sr.sfe27 = sr.sfe07 then
+         let sr.sfe27 = ""
+        end if
+        #darcy:2022/10/17 add e---
         IF cl_null(l_tc_sfe03) THEN 
            LET l_tc_sfe03 = 0
         END IF 
