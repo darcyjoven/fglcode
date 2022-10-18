@@ -4264,6 +4264,12 @@ DEFINE l_sfa06      LIKE sfa_file.sfa06   #MOD-CC0043 add
         LET g_success='N'
      END IF
     #MOD-CC0043---add---E
+    #darcy:2022/09/27 s---
+    if l_sna.sna28a = 0 then
+      call cl_err(g_snb.snb01,'aps-100',0)
+      let g_success = 'N'
+    end if
+    #darcy:2022/09/27 e---
   END FOREACH
   IF g_success = 'N' THEN RETURN END IF
   #End Add No.FUN-AB0054
