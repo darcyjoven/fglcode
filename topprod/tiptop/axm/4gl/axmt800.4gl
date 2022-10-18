@@ -10912,11 +10912,13 @@ FUNCTION t800_oeq12a_check()
                CALL s_unitprice_entry(l_oea03,l_term,g_plant,'M')
             ELSE
             #FUN-BC0088 ------- add end --------------
-               IF g_oeq[l_ac].oeq13a=0 THEN 
-                  CALL s_unitprice_entry(l_oea03,l_term,g_plant,'N')
-               ELSE 
-                  CALL s_unitprice_entry(l_oea03,l_term,g_plant,'Y')
-               END IF
+               #markdarcy:2022/09/16 s---
+               # IF g_oeq[l_ac].oeq13a=0 THEN 
+               #    CALL s_unitprice_entry(l_oea03,l_term,g_plant,'N')
+               # ELSE 
+               #    CALL s_unitprice_entry(l_oea03,l_term,g_plant,'Y')
+               # END IF
+               #mark darcy:2022/09/16 e---
             END IF #FUN-BC0088 add
             CALL t800_oeq14a()   
          ELSE 
