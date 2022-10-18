@@ -257,13 +257,15 @@ MAIN
               "faj11.faj_file.faj11,",                   #str---add by huanglf160823
               "faj53.faj_file.faj53"                     #str---add by huanglf160823
               ,",pmc081.pmc_file.pmc081"  #add by dengsy170212
+              ,",fajud04.faj_file.fajud04"  #add by darcy:2022/10/10
+
    #MOD-CC0015  -- modify end #調整sql與XML一致；方便開發、提高CR效能 --
      LET l_table = cl_prt_temptable('afar201',g_sql) CLIPPED                                                                        
      IF l_table= -1 THEN EXIT PROGRAM END IF                                                                                        
      LET g_sql="INSERT INTO ",g_cr_db_str CLIPPED,l_table CLIPPED,                                                                            
                " VALUES(?,?,?,?,?, ?,?,?,?,?,",                                                                                         
                "        ?,?,?,?,?, ?,?,?,?,?,",                                                                                         
-             "        ?,?,?,?,?, ?,?,?)"                                   #CHI-C70003 Add ,?  #FUN-B60045   Add  ,?                                                                                          
+             "        ?,?,?,?,?, ?,?,?,?)"                                   #CHI-C70003 Add ,?  #FUN-B60045   Add  ,?                                                                                          
     PREPARE insert_prep FROM g_sql                                                                                                  
     IF STATUS THEN                                                                                                                  
        CALL cl_err('insert_prep',status,1) EXIT PROGRAM                                                                             
@@ -698,6 +700,7 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
                               faj11  LIKE faj_file.faj11,  #str---add by huanglf160823
                               faj53  LIKE faj_file.faj53   #str---add by huanglf160823
                               ,pmc081   LIKE pmc_file.pmc081 #add by dengsy170212
+                              ,fajud04   LIKE faj_file.fajud04 #add by darcy:2022/10/10
                         END RECORD
      DEFINE l_i               LIKE type_file.num5            #No.FUN-680070 SMALLINT
      DEFINE l_zaa02           LIKE zaa_file.zaa02
@@ -744,6 +747,7 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
                     " 0,0,faj101,faj102,faj22 ",                                #MOD-620007
                     " ,faj93,faj31,faj34,faj30,faj11,faj53 ",  #str---add by huanglf160823                                   #FUN-B60045 Add #CHI-D30018 add faj31,faj34
                     "  ,pmc081 ",  #add by dengsy170212
+                    "  ,fajud04 ",  #add by darcy:2022/10/10
                     "  FROM faj_file,OUTER fab_file,OUTER gen_file,OUTER faf_file",
                     "  ,OUTER pmc_file ",  #add by dengsy170212
                     " WHERE fajconf='Y' AND ",tm.wc CLIPPED,
@@ -763,6 +767,7 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
                     " 0,0,faj1012,faj1022,faj22 ",  
                     " ,faj93,faj31,faj34,faj30,faj11,faj53 ",#str---add by huanglf160823                                         #FUN-B60045 Add #CHI-D30018 add faj31,faj34
                     "  ,pmc081 ",  #add by dengsy170212
+                    "  ,fajud04 ",  #add by darcy:2022/10/10
                     "  FROM faj_file,OUTER fab_file,OUTER gen_file,OUTER faf_file",
                     "  ,OUTER pmc_file ",  #add by dengsy170212
                     " WHERE fajconf='Y' AND ",tm.wc CLIPPED,
@@ -869,6 +874,16 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
           CALL cl_err('foreach:',SQLCA.sqlcode,1)
           EXIT FOREACH
        END IF
+       #darcy:2022/10/10 s---
+       case sr.fajud04 
+         when "1"
+            let sr.fajud04 = "1.二期厂房募投"
+         when "2"
+            let sr.fajud04 = "2.载板募投"
+         when "3"
+            let sr.fajud04 = "3.非募投"
+       end case
+       #darcy:2022/10/10 e---
        #---上線後(5)出售(6)銷帳報廢不包含(當年度處份者要納入)
        SELECT count(*) INTO l_cnt FROM fap_file
           WHERE fap02=sr.faj02 AND fap021=sr.faj022
@@ -1368,6 +1383,7 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
                          sr.faf02,sr.faj43,sr.faj05,sr.faj21,sr.faj22,sr.faj93,    #FUN-B60045 add sr.faj93    
                          sr.faj30,sr.faj11,sr.faj53  #str---add by huanglf160823
                          ,sr.pmc081  #add by dengsy170212
+                         ,sr.fajud04  #add by darcy:2022/10/10
    #MOD-CC0015  -- modify end #調整sql與XML一致；方便開發、提高CR效能 --
 #FUN-B60045   ---start   Add
      IF NOT cl_null(tm.e) THEN

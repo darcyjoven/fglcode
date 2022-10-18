@@ -99,10 +99,11 @@ MAIN
              "tmp01.faj_file.faj17,  tmp02.faj_file.faj14,",
              "tmp03.faj_file.faj203, tmp04.faj_file.faj32,",
              "faj04.faj_file.faj04"   #CHI-710026 add
+             ,",fajud04.faj_file.fajud04"   #darcy:2022/10/10 add
    LET l_table = cl_prt_temptable('afar205',g_sql) CLIPPED
    IF l_table= -1 THEN EXIT PROGRAM END IF
    LET g_sql="INSERT INTO ",g_cr_db_str CLIPPED,l_table CLIPPED,
-             " VALUES(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?)"   #CHI-710026 add ?
+             " VALUES(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?)"   #CHI-710026 add ?
    PREPARE insert_prep FROM g_sql                                                                                                   
    IF STATUS THEN                                                                                                                   
       CALL cl_err('insert_prep',status,1) EXIT PROGRAM                                                                              
@@ -338,7 +339,8 @@ FUNCTION afar205()
                        faj02  LIKE faj_file.faj02,    # 財產編號
                        faj022 LIKE faj_file.faj022,   # 財產附號   #TQC-620119
                        faj101 LIKE faj_file.faj101,   #No.CHI-480001
-                       cost   LIKE faj_file.faj101    #No.CHI-480001
+                       cost   LIKE faj_file.faj101,   #No.CHI-480001
+                       fajud04 like faj_file.fajud04  #darcy:2022/10/10 add
                     END RECORD
    DEFINE l_i,l_cnt,i         LIKE type_file.num5     #No.FUN-680070 SMALLINT
    DEFINE l_zaa02             LIKE zaa_file.zaa02
@@ -369,6 +371,7 @@ FUNCTION afar205()
                " faj14-faj59,faj141,faj31,faj29,faj203*(faj17-faj58)/faj17,",
                " faj32*(faj17-faj58)/faj17,faj33,faj02,faj022, ",  #TQC-620119
                " faj101-faj102,0 ",           #end No.CHI-480001
+               ",fajud04",#darcy:2022/10/10 add
                "  FROM faj_file ",
                " WHERE fajconf='Y' AND ",tm.wc CLIPPED,
                " AND faj17 >0 ",   #除數不為0   #No:7593
@@ -405,7 +408,16 @@ FUNCTION afar205()
          CALL cl_err('foreach:',SQLCA.sqlcode,1)
          EXIT FOREACH
       END IF
- 
+      #darcy:2022/10/10 s---
+      case sr.fajud04 
+         when "1"
+            let sr.fajud04 = "1.二期厂房募投"
+         when "2"
+            let sr.fajud04 = "2.载板募投"
+         when "3"
+            let sr.fajud04 = "3.非募投"
+      end case
+      #darcy:2022/10/10 e---
       SELECT count(*) INTO l_cnt FROM fap_file
        WHERE fap02=sr.faj02 AND fap021=sr.faj022
          AND fap77 IN ('5','6') AND (YEAR(fap04) < tm.yy1  
@@ -550,7 +562,7 @@ FUNCTION afar205()
          sr.cost, sr.faj02,sr.faj06,sr.faj141,sr.faj18,
          sr.faj21,sr.faj29,sr.faj31,sr.faj33, l_faj25,
          p_fab02, p_faf02, sr.tmp01,sr.tmp02, sr.tmp03,
-         sr.tmp04,sr.faj04   #CHI-710026 add sr.faj04
+         sr.tmp04,sr.faj04,sr.fajud04   #CHI-710026 add sr.faj04
    END FOREACH
  
    LET g_sql = "SELECT * FROM ",g_cr_db_str CLIPPED,l_table CLIPPED                                                               
