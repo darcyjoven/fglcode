@@ -2222,9 +2222,11 @@ DEFINE  l_COUNT  INT
                       AND pmh22=g_pmj12  #No.FUN-670099
                    END IF
                    IF l_cnt=0 THEN
-                      CALL i255sub_pmj03_add(g_pmj[l_ac].pmj03,g_pmj[l_ac].pmj05,g_pmj12,g_pmj[l_ac].pmj10,g_pmi.*,g_pmj[l_ac].pmj13)#NO:7100  #No.FUN-670099
-                      CALL ui.interface.refresh()  #NO.MOD-590519
-                      CALL i255_pmj06_def()
+                      #mark darcy:2022/10/10 s---
+                      #CALL i255sub_pmj03_add(g_pmj[l_ac].pmj03,g_pmj[l_ac].pmj05,g_pmj12,g_pmj[l_ac].pmj10,g_pmi.*,g_pmj[l_ac].pmj13)#NO:7100  #No.FUN-670099
+                      #CALL ui.interface.refresh()  #NO.MOD-590519
+                      #CALL i255_pmj06_def()
+                      #mark darcy:2022/10/10 e---
                    ELSE
                      IF cl_null(g_pmj[l_ac].pmj10) THEN
                         SELECT pmhacti INTO l_pmhacti FROM pmh_file       
