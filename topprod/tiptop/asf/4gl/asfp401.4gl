@@ -690,6 +690,7 @@ DEFINE l_f       BOOLEAN
 DEFINE l_flag    LIKE type_file.chr1
 DEFINE l_sfp03   LIKE sfp_file.sfp03
 #MOD-DB0150 add end------------------------------
+define l_cnt     like type_file.num5  #darcy:2022/10/17 add
 
    #判斷若輸入的結案日期小於最後異動日則不予結案
    SELECT max(tlf06) INTO l_tlf06 FROM tlf_file
@@ -912,8 +913,23 @@ DEFINE l_sfp03   LIKE sfp_file.sfp03
             LET g_totsuccess='N'
             LET g_success="Y"
          END IF
-
       IF l_pmn16 MATCHES '[678]' THEN CONTINUE FOREACH END IF
+      #add darcy:2022/10/17 s---
+      # 委外采购还未入库且还未结案，不允许工单结案。
+         let l_cnt = 0
+         SELECT count(1) into l_cnt
+           FROM rvv_file, rvu_file
+          WHERE rvv01 = rvu01
+            AND rvu00 = '1'
+            AND rvuconf = 'Y'
+            AND rvv36 = l_pmn01 AND rvv37 = l_pmn02
+         if l_cnt = 0 then
+            let g_showmsg=l_pmn01,"/",l_pmn02
+            call s_errmsg('pmn01,pmn02',g_showmsg,'error:','csf-104',1)               #no.fun-710026
+            let g_success = 'n'
+            continue foreach
+         end if
+      #add darcy:2022/10/17 e---
       CASE
          WHEN l_qty1 = 0 LET  l_sta = '6'
          WHEN l_qty1 > 0 LET  l_sta = '7'
