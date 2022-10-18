@@ -5811,6 +5811,7 @@ DEFINE   p_cmd   LIKE type_file.chr1         #No.FUN-680070 VARCHAR(1)
  
    IF p_cmd = 'a' AND (NOT g_before_input_done) THEN
        CALL cl_set_comp_entry("faj01,faj02",TRUE)   #MOD-580279
+       CALL cl_set_comp_entry("fajud04",TRUE)   #darcy:2022/10/10 add
    END IF
  
    #FUN-BB0122----being add
