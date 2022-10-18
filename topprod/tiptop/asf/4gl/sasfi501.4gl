@@ -6898,10 +6898,29 @@ DEFINE   l_tc_sff05     LIKE tc_sff_file.tc_sff05   #tianry add end 161122
     END IF
  
     # 當有替代狀況時, 須作以下處理:
-    LET l_sql="SELECT * FROM sfa_file",     #tianry add 161128   g_sfa.sfa3->g_sfa.sfa27
+    # add darcy:2022/10/12 add s---
+    #
+    if g_user ='43474' or g_user = 'tiptop' then
+      LET l_sql="SELECT * FROM sfa_file",     #tianry add 161128   g_sfa.sfa3->g_sfa.sfa27
+              " LEFT JOIN tc_sff_file ON tc_sff01 = '",g_sfp.sfpud03,"' AND tc_sff27 = sfa27 ", #darcy:2022/10/12 add
               " WHERE sfa01='",g_sfa.sfa01,"' AND sfa27='",g_sfa.sfa27,"'",      #'",g_sfa.sfa03,"'",  #tianry mark
               "   AND sfa08='",g_sfa.sfa08,"' AND sfa12='",g_sfa.sfa12,"'",
+              "   AND sfa"
+              "   AND tc_sff04 = sfa03 and tc_sff27 = sfa27", #darcy:2022/10/12 add 
               "   AND sfa012= '",g_sfa.sfa012,"' AND sfa013 = ",g_sfa.sfa013   #FUN-A60028 add
+    else
+      LET l_sql="SELECT * FROM sfa_file",     #tianry add 161128   g_sfa.sfa3->g_sfa.sfa27
+               " WHERE sfa01='",g_sfa.sfa01,"' AND sfa27='",g_sfa.sfa27,"'",      #'",g_sfa.sfa03,"'",  #tianry mark
+               "   AND sfa08='",g_sfa.sfa08,"' AND sfa12='",g_sfa.sfa12,"'",
+               "   AND sfa012= '",g_sfa.sfa012,"' AND sfa013 = ",g_sfa.sfa013   #FUN-A60028 add
+    end if
+    # add darcy:2022/10/12 add e---
+    # markdarcy:2022/10/12 s---
+    #LET l_sql="SELECT * FROM sfa_file",     #tianry add 161128   g_sfa.sfa3->g_sfa.sfa27
+    #           " WHERE sfa01='",g_sfa.sfa01,"' AND sfa27='",g_sfa.sfa27,"'",      #'",g_sfa.sfa03,"'",  #tianry mark
+    #           "   AND sfa08='",g_sfa.sfa08,"' AND sfa12='",g_sfa.sfa12,"'",
+    #           "   AND sfa012= '",g_sfa.sfa012,"' AND sfa013 = ",g_sfa.sfa013   #FUN-A60028 add
+    # markdarcy:2022/10/12 e---
     IF g_sfp.sfp06='6' THEN
        LET l_sql = l_sql CLIPPED," AND sfa05 > 0 AND sfa06 > 0  "  CLIPPED   #TQC-C30067  ADD sfa06>0
     END IF
@@ -6931,7 +6950,9 @@ DEFINE   l_tc_sff05     LIKE tc_sff_file.tc_sff05   #tianry add end 161122
        IF cl_null(g_sfa2.sfa31) THEN LET g_sfa2.sfa31 = ' '  END IF    #MOD-B50240 add
  # issue_qty的計算應以sfq03* sfa161來計算才不會被改變,影響後續欠料數量的計算
        IF g_argv1='1' THEN	# 發料時
+         #darcy 有
          IF g_sfa2.sfa05<=g_sfa2.sfa06 THEN CONTINUE FOREACH END IF #FUN-B50059
+         #darcy 如果没有数量的时候，将剩下的生成数量为0的新增到单身
          IF issue_qty<=(g_sfa2.sfa05-g_sfa2.sfa06) THEN  #FUN-B50059
             LET issue_qty1=issue_qty
             #FUN-AC0074(S)
