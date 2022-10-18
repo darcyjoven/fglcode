@@ -6830,6 +6830,16 @@ FUNCTION i301_b(p_in)
            END IF 
         ELSE
             LET g_sfa[l_ac].sfa05 = g_sfb.sfb08 * g_sfa[l_ac].sfa16
+            #darcy:2022/09/21 add s---
+            let g_sfa[l_ac].sfa05 = s_digqty(g_sfa[l_ac].sfa05,g_sfa[l_ac].sfa12)
+            call i301_sfa05()
+            IF NOT cl_null(g_errno) THEN
+               CALL cl_err('',g_errno,0)
+               LET g_sfa[l_ac].sfa05=g_sfa_t.sfa05
+               DISPLAY g_sfa[l_ac].sfa05 TO s_sfa[l_ac].sfa05
+               NEXT FIELD sfa05
+            END IF
+            #darcy:2022/09/21 add e---
             LET g_sfa[l_ac].sfa161 =  g_sfa[l_ac].sfa05/g_sfb.sfb08 #add by huanglf161009
             DISPLAY BY NAME g_sfa[l_ac].sfa05
         END IF 
