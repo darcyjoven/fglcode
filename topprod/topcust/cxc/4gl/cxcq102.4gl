@@ -351,6 +351,37 @@ FUNCTION q102_b_fill()                  #BODY FILL UP
                   AND YEAR(oga02) = ",tm.yy,"  AND MONTH(oga02)=",tm.mm,"
                   AND oga09 = '8'
                   AND ogaconf = 'Y'
+                UNION all 
+                SELECT oha03,
+                     oha032,
+                     oha01,
+                     oha02,
+                     oea10,
+                     '' oha011,
+                     ohaud05,
+                     oha23,
+                     oha24,
+                     oha211,
+                     ohb03,
+                     ohb31,
+                     ohb32,
+                     ohb04,
+                     IMA02,
+                     IMA021,
+                     ohb05,
+                     -1*ohb12,
+                     ohb13,
+                     -1*ohb14,
+                     -1*ohb14T,
+                     -1*ohb14*oha24,
+                     -1*ohb14T*oea24
+               FROM oha_file, ohb_file
+               LEFT JOIN oea_file ON oea01 = ohb31
+               , ima_file
+               WHERE oha01 = ohb01
+                  AND ima01 = ohb04
+                  AND YEAR(oha02) = ",tm.yy,"  AND MONTH(oha02)=",tm.mm,"
+                  AND ohaconf = 'Y'
                ) a
                LEFT JOIN (
                SELECT TC_OMB001,
