@@ -766,6 +766,7 @@ DEFINE l_creator_tag STRING    #FUN-C40086
     #darcy:2022/10/17 add s---
     # 通过接口获取BPM接口组织架构
     call cws_bpm_getGem(l_wse13_value) returning l_gen03
+    let l_orgUnitID = l_gen03
     if cl_null(l_gen03) then
     #darcy:2022/10/17 add e---
       SELECT COUNT(*) INTO l_cnt2 FROM gen_file where gen01=l_gen01

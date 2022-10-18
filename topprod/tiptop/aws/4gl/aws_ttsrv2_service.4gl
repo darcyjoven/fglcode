@@ -846,6 +846,10 @@ DEFINE l_op        com.WebOperation
       WHEN "cws_webservicedemo"
 	    LET l_op =com.WebOperation.CreateDOCStyle("cws_webservicedemo", p_op_name, g_request, g_response)	
       #add by darcy 220321  
+      #darcy:2022/10/18 s---
+      WHEN "cws_checksubdts"
+	    LET l_op =com.WebOperation.CreateDOCStyle("cws_checksubdts", p_op_name, g_request, g_response)	
+      #darcy:2022/10/18 e---
       {WHEN "cjc_CreateERPWorkReport"
             LET l_op = com.WebOperation.CreateDOCStyle("cjc_CreateERPWorkReport", p_op_name, g_request, g_response)
        WHEN "cjc_CreateERPWHReturn"
@@ -3035,6 +3039,12 @@ FUNCTION cws_webservicedemo()
   CALL cws_webservice_demo()
 END FUNCTION 
 #add by darcy 220321 
+#darcy:2022/10/18 s---
+function cws_checksubdts()
+   let g_service = "CheckSubDTS"
+   call cws_check_subdts()
+end function
+#darcy:2022/10/18 e---
 {#生成报工单
 # FUNCTION cjc_CreateERPWorkReport()
 #   LET g_service = "SCM_CreateERPWorkReport"
