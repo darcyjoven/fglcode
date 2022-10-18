@@ -7234,6 +7234,13 @@ FUNCTION t623_y_chk()
    DEFINE l_min      LIKE sfv_file.sfv09
    DEFINE l_x        LIKE type_file.num5
 #str----end by huanglf1161017
+   #darcy:2022/09/22 add s---
+   define l_oeb12    like oeb_file.oeb12
+   define l_oeb01    like oeb_file.oeb01
+   define l_oeb03    like oeb_file.oeb03
+   define l_sfbud09  like sfb_file.sfbud09
+   define l_num      like oeb_file.oeb12
+   #darcy:2022/09/22 add e---
    LET g_success = 'Y'
   #str ly180328 bolck
     LET l_cn=0
@@ -7446,6 +7453,24 @@ FUNCTION t623_y_chk()
                  CALL cl_err(b_sfv.sfv20,'asf-668',1)
                 END IF
               END IF 
+              #darcy:2022/09/22 s---
+              # 样品总数量不能大于订单数量
+              if b_sfv.sfv04 matches "?????????S*" then
+                  let l_sfb09 = 0
+                  select sfb22,sfb221,sfbud09 into l_oeb01,l_oeb03,l_sfbud09 from sfb_file where sfb01 = b_sfv.sfv11
+                  if not cl_null(l_oeb01) then
+                     select sum(sfb09*l_sfbud09/100) into l_sfb09 from sfb_file
+                      where sfb22 = l_oeb01 and sfb87 ='Y'
+                     let l_oeb12 = 0
+                     select oeb12 into l_oeb12 from oeb_file where oeb01 = l_oeb01 and oeb03 = l_oeb03
+                     let l_num = l_sfv09*l_sfbud09/100
+                     if l_sfb09-(l_sfb09 mod 1) + l_num - (l_num mod 1) > l_oeb12  then
+                        let g_success = 'N' 
+                        call cl_err(b_sfv.sfv20,'asf-939',1)
+                     end if
+                  end if
+              end if
+              #darcy:2022/09/22 e---
           END IF 
       END IF 
 #str-----end by huanglf161017
