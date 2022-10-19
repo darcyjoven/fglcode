@@ -634,6 +634,13 @@ FUNCTION r300()
          end if
          #darcy:2022/08/11 e---
          #darcy:2022/06/27 e---
+         #darcy:2022/10/19 add s---
+         # 免费样品入库的时候，品名规格抓取qcsud11/12
+         if sr.qcs.qcs00 ='3' then
+            select qcsud11,qcsud12 into l_ima02,l_ima021 from qcs_file
+             where qcs01 = sr.qcs.qcs01 and qcs02 = sr.qcs.qcs02 and qcs05=sr.qcs.qcs05
+         end if
+         #darcy:2022/10/19 add e---
          EXECUTE insert_prep USING sr.qcs.qcs00,sr.qcs.qcs01,sr.qcs.qcs02,sr.qcs.qcs021,sr.qcs.qcs03,sr.qcs.qcs04,
                                    sr.qcs.qcs041,sr.qcs.qcs05,sr.qcs.qcs06,sr.qcs.qcs061,sr.qcs.qcs062,sr.qcs.qcs071,
                                    sr.qcs.qcs072,sr.qcs.qcs081,sr.qcs.qcs082,sr.qcs.qcs09,sr.qcs.qcs091,sr.qcs.qcs10,
