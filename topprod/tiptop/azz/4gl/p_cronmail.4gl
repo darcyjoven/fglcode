@@ -669,6 +669,8 @@ FUNCTION p_mailw_u()
             CALL cl_err3("upd","darcy_fastmail",g_mail.mail,"",SQLCA.sqlcode,"","",0)  #No.FUN-660131
             CONTINUE WHILE
         END IF
+        CLOSE p_mailw_cl
+        COMMIT WORK
          CALL cl_getmsg('czz-002',g_lang) RETURNING li_cnt
          CALL cl_getmsg('lib-042',g_lang) RETURNING li_bnt
 
@@ -700,8 +702,7 @@ FUNCTION p_mailw_u()
          END MENU
         EXIT WHILE
     END WHILE
-    CLOSE p_mailw_cl
-    COMMIT WORK
+    
 END FUNCTION
  
 FUNCTION p_mailw_x()
