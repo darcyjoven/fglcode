@@ -7460,7 +7460,8 @@ FUNCTION t623_y_chk()
                   select sfb22,sfb221,sfbud09 into l_oeb01,l_oeb03,l_sfbud09 from sfb_file where sfb01 = b_sfv.sfv11
                   if not cl_null(l_oeb01) then
                      select sum(sfb09*l_sfbud09/100) into l_sfb09 from sfb_file
-                      where sfb22 = l_oeb01 and sfb87 ='Y'
+                      where sfb22 = l_oeb01 and sfb221 = l_oeb03 and sfb87 ='Y'
+                     if cl_null(l_sfb09) then let l_sfb09 = 0 end if
                      let l_oeb12 = 0
                      select oeb12 into l_oeb12 from oeb_file where oeb01 = l_oeb01 and oeb03 = l_oeb03
                      let l_num = l_sfv09*l_sfbud09/100
