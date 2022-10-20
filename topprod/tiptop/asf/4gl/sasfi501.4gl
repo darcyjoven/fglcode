@@ -6908,6 +6908,7 @@ DEFINE   l_tc_sff05     LIKE tc_sff_file.tc_sff05   #tianry add end 161122
               "   AND sfa"
               "   AND tc_sff04 = sfa03 and tc_sff27 = sfa27", #darcy:2022/10/12 add 
               "   AND sfa012= '",g_sfa.sfa012,"' AND sfa013 = ",g_sfa.sfa013   #FUN-A60028 add
+              ,"  and l_tc_sff05 "
     else
       LET l_sql="SELECT * FROM sfa_file",     #tianry add 161128   g_sfa.sfa3->g_sfa.sfa27
                " WHERE sfa01='",g_sfa.sfa01,"' AND sfa27='",g_sfa.sfa27,"'",      #'",g_sfa.sfa03,"'",  #tianry mark
