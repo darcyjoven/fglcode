@@ -9383,7 +9383,13 @@ DEFINE p_sfp03    LIKE sfp_file.sfp03      #add by guanyao170110
    CALL s_auto_assign_no("aim",l_slip,p_sfp03,"","imm_file","imm01","","","")    #add by guanyao1700110
       RETURNING li_result,l_imm.imm01
    IF (NOT li_result) THEN
-      CALL s_auto_assign_no("aim","CRD",p_sfp03,"","imm_file","imm01","","","")  RETURNING li_result,l_imm.imm01  #add by sx210830
+      #darcy:2022/09/25 add s---
+      IF YEAR(g_today)=2022 and MONTH(g_today) =9 THEN
+         CALL s_auto_assign_no("aim","CRE",p_sfp03,"","imm_file","imm01","","","")  RETURNING li_result,l_imm.imm01  #add by sx210830
+      ELSE
+      #darcy:2022/09/25 add e---
+         CALL s_auto_assign_no("aim","CRE",p_sfp03,"","imm_file","imm01","","","")  RETURNING li_result,l_imm.imm01  #add by sx210830
+      END IF #darcy:2022/09/25 add
 	  IF (NOT li_result) THEN
          LET g_success = 'N'
 	  END IF
