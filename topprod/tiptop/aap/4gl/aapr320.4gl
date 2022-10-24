@@ -753,7 +753,7 @@ FUNCTION r320()
                INSERT INTO curr_tmp1 VALUES(sr1[l_idx].apa13,0,0,sr1[l_idx].apg05,0,0,sr.order1,sr.order2)   #MOD-820063
             END IF
             IF sr2[l_idx].aph03 IS NULL AND sr2[l_idx].aph05 IS NULL THEN    #MOD-CA0208 add
-               EXIT FOR                                                      #MOD-CA0208 add
+               #EXIT FOR                                                      #MOD-CA0208 add #darcy:2022/10/24 mark
             END IF                                                           #MOD-CA0208 add
             SELECT azi04 INTO t_azi04 FROM azi_file                       
                 WHERE azi01 = sr2[l_idx].aph13

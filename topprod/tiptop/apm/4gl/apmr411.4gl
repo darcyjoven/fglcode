@@ -40,6 +40,7 @@ END GLOBALS
               a    LIKE type_file.chr1,    #No.FUN-680136 VARCHAR(1) # 排列項目
              #b    LIKE type_file.chr1,    #No.FUN-680136 VARCHAR(1) # 排列項目 #MOD-B30309 mark
               b    LIKE type_file.num5,    #排列項目 #MOD-B30309
+              pmk18 LIKE pmk_file.pmk18,   #darcy:2022/10/24 add
               more  LIKE type_file.chr1    #No.FUN-680136 VARCHAR(1) # 特殊列印條件
               END RECORD
  
@@ -132,6 +133,7 @@ DEFINE lc_qbe_sn      LIKE gbm_file.gbm01   #No.FUN-580031
    INITIALIZE tm.* TO NULL			# Default condition
    LET tm.a      = 'Y'
    LET tm.more   = 'N'
+   LET tm.pmk18  = 'Y' #darcy:2022/10/24 add
    LET g_pdate   = g_today
    LET g_rlang   = g_lang
    LET g_bgjob   = 'N'
@@ -202,12 +204,15 @@ WHILE TRUE
          #No.FUN-580031 ---end---
  
 END CONSTRUCT
+   
+   
        IF g_action_choice = "locale" THEN
           LET g_action_choice = ""
           CALL cl_dynamic_locale()
           CONTINUE WHILE
        END IF
- 
+     
+
    IF INT_FLAG THEN
       LET INT_FLAG = 0
       CLOSE WINDOW r411_w
@@ -218,7 +223,7 @@ END CONSTRUCT
       CALL cl_err(' ','9046',0)
       CONTINUE WHILE
    END IF
-   INPUT BY NAME tm.a,tm.b,tm.more WITHOUT DEFAULTS
+   INPUT BY NAME tm.a,tm.b,tm.more,tm.pmk18 WITHOUT DEFAULTS
          #No.FUN-580031 --start--
          BEFORE INPUT
              CALL cl_qbe_display_condition(lc_qbe_sn)
@@ -374,6 +379,7 @@ FUNCTION r411()
                # " WHERE pmk01 = pml01 AND pml04=ima01 ",
                  " WHERE pmk01 = pml01 ",
                  "   AND pml16 NOT IN ('6','7','8','9') ",
+                 "   AND pmk18 = '",tm.pmk18,"'",
                  "   AND ",tm.wc CLIPPED
  
      IF tm.a='Y' THEN LET l_sql=l_sql CLIPPED," AND (pml20-pml21)>0 " END IF
