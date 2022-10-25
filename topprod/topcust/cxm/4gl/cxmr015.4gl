@@ -328,7 +328,7 @@ FUNCTION cxmr015()
      DECLARE cxmr015_curs1 CURSOR FOR cxmr015_prepare1
      FOREACH cxmr015_curs1 INTO sr.* 
         IF STATUS THEN CALL cl_err('foreach:',STATUS,1) EXIT FOREACH END IF
-        LET sr.omf28_t = sr.omf28*(1+sr.omf061)
+        LET sr.omf28_t = sr.omf28*(100+sr.omf061)/100 #modify darcy:2022/10/25
         EXECUTE insert_prep USING sr.*
      END FOREACH
      LET g_sql = "SELECT * FROM ",g_cr_db_str CLIPPED,l_table CLIPPED
