@@ -916,6 +916,11 @@ define l_cnt     like type_file.num5  #darcy:2022/10/17 add
       IF l_pmn16 MATCHES '[678]' THEN CONTINUE FOREACH END IF
       #add darcy:2022/10/17 s---
       # 委外采购还未入库且还未结案，不允许工单结案。
+      #darcy:2022/10/25 add s---
+      let l_cnt = 0
+      select count(1) into l_cnt from pmm_file where pmm01 = l_pmn01 and pmm18='Y'
+      if l_cnt > 0 then 
+      #darcy:2022/10/25 add e---
          let l_cnt = 0
          SELECT count(1) into l_cnt
            FROM rvv_file, rvu_file
@@ -929,6 +934,7 @@ define l_cnt     like type_file.num5  #darcy:2022/10/17 add
             let g_success = 'n'
             continue foreach
          end if
+      end if #darcy:2022/10/25 add
       #add darcy:2022/10/17 e---
       CASE
          WHEN l_qty1 = 0 LET  l_sta = '6'
