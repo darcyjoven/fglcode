@@ -236,7 +236,42 @@ MAIN
 
    CALL cl_used(g_prog,g_time,2) RETURNING g_time
 END MAIN
+#darcy:2022/10/26 add s---
 
+function q301_crt_temp()
+   define sqlx string
+
+   call q301_drop_temp()
+   let sqlx ="
+   create table q301_fastexcel(
+      aea05      number(5),
+      aag02      varchar2(255),
+      aea02      date,
+      aea03      varchar2(20),
+      aba11       number(10),
+      abb04       varchar2(80),
+      abb24       varchar2(4),
+      df          number(20,6),
+      abb25_d     number(20,10),
+      d           number(20,6),
+      cf          number(20,6),
+      abb25_c    number(20,10),
+      c           number(20,6),
+      dc         varchar2(10),
+      balf        number(20,6),
+      abb25_bal  number(20,10),
+      bal        number(20,6)
+   )"
+   prepare crt_q301_fastexcel from sqlx
+   execute crt_q301_fastexcel
+
+   let sqlx = "insert into q301_fastexcel values(
+      ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?
+   )"
+   prepare crt_q301_into from sqlx
+
+end function
+#darcy:2022/10/26 add e---
 FUNCTION q301_menu()
    DEFINE   l_cmd   LIKE type_file.chr1000
 
@@ -2087,7 +2122,8 @@ FUNCTION gglq301_b_fill1()
          CALL cl_err( '', 9035, 0 )
          EXIT FOREACH
       END IF
-      insert into q301_fastexcel values (
+      #darcy:2022/10/26 add s---
+      execute crt_q301_into USING
       g_abbv[g_cnt].aea05,
       g_abbv[g_cnt].aag02,
       g_abbv[g_cnt].aea02,
@@ -2104,8 +2140,8 @@ FUNCTION gglq301_b_fill1()
       g_abbv[g_cnt].dc,
       g_abbv[g_cnt].balf,
       g_abbv[g_cnt].abb25_bal,
-      g_abbv[g_cnt].bal
-      ) #darcy:2022/10/26 add
+      g_abbv[g_cnt].bal 
+      #darcy:2022/10/26 add e---
    END FOREACH
    CALL g_abbv.deleteElement(g_cnt)
    LET g_rec_b = g_cnt - 1
@@ -3394,33 +3430,6 @@ function q301_fastexcel()
 
 end function
 
-function q301_crt_temp()
-   define sqlx string
-
-   call q301_drop_temp()
-   let sqlx ="
-   create table q301_fastexcel(
-      aea05      number(5),
-      aag02      varchar2(255),
-      aea02      date,
-      aea03      varchar2(20),
-      aba11       number(10),
-      abb04       varchar2(80),
-      abb24       varchar2(4),
-      df          number(20,6),
-      abb25_d     number(20,10),
-      d           number(20,6),
-      cf          number(20,6),
-      abb25_c    number(20,10),
-      c           number(20,6),
-      dc         varchar2(10),
-      balf        number(20,6),
-      abb25_bal  number(20,10),
-      bal        number(20,6)
-   )"
-   prepare crt_q301_fastexcel from sqlx
-   execute crt_q301_fastexcel
-end function
 
 function q301_drop_temp()
    whenever any error continue
