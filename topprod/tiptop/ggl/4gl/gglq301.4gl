@@ -244,23 +244,23 @@ function q301_crt_temp()
    call q301_drop_temp()
    let sqlx ="
    create table q301_fastexcel(
-      aea05      number(5),
+      aea05      number(10),
       aag02      varchar2(255),
       aea02      date,
       aea03      varchar2(20),
-      aba11       number(10),
-      abb04       varchar2(80),
-      abb24       varchar2(4),
-      df          number(20,6),
-      abb25_d     number(20,10),
-      d           number(20,6),
-      cf          number(20,6),
+      aba11      number(10),
+      abb04      varchar2(80),
+      abb24      varchar2(4),
+      df         number(20,6),
+      abb25_d    number(20,10),
+      d          number(20,6),
+      cf         number(20,6),
       abb25_c    number(20,10),
-      c           number(20,6),
+      c          number(20,6),
       dc         varchar2(10),
-      balf        number(20,6),
+      balf       number(20,6),
       abb25_bal  number(20,10),
-      bal        number(20,6)
+      bal        number(30,6)
    )"
    prepare crt_q301_fastexcel from sqlx
    execute crt_q301_fastexcel
@@ -2116,12 +2116,6 @@ FUNCTION gglq301_b_fill1()
 #      END IF
       #MOD-E20099--mark--end
      #No.FUN-D10072 ---end  --- Add  2013.01.18
-
-      LET g_cnt = g_cnt + 1
-      IF g_cnt > g_max_rec AND g_user !='tiptop'  THEN
-         CALL cl_err( '', 9035, 0 )
-         EXIT FOREACH
-      END IF
       #darcy:2022/10/26 add s---
       execute crt_q301_into USING
       g_abbv[g_cnt].aea05,
@@ -2142,6 +2136,12 @@ FUNCTION gglq301_b_fill1()
       g_abbv[g_cnt].abb25_bal,
       g_abbv[g_cnt].bal 
       #darcy:2022/10/26 add e---
+      LET g_cnt = g_cnt + 1
+      IF g_cnt > 1000000  THEN
+         CALL cl_err( '', 9035, 0 )
+         EXIT FOREACH
+      END IF
+      
    END FOREACH
    CALL g_abbv.deleteElement(g_cnt)
    LET g_rec_b = g_cnt - 1
@@ -2520,7 +2520,7 @@ FUNCTION gglq301_b_fill()
 #     END IF
 #FUN-C80102--mark--end--
       LET g_cnt = g_cnt + 1
-      IF g_cnt > g_max_rec  AND g_user !='tiptop' THEN
+      IF g_cnt > 1000000 THEN
          CALL cl_err( '', 9035, 0 )
          EXIT FOREACH
       END IF
@@ -3423,7 +3423,7 @@ function q301_fastexcel()
    define title string
    define err like type_file.chr1
 
-   let title = "科目编号,科目名称,凭证日期,凭证编号,总号,摘要,借方金额,贷方金额,借贷,余额"
+   let title = "科目编号,科目名称,凭证日期,凭证编号,总号,摘要,原币币种,原币借方金额,汇率,本币借方金额,原币贷方金额,汇率,本币贷方金额,借贷,原币余额,汇率,本币余额"
 
    call cs_darcy_set_title("q301_fastexcel",title,"明细分类帐查询") returning err
    call cs_darcy_excel("q301_fastexcel",g_prog) returning file,err
