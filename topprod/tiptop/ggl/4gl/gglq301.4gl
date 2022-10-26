@@ -2087,7 +2087,25 @@ FUNCTION gglq301_b_fill1()
          CALL cl_err( '', 9035, 0 )
          EXIT FOREACH
       END IF
-      insert into q301_fastexcel values (g_abbv[g_cnt].*) #darcy:2022/10/26 add
+      insert into q301_fastexcel values (
+      g_abbv[g_cnt].aea05,
+      g_abbv[g_cnt].aag02,
+      g_abbv[g_cnt].aea02,
+      g_abbv[g_cnt].aea03,
+      g_abbv[g_cnt].aba11,
+      g_abbv[g_cnt].abb04,
+      g_abbv[g_cnt].abb24,
+      g_abbv[g_cnt].df,
+      g_abbv[g_cnt].abb25_d,
+      g_abbv[g_cnt].d,
+      g_abbv[g_cnt].cf,
+      g_abbv[g_cnt].abb25_c,
+      g_abbv[g_cnt].c,
+      g_abbv[g_cnt].dc,
+      g_abbv[g_cnt].balf,
+      g_abbv[g_cnt].abb25_bal,
+      g_abbv[g_cnt].bal
+      ) #darcy:2022/10/26 add
    END FOREACH
    CALL g_abbv.deleteElement(g_cnt)
    LET g_rec_b = g_cnt - 1
