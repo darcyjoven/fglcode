@@ -266,6 +266,12 @@ FUNCTION q301_menu()
                CALL cl_export_to_excel
                (ui.Interface.getRootNode(),base.TypeInfo.create(g_abbv),'','')  #FUN-D10072 mod g_abb->g_abbv
             END IF
+         #darcy:2022/10/26 add s---
+         WHEN "fastexcel"
+            if cl_chk_act_auth() then
+               call q301_fastexcel()
+            end if
+         #darcy:2022/10/26 add e---
          WHEN "related_document"
             IF cl_chk_act_auth() THEN
                IF g_aea05 IS NOT NULL THEN
@@ -289,6 +295,7 @@ FUNCTION gglq301_tm()
    CLEAR FORM #清除畫面 #FUN-C80102
    CALL g_abb.clear()  #FUN-C80102
    CALL g_abbv.clear()  #TQC-D60067
+   call q301_crt_temp() #darcy:2022/10/26 add
 #FUN-C80102--mark--str--
 #  LET p_row = 4 LET p_col = 12
 #  OPEN WINDOW gglq301_w1 AT p_row,p_col
@@ -2080,6 +2087,7 @@ FUNCTION gglq301_b_fill1()
          CALL cl_err( '', 9035, 0 )
          EXIT FOREACH
       END IF
+      insert into q301_fastexcel values (g_abbv[g_cnt].*) #darcy:2022/10/26 add
    END FOREACH
    CALL g_abbv.deleteElement(g_cnt)
    LET g_rec_b = g_cnt - 1
@@ -2990,6 +2998,11 @@ FUNCTION q301_bp(p_ud)
 
       AFTER DISPLAY
          CONTINUE DISPLAY
+      #darcy:2022/10/26 add s---
+      ON action fastexcel
+         let g_action_choice = "fastexcel"
+         exit display
+      #darcy:2022/10/26 add e---
 
       ON ACTION controls
          CALL cl_set_head_visible("","AUTO")
@@ -3350,3 +3363,50 @@ FUNCTION gglq301_check_ins(p_qcye)
 END FUNCTION
 
 
+#darcy:2022/10/26 add s---
+function q301_fastexcel()
+   define file string
+   define title string
+   define err like type_file.chr1
+
+   let title = "科目编号,科目名称,凭证日期,凭证编号,总号,摘要,借方金额,贷方金额,借贷,余额"
+
+   call cs_darcy_set_title("q301_fastexcel",title,"明细分类帐查询") returning err
+   call cs_darcy_excel("q301_fastexcel",g_prog) returning file,err
+
+end function
+
+function q301_crt_temp()
+   define sqlx string
+
+   call q301_drop_temp()
+   let sqlx ="
+   create table q301_fastexcel(
+      aea05      number(5),
+      aag02      varchar2(255),
+      aea02      date,
+      aea03      varchar2(20),
+      aba11       number(10),
+      abb04       varchar2(80),
+      abb24       varchar2(4),
+      df          number(20,6),
+      abb25_d     number(20,10),
+      d           number(20,6),
+      cf          number(20,6),
+      abb25_c    number(20,10),
+      c           number(20,6),
+      dc         varchar2(10),
+      balf        number(20,6),
+      abb25_bal  number(20,10),
+      bal        number(20,6)
+   )"
+   prepare crt_q301_fastexcel from sqlx
+   execute crt_q301_fastexcel
+end function
+
+function q301_drop_temp()
+   whenever any error continue
+      drop table q301_fastexcel;
+   whenever any error stop
+end function
+#darcy:2022/10/26 add e---
