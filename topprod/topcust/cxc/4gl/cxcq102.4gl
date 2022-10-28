@@ -438,6 +438,48 @@ FUNCTION q102_b_fill()                  #BODY FILL UP
       end if
       let g_cnt = g_cnt + 1
    end foreach
+   #darcy:2022/10/27 add s---
+   #增加其它类别的立账
+   let l_sql = "SELECT oma03,
+                       oma032,
+                       OMA01,
+                       OMA02,
+                       OMA33,
+                       OMA76,
+                       OMA10,
+                       OMB03,
+                       OMB31,
+                       OMB32,
+                       OMB04,
+                       OMB12,
+                       OMB13,
+                       OMB14,
+                       OMB14T,
+                       OMB15,
+                       OMB16,
+                       OMB16T
+                     FROM oma_file,
+                        omb_file
+                     WHERE oma01 = omb01
+                        AND omaconf = 'Y'
+                        and YEAR(oma02) * 12 + MONTH(oma02) = ",tm.eyy," * 12 + ",tm.emm,"
+                           AND omb38=99"
+   prepare q102_b_fill2_p from l_sql
+   declare q102_b_fill2 cursor for q102_b_fill2_p
+
+   foreach q102_b_fill2 into g_cxcq102[g_cnt].oga03,g_cxcq102[g_cnt].oga032,
+                             g_cxcq102[g_cnt].OMA01,g_cxcq102[g_cnt].OMA02,g_cxcq102[g_cnt].OMA33,g_cxcq102[g_cnt].OMA76,g_cxcq102[g_cnt].OMA10,g_cxcq102[g_cnt].OMB03,g_cxcq102[g_cnt].OMB31,
+                             g_cxcq102[g_cnt].OMB32,g_cxcq102[g_cnt].OMB04,g_cxcq102[g_cnt].OMB12,g_cxcq102[g_cnt].OMB13,g_cxcq102[g_cnt].OMB14,g_cxcq102[g_cnt].OMB14T,g_cxcq102[g_cnt].OMB15,
+                             g_cxcq102[g_cnt].OMB16,g_cxcq102[g_cnt].OMB16T      
+      if sqlca.sqlcode then
+         call cl_err("q102_b_fill2","!",1)
+         exit foreach
+      end if
+      let g_cnt = g_cnt + 1
+   end foreach
+   call g_cxcq102.deleteElement(g_cnt)
+   let g_cnt = g_cnt - 1
+   #darcy:2022/10/27 add e---
 END FUNCTION
  
 FUNCTION q102_bp(p_ud)
