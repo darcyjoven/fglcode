@@ -233,6 +233,12 @@ FUNCTION t324sub_y_chk(p_imm01)
                LET l_store = l_store,l_imn.imn15
             END IF
          END IF
+         #darcy:2022/10/25 s---
+         # 检查出入的批号是否相同给予提示，但仍然可以审核
+         if l_imn.imn06 != l_imn.imn17 then
+            CALL s_errmsg('imn06,imn17',l_imn.imn06,l_imn.imn17,'cim-015',1)
+         end if
+         #darcy:2022/10/25 e---
          IF NOT cl_null(l_imn.imn28) THEN
             LET l_n = 0
             LET l_flag = FALSE
@@ -251,7 +257,7 @@ FUNCTION t324sub_y_chk(p_imm01)
       CALL s_showmsg()
    END IF
    #FUN-CB0087---add---end---
-
+   CALL s_showmsg_init() #darcy:2022/10/26 add
    FOREACH t324sub_y_chk_c INTO b_imn.*
       #FUN-AB0066 --begin--
       IF NOT s_chk_ware(b_imn.imn04) THEN 
@@ -263,6 +269,12 @@ FUNCTION t324sub_y_chk(p_imm01)
          RETURN 
       END IF    
       #FUN-AB0066 --end--
+      #darcy:2022/10/25 s---
+      # 检查出入的批号是否相同给予提示，但仍然可以审核
+      if b_imn.imn06 != b_imn.imn17 then
+         CALL s_errmsg('imn06,imn17',b_imn.imn06,b_imn.imn17,'cim-015',1)
+      end if
+      #darcy:2022/10/25 e---
       #FUN-CB0087--add--str--
       IF g_aza.aza115 = 'Y' AND cl_null(b_imn.imn28) THEN
          LET g_success = 'N'
@@ -391,6 +403,7 @@ FUNCTION t324sub_y_chk(p_imm01)
       END IF
       #FUN-BC0036 --END--
    END FOREACH
+   CALL s_showmsg() #darcy:2022/10/26 add
 
    IF g_success = 'N' THEN RETURN END IF
 
