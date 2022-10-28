@@ -1998,7 +1998,7 @@ DEFINE  l_ima926        LIKE    ima_file.ima926   #FUN-D30087 add
    IF g_wc2=' 1=1 ' THEN
       IF g_argv3='SUB' THEN  #NO:6961
          IF NOT cl_null(g_argv4)  THEN   #NO:6961
-            LET g_sql="SELECT UNIQUE pmm01 ",#MOD-530163
+            LET g_sql="SELECT UNIQUE pmm01,pmm04 ",#MOD-530163
                       "  FROM pmm_file,pmn_file ", #組合出SQL指令
                       " WHERE pmm01=pmn01 AND ", g_wc CLIPPED,
                       " AND pmn41='",g_argv4,"' "
@@ -2012,7 +2012,7 @@ DEFINE  l_ima926        LIKE    ima_file.ima926   #FUN-D30087 add
             #darcy 2022年1月13日 add s---
 
          ELSE
-            LET g_sql="SELECT UNIQUE pmm01 ",#MOD-530163
+            LET g_sql="SELECT UNIQUE pmm01,pmm04 ",#MOD-530163
                       "  FROM pmm_file ", #組合出SQL指令
                       " WHERE ", g_wc CLIPPED
                       #  " ORDER BY pmm01 "  #darcy mark 2022年1月13日
@@ -2025,7 +2025,7 @@ DEFINE  l_ima926        LIKE    ima_file.ima926   #FUN-D30087 add
             #darcy 2022年1月13日 add s---
          END IF
       ELSE
-         LET g_sql="SELECT UNIQUE pmm01 FROM pmm_file ", #組合出SQL指令 #MOD-530163 加UNIQUE
+         LET g_sql="SELECT UNIQUE pmm01,pmm04 FROM pmm_file ", #組合出SQL指令 #MOD-530163 加UNIQUE
                    " WHERE ",g_wc CLIPPED
                    #  " ORDER BY pmm01 "  #darcy mark 2022年1月13日
          #darcy 2022年1月13日 add s---
@@ -2037,7 +2037,7 @@ DEFINE  l_ima926        LIKE    ima_file.ima926   #FUN-D30087 add
          #darcy 2022年1月13日 add s---
       END IF
    ELSE
-      LET g_sql="SELECT UNIQUE pmm01 FROM pmm_file,pmn_file ", #MOD-530163 加UNIQUE
+      LET g_sql="SELECT UNIQUE pmm01,pmm04 FROM pmm_file,pmn_file ", #MOD-530163 加UNIQUE
                 " WHERE ",g_wc CLIPPED," AND ",g_wc2 CLIPPED,
                 "   AND pmm01 = pmn01"
                 #  " ORDER BY pmm01 "  #darcy mark 2022年1月13日
