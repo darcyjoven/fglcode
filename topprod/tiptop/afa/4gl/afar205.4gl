@@ -100,10 +100,11 @@ MAIN
              "tmp03.faj_file.faj203, tmp04.faj_file.faj32,",
              "faj04.faj_file.faj04"   #CHI-710026 add
              ,",fajud04.faj_file.fajud04"   #darcy:2022/10/10 add
+             ,",faj20.faj_file.faj10,gem02.gem_file.gem02" #darcy:2022/10/25 add
    LET l_table = cl_prt_temptable('afar205',g_sql) CLIPPED
    IF l_table= -1 THEN EXIT PROGRAM END IF
    LET g_sql="INSERT INTO ",g_cr_db_str CLIPPED,l_table CLIPPED,
-             " VALUES(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?)"   #CHI-710026 add ?
+             " VALUES(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?)"   #CHI-710026 add ?
    PREPARE insert_prep FROM g_sql                                                                                                   
    IF STATUS THEN                                                                                                                   
       CALL cl_err('insert_prep',status,1) EXIT PROGRAM                                                                              
@@ -341,6 +342,7 @@ FUNCTION afar205()
                        faj101 LIKE faj_file.faj101,   #No.CHI-480001
                        cost   LIKE faj_file.faj101,   #No.CHI-480001
                        fajud04 like faj_file.fajud04  #darcy:2022/10/10 add
+                       ,faj20 like faj_file.faj20,gem02 like gem_file.gem02 #darcy:2022/10/25 add
                     END RECORD
    DEFINE l_i,l_cnt,i         LIKE type_file.num5     #No.FUN-680070 SMALLINT
    DEFINE l_zaa02             LIKE zaa_file.zaa02
@@ -372,9 +374,12 @@ FUNCTION afar205()
                " faj32*(faj17-faj58)/faj17,faj33,faj02,faj022, ",  #TQC-620119
                " faj101-faj102,0 ",           #end No.CHI-480001
                ",fajud04",#darcy:2022/10/10 add
+               " ,faj20,gem02", #darcy:2022/10/25 add
                "  FROM faj_file ",
+               ",gem_file", #darcy:2022/10/25 add
                " WHERE fajconf='Y' AND ",tm.wc CLIPPED,
                " AND faj17 >0 ",   #除數不為0   #No:7593
+               " and gem01=faj20 ", #darcy:2022/10/25 add
                " AND faj26 <='",g_edate,"'"
  
    IF tm.c = '1' THEN    #停用
@@ -563,6 +568,7 @@ FUNCTION afar205()
          sr.faj21,sr.faj29,sr.faj31,sr.faj33, l_faj25,
          p_fab02, p_faf02, sr.tmp01,sr.tmp02, sr.tmp03,
          sr.tmp04,sr.faj04,sr.fajud04   #CHI-710026 add sr.faj04
+         ,sr.faj20,sr.gem02 #darcy:2022/10/25 add
    END FOREACH
  
    LET g_sql = "SELECT * FROM ",g_cr_db_str CLIPPED,l_table CLIPPED                                                               

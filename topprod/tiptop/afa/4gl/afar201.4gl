@@ -258,6 +258,7 @@ MAIN
               "faj53.faj_file.faj53"                     #str---add by huanglf160823
               ,",pmc081.pmc_file.pmc081"  #add by dengsy170212
               ,",fajud04.faj_file.fajud04"  #add by darcy:2022/10/10
+              ,",gem02.gem_file.gem02"  #darcy:2022/10/25 add
 
    #MOD-CC0015  -- modify end #調整sql與XML一致；方便開發、提高CR效能 --
      LET l_table = cl_prt_temptable('afar201',g_sql) CLIPPED                                                                        
@@ -265,7 +266,7 @@ MAIN
      LET g_sql="INSERT INTO ",g_cr_db_str CLIPPED,l_table CLIPPED,                                                                            
                " VALUES(?,?,?,?,?, ?,?,?,?,?,",                                                                                         
                "        ?,?,?,?,?, ?,?,?,?,?,",                                                                                         
-             "        ?,?,?,?,?, ?,?,?,?)"                                   #CHI-C70003 Add ,?  #FUN-B60045   Add  ,?                                                                                          
+             "        ?,?,?,?,?, ?,?,?,?,?)"                                   #CHI-C70003 Add ,?  #FUN-B60045   Add  ,?                                                                                          
     PREPARE insert_prep FROM g_sql                                                                                                  
     IF STATUS THEN                                                                                                                  
        CALL cl_err('insert_prep',status,1) EXIT PROGRAM                                                                             
@@ -701,6 +702,7 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
                               faj53  LIKE faj_file.faj53   #str---add by huanglf160823
                               ,pmc081   LIKE pmc_file.pmc081 #add by dengsy170212
                               ,fajud04   LIKE faj_file.fajud04 #add by darcy:2022/10/10
+                              ,gem02     like gem_file.gem02  #darcy:2022/10/25 add
                         END RECORD
      DEFINE l_i               LIKE type_file.num5            #No.FUN-680070 SMALLINT
      DEFINE l_zaa02           LIKE zaa_file.zaa02
@@ -747,11 +749,13 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
                     " 0,0,faj101,faj102,faj22 ",                                #MOD-620007
                     " ,faj93,faj31,faj34,faj30,faj11,faj53 ",  #str---add by huanglf160823                                   #FUN-B60045 Add #CHI-D30018 add faj31,faj34
                     "  ,pmc081 ",  #add by dengsy170212
-                    "  ,fajud04 ",  #add by darcy:2022/10/10
+                    "  ,fajud04,gem02 ",  #add by darcy:2022/10/10 #darcy:2022/10/25 add
                     "  FROM faj_file,OUTER fab_file,OUTER gen_file,OUTER faf_file",
                     "  ,OUTER pmc_file ",  #add by dengsy170212
+                    "  ,gem_file", #darcy:2022/10/25 add
                     " WHERE fajconf='Y' AND ",tm.wc CLIPPED,
                     " AND faj26 <='",g_edate,"'",
+                    " and faj20 = gem01 ", #darcy:2022/10/25 add
                     " AND faj_file.faj19 = gen_file.gen01 ",
                     " AND faj_file.faj21 = faf_file.faf01 ",
                     " AND faj_file.faj04 = fab_file.fab01 "
@@ -768,10 +772,13 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
                     " ,faj93,faj31,faj34,faj30,faj11,faj53 ",#str---add by huanglf160823                                         #FUN-B60045 Add #CHI-D30018 add faj31,faj34
                     "  ,pmc081 ",  #add by dengsy170212
                     "  ,fajud04 ",  #add by darcy:2022/10/10
+                    "  ,gem02 ",#darcy:2022/10/25 add
                     "  FROM faj_file,OUTER fab_file,OUTER gen_file,OUTER faf_file",
                     "  ,OUTER pmc_file ",  #add by dengsy170212
+                    "  ,gem_file ", #darcy:2022/10/25 add
                     " WHERE fajconf='Y' AND ",tm.wc CLIPPED,
                     " AND faj262 <='",g_edate,"'",
+                    " and gem01 = faj20 ", #darcy:2022/10/25 add
                     " AND faj_file.faj19 = gen_file.gen01 ",
                     " AND faj_file.faj21 = faf_file.faf01 ",
                     " AND faj_file.faj04 = fab_file.fab01 "
@@ -1384,6 +1391,7 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
                          sr.faj30,sr.faj11,sr.faj53  #str---add by huanglf160823
                          ,sr.pmc081  #add by dengsy170212
                          ,sr.fajud04  #add by darcy:2022/10/10
+                         ,sr.gem02  #darcy:2022/10/25 add
    #MOD-CC0015  -- modify end #調整sql與XML一致；方便開發、提高CR效能 --
 #FUN-B60045   ---start   Add
      IF NOT cl_null(tm.e) THEN
