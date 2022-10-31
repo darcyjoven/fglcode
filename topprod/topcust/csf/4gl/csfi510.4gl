@@ -4215,7 +4215,7 @@ FUNCTION i510_g_b1() 		# 依套數發料/退料(When sfp06=1/6)
     # 當有替代狀況時, 須作以下處理:
     LET l_sql="SELECT * FROM sfa_file",
               " WHERE sfa01='",g_sfa.sfa01,"' AND sfa27='",g_sfa.sfa03,"'",
-              "   AND sfa08='",g_sfa.sfa08,"' AND sfa12='",g_sfa.sfa12,"'",
+              "   AND sfa08='",g_sfa.sfa08,"'", -- AND sfa12='",g_sfa.sfa12,"'", #darcy:2022/10/31 mark 排除数量
               "   AND sfa012= '",g_sfa.sfa012,"' AND sfa013 = ",g_sfa.sfa013   #FUN-A60028 add
  
     SELECT MAX(sfa26) INTO s_u_flag FROM sfa_file	# 到底是 S 或 U ?
@@ -8595,7 +8595,10 @@ FUNCTION i510_2_tc_sff()
         " LEFT OUTER JOIN ima_file ON tc_sff04=ima01 ",                                                  #09/10/21 xiaofeizhu Add
         " LEFT OUTER JOIN azf_file ON tc_sff09=azf01 AND azf02 = '2' ",                                  #FUN-CB0087 add
         " WHERE tc_sff01 ='",g_tc_sfd.tc_sfd01,"'",  
-       "  AND tc_sff27 IN (SELECT UNIQUE  tc_sff27 FROM tc_sff_file WHERE tc_sff01 = '",g_tc_sfd.tc_sfd01,"' AND tc_sff28 IS NOT NULL) ",
+       #modidy darcy:2022/10/31 s---
+       #增加工单号
+       "  AND (tc_sff03,tc_sff27) IN (SELECT UNIQUE tc_sff03,tc_sff27 FROM tc_sff_file WHERE tc_sff01 = '",g_tc_sfd.tc_sfd01,"' AND tc_sff28 IS NOT NULL) ",
+       #modidy darcy:2022/10/31 e---
        " ORDER BY tc_sff03,tc_sff27,tc_sff07 "  
     PREPARE i510_pb2 FROM g_sql
     DECLARE tc_sff_curs2 CURSOR FOR i510_pb2
