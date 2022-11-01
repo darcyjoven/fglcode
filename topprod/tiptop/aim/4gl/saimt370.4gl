@@ -6636,6 +6636,7 @@ END FUNCTION
  
 FUNCTION t370_chk_inb07(p_cmd)
    DEFINE p_cmd LIKE type_file.chr1
+   define l_msg string #darcy:2022/11/01 add
  
    #BugNo:5626 控管是否為全型空白
    IF g_inb[l_ac].inb07 ='　' THEN #全型空白
@@ -6720,8 +6721,9 @@ FUNCTION t370_chk_inb07(p_cmd)
             AND img03 = g_inb[l_ac].inb06   #儲位
             AND img04 = g_inb[l_ac].inb07   #批號
             AND img18 < g_ina.ina02         #調撥日期 
+         let l_msg = g_inb[l_ac].inb03,"|",g_inb[l_ac].inb04,"|",g_inb[l_ac].inb05,"|",g_inb[l_ac].inb06,"|",g_inb[l_ac].inb07
          IF g_cnt > 0 THEN    #大於有效日期
-            call cl_err('','aim-400',0)   #須修改
+            call cl_err(l_msg,'aim-400',0)   #須修改
             LET g_errno = 'aim-400'                #FUN-B10016 add
             #RETURN "inb07"  #TQC-C60033
             RETURN "inb05"   #TQC-C60033

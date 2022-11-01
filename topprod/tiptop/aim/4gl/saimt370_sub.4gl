@@ -157,7 +157,7 @@ DEFINE l_inamksg      LIKE ina_file.inamksg,  #MOD-CC0203 add
        l_ina08        LIKE ina_file.ina08     #MOD-CC0203 add
 DEFINE l_x            LIKE type_file.num5     #add by guanyao160705
 DEFINE g_cnt          LIKE type_file.num5     #add by jiangln 170526
-
+define l_msg   string #darcy:2022/11/01 add
 
    WHENEVER ERROR CONTINUE                #忽略一切錯誤  
    
@@ -378,9 +378,10 @@ DEFINE g_cnt          LIKE type_file.num5     #add by jiangln 170526
                     AND img03 = l_inb.inb06
                     AND img04 = l_inb.inb07 
                     AND img18 < l_ina.ina02
+                 let l_msg = l_inb.inb03,"|",l_inb.inb04,"|",l_inb.inb05,"|",l_inb.inb06,"|",l_inb.inb07 #darcy:2022/11/01 add
                  IF g_cnt > 0 THEN
                     LET g_success = 'N' 
-                    call cl_err('','aim-400',1)                 
+                    call cl_err(l_msg,'aim-400',1)                 
                     RETURN
                  END IF
               END IF  
