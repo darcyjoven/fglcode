@@ -1383,6 +1383,15 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
     #                    sr.tmp04,sr.tmp05,sr.tmp06,sr.tmp08
     #                   ,sr.faj93    #FUN-B60045
     #                   ,sr.tmp07    #CHI-C70003 Add
+    #darcy:2022/10/31 add s---
+    #如果拉10月的报表，就不提现本年折旧及累计折旧，和资产净额
+    # 需求来源财务-马丽云
+    if sr.tmp03 = 0 then
+      let sr.tmp05 = 0
+      let sr.tmp06 = 0
+      let sr.tmp08 = 0
+    end if
+    #darcy:2022/10/31 add e---
      EXECUTE insert_prep USING
                          sr.faj04,sr.faj02,sr.faj022,sr.faj20,sr.faj19,sr.faj07,
                          sr.faj06,sr.tmp01,sr.tmp02,sr.tmp03,sr.tmp04,sr.tmp05,
@@ -1599,6 +1608,15 @@ DEFINE l_sql STRING
    END IF
    CALL cl_del_data(l_table)
    FOR p_i = 1 TO l_tmp.getLength()
+      #darcy:2022/10/31 add s---
+      #如果拉10月的报表，就不提现本年折旧及累计折旧，和资产净额
+      # 需求来源财务-马丽云
+      if l_tmp[p_i].tmp03 = 0 then
+         let l_tmp[p_i].tmp05 = 0
+         let l_tmp[p_i].tmp06 = 0
+         let l_tmp[p_i].tmp08 = 0
+      end if
+      #darcy:2022/10/31 add e---
       EXECUTE insert_prep USING l_tmp[p_i].*
    END FOR
 END FUNCTION
