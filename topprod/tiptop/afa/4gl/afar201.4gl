@@ -1383,6 +1383,7 @@ DEFINE l_n      LIKE type_file.num5   #FUN-B60045   Add
     #                    sr.tmp04,sr.tmp05,sr.tmp06,sr.tmp08
     #                   ,sr.faj93    #FUN-B60045
     #                   ,sr.tmp07    #CHI-C70003 Add
+
     #darcy:2022/10/31 add s---
     #如果拉10月的报表，就不提现本年折旧及累计折旧，和资产净额
     # 需求来源财务-马丽云
