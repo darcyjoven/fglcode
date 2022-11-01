@@ -317,7 +317,8 @@ END FUNCTION
  
 FUNCTION q102_b_fill()                  #BODY FILL UP
    DEFINE     l_sql    STRING     #NO.FUN-910082   
-
+   define     l_ogb01  like ogb_file.ogb01
+   define     l_ogb03  like ogb_file.ogb03
 
    let l_sql ="SELECT * FROM (
                SELECT OGA03,
@@ -436,6 +437,29 @@ FUNCTION q102_b_fill()                  #BODY FILL UP
          call cl_err("q102_b_fill","!",1)
          exit foreach
       end if
+      #darcy:2022/10/31 add s---
+      # 出货单分批次过账，只显示一次出货金额
+      if g_cxcq102[g_cnt].OGA01 = l_ogb01 and g_cxcq102[g_cnt].OGB03 = l_ogb03 then
+         let g_cxcq102[g_cnt].OGB12   = 0
+         let g_cxcq102[g_cnt].OGB13   = 0
+         let g_cxcq102[g_cnt].OGB14   = 0
+         let g_cxcq102[g_cnt].OGB14T  = 0
+         let g_cxcq102[g_cnt].OGB14a  = 0
+         let g_cxcq102[g_cnt].OGB14Ta = 0
+         let g_cxcq102[g_cnt].TC_OMB19  = 0
+         let g_cxcq102[g_cnt].TC_OMB20  = 0
+         let g_cxcq102[g_cnt].TC_OMB21  = 0
+         let g_cxcq102[g_cnt].TC_OMB23  = 0
+         let g_cxcq102[g_cnt].TC_OMB24  = 0
+         let g_cxcq102[g_cnt].TC_OMB26  = 0
+         let g_cxcq102[g_cnt].TC_OMB29  = 0
+         let g_cxcq102[g_cnt].TC_OMB30  = 0
+         let g_cxcq102[g_cnt].TC_OMB908 = 0
+         let g_cxcq102[g_cnt].TC_OMB909 = 0
+      end if
+      let l_ogb01 = g_cxcq102[g_cnt].OGA01
+      let l_ogb03 = g_cxcq102[g_cnt].OGB03
+      #darcy:2022/10/31 add e---
       let g_cnt = g_cnt + 1
    end foreach
    #darcy:2022/10/27 add s---
