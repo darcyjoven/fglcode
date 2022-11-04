@@ -8460,17 +8460,25 @@ DEFINE  l_pnb32     LIKE pnb_file.pnb32a
          END IF
       ELSE
          #有取到含稅單價
-         IF l_pnz07 = 'Y' THEN   #取到價格可修改
-            CALL cl_set_comp_entry("pnb31a",FALSE)
-            CALL cl_set_comp_entry("pnb32a",TRUE)
-            LET g_chkpnb31_flag = 'N'
-            LET g_chkpnb32_flag = 'Y'
-         ELSE
-            CALL cl_set_comp_entry("pnb31a",FALSE)
-            CALL cl_set_comp_entry("pnb32a",FALSE)
-            LET g_chkpnb31_flag = 'N'
-            LET g_chkpnb32_flag = 'N'
-         END IF
+         #darcy:2022/11/03 add s---
+         CALL cl_set_comp_entry("pnb31a",FALSE)
+         CALL cl_set_comp_entry("pnb32a",TRUE)
+         LET g_chkpnb31_flag = 'N'
+         LET g_chkpnb32_flag = 'Y'
+         #darcy:2022/11/03 add e---
+         #darcy:2022/11/03 modify s---
+         #IF l_pnz07 = 'Y' THEN   #取到價格可修改
+         #   CALL cl_set_comp_entry("pnb31a",FALSE)
+         #   CALL cl_set_comp_entry("pnb32a",TRUE)
+         #   LET g_chkpnb31_flag = 'N'
+         #   LET g_chkpnb32_flag = 'Y'
+         #ELSE
+         #   CALL cl_set_comp_entry("pnb31a",FALSE)
+         #   CALL cl_set_comp_entry("pnb32a",FALSE)
+         #   LET g_chkpnb31_flag = 'N'
+         #   LET g_chkpnb32_flag = 'N'
+         #END IF
+         #darcy:2022/11/03 modify e---
       END IF
    ELSE                    #不含稅
       IF l_pnb31 = 0 OR cl_null(l_pnb31) THEN
@@ -8488,17 +8496,25 @@ DEFINE  l_pnb32     LIKE pnb_file.pnb32a
          END IF
       ELSE
          #有取到稅前單價
-         IF l_pnz07 = 'Y' THEN   #取到價格可修改
-            CALL cl_set_comp_entry("pnb31a",TRUE)
-            CALL cl_set_comp_entry("pnb32a",FALSE)
-            LET g_chkpnb31_flag = 'Y'
-            LET g_chkpnb32_flag = 'N'
-         ELSE
-            CALL cl_set_comp_entry("pnb31a",FALSE)
-            CALL cl_set_comp_entry("pnb32a",FALSE)
-            LET g_chkpnb31_flag = 'N'
-            LET g_chkpnb32_flag = 'N'
-         END IF
+         #darcy:2022/11/03 add s---
+         CALL cl_set_comp_entry("pnb31a",TRUE)
+         CALL cl_set_comp_entry("pnb32a",FALSE)
+         LET g_chkpnb31_flag = 'Y'
+         LET g_chkpnb32_flag = 'N'
+         #darcy:2022/11/03 add e---
+         #darcy:2022/11/03 mark s---
+         # IF l_pnz07 = 'Y' THEN   #取到價格可修改
+         #    CALL cl_set_comp_entry("pnb31a",TRUE)
+         #    CALL cl_set_comp_entry("pnb32a",FALSE)
+         #    LET g_chkpnb31_flag = 'Y'
+         #    LET g_chkpnb32_flag = 'N'
+         # ELSE
+         #    CALL cl_set_comp_entry("pnb31a",FALSE)
+         #    CALL cl_set_comp_entry("pnb32a",FALSE)
+         #    LET g_chkpnb31_flag = 'N'
+         #    LET g_chkpnb32_flag = 'N'
+         # END IF
+         #darcy:2022/11/03 mark s---
       END IF
    END IF
 END FUNCTION
