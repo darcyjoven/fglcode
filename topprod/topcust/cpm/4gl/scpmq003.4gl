@@ -79,7 +79,7 @@ GLOBALS "../../../tiptop/config/top.global"
                 pja02     LIKE pja_file.pja02,
                 pml121    LIKE pml_file.pml121,
                 pjb03     LIKE pjb_file.pjb03 
-                ,pml06     like pml_file.pml06 #darcy:2022/11/02 add
+                ,pml06    like pml_file.pml06 #darcy:2022/11/04 add
                          END RECORD 
     DEFINE g_pmk_1,g_pmk_1_excel   DYNAMIC ARRAY OF RECORD   #29
                 pmk01_1   LIKE pmk_file.pmk01,  #单号
@@ -762,7 +762,7 @@ DEFINE l_wc1   STRING
                       "pml21,pmn31,pmn31t,pmn88,pmn88t,pmn50,pmn55,pmn50a,pmn53,pmnud07,rvv39, ",  #str---add by huanglf160806   
                       "rvv39t,rvv17,apb09,apb24,pmm21,pmm43,gec07,pmm22,pmm42,pmm99, ",
                       "pml35,pml34,pml33,pml41,pml16,pml24,pml25,pml12,pja02,pml121,pjb03 ",
-                      ",pml06", #darcy:2022/11/02 add
+                      ",pml06", #darcy:2022/11/04 add
                "  FROM cpmq003_tmp WHERE 1=1 AND ",l_wc1
       
    LET g_sql = g_sql," ORDER BY pmk01,pmk02,pmk04,pmk12,pmk13,pmk09,pml04,pml12 "
@@ -3167,7 +3167,8 @@ FUNCTION q003_table()
              "   pja02     LIKE pja_file.pja02, ",
              "   pml121    LIKE pml_file.pml121, ",
              "   pjb03     LIKE pjb_file.pjb03, ",
-             "   pml06     varchar(255) )" #darcy:2022/11/02 add 
+             "   pml06     varchar(255)         ", #darcy:2022/11/04 add
+             " ) "
              #str---add pmn31t by huanglf160806
 
    PREPARE q003_tab FROM l_sql
@@ -3227,7 +3228,8 @@ FUNCTION q003_table()
              "   pja02     LIKE pja_file.pja02, ",
              "   pml121    LIKE pml_file.pml121, ",
              "   pjb03     LIKE pjb_file.pjb03, ",
-             "   pml06     varchar(255) ) " #darcy:2022/11/02 add 
+             "   pml06     varchar(255)         ", #darcy:2022/11/04 add
+             " ) "
              #str---add pmn31t by huanglf160806
 
    PREPARE q003_tab1 FROM l_sql
@@ -3285,6 +3287,7 @@ FUNCTION q003()
                           " nvl(pmn87,0) pml21,nvl(pmn31,0) pmn31,pmn31t,nvl(pmn88,0) pmn88,nvl(pmn88t,0) pmn88t,nvl(pmn50,0) pmn50,nvl(pmn55,0) pmn55,nvl(pmn20-(pmn50-pmn55-pmn58),0) pmn50a,nvl(pmn53-pmn58,0) pmn53,pmnud07,0 rvv39,", #mod pmn53->pmn53-pmn58 by liy210615  #谢宇彬要求退货换货未收货入库的要去掉
                           " 0 rvv39t,0 rvv17,0 apb09,0 apb24,pmm21,pmm43,gec07,pmm22,pmm42,pmm99,",
                           " pmn35 pml35,pmn34 pml34,pmn33 pml33,'' pml41,pmn16 pml16,pmn24 pml24,pmn25 pml25,trim(nvl(pmn122,'')) pml12,pja02,trim(nvl(pmn96,'')) pml121,pjb03 ",  #TQC-CC0141
+                          " ,pml06 ", #darcy:2022/11/04 add
                     "  FROM pmm_file LEFT OUTER JOIN gen_file ON pmm12=gen01 ", 
                     "                LEFT OUTER JOIN gem_file ON pmm13=gem01 ",
                     "                LEFT OUTER JOIN pmc_file ON pmm09=pmc01 ",
@@ -3334,6 +3337,7 @@ FUNCTION q003()
                           " nvl(pmn87,0) pml21,nvl(rvb10,0) pmn31,pmn31t,nvl(rvb88,0) pmn88,nvl(rvb88t,0) pmn88t,nvl(pmn50,0) pmn50,nvl(rvb29,0) pmn55,nvl(rvb07-rvb30,0) pmn50a,nvl(rvb30,0) pmn53, pmnud07,0 rvv39,",
                           " 0 rvv39t,0 rvv17,0 apb09,0 apb24,pmm21,pmm43,gec07,pmm22,pmm42,rva99 pmm99,",
                           " pmn35 pml35,pmn34 pml34,pmn33 pml33,'' pml41,rvb18 pml16,rvb04 pml24,rvb03 pml25,'' pml12,'' pja02,'' pml121,'' pjb03 ",
+                          " ,pml06 ", #darcy:2022/11/04 add
                     "  FROM rva_file LEFT OUTER JOIN pmc_file ON rva05=pmc01,",
                     "       rvb_file LEFT OUTER JOIN ima_file ON rvb05=ima01 ",
                     "                LEFT OUTER JOIN pmn_file ON rvb04=pmn01 AND rvb03=pmn02 ",
@@ -3375,7 +3379,7 @@ FUNCTION q003()
                           " nvl(pml21,0) pml21,nvl(pmn31,0) pmn31,nvl(pmn31t,0) pmn31t,nvl(pmn88,0) pmn88,nvl(pmn88t,0) pmn88t,nvl(pmn50,0) pmn50,nvl(pmn55,0) pmn55,nvl(pmn20-(pmn50-pmn55-pmn58),0) pmn50a,nvl(pmn53,0) pmn53,pmnud07,0 rvv39,",
                           " 0 rvv39t,0 rvv17,0 apb09,0 apb24,pmm21,pmm43,gec07,pmm22,pmm42,pmm99,",
                           " pml35,pml34,pml33,pml41,pml16,pml24,pml25,trim(nvl(pml12,'')) pml12,pja02,trim(nvl(pml121,'')) pml121,pjb03 ",  #TQC-CC0141
-                          " ,pml06", #darcy:2022/11/02 add
+                          " ,pml06 ", #darcy:2022/11/04 add
                     "  FROM pmk_file LEFT OUTER JOIN gen_file ON pmk12=gen01 ", 
                     "                LEFT OUTER JOIN gem_file ON pmk13=gem01 ",
                     "                LEFT OUTER JOIN pmc_file ON pmk09=pmc01,", 
@@ -4284,7 +4288,8 @@ FUNCTION q003()
                        " pmc03,sfb87 pmk18,'' pml02,sfb05 pml04,ima02 pml041,ima021,ima55 pml07,nvl(sfb08,0) pml20,ima55 pml86,nvl(sfb08,0) pml87,",
                        " nvl(pmn20,0) pml21,nvl(pmn31,0) pmn31,nvl(pmn31t,0) pmn31,nvl(pmn88,0) pmn88,nvl(pmn88t,0) pmn88t,nvl(pmn50,0) pmn50,nvl(pmn55,0) pmn55,nvl(pmn20-(pmn50-pmn55-pmn58),0) pmn50a,nvl(pmn53-pmn58,0) pmn53,pmnud07,0 rvv39,",#add by pmn31t by guanyao160912 #mod pmn53 ->pmn53-pmn58 by liy210615  #谢宇彬要求退货换货未收货入库的要去掉
                        " 0 rvv39t,0 rvv17,0 apb09,0 apb24,pmm21,pmm43,gec07,pmm22,pmm42,pmm99,", 
-                       " sfb15 pml35,sfb15 pml34,sfb15 pml33,'' pml41,'' pml16,'' pml24,'' pml25,'' pml12,'' pja02,'' pml121,'' pjb03,pml06 ",
+                       " sfb15 pml35,sfb15 pml34,sfb15 pml33,'' pml41,'' pml16,'' pml24,'' pml25,'' pml12,'' pja02,'' pml121,'' pjb03 ",
+                       " ,'' pml06 ", #darcy:2022/11/04 add
                  "  FROM sfb_file LEFT OUTER JOIN gen_file ON sfb44=gen01 ", 
                  "                LEFT OUTER JOIN gem_file ON gen03=gem01 ", 
                  "                LEFT OUTER JOIN pmc_file ON sfb82=pmc01 ", 
