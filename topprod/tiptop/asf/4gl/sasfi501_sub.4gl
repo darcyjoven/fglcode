@@ -6708,6 +6708,28 @@ FUNCTION i501sub_y_chk(p_sfp01,p_action_choice) #TQC-C60079 add
       END IF
    END IF
 #MOD-C10100 --end--
+   #darcy:2022/11/07 add s---
+   # 停产检查 
+   LET l_sfq02=NULL
+   DECLARE i501_chk_ima140 CURSOR FOR  SELECT sfq02
+      FROM sfq_file, sfb_file, ima_file
+   WHERE ima01 = sfb05  AND sfq02 = sfb01 
+      AND ima140 = 'Y' AND sfq01=l_sfp.sfp01
+      AND (ima1401 <= SYSDATE OR ima1401 IS NULL)
+   
+   FOREACH i501_chk_sfq02 INTO l_sfq02
+      IF STATUS THEN
+         LET l_sfq02=NULL
+      END IF
+      EXIT FOREACH
+   END FOREACH
+
+   IF NOT cl_null(l_sfq02) THEN
+      CALL cl_err(l_sfq02,'csf-104',0)
+      LET g_success='N'
+      RETURN
+   END IF
+   #darcy:2022/11/07 add e---
 
      #No.TQC-B80182  --Begin
      #拆件式工单若有入库的时候,要卡一定有发料,至于发多少,不管控
