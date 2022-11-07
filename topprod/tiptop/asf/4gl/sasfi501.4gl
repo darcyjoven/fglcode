@@ -6898,6 +6898,7 @@ DEFINE   l_tc_sff05     LIKE tc_sff_file.tc_sff05   #tianry add end 161122
     END IF
  
     # 當有替代狀況時, 須作以下處理:
+
     # add darcy:2022/10/12 add s---
     #
     if g_user ='43474' or g_user = 'tiptop' then
@@ -6905,10 +6906,9 @@ DEFINE   l_tc_sff05     LIKE tc_sff_file.tc_sff05   #tianry add end 161122
               " LEFT JOIN tc_sff_file ON tc_sff01 = '",g_sfp.sfpud03,"' AND tc_sff27 = sfa27 ", #darcy:2022/10/12 add
               " WHERE sfa01='",g_sfa.sfa01,"' AND sfa27='",g_sfa.sfa27,"'",      #'",g_sfa.sfa03,"'",  #tianry mark
               "   AND sfa08='",g_sfa.sfa08,"' AND sfa12='",g_sfa.sfa12,"'",
-              "   AND sfa"
-              "   AND tc_sff04 = sfa03 and tc_sff27 = sfa27", #darcy:2022/10/12 add 
+              "   AND tc_sff04 = sfa03", #darcy:2022/10/12 add 
+              "   AND tc_sff05 = ",l_tc_sff05,
               "   AND sfa012= '",g_sfa.sfa012,"' AND sfa013 = ",g_sfa.sfa013   #FUN-A60028 add
-              ,"  and l_tc_sff05 "
     else
       LET l_sql="SELECT * FROM sfa_file",     #tianry add 161128   g_sfa.sfa3->g_sfa.sfa27
                " WHERE sfa01='",g_sfa.sfa01,"' AND sfa27='",g_sfa.sfa27,"'",      #'",g_sfa.sfa03,"'",  #tianry mark
