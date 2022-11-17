@@ -1071,6 +1071,7 @@ FUNCTION p710_process()
   DEFINE l_tc_pmj07t    LIKE tc_pmj_file.tc_pmj07t   #add by huanglf161013
   DEFINE l_num       LIKE type_file.num5    #add by huanglf161013
   DEFINE l_sgm04     LIKE sgm_file.sgm04    #add by huanglf161013
+  define l_sgm11     like sgm_file.sgm11    #darcy:2022/11/07 add
   LET l_pmm09 = ' '
   LET l_cnt = 1
   LET l_nn = 0
@@ -1141,6 +1142,12 @@ FUNCTION p710_process()
      LET l_nn=l_nn+1
      #FUN-A90057(S)
      INITIALIZE l_pmn.* TO NULL
+     #darcy:2022/11/07 addd s--
+     let l_sgm11 = ''
+     select sgm11 into l_sgm11 from sgm_file where sgm01 = g_tmp.sgm01 and sgm03 = g_tmp.sgm03
+
+     #darcy:2022/11/07 addd e--
+
      #str-----add by guanyao160722
      LET l_tc_pmm06 = ''
      SELECT tc_pmm06 INTO l_tc_pmm06 
@@ -1160,6 +1167,7 @@ FUNCTION p710_process()
         AND pmi01 = pmj01
         AND pmi03 = g_tmp.pmm09
         AND pmj10 = l_tc_pmm06
+        and pmj11 = l_sgm11  #darcy:2022/11/07 add
         AND pmj12 = '2'
      SELECT pmj07,pmj07t INTO l_pmj07,l_pmj07t FROM pmj_file,pmi_file
       WHERE pmj03 = g_tmp.sgm03_par 
@@ -1167,6 +1175,7 @@ FUNCTION p710_process()
         AND pmiconf ='Y'   #add  核价单必须审核
         AND pmi03 = g_tmp.pmm09
         AND pmj10 = l_tc_pmm06
+        and pmj11 = l_sgm11  #darcy:2022/11/07 add
         AND pmj09 = l_pmj09
         AND pmj12 = '2'
      IF cl_null(l_pmj07) THEN 
@@ -1189,6 +1198,7 @@ FUNCTION p710_process()
             AND tc_pmi01 = tc_pmj01
             AND tc_pmi03 = g_tmp.pmm09
             AND tc_pmj10 = l_tc_pmm06
+            and tc_pmj11 = l_sgm11  #darcy:2022/11/07 add
             AND tc_pmj12 = '2'
             AND tc_pmiconf = 'Y'
          SELECT tc_pmj07,tc_pmj07t INTO l_tc_pmj07,l_tc_pmj07t FROM tc_pmj_file,tc_pmi_file
@@ -1196,6 +1206,7 @@ FUNCTION p710_process()
             AND tc_pmi01 = tc_pmj01
             AND tc_pmi03 = g_tmp.pmm09
             AND tc_pmj10 = l_tc_pmm06
+            and tc_pmj11 = l_sgm11  #darcy:2022/11/07 add
             AND tc_pmj09 = l_tc_pmj09
             AND tc_pmj12 = '2'
             AND tc_pmiconf = 'Y'
