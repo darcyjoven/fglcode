@@ -1137,6 +1137,20 @@ FUNCTION i120_copy()
        INTO TEMP y
  
    IF cl_null(l_newsgr012) THEN LET l_newsgr012 = ' ' END IF   #FUN-A50100
+   #darcy:2022/11/09 add s---
+   # 变更序号累加
+   if l_newsgr03 = 0 then
+      SELECT ecu11+1 INTO l_newsgr03
+         FROM ecu_file
+      WHERE ecu01  = g_sgr.sgr01
+         AND ecu02  = g_sgr.sgr02
+         AND ecu012 = g_sgr.sgr012
+         AND ecuacti = 'Y'
+      if cl_null(l_newsgr03) or l_newsgr03 = 0 then
+         let l_newsgr03 = 1
+      end if
+   end if
+   #darcy:2022/11/09 add e---
    UPDATE y
        SET sgr01=l_newno,    #新的鍵值
            sgr02=l_newsgr02,  #新的鍵值
@@ -2983,7 +2997,9 @@ FUNCTION i120_g()
        CASE g_sgs[l_ac].sgs04
          WHEN '1' 
           #tianry add 161223 管控已经存在的作业编号不能再次变更
-        SELECT COUNT(*)  INTO l_cnt FROM ecb_file WHERE ecb01=g_sgr.sgr01 AND ecb06=g_sgs[l_ac].sgs23 
+        SELECT COUNT(*)  INTO l_cnt FROM ecb_file 
+         WHERE ecb01=g_sgr.sgr01 AND ecb06=g_sgs[l_ac].sgs23 
+           and ecb02 = g_sgr.sgr02  #darcy:2022/11/09 add 
         IF l_cnt=0 THEN 
         
           INSERT INTO ecb_file(ecb01,ecb02,ecb03,ecb06,ecb08,ecb07,ecb38,ecb04,ecb19,
