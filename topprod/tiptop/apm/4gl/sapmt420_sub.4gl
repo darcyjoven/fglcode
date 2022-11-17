@@ -56,6 +56,7 @@ DEFINE l_pmlslk02    LIKE pmlslk_file.pmlslk02 #FUN-C70098
 DEFINE l_pmlslk04    LIKE pmlslk_file.pmlslk04 #FUN-C70098
 DEFINE l_pmlslk20    LIKE pmlslk_file.pmlslk20 #FUN-C70098
 DEFINE l_gemacti     LIKE gem_file.gemacti #MOD-C60180
+define l_flag        like type_file.chr1   #darcy:2022/11/15 
  
    LET g_success = 'Y'
    IF p_pmk01 IS NULL THEN RETURN END IF #CHI-740014
@@ -224,6 +225,7 @@ DEFINE l_gemacti     LIKE gem_file.gemacti #MOD-C60180
       END IF
    END IF       #FUN-8A0054
    
+   let l_flag = 'N' #darcy:2022/11/15 add
    #Begin No:7225  無效料件或Phase Out者不可以請購
     DECLARE pml_cur1 CURSOR FOR
        SELECT pml04,pml33,pml35 FROM pml_file WHERE pml01=l_pmk.pmk01		#MOD-990262 add pml33,pml35
@@ -233,6 +235,11 @@ DEFINE l_gemacti     LIKE gem_file.gemacti #MOD-C60180
           LET g_totsuccess="N"
           LET g_success="Y"
        END IF
+       #darcy:2022/11/15 add s---
+       if l_pml04 matches 'M.*' or l_pml04 matches 'E.*' THEN
+         let l_flag = 'Y'
+       end if
+       #darcy:2022/11/15 add e---
        LET l_str = l_pml04[1,4]  #No:7225
        IF l_str = 'MISC' THEN CONTINUE FOREACH END IF #No:7225
        SELECT imaacti,ima140,ima1401 INTO l_imaacti,l_ima140,l_ima1401  #FUN-6A0036 add ima1401
@@ -261,6 +268,16 @@ DEFINE l_gemacti     LIKE gem_file.gemacti #MOD-C60180
           LET g_success = 'N'
        END IF       
     END FOREACH
+    #darcy:2022/11/15 add s---
+    if l_flag = 'Y' then
+      let l_cnt = 0
+      select count(1) into l_cnt from smu_file where smu01 ='LIA' and smu02=g_user
+      if l_cnt = 0 then
+         call s_errmsg("gen01",g_user,"","cpm-067",1)
+         let g_success = 'N'
+      end if
+    end if
+    #darcy:2022/11/15 add e---
     IF g_totsuccess="N" THEN
        LET g_success="N"
     END IF
