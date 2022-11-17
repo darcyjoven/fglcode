@@ -303,8 +303,10 @@ function p_admin_wo_menu()
     while true
         case g_b_flag
             when '1'
+                # 工单明细
                 call p_admin_wo_bp1("G")
             when '2'
+                # 工单备料明细
                 call p_admin_wo_bp2("G")
             when '3'
                 call p_admin_wo_bp3("G")
@@ -1342,8 +1344,14 @@ function p_admin_wo_atmt260()
     call s_showmsg_init()
     let flag = 'N'
 
-    let l_sql = "insert into sfa_admin_wo select sfa01,sfa03,sfa08,sfa27,sfa12,sfa06,'A' from sfa_file where sfa01 = ?"
+    let l_sql = "MERGE INTO sfa_admin_wo a USING ( ",
+                " select sfa01,sfa03,sfa08,sfa27,sfa12,sfa06,'A' status from sfa_file where sfa01 = ? ",
+                " ) b ON (a.sfa01 = b.sfa01 AND a.sfa03=b.sfa03 AND a.sfa27 = b.sfa27 AND a.sfa08 = b.sfa08 AND a.sfa12=b.sfa12) ",
+                " WHEN MATCHED THEN UPDATE SET a.sfa06 =b.sfa06 ",
+                " WHEN NOT MATCHED THEN INSERT  VALUES(b.sfa01,b.sfa03,b.sfa08,b.sfa27,b.sfa12,b.sfa06,b.status)  "
     prepare ins_sfa from l_sql
+
+    let l_sql = ""
 
     for l_index = 1 to g_sfb.getlength()
         if g_sfb[l_index].checksfb ='Y' then
@@ -1361,7 +1369,7 @@ function p_admin_wo_atmt260()
                 return
             end if
             # 更新sfa06 = sfa05
-            update sfa_file set sfa06 = sfa05 where sfa01 = g_sfa[l_index].sfa01
+            update sfa_file set sfa06 = sfa05 where sfa01 = g_sfb[l_index].sfb01
             if status then
                 call cl_err("upd sfa",status,1)
                 rollback work
@@ -1547,6 +1555,7 @@ function p_admin_wo_tc_shb_del()
     define l_index integer
     define l_msg   string
     define flag  like type_file.chr1
+    define l_sgm03 like sgm_file.sgm03
 
     begin work
     call s_showmsg_init()
@@ -1556,6 +1565,39 @@ function p_admin_wo_tc_shb_del()
         if g_tc_shb[l_index].checktc_shb ='Y' then
             let flag = 'Y'
             delete from tc_shb_file where tc_shb02 = g_tc_shb[l_index].tc_shb02
+            # 同步修改sgm_file
+            if g_tc_shb[l_index].tc_shb01 = '2' then
+                if g_tc_shb[l_index].tc_shb12 > 0 then
+                #完工
+                    # 获取下站的sgm03
+                    let l_sgm03 = p_admin_wo_get_next_sgm03(g_tc_shb[l_index].tc_shb03,g_tc_shb[l_index].tc_shb06)
+                    if l_sgm03 !=9999 then
+                        update sgm_file set sgm301 = sgm301 - g_tc_shb[l_index].tc_shb12
+                         where sgm01 = g_tc_shb[l_index].tc_shb03 and sgm03 = l_sgm03
+                        if status then
+                            call cl_err('update sgm_file',status,1)
+                            rollback work
+                            return
+                        end if
+                    end if
+                    update sgm_file set sgm311 = sgm311 - g_tc_shb[l_index].tc_shb12
+                     where sgm01 = g_tc_shb[l_index].tc_shb03 and sgm03 = g_tc_shb[l_index].tc_shb06
+                    if status then
+                        call cl_err('update sgm_file',status,1)
+                        rollback work
+                        return
+                    end if
+                else
+                #报废
+                    update sgm_file set sgm313 = sgm313 - g_tc_shb[l_index].tc_shb121
+                     where sgm01 = g_tc_shb[l_index].tc_shb03 and sgm03 = g_tc_shb[l_index].tc_shb06
+                    if status then
+                        call cl_err('update sgm_file',status,1)
+                        rollback work
+                        return
+                    end if
+                end if
+            end if
             if status then
                 call cl_err('del tc_shb_file',status,1)
                 rollback work
@@ -1592,6 +1634,13 @@ function p_admin_wo_tc_shb121_del()
     for l_index = 1 to g_tc_shb_2.getlength()
         if g_tc_shb_2[l_index].checktc_shb_2 ='Y' then
             let flag = 'Y'
+            update sgm_file set sgm313 = sgm313 - g_tc_shb[l_index].tc_shb121
+             where sgm01 = g_tc_shb[l_index].tc_shb03 and sgm03 = g_tc_shb[l_index].tc_shb06
+            if status then
+                call cl_err('update sgm_file',status,1)
+                rollback work
+                return
+            end if
             delete from tc_shb_file where tc_shb02 = g_tc_shb_2[l_index].tc_shb02_2
             if status then
                 call cl_err('del tc_shb_file',status,1)
@@ -1616,6 +1665,43 @@ function p_admin_wo_tc_shb121_del()
     end if
 end function
 
+#  跨月更新报工日期
+function p_admin_wo_shbdate()
+    define l_index integer
+    define l_msg   string
+    define flag  like type_file.chr1
+
+    begin work
+    call s_showmsg_init()
+    let flag = 'N'
+
+    for l_index = 1 to g_tc_shb.getlength()
+        if g_tc_shb[l_index].checktc_shb ='Y' then
+            let flag = 'Y'
+            delete from tc_shb_file where tc_shb02 = g_tc_shb[l_index].tc_shb02
+            if status then
+                call cl_err('del tc_shb_file',status,1)
+                rollback work
+                return
+            end if
+            let l_msg = g_tc_shb[l_index].tc_shb01,'|',g_tc_shb[l_index].tc_shb03,'|',
+                        g_tc_shb[l_index].tc_shb06,'|',g_tc_shb[l_index].tc_shb12,'|',g_tc_shb[l_index].tc_shb121
+            call s_errmsg("tc_shb01,tc_shb03,tc_shb06,tc_shb12,tc_shb121","",l_msg,'czz-014',1)
+            
+        end if
+    end for
+    call s_showmsg()
+    if flag ='N' then
+        rollback work
+    else
+        if cl_confirm('czz-008') then
+            commit work
+        else
+            rollback work
+        end if
+    end if
+end function
+
 function p_admin_wo_check(p_sfb01)
     define p_sfb01 like sfb_file.sfb01
     define l_cnt integer
@@ -1624,9 +1710,23 @@ function p_admin_wo_check(p_sfb01)
     select count(1) into l_cnt from sfb_file where sfb01 = p_sfb01
        and sfb28 is null and sfb38 is null
     if l_cnt > 0 then
-        return false
-    else
         return true
+    else
+        return false
     end if
 end function
 
+# 找到下站sgm03
+function p_admin_wo_get_next_sgm03(p_sgm01,p_sgm03)
+    define p_sgm01      like sgm_file.sgm01
+    define p_sgm03      like sgm_file.sgm03
+    define r_sgm03      like sgm_file.sgm03
+    
+    let r_sgm03 = 0
+    select min(sgm03) into r_sgm03 from sgm_file where sgm01 = p_sgm01 and sgm03 > p_sgm03
+    if cl_null(r_sgm03) or r_sgm03 = 0 then
+        let r_sgm03 = 9999
+    end if
+
+    return r_sgm03
+end function
