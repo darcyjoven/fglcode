@@ -69,6 +69,10 @@ FUNCTION i100sub_y_chk(p_ima01)
    DEFINE l_ima     RECORD LIKE ima_file.*
    DEFINE l_imac    RECORD LIKE imac_file.*  #TQC-C20283 add
    DEFINE l_n       LIKE type_file.num5      #MOD-C30124 add
+   #darcy:2022/11/18 add s---
+   define l_flag  like type_file.chr1
+   define l_factor like type_file.num26_10
+   #darcy:2022/11/18 add e---
    LET g_success = 'Y'
    IF cl_null(p_ima01)THEN
       CALL cl_err("",-400,1)
@@ -114,6 +118,18 @@ FUNCTION i100sub_y_chk(p_ima01)
       END IF
    END IF
 #MOD-C30124 ----- add ----- end
+   #darcy:2022/11/18 s---
+   # 限制成品料号，必须维护库存单位到SET单位的转化率
+   if l_ima.ima06 = "G01" OR l_ima.ima06 = "G02" then
+      let l_factor = 0
+      call s_umfchk(p_ima01,l_ima.ima25,'SET') returning l_flag,l_factor
+      if cl_null(l_factor) or l_factor = 0 then
+         call cl_err('','cim-016',1)
+         let g_errno = 'cim-016'
+         let g_success = 'N'
+      end if
+   end if
+   #darcy:2022/11/18 e---
 
    #TQC-C20283--add--begin
    IF l_ima.ima928 <> 'Y' THEN    #MOD-C30164 add
