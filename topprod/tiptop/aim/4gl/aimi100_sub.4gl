@@ -123,11 +123,11 @@ FUNCTION i100sub_y_chk(p_ima01)
    if l_ima.ima06 = "G01" OR l_ima.ima06 = "G02" then
       let l_factor = 0
       call s_umfchk(p_ima01,l_ima.ima25,'SET') returning l_flag,l_factor
-      if cl_null(l_factor) or l_factor = 0 then
-         call cl_err('','cim-016',1)
-         let g_errno = 'cim-016'
-         let g_success = 'N'
-      end if
+      #if cl_null(l_factor) or l_factor = 0 then
+      #   call cl_err('','cim-016',1)
+      #   let g_errno = 'cim-016'
+      #   let g_success = 'N'
+      #end if
    end if
    #darcy:2022/11/18 e---
 
@@ -649,3 +649,45 @@ FUNCTION i100sub_list_fill()
     END DISPLAY
 END FUNCTION
 #FUN-C90107 add end---
+#darcy:2022/11/18 add s---
+function p100sub_cre_set(p_ima01,p_smd04)
+   define p_smd04    like smd_file.smd04
+   define p_ima01    like ima_file.ima01
+   define l_cnt      like type_file.num5
+
+   let l_cnt = 0
+   select 1 into l_cnt from smd_file
+    where smd01 = p_ima01 and smd02 = 'PCS' and smd03='SET'
+   if l_cnt = 0 then
+      insert into smd_file values (
+         p_ima01,'PCS','SET',p_smd04,1,'','Y',1,g_today
+      )
+      if status then
+         call cl_err("ins smd",status,1)
+         return false
+      end if
+   else
+        if cl_null(p_smd04) or p_smd04 = 0 then
+            delete from smd_file
+             where smd01 = p_ima01
+                and smd02 = 'PCS' 
+                and smd03='SET'
+        else
+            update smd_file
+                set smd04 = p_smd04,
+                    smd06 = 1,
+                    smdacti = 'Y',
+                    smddate = g_today
+            where smd01 = p_ima01
+                and smd02 = 'PCS' 
+                and smd03='SET'
+        end if
+      
+      if status then
+         call cl_err("upd smd",status,1)
+         return false
+      end if
+   end if
+   return true
+end function
+#darcy:2022/11/18 add e---

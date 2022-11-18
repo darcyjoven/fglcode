@@ -449,14 +449,13 @@ DEFINE g_ima25_t     LIKE ima_file.ima25     #單位舊值   FUN-BB0083 add
 DEFINE g_ima01_t1    LIKE ima_file.ima01     #TQC-C70189 add
 DEFINE g_tc_ims02    LIKE tc_ims_file.tc_ims02  #add by huanglf170317
 #darcy:2022/11/18 add s---
-define g_smd record of
+define g_smd record 
       smd04    like smd_file.smd04
    end record
-define g_smd_t record of
+define g_smd_t record 
       smd04    like smd_file.smd04
    end record
 #darcy:2022/11/18 add e---
-
 #No.FUN-A50011 ----- begin ------
 #No.FUN-A50011 ------- end -------
 #FUN-B90103---------------add-------------
@@ -599,7 +598,7 @@ DEFINE   l_n                     LIKE type_file.num5
                                 imaud06,imaud07,imaud08,imaud09,imaud10,
                                 imaud11,imaud12,imaud13,imaud14,imaud15,
                                 imauser,imagrup,imamodu,imadate,imaacti,
-                                imaoriu,imaorig,imaud19,imaud20,imaud23,imaud24    #TQC-C20059 add
+                                imaoriu,imaorig,imaud19,imaud20    #TQC-C20059 add
          BEFORE CONSTRUCT
             CALL cl_qbe_init()
 #No.FUN-A50011 ------begin------
@@ -1050,7 +1049,7 @@ FUNCTION i100_menu()
       ON ACTION upd_ima25
          LET g_action_choice="upd_ima25"
          IF cl_chk_act_auth() THEN
-            CALL i100_upd_ima25()
+            #CALL i100_upd_ima25()   #mark by sx211105
          END IF
       #end---add by jixf 160804
       
@@ -1298,8 +1297,6 @@ FUNCTION i100_menu()
            #endadd
             CALL i100sub_y_chk(g_ima.ima01)
             IF g_success = 'Y' THEN
-                UPDATE ima_file SET imaud07 = (SELECT CONCAT(CONCAT(imaud23,'*'),imaud24) from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
-                UPDATE ima_file SET imaud19 = (SELECT imaud23*imaud24/imaud10 from ima_file WHERE ima01 = g_ima.ima01) WHERE ima01 = g_ima.ima01
                 IF cl_confirm('aap-222') THEN 
                     CALL i100sub_y_chk(g_ima.ima01) #CHI-C30107 add
                     IF g_success = 'Y' THEN  #CHI-C30107 add 
@@ -1628,7 +1625,7 @@ FUNCTION i100_i(p_cmd)
         g_ima.ima156,g_ima.ima157,g_ima.ima158,       #FUN-A80150 add
         g_ima.imaud01,g_ima.imaud02,g_ima.imaud03,g_ima.imaud04,g_ima.imaud05,
         g_ima.imaud06,g_ima.imaud07,g_ima.imaud08,g_ima.imaud09,g_ima.imaud10,
-        g_ima.imaud11,g_ima.imaud12,g_ima.imaud13,g_ima.imaud14,g_ima.imaud15,g_ima.imaud19,g_ima.imaud20,g_ima.imaud23,g_ima.imaud24
+        g_ima.imaud11,g_ima.imaud12,g_ima.imaud13,g_ima.imaud14,g_ima.imaud15,g_ima.imaud19,g_ima.imaud20
         ,g_smd.smd04  #darcy:2022/11/18 add
         WITHOUT DEFAULTS
  
@@ -2698,10 +2695,6 @@ FUNCTION i100_i(p_cmd)
            IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
         AFTER FIELD imaud20
            IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
-        AFTER FIELD imaud23
-           IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
-        AFTER FIELD imaud24
-           IF NOT cl_validate() THEN NEXT FIELD CURRENT END IF
  
         AFTER INPUT  #判斷必要欄位之值是否有值,若無則反白顯示,並要求重新輸入
            LET g_ima.imauser = s_get_data_owner("ima_file") #FUN-C10039
@@ -3380,16 +3373,15 @@ FUNCTION i100_show()
                    ,g_ima.ima151,                              #No.FUN-810016
                    g_ima.ima156,g_ima.ima157,g_ima.ima158,     #FUN-A80150 add
                    g_ima.ima159       #FUN-B50096
-                   ,g_ima.ima928,g_ima.ima929,g_ima.imaud19,g_ima.imaud20,g_ima.imaud23,g_ima.imaud24   #TQC-B90236--add
+                   ,g_ima.ima928,g_ima.ima929,g_ima.imaud19,g_ima.imaud20  #TQC-B90236--add
  
 #No.FUN-A50011 -----begin-----
+#No.FUN-A50011 -----end-----
    #darcy:2022/11/18 add s---
-   call s_umfchk(g_ima.ima01,'PCS','SET') returning g_success,g_smd.smd04
+   call s_umfchk(g_ima.ima01,'SET','PCS') returning g_success,g_smd.smd04
    display g_smd.smd04 to smd04
    let g_smd_t.smd04 = g_smd.smd04
    #darcy:2022/11/18 add e---
-#No.FUN-A50011 -----end-----
-
    #CHI-B50017 --- modify --- start ---
     LET g_buf_2 = NULL
     SELECT imz02 INTO g_buf_2 FROM imz_file WHERE imz01=g_ima.ima06
@@ -7175,6 +7167,11 @@ FUNCTION i100_copy_insert(l_ima,l_newno)
        ROLLBACK WORK
        RETURN FALSE
     ELSE
+      #darcy:2022/11/18 add s---
+      if p100sub_cre_set(g_ima.ima01,g_smd.smd04) then
+         display "更新转换率成功！"
+      end if
+      #darcy:2022/11/18 add e---
 #TQC-C20275 ----- add ----- begin
       DECLARE imac_cur CURSOR FOR
        SELECT * FROM imac_file WHERE imac01=g_ima.ima01
@@ -7433,7 +7430,11 @@ DEFINE l_cnt        LIKE type_file.num5     #FUN-C50110
    ELSE
       LET g_ima_t.* = g_ima.*                # 保存上筆資料
       LET g_ima01_t1 = g_ima.ima01           #TQC-C70189 add
- 
+      #darcy:2022/11/18 add s---
+      if p100sub_cre_set(g_ima.ima01,g_smd.smd04) then
+         display "更新转换率成功！"
+      end if
+      #darcy:2022/11/18 add e---
       CASE aws_mdmdata('ima_file','insert',g_ima.ima01,base.TypeInfo.create(g_ima),'CreateItemMasterData') #FUN-870166
          WHEN 0  #無與 MDM 整合
               CALL cl_msg('INSERT O.K')
@@ -7506,6 +7507,16 @@ FUNCTION i100_u_upd()
    END IF
    IF cl_null(g_ima.ima35) THEN LET g_ima.ima35 = ' ' END IF   #MOD-A90173 add
    IF cl_null(g_ima.ima36) THEN LET g_ima.ima36 = ' ' END IF   #MOD-A90173 add
+   #darcy:2022/11/18 add s---
+   if (g_smd_t.smd04 != g_smd.smd04) or 
+      ((cl_null(g_smd_t.smd04) and not cl_null(g_smd.smd04)) or
+       (not cl_null(g_smd_t.smd04) and cl_null(g_smd.smd04))
+      ) then
+      if p100sub_cre_set(g_ima01_t,g_smd.smd04) then
+         display "更新转换率成功！"
+      end if
+   end if
+   #darcy:2022/11/18 add e---
    IF cl_null(g_ima01_t) THEN  #FUN-AC0072
       UPDATE ima_file SET ima_file.* = g_ima.*   # 更新DB
        WHERE ima01 = g_ima.ima01             # COLAUTH?
@@ -7515,13 +7526,6 @@ FUNCTION i100_u_upd()
        WHERE ima01 = g_ima01_t             # COLAUTH?
    END IF
    #FUN-AC0072--end--add-------
-   #darcy:2022/11/18 add s---
-   if g_smd_t.smd04 != g_smd.smd04 then
-      if p100sub_cre_set(g_ima01_t,g_smd.smd04) then
-         display "更新转换率成功！"
-      end if
-   end if
-   #darcy:2022/11/18 add e---
    IF SQLCA.SQLERRD[3]=0 THEN
       CALL cl_err3("upd","ima_file",g_ima.ima01,"",SQLCA.sqlcode,"","",1)  #No.FUN-660156
       RETURN FALSE
@@ -8164,7 +8168,7 @@ FUNCTION i100_b_menu()
       WHEN  "upd_ima25"
          LET g_action_choice="upd_ima25"
          IF cl_chk_act_auth() THEN
-            CALL i100_upd_ima25()
+            #CALL i100_upd_ima25()   #mark by sx211105
          END IF 
 
 
@@ -8282,7 +8286,7 @@ FUNCTION i100_b_menu()
         #tianry add 
         WHEN  "upd_ima25"
          IF cl_chk_act_auth() THEN
-            CALL i100_upd_ima25()
+            #CALL i100_upd_ima25()   #mark by sx211105
          END IF
  
         WHEN "help"

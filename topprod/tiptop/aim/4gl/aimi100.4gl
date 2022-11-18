@@ -448,7 +448,14 @@ DEFINE g_buf_2       LIKE ima_file.ima01     #CHI-B50017 add
 DEFINE g_ima25_t     LIKE ima_file.ima25     #單位舊值   FUN-BB0083 add
 DEFINE g_ima01_t1    LIKE ima_file.ima01     #TQC-C70189 add
 DEFINE g_tc_ims02    LIKE tc_ims_file.tc_ims02  #add by huanglf170317
-
+#darcy:2022/11/18 add s---
+define g_smd record 
+      smd04    like smd_file.smd04
+   end record
+define g_smd_t record 
+      smd04    like smd_file.smd04
+   end record
+#darcy:2022/11/18 add e---
 #No.FUN-A50011 ----- begin ------
 #No.FUN-A50011 ------- end -------
 #FUN-B90103---------------add-------------
@@ -1619,6 +1626,7 @@ FUNCTION i100_i(p_cmd)
         g_ima.imaud01,g_ima.imaud02,g_ima.imaud03,g_ima.imaud04,g_ima.imaud05,
         g_ima.imaud06,g_ima.imaud07,g_ima.imaud08,g_ima.imaud09,g_ima.imaud10,
         g_ima.imaud11,g_ima.imaud12,g_ima.imaud13,g_ima.imaud14,g_ima.imaud15,g_ima.imaud19,g_ima.imaud20
+        ,g_smd.smd04  #darcy:2022/11/18 add
         WITHOUT DEFAULTS
  
         BEFORE INPUT
@@ -3369,7 +3377,11 @@ FUNCTION i100_show()
  
 #No.FUN-A50011 -----begin-----
 #No.FUN-A50011 -----end-----
-
+   #darcy:2022/11/18 add s---
+   call s_umfchk(g_ima.ima01,'SET','PCS') returning g_success,g_smd.smd04
+   display g_smd.smd04 to smd04
+   let g_smd_t.smd04 = g_smd.smd04
+   #darcy:2022/11/18 add e---
    #CHI-B50017 --- modify --- start ---
     LET g_buf_2 = NULL
     SELECT imz02 INTO g_buf_2 FROM imz_file WHERE imz01=g_ima.ima06
@@ -7155,6 +7167,11 @@ FUNCTION i100_copy_insert(l_ima,l_newno)
        ROLLBACK WORK
        RETURN FALSE
     ELSE
+      #darcy:2022/11/18 add s---
+      if p100sub_cre_set(g_ima.ima01,g_smd.smd04) then
+         display "更新转换率成功！"
+      end if
+      #darcy:2022/11/18 add e---
 #TQC-C20275 ----- add ----- begin
       DECLARE imac_cur CURSOR FOR
        SELECT * FROM imac_file WHERE imac01=g_ima.ima01
@@ -7413,7 +7430,11 @@ DEFINE l_cnt        LIKE type_file.num5     #FUN-C50110
    ELSE
       LET g_ima_t.* = g_ima.*                # 保存上筆資料
       LET g_ima01_t1 = g_ima.ima01           #TQC-C70189 add
- 
+      #darcy:2022/11/18 add s---
+      if p100sub_cre_set(g_ima.ima01,g_smd.smd04) then
+         display "更新转换率成功！"
+      end if
+      #darcy:2022/11/18 add e---
       CASE aws_mdmdata('ima_file','insert',g_ima.ima01,base.TypeInfo.create(g_ima),'CreateItemMasterData') #FUN-870166
          WHEN 0  #無與 MDM 整合
               CALL cl_msg('INSERT O.K')
@@ -7486,6 +7507,16 @@ FUNCTION i100_u_upd()
    END IF
    IF cl_null(g_ima.ima35) THEN LET g_ima.ima35 = ' ' END IF   #MOD-A90173 add
    IF cl_null(g_ima.ima36) THEN LET g_ima.ima36 = ' ' END IF   #MOD-A90173 add
+   #darcy:2022/11/18 add s---
+   if (g_smd_t.smd04 != g_smd.smd04) or 
+      ((cl_null(g_smd_t.smd04) and not cl_null(g_smd.smd04)) or
+       (not cl_null(g_smd_t.smd04) and cl_null(g_smd.smd04))
+      ) then
+      if p100sub_cre_set(g_ima01_t,g_smd.smd04) then
+         display "更新转换率成功！"
+      end if
+   end if
+   #darcy:2022/11/18 add e---
    IF cl_null(g_ima01_t) THEN  #FUN-AC0072
       UPDATE ima_file SET ima_file.* = g_ima.*   # 更新DB
        WHERE ima01 = g_ima.ima01             # COLAUTH?
