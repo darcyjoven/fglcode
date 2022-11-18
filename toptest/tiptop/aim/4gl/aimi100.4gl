@@ -448,6 +448,14 @@ DEFINE g_buf_2       LIKE ima_file.ima01     #CHI-B50017 add
 DEFINE g_ima25_t     LIKE ima_file.ima25     #單位舊值   FUN-BB0083 add
 DEFINE g_ima01_t1    LIKE ima_file.ima01     #TQC-C70189 add
 DEFINE g_tc_ims02    LIKE tc_ims_file.tc_ims02  #add by huanglf170317
+#darcy:2022/11/18 add s---
+define g_smd record of
+      smd04    like smd_file.smd04
+   end record
+define g_smd_t record of
+      smd04    like smd_file.smd04
+   end record
+#darcy:2022/11/18 add e---
 
 #No.FUN-A50011 ----- begin ------
 #No.FUN-A50011 ------- end -------
@@ -1621,6 +1629,7 @@ FUNCTION i100_i(p_cmd)
         g_ima.imaud01,g_ima.imaud02,g_ima.imaud03,g_ima.imaud04,g_ima.imaud05,
         g_ima.imaud06,g_ima.imaud07,g_ima.imaud08,g_ima.imaud09,g_ima.imaud10,
         g_ima.imaud11,g_ima.imaud12,g_ima.imaud13,g_ima.imaud14,g_ima.imaud15,g_ima.imaud19,g_ima.imaud20,g_ima.imaud23,g_ima.imaud24
+        ,g_smd.smd04  #darcy:2022/11/18 add
         WITHOUT DEFAULTS
  
         BEFORE INPUT
@@ -3374,6 +3383,11 @@ FUNCTION i100_show()
                    ,g_ima.ima928,g_ima.ima929,g_ima.imaud19,g_ima.imaud20,g_ima.imaud23,g_ima.imaud24   #TQC-B90236--add
  
 #No.FUN-A50011 -----begin-----
+   #darcy:2022/11/18 add s---
+   call s_umfchk(g_ima.ima01,'PCS','SET') returning g_success,g_smd.smd04
+   display g_smd.smd04 to smd04
+   let g_smd_t.smd04 = g_smd.smd04
+   #darcy:2022/11/18 add e---
 #No.FUN-A50011 -----end-----
 
    #CHI-B50017 --- modify --- start ---
@@ -7501,6 +7515,13 @@ FUNCTION i100_u_upd()
        WHERE ima01 = g_ima01_t             # COLAUTH?
    END IF
    #FUN-AC0072--end--add-------
+   #darcy:2022/11/18 add s---
+   if g_smd_t.smd04 != g_smd.smd04 then
+      if p100sub_cre_set(g_ima01_t,g_smd.smd04) then
+         display "更新转换率成功！"
+      end if
+   end if
+   #darcy:2022/11/18 add e---
    IF SQLCA.SQLERRD[3]=0 THEN
       CALL cl_err3("upd","ima_file",g_ima.ima01,"",SQLCA.sqlcode,"","",1)  #No.FUN-660156
       RETURN FALSE
