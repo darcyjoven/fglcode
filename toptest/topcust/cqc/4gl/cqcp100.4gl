@@ -30,7 +30,12 @@ type new record
     des01       like gen_file.gen02  ,
     qcs13       like qcs_file.qcs13  ,
     des02       like gen_file.gen02  ,
-    qcsud03     like qcs_file.qcsud03
+    qcsud01			like qcs_file.qcsud01,
+    qcsud03     like qcs_file.qcsud03,
+    qcsud04			like qcs_file.qcsud04,	
+    qcsud05			like qcs_file.qcsud05,
+    qcsud06			like qcs_file.qcsud06,
+    qcsud14			like qcs_file.qcsud14
 end record
 
 type qcs record like qcs_file.*
@@ -1264,7 +1269,7 @@ function p100_b_fill()
     let l_sql = "SELECT 'Y',qcs00,qcs01,qcs02,qcs05,qcs021,ima02,ima021,",
                 " qcs03,pmc03,qcs14,qcs21,qcs04,qcs041,qcsud07,qcs22,",
                 " qcs091,qcs09,CASE qcs09 WHEN '1' THEN '合格' WHEN '2' THEN '验退' WHEN '3' THEN '特采' END,",
-                " qcs13,gen02,qcsud03 FROM p100_qcs_tmp, ima_file, pmc_file, gen_file",
+                " qcs13,gen02,qcsud01,qcsud03,qcsud04,qcsud05,qcsud06,qcsud14 FROM p100_qcs_tmp, ima_file, pmc_file, gen_file",
                 " WHERE qcs021 = ima01 AND pmc01 = qcs03 AND gen01 = qcs13"
     prepare p100_fill_p from l_sql
     declare p100_fill_c cursor for p100_fill_p
@@ -1319,7 +1324,13 @@ end function
 
 function p100_updqcsud03()
     define l_index integer
+    define l_qcsud01 like qcs_file.qcsud01
     define l_qcsud03 like qcs_file.qcsud03
+    define l_qcsud04 like qcs_file.qcsud04
+    define l_qcsud05 like qcs_file.qcsud05
+    define l_qcsud06 like qcs_file.qcsud06
+    define l_qcsud14 like qcs_file.qcsud14
+    
     define   p_row,p_col   like type_file.num5
     define l_flag  like type_file.chr1
     
@@ -1330,7 +1341,7 @@ function p100_updqcsud03()
             attribute (style = g_win_style clipped) 
     call cl_ui_init()
 
-    input l_qcsud03 from qcsud03_1
+    input l_qcsud01,l_qcsud03,l_qcsud04,l_qcsud05,l_qcsud06,l_qcsud14 from qcsud01_1,qcsud03_1,qcsud04_1,qcsud05_1,qcsud06_1,qcsud14_1
         after input
             exit input
         on action cancel
@@ -1343,7 +1354,13 @@ function p100_updqcsud03()
         begin work
         for l_index = 1 to g_new.getlength()
             if g_new[l_index].checkqcs = 'Y' then
-                update p100_qcs_tmp set qcsud03 = l_qcsud03
+                update p100_qcs_tmp 
+                set qcsud01 = l_qcsud01,
+                		qcsud03 = l_qcsud03,
+                		qcsud04 = l_qcsud04,
+                		qcsud05 = l_qcsud05,
+                		qcsud06 = l_qcsud06,
+                		qcsud14 = l_qcsud14
                 where qcs01 = g_new[l_index].qcs01 and qcs02 = g_new[l_index].qcs02
                 if status then
                     call cl_err("upd p100_qcs_tmp",status,1)
@@ -1357,7 +1374,12 @@ function p100_updqcsud03()
             commit work
             for l_index = 1 to g_new.getlength()
                 if g_new[l_index].checkqcs = 'Y' then
+                		let g_new[l_index].qcsud01 = l_qcsud01
                     let g_new[l_index].qcsud03 = l_qcsud03
+                    let g_new[l_index].qcsud04 = l_qcsud04
+                    let g_new[l_index].qcsud05 = l_qcsud05
+                    let g_new[l_index].qcsud06 = l_qcsud06
+                    let g_new[l_index].qcsud14 = l_qcsud14
                 end if
             end for
         else
